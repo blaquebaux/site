@@ -190,7 +190,31 @@ nav{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.9);backdrop-fi
 footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;font:9px "IBM Plex Mono";letter-spacing:.13em;color:#4d5359;text-transform:uppercase}
 .reveal{opacity:0;transform:translateY(15px);transition:.85s ease}.reveal.on{opacity:1;transform:none}
 @media(max-width:1000px){.active-grid,.feature-head,.labpanel,.intro{grid-template-columns:1fr}.detail{position:relative;top:auto}.labcopy{border-right:0;border-bottom:1px solid var(--line)}.labrow{grid-template-columns:55px 160px 1fr 90px}}
-@media(max-width:650px){.shell{width:calc(100% - 24px)}.links a:not(:last-child){display:none}.hero h1{font-size:66px}.labrow{grid-template-columns:40px 1fr 90px}.desc{display:none}.row{grid-template-columns:38px 1fr}.content{padding-right:4px}.labpanel{grid-template-columns:1fr}.foot{display:block;line-height:2}.statusline{gap:12px;flex-wrap:wrap}}
+@media(max-width:650px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .shell{width:calc(100% - 24px)}
+  .links a:not(:last-child){display:none}
+  .hero h1{font-size:clamp(48px,18vw,66px);letter-spacing:.2em}
+  .row{grid-template-columns:30px minmax(0,1fr)}
+  .content{min-width:0;padding:24px 0 48px 8px}
+  .active-grid,.catalog,.detail,.labpanel,.labcopy,.viz{min-width:0}
+  .labrow{grid-template-columns:30px minmax(0,1fr) 72px;gap:10px;padding-right:0}
+  .name{min-width:0;font-size:clamp(14px,4.8vw,18px);letter-spacing:.08em;overflow-wrap:anywhere}
+  .state{font-size:8px;letter-spacing:.08em}
+  .desc{display:none}
+  .detail{padding:22px 18px}
+  .detail-name,.labcopy h3{font-size:clamp(22px,8vw,29px);letter-spacing:.1em;overflow-wrap:anywhere}
+  .feature-head h2{font-size:clamp(28px,9vw,38px);letter-spacing:.08em;overflow-wrap:anywhere}
+  .labpanel{grid-template-columns:minmax(0,1fr)}
+  .labcopy{padding:22px 18px}
+  .legend{gap:8px;flex-wrap:wrap}
+  .bars{inset:66px 18px 58px;gap:14px}
+  .splitviz{inset:70px 18px 58px;gap:10px}
+  .matrix{inset:72px 18px 58px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow{inset:70px 18px 58px}
+  .foot{display:block;line-height:2}
+  .statusline{gap:12px;flex-wrap:wrap}
+}
 </style></head>
 <body>
 <nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links">
