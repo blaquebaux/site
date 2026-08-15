@@ -609,7 +609,9 @@ footer{
   .sys-card{border-left:0;border-top:1px solid var(--line)}
   .metrics{padding:24px 18px 20px}
   .metric-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 0}
-  .metric,.metric:first-child{padding:0 12px}
+  .metric,.metric:first-child{padding:0}
+  .metric:nth-child(odd){padding-right:10px}
+  .metric:nth-child(even){padding-left:16px}
   .metric b{font-size:clamp(22px,7.4vw,27px);letter-spacing:0;white-space:nowrap}
   .research-principle{gap:24px}
   .repo-card{padding:24px}
