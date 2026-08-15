@@ -1,0 +1,17 @@
+# BLAQUE BAUX
+
+> BLAQUE BAUX is an open systematic research initiative for risk structure, strategy validation, portfolio governance, and disciplined execution.
+
+## Canonical pages
+
+- [BLAQUE BAUX](https://www.blaquebaux.com/): Overview of the research philosophy, governed system, and execution framework.
+- [LABS](https://www.blaquebaux.com/labs/): Interactive surfaces for strategies in live operation or active validation.
+- [THE CORPUS](https://www.blaquebaux.com/corpus/): The accumulated research record, including live, validating, experimental, and rejected work.
+
+## Primary sources
+
+- [GitHub organization](https://github.com/blaquebaux): Authoritative source repositories and research history.
+- [BASE repository](https://github.com/blaquebaux/base): The governed engine and production spine.
+- [Carter Warrens](https://www.carterwarrens.com/): Creator and provenance.
+
+Repository source material is authoritative for current methodology, code, validation status, and reported research results.
