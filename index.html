@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLAQUE BAUX — Risk Structure. Systematic Research. Governed Execution.</title>
+<link rel="canonical" href="https://www.blaquebaux.com/">
+<meta property="og:title" content="BLAQUE BAUX">
+<meta property="og:description" content="Risk structure. Systematic research. Governed execution. A Carter Warrens research initiative.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.blaquebaux.com/">
+<meta name="theme-color" content="#050608">
+<meta name="description" content="Blaque Baux — risk structure, systematic research, governed execution. A Carter Warrens research initiative.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+:root{
+  --bg:#050608;
+  --panel:#07090c;
+  --fg:#f3f3f0;
+  --muted:#868b91;
+  --muted2:#545a62;
+  --line:#20252c;
+  --line2:#12161b;
+  --max:1480px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,.02), transparent 38%),
+    var(--bg);
+  color:var(--fg);
+  font-family:"Space Grotesk",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+::selection{background:#fff;color:#000}
+
+.shell{width:min(var(--max),calc(100% - 42px));margin:0 auto}
+.mono{font-family:"IBM Plex Mono",monospace}
+.micro{
+  font:400 10px/1.4 "IBM Plex Mono",monospace;
+  text-transform:uppercase;
+  letter-spacing:.20em;
+  color:var(--muted);
+}
+.rule{border-top:1px solid var(--line)}
+.section{
+  position:relative;
+  border-top:1px solid var(--line);
+  overflow:hidden;
+}
+.section-grid{
+  display:grid;
+  grid-template-columns:54px 1fr;
+}
+.index{
+  padding:28px 0;
+  color:#b6bbc0;
+  font:400 12px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.12em;
+  position:relative;
+}
+.index:after{
+  content:"";
+  position:absolute;left:0;top:52px;width:39px;height:1px;background:#5a6068;
+}
+.content{padding:28px 20px 58px}
+
+/* NAV */
+nav{
+  position:sticky;
+  top:0;
+  z-index:30;
+  background:rgba(5,6,8,.84);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.wordmark{
+  font-size:16px;
+  font-weight:500;
+  letter-spacing:.34em;
+  white-space:nowrap;
+}
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:42px;
+  font:400 9px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#b4b8bc;
+}
+.navlinks a{transition:.25s ease}
+.navlinks a:hover{color:#fff}
+
+/* HERO */
+.hero{
+  min-height:650px;
+  border-bottom:1px solid var(--line);
+  position:relative;
+  overflow:hidden;
+}
+.hero-grid{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:54px 1fr 26px;
+}
+.hero-left,.hero-right{
+  position:relative;
+  color:#cfd2d5;
+  font:400 11px/1 "IBM Plex Mono",monospace;
+  padding-top:28px;
+}
+.hero-left:after,.hero-right:after{
+  content:"";
+  position:absolute;
+  top:58px;bottom:175px;width:1px;
+  background:linear-gradient(to bottom,#343941 0,#343941 18%,transparent 18%,transparent 23%,#343941 23%,#343941 100%);
+  opacity:.65;
+}
+.hero-left:after{left:1px}
+.hero-right:after{right:1px}
+.hero-right{text-align:right}
+
+.hero-main{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:70px 20px 160px;
+  z-index:2;
+}
+.hero-title{
+  margin:0;
+  width:100%;
+  text-align:center;
+  font-size:clamp(54px,8.2vw,128px);
+  font-weight:600;
+  line-height:.82;
+  letter-spacing:.26em;
+  transform:translateX(.13em);
+  white-space:nowrap;
+}
+.hero-tag{
+  margin-top:44px;
+  text-align:center;
+  font:300 clamp(9px,1vw,13px)/1.5 "IBM Plex Mono",monospace;
+  letter-spacing:.30em;
+  color:#b2b7bc;
+}
+.hero-meta{
+  margin-top:26px;
+  font:300 9px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  color:#777d84;
+}
+.hero-parent{
+  position:absolute;
+  bottom:91px;
+  left:50%;
+  transform:translateX(-50%);
+  font:300 8px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#545a62;
+  z-index:5;
+  white-space:nowrap;
+}
+.scroll-indicator{
+  position:absolute;
+  bottom:28px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:9px;
+  color:#7a8087;
+  font:300 8px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.18em;
+  z-index:5;
+}
+.scroll-indicator:before{
+  content:"";
+  height:42px;width:1px;
+  background:linear-gradient(#777,transparent);
+  animation:pulseLine 2.5s ease-in-out infinite;
+}
+@keyframes pulseLine{0%,100%{opacity:.25;transform:scaleY(.7)}50%{opacity:.9;transform:scaleY(1)}}
+
+/* animated data field */
+#waveCanvas{
+  position:absolute;left:0;right:0;bottom:0;
+  width:100%;height:255px;
+  opacity:.72;
+  mask-image:linear-gradient(to bottom,transparent 0%,black 35%,black 100%);
+}
+
+/* WHAT */
+.what-grid{
+  display:grid;
+  grid-template-columns:minmax(360px,.9fr) minmax(480px,1.2fr);
+  gap:70px;
+  align-items:center;
+}
+.label{margin-bottom:18px}
+.statement{
+  margin:0;
+  max-width:610px;
+  font-size:clamp(28px,3vw,45px);
+  font-weight:400;
+  line-height:1.28;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.copy{
+  margin-top:24px;
+  max-width:560px;
+  color:#92979d;
+  font-size:13px;
+  line-height:1.75;
+}
+.text-link{
+  display:inline-block;
+  margin-top:28px;
+  font:400 10px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+  color:#c9cdd1;
+}
+
+/* orbit viz */
+.orbit-wrap{
+  min-height:360px;
+  position:relative;
+  display:grid;
+  place-items:center;
+}
+.orbit{
+  position:relative;
+  width:min(560px,95%);
+  height:310px;
+  perspective:800px;
+}
+.ring{
+  position:absolute;
+  left:50%;top:50%;
+  border:1px solid rgba(205,210,215,.22);
+  border-radius:50%;
+  transform:translate(-50%,-50%) rotateX(68deg);
+  animation:orbitBreath 7s ease-in-out infinite;
+}
+.ring:nth-child(1){width:380px;height:185px}
+.ring:nth-child(2){width:310px;height:135px;animation-delay:-1.6s}
+.ring:nth-child(3){width:230px;height:95px;animation-delay:-3.1s}
+.ring:nth-child(4){width:145px;height:58px;animation-delay:-4.6s}
+.ring:nth-child(5){width:88px;height:34px;animation-delay:-5.4s}
+.core{
+  position:absolute;left:50%;top:50%;
+  width:4px;height:4px;border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:#fff;
+  box-shadow:0 0 22px 7px rgba(255,255,255,.18);
+}
+.axis{
+  position:absolute;left:50%;top:6%;bottom:6%;width:1px;
+  background:linear-gradient(transparent,#50555d 20%,#eee 50%,#50555d 80%,transparent);
+  opacity:.65;
+}
+@keyframes orbitBreath{
+  0%,100%{transform:translate(-50%,-50%) rotateX(68deg) scale(.98);opacity:.45}
+  50%{transform:translate(-50%,-50%) rotateX(68deg) scale(1.04);opacity:.9}
+}
+.orbit-labels{
+  position:absolute;right:4%;top:19%;bottom:19%;
+  display:flex;flex-direction:column;justify-content:space-between;
+  font:300 9px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.17em;color:#91969c;text-transform:uppercase;
+}
+.orbit-labels span{position:relative}
+.orbit-labels span:before{
+  content:"";position:absolute;right:calc(100% + 12px);top:50%;
+  width:50px;height:1px;
+  border-top:1px dotted #4b5158;
+}
+
+/* SYSTEM */
+.system-layout{
+  display:grid;
+  grid-template-columns:310px 1fr;
+  gap:68px;
+  align-items:start;
+}
+.system-title{
+  font-size:28px;
+  line-height:1.42;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  margin-top:18px;
+}
+.system-cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.sys-card{
+  min-height:220px;
+  border-left:1px solid var(--line);
+  padding:12px 28px 15px;
+}
+.icon{
+  width:34px;height:34px;margin-bottom:22px;color:#ddd;
+}
+.sys-card h3{
+  margin:0 0 12px;
+  font:400 13px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+}
+.sys-card p{
+  margin:0;color:#858a90;font-size:11px;line-height:1.75;
+}
+
+/* RESEARCH */
+.research-layout{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:72px;
+  align-items:center;
+}
+.research-title{
+  margin:18px 0 0;
+  font-size:29px;
+  line-height:1.4;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.metrics{
+  border:1px solid #343a42;
+  padding:28px 30px 22px;
+  background:linear-gradient(180deg,rgba(255,255,255,.012),rgba(255,255,255,0));
+}
+.metric-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.metric{
+  padding:0 25px;
+  border-left:1px solid var(--line);
+}
+.metric:first-child{border-left:0;padding-left:0}
+.metric b{
+  display:block;
+  font:300 27px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.05em;
+}
+.metric span{
+  display:block;margin-top:10px;
+  font:300 9px/1.65 "IBM Plex Mono",monospace;
+  text-transform:uppercase;letter-spacing:.14em;color:#858a90;
+}
+.metric-note{
+  border-top:1px solid var(--line);
+  margin-top:22px;padding-top:17px;
+  color:#81868c;font:300 10px/1.5 "IBM Plex Mono",monospace;
+  letter-spacing:.05em;
+}
+
+/* ENGINE */
+.repo-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.repo-card{
+  position:relative;
+  min-height:205px;
+  border:1px solid #343a42;
+  padding:28px 34px;
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.012),transparent 50%);
+  transition:border-color .25s ease,transform .25s ease,background .25s ease;
+  overflow:hidden;
+}
+.repo-card:hover{
+  border-color:#737981;
+  transform:translateY(-2px);
+  background:linear-gradient(135deg,rgba(255,255,255,.028),transparent 55%);
+}
+.repo-card:after{
+  content:"↗";position:absolute;right:18px;top:15px;
+  color:#81868d;font-family:"IBM Plex Mono",monospace;font-size:13px;
+}
+.repo-type{
+  font:300 8px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.18em;text-transform:uppercase;color:#686e75;
+}
+.repo-card h3{
+  margin:20px 0 13px;
+  font-size:23px;font-weight:400;letter-spacing:.10em;
+}
+.repo-card p{
+  margin:0;max-width:440px;
+  color:#898e94;font-size:12px;line-height:1.7;
+}
+.repo-enter{
+  margin-top:22px;
+  font:300 9px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.16em;text-transform:uppercase;color:#b4b9be;
+}
+.cube{
+  position:absolute;right:72px;bottom:34px;width:90px;height:90px;opacity:.22;
+  background:
+    linear-gradient(30deg, transparent 49%, #aaa 50%, transparent 51%),
+    linear-gradient(150deg, transparent 49%, #aaa 50%, transparent 51%),
+    linear-gradient(90deg, transparent 49%, #aaa 50%, transparent 51%);
+  border:1px solid #aaa;
+  transform:rotate(30deg) skewY(-8deg);
+}
+
+/* CARTER WARRENS */
+.cw{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:50px;
+  align-items:end;
+}
+.cw h2{
+  margin:18px 0 18px;
+  font-size:clamp(30px,4vw,58px);
+  line-height:1.05;font-weight:400;letter-spacing:.08em;
+}
+.cw p{max-width:720px;color:#888d93;font-size:13px;line-height:1.75}
+.cw-link{
+  border:1px solid #343a42;
+  padding:18px 21px;
+  font:300 9px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.16em;text-transform:uppercase;
+  white-space:nowrap;transition:.2s ease;
+}
+.cw-link:hover{border-color:#777;color:#fff}
+
+
+/* FOUNDER CREDENTIALS */
+.founder-block{
+  margin-top:34px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+}
+.founder-bio{
+  max-width:820px;
+  margin:0;
+  color:#9a9fa5;
+  font-size:12.5px;
+  line-height:1.78;
+}
+.cred-grid{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:18px 28px;
+  align-items:start;
+}
+.cred-label{
+  font:300 8px/1.5 "IBM Plex Mono",monospace;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:#565c63;
+}
+.cred-value{
+  font:300 9px/1.8 "IBM Plex Mono",monospace;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  color:#8e949a;
+}
+.cred-value.experience{
+  word-spacing:.1em;
+}
+@media(max-width:620px){
+  .cred-grid{grid-template-columns:1fr;gap:8px}
+}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--line);
+  padding:34px 0 30px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1.15fr;
+  gap:55px;
+}
+.footer-title{
+  font-size:13px;letter-spacing:.21em;margin-bottom:18px;
+}
+.footer-col{
+  color:#7c8187;
+  font:300 9px/1.85 "IBM Plex Mono",monospace;
+  text-transform:uppercase;letter-spacing:.11em;
+}
+.terminal{
+  border:1px solid #2b3138;
+  padding:18px 20px;
+  color:#8d9298;
+  font:300 9px/1.65 "IBM Plex Mono",monospace;
+  position:relative;
+}
+.dot{
+  width:5px;height:5px;border-radius:50%;
+  background:#3dff73;position:absolute;right:14px;top:14px;
+  box-shadow:0 0 7px rgba(61,255,115,.5);
+  animation:blink 2s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}
+.legal{
+  border-top:1px solid var(--line2);
+  margin-top:28px;padding-top:18px;
+  display:flex;justify-content:space-between;gap:20px;
+  color:#454a50;font:300 8px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.12em;text-transform:uppercase;
+}
+
+/* reveal */
+.reveal{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);
+}
+.reveal.visible{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.12s}
+.reveal[data-delay="2"]{transition-delay:.24s}
+.reveal[data-delay="3"]{transition-delay:.36s}
+
+/* subtle moving scanline */
+.scan{
+  position:fixed;left:0;right:0;height:1px;top:-2px;z-index:100;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.11),transparent);
+  animation:scan 14s linear infinite;opacity:.4;
+}
+@keyframes scan{from{transform:translateY(0)}to{transform:translateY(110vh)}}
+
+@media(max-width:980px){
+  .navlinks{gap:18px}.navlinks a:nth-child(-n+2){display:none}
+  .hero-title{font-size:clamp(42px,9vw,78px)}
+  .what-grid,.research-layout,.system-layout,.cw{grid-template-columns:1fr}
+  .system-cards{grid-template-columns:1fr 1fr}
+  .metric-row{grid-template-columns:1fr 1fr;gap:22px}
+  .metric:nth-child(3){border-left:0}
+  .repo-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .shell{width:min(var(--max),calc(100% - 24px))}
+  .nav-inner{height:62px}.wordmark{font-size:12px}
+  .navlinks a:not(:last-child){display:none}
+  .hero-grid{grid-template-columns:28px 1fr 14px}
+  .hero-main{padding-left:4px;padding-right:4px}
+  .hero-title{font-size:36px;letter-spacing:.17em}
+  .hero-tag{font-size:8px;letter-spacing:.17em}
+  .section-grid{grid-template-columns:38px 1fr}
+  .content{padding-right:4px}
+  .what-grid{gap:28px}
+  .orbit-wrap{min-height:300px}
+  .system-cards{grid-template-columns:1fr}
+  .sys-card{border-left:0;border-top:1px solid var(--line)}
+  .metric-row{grid-template-columns:1fr 1fr}
+  .metric{padding:0 10px}
+  .repo-card{padding:24px}
+}
+</style>
+</head>
+
+<body>
+<div class="scan"></div>
+
+<nav>
+  <div class="shell nav-inner">
+    <a href="#" class="wordmark">BLAQUE BAUX</a>
+    <div class="navlinks">
+    <a href="/#system">SYSTEM</a>
+    <a href="/corpus/">CORPUS</a>
+    <a href="/labs/">LABS</a>
+    <a href="#carter-warrens">CARTER WARRENS</a>
+    <a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GITHUB ↗</a>
+  </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="waveCanvas"></canvas>
+  <div class="shell hero-grid">
+    <div class="hero-left">01</div>
+
+    <div class="hero-main">
+      <h1 class="hero-title reveal visible">BLAQUE BAUX</h1>
+      <div class="hero-tag reveal visible" style="transition-delay:.15s">
+        RISK STRUCTURE. SYSTEMATIC RESEARCH. GOVERNED EXECUTION.
+      </div>
+      <div class="hero-meta reveal visible" style="transition-delay:.3s">
+        [ JULIA ENGINE / OPEN RESEARCH / GOVERNED SPINE ]
+      </div>
+      <a class="hero-parent" href="https://www.carterwarrens.com" target="_blank" rel="noopener">
+        A CARTER WARRENS RESEARCH INITIATIVE ↗
+      </a>
+      <div class="scroll-indicator">SCROLL</div>
+    </div>
+
+    <div class="hero-right">BB</div>
+  </div>
+</header>
+
+<section class="section" id="philosophy">
+  <div class="shell section-grid">
+    <div class="index">02</div>
+    <div class="content">
+      <div class="what-grid">
+        <div class="reveal">
+          <div class="micro label">What is Blaque Baux?</div>
+          <h2 class="statement">We build systems that turn uncertainty into structured edge.</h2>
+          <p class="copy">
+            Blaque Baux is a systematic research initiative for risk-premium harvesting.
+            Durable edge is approached through rigorous structure, empirical discipline,
+            explicit governance, and an auditable path from research to execution.
+          </p>
+          <a class="text-link" href="#system">Our philosophy →</a>
+        </div>
+
+        <div class="orbit-wrap reveal" data-delay="1">
+          <div class="orbit">
+            <div class="axis"></div>
+            <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+            <div class="ring"></div><div class="ring"></div>
+            <div class="core"></div>
+            <div class="orbit-labels">
+              <span>Data</span>
+              <span>Signal</span>
+              <span>Model</span>
+              <span>Execution</span>
+              <span>Governance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="system">
+  <div class="shell section-grid">
+    <div class="index">03</div>
+    <div class="content">
+      <div class="system-layout">
+        <div class="reveal">
+          <div class="micro">The system</div>
+          <div class="system-title">A governed spine built for research and execution.</div>
+        </div>
+
+        <div class="system-cards">
+          <div class="sys-card reveal" data-delay="1">
+            <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+              <path d="M4 10 16 4l12 6-12 6L4 10Z"/><path d="m4 16 12 6 12-6"/><path d="m4 22 12 6 12-6"/>
+            </svg>
+            <h3>Ingest</h3>
+            <p>Institutional-grade data pipelines. Clean. Timely. Reproducible.</p>
+          </div>
+
+          <div class="sys-card reveal" data-delay="1">
+            <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+              <path d="M3 22 9 13l5 6 5-10 10 13"/><path d="M3 24h26"/>
+            </svg>
+            <h3>Model</h3>
+            <p>Signals that survive out of sample. Transparent. Explainable.</p>
+          </div>
+
+          <div class="sys-card reveal" data-delay="2">
+            <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+              <path d="M16 3 27 7v8c0 7-4.5 11-11 14C9.5 26 5 22 5 15V7l11-4Z"/><path d="M11 16h10M16 11v10"/>
+            </svg>
+            <h3>Govern</h3>
+            <p>Risk first. Controls, limits, and auditability at every layer.</p>
+          </div>
+
+          <div class="sys-card reveal" data-delay="3">
+            <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+              <circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="5"/><path d="M16 1v5M31 16h-5M16 31v-5M1 16h5"/>
+            </svg>
+            <h3>Execute</h3>
+            <p>Cost aware. Capacity aware. Discipline in. Discipline out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="research">
+  <div class="shell section-grid">
+    <div class="index">04</div>
+    <div class="content">
+      <div class="research-layout">
+        <div class="reveal">
+          <div class="micro">Research philosophy</div>
+          <div class="research-title">We share the process.<br>Including the rejection.</div>
+          <p class="copy">
+            Every strategy is subjected to the same standard. Those that fail
+            help sharpen those that survive. The record remains part of the work.
+          </p>
+          <a class="text-link" href="https://github.com/orgs/blaquebaux/repositories" target="_blank" rel="noopener">Explore research →</a>
+        </div>
+
+        <div class="metrics reveal" data-delay="1">
+          <div class="metric-row">
+            <div class="metric"><b>20+</b><span>strategies<br>researched</span></div>
+            <div class="metric"><b>10+</b><span>rejected<br>ideas</span></div>
+            <div class="metric"><b>LIVE</b><span>governed<br>spine</span></div>
+            <div class="metric"><b>OPEN</b><span>research<br>record</span></div>
+          </div>
+          <div class="metric-note">Transparency compounds. Secrets don't.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell section-grid">
+    <div class="index">05</div>
+    <div class="content">
+      <div class="micro" style="margin-bottom:18px">Access the engine</div>
+      <div class="repo-grid">
+        <a class="repo-card reveal" href="https://github.com/blaquebaux" target="_blank" rel="noopener">
+          <div class="repo-type">GitHub organization</div>
+          <h3>BLAQUEBAUX</h3>
+          <p>The broader research corpus: strategies, tools, experiments, sleeves, and libraries.</p>
+          <div class="repo-enter">View organization →</div>
+        </a>
+
+        <a class="repo-card reveal" data-delay="1" href="https://github.com/blaquebaux/base" target="_blank" rel="noopener">
+          <div class="repo-type">Primary engine</div>
+          <h3>BLAQUEBAUX / BASE</h3>
+          <p>The governed spine: data, models, execution, risk, controls, and infrastructure.</p>
+          <div class="repo-enter">View repository →</div>
+          <div class="cube"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="carter-warrens">
+  <div class="shell section-grid">
+    <div class="index">06</div>
+    <div class="content">
+      <div class="cw">
+        <div class="reveal">
+          <div class="micro">Provenance</div>
+          <h2>BUILT BY CARTER WARRENS.</h2>
+
+          <p>
+            Blaque Baux is a quantitative research initiative and subsidiary of Carter Warrens,
+            a boutique consulting firm co-founded by Kareem Williams.
+          </p>
+
+          <div class="founder-block">
+            <p class="founder-bio">
+              Mr. Williams brings more than two decades of experience across global financial institutions,
+              with work spanning capital markets, risk, data, regulatory systems, and financial technology.
+              Blaque Baux continues that body of work independently: research the problem, challenge the
+              assumptions, build the system, govern the risks, and document what survives.
+            </p>
+
+            <div class="cred-grid">
+              <div class="cred-label">Selected experience</div>
+              <div class="cred-value experience">
+                Morgan Stanley · Citi · UBS · RBC Capital Markets · BNP Paribas · Credit Suisse
+              </div>
+
+              <div class="cred-label">Education</div>
+              <div class="cred-value">
+                MS Finance / Pace University
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="cw-link reveal" data-delay="1"
+           href="https://www.carterwarrens.com" target="_blank" rel="noopener">
+          Carter Warrens ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-title">BLAQUE BAUX</div>
+        Systematic research engine<br>
+        Built in Julia<br><br>
+        A Carter Warrens research initiative
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">PRINCIPLES</div>
+        Empirical discipline<br>
+        Systematic thinking<br>
+        Risk awareness<br>
+        Transparency<br>
+        Continuous improvement
+      </div>
+
+      <div class="terminal">
+        <div class="dot"></div>
+        &gt; edge is earned.<br>
+        &gt; discipline is freedom.<br>
+        &gt; structure compounds.<br>
+        &gt; build systems.<br>
+        &gt; _
+      </div>
+    </div>
+
+    <div class="legal">
+      <span>© BLAQUE BAUX / CARTER WARRENS</span>
+      <span>RESEARCH → TEST → REJECT / KEEP → GOVERN → VALIDATE → EXECUTE</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Reveal on scroll */
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal:not(.visible)').forEach(el=>observer.observe(el));
+
+/* Hero particle field — deliberately slow */
+const canvas = document.getElementById('waveCanvas');
+const ctx = canvas.getContext('2d');
+let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2);
+let t=0;
+
+function resize(){
+  const r=canvas.getBoundingClientRect();
+  W=r.width; H=r.height;
+  canvas.width=Math.floor(W*dpr);
+  canvas.height=Math.floor(H*dpr);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+window.addEventListener('resize',resize);
+resize();
+
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  t += 0.0045;
+
+  const rows=28;
+  const cols=Math.max(80,Math.floor(W/10));
+  const base=H*.68;
+
+  for(let r=0;r<rows;r++){
+    const depth=r/(rows-1);
+    const yBase=base + depth*H*.38;
+    const amp=(1-depth)*34 + 5;
+    const alpha=.09 + (1-depth)*.38;
+
+    ctx.beginPath();
+    for(let c=0;c<cols;c++){
+      const x=c/(cols-1)*W;
+      const nx=x/W;
+      const envelope=Math.sin(Math.PI*nx);
+      const wave =
+        Math.sin(nx*10.5 + t*6 + r*.17)*amp*.42 +
+        Math.sin(nx*23 - t*3.2 + r*.11)*amp*.18 +
+        Math.sin(nx*4.2 + r*.07)*amp*.32;
+      const y=yBase-wave*envelope;
+      if(c===0)ctx.moveTo(x,y); else ctx.lineTo(x,y);
+    }
+    ctx.strokeStyle=`rgba(220,225,230,${alpha})`;
+    ctx.lineWidth=.65;
+    ctx.stroke();
+
+    for(let c=0;c<cols;c+=3){
+      const x=c/(cols-1)*W;
+      const nx=x/W;
+      const envelope=Math.sin(Math.PI*nx);
+      const wave =
+        Math.sin(nx*10.5 + t*6 + r*.17)*amp*.42 +
+        Math.sin(nx*23 - t*3.2 + r*.11)*amp*.18 +
+        Math.sin(nx*4.2 + r*.07)*amp*.32;
+      const y=yBase-wave*envelope;
+      ctx.fillStyle=`rgba(235,238,240,${alpha*.75})`;
+      ctx.fillRect(x,y,1,1);
+    }
+  }
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+</body>
+</html>
