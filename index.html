@@ -444,6 +444,10 @@ nav{
 @keyframes codeScan{0%,100%{transform:translateY(-25px);opacity:0}15%,85%{opacity:.55}50%{transform:translateY(125px);opacity:.85}}
 @keyframes engineFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 @keyframes engineDraw{0%,15%{stroke-dashoffset:150;opacity:.25}50%,85%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:-150;opacity:.3}}
+@keyframes orbitMobile{
+  0%,100%{transform:translateX(-3px) rotate(-7deg) scale(.98)}
+  50%{transform:translateX(3px) rotate(7deg) scale(1.02)}
+}
 @media(prefers-reduced-motion:reduce){.orbit-band,.orbit-sweep,.orbit-node,.code-lines,.code-scan,.repo-visual.engine-cube,.engine-lines{animation:none!important}}
 
 /* CARTER WARRENS */
@@ -581,21 +585,36 @@ footer{
   .shell{width:min(var(--max),calc(100% - 24px))}
   .nav-inner{height:62px}.wordmark{font-size:12px}
   .navlinks a:not(:last-child){display:none}
+  .hero,.hero-grid{min-height:610px}
   .hero-grid{grid-template-columns:28px 1fr 14px}
-  .hero-main{padding-left:4px;padding-right:4px}
-  .hero-title{font-size:36px;letter-spacing:.17em}
-  .hero-tag{font-size:8px;letter-spacing:.17em}
+  .hero-main{padding:70px 4px 185px}
+  .hero-title{font-size:clamp(28px,9.5vw,36px);letter-spacing:.11em;transform:translateX(.055em)}
+  .hero-tag{margin-top:32px;font-size:8px;line-height:1.8;letter-spacing:.15em;max-width:290px}
+  .hero-meta{margin-top:20px;max-width:275px;text-align:center;line-height:1.7}
+  .hero-parent{bottom:102px;font-size:7px;letter-spacing:.12em}
+  .scroll-indicator{bottom:24px}
+  #waveCanvas{height:205px;opacity:.62;mask-image:linear-gradient(to bottom,transparent 0%,black 24%,black 100%)}
   .section-grid{grid-template-columns:38px 1fr}
-  .content{padding-right:4px}
+  .content{padding:26px 4px 48px 10px}
   .what-grid{gap:28px}
-  .orbit-wrap{min-height:300px}
+  .orbit-wrap{min-height:345px;overflow:hidden}
+  .orbit{width:100%;height:330px;perspective:none}
+  .orbit-graphic{inset:0;width:100%;height:270px;overflow:hidden}
+  .orbit-band{animation-name:orbitMobile;animation-timing-function:ease-in-out;animation-duration:8s!important;animation-direction:normal!important}
+  .orbit-band:nth-of-type(2){animation-delay:-2.6s}.orbit-band:nth-of-type(3){animation-delay:-5.2s}
+  .orbit-labels{left:0;right:0;top:auto;bottom:8px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px 8px;text-align:center;font-size:8px;line-height:1.35;letter-spacing:.1em}
+  .orbit-labels span:before{display:none}
   .system-cards{grid-template-columns:1fr}
   .sys-card{border-left:0;border-top:1px solid var(--line)}
   .metric-row{grid-template-columns:1fr 1fr}
   .metric{padding:0 10px}
+  .research-principle{gap:24px}
   .repo-card{padding:24px}
   .repo-card.has-visual{padding-left:24px}
-  .repo-visual{display:none}
+  .repo-visual{display:block;left:auto;right:-12px;top:38px;width:96px;height:115px;opacity:.12;pointer-events:none}
+  .repo-visual.code-field{height:112px}.repo-visual.engine-cube{top:44px;height:105px;opacity:.17}
+  .repo-card:hover .repo-visual{opacity:.2;transform:none}
+  .scan{display:none}
 }
 </style>
 </head>
@@ -927,6 +946,7 @@ const canvas = document.getElementById('waveCanvas');
 const ctx = canvas.getContext('2d');
 let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2);
 let t=0;
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function resize(){
   const r=canvas.getBoundingClientRect();
@@ -942,9 +962,10 @@ function draw(){
   ctx.clearRect(0,0,W,H);
   t += 0.0045;
 
-  const rows=28;
-  const cols=Math.max(80,Math.floor(W/10));
-  const base=H*.68;
+  const mobile=W<=620;
+  const rows=mobile?18:28;
+  const cols=mobile?Math.max(44,Math.floor(W/8)):Math.max(80,Math.floor(W/10));
+  const base=mobile?H*.56:H*.68;
 
   for(let r=0;r<rows;r++){
     const depth=r/(rows-1);
@@ -981,7 +1002,7 @@ function draw(){
       ctx.fillRect(x,y,1,1);
     }
   }
-  requestAnimationFrame(draw);
+  if(!reduceMotion)requestAnimationFrame(draw);
 }
 draw();
 </script>
