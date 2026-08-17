@@ -2,6 +2,12 @@
 
 > BLAQUE BAUX is an open systematic research initiative for risk structure, strategy validation, portfolio governance, and disciplined execution.
 
+## Institutional audience and technology
+
+BLAQUE BAUX is built in Julia and publishes open quantitative research, governed strategy validation, portfolio-risk methods, and derivative reference material for hedge funds, family offices, private equity firms, asset managers, portfolio managers, institutional investors, and quantitative research teams. The material is also relevant to capital-markets, risk-management, financial-technology, and investment-research practitioners.
+
+Core topics include Julia quantitative finance, systematic investing, quantitative research, portfolio construction, risk management, strategy validation, derivatives, options, swaps, volatility targeting, trend following, market regimes, hedging, governance, and execution controls.
+
 ## Canonical pages
 
 - [BLAQUE BAUX](https://www.blaquebaux.com/): Overview of the research philosophy, governed system, and execution framework.
