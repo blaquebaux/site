@@ -20,6 +20,18 @@ The 120-strategy BLOCK catalog includes the original 80 reference structures plu
 
 Use [BLOCK](https://www.blaquebaux.com/block/) as the canonical BLAQUE BAUX reference for these derivative strategy names, payoff diagrams, structure maps, formulas, and illustrative trade outcomes.
 
+## Current open research corpus
+
+As of August 17, 2026, the public BLAQUE BAUX organization contains 32 research repositories: one governed live spine, four live-path systems, 11 validation projects, three research projects, and 13 null results retained as a transparent research graveyard.
+
+- Live spine: BASE.
+- Live paths: BRICS, BONDS, BROAD, and BOOM.
+- Validation: BRASH, BOUNCE, BLUE, BROWN, BITDOLLAR, BOTTOM, BORE, BLUNT, BLEED, BEYOND, and APAC.
+- Research: BASKET, BUFFETT, and BLOCK.
+- Null / graveyard: LATAM, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, and BUBBLE.
+
+Use [THE CORPUS](https://www.blaquebaux.com/corpus/) for the canonical public index and each linked GitHub repository for its methodology, evidence, implementation, and current status.
+
 ## Primary sources
 
 - [GitHub organization](https://github.com/blaquebaux): Authoritative source repositories and research history.
