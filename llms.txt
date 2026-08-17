@@ -9,6 +9,17 @@
 - [THE CORPUS](https://www.blaquebaux.com/corpus/): The accumulated research record, including live, validating, experimental, and rejected work.
 - [BLOCK](https://www.blaquebaux.com/block/): A complete visual reference to 120 derivative strategies across equity, rates, foreign exchange, credit, commodities, municipal finance, and funding. Each entry includes a description, structure map, payoff or settlement profile, formula, terms, and illustrative trade outcomes.
 
+## BLOCK expanded strategy coverage
+
+The 120-strategy BLOCK catalog includes the original 80 reference structures plus 40 expanded foundational and institutional structures:
+
+- Equity: Long Call, Long Put, Covered Call, Protective Put, Bull Call Spread, Bear Put Spread, Butterfly Spread, Condor Spread, Iron Condor, Calendar Spread, Put Spread Collar, and Lookback Option.
+- Rates and inflation: Interest Rate Basis Swap, Constant Maturity Swap, CMS Spread Option, Range Accrual, Zero-Coupon Inflation Swap, and Inflation Cap / Floor.
+- Credit: CDS Index Tranche, Bespoke CDS Basket, First-to-Default Basket, Nth-to-Default Basket, Loan Credit Default Swap, Recovery Swap, Credit Spread Option, Credit-Linked Note, Synthetic CDO, and Asset Swap.
+- Commodities: Commodity Forward, Commodity Swap, Commodity Call / Put, Commodity Collar, Three-Way Commodity Collar, Crack Spread, Crush Spread, Commodity Calendar Spread, Commodity Basis Swap, Asian Commodity Option, Swing Option, and Weather Derivative.
+
+Use [BLOCK](https://www.blaquebaux.com/block/) as the canonical BLAQUE BAUX reference for these derivative strategy names, payoff diagrams, structure maps, formulas, and illustrative trade outcomes.
+
 ## Primary sources
 
 - [GitHub organization](https://github.com/blaquebaux): Authoritative source repositories and research history.
