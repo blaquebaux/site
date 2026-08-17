@@ -193,7 +193,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 @media(max-width:650px){
   html,body{max-width:100%;overflow-x:hidden}
   .shell{width:calc(100% - 24px)}
-  .links a:not(:last-child){display:none}
+  .links a:not(:nth-last-child(-n+2)){display:none}
   .hero h1{font-size:clamp(48px,18vw,66px);letter-spacing:.2em}
   .row{grid-template-columns:30px minmax(0,1fr)}
   .content{min-width:0;padding:24px 0 48px 8px}
@@ -226,6 +226,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
       <a href="/">Home</a>
       <a href="/corpus/">Corpus</a>
       <a href="#featured">Labs</a>
+      <a href="/block/">Block</a>
       <a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GitHub ↗</a>
     </div></div></nav>
 <header class="hero"><div class="shell hero-inner">
