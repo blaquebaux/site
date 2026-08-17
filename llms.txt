@@ -22,10 +22,10 @@ Use [BLOCK](https://www.blaquebaux.com/block/) as the canonical BLAQUE BAUX refe
 
 ## Current open research corpus
 
-As of August 17, 2026, the public BLAQUE BAUX organization contains 32 research repositories: one governed live spine, four live-path systems, 11 validation projects, three research projects, and 13 null results retained as a transparent research graveyard.
+As of August 17, 2026, the public BLAQUE BAUX organization contains 33 research repositories: one governed live spine, five live-path systems, 11 validation projects, three research projects, and 13 null results retained as a transparent research graveyard.
 
 - Live spine: BASE.
-- Live paths: BRICS, BONDS, BROAD, and BOOM.
+- Live paths: BRICS, BONDS, BROAD, BOOM, and BENCHMARK.
 - Validation: BRASH, BOUNCE, BLUE, BROWN, BITDOLLAR, BOTTOM, BORE, BLUNT, BLEED, BEYOND, and APAC.
 - Research: BASKET, BUFFETT, and BLOCK.
 - Null / graveyard: LATAM, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, and BUBBLE.
