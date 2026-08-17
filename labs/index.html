@@ -283,7 +283,20 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 001 / LIVE PATH</div><h3>BRICS</h3><div class="sub">Gulf-pocket diversifier / dollar regime</div>
+<div class="tag">LAB 001 / LIVE</div><h3>BASE</h3><div class="sub">The governed spine / risk structure</div>
+<div class="finding"><b>Repository finding:</b> the production spine combines an inverse-vol / equal-risk-contribution base with 12-month time-series trend, volatility-targets each sleeve, blends them, then applies a drawdown regime brake. Reported production profile: ~0.97 Sharpe, ~1.30 Sortino, ~−11% max drawdown.</div>
+<div class="control"><label><span>Base sleeve</span><span id="baseWv">55%</span></label><input id="baseW" max="90" min="10" type="range" value="55"/></div>
+<div class="control"><label><span>Regime brake</span><span id="brakeV">0%</span></label><input id="brake" max="60" min="0" type="range" value="0"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/base" target="_blank">Source ↗</a><a class="btn" href="https://github.com/blaquebaux/base/blob/main/docs/FINANCIAL_METHODS.md" target="_blank">Methods ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Spine / sleeve blend / governed scaling</div><div class="vizstate good"><i class="passdot"></i>LIVE</div>
+<div class="splitviz"><div class="statcol"><div class="statbar neutralbar" id="baseBar"></div><div class="statlabel">Risk structure<br/>base</div></div><div class="statcol"><div class="statbar goodbar" id="trendBar"></div><div class="statlabel">Time-series<br/>trend</div></div><div class="statcol"><div class="statbar neutralbar" id="grossBar"></div><div class="statlabel">Post-brake<br/>gross</div></div></div>
+<div class="legend"><span>diversification premium</span><span>daily governance</span><span>crisis convexity</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 002 / LIVE PATH</div><h3>BRICS</h3><div class="sub">Gulf-pocket diversifier / dollar regime</div>
 <div class="finding"><b>Repository finding:</b> the tradable BRICS core is the Gulf pocket—Saudi Arabia, UAE, and Qatar. The dollar-regime overlay improves reported Sharpe from +0.48 to +0.51 while reducing max drawdown from −35% to −20%. The governed driver remains paper / dry-run.</div>
 <div class="control"><label><span>Dollar regime</span><span id="bricsRv">Overlay on</span></label><input id="bricsR" max="1" min="0" type="range" value="1"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/brics" target="_blank">Source ↗</a></div>
@@ -295,7 +308,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 002 / LIVE PATH</div><h3>BONDS</h3><div class="sub">Bond–equity regime overlay</div>
+<div class="tag">LAB 003 / LIVE PATH</div><h3>BONDS</h3><div class="sub">Bond–equity regime overlay</div>
 <div class="finding"><b>Repository finding:</b> the bond–equity relationship is useful as a governed regime control rather than a static correlation claim. The live driver publishes a regime signal; repository validation reports a 41% reduction in full-cycle equity drawdown with the overlay active.</div>
 <div class="control"><label><span>Overlay state</span><span id="bondsOv">On</span></label><input id="bondsO" max="1" min="0" type="range" value="1"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bonds" target="_blank">Source ↗</a></div>
@@ -307,7 +320,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 003 / LIVE PATH</div><h3>BROAD</h3><div class="sub">Managed QQQ / trend and volatility target</div>
+<div class="tag">LAB 004 / LIVE PATH</div><h3>BROAD</h3><div class="sub">Managed QQQ / trend and volatility target</div>
 <div class="finding"><b>Repository finding:</b> the leverage wrapper was rejected; the keeper is managed QQQ exposure using trend and volatility targeting. The governed driver consumes the BONDS regime overlay as a marginal, secondary control and remains paper / dry-run.</div>
 <div class="control"><label><span>Risk target</span><span id="broadTv">10%</span></label><input id="broadT" max="18" min="5" type="range" value="10"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/broad" target="_blank">Source ↗</a></div>
@@ -319,7 +332,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 004 / LIVE PATH</div><h3>BOOM</h3><div class="sub">Capped mega-cap momentum</div>
+<div class="tag">LAB 005 / LIVE PATH</div><h3>BOOM</h3><div class="sub">Capped mega-cap momentum</div>
 <div class="finding"><b>Repository finding:</b> the keeper is a mega-cap blue-chip momentum tilt with volatility targeting and per-name caps. The BONDS overlay is wired but remains off because full-cycle validation showed no benefit. The driver remains paper / dry-run.</div>
 <div class="control"><label><span>Per-name cap</span><span id="boomCv">15%</span></label><input id="boomC" max="30" min="5" type="range" value="15"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/boom" target="_blank">Source ↗</a></div>
@@ -331,7 +344,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 005 / LIVE PATH</div><h3>BENCHMARK</h3><div class="sub">Market internals / risk-regime gate</div>
+<div class="tag">LAB 006 / LIVE PATH</div><h3>BENCHMARK</h3><div class="sub">Market internals / risk-regime gate</div>
 <div class="finding"><b>Repository finding:</b> market internals coincide with risk rather than lead it, but the composite still improves a cost-adjusted SPY gate. Repository validation reports Sharpe improving from +0.87 to +1.11. The emitted regime is honestly classified as volatility timing, not breadth alpha.</div>
 <div class="control"><label><span>Composite gate</span><span id="benchGv">On</span></label><input id="benchG" max="1" min="0" type="range" value="1"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/benchmark" target="_blank">Source ↗</a></div>
@@ -342,17 +355,6 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 </div>
 
 <div class="labpanel reveal">
-<div class="labcopy">
-<div class="tag">LAB 006 / LIVE</div><h3>BASE</h3><div class="sub">The governed spine / risk structure</div>
-<div class="finding"><b>Repository finding:</b> the production spine combines an inverse-vol / equal-risk-contribution base with 12-month time-series trend, volatility-targets each sleeve, blends them, then applies a drawdown regime brake. Reported production profile: ~0.97 Sharpe, ~1.30 Sortino, ~−11% max drawdown.</div>
-<div class="control"><label><span>Base sleeve</span><span id="baseWv">55%</span></label><input id="baseW" max="90" min="10" type="range" value="55"/></div>
-<div class="control"><label><span>Regime brake</span><span id="brakeV">0%</span></label><input id="brake" max="60" min="0" type="range" value="0"/></div>
-<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/base" target="_blank">Source ↗</a><a class="btn" href="https://github.com/blaquebaux/base/blob/main/docs/FINANCIAL_METHODS.md" target="_blank">Methods ↗</a></div>
-</div>
-<div class="viz"><div class="vizlabel">Spine / sleeve blend / governed scaling</div><div class="vizstate good"><i class="passdot"></i>LIVE</div>
-<div class="splitviz"><div class="statcol"><div class="statbar neutralbar" id="baseBar"></div><div class="statlabel">Risk structure<br/>base</div></div><div class="statcol"><div class="statbar goodbar" id="trendBar"></div><div class="statlabel">Time-series<br/>trend</div></div><div class="statcol"><div class="statbar neutralbar" id="grossBar"></div><div class="statlabel">Post-brake<br/>gross</div></div></div>
-<div class="legend"><span>diversification premium</span><span>daily governance</span><span>crisis convexity</span></div></div>
-</div><div class="labpanel reveal">
 <div class="labcopy">
 <div class="tag">LAB 007 / VALIDATION</div><h3>BRASH</h3><div class="sub">Growth vs ruin / governed aggression</div>
 <div class="finding"><b>Repository finding:</b> aggression is a distribution choice, not a Sharpe choice. The first pass reports that strong edge can tolerate 2–3× leverage, while weak or negative edge can move rapidly toward ruin; the keeper is fractional Kelly plus a volatility target.</div>
