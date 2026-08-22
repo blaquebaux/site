@@ -356,7 +356,43 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 007 / VALIDATION</div><h3>BRASH</h3><div class="sub">Growth vs ruin / governed aggression</div>
+<div class="tag">LAB 007 / LIVE DRIVER</div><h3>BULL</h3><div class="sub">Long growth / rate-regime overlay</div>
+<div class="finding"><b>Repository finding:</b> a naive equal-weight QQQ / VUG / XLK growth book becomes more ownable when the validated rate-regime overlay de-risks during rising rates. Reported Sharpe improves from +0.96 to +1.04, max drawdown contracts from −35% to −30%, and roughly 90% of the return is retained.</div>
+<div class="control"><label><span>Rate-regime overlay</span><span id="bullOv">On</span></label><input id="bullO" max="1" min="0" type="range" value="1"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bull" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Growth book / rising-rate risk control</div><div class="vizstate good"><i class="passdot"></i>LIVE DRIVER</div>
+<div class="bars"><div class="barwrap"><div class="bar neutralbar" id="bullSharpe"></div><div class="barlabel" id="bullSharpeL">Sharpe<br/>+1.04</div></div><div class="barwrap"><div class="bar goodbar" id="bullDD"></div><div class="barlabel" id="bullDDL">Max DD<br/>−30%</div></div><div class="barwrap"><div class="bar goodbar" id="bullKeep"></div><div class="barlabel" id="bullKeepL">Return kept<br/>90%</div></div></div>
+<div class="legend"><span>QQQ / VUG / XLK</span><span>rate regime on</span><span>governed long growth</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 008 / LIVE DRIVER</div><h3>BRIDGEWATER</h3><div class="sub">All-Seasons / diversified risk parity</div>
+<div class="finding"><b>Repository finding:</b> the replicable All-Weather book is a low-volatility risk-parity compounder, but it closely resembles the family spine with reported correlation of 0.96. Its bonds-regime overlay targets the right 2022 weakness yet fails the full-cycle bar because the book already self-diversifies, so the overlay remains off.</div>
+<div class="control"><label><span>Bonds-regime overlay</span><span id="bridgeOv">Off / governed default</span></label><input id="bridgeO" max="1" min="0" type="range" value="0"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bridgewater" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">All-Seasons / diversification versus overlay</div><div class="vizstate good"><i class="passdot"></i>LIVE DRIVER</div>
+<div class="splitviz"><div class="statcol"><div class="statbar goodbar" id="bridgeDiversify"></div><div class="statlabel">Self<br/>diversification</div></div><div class="statcol"><div class="statbar neutralbar" id="bridgeCorr"></div><div class="statlabel">BASE corr.<br/>0.96</div></div><div class="statcol"><div class="statbar neutralbar" id="bridgeOverlay"></div><div class="statlabel" id="bridgeOverlayL">Overlay<br/>off</div></div></div>
+<div class="legend"><span>static All-Seasons</span><span>2022 weakness mapped</span><span>overlay fails full-cycle bar</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 009 / LIVE DRIVER</div><h3>BLACKSTONE</h3><div class="sub">Listed private equity / market-regime gate</div>
+<div class="finding"><b>Repository finding:</b> listed private-equity managers behave as a levered pro-cyclical market and credit factor rather than a diversifier. BLACKSTONE is the first consumer sleeve to earn BENCHMARK's market-regime overlay: reported Sharpe improves from +0.76 to +0.95 and max drawdown contracts from −45% to −31%.</div>
+<div class="control"><label><span>Market-regime overlay</span><span id="blackOv">On</span></label><input id="blackO" max="1" min="0" type="range" value="1"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/blackstone" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Private-equity beta / governed drawdown gate</div><div class="vizstate good"><i class="passdot"></i>LIVE DRIVER</div>
+<div class="bars"><div class="barwrap"><div class="bar neutralbar" id="blackSharpe"></div><div class="barlabel" id="blackSharpeL">Sharpe<br/>+0.95</div></div><div class="barwrap"><div class="bar goodbar" id="blackDD"></div><div class="barlabel" id="blackDDL">Max DD<br/>−31%</div></div></div>
+<div class="legend"><span>BX / KKR / APO / CG / ARES</span><span>pro-cyclical factor</span><span>market regime on</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 010 / VALIDATION</div><h3>BRASH</h3><div class="sub">Growth vs ruin / governed aggression</div>
 <div class="finding"><b>Repository finding:</b> aggression is a distribution choice, not a Sharpe choice. The first pass reports that strong edge can tolerate 2–3× leverage, while weak or negative edge can move rapidly toward ruin; the keeper is fractional Kelly plus a volatility target.</div>
 <div class="control"><label><span>Gross leverage</span><span id="brLevV">1.5×</span></label><input id="brLev" max="600" min="50" type="range" value="150"/></div>
 <div class="control"><label><span>Edge quality</span><span id="brEdgeV">0.72</span></label><input id="brEdge" max="100" min="-30" type="range" value="72"/></div>
@@ -365,7 +401,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="viz"><div class="vizlabel">Conceptual growth / ruin frontier</div><div class="vizstate">[ VALIDATION ]</div><canvas id="brashCanvas"></canvas><div class="legend"><span>← conservative</span><span>leverage / edge interaction</span><span>aggressive →</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 008 / VALIDATION</div><h3>BOUNCE</h3><div class="sub">Regime-gated cross-sectional reversal</div>
+<div class="tag">LAB 011 / VALIDATION</div><h3>BOUNCE</h3><div class="sub">Regime-gated cross-sectional reversal</div>
 <div class="finding"><b>Repository finding:</b> fast reversal dies on turnover. The keeper is slow 10-day cross-sectional reversal, gated to choppy regimes; the live driver uses SPY efficiency ratio &lt; 0.35 and is dollar-neutral.</div>
 <div class="control"><label><span>Efficiency ratio</span><span id="boERV">0.28</span></label><input id="boER" max="80" min="5" type="range" value="28"/></div>
 <div class="control"><label><span>Reversal horizon</span><span id="boHV">10d</span></label><input id="boH" max="20" min="1" type="range" value="10"/></div>
@@ -374,7 +410,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="viz"><div class="vizlabel">Chop gate / relative losers vs winners</div><div class="vizstate" id="bounceState">[ ACTIVE / CHOP ]</div><canvas id="bounceCanvas"></canvas><div class="legend"><span>10d losers / long</span><span>β ≈ 0</span><span>10d winners / short</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 009 / VALIDATION PAIR</div><h3>BLUE / BROWN</h3><div class="sub">Camp rotation / style regime</div>
+<div class="tag">LAB 012 / VALIDATION PAIR</div><h3>BLUE / BROWN</h3><div class="sub">Camp rotation / style regime</div>
 <div class="finding"><b>Repository finding:</b> the static Brown−Blue spread is not alpha; the keeper is rotation. The first pass reports spread trend at +0.73 Sharpe and camp rotation at +0.85 versus +0.72 hold.</div>
 <div class="control"><label><span>Regime tilt</span><span id="bbV">Growth</span></label><input id="bb" max="100" min="-100" type="range" value="-40"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/blue" target="_blank">Blue ↗</a><a class="btn" href="https://github.com/blaquebaux/brown" target="_blank">Brown ↗</a></div>
@@ -384,7 +420,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>Blue / growth</span><span id="bbRegime">Regime: growth</span><span>Brown / inflation-value</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 010 / VALIDATION</div><h3>BITDOLLAR</h3><div class="sub">Governed crypto trend</div>
+<div class="tag">LAB 013 / VALIDATION</div><h3>BITDOLLAR</h3><div class="sub">Governed crypto trend</div>
 <div class="finding"><b>Repository finding:</b> the dollar-axis thesis was rejected, but trend plus volatility targeting survived. Real BTC/USD + ETH/USD validation reports +0.72 Sharpe / −12% max drawdown versus buy-and-hold +0.29 / −76%.</div>
 <div class="control"><label><span>View</span><span id="bdViewV">Max drawdown</span></label><input id="bdView" max="1" min="0" type="range" value="0"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bitdollar" target="_blank">Source ↗</a><a class="btn" href="https://github.com/blaquebaux/bitdollar/tree/main/research" target="_blank">Validation ↗</a></div>
@@ -394,7 +430,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>Buy &amp; hold</span><span id="bdMetric">Max drawdown</span><span>Trend + vol target</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 011 / VALIDATION</div><h3>BROWN</h3><div class="sub">Real-asset camp / macro rotation</div>
+<div class="tag">LAB 014 / VALIDATION</div><h3>BROWN</h3><div class="sub">Real-asset camp / macro rotation</div>
 <div class="finding"><b>Repository finding:</b> Brown and Blue are distinct but the static spread is a disguised value/rate bet, not alpha. The keeper is rotation: trend the spread or hold the stronger 126-day camp. The research records a −35% spread move in the 2020–21 growth regime and +40% in the 2022 inflation regime.</div>
 <div class="control"><label><span>Macro regime</span><span id="brownRv">Growth</span></label><input id="brownR" max="100" min="-100" type="range" value="-55"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/brown" target="_blank">Source ↗</a><a class="btn" href="https://github.com/blaquebaux/blue" target="_blank">Paired Blue ↗</a></div>
@@ -404,7 +440,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>Blue stronger</span><span>static spread rejected</span><span>Brown stronger</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 012 / VALIDATION</div><h3>BOTTOM</h3><div class="sub">Drawdown bounce / liquidity reality</div>
+<div class="tag">LAB 015 / VALIDATION</div><h3>BOTTOM</h3><div class="sub">Drawdown bounce / liquidity reality</div>
 <div class="finding"><b>Repository finding:</b> the cap-ladder thesis was rejected. Large-cap drawdown bounce survives better after cost: +0.52 net versus +0.45 for small caps. The smaller-cap ladder also shows lower standalone Sharpe and deeper drawdowns; the keeper moved back up to quality large caps.</div>
 <div class="control"><label><span>View</span><span id="bottomViewV">Bounce after cost</span></label><input id="bottomView" max="1" min="0" type="range" value="0"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bottom" target="_blank">Source ↗</a></div>
@@ -414,7 +450,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>cleaner / liquid</span><span>cost + survivorship matter</span><span>noisy / illiquid</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 013 / VALIDATION</div><h3>BORE</h3><div class="sub">True market neutrality / beta hedge</div>
+<div class="tag">LAB 016 / VALIDATION</div><h3>BORE</h3><div class="sub">True market neutrality / beta hedge</div>
 <div class="finding"><b>Repository finding:</b> apparent beta-neutral momentum still carried about +0.20 residual beta. The hedged prototype reduces beta to −0.04 and leaves a more modest but genuine stream: Sharpe +0.34 and alpha +3.5%/yr. True neutrality costs the beta tailwind.</div>
 <div class="control"><label><span>Hedge completion</span><span id="boreHv">100%</span></label><input id="boreH" max="100" min="0" type="range" value="100"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bore" target="_blank">Source ↗</a></div>
@@ -424,7 +460,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>unhedged +0.20</span><span id="boreAlpha">alpha +3.5% / yr at full hedge</span><span>target ≈ 0</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 014 / VALIDATION</div><h3>BLUNT</h3><div class="sub">Crude → refiner / one-day follow-through</div>
+<div class="tag">LAB 017 / VALIDATION</div><h3>BLUNT</h3><div class="sub">Crude → refiner / one-day follow-through</div>
 <div class="finding"><b>Repository finding:</b> five of six tactical ideas failed or were only marginal. The survivor is crude leading refiner equities by one day: crude is the signal, CRAK is the traded asset, volatility-targeted to 10%. The prototype reports net Sharpe ~1.06 at 3 bp/side.</div>
 <div class="control"><label><span>Crude shock</span><span id="bluntSv">+1.2%</span></label><input id="bluntS" max="300" min="-300" type="range" value="120"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/blunt" target="_blank">Source ↗</a></div>
@@ -433,7 +469,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>t0 crude signal</span><span>1-day lag</span><span>t+1 refiner exposure</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 015 / VALIDATION</div><h3>BLEED</h3><div class="sub">Regime-spanning crisis insurance</div>
+<div class="tag">LAB 018 / VALIDATION</div><h3>BLEED</h3><div class="sub">Regime-spanning crisis insurance</div>
 <div class="finding"><b>Repository finding:</b> no single hedge covers both deflation and inflation crises. The keeper is a diversified basket: 40% TLT / 30% GLD / 20% DBC / 10% VIXY. Validation passes on insurance criteria: on SPY's worst-5% days the sleeve returns +79% while SPY returns −82%, with corr-SPY −0.29.</div>
 <div class="control"><label><span>Crisis regime</span><span id="bleedRv">Sharp / deflation</span></label><input id="bleedR" max="1" min="0" type="range" value="0"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bleed" target="_blank">Source ↗</a></div>
@@ -443,7 +479,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>deflation hedge</span><span>anti-correlated ingredients</span><span>inflation hedge</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 016 / VALIDATION</div><h3>BEYOND</h3><div class="sub">Reversal → momentum horizon map</div>
+<div class="tag">LAB 019 / VALIDATION</div><h3>BEYOND</h3><div class="sub">Reversal → momentum horizon map</div>
 <div class="finding"><b>Repository finding:</b> the cross-section flips from reversal to momentum around 20 days. Reversal dominates at ≤10d; momentum appears at ≥20d. The keeper blends 20/40/60-day growth, beta-neutral, with reported net Sharpe +0.50; acceleration itself was rejected as a reversal signal.</div>
 <div class="control"><label><span>Horizon</span><span id="beyondHv">20d</span></label><input id="beyondH" max="80" min="2" type="range" value="20"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/beyond" target="_blank">Source ↗</a></div>
@@ -452,7 +488,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span>reversal ≤10d</span><span id="beyondMode">transition / 20d</span><span>momentum ≥20d</span></div></div>
 </div><div class="labpanel reveal">
 <div class="labcopy">
-<div class="tag">LAB 017 / VALIDATION</div><h3>APAC</h3><div class="sub">Cross-country relative strength / FX discipline</div>
+<div class="tag">LAB 020 / VALIDATION</div><h3>APAC</h3><div class="sub">Cross-country relative strength / FX discipline</div>
 <div class="finding"><b>Repository finding:</b> directional APAC is mostly US beta and contains only ~2.5 effective bets across 12 ETFs. But APAC is the one region with a positive country-rotation pulse (+0.30 long-short). The research also records severe FX drag in Japan: EWJ +138% versus currency-hedged DXJ +367%.</div>
 <div class="control"><label><span>View</span><span id="apacVv">Regional rotation</span></label><input id="apacV" max="1" min="0" type="range" value="0"/></div>
 <div class="buttons"><a class="btn" href="https://github.com/blaquebaux/apac" target="_blank">Source ↗</a></div>
@@ -558,6 +594,11 @@ function setBonds(){let on=+bondsO.value===1;bondsOv.textContent=on?"On":"Off";b
 function setBroad(){let t=+broadT.value;broadTv.textContent=t+"%";broadTrend.style.height=(42+t*1.8)+"%";broadVol.style.height=(88-t*2)+"%";broadRegime.style.height="28%";setBarSemantic(broadTrend,"neutral");setBarSemantic(broadVol,"good");setBarSemantic(broadRegime,"neutral")}broadT.oninput=setBroad;setBroad();
 function setBoom(){let c=+boomC.value;boomCv.textContent=c+"%";boomRaw.style.height="88%";boomCapped.style.height=(30+c*1.6)+"%";boomCappedL.innerHTML=`Capped<br>${c}% / name`;setBarSemantic(boomRaw,"bad");setBarSemantic(boomCapped,"good")}boomC.oninput=setBoom;setBoom();
 function setBenchmark(){let on=+benchG.value===1;benchGv.textContent=on?"On":"Off";benchRaw.style.height="58%";benchGate.style.height=on?"82%":"58%";benchGateL.innerHTML=on?"Gated<br>+1.11":"Ungated<br>+0.87";setBarSemantic(benchRaw,"neutral");setBarSemantic(benchGate,on?"good":"neutral")}benchG.oninput=setBenchmark;setBenchmark();
+
+/* NEW LIVE DRIVERS */
+function setBull(){let on=+bullO.value===1;bullOv.textContent=on?"On":"Off";bullSharpe.style.height=on?"82%":"74%";bullDD.style.height=on?"52%":"68%";bullKeep.style.height=on?"90%":"100%";bullSharpeL.innerHTML=`Sharpe<br>${on?"+1.04":"+0.96"}`;bullDDL.innerHTML=`Max DD<br>${on?"−30%":"−35%"}`;bullKeepL.innerHTML=`Return kept<br>${on?"90%":"100%"}`;setBarSemantic(bullSharpe,on?"good":"neutral");setBarSemantic(bullDD,on?"good":"bad");setBarSemantic(bullKeep,"good")}bullO.oninput=setBull;setBull();
+function setBridgewater(){let on=+bridgeO.value===1;bridgeOv.textContent=on?"On / exploratory":"Off / governed default";bridgeDiversify.style.height="86%";bridgeCorr.style.height="92%";bridgeOverlay.style.height=on?"66%":"22%";bridgeOverlayL.innerHTML=on?"Overlay<br>exploratory":"Overlay<br>off";setBarSemantic(bridgeDiversify,"good");setBarSemantic(bridgeCorr,"neutral");setBarSemantic(bridgeOverlay,on?"bad":"neutral")}bridgeO.oninput=setBridgewater;setBridgewater();
+function setBlackstone(){let on=+blackO.value===1;blackOv.textContent=on?"On":"Off";blackSharpe.style.height=on?"80%":"63%";blackDD.style.height=on?"54%":"88%";blackSharpeL.innerHTML=`Sharpe<br>${on?"+0.95":"+0.76"}`;blackDDL.innerHTML=`Max DD<br>${on?"−31%":"−45%"}`;setBarSemantic(blackSharpe,on?"good":"neutral");setBarSemantic(blackDD,on?"good":"bad")}blackO.oninput=setBlackstone;setBlackstone();
 
 
 addEventListener("resize",()=>{drawBrash();drawBounce();drawBlunt();drawBeyond()});
