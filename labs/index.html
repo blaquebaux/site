@@ -232,10 +232,10 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <header class="hero"><div class="shell hero-inner">
 <div class="micro">Interactive Research / Active Corpus</div><h1>LABS</h1>
 <p>Only repositories designated LIVE, LIVE PATH, or VALIDATION enter the lab. Each surface translates active research into an explorable model without replacing the underlying methodology or source.</p>
-<div class="statusline"><span><i class="dot"></i>1 live spine</span><span><i class="dot"></i>5 live paths</span><span>11 validation repositories</span><span>17 active repositories</span></div>
+<div class="statusline"><span><i class="dot"></i>1 live spine</span><span><i class="dot"></i>5 live paths</span><span><i class="dot"></i>3 live drivers</span><span>11 validation repositories</span><span>20 active repositories</span></div>
 </div></header>
 <section class="section" id="active"><div class="shell row"><div class="idx">01</div><div class="content">
-<div class="intro reveal"><div><div class="micro">Eligibility rule</div><h2>ONLY ACTIVE WORK ENTERS THE LAB.</h2></div><div><p>LABS is the interactive surface of the current BLAQUE BAUX research program. The governed spine, LIVE PATH, and VALIDATION repositories are visible here; Research and Null work remains in the Corpus rather than being dressed up as an active model.</p><div class="counter">Current organization state / Aug 17 2026</div></div></div>
+<div class="intro reveal"><div><div class="micro">Eligibility rule</div><h2>ONLY ACTIVE WORK ENTERS THE LAB.</h2></div><div><p>LABS is the interactive surface of the current BLAQUE BAUX research program. The governed spine, LIVE PATH, LIVE DRIVER, and VALIDATION repositories are visible here; Research, Concept, and Null work remains in the Corpus rather than being dressed up as an active model.</p><div class="counter">Current organization state / Aug 22 2026</div></div></div>
 <div class="active-grid">
 <div class="catalog reveal" id="catalog"></div>
 <aside class="detail reveal" id="detail">
@@ -254,7 +254,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 </div>
 <div>
 <span class="guide-kicker">STATUS MATTERS</span>
-<p><span class="good">LIVE</span> means the work has graduated into the governed spine or live path. <span class="neutral">VALIDATION</span> means the idea has survived enough research to be studied here, but has not earned the production bar.</p>
+<p><span class="good">LIVE</span> means the work has graduated into the governed spine, live path, or live driver. <span class="neutral">VALIDATION</span> means the idea has survived enough research to be studied here, but has not earned the production bar.</p>
 </div>
 </div>
 <!-- BRASH -->
@@ -471,6 +471,9 @@ const repos=[
 {name:"BROAD",status:"LIVE PATH",desc:"Managed QQQ trend and volatility-target keeper.",role:"Broad thematic exposure",treatment:"Trend + volatility target + regime input",url:"https://github.com/blaquebaux/broad"},
 {name:"BOOM",status:"LIVE PATH",desc:"Mega-cap momentum tilt with volatility targeting and per-name caps.",role:"Capped mega-cap momentum",treatment:"Momentum, cap, and volatility-control surface",url:"https://github.com/blaquebaux/boom"},
 {name:"BENCHMARK",status:"LIVE PATH",desc:"Market internals as a governed risk-regime gate and volatility-timing emitter.",role:"Market-regime control",treatment:"Internals composite + SPY regime gate",url:"https://github.com/blaquebaux/benchmark"},
+{name:"BULL",status:"LIVE DRIVER",desc:"Governed long-growth book with a validated rate-regime overlay.",role:"Long-growth / rate regime",treatment:"Growth basket + rising-rate risk control",url:"https://github.com/blaquebaux/bull"},
+{name:"BRIDGEWATER",status:"LIVE DRIVER",desc:"Static All-Seasons risk-parity book with its bonds-regime overlay held off.",role:"All-weather / risk parity",treatment:"Diversified allocation + regime comparison",url:"https://github.com/blaquebaux/bridgewater"},
+{name:"BLACKSTONE",status:"LIVE DRIVER",desc:"Listed private-equity factor book with the market-regime overlay on.",role:"Private-equity factor / regime gate",treatment:"PE beta + governed drawdown control",url:"https://github.com/blaquebaux/blackstone"},
 {name:"BROWN",status:"VALIDATION",desc:"Brown camp-rotation sleeve — the Brown / Blue pair.",role:"Style / sector rotation",treatment:"Regime map + Brown/Blue rotation",url:"https://github.com/blaquebaux/brown"},
 {name:"BRASH",status:"VALIDATION",desc:"Higher-volatility crypto trend sleeve.",role:"Governed aggression",treatment:"Growth-vs-ruin / leverage frontier",url:"https://github.com/blaquebaux/brash"},
 {name:"BOUNCE",status:"VALIDATION",desc:"Conditional diversifier sleeve with approximately zero beta.",role:"Cross-sectional reversal",treatment:"Chop gate + long/short reversal",url:"https://github.com/blaquebaux/bounce"},

@@ -28,13 +28,15 @@ Use [BLOCK](https://www.blaquebaux.com/block/) as the canonical BLAQUE BAUX refe
 
 ## Current open research corpus
 
-As of August 17, 2026, the public BLAQUE BAUX organization contains 33 research repositories: one governed live spine, five live-path systems, 11 validation projects, three research projects, and 13 null results retained as a transparent research graveyard.
+As of August 22, 2026, the public BLAQUE BAUX organization contains 47 research repositories: one governed live spine, five live-path systems, three live drivers, 11 validation projects, six research projects, six concepts, and 15 null results retained as a transparent research graveyard.
 
 - Live spine: BASE.
 - Live paths: BRICS, BONDS, BROAD, BOOM, and BENCHMARK.
+- Live drivers: BULL, BRIDGEWATER, and BLACKSTONE.
 - Validation: BRASH, BOUNCE, BLUE, BROWN, BITDOLLAR, BOTTOM, BORE, BLUNT, BLEED, BEYOND, and APAC.
-- Research: BASKET, BUFFETT, and BLOCK.
-- Null / graveyard: LATAM, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, and BUBBLE.
+- Research: BEAR, BALANCED, BOGLE, BUFFETT, BASKET, and BLOCK.
+- Concepts: BELT-TIGHTENERS, BATTERED, BUREAUCRATS, BETS, BIGBROTHER, and BUYOUTS.
+- Null / graveyard: LATAM, BENEFACTORS, BIND, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, and BUBBLE.
 
 Use [THE CORPUS](https://www.blaquebaux.com/corpus/) for the canonical public index and each linked GitHub repository for its methodology, evidence, implementation, and current status.
 
