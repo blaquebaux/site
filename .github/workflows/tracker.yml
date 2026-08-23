@@ -1,0 +1,39 @@
+name: Update sleeve tracker
+
+# Daily end-of-day refresh of tracker/performance.json (simulated YTD sleeve tracks vs S&P/Dow + HF proxies).
+# Requires two repo secrets: ALPACA_KEY_ID and ALPACA_SECRET_KEY (read-only market-data keys).
+on:
+  schedule:
+    - cron: '30 22 * * 1-5'   # 22:30 UTC on weekdays — well after the US close
+  workflow_dispatch:           # allow manual runs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tracker-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --quiet numpy
+      - name: Compute tracker data
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: |
+          if [ -z "$ALPACA_KEY_ID" ]; then echo "::warning::ALPACA secrets not set — skipping"; exit 0; fi
+          python tracker/compute.py
+      - name: Commit if changed
+        run: |
+          git config user.name  "blaque-baux-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add tracker/performance.json
+          git diff --cached --quiet || git commit -m "tracker: daily data refresh [skip ci]"
+          git push

@@ -16,6 +16,7 @@ Core topics include Julia quantitative finance, systematic investing, quantitati
 - [THE CORPUS](https://www.blaquebaux.com/corpus/): The accumulated research record, including live, validating, experimental, and rejected work.
 - [BLOCK](https://www.blaquebaux.com/block/): A complete visual reference to 120 derivative strategies across equity, rates, foreign exchange, credit, commodities, municipal finance, and funding. Each entry includes a description, structure map, payoff or settlement profile, formula, terms, and illustrative trade outcomes.
 - [WHERE THE FEE LIVES](https://www.blaquebaux.com/block/derivatives-honesty.html): The BLOCK research whitepaper — ten catalogued derivatives each modified to death, distilled into one law: a modification never conjures return, it relocates risk onto an axis the buyer isn't watching (the tail, an unobservable mark, or the funding leg). Includes the three-axis taxonomy, a per-structure scorecard, and the honest exceptions (Asian option, average-rate forward, crack spread, weather derivative).
+- [TRACKER](https://www.blaquebaux.com/tracker/): Interactive year-to-date performance tracker for the capstone sleeves — pick a sleeve and see its simulated $100,000 track against the S&P 500, the Dow, and optional hedge-fund proxies (QAI, DBMF, Berkshire). Simulated/hypothetical (each sleeve's rule run on real market data, gross of costs), refreshed end-of-day. Not a live track record, not investment advice.
 
 ## BLOCK expanded strategy coverage
 
