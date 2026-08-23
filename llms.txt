@@ -36,7 +36,7 @@ As of August 23, 2026, the public BLAQUE BAUX organization contains 60 research 
 - Validation: BRASH, BOUNCE, BLUE, BROWN, BITDOLLAR, BOTTOM, BORE, BLUNT, BLEED, BEYOND, and APAC.
 - Research: BEAR, BALANCED, BOGLE, BUFFETT, BASKET, and BLOCK.
 - Concepts: BELT-TIGHTENERS, BATTERED, BUREAUCRATS, BETS, BIGBROTHER, and BUYOUTS.
-- Capstones (meta-allocators over the family keepers; seven wired to governed live rails, two research-only controls): BREAKTHROUGH, BRILLIANT, BOSSY, BELIEVER, BEMUSED, BRIGADE, BOUNDLESS, BASTION, and BALSAMIC.
+- Capstones (meta-sleeves — themselves family sleeves, one layer up: the allocation layer that sits atop the strategy sleeves and allocates over their keepers; seven wired to governed live rails, two research-only controls): BREAKTHROUGH, BRILLIANT, BOSSY, BELIEVER, BEMUSED, BRIGADE, BOUNDLESS, BASTION, and BALSAMIC.
 - Null / graveyard: LATAM, BENEFACTORS, BIND, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, BUBBLE, BRACE, BOUNTY, BITE, and BRIDGE.
 
 Use [THE CORPUS](https://www.blaquebaux.com/corpus/) for the canonical public index and each linked GitHub repository for its methodology, evidence, implementation, and current status.
