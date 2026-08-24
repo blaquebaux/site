@@ -2,86 +2,75 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Where the Fee Lives</title>
+<title>Where the Fee Lives | BLAQUE BAUX BLOCK</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A BLAQUE BAUX BLOCK study of where derivative modification fees live: the tail, an unobservable mark, or the funding leg.">
+<link rel="canonical" href="https://www.blaquebaux.com/block/derivatives-honesty.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap">
 <style>
 :root{
-  --paper:#F4F5F2; --surface:#FFFFFF; --ink:#17191C; --muted:#565C62; --faint:#8A9096;
-  --line:#E1E3DE; --line-soft:#EBEDE9;
-  --tail:#872230; --tail-soft:#F0E3E2;        /* oxblood — risk hidden in the TAIL */
-  --mark:#33597C; --mark-soft:#E4EBF1;         /* slate — risk hidden in an unobservable MARK */
-  --fund:#8A5E22; --fund-soft:#F1E9DB;         /* ochre — risk hidden in the FUNDING leg / basis */
-  --kept:#2E6A4E; --kept-soft:#E2EEE7;         /* green — the honest exception */
-  --shadow:0 1px 2px rgba(20,22,25,.05), 0 10px 34px rgba(20,22,25,.06);
-  --serif:'Spectral','Iowan Old Style',Palatino,Georgia,serif;
-  --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
-  --measure:66ch;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#131518; --surface:#191C20; --ink:#E8E9E4; --muted:#A2A8AD; --faint:#767C82;
-  --line:#2A2E33; --line-soft:#22262B;
-  --tail:#D77A83; --tail-soft:#2A1D20;
-  --mark:#86AED4; --mark-soft:#1A2430;
-  --fund:#D3A65F; --fund-soft:#2A2216;
-  --kept:#5FA982; --kept-soft:#182720;
-  --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 38px rgba(0,0,0,.36);
-}}
-:root[data-theme="dark"]{
-  --paper:#131518; --surface:#191C20; --ink:#E8E9E4; --muted:#A2A8AD; --faint:#767C82;
-  --line:#2A2E33; --line-soft:#22262B;
-  --tail:#D77A83; --tail-soft:#2A1D20;
-  --mark:#86AED4; --mark-soft:#1A2430;
-  --fund:#D3A65F; --fund-soft:#2A2216;
-  --kept:#5FA982; --kept-soft:#182720;
-  --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 38px rgba(0,0,0,.36);
+  --paper:#e6d98b;--surface:#eee4a8;--ink:#111315;--muted:#5d5a4d;--faint:#817b61;
+  --line:#c4b96f;--line-soft:#d1c783;--line-dark:#938a4e;
+  --tail:#b63d4b;--tail-soft:rgba(182,61,75,.08);--mark:#315d78;--mark-soft:rgba(49,93,120,.08);
+  --fund:#9a6a18;--fund-soft:rgba(154,106,24,.08);--kept:#087a46;--kept-soft:rgba(8,122,70,.08);
+  --mono:'IBM Plex Mono',monospace;--measure:72ch;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{
   margin:0; background:var(--paper); color:var(--ink);
-  font-family:var(--serif); font-size:18px; line-height:1.62;
-  font-feature-settings:"onum" 1,"kern" 1;
+  font-family:'Space Grotesk',sans-serif; font-size:16px; line-height:1.72;
+  -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:820px; margin:0 auto; padding:clamp(28px,5vw,72px) clamp(20px,5vw,40px)}
+.shell{width:min(1500px,calc(100% - 44px));margin:auto}
+.site-nav{position:sticky;top:0;z-index:40;background:rgba(230,217,139,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line-dark)}
+.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+.brand{color:inherit;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.32em}
+.site-links{display:flex;gap:30px;font:9px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#51575c}
+.site-links a{color:inherit;text-decoration:none}.site-links a:hover{color:#000}
+.wrap{width:min(1120px,calc(100% - 44px)); margin:0 auto; padding:34px 0 72px}
 .col{max-width:var(--measure)}
-h1,h2,h3{text-wrap:balance; line-height:1.14; font-weight:600; letter-spacing:-.01em}
+h1,h2,h3{text-wrap:balance; line-height:1.08; font-weight:500; letter-spacing:.01em}
 a{color:var(--tail); text-underline-offset:2px}
-.eyebrow{font-family:var(--mono); font-size:12px; font-weight:500; letter-spacing:.16em;
+.back{display:inline-block;margin-bottom:30px;font:9px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.eyebrow{font-family:var(--mono); font-size:9px; font-weight:500; letter-spacing:.19em;
   text-transform:uppercase; color:var(--muted)}
 .mono{font-family:var(--mono)}
 .num{font-variant-numeric:tabular-nums}
 
 /* masthead */
-.mast{border-bottom:2px solid var(--ink); padding-bottom:30px; margin-bottom:38px}
-.mast h1{font-size:clamp(40px,8vw,72px); font-weight:700; margin:.28em 0 .32em;
-  letter-spacing:-.025em; line-height:1.02}
-.stand{font-size:clamp(19px,2.4vw,23px); color:var(--muted); font-style:italic; max-width:34ch}
+.mast{border:1px solid var(--line-dark); padding:clamp(30px,6vw,70px); margin-bottom:50px;position:relative;overflow:hidden}
+.mast:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.025) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}
+.mast>*{position:relative}
+.mast h1{font-size:clamp(52px,9vw,112px); font-weight:500; margin:.28em 0 .3em;
+  letter-spacing:.035em; line-height:.9;text-transform:uppercase;max-width:9ch}
+.stand{font:300 clamp(12px,1.6vw,15px)/1.8 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);max-width:62ch}
 .meta{display:flex; flex-wrap:wrap; gap:8px 22px; margin-top:26px;
-  font-family:var(--mono); font-size:12.5px; color:var(--faint); letter-spacing:.03em}
+  font-family:var(--mono); font-size:9px; color:var(--faint); letter-spacing:.09em;text-transform:uppercase}
 .meta b{color:var(--ink); font-weight:500}
 
-section{margin:44px 0}
-h2{font-size:clamp(24px,3.4vw,31px); margin:0 0 .5em}
+section{margin:58px 0}
+h2{font-size:clamp(28px,4vw,48px); margin:0 0 .65em;text-transform:uppercase;letter-spacing:.04em}
 h2 .n{font-family:var(--mono); font-size:.5em; font-weight:500; color:var(--tail);
   vertical-align:middle; margin-right:.9em; letter-spacing:.05em}
 p{margin:0 0 1em; max-width:var(--measure)}
-.lead{font-size:20px}
+.lead{font-size:clamp(18px,2.2vw,24px);line-height:1.55}
 strong{font-weight:600}
-em.term{font-style:italic; color:var(--ink)}
+em.term{font-style:normal; color:var(--ink)}
 
 /* the law — pull statement */
-.law{border-left:3px solid var(--tail); background:var(--surface); box-shadow:var(--shadow);
-  border-radius:2px; padding:26px 30px; margin:34px 0; max-width:var(--measure)}
-.law p{font-size:22px; line-height:1.4; margin:0}
+.law{border:1px solid var(--line-dark);border-left:4px solid var(--tail);background:rgba(255,255,255,.2);
+  padding:28px 32px; margin:40px 0; max-width:var(--measure)}
+.law p{font-size:clamp(18px,2.2vw,23px); line-height:1.5; margin:0}
 .law .k{color:var(--tail); font-weight:600}
 
 /* three-axis map */
 .axes{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin:26px 0}
 .axis{background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--ax);
-  border-radius:3px; padding:18px 18px 16px; box-shadow:var(--shadow)}
+  padding:20px 20px 18px}
 .axis.tail{--ax:var(--tail)} .axis.mark{--ax:var(--mark)} .axis.fund{--ax:var(--fund)} .axis.kept{--ax:var(--kept)}
 .axis h3{font-size:15px; margin:0 0 3px; font-family:var(--mono); font-weight:500;
   letter-spacing:.06em; text-transform:uppercase; color:var(--ax)}
@@ -102,14 +91,14 @@ em.term{font-style:italic; color:var(--ink)}
 .var .body{margin:.35em 0 0; font-size:16px; color:var(--muted); line-height:1.5; max-width:60ch}
 .var .body b{color:var(--ink); font-weight:600}
 .tag{font-family:var(--mono); font-size:10.5px; font-weight:500; letter-spacing:.06em;
-  text-transform:uppercase; padding:2px 8px; border-radius:100px; white-space:nowrap}
+  text-transform:uppercase; padding:2px 8px; border:1px solid currentColor;white-space:nowrap}
 .tag.tail{background:var(--tail-soft); color:var(--tail)}
 .tag.mark{background:var(--mark-soft); color:var(--mark)}
 .tag.fund{background:var(--fund-soft); color:var(--fund)}
 .tag.kept{background:var(--kept-soft); color:var(--kept)}
 
 /* scorecard */
-.scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--line); border-radius:3px}
+.scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--line-dark)}
 table{border-collapse:collapse; width:100%; font-size:14px; background:var(--surface)}
 th,td{text-align:left; padding:9px 14px; border-bottom:1px solid var(--line-soft); white-space:nowrap}
 thead th{font-family:var(--mono); font-size:11px; letter-spacing:.05em; text-transform:uppercase;
@@ -120,7 +109,7 @@ td:first-child{font-family:var(--mono); color:var(--tail); font-weight:500}
 .figure{font-family:var(--mono); font-weight:500; color:var(--ink)}
 
 /* exceptions */
-.honest{background:var(--kept-soft); border:1px solid var(--kept); border-radius:3px;
+.honest{background:var(--kept-soft); border:1px solid var(--kept);
   padding:22px 26px; margin:26px 0; max-width:var(--measure)}
 .honest h3{color:var(--kept); font-family:var(--mono); font-size:13px; letter-spacing:.08em;
   text-transform:uppercase; margin:0 0 10px}
@@ -128,23 +117,26 @@ td:first-child{font-family:var(--mono); color:var(--tail); font-weight:500}
 .honest b{color:var(--ink)}
 
 .rule{text-align:center; margin:52px 0 40px}
-.rule .k{font-size:clamp(22px,3.6vw,30px); font-weight:700; font-style:italic;
-  letter-spacing:-.01em; max-width:22ch; margin:0 auto; line-height:1.28; display:block}
+.rule .k{font-size:clamp(24px,4vw,40px); font-weight:500;font-style:normal;text-transform:uppercase;
+  letter-spacing:.03em; max-width:28ch; margin:14px auto 0; line-height:1.2; display:block}
 
-footer{border-top:2px solid var(--ink); margin-top:52px; padding-top:22px;
+footer{border-top:1px solid var(--line-dark); margin-top:52px; padding-top:24px;
   font-family:var(--mono); font-size:12px; color:var(--faint); line-height:1.7}
 footer b{color:var(--ink); font-weight:500}
 footer .disc{margin-top:10px; font-style:normal}
 @media (max-width:560px){
-  body{font-size:17px}
+  body{font-size:15px}.shell,.wrap{width:min(100% - 24px,1500px)}
+  .site-links{gap:12px}.site-links a:nth-child(-n+3){display:none}
+  .mast{padding:28px 20px}.mast h1{font-size:48px;letter-spacing:.02em}
   .var{grid-template-columns:1fr; gap:2px}
   .var .id{grid-row:auto}
 }
 </style>
 </head>
 <body>
+<nav class="site-nav"><div class="shell nav-inner"><a class="brand" href="/">BLAQUE BAUX</a><div class="site-links"><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/corpus/">Corpus</a><a href="/tracker/">Tracker</a><a href="/block/">Block</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GitHub ↗</a></div></div></nav>
 <div class="wrap">
-<a href="/block/" style="display:inline-block;margin-bottom:24px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none">&larr; Block catalog</a>
+<a class="back" href="/block/">&larr; Block catalog</a>
 
 <header class="mast">
   <div class="eyebrow">Blaque Baux · Block · Derivatives Reference</div>
