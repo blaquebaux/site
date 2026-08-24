@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About BLAQUE BAUX — Carter Warrens</title>
+<link rel="canonical" href="https://www.blaquebaux.com/about/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="description" content="Blaque Baux is Carter Warrens' open systematic-research initiative — a governed Julia engine, a family of strategy sleeves, and a discipline of publishing the failures.">
+<meta name="author" content="Carter Warrens">
+<meta property="og:title" content="About BLAQUE BAUX — Carter Warrens">
+<meta property="og:description" content="Open systematic research, governed execution, and the discipline of publishing what didn't work.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.blaquebaux.com/about/">
+<meta property="og:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png">
+<meta name="theme-color" content="#050608">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+:root{--bg:#050608;--panel:#0a0d11;--fg:#f3f3f0;--muted:#9aa0a6;--dim:#747b83;--line:#20252c;--line2:#12161b;--accent:#c9d2d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% -8%,rgba(255,255,255,.025),transparent 40%),var(--bg);color:var(--fg);font-family:"Space Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.shell{width:min(1180px,calc(100% - 44px));margin:auto}
+.mono{font-family:"IBM Plex Mono",monospace}
+.micro{font:10px/1.4 "IBM Plex Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+
+nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:14px;letter-spacing:.32em;font-weight:500}
+.links{display:flex;gap:26px;font:9px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#aeb3b8}
+.links a:hover{color:#fff}
+
+.hero{padding:120px 0 70px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(black,transparent 75%)}
+.hero .shell{position:relative}
+.hero h1{font-size:clamp(62px,13vw,168px);line-height:.82;letter-spacing:.16em;margin:26px 0 30px;font-weight:500}
+.stand{max-width:60ch;font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:var(--fg)}
+.stand b{font-weight:500}
+
+.section{border-bottom:1px solid var(--line);padding:70px 0}
+.section-grid{display:grid;grid-template-columns:64px 1fr;gap:36px}
+.idx{font:12px "IBM Plex Mono";letter-spacing:.1em;color:#5b626a;padding-top:6px}
+.idx:after{content:"";display:block;width:34px;height:1px;background:#3a4048;margin-top:12px}
+.section h2{margin:0 0 22px;font-size:clamp(26px,3.4vw,40px);font-weight:500;letter-spacing:.01em;text-wrap:balance}
+.body{max-width:66ch}
+.body p{margin:0 0 1.05em;font-size:16.5px;line-height:1.75;color:#d3d7da}
+.body p.lead{font-size:19px;color:var(--fg)}
+.body strong{color:#fff;font-weight:500}
+.body em{color:var(--fg);font-style:italic}
+
+.tenets{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.tenets li{padding:17px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:230px 1fr;gap:22px}
+.tenets b{font:11px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.tenets span{color:#c3c8cc;font-size:15px;line-height:1.6}
+@media(max-width:640px){.tenets li{grid-template-columns:1fr;gap:6px}}
+
+.fill{display:block;border:1px dashed #3d454d;background:rgba(255,255,255,.02);color:var(--dim);padding:16px 18px;margin:6px 0 14px;font:11px/1.7 "IBM Plex Mono";letter-spacing:.04em}
+.fill b{color:var(--accent)}
+
+.cta-wrap{padding:78px 0 90px;text-align:center}
+.cta-wrap h2{font-size:clamp(30px,5vw,58px);letter-spacing:.02em;margin:0 0 14px;font-weight:500}
+.cta-wrap p{max-width:52ch;margin:0 auto 30px;color:var(--muted);font-size:16px;line-height:1.7}
+.cta{display:inline-block;border:1px solid #3a424a;padding:16px 26px;font:11px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#e7eaec;transition:.2s}
+.cta:hover{background:#fff;color:#000;border-color:#fff}
+
+footer{padding:32px 0 46px}
+.foot{display:flex;justify-content:space-between;gap:24px;color:#565d64;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:760px){.links a:not(:nth-last-child(-n+3)){display:none}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.foot{display:block;line-height:2.1}}
+</style>
+</head>
+<body>
+
+<nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links"><a href="/corpus/">Corpus</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/about/">About</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GitHub ↗</a></div></div></nav>
+
+<header class="hero"><div class="shell">
+  <div class="micro">About / a Carter Warrens research initiative</div>
+  <h1>ABOUT</h1>
+  <p class="stand">Blaque Baux is where <b>Carter Warrens</b> does its systematic research <b>in the open</b> —
+  and puts most of it on the record as <em>rejected, with the reason</em>. What survives is governed, validated,
+  and only then called real.</p>
+</div></header>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">01</div>
+  <div class="body">
+    <h2>One engine, many directions — and a public trail of what failed.</h2>
+    <p class="lead">Blaque Baux is an open, Julia-based systematic-research initiative: a single governed engine
+    steered into a family of strategy sleeves, each pointed at a different corner of the market.</p>
+    <p>Every idea is tested against the same honest bar. Most do not clear it — and instead of hiding them, we
+    keep them public as a <strong>research graveyard</strong>: the failed thesis, the constraint, or the risk
+    finding stays visible so it can inform the next test. The handful that survive are built into governed
+    drivers and validated before they are ever described as live. The corpus is the whole record, kept open on
+    GitHub — live systems, work in validation, active research, and null results side by side.</p>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">02</div>
+  <div class="body">
+    <h2>The standard: publishing the failures is the point.</h2>
+    <p>Anyone can point an AI at a market now. The edge is <strong>understanding what the data actually says —
+    and being willing to show your losses.</strong> That discipline runs through everything here:</p>
+    <ul class="tenets">
+      <li><b>The red scorecard is the point</b><span>A rejected strategy, documented with its reason, is a result — not an embarrassment. Most of the corpus is exactly this.</span></li>
+      <li><b>Validate before live</b><span>Nothing is called real on a backtest. It earns a governed paper track, then real money — or it stays research.</span></li>
+      <li><b>The tail is the whole story</b><span>Returns are fat-tailed, so a bare Sharpe misleads. We test normality first, and weight the crash as heavily as the average.</span></li>
+      <li><b>Flag the gap, don't fake it</b><span>Where the data isn't there, we say so. No proxy dressed up as the real thing.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">03</div>
+  <div class="body">
+    <h2>Governance is the product.</h2>
+    <p>The platform is built in Julia around a venue-agnostic execution controller and a <strong>Layer-3
+    live-money safety gate</strong> — preflight checks, idempotency, reconciliation, a high-water-mark and a
+    kill switch. The research may use modern tooling, but <strong>no language model sits in the order path</strong>:
+    every allocator emits a target book, and reproducible code routes it through the gate.</p>
+    <p>Performance is judged with a fat-tail toolkit, not a headline number: Jarque–Bera for normality before
+    any mean-variance claim, <em>Jensen's alpha</em> and <em>M²</em> instead of Sharpe alone, and a
+    crisis-correlation check — how a stream behaves on the market's worst days, the 2008 tell — before anything
+    is trusted to diversify. The point is not a clever signal; it is a book you can actually run.</p>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">04</div>
+  <div class="body">
+    <h2>Carter Warrens.</h2>
+    <p>Blaque Baux is a subsidiary of <strong>Carter Warrens</strong> — a boutique firm built on a simple
+    observation: the execution capabilities that power the world's largest institutions shouldn't be reserved
+    only for them. Carter Warrens brings that institutional-grade discipline — program management, transformation,
+    and high-stakes delivery — to growth-stage companies, private funds, and public-sector organizations.</p>
+    <p>Its partners carry 40+ years of combined program leadership at global banks and market-infrastructure
+    firms, based in the New York metro. Blaque Baux is where that discipline is turned on the markets themselves:
+    <strong>systematic research held to an institutional bar, in the open.</strong></p>
+    <p><strong>Kareem Williams — Founder.</strong> A product-delivery and engineering leader with 20+ years
+    building the trading, risk, and regulatory platforms behind capital markets — cash equities, swaps, FX, rates
+    and credit derivatives — at firms including <strong>Morgan Stanley, UBS, Citi, Credit Suisse, BNP Paribas, and
+    Mizuho</strong>. He pairs delivery leadership with real technical fluency — he reads and writes the code
+    (Java/Spring&nbsp;Boot, REST microservices, React, Azure) — and holds an MBA in Management of Technology
+    (NJIT), an MS in Finance (Pace), and the PMP and PMI-ACP certifications. Blaque Baux turns two decades spent
+    building the infrastructure of these markets on the strategies that run on them.
+    <a href="https://www.carterwarrens.com" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid #3a424a">Full profile at carterwarrens.com →</a></p>
+  </div>
+</div></section>
+
+<section class="cta-wrap"><div class="shell">
+  <h2>Work with Carter Warrens.</h2>
+  <p>For allocators, family offices, and research teams who want the method behind the research — not just the
+  output. Study the open corpus, or reach out directly.</p>
+  <a class="cta" href="mailto:ceo@carterwarrens.com">ceo@carterwarrens.com →</a>
+</div></section>
+
+<footer><div class="shell foot">
+  <span>BLAQUE BAUX / A CARTER WARRENS RESEARCH INITIATIVE</span>
+  <span>© 2026 CARTER WARRENS · NOT INVESTMENT ADVICE</span>
+</div></footer>
+
+</body>
+</html>
