@@ -4,7 +4,7 @@
 import os, json, urllib.request, datetime
 import numpy as np
 H={"APCA-API-KEY-ID":os.environ["ALPACA_KEY_ID"],"APCA-API-SECRET-KEY":os.environ["ALPACA_SECRET_KEY"]}
-_END=(datetime.date.today()-datetime.timedelta(days=2)).strftime("%Y-%m-%d")
+_END=(datetime.date.today()-datetime.timedelta(days=1)).strftime("%Y-%m-%d")
 def load(sym,start="2024-06-01",end=None):
     end=end or _END
     u=(f"https://data.alpaca.markets/v2/stocks/bars?symbols={sym}&timeframe=1Day&start={start}&end={end}"
