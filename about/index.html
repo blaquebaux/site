@@ -14,6 +14,74 @@
 <meta property="og:url" content="https://www.blaquebaux.com/about/">
 <meta property="og:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png">
 <meta name="theme-color" content="#050608">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is BLAQUE BAUX intended for?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BLAQUE BAUX is built for researchers, quantitative developers, portfolio and risk professionals, students, family offices, asset managers, private-equity teams, hedge funds, and serious independent investors who want to study how systematic strategies are constructed, tested, rejected, governed, and monitored."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should I use the research and strategy catalog?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Use the site as a research map rather than a menu of trade recommendations. Begin with the thesis and assumptions, inspect the implementation and evidence, review the risk and failure conditions, and reproduce the result independently before adapting anything to your own constraints."}
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Labs, Corpus, Block, Capstone, and Tracker?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Labs presents interactive studies. Corpus is the complete research record, including live, validation, active research, and null results. Block is the derivatives strategy reference. Capstone studies portfolio construction and variations above the individual sleeves. Tracker shows simulated sleeve performance against relevant benchmarks."}
+    },
+    {
+      "@type": "Question",
+      "name": "Which tools and languages does the platform use?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Julia is the primary research and governed-execution language. Python is used where its data, automation, or integration ecosystem is useful. The governing principle is reproducibility and clear interfaces, not loyalty to a language."}
+    },
+    {
+      "@type": "Question",
+      "name": "How can Julia and Python fit into an existing workflow?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Teams can use Python for data preparation, notebooks, orchestration, and established analytics while using Julia for research components, simulation, optimization, and controlled execution. Exchange data through explicit files, tables, APIs, or other versioned interfaces so each stage can be tested and reproduced independently."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can the strategies be used directly in a live portfolio?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No strategy on the site should be copied directly into a live portfolio. The material is educational research, not individualized investment advice. Users must independently validate data, assumptions, costs, liquidity, tax treatment, legal constraints, implementation details, and suitability for their own objectives and risk limits."}
+    },
+    {
+      "@type": "Question",
+      "name": "What do Live, Validation, Research, and Null mean?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Live identifies work that has passed the project's governance requirements and is being tracked under its stated operating conditions. Validation identifies candidates under further observation. Research identifies active investigations. Null is the public graveyard for ideas that failed, lacked sufficient evidence, or were rejected for risk or implementation reasons."}
+    },
+    {
+      "@type": "Question",
+      "name": "How can researchers reproduce or extend the work?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Start with the linked repository and its documentation. Preserve the original assumptions and baseline before changing parameters, data, or portfolio rules. Record each change, test it out of sample where possible, and evaluate tail behavior, implementation costs, and failure conditions rather than relying on a single headline metric."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is BLAQUE BAUX investment advice?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. BLAQUE BAUX provides educational research, software, documentation, and illustrative analysis. It does not provide personalized investment, legal, tax, or accounting advice, and it does not recommend that any person buy, sell, or hold a security or strategy."}
+    },
+    {
+      "@type": "Question",
+      "name": "Will BLAQUE BAUX become an investment manager or fund?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BLAQUE BAUX is currently a research and technology initiative, not an investment adviser, broker-dealer, fund, or asset manager. No future structure is being promised. Any regulated investment activity would be established separately and communicated only after the appropriate legal, operational, and regulatory framework was in place."}
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns and operates BLAQUE BAUX?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BLAQUE BAUX is a Carter Warrens research initiative founded by Kareem Williams. Carter Warrens provides the program-management, governance, transformation, and execution discipline behind the work."}
+    },
+    {
+      "@type": "Question",
+      "name": "How can an institution work with Carter Warrens?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Carter Warrens works with organizations that need help structuring research, governance, delivery, risk controls, or technical operating models. Contact ceo@carterwarrens.com to discuss an advisory or collaboration need."}
+    }
+  ]
+}
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 :root{--bg:#050608;--panel:#0a0d11;--fg:#f3f3f0;--muted:#9aa0a6;--dim:#747b83;--line:#20252c;--line2:#12161b;--accent:#c9d2d8}
@@ -57,9 +125,19 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 .fill{display:block;border:1px dashed #3d454d;background:rgba(255,255,255,.02);color:var(--dim);padding:16px 18px;margin:6px 0 14px;font:11px/1.7 "IBM Plex Mono";letter-spacing:.04em}
 .fill b{color:var(--accent)}
 
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;display:grid;grid-template-columns:42px minmax(0,1fr) 28px;gap:18px;align-items:center;padding:24px 0;cursor:pointer;color:var(--fg);font-size:18px;font-weight:500;line-height:1.45}
+.faq summary::-webkit-details-marker{display:none}
+.faq-num{font:10px "IBM Plex Mono",monospace;letter-spacing:.12em;color:#626a72}
+.faq-mark{font:18px/1 "IBM Plex Mono",monospace;color:var(--accent);text-align:right;transition:transform .2s ease}
+.faq details[open] .faq-mark{transform:rotate(45deg)}
+.faq-answer{max-width:94ch;margin:0 0 26px 60px;color:#c3c8cc;font-size:16px;line-height:1.75}
+.faq-answer a{color:var(--fg);border-bottom:1px solid #3a4248}
+
 footer{padding:32px 0 46px}
 .foot{display:flex;justify-content:space-between;gap:24px;color:#565d64;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
-@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.foot{display:block;line-height:2.1}}
+@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.foot{display:block;line-height:2.1}}
 </style>
 <link rel="stylesheet" href="../assets/site-wide.css">
 </head>
@@ -138,6 +216,64 @@ footer{padding:32px 0 46px}
     (NJIT), an MS in Finance (Pace), and the PMP and PMI-ACP certifications. Blaque Baux turns two decades spent
     building the infrastructure of these markets on the strategies that run on them.
     <a href="https://www.carterwarrens.com" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid #3a424a">Full profile at carterwarrens.com →</a></p>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">05</div>
+  <div class="body">
+    <div class="micro">Using the work / frequently asked questions</div>
+    <h2>How to read, reproduce, and apply the research.</h2>
+    <div class="faq">
+      <details>
+        <summary><span class="faq-num">01</span><span>Who is BLAQUE BAUX intended for?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">BLAQUE BAUX is built for researchers, quantitative developers, portfolio and risk professionals, students, family offices, asset managers, private-equity teams, hedge funds, and serious independent investors who want to study how systematic strategies are constructed, tested, rejected, governed, and monitored.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">02</span><span>How should I use the research and strategy catalog?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">Use the site as a research map rather than a menu of trade recommendations. Begin with the thesis and assumptions, inspect the implementation and evidence, review the risk and failure conditions, and reproduce the result independently before adapting anything to your own constraints.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">03</span><span>What is the difference between Labs, Corpus, Block, Capstone, and Tracker?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer"><strong>Labs</strong> presents interactive studies. <strong>Corpus</strong> is the complete research record, including live, validation, active research, and null results. <strong>Block</strong> is the derivatives strategy reference. <strong>Capstone</strong> studies portfolio construction and variations above the individual sleeves. <strong>Tracker</strong> shows simulated sleeve performance against relevant benchmarks.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">04</span><span>Which tools and languages does the platform use?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer"><strong>Julia</strong> is the primary research and governed-execution language. <strong>Python</strong> is used where its data, automation, or integration ecosystem is useful. The governing principle is reproducibility and clear interfaces, not loyalty to a language.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">05</span><span>How can Julia and Python fit into an existing workflow?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">Teams can use Python for data preparation, notebooks, orchestration, and established analytics while using Julia for research components, simulation, optimization, and controlled execution. Exchange data through explicit files, tables, APIs, or other versioned interfaces so each stage can be tested and reproduced independently.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">06</span><span>Can the strategies be used directly in a live portfolio?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">No strategy on the site should be copied directly into a live portfolio. The material is educational research, not individualized investment advice. Users must independently validate data, assumptions, costs, liquidity, tax treatment, legal constraints, implementation details, and suitability for their own objectives and risk limits.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">07</span><span>What do Live, Validation, Research, and Null mean?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer"><strong>Live</strong> identifies work that has passed the project&rsquo;s governance requirements and is being tracked under its stated operating conditions. <strong>Validation</strong> identifies candidates under further observation. <strong>Research</strong> identifies active investigations. <strong>Null</strong> is the public graveyard for ideas that failed, lacked sufficient evidence, or were rejected for risk or implementation reasons.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">08</span><span>How can researchers reproduce or extend the work?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">Start with the linked repository and its documentation. Preserve the original assumptions and baseline before changing parameters, data, or portfolio rules. Record each change, test it out of sample where possible, and evaluate tail behavior, implementation costs, and failure conditions rather than relying on a single headline metric.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">09</span><span>Is BLAQUE BAUX investment advice?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">No. BLAQUE BAUX provides educational research, software, documentation, and illustrative analysis. It does not provide personalized investment, legal, tax, or accounting advice, and it does not recommend that any person buy, sell, or hold a security or strategy.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">10</span><span>Will BLAQUE BAUX become an investment manager or fund?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">BLAQUE BAUX is currently a research and technology initiative, not an investment adviser, broker-dealer, fund, or asset manager. No future structure is being promised. Any regulated investment activity would be established separately and communicated only after the appropriate legal, operational, and regulatory framework was in place.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">11</span><span>Who owns and operates BLAQUE BAUX?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">BLAQUE BAUX is a Carter Warrens research initiative founded by Kareem Williams. Carter Warrens provides the program-management, governance, transformation, and execution discipline behind the work.</div>
+      </details>
+      <details>
+        <summary><span class="faq-num">12</span><span>How can an institution work with Carter Warrens?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">Carter Warrens works with organizations that need help structuring research, governance, delivery, risk controls, or technical operating models. Contact <a href="mailto:ceo@carterwarrens.com">ceo@carterwarrens.com</a> to discuss an advisory or collaboration need.</div>
+      </details>
+    </div>
   </div>
 </div></section>
 
