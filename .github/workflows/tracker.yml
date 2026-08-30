@@ -4,7 +4,7 @@ name: Update sleeve tracker
 # Requires two repo secrets: ALPACA_KEY_ID and ALPACA_SECRET_KEY (read-only market-data keys).
 on:
   schedule:
-    - cron: '30 22 * * 1-5'   # 22:30 UTC on weekdays — well after the US close
+    - cron: '0 12 * * *'      # 12:00 UTC daily (pre-open) — publishes the prior completed session
   workflow_dispatch:           # allow manual runs
 
 permissions:
