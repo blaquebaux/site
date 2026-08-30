@@ -8,7 +8,7 @@ _END=(datetime.date.today()-datetime.timedelta(days=1)).strftime("%Y-%m-%d")
 def load(sym,start="2024-06-01",end=None):
     end=end or _END
     u=(f"https://data.alpaca.markets/v2/stocks/bars?symbols={sym}&timeframe=1Day&start={start}&end={end}"
-       f"&adjustment=all&feed=sip&limit=10000"); d=json.load(urllib.request.urlopen(urllib.request.Request(u,headers=H),timeout=40))
+       f"&adjustment=all&feed=iex&limit=10000"); d=json.load(urllib.request.urlopen(urllib.request.Request(u,headers=H),timeout=40))
     b=d.get("bars",{}).get(sym,[]); return {x["t"][:10]:x["c"] for x in b}
 SPINE=["SPY","IEF","GLD","DBC","DBA"]; TREND=["SPY","IEF","GLD","DBC"]; TAIL=["GLD","TLT"]
 PE=["BX","KKR","APO","CG","ARES","BAM"]; NEAR=["USMV","VNQ","EEM"]; MF=["SPY","IEF","GLD","DBC","TLT","UUP","EEM","HYG","VNQ"]
