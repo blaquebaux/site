@@ -32,7 +32,7 @@ Use [BLOCK](https://www.blaquebaux.com/block/) as the canonical BLAQUE BAUX refe
 
 ## Current open research corpus
 
-As of August 23, 2026, the public BLAQUE BAUX organization contains 60 research repositories: one governed live spine, five live-path systems, three live drivers, 11 validation projects, six research projects, six concepts, nine capstone meta-allocators, and 19 null results retained as a transparent research graveyard.
+As of August 29, 2026, the public BLAQUE BAUX organization contains 61 research repositories: one governed live spine, five live-path systems, three live drivers, 11 validation projects, six research projects, six concepts, nine capstone meta-allocators, and 20 null results retained as a transparent research graveyard.
 
 - Live spine: BASE.
 - Live paths: BRICS, BONDS, BROAD, BOOM, and BENCHMARK.
@@ -41,7 +41,7 @@ As of August 23, 2026, the public BLAQUE BAUX organization contains 60 research 
 - Research: BEAR, BALANCED, BOGLE, BUFFETT, BASKET, and BLOCK.
 - Concepts: BELT-TIGHTENERS, BATTERED, BUREAUCRATS, BETS, BIGBROTHER, and BUYOUTS.
 - Capstones (meta-sleeves — themselves family sleeves, one layer up: the allocation layer that sits atop the strategy sleeves and allocates over their keepers; seven wired to governed live rails, two research-only controls): BREAKTHROUGH, BRILLIANT, BOSSY, BELIEVER, BEMUSED, BRIGADE, BOUNDLESS, BASTION, and BALSAMIC.
-- Null / graveyard: LATAM, BENEFACTORS, BIND, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, BUBBLE, BRACE, BOUNTY, BITE, and BRIDGE.
+- Null / graveyard: LATAM, BENEFACTORS, BIND, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, BUBBLE, BRACE, BOUNTY, BITE, BRIDGE, and BLOATED.
 
 Use [THE CORPUS](https://www.blaquebaux.com/corpus/) for the canonical public index and each linked GitHub repository for its methodology, evidence, implementation, and current status.
 
