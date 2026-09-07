@@ -6,7 +6,7 @@
 <title>About BLAQUE BAUX: Carter Warrens</title>
 <link rel="canonical" href="https://www.blaquebaux.com/about/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="description" content="Blaque Baux is Carter Warrens' open systematic-research initiative: a governed Julia engine, 61 strategy sleeves, public failure postmortems, and a discipline of publishing what did not work.">
+<meta name="description" content="Blaque Baux is Carter Warrens' open systematic-research initiative: 61 strategies tested, 12 promoted to live deployment, governed execution, and public failure analysis.">
 <meta name="author" content="Carter Warrens">
 <meta property="og:title" content="About BLAQUE BAUX: Carter Warrens">
 <meta property="og:description" content="Open systematic research, governed execution, and the discipline of publishing what didn't work.">
@@ -61,13 +61,13 @@
     },
     {
       "@type": "Question",
-      "name": "Is BLAQUE BAUX investment advice?",
-      "acceptedAnswer": {"@type": "Answer", "text": "No. BLAQUE BAUX provides educational research, software, documentation, and illustrative analysis. It does not provide personalized investment, legal, tax, or accounting advice, and it does not recommend that any person buy, sell, or hold a security or strategy."}
+      "name": "Is BLAQUE BAUX investment advice or an offering?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. The public site provides research, software, and documented analysis. It does not provide individualized investment advice or constitute an offer to sell securities. Any future investment relationship would be established separately through the appropriate legal, regulatory, and operational framework."}
     },
     {
       "@type": "Question",
-      "name": "Will BLAQUE BAUX become an investment manager or fund?",
-      "acceptedAnswer": {"@type": "Answer", "text": "BLAQUE BAUX is currently a research and technology initiative, not an investment adviser, broker-dealer, fund, or asset manager. No future structure is being promised. Any regulated investment activity would be established separately and communicated only after the appropriate legal, operational, and regulatory framework was in place."}
+      "name": "Is BLAQUE BAUX becoming an investment manager?",
+      "acceptedAnswer": {"@type": "Answer", "text": "BLAQUE BAUX is currently deploying proprietary capital across governed strategies and developing an attributable live track record. We intend to explore external-capital and performance-aligned partnerships once the appropriate investment structure, controls, service providers, and regulatory framework are in place. Qualified allocators and institutional partners are invited to begin a conversation."}
     },
     {
       "@type": "Question",
@@ -111,12 +111,17 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 .links{display:flex;gap:26px;font:9px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#aeb3b8}
 .links a:hover{color:#fff}
 
-.hero{padding:120px 0 78px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero{padding:96px 0 82px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(black,transparent 75%)}
 .hero .shell{position:relative}
-.hero h1{font-size:clamp(62px,13vw,168px);line-height:.82;letter-spacing:.16em;margin:26px 0 30px;font-weight:500}
-.stand{max-width:60ch;font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:var(--fg)}
+.hero-grid{display:grid;grid-template-columns:minmax(500px,1.05fr) minmax(400px,.72fr);gap:clamp(48px,8vw,130px);align-items:end;margin-top:34px}
+.hero h1{font-size:clamp(62px,12vw,168px);line-height:.82;letter-spacing:.13em;margin:0;font-weight:500}
+.hero-copy{padding-bottom:4px}
+.stand{max-width:60ch;margin:0;font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:var(--fg)}
 .stand b{font-weight:500}
+.deployment-proof{margin-top:30px;padding:22px 24px;border:1px solid #303740;background:rgba(255,255,255,.025);display:grid;gap:12px}
+.deployment-proof strong{font-size:clamp(18px,2vw,24px);line-height:1.35;font-weight:500;color:#fff}
+.deployment-proof span{font-size:15px;line-height:1.65;color:#b8bec3}
 
 .section{border-bottom:1px solid var(--line);padding:82px 0}
 .section-grid{display:grid;grid-template-columns:64px minmax(0,1fr);gap:36px}
@@ -139,6 +144,8 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 .essay-copy p:first-child:first-letter{float:left;margin:7px 10px 0 0;color:var(--accent);font-size:64px;line-height:.75;font-weight:500}
 .master-lesson{margin:34px 0;padding:24px 28px;border-left:2px solid var(--accent);background:rgba(255,255,255,.025);font-size:20px!important;line-height:1.55!important;color:#fff!important}
 
+.failure-standard{margin-bottom:72px}
+.failure-standard>p{max-width:900px}
 .postmortem-intro{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.75fr);gap:48px;align-items:end;margin-bottom:38px}
 .postmortem-intro p{margin:0;color:#c5cacf;font-size:17px;line-height:1.7}
 .case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
@@ -150,6 +157,15 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 .transparency{margin-top:42px;padding:30px;border:1px solid #39414a;display:flex;align-items:center;justify-content:space-between;gap:30px;background:rgba(255,255,255,.018)}
 .transparency p{max-width:760px;margin:0!important;color:#eef0f1!important;font-size:18px!important;line-height:1.6!important}
 .transparency-actions{display:flex;gap:10px;flex:0 0 auto}.transparency a{border:1px solid #46505a;padding:13px 15px;color:#fff;font:9px "IBM Plex Mono",monospace;letter-spacing:.13em;text-transform:uppercase}.transparency a:first-child{background:#edf0f1;color:#0a0d11;border-color:#edf0f1}
+
+.capital-panel{border:1px solid #343c45;background:linear-gradient(135deg,rgba(255,255,255,.035),rgba(255,255,255,.012));padding:clamp(28px,5vw,58px)}
+.capital-lead{max-width:860px;font-size:clamp(19px,2.2vw,25px)!important;line-height:1.55!important;color:#fff!important}
+.capital-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.42fr);gap:clamp(36px,7vw,110px);align-items:end;margin-top:40px}
+.capital-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.capital-list li{position:relative;padding:18px 0 18px 28px;border-bottom:1px solid var(--line);color:#cbd0d4;font-size:16px;line-height:1.6}
+.capital-list li:before{content:"→";position:absolute;left:0;color:var(--accent);font-family:"IBM Plex Mono",monospace}
+.capital-cta{display:block;padding:18px 20px;border:1px solid #edf0f1;background:#edf0f1;color:#080a0d;text-align:center;font:10px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase}
+.capital-note{margin:18px 0 0!important;color:#747c84!important;font:10px/1.7 "IBM Plex Mono",monospace!important;letter-spacing:.03em}
 
 .tenets{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
 .tenets li{padding:17px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:230px 1fr;gap:22px}
@@ -172,8 +188,9 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 
 footer{padding:32px 0 46px}
 .foot{display:flex;justify-content:space-between;gap:24px;color:#565d64;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
-@media(max-width:900px){.essay-layout{grid-template-columns:1fr;gap:26px}.essay-rail{max-width:360px}.case-grid{grid-template-columns:1fr}.postmortem-intro{grid-template-columns:1fr;gap:16px}.transparency{align-items:flex-start;flex-direction:column}.transparency-actions{flex-wrap:wrap}}
-@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.essay-copy p{font-size:16px}.master-lesson{padding:20px;font-size:18px!important}.case{padding:24px}.transparency{padding:22px}.transparency-actions{width:100%;display:grid}.transparency a{text-align:center}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.foot{display:block;line-height:2.1}}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr;gap:34px;align-items:start}.hero h1{font-size:clamp(62px,18vw,150px)}.hero-copy{max-width:760px}}
+@media(max-width:900px){.essay-layout{grid-template-columns:1fr;gap:26px}.essay-rail{max-width:360px}.case-grid{grid-template-columns:1fr}.postmortem-intro{grid-template-columns:1fr;gap:16px}.transparency{align-items:flex-start;flex-direction:column}.transparency-actions{flex-wrap:wrap}.capital-grid{grid-template-columns:1fr}.capital-cta{max-width:360px}}
+@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.hero{padding:72px 0 62px}.hero-grid{margin-top:24px;gap:30px}.hero h1{font-size:clamp(58px,20vw,104px);letter-spacing:.1em}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.deployment-proof{margin-top:26px;padding:20px}.essay-copy p{font-size:16px}.master-lesson{padding:20px;font-size:18px!important}.failure-standard{margin-bottom:52px}.case{padding:24px}.transparency{padding:22px}.transparency-actions{width:100%;display:grid}.transparency a{text-align:center}.capital-panel{padding:24px}.capital-grid{margin-top:28px}.capital-cta{max-width:none}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.foot{display:block;line-height:2.1}}
 </style>
 <link rel="stylesheet" href="../assets/site-wide.css">
 </head>
@@ -183,10 +200,18 @@ footer{padding:32px 0 46px}
 
 <header class="hero"><div class="shell">
   <div class="micro">About / a Carter Warrens research initiative</div>
-  <h1>ABOUT</h1>
-  <p class="stand">Blaque Baux is where <b>Carter Warrens</b> does its systematic research <b>in the open</b>,
-  and puts most of it on the record as <em>rejected, with the reason</em>. What survives is governed, validated,
-  and only then called real.</p>
+  <div class="hero-grid">
+    <h1>ABOUT</h1>
+    <div class="hero-copy">
+      <p class="stand">Blaque Baux is where <b>Carter Warrens</b> does its systematic research <b>in the open</b>,
+      and puts most of it on the record as <em>rejected, with the reason</em>. What survives is governed, validated,
+      and only then called real.</p>
+      <div class="deployment-proof">
+        <strong>61 systematic strategies tested. 12 promoted to live deployment.</strong>
+        <span>Built at the intersection of AI-assisted research, economic fundamentals, and governed execution. Proprietary capital deployment is underway, with an attributable live track record now being established.</span>
+      </div>
+    </div>
+  </div>
 </div></header>
 
 <section class="section"><div class="shell section-grid">
@@ -206,21 +231,6 @@ footer{padding:32px 0 46px}
 <section class="section"><div class="shell section-grid">
   <div class="idx">02</div>
   <div class="body">
-    <h2>The standard: publishing the failures is the point.</h2>
-    <p>Anyone can point an AI at a market now. The edge is <strong>understanding what the data actually says,
-    and being willing to show your losses.</strong> That discipline runs through everything here:</p>
-    <ul class="tenets">
-      <li><b>The red scorecard is the point</b><span>A rejected strategy, documented with its reason, is a result, not an embarrassment. Most of the corpus is exactly this.</span></li>
-      <li><b>Validate before live</b><span>Nothing is called real on a backtest. It earns a governed paper track, then real money, or it stays research.</span></li>
-      <li><b>The tail is the whole story</b><span>Returns are fat-tailed, so a bare Sharpe misleads. We test normality first, and weight the crash as heavily as the average.</span></li>
-      <li><b>Flag the gap, don't fake it</b><span>Where the data isn't there, we say so. No proxy dressed up as the real thing.</span></li>
-    </ul>
-  </div>
-</div></section>
-
-<section class="section"><div class="shell section-grid">
-  <div class="idx">03</div>
-  <div class="body">
     <h2>Governance is the product.</h2>
     <p>The platform is built in Julia around a venue-agnostic execution controller and a <strong>Layer-3
     live-money safety gate</strong>: preflight checks, idempotency, reconciliation, a high-water-mark and a
@@ -234,29 +244,7 @@ footer{padding:32px 0 46px}
 </div></section>
 
 <section class="section"><div class="shell section-grid">
-  <div class="idx">04</div>
-  <div class="body">
-    <h2>Carter Warrens.</h2>
-    <p>Blaque Baux is a subsidiary of <strong>Carter Warrens</strong>, a boutique firm built on a simple
-    observation: the execution capabilities that power the world's largest institutions shouldn't be reserved
-    only for them. Carter Warrens brings that institutional-grade discipline in program management, transformation,
-    and high-stakes delivery to growth-stage companies, private funds, and public-sector organizations.</p>
-    <p>Its partners carry 40+ years of combined program leadership at global banks and market-infrastructure
-    firms, based in the New York metro. Blaque Baux is where that discipline is turned on the markets themselves:
-    <strong>systematic research held to an institutional bar, in the open.</strong></p>
-    <p><strong>Kareem Williams, Founder.</strong> A product-delivery and engineering leader with 20+ years
-    building the trading, risk, and regulatory platforms behind capital markets, including cash equities, swaps, FX, rates
-    and credit derivatives, at firms including <strong>Morgan Stanley, UBS, Citi, Credit Suisse, BNP Paribas, and
-    Mizuho</strong>. He pairs delivery leadership with real technical fluency: he reads and writes the code
-    (Java/Spring&nbsp;Boot, REST microservices, React, Azure), and holds an MBA in Management of Technology
-    (NJIT), an MS in Finance (Pace), and the PMP and PMI-ACP certifications. Blaque Baux turns two decades spent
-    building the infrastructure of these markets on the strategies that run on them.
-    <a href="https://www.carterwarrens.com" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid #3a424a">Full profile at carterwarrens.com →</a></p>
-  </div>
-</div></section>
-
-<section class="section"><div class="shell section-grid">
-  <div class="idx">05</div>
+  <div class="idx">03</div>
   <article class="body" id="field-report">
     <div class="essay-layout">
       <aside class="essay-rail">
@@ -292,8 +280,20 @@ footer{padding:32px 0 46px}
 </div></section>
 
 <section class="section"><div class="shell section-grid">
-  <div class="idx">06</div>
+  <div class="idx">04</div>
   <div class="body" id="failure-postmortems">
+    <div class="failure-standard">
+      <div class="micro">The standard / failure before authority</div>
+      <h2>Publishing the failures is the point.</h2>
+      <p>Anyone can point an AI at a market now. The edge is <strong>understanding what the data actually says and being willing to show your losses.</strong> This is the standard behind both the public research graveyard and the postmortems below:</p>
+      <ul class="tenets">
+        <li><b>The red scorecard is the point</b><span>A rejected strategy, documented with its reason, is a result, not an embarrassment. Most of the corpus is exactly this.</span></li>
+        <li><b>Validate before live</b><span>Nothing is called real on a backtest. It earns a governed paper track, then real money, or it stays research.</span></li>
+        <li><b>The tail is the whole story</b><span>Returns are fat-tailed, so a bare Sharpe misleads. We test normality first and weight the crash as heavily as the average.</span></li>
+        <li><b>Flag the gap, don't fake it</b><span>Where the data isn't there, we say so. No proxy is dressed up as the real thing.</span></li>
+      </ul>
+    </div>
+
     <div class="postmortem-intro">
       <div>
         <div class="micro">Failure Postmortems / framing before tooling</div>
@@ -356,6 +356,54 @@ footer{padding:32px 0 46px}
 </div></section>
 
 <section class="section"><div class="shell section-grid">
+  <div class="idx">05</div>
+  <div class="body">
+    <div class="capital-panel">
+      <div class="micro">Capital &amp; deployment / conversations now open</div>
+      <h2>From validated research to governed capital.</h2>
+      <p class="capital-lead">Blaque Baux is currently deploying proprietary capital across 12 governed sleeves while establishing an attributable live track record.</p>
+      <div class="capital-grid">
+        <div>
+          <p>We are opening conversations with:</p>
+          <ul class="capital-list">
+            <li>Seed allocators interested in scaling validated live strategies.</li>
+            <li>Performance-aligned partners seeking systematic, independently reviewable research.</li>
+            <li>Prime brokers, proprietary-trading firms, and infrastructure partners able to support institutional deployment.</li>
+          </ul>
+          <p style="margin-top:30px">If you value systematic strategies, governed AI-assisted research, and a documented record of both successful and rejected ideas, we should talk.</p>
+        </div>
+        <div>
+          <a class="capital-cta" href="mailto:ceo@carterwarrens.com?subject=Blaque%20Baux%20capital%20and%20deployment">Discuss a partnership →</a>
+          <p class="capital-note">No securities are being offered through this website. Additional information may be provided to qualified parties following appropriate legal and operational review.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">06</div>
+  <div class="body">
+    <h2>Carter Warrens.</h2>
+    <p>Blaque Baux is a subsidiary of <strong>Carter Warrens</strong>, a boutique firm built on a simple
+    observation: the execution capabilities that power the world's largest institutions shouldn't be reserved
+    only for them. Carter Warrens brings that institutional-grade discipline in program management, transformation,
+    and high-stakes delivery to growth-stage companies, private funds, and public-sector organizations.</p>
+    <p>Its partners carry 40+ years of combined program leadership at global banks and market-infrastructure
+    firms, based in the New York metro. Blaque Baux is where that discipline is turned on the markets themselves:
+    <strong>systematic research held to an institutional bar, in the open.</strong></p>
+    <p><strong>Kareem Williams, Founder.</strong> A product-delivery and engineering leader with 20+ years
+    building the trading, risk, and regulatory platforms behind capital markets, including cash equities, swaps, FX, rates
+    and credit derivatives, at firms including <strong>Morgan Stanley, UBS, Citi, Credit Suisse, BNP Paribas, and
+    Mizuho</strong>. He pairs delivery leadership with real technical fluency: he reads and writes the code
+    (Java/Spring&nbsp;Boot, REST microservices, React, Azure), and holds an MBA in Management of Technology
+    (NJIT), an MS in Finance (Pace), and the PMP and PMI-ACP certifications. Blaque Baux turns two decades spent
+    building the infrastructure of these markets on the strategies that run on them.
+    <a href="https://www.carterwarrens.com" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid #3a424a">Full profile at carterwarrens.com →</a></p>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
   <div class="idx">07</div>
   <div class="body">
     <div class="micro">Using the work / frequently asked questions</div>
@@ -394,12 +442,12 @@ footer{padding:32px 0 46px}
         <div class="faq-answer">Start with the linked repository and its documentation. Preserve the original assumptions and baseline before changing parameters, data, or portfolio rules. Record each change, test it out of sample where possible, and evaluate tail behavior, implementation costs, and failure conditions rather than relying on a single headline metric.</div>
       </details>
       <details>
-        <summary><span class="faq-num">09</span><span>Is BLAQUE BAUX investment advice?</span><span class="faq-mark">+</span></summary>
-        <div class="faq-answer">No. BLAQUE BAUX provides educational research, software, documentation, and illustrative analysis. It does not provide personalized investment, legal, tax, or accounting advice, and it does not recommend that any person buy, sell, or hold a security or strategy.</div>
+        <summary><span class="faq-num">09</span><span>Is BLAQUE BAUX investment advice or an offering?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">No. The public site provides research, software, and documented analysis. It does not provide individualized investment advice or constitute an offer to sell securities. Any future investment relationship would be established separately through the appropriate legal, regulatory, and operational framework.</div>
       </details>
       <details>
-        <summary><span class="faq-num">10</span><span>Will BLAQUE BAUX become an investment manager or fund?</span><span class="faq-mark">+</span></summary>
-        <div class="faq-answer">BLAQUE BAUX is currently a research and technology initiative, not an investment adviser, broker-dealer, fund, or asset manager. No future structure is being promised. Any regulated investment activity would be established separately and communicated only after the appropriate legal, operational, and regulatory framework was in place.</div>
+        <summary><span class="faq-num">10</span><span>Is BLAQUE BAUX becoming an investment manager?</span><span class="faq-mark">+</span></summary>
+        <div class="faq-answer">BLAQUE BAUX is currently deploying proprietary capital across governed strategies and developing an attributable live track record. We intend to explore external-capital and performance-aligned partnerships once the appropriate investment structure, controls, service providers, and regulatory framework are in place. Qualified allocators and institutional partners are invited to begin a conversation.</div>
       </details>
       <details>
         <summary><span class="faq-num">11</span><span>Who owns and operates BLAQUE BAUX?</span><span class="faq-mark">+</span></summary>
