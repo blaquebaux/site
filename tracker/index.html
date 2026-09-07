@@ -8,7 +8,7 @@
   --bg:#dfeadd; --panel:#eef4ec; --ink:#101820; --muted:#5b695e; --line:#a8b8a5;
   --deep:#294c3a; --blue:#3f8064; --cyan:#78aa8b; --red:#b64c5a; --green:#17724f;
   /* aliases consumed by the chart script */
-  --sleeve:#294c3a; --spy:#3f8064; --dia:#78aa8b; --faint:#879b89; --surface:#eef4ec;
+  --sleeve:#e8cb62; --spy:#69d3a0; --dia:#8fc4d7; --faint:#82978a; --surface:#0c1a12;
   --up:#17724f; --down:#b64c5a;
   --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
 }
@@ -53,6 +53,54 @@ nav{position:sticky; top:0; z-index:30; background:rgba(223,234,221,.92); backdr
 .banner{display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); background:rgba(248,251,247,.5); padding:15px 18px; margin-bottom:34px; font:300 10px/1.7 var(--mono); letter-spacing:.05em; text-transform:uppercase; color:#536258}
 .banner b{color:var(--deep); font-weight:500}
 .banner .ic{color:var(--deep); font-weight:600; flex:none}
+.workstation{border:1px solid var(--deep);background:#07120d;color:#eaf2ec;box-shadow:0 18px 60px rgba(41,76,58,.12)}
+.workstation-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;padding:28px 30px;border-bottom:1px solid rgba(223,234,221,.2)}
+.workstation-kicker{font:9px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:#82a58d}
+.workstation-title{margin:8px 0 0;font-size:clamp(25px,3.2vw,42px);font-weight:500;letter-spacing:.01em}
+.workstation-meta{max-width:54ch;font-size:15px;line-height:1.6;color:#a9bbb0;text-align:right}
+.terminal-tabs{display:flex;border-bottom:1px solid rgba(223,234,221,.2);padding:0 30px;overflow:auto}
+.terminal-tab{appearance:none;border:0;border-right:1px solid rgba(223,234,221,.16);background:transparent;color:#8ca095;padding:15px 22px;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.terminal-tab:first-child{border-left:1px solid rgba(223,234,221,.16)}
+.terminal-tab[aria-selected="true"]{background:#dfeadd;color:#102018}
+.terminal-tab:focus-visible{outline:2px solid #e8cb62;outline-offset:-3px}
+.terminal-panel{display:none;padding:30px}
+.terminal-panel.active{display:block}
+.terminal-panel .controls{margin-bottom:26px}
+.terminal-panel .ctl label,.terminal-panel .toggle{color:#9eb0a5}
+.terminal-panel select{background:#102219;border-color:#42604d;color:#edf4ef}
+.terminal-panel .panel,.terminal-panel .stats{border-color:#3a5544;background:#0c1a12}
+.terminal-panel .panel-head,.terminal-panel .stat{border-color:#3a5544}
+.terminal-panel .panel-head h3{color:#edf4ef}
+.terminal-panel .legend,.terminal-panel .asof,.terminal-panel .stat .k{color:#92a69a}
+.terminal-panel .hero-val{color:#f2f6f3}
+.terminal-panel .gridline{stroke:rgba(223,234,221,.13)}
+.terminal-panel .axis-t{fill:#91a398}
+.terminal-note{margin:0 0 24px;font:9px/1.7 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#82978a}
+.terminal-note a{color:#dce8df;border-bottom:1px solid #587260}
+
+.heatmap-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:112px;gap:6px}
+.heat-tile{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:15px;border:1px solid rgba(255,255,255,.13);background:var(--tile-bg,#294c3a);color:#fff;transition:transform .16s ease,border-color .16s ease}
+.heat-tile:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.48)}
+.heat-tile.major{grid-column:span 2;grid-row:span 2}
+.heat-symbol{font:500 clamp(13px,1.6vw,20px) var(--mono);letter-spacing:.08em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.heat-name{font-size:12px;line-height:1.35;color:rgba(255,255,255,.72);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.heat-return{font:500 clamp(19px,2.5vw,32px) var(--mono);letter-spacing:-.03em}
+.heatmap-legend{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px;color:#8fa398;font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.heat-scale{display:flex;align-items:center;gap:8px}
+.heat-scale i{display:block;width:110px;height:7px;background:linear-gradient(90deg,#7d2734,#3c4740,#146044)}
+
+.crypto-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:16px}
+.crypto-head h3{margin:0;font-size:18px;font-weight:500}
+.crypto-status{font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#90a399;text-align:right}
+.crypto-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #3a5544;border-left:1px solid #3a5544}
+.crypto-card{min-width:0;padding:18px;border-right:1px solid #3a5544;border-bottom:1px solid #3a5544;background:#0c1a12}
+.crypto-id{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.crypto-symbol{font:500 15px var(--mono);letter-spacing:.08em}.crypto-rank{font:9px var(--mono);color:#71877a}
+.crypto-name{margin-top:4px;font-size:12px;color:#8fa398}
+.crypto-price{margin-top:18px;font:500 clamp(18px,2.5vw,27px) var(--mono)}
+.crypto-change{margin-top:6px;font:11px var(--mono)}
+.sparkline{display:block;width:100%;height:55px;margin-top:14px;overflow:visible}
+.crypto-empty{padding:46px 22px;border:1px solid #3a5544;color:#90a399;text-align:center;font:10px/1.8 var(--mono);letter-spacing:.08em;text-transform:uppercase}
 
 .controls{display:flex; flex-wrap:wrap; gap:20px 30px; align-items:end; margin-bottom:30px}
 .ctl label{display:block; font:9px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:8px}
@@ -89,7 +137,8 @@ svg#chart{display:block; width:100%; height:auto; padding:14px 12px 6px; touch-a
 footer{border-top:1px solid var(--line); padding:26px 0 40px}
 .foot{font:8px/1.9 var(--mono); letter-spacing:.1em; text-transform:uppercase; color:#59695e}
 .foot b{color:var(--muted); font-weight:500}
-@media(max-width:680px){.links a:nth-child(-n+2){display:none}.stat{border-right:0}}
+@media(max-width:900px){.heatmap-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.crypto-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.links a:nth-child(-n+2){display:none}.stat{border-right:0}.workstation-head{grid-template-columns:1fr;padding:22px}.workstation-meta{text-align:left}.terminal-tabs{padding:0}.terminal-tab{flex:1;padding:14px 12px}.terminal-panel{padding:20px}.heatmap-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:104px}.heat-tile.major{grid-column:span 1;grid-row:span 1}.crypto-grid{grid-template-columns:1fr}.heatmap-legend{align-items:flex-start;flex-direction:column}.crypto-head{align-items:flex-start;flex-direction:column}.crypto-status{text-align:left}}
 </style>
 
 <nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links"><a href="/labs/">Labs</a><a href="/corpus/">Corpus</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/about/">About</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GitHub ↗</a></div></div></nav>
@@ -113,20 +162,47 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     (paper accounts began only in late July). Simulated results do not predict future returns. Not investment advice.</div>
   </div>
 
-  <div class="controls">
-    <div class="ctl"><label for="sel">Sleeve</label><select id="sel"></select></div>
-    <div class="ctl"><label for="hf">Compare</label><label class="toggle"><input type="checkbox" id="hf"> vs hedge funds</label></div>
+  <div class="workstation">
+    <div class="workstation-head">
+      <div><div class="workstation-kicker">Market workstation / research view</div><h2 class="workstation-title">Three lenses. One governed record.</h2></div>
+      <div class="workstation-meta">Chart sleeve behavior, scan the research universe, and keep crypto market context in view without confusing indicative data for execution data.</div>
+    </div>
+    <div class="terminal-tabs" role="tablist" aria-label="Tracker views">
+      <button class="terminal-tab" id="tab-chart" role="tab" aria-selected="true" aria-controls="panel-chart" data-panel="chart">Charting</button>
+      <button class="terminal-tab" id="tab-heatmap" role="tab" aria-selected="false" aria-controls="panel-heatmap" data-panel="heatmap" tabindex="-1">Heatmap</button>
+      <button class="terminal-tab" id="tab-crypto" role="tab" aria-selected="false" aria-controls="panel-crypto" data-panel="crypto" tabindex="-1">Crypto</button>
+    </div>
+
+    <div class="terminal-panel active" id="panel-chart" role="tabpanel" aria-labelledby="tab-chart">
+      <p class="terminal-note">Blaque Baux sleeve data / end-of-day / simulated research record</p>
+      <div class="controls">
+        <div class="ctl"><label for="sel">Sleeve</label><select id="sel"></select></div>
+        <div class="ctl"><label for="hf">Compare</label><label class="toggle"><input type="checkbox" id="hf"> vs hedge funds</label></div>
+      </div>
+
+      <div class="hero-val"><span class="v" id="heroVal">—</span><span class="r" id="heroRet">—</span></div>
+      <p class="asof" id="asof">—</p>
+
+      <div class="panel">
+        <div class="panel-head"><h3>Value of $100,000 · year to date</h3><div class="legend" id="legend"></div></div>
+        <svg id="chart" viewBox="0 0 900 380" role="img" aria-label="Year-to-date equity curve versus S&P 500 and Dow"></svg>
+      </div>
+
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="terminal-panel" id="panel-heatmap" role="tabpanel" aria-labelledby="tab-heatmap" hidden>
+      <p class="terminal-note">Relative movement / sleeves and benchmarks / same measurement window</p>
+      <div class="heatmap-grid" id="heatmapGrid" aria-label="Research sleeve return heatmap"></div>
+      <div class="heatmap-legend"><span>Tile color reflects year-to-date return</span><span class="heat-scale"><span>Lower</span><i></i><span>Higher</span></span></div>
+    </div>
+
+    <div class="terminal-panel" id="panel-crypto" role="tabpanel" aria-labelledby="tab-crypto" hidden>
+      <div class="crypto-head"><div><p class="terminal-note">Public market context / delayed and indicative</p><h3>Crypto board</h3></div><div class="crypto-status" id="cryptoStatus">Loading public feed</div></div>
+      <div class="crypto-grid" id="cryptoGrid" aria-live="polite"></div>
+    </div>
+    <div class="terminal-panel-credit terminal-note" style="padding:0 30px 24px">Interaction model adapted from <a href="https://github.com/ErTasselli/OpenTerminal" target="_blank" rel="noopener">OpenTerminal ↗</a>, MIT licensed. Market context is informational and not execution-grade.</div>
   </div>
-
-  <div class="hero-val"><span class="v" id="heroVal">—</span><span class="r" id="heroRet">—</span></div>
-  <p class="asof" id="asof">—</p>
-
-  <div class="panel">
-    <div class="panel-head"><h3>Value of $100,000 · year to date</h3><div class="legend" id="legend"></div></div>
-    <svg id="chart" viewBox="0 0 900 380" role="img" aria-label="Year-to-date equity curve versus S&P 500 and Dow"></svg>
-  </div>
-
-  <div class="stats" id="stats"></div>
 </div></section>
 
 <aside class="site-contact" aria-label="Contact Carter Warrens"><div class="site-contact-inner"><div><span class="site-contact-label">Advisory and collaboration</span><span class="site-contact-title">Work with Carter Warrens</span></div><a class="site-contact-link" href="mailto:ceo@carterwarrens.com"><span>ceo@carterwarrens.com</span><span>→</span></a></div></aside>
@@ -139,6 +215,79 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 
 <script>
 (function(){
+  const tabs=[...document.querySelectorAll('.terminal-tab')];
+  function activatePanel(name){
+    tabs.forEach(function(tab){
+      const active=tab.dataset.panel===name;
+      tab.setAttribute('aria-selected',active?'true':'false');
+      tab.tabIndex=active?0:-1;
+      const panel=document.getElementById('panel-'+tab.dataset.panel);
+      panel.classList.toggle('active',active);
+      panel.hidden=!active;
+    });
+  }
+  tabs.forEach(function(tab,index){
+    tab.addEventListener('click',function(){activatePanel(tab.dataset.panel);});
+    tab.addEventListener('keydown',function(event){
+      if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+      event.preventDefault();
+      const step=event.key==='ArrowRight'?1:-1;
+      const next=tabs[(index+step+tabs.length)%tabs.length];
+      activatePanel(next.dataset.panel);next.focus();
+    });
+  });
+
+  function cryptoSparkline(svg,values,rising){
+    const clean=(values||[]).filter(Number.isFinite);
+    if(clean.length<2)return;
+    const lo=Math.min(...clean),hi=Math.max(...clean),span=hi-lo||1;
+    const d=clean.map(function(value,index){
+      const x=index/(clean.length-1)*100;
+      const y=48-(value-lo)/span*42;
+      return (index?'L':'M')+x.toFixed(2)+' '+y.toFixed(2);
+    }).join(' ');
+    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d',d);path.setAttribute('fill','none');
+    path.setAttribute('stroke',rising?'#69d3a0':'#ff8d9a');path.setAttribute('stroke-width','2');
+    path.setAttribute('vector-effect','non-scaling-stroke');
+    svg.appendChild(path);
+  }
+  function money(value){
+    const digits=value<1?4:value<100?2:0;
+    return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:digits,maximumFractionDigits:digits}).format(value);
+  }
+  async function loadCrypto(){
+    const grid=document.getElementById('cryptoGrid'),status=document.getElementById('cryptoStatus');
+    try{
+      const ids='bitcoin,ethereum,solana,xrp,binancecoin,cardano';
+      const url='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids='+ids+'&order=market_cap_desc&sparkline=true&price_change_percentage=24h';
+      const response=await fetch(url,{headers:{accept:'application/json'}});
+      if(!response.ok)throw new Error('public feed returned '+response.status);
+      const coins=await response.json();
+      grid.textContent='';
+      coins.forEach(function(coin){
+        const card=document.createElement('article');card.className='crypto-card';
+        const id=document.createElement('div');id.className='crypto-id';
+        const symbol=document.createElement('span');symbol.className='crypto-symbol';symbol.textContent=String(coin.symbol||'').toUpperCase();
+        const rank=document.createElement('span');rank.className='crypto-rank';rank.textContent='#'+coin.market_cap_rank;
+        id.append(symbol,rank);
+        const name=document.createElement('div');name.className='crypto-name';name.textContent=coin.name;
+        const price=document.createElement('div');price.className='crypto-price';price.textContent=money(Number(coin.current_price));
+        const changeValue=Number(coin.price_change_percentage_24h)||0;
+        const change=document.createElement('div');change.className='crypto-change '+(changeValue>=0?'up':'down');change.textContent=(changeValue>=0?'+':'')+changeValue.toFixed(2)+'% / 24h';
+        const spark=document.createElementNS('http://www.w3.org/2000/svg','svg');spark.setAttribute('class','sparkline');spark.setAttribute('viewBox','0 0 100 52');spark.setAttribute('aria-label',coin.name+' seven-day price trend');
+        cryptoSparkline(spark,coin.sparkline_in_7d&&coin.sparkline_in_7d.price,changeValue>=0);
+        card.append(id,name,price,change,spark);grid.appendChild(card);
+      });
+      const updated=coins[0]&&coins[0].last_updated?new Date(coins[0].last_updated).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}):'recently';
+      status.textContent='CoinGecko / indicative / updated '+updated;
+    }catch(error){
+      grid.className='crypto-empty';grid.textContent='The public crypto feed is temporarily unavailable. Charting and heatmap research views remain available.';
+      status.textContent='Public feed unavailable';console.error('crypto load failed',error);
+    }
+  }
+  loadCrypto();
+
   fetch('performance.json',{cache:'no-store'}).then(r=>r.json()).then(function(D){
   const S=D.series, dates=D.dates, N=dates.length;
   const tapeOrder=['SPY','DIA','breakthrough','balsamic','bossy','brigade','brilliant','believer','bastion'];
@@ -149,6 +298,18 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
   }).join('');
   const tapeLabel=`<span class="tape-label">End-of-day / ${D.asof} / rebased $100k / simulated</span>`;
   document.getElementById('tapeTrack').innerHTML=`<div class="tape-group">${tapeLabel}${tapeItems}</div><div class="tape-group" aria-hidden="true">${tapeLabel}${tapeItems}</div>`;
+  const heatOrder=['SPY','DIA','breakthrough','balsamic','bossy','brigade','brilliant','believer','bastion','QAI','DBMF','BRK.B'];
+  const heatmap=document.getElementById('heatmapGrid');
+  heatOrder.filter(k=>S[k]&&S[k].equity.length).forEach(function(key){
+    const series=S[key],first=series.equity[0],last=series.equity[series.equity.length-1],ret=(last/first-1)*100;
+    const intensity=Math.min(1,Math.abs(ret)/18),base=ret>=0?[20,96,68]:[125,39,52],neutral=[45,58,50];
+    const rgb=base.map(function(value,i){return Math.round(neutral[i]+(value-neutral[i])*(.35+.65*intensity));});
+    const tile=document.createElement('article');tile.className='heat-tile '+((key==='SPY'||key==='DIA')?'major':'');tile.style.setProperty('--tile-bg','rgb('+rgb.join(',')+')');
+    const symbol=document.createElement('div');symbol.className='heat-symbol';symbol.textContent=key.toUpperCase();
+    const name=document.createElement('div');name.className='heat-name';name.textContent=series.label;
+    const value=document.createElement('div');value.className='heat-return';value.textContent=(ret>=0?'+':'')+ret.toFixed(1)+'%';
+    tile.append(symbol,name,value);heatmap.appendChild(tile);
+  });
   const sel=document.getElementById('sel');
   const order=["breakthrough","balsamic","bossy","brigade","brilliant","believer","bastion"];
   order.filter(k=>S[k]).forEach(k=>{const o=document.createElement('option'); o.value=k; o.textContent=S[k].label; sel.appendChild(o);});
