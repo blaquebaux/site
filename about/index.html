@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About BLAQUE BAUX — Carter Warrens</title>
+<title>About BLAQUE BAUX: Carter Warrens</title>
 <link rel="canonical" href="https://www.blaquebaux.com/about/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="description" content="Blaque Baux is Carter Warrens' open systematic-research initiative — a governed Julia engine, a family of strategy sleeves, and a discipline of publishing the failures.">
+<meta name="description" content="Blaque Baux is Carter Warrens' open systematic-research initiative: a governed Julia engine, 61 strategy sleeves, public failure postmortems, and a discipline of publishing what did not work.">
 <meta name="author" content="Carter Warrens">
-<meta property="og:title" content="About BLAQUE BAUX — Carter Warrens">
+<meta property="og:title" content="About BLAQUE BAUX: Carter Warrens">
 <meta property="og:description" content="Open systematic research, governed execution, and the discipline of publishing what didn't work.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.blaquebaux.com/about/">
@@ -82,6 +82,19 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What 61 Failed Strategies Taught Me About AI and Markets",
+  "description": "A field report on where AI adds value in systematic markets research, where it does not, and why governed falsification matters more than prediction.",
+  "author": {"@type": "Person", "name": "Kareem Williams"},
+  "publisher": {"@type": "Organization", "name": "Carter Warrens", "url": "https://www.carterwarrens.com"},
+  "isPartOf": {"@type": "WebPage", "url": "https://www.blaquebaux.com/about/"},
+  "about": ["artificial intelligence", "systematic investing", "quantitative research", "model governance", "decision-making"],
+  "inLanguage": "en-US"
+}
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 :root{--bg:#050608;--panel:#0a0d11;--fg:#f3f3f0;--muted:#9aa0a6;--dim:#747b83;--line:#20252c;--line2:#12161b;--accent:#c9d2d8}
@@ -116,6 +129,28 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 .body strong{color:#fff;font-weight:500}
 .body em{color:var(--fg);font-style:italic}
 
+.essay-layout{display:grid;grid-template-columns:minmax(180px,250px) minmax(0,900px);gap:clamp(38px,7vw,110px);align-items:start}
+.essay-rail{border-top:1px solid var(--line);padding-top:18px;color:#858c93;font:10px/1.8 "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+.essay-rail strong{display:block;margin-bottom:8px;color:var(--accent);font-weight:500}
+.essay-title{max-width:22ch;font-size:clamp(38px,6vw,72px)!important;line-height:1.03;letter-spacing:-.025em!important;text-wrap:balance}
+.essay-deck{max-width:48ch;margin:0 0 34px!important;color:var(--fg)!important;font-size:clamp(19px,2.2vw,25px)!important;line-height:1.48!important}
+.essay-copy{max-width:78ch}
+.essay-copy p{font-size:17px;line-height:1.78}
+.essay-copy p:first-child:first-letter{float:left;margin:7px 10px 0 0;color:var(--accent);font-size:64px;line-height:.75;font-weight:500}
+.master-lesson{margin:34px 0;padding:24px 28px;border-left:2px solid var(--accent);background:rgba(255,255,255,.025);font-size:20px!important;line-height:1.55!important;color:#fff!important}
+
+.postmortem-intro{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.75fr);gap:48px;align-items:end;margin-bottom:38px}
+.postmortem-intro p{margin:0;color:#c5cacf;font-size:17px;line-height:1.7}
+.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.case{min-height:100%;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.012)}
+.case-num{display:block;margin-bottom:34px;color:#69717a;font:9px "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase}
+.case h3{margin:0 0 20px;font-size:23px;line-height:1.25;font-weight:500}
+.case dl{margin:0}.case dt{margin-top:18px;color:var(--accent);font:9px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase}.case dd{margin:7px 0 0;color:#bcc2c7;font-size:15px;line-height:1.62}
+.case-note{margin-top:24px;color:#747c84;font:10px/1.7 "IBM Plex Mono",monospace;letter-spacing:.04em}
+.transparency{margin-top:42px;padding:30px;border:1px solid #39414a;display:flex;align-items:center;justify-content:space-between;gap:30px;background:rgba(255,255,255,.018)}
+.transparency p{max-width:760px;margin:0!important;color:#eef0f1!important;font-size:18px!important;line-height:1.6!important}
+.transparency-actions{display:flex;gap:10px;flex:0 0 auto}.transparency a{border:1px solid #46505a;padding:13px 15px;color:#fff;font:9px "IBM Plex Mono",monospace;letter-spacing:.13em;text-transform:uppercase}.transparency a:first-child{background:#edf0f1;color:#0a0d11;border-color:#edf0f1}
+
 .tenets{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
 .tenets li{padding:17px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:230px 1fr;gap:22px}
 .tenets b{font:11px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
@@ -137,7 +172,8 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 
 footer{padding:32px 0 46px}
 .foot{display:flex;justify-content:space-between;gap:24px;color:#565d64;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
-@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.foot{display:block;line-height:2.1}}
+@media(max-width:900px){.essay-layout{grid-template-columns:1fr;gap:26px}.essay-rail{max-width:360px}.case-grid{grid-template-columns:1fr}.postmortem-intro{grid-template-columns:1fr;gap:16px}.transparency{align-items:flex-start;flex-direction:column}.transparency-actions{flex-wrap:wrap}}
+@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.essay-copy p{font-size:16px}.master-lesson{padding:20px;font-size:18px!important}.case{padding:24px}.transparency{padding:22px}.transparency-actions{width:100%;display:grid}.transparency a{text-align:center}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.foot{display:block;line-height:2.1}}
 </style>
 <link rel="stylesheet" href="../assets/site-wide.css">
 </head>
@@ -148,7 +184,7 @@ footer{padding:32px 0 46px}
 <header class="hero"><div class="shell">
   <div class="micro">About / a Carter Warrens research initiative</div>
   <h1>ABOUT</h1>
-  <p class="stand">Blaque Baux is where <b>Carter Warrens</b> does its systematic research <b>in the open</b> —
+  <p class="stand">Blaque Baux is where <b>Carter Warrens</b> does its systematic research <b>in the open</b>,
   and puts most of it on the record as <em>rejected, with the reason</em>. What survives is governed, validated,
   and only then called real.</p>
 </div></header>
@@ -156,14 +192,14 @@ footer{padding:32px 0 46px}
 <section class="section"><div class="shell section-grid">
   <div class="idx">01</div>
   <div class="body">
-    <h2>One engine, many directions — and a public trail of what failed.</h2>
+    <h2>One engine, many directions, and a public trail of what failed.</h2>
     <p class="lead">Blaque Baux is an open, Julia-based systematic-research initiative: a single governed engine
     steered into a family of strategy sleeves, each pointed at a different corner of the market.</p>
-    <p>Every idea is tested against the same honest bar. Most do not clear it — and instead of hiding them, we
+    <p>Every idea is tested against the same honest bar. Most do not clear it. Instead of hiding them, we
     keep them public as a <strong>research graveyard</strong>: the failed thesis, the constraint, or the risk
     finding stays visible so it can inform the next test. The handful that survive are built into governed
     drivers and validated before they are ever described as live. The corpus is the whole record, kept open on
-    GitHub — live systems, work in validation, active research, and null results side by side.</p>
+    GitHub: live systems, work in validation, active research, and null results side by side.</p>
   </div>
 </div></section>
 
@@ -171,11 +207,11 @@ footer{padding:32px 0 46px}
   <div class="idx">02</div>
   <div class="body">
     <h2>The standard: publishing the failures is the point.</h2>
-    <p>Anyone can point an AI at a market now. The edge is <strong>understanding what the data actually says —
+    <p>Anyone can point an AI at a market now. The edge is <strong>understanding what the data actually says,
     and being willing to show your losses.</strong> That discipline runs through everything here:</p>
     <ul class="tenets">
-      <li><b>The red scorecard is the point</b><span>A rejected strategy, documented with its reason, is a result — not an embarrassment. Most of the corpus is exactly this.</span></li>
-      <li><b>Validate before live</b><span>Nothing is called real on a backtest. It earns a governed paper track, then real money — or it stays research.</span></li>
+      <li><b>The red scorecard is the point</b><span>A rejected strategy, documented with its reason, is a result, not an embarrassment. Most of the corpus is exactly this.</span></li>
+      <li><b>Validate before live</b><span>Nothing is called real on a backtest. It earns a governed paper track, then real money, or it stays research.</span></li>
       <li><b>The tail is the whole story</b><span>Returns are fat-tailed, so a bare Sharpe misleads. We test normality first, and weight the crash as heavily as the average.</span></li>
       <li><b>Flag the gap, don't fake it</b><span>Where the data isn't there, we say so. No proxy dressed up as the real thing.</span></li>
     </ul>
@@ -187,12 +223,12 @@ footer{padding:32px 0 46px}
   <div class="body">
     <h2>Governance is the product.</h2>
     <p>The platform is built in Julia around a venue-agnostic execution controller and a <strong>Layer-3
-    live-money safety gate</strong> — preflight checks, idempotency, reconciliation, a high-water-mark and a
+    live-money safety gate</strong>: preflight checks, idempotency, reconciliation, a high-water-mark and a
     kill switch. The research may use modern tooling, but <strong>no language model sits in the order path</strong>:
     every allocator emits a target book, and reproducible code routes it through the gate.</p>
     <p>Performance is judged with a fat-tail toolkit, not a headline number: Jarque–Bera for normality before
     any mean-variance claim, <em>Jensen's alpha</em> and <em>M²</em> instead of Sharpe alone, and a
-    crisis-correlation check — how a stream behaves on the market's worst days, the 2008 tell — before anything
+    crisis-correlation check, including how a stream behaves on the market's worst days and the 2008 tell, before anything
     is trusted to diversify. The point is not a clever signal; it is a book you can actually run.</p>
   </div>
 </div></section>
@@ -201,18 +237,18 @@ footer{padding:32px 0 46px}
   <div class="idx">04</div>
   <div class="body">
     <h2>Carter Warrens.</h2>
-    <p>Blaque Baux is a subsidiary of <strong>Carter Warrens</strong> — a boutique firm built on a simple
+    <p>Blaque Baux is a subsidiary of <strong>Carter Warrens</strong>, a boutique firm built on a simple
     observation: the execution capabilities that power the world's largest institutions shouldn't be reserved
-    only for them. Carter Warrens brings that institutional-grade discipline — program management, transformation,
-    and high-stakes delivery — to growth-stage companies, private funds, and public-sector organizations.</p>
+    only for them. Carter Warrens brings that institutional-grade discipline in program management, transformation,
+    and high-stakes delivery to growth-stage companies, private funds, and public-sector organizations.</p>
     <p>Its partners carry 40+ years of combined program leadership at global banks and market-infrastructure
     firms, based in the New York metro. Blaque Baux is where that discipline is turned on the markets themselves:
     <strong>systematic research held to an institutional bar, in the open.</strong></p>
-    <p><strong>Kareem Williams — Founder.</strong> A product-delivery and engineering leader with 20+ years
-    building the trading, risk, and regulatory platforms behind capital markets — cash equities, swaps, FX, rates
-    and credit derivatives — at firms including <strong>Morgan Stanley, UBS, Citi, Credit Suisse, BNP Paribas, and
-    Mizuho</strong>. He pairs delivery leadership with real technical fluency — he reads and writes the code
-    (Java/Spring&nbsp;Boot, REST microservices, React, Azure) — and holds an MBA in Management of Technology
+    <p><strong>Kareem Williams, Founder.</strong> A product-delivery and engineering leader with 20+ years
+    building the trading, risk, and regulatory platforms behind capital markets, including cash equities, swaps, FX, rates
+    and credit derivatives, at firms including <strong>Morgan Stanley, UBS, Citi, Credit Suisse, BNP Paribas, and
+    Mizuho</strong>. He pairs delivery leadership with real technical fluency: he reads and writes the code
+    (Java/Spring&nbsp;Boot, REST microservices, React, Azure), and holds an MBA in Management of Technology
     (NJIT), an MS in Finance (Pace), and the PMP and PMI-ACP certifications. Blaque Baux turns two decades spent
     building the infrastructure of these markets on the strategies that run on them.
     <a href="https://www.carterwarrens.com" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid #3a424a">Full profile at carterwarrens.com →</a></p>
@@ -221,6 +257,106 @@ footer{padding:32px 0 46px}
 
 <section class="section"><div class="shell section-grid">
   <div class="idx">05</div>
+  <article class="body" id="field-report">
+    <div class="essay-layout">
+      <aside class="essay-rail">
+        <strong>Field report / 01</strong>
+        61 strategies<br>
+        3+ years of testing<br>
+        One governed standard
+      </aside>
+      <div>
+        <div class="micro">The master lesson / AI and markets</div>
+        <h2 class="essay-title">What 61 Failed Strategies Taught Me About AI and Markets.</h2>
+        <p class="essay-deck">After 61 strategies and 3+ years of systematic testing, here is what I know about where AI adds value in markets, and where it does not.</p>
+        <div class="essay-copy">
+          <p>The title is deliberately blunt. Not every sleeve failed, but most original theses changed materially once they met real data, realistic costs, unstable correlations, and the market's tail. Several ideas survived only after the exciting story was removed. What remained was often smaller and less glamorous: a risk overlay, a sizing rule, a diversified ingredient, or a warning not to trade.</p>
+
+          <p>The most counter-intuitive lesson was that better prediction was rarely the durable advantage. Geography repeatedly collapsed into US beta plus currency risk. Sophisticated wrappers often became ordinary exposure with an additional fee. Low correlation disappeared during stress. A higher backtested Sharpe sometimes came from concentration in the period's winner, not from a more resilient portfolio. The useful finding was frequently a constraint.</p>
+
+          <p>This is where AI helps. It makes the cost of asking another question dramatically lower. It can inspect more hypotheses, translate an idea into reproducible code, find inconsistencies across documents, challenge parameter choices, and accelerate the comparison between a claim and its evidence. Used properly, AI expands the surface area of falsification. It helps a disciplined researcher discover more reasons to say no before capital has to do it.</p>
+
+          <p>AI does not decide which problem is worth solving. It does not know whether an apparent relationship is already priced, whether the available proxy represents the real economic exposure, or whether a result can survive liquidity, taxes, crowding, and a regime not present in the sample. Most importantly, it cannot own the consequences of a decision. Those are framing, judgment, and governance problems.</p>
+
+          <p>What surprised me most was how often the research answered the wrong question correctly. An optimizer could identify the best historical weights without showing that those weights were stable. A model could classify stress after it arrived without providing a tradable lead. A simulation could improve average return while relocating risk into one unrepeated event. In each case, computational success concealed decision failure. The hard work was not producing the answer. It was defining what an answer had to earn before anyone could act on it. That bar cannot be delegated to the model.</p>
+
+          <p>The corpus changed my view of intelligence in markets. Intelligence is not the volume of ideas a system can produce. It is the quality of the questions surrounding a decision: What would disprove this? Which risk is being relocated rather than removed? What happens in the worst five days? Who can stop the process? What evidence earns promotion from research to validation, and from validation to live?</p>
+
+          <p class="master-lesson"><strong>The master lesson:</strong> AI is most valuable as an instrument for structured doubt. It can make research faster, broader, and more internally consistent. It becomes dangerous when speed is mistaken for understanding, confidence for causality, or generated output for accountable judgment.</p>
+
+          <p>That is why the graveyard stays public. The rejected sleeves show the framing process, not just the winners left after selection. They make the surviving system more credible because the record exposes what was tested, what broke, and why. Markets do not reward the appearance of intelligence for long. They reward decisions that remain coherent after the story fails.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">06</div>
+  <div class="body" id="failure-postmortems">
+    <div class="postmortem-intro">
+      <div>
+        <div class="micro">Failure Postmortems / framing before tooling</div>
+        <h2>When the implementation worked and the decision system did not.</h2>
+      </div>
+      <p>Anonymized composite case studies of recurring AI implementation failures. Identifying details are removed. The purpose is to expose the hard framing question that should have been asked before scale.</p>
+    </div>
+
+    <div class="case-grid">
+      <article class="case">
+        <span class="case-num">Postmortem / 01</span>
+        <h3>The metric without a decision.</h3>
+        <dl>
+          <dt>What happened</dt>
+          <dd>An attrition model ranked employees accurately enough to impress the project team, but no one had defined an authorized intervention. Managers began treating a probability as a verdict.</dd>
+          <dt>The question not asked</dt>
+          <dd>What decision changes at each threshold, who owns it, and what protects the person affected by a false positive?</dd>
+          <dt>Takeaway</dt>
+          <dd>A prediction without a governed action is not a product. It is an unmanaged liability.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <span class="case-num">Postmortem / 02</span>
+        <h3>The copilot without a boundary.</h3>
+        <dl>
+          <dt>What happened</dt>
+          <dd>A generative assistant increased drafting speed, then overwhelmed review queues. Unverified output crossed a control boundary because productivity had been measured before accountability.</dd>
+          <dt>The question not asked</dt>
+          <dd>What may the model draft, what requires named human approval, and what may never enter production?</dd>
+          <dt>Takeaway</dt>
+          <dd>Faster generation magnifies weak controls. Throughput is not the same thing as completed, trusted work.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <span class="case-num">Postmortem / 03</span>
+        <h3>The forecast in the order path.</h3>
+        <dl>
+          <dt>What happened</dt>
+          <dd>A model cleared its historical benchmark and entered an allocation process. A regime change weakened its features while its confidence remained high, and no independent shutdown path existed.</dd>
+          <dt>The question not asked</dt>
+          <dd>What evidence can stop the model, and can the system fail safely when its assumptions no longer hold?</dd>
+          <dt>Takeaway</dt>
+          <dd>Safe AI needs both a falsification path and a shutdown path. Accuracy alone supplies neither.</dd>
+        </dl>
+      </article>
+    </div>
+
+    <p class="case-note">These are composite patterns intended to preserve confidentiality while making the operating failure visible. They do not identify or describe any single client engagement.</p>
+
+    <div class="transparency">
+      <p>Full READMEs and source code for all 61 sleeves are available on GitHub. We believe in radical transparency. Review our work, then let's talk.</p>
+      <div class="transparency-actions">
+        <a href="https://github.com/orgs/blaquebaux/repositories" target="_blank" rel="noopener">Review the corpus ↗</a>
+        <a href="mailto:ceo@carterwarrens.com">Let's talk →</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section"><div class="shell section-grid">
+  <div class="idx">07</div>
   <div class="body">
     <div class="micro">Using the work / frequently asked questions</div>
     <h2>How to read, reproduce, and apply the research.</h2>
