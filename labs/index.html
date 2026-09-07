@@ -187,6 +187,14 @@ nav{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.9);backdrop-fi
 
 /* disclaimer */
 .note{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font:9px/1.75 "IBM Plex Mono";letter-spacing:.09em;color:#535960;text-transform:uppercase}
+.research-system{position:relative;overflow:hidden;border-bottom:1px solid var(--line);padding:58px 0 34px;background:linear-gradient(180deg,var(--bg),#eceeea)}
+.research-system:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(17,19,21,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(17,19,21,.035) 1px,transparent 1px);background-size:76px 76px;mask-image:linear-gradient(to bottom,transparent,black 18%,black 82%,transparent)}
+.research-system-head{position:relative;z-index:1;display:flex;align-items:end;justify-content:space-between;gap:36px;margin-bottom:18px}
+.research-system-head h2{max-width:760px;margin:12px 0 0;font-size:clamp(30px,4.2vw,60px);font-weight:400;line-height:1.05;letter-spacing:.055em}
+.research-system-head p{max-width:470px;margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.research-system figure{position:relative;z-index:1;margin:0}
+.research-system img{display:block;width:100%;height:auto;max-height:760px;object-fit:contain;object-position:center bottom;filter:contrast(1.02)}
+.research-system figcaption{display:flex;justify-content:space-between;gap:20px;padding:12px 0 0;border-top:1px solid var(--line);font:9px "IBM Plex Mono";letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;font:9px "IBM Plex Mono";letter-spacing:.13em;color:#4d5359;text-transform:uppercase}
 .reveal{opacity:0;transform:translateY(15px);transition:.85s ease}.reveal.on{opacity:1;transform:none}
 @media(max-width:1000px){.active-grid,.feature-head,.labpanel,.intro{grid-template-columns:1fr}.detail{position:relative;top:auto}.labcopy{border-right:0;border-bottom:1px solid var(--line)}.labrow{grid-template-columns:55px 160px 1fr 90px}}
@@ -218,6 +226,11 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
   .matrix{inset:108px 18px 112px;grid-template-columns:repeat(2,minmax(0,1fr))}
   .flow{inset:108px 18px 112px}
   .foot{display:block;line-height:2}
+  .research-system{padding:42px 0 24px}
+  .research-system-head{display:block}
+  .research-system-head p{margin-top:18px}
+  .research-system img{width:135%;max-width:none;transform:translateX(-18%)}
+  .research-system figcaption{display:grid;gap:7px;line-height:1.5}
   .statusline{gap:12px;flex-wrap:wrap}
 }
 </style><link rel="stylesheet" href="/assets/site-wide.css"></head>
@@ -501,6 +514,16 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="legend"><span id="apLeft">country dispersion</span><span id="apMid">relative strength, not beta</span><span id="apRight">FX matters</span></div></div>
 </div><div class="note">Prototype note: repository names, LIVE / VALIDATION eligibility, thesis language, and quoted research metrics are taken from the BLAQUE BAUX GitHub corpus. Reported metrics are labeled as repository findings. Interactive response curves and regime controls are explanatory UI demonstrations unless explicitly tied to a reported scorecard value. Production LABS should execute repository code, a verified browser-safe port, or an embedded notebook before presenting newly computed results.</div>
 </div></div></section>
+<section class="research-system" aria-labelledby="research-system-title"><div class="shell">
+  <div class="research-system-head reveal">
+    <div><div class="micro">Human judgment / machine scale</div><h2 id="research-system-title">One research desk. Three kinds of intelligence.</h2></div>
+    <p>The analyst frames the question. Market data supplies the evidence. Local AI compute accelerates the search. Governance decides what survives.</p>
+  </div>
+  <figure class="reveal">
+    <img src="../assets/labs-ai-market-workstation-transparent.png" alt="Engraved illustration of an analyst using a multi-screen financial terminal beside compact AI and desktop computers" width="1672" height="941" loading="lazy" decoding="async">
+    <figcaption><span>Market structure / local compute / governed research</span><span>AI assists. Evidence decides.</span></figcaption>
+  </figure>
+</div></section>
 <aside class="site-contact" aria-label="Contact Carter Warrens"><div class="site-contact-inner"><div><span class="site-contact-label">Advisory and collaboration</span><span class="site-contact-title">Work with Carter Warrens</span></div><a class="site-contact-link" href="mailto:ceo@carterwarrens.com"><span>ceo@carterwarrens.com</span><span>→</span></a></div></aside>
 <footer><div class="shell foot"><span>BLAQUE BAUX / LABS</span><span>A CARTER WARRENS RESEARCH INITIATIVE</span><span>ACTIVE RESEARCH ONLY / SOURCE REMAINS AUTHORITATIVE</span></div></footer>
 <script>

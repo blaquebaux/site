@@ -25,6 +25,20 @@ nav{position:sticky; top:0; z-index:30; background:rgba(223,234,221,.92); backdr
 .links{display:flex; gap:27px; font:9px var(--mono); letter-spacing:.15em; text-transform:uppercase; color:#58675c}
 .links a:hover{color:#000}
 
+.market-tape{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:var(--deep);color:#eef4ec;height:43px;display:flex;align-items:center}
+.market-tape:before,.market-tape:after{content:"";position:absolute;z-index:2;top:0;bottom:0;width:44px;pointer-events:none}
+.market-tape:before{left:0;background:linear-gradient(90deg,var(--deep),transparent)}
+.market-tape:after{right:0;background:linear-gradient(270deg,var(--deep),transparent)}
+.tape-track{display:flex;width:max-content;will-change:transform;animation:tape-scroll 42s linear infinite}
+.tape-group{display:flex;align-items:center;flex:none}
+.tape-label,.tape-item{display:flex;align-items:center;gap:9px;white-space:nowrap;font:9px var(--mono);letter-spacing:.13em;text-transform:uppercase}
+.tape-label{padding:0 26px;color:#b9cabc}
+.tape-label:before{content:"";width:6px;height:6px;border-radius:50%;background:#e8cb62;box-shadow:0 0 12px rgba(232,203,98,.55)}
+.tape-item{padding:0 26px;border-left:1px solid rgba(238,244,236,.18)}
+.tape-symbol{color:#fff;font-weight:500}.tape-value{color:#dce7dd}.tape-change.up{color:#79d9a3}.tape-change.down{color:#ff9aa4}
+.market-tape:hover .tape-track,.market-tape:focus-within .tape-track{animation-play-state:paused}
+@keyframes tape-scroll{to{transform:translateX(-50%)}}
+
 .hero{min-height:360px; display:grid; place-items:center; position:relative; overflow:hidden; border-bottom:1px solid var(--line)}
 .hero:before{content:""; position:absolute; inset:0; background:linear-gradient(rgba(41,76,58,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(41,76,58,.05) 1px,transparent 1px); background-size:64px 64px; mask-image:linear-gradient(black,transparent)}
 .hero-inner{position:relative; z-index:1; text-align:center; padding:64px 0 54px}
@@ -33,7 +47,7 @@ nav{position:sticky; top:0; z-index:30; background:rgba(223,234,221,.92); backdr
 .statusline{margin-top:30px; display:flex; justify-content:center; gap:26px; flex-wrap:wrap; font:9px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:#415d4b}
 .dot{display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--blue); margin-right:7px; animation:pulse 2.6s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.3}}
-@media(prefers-reduced-motion:reduce){.dot{animation:none}}
+@media(prefers-reduced-motion:reduce){.dot{animation:none}.tape-track{animation:none}.tape-group[aria-hidden="true"]{display:none}}
 
 .section{padding:52px 0 74px}
 .banner{display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); background:rgba(248,251,247,.5); padding:15px 18px; margin-bottom:34px; font:300 10px/1.7 var(--mono); letter-spacing:.05em; text-transform:uppercase; color:#536258}
@@ -80,6 +94,10 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 
 <nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links"><a href="/labs/">Labs</a><a href="/corpus/">Corpus</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/about/">About</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GitHub ↗</a></div></div></nav>
 
+<div class="market-tape" aria-label="Delayed end-of-day research tape">
+  <div class="tape-track" id="tapeTrack"><div class="tape-group"><span class="tape-label">End-of-day research tape / loading</span></div></div>
+</div>
+
 <header class="hero"><div class="shell hero-inner">
   <div class="micro">Sleeve performance / measured honestly</div>
   <h1>TRACKER</h1>
@@ -123,6 +141,14 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 (function(){
   fetch('performance.json',{cache:'no-store'}).then(r=>r.json()).then(function(D){
   const S=D.series, dates=D.dates, N=dates.length;
+  const tapeOrder=['SPY','DIA','breakthrough','balsamic','bossy','brigade','brilliant','believer','bastion'];
+  const tapeNames={SPY:'SPY',DIA:'DIA',breakthrough:'BREAKTHROUGH',balsamic:'BALSAMIC',bossy:'BOSSY',brigade:'BRIGADE',brilliant:'BRILLIANT',believer:'BELIEVER',bastion:'BASTION'};
+  const tapeItems=tapeOrder.filter(k=>S[k]&&S[k].equity.length>1).map(k=>{
+    const e=S[k].equity, last=e[e.length-1], prev=e[e.length-2], change=(last/prev-1)*100;
+    return `<span class="tape-item"><span class="tape-symbol">${tapeNames[k]}</span><span class="tape-value">$${Math.round(last).toLocaleString('en-US')}</span><span class="tape-change ${change>=0?'up':'down'}">${change>=0?'+':''}${change.toFixed(2)}%</span></span>`;
+  }).join('');
+  const tapeLabel=`<span class="tape-label">End-of-day / ${D.asof} / rebased $100k / simulated</span>`;
+  document.getElementById('tapeTrack').innerHTML=`<div class="tape-group">${tapeLabel}${tapeItems}</div><div class="tape-group" aria-hidden="true">${tapeLabel}${tapeItems}</div>`;
   const sel=document.getElementById('sel');
   const order=["breakthrough","balsamic","bossy","brigade","brilliant","believer","bastion"];
   order.filter(k=>S[k]).forEach(k=>{const o=document.createElement('option'); o.value=k; o.textContent=S[k].label; sel.appendChild(o);});
@@ -184,6 +210,6 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
   sel.addEventListener('change',()=>render(sel.value));
   document.getElementById('hf').addEventListener('change',()=>render(cur));
   render(order.find(k=>S[k])||Object.keys(S)[0]);
-  }).catch(e=>{document.getElementById('heroVal').textContent='data unavailable';console.error('tracker load failed',e);});
+  }).catch(e=>{document.getElementById('heroVal').textContent='data unavailable';document.getElementById('tapeTrack').innerHTML='<div class="tape-group"><span class="tape-label">End-of-day research tape / data unavailable</span></div>';console.error('tracker load failed',e);});
 })();
 </script>
