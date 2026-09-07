@@ -186,11 +186,16 @@ nav{position:sticky;top:0;z-index:30;background:rgba(5,6,8,.86);backdrop-filter:
 .faq-answer{max-width:94ch;margin:0 0 26px 60px;color:#c3c8cc;font-size:16px;line-height:1.75}
 .faq-answer a{color:var(--fg);border-bottom:1px solid #3a4248}
 
+.market-duel{margin:0;border-bottom:1px solid var(--line);background:var(--bg);overflow:hidden}
+.market-duel-inner{width:min(1600px,100%);margin:auto;padding:62px 22px 34px}
+.market-duel-label{margin-bottom:22px;text-align:center;color:#626a72;font:9px "IBM Plex Mono",monospace;letter-spacing:.2em;text-transform:uppercase}
+.market-duel img{display:block;width:100%;height:auto;opacity:.88}
+
 footer{padding:32px 0 46px}
 .foot{display:flex;justify-content:space-between;gap:24px;color:#565d64;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:1000px){.hero-grid{grid-template-columns:1fr;gap:34px;align-items:start}.hero h1{font-size:clamp(62px,18vw,150px)}.hero-copy{max-width:760px}}
 @media(max-width:900px){.essay-layout{grid-template-columns:1fr;gap:26px}.essay-rail{max-width:360px}.case-grid{grid-template-columns:1fr}.postmortem-intro{grid-template-columns:1fr;gap:16px}.transparency{align-items:flex-start;flex-direction:column}.transparency-actions{flex-wrap:wrap}.capital-grid{grid-template-columns:1fr}.capital-cta{max-width:360px}}
-@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.hero{padding:72px 0 62px}.hero-grid{margin-top:24px;gap:30px}.hero h1{font-size:clamp(58px,20vw,104px);letter-spacing:.1em}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.deployment-proof{margin-top:26px;padding:20px}.essay-copy p{font-size:16px}.master-lesson{padding:20px;font-size:18px!important}.failure-standard{margin-bottom:52px}.case{padding:24px}.transparency{padding:22px}.transparency-actions{width:100%;display:grid}.transparency a{text-align:center}.capital-panel{padding:24px}.capital-grid{margin-top:28px}.capital-cta{max-width:none}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.foot{display:block;line-height:2.1}}
+@media(max-width:760px){.shell{width:min(100% - 24px,1480px)}.links{gap:12px}.links a{display:none}.links a:nth-child(2),.links a:nth-child(3),.links a:nth-child(4),.links a:last-child{display:block}.hero{padding:72px 0 62px}.hero-grid{margin-top:24px;gap:30px}.hero h1{font-size:clamp(58px,20vw,104px);letter-spacing:.1em}.section{padding:58px 0}.section-grid{grid-template-columns:1fr;gap:14px}.idx{padding-top:0}.deployment-proof{margin-top:26px;padding:20px}.essay-copy p{font-size:16px}.master-lesson{padding:20px;font-size:18px!important}.failure-standard{margin-bottom:52px}.case{padding:24px}.transparency{padding:22px}.transparency-actions{width:100%;display:grid}.transparency a{text-align:center}.capital-panel{padding:24px}.capital-grid{margin-top:28px}.capital-cta{max-width:none}.faq summary{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px;padding:20px 0;font-size:16px}.faq-answer{margin:0 0 22px 40px;font-size:15px}.market-duel-inner{padding:46px 12px 28px}.market-duel-label{font-size:8px;letter-spacing:.14em}.foot{display:block;line-height:2.1}}
 </style>
 <link rel="stylesheet" href="../assets/site-wide.css">
 </head>
@@ -460,6 +465,13 @@ footer{padding:32px 0 46px}
     </div>
   </div>
 </div></section>
+
+<figure class="market-duel">
+  <div class="market-duel-inner">
+    <figcaption class="market-duel-label">Opposing forces / one governed process</figcaption>
+    <img src="../assets/about-bull-bear-transparent.png" alt="An engraved bull and bear confronting one another" width="1672" height="941" loading="lazy">
+  </div>
+</figure>
 
 <aside class="site-contact" aria-label="Contact Carter Warrens"><div class="site-contact-inner"><div><span class="site-contact-label">Advisory and collaboration</span><span class="site-contact-title">Work with Carter Warrens</span></div><a class="site-contact-link" href="mailto:ceo@carterwarrens.com"><span>ceo@carterwarrens.com</span><span>→</span></a></div></aside>
 
