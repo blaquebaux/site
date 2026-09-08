@@ -111,6 +111,7 @@ em.term{font-style:normal; color:var(--ink)}
 .payoff-chart .bad-point{fill:#cf3347;stroke:#fff;stroke-width:2}
 .payoff-chart text{font:10px var(--mono);letter-spacing:.08em;fill:var(--muted);text-transform:uppercase}
 .payoff-chart .axis-title{font-size:9px;letter-spacing:.1em;fill:var(--ink);font-weight:500}
+.payoff-chart .x-axis-title{paint-order:stroke;stroke:#fafaf8;stroke-width:5px;stroke-linejoin:round}
 .payoff-chart .accent-label{fill:#c5293e;font-weight:500}
 .payoff-chart .mark-label{fill:#007b46;font-weight:500}
 .payoff-states{display:grid;grid-template-columns:1fr 1fr}
@@ -440,9 +441,9 @@ footer .disc{margin-top:10px; font-style:normal}
   const baseGrid = `
     <path class="grid" d="M50 35H710M50 65H710M50 95H710M50 125H710M160 22V145M270 22V145M380 22V145M490 22V145M600 22V145"/>
     <path class="axis-line" d="M50 22V145M50 95H710"/>`;
-  const axisLabels = (x, y) => `
-    <text class="axis-title" x="700" y="109" text-anchor="end">${x} →</text>
-    <text class="axis-title" x="16" y="84" text-anchor="middle" transform="rotate(-90 16 84)">${y}</text>`;
+  const axisLabels = (x, y, xY = 87) => `
+    <text class="axis-title x-axis-title" x="700" y="${xY}" text-anchor="end">${x} →</text>
+    <text class="axis-title y-axis-title" x="16" y="84" text-anchor="middle" transform="rotate(-90 16 84)">${y}</text>`;
   const charts = {
     "short-straddle": `
       <rect class="zone-itm" x="0" y="0" width="240" height="170"/><rect class="zone-otm" x="240" y="0" width="280" height="170"/><rect class="zone-itm" x="520" y="0" width="240" height="170"/>
@@ -450,7 +451,7 @@ footer .disc{margin-top:10px; font-style:normal}
       <text class="accent-label" x="64" y="19">PUT WING ITM</text><text class="mark-label" x="314" y="19">PREMIUM KEPT</text><text class="accent-label" x="594" y="19">CALL WING ITM</text><text x="392" y="158">STRIKE</text>`,
     "diagonal": `
       <rect class="zone-itm" x="0" y="0" width="500" height="170"/><rect class="zone-otm" x="500" y="0" width="260" height="170"/>
-      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'POSITION P&L')}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/><circle class="bad-point" cx="290" cy="84" r="5"/><circle class="good-point" cx="650" cy="66" r="5"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'POSITION P&L', 109)}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/><circle class="bad-point" cx="290" cy="84" r="5"/><circle class="good-point" cx="650" cy="66" r="5"/>
       <text class="mark-label" x="66" y="19">CARRY PAID</text><text class="accent-label" x="575" y="19">FAR WING PAYS</text><text x="512" y="158">WING STRIKE</text>`,
     "convex": `
       <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
