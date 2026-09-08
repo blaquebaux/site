@@ -158,6 +158,23 @@ nav{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.9);backdrop-fi
 .center-readout b.good{color:var(--green);text-shadow:0 0 18px rgba(53,227,138,.16)}
 .center-readout b.bad{color:var(--red);text-shadow:0 0 18px rgba(255,93,108,.14)}
 
+/* BASE scenario explorer */
+.record-lock,.scenario-guard{margin-top:18px;padding:13px 14px;border:1px solid var(--line);background:var(--panel)}
+.record-lock strong,.scenario-guard strong{display:block;margin-bottom:6px;font:500 9px/1.4 "IBM Plex Mono";letter-spacing:.14em;text-transform:uppercase}
+.record-lock strong{color:var(--green)}.scenario-guard strong{color:var(--cyan)}
+.record-lock p,.scenario-guard p{margin:0;color:var(--muted);font-size:12px;line-height:1.55}
+.btn-reset{cursor:pointer;font-family:"IBM Plex Mono";appearance:none}
+.scenario-viz{position:absolute;inset:66px 32px 58px;display:grid;align-content:center;gap:18px}
+.scenario-row{display:grid;grid-template-columns:150px 1fr 58px;align-items:center;gap:12px}
+.scenario-name,.scenario-value{font:9px/1.4 "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.scenario-value{text-align:right;color:var(--fg)}
+.scenario-track{position:relative;height:18px;background:rgba(17,19,21,.035);border:1px solid var(--line)}
+.scenario-track:after{content:"";position:absolute;top:-4px;bottom:-4px;left:50%;border-left:1px solid #9ba1a6}
+.scenario-track i{position:absolute;top:3px;bottom:3px;width:0;transition:width .35s ease,left .35s ease,right .35s ease;background:var(--green)}
+.scenario-track i.negative{background:var(--red)}
+.scenario-zero{display:flex;justify-content:space-between;margin:4px 70px 0 162px;color:var(--dim);font:8px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
+.scenario-calc{position:absolute;right:18px;bottom:17px;color:var(--dim);font:8px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
+
 /* Light research surface */
 .links,.hero p,.statusline,.counter,.desc,.detail-desc,.meta-val,
 .study-guide p,.feature-head p,.labcopy .sub,.finding,.control label,
@@ -225,6 +242,10 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
   .splitviz{inset:108px 18px 112px;gap:10px}
   .matrix{inset:108px 18px 112px;grid-template-columns:repeat(2,minmax(0,1fr))}
   .flow{inset:108px 18px 112px}
+  .scenario-viz{inset:118px 14px 112px;gap:14px}
+  .scenario-row{grid-template-columns:98px minmax(0,1fr) 50px;gap:8px}
+  .scenario-name{font-size:8px}.scenario-zero{margin-left:106px;margin-right:58px}
+  .scenario-calc{left:14px;right:14px;bottom:76px;line-height:1.5}
   .foot{display:block;line-height:2}
   .research-system{padding:42px 0 24px}
   .research-system-head{display:block}
@@ -297,17 +318,28 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <!-- APAC -->
 
-<div class="labpanel reveal">
+<div class="labpanel reveal" id="base-explorer">
 <div class="labcopy">
 <div class="tag">LAB 001 / LIVE</div><h3>BASE</h3><div class="sub">The governed spine / risk structure</div>
 <div class="finding"><b>Repository finding:</b> the production spine combines an inverse-vol / equal-risk-contribution base with 12-month time-series trend, volatility-targets each sleeve, blends them, then applies a drawdown regime brake. Reported production profile: ~0.97 Sharpe, ~1.30 Sortino, ~−11% max drawdown.</div>
+<div class="record-lock"><strong>Research record / locked</strong><p>The reported profile above does not change when you move the controls. It remains the repository's documented result.</p></div>
+<div class="scenario-guard"><strong>Scenario explorer / user controlled</strong><p>Supply hypothetical sleeve outcomes and a brake setting. The display performs transparent blend arithmetic only. It is not a new backtest or forecast.</p></div>
 <div class="control"><label><span>Base sleeve</span><span id="baseWv">55%</span></label><input id="baseW" max="90" min="10" type="range" value="55"/></div>
+<div class="control"><label><span>Base scenario</span><span id="baseShockV">−18%</span></label><input id="baseShock" max="20" min="-40" type="range" value="-18"/></div>
+<div class="control"><label><span>Trend scenario</span><span id="trendShockV">+8%</span></label><input id="trendShock" max="30" min="-30" type="range" value="8"/></div>
 <div class="control"><label><span>Regime brake</span><span id="brakeV">0%</span></label><input id="brake" max="60" min="0" type="range" value="0"/></div>
-<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/base" target="_blank">Source ↗</a><a class="btn" href="https://github.com/blaquebaux/base/blob/main/docs/FINANCIAL_METHODS.md" target="_blank">Methods ↗</a></div>
+<div class="buttons"><button class="btn btn-reset" id="baseReset" type="button">Reset scenario</button><a class="btn" href="https://github.com/blaquebaux/base" target="_blank">Source ↗</a><a class="btn" href="https://github.com/blaquebaux/base/blob/main/docs/FINANCIAL_METHODS.md" target="_blank">Methods ↗</a></div>
 </div>
-<div class="viz"><div class="vizlabel">Spine / sleeve blend / governed scaling</div><div class="vizstate good"><i class="passdot"></i>LIVE</div>
-<div class="splitviz"><div class="statcol"><div class="statbar neutralbar" id="baseBar"></div><div class="statlabel">Risk structure<br/>base</div></div><div class="statcol"><div class="statbar goodbar" id="trendBar"></div><div class="statlabel">Time-series<br/>trend</div></div><div class="statcol"><div class="statbar neutralbar" id="grossBar"></div><div class="statlabel">Post-brake<br/>gross</div></div></div>
-<div class="legend"><span>diversification premium</span><span>daily governance</span><span>crisis convexity</span></div></div>
+<div class="viz"><div class="vizlabel">User-controlled scenario / transparent arithmetic</div><div class="vizstate neutral">[ NOT RESEARCH OUTPUT ]</div>
+<div class="scenario-viz" aria-live="polite">
+  <div class="scenario-row"><span class="scenario-name">Base contribution</span><span class="scenario-track"><i id="baseContributionBar"></i></span><output class="scenario-value" id="baseContributionV">−9.9%</output></div>
+  <div class="scenario-row"><span class="scenario-name">Trend contribution</span><span class="scenario-track"><i id="trendContributionBar"></i></span><output class="scenario-value" id="trendContributionV">+3.6%</output></div>
+  <div class="scenario-row"><span class="scenario-name">Blended scenario</span><span class="scenario-track"><i id="blendScenarioBar"></i></span><output class="scenario-value" id="blendScenarioV">−6.3%</output></div>
+  <div class="scenario-row"><span class="scenario-name">After brake</span><span class="scenario-track"><i id="brakedScenarioBar"></i></span><output class="scenario-value" id="brakedScenarioV">−6.3%</output></div>
+  <div class="scenario-zero"><span>Loss</span><span>0</span><span>Gain</span></div>
+</div>
+<div class="scenario-calc">weight × supplied outcome; brake scales gross exposure</div>
+<div class="legend"><span>red / hypothetical loss</span><span>green / hypothetical gain</span><span>record remains fixed</span></div></div>
 </div>
 
 <div class="labpanel reveal">
@@ -588,7 +620,10 @@ function setBB(){let v=+bb.value;bbV.textContent=v<0?"Growth":v>0?"Inflation / v
 function setBD(){let sharpe=+bdView.value===1;bdViewV.textContent=sharpe?"Sharpe":"Max drawdown";bdMetric.textContent=bdViewV.textContent;if(sharpe){bhBar.style.height="34%";govBar.style.height="84%";bhLbl.innerHTML="Buy & hold<br>0.29";govLbl.innerHTML="Governed trend<br>0.72";setBarSemantic(bhBar,"neutral");setBarSemantic(govBar,"good")}else{bhBar.style.height="92%";govBar.style.height="18%";bhLbl.innerHTML="Buy & hold<br>−76%";govLbl.innerHTML="Governed trend<br>−12%";setBarSemantic(bhBar,"bad");setBarSemantic(govBar,"good")}}bdView.oninput=setBD;setBD();
 
 /* BASE */
-function setBase(){let w=+baseW.value,br=+brake.value;let tr=100-w;baseWv.textContent=w+"%";brakeV.textContent=br+"%";baseBar.style.height=(20+w*.72)+"%";trendBar.style.height=(20+tr*.72)+"%";grossBar.style.height=(90-br)+"%"}baseW.oninput=brake.oninput=setBase;setBase();
+function scenarioPct(v){return(v>0?"+":"")+v.toFixed(1)+"%"}
+function setScenarioBar(bar,out,value){const width=Math.min(Math.abs(value)/40*50,50);bar.classList.toggle("negative",value<0);bar.style.width=width+"%";bar.style.left=value>=0?"50%":"auto";bar.style.right=value<0?"50%":"auto";out.textContent=scenarioPct(value);setReadoutSemantic(out,value>0?"good":value<0?"bad":"neutral")}
+function setBase(){let w=+baseW.value/100,br=+brake.value/100,baseMove=+baseShock.value,trendMove=+trendShock.value;baseWv.textContent=Math.round(w*100)+"%";baseShockV.textContent=scenarioPct(baseMove);trendShockV.textContent=scenarioPct(trendMove);brakeV.textContent=Math.round(br*100)+"%";let basePart=w*baseMove,trendPart=(1-w)*trendMove,blend=basePart+trendPart,after=blend*(1-br);setScenarioBar(baseContributionBar,baseContributionV,basePart);setScenarioBar(trendContributionBar,trendContributionV,trendPart);setScenarioBar(blendScenarioBar,blendScenarioV,blend);setScenarioBar(brakedScenarioBar,brakedScenarioV,after)}
+[baseW,baseShock,trendShock,brake].forEach(el=>el.oninput=setBase);baseReset.onclick=()=>{baseW.value=55;baseShock.value=-18;trendShock.value=8;brake.value=0;setBase()};setBase();
 
 /* BROWN */
 function setBrown(){let v=+brownR.value;if(v<0){brownRv.textContent="Growth";brownSpread.textContent="−35%";brownReg.textContent="Growth regime / 2020–21 analogue";setReadoutSemantic(brownSpread,"bad")}else{brownRv.textContent="Inflation / value";brownSpread.textContent="+40%";brownReg.textContent="Inflation regime / 2022 analogue";setReadoutSemantic(brownSpread,"good")}}brownR.oninput=setBrown;setBrown();
