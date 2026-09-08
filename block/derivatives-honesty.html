@@ -108,6 +108,7 @@ em.term{font-style:normal; color:var(--ink)}
 .payoff-chart .payoff-line{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 .payoff-chart .secondary-line{fill:none;stroke:var(--mark);stroke-width:2;stroke-dasharray:6 5}
 .payoff-chart text{font:10px var(--mono);letter-spacing:.08em;fill:var(--muted);text-transform:uppercase}
+.payoff-chart .axis-title{font-size:9px;letter-spacing:.1em;fill:var(--ink);font-weight:500}
 .payoff-chart .accent-label{fill:var(--tail);font-weight:500}
 .payoff-chart .mark-label{fill:var(--mark);font-weight:500}
 .payoff-states{display:grid;grid-template-columns:1fr 1fr}
@@ -430,43 +431,46 @@ footer .disc{margin-top:10px; font-style:normal}
 (() => {
   const baseGrid = `
     <path class="grid" d="M50 35H710M50 65H710M50 95H710M50 125H710M160 22V145M270 22V145M380 22V145M490 22V145M600 22V145"/>
-    <path class="axis-line" d="M50 95H710M380 22V145"/>`;
+    <path class="axis-line" d="M50 22V145M50 95H710"/>`;
+  const axisLabels = (x, y) => `
+    <text class="axis-title" x="700" y="109" text-anchor="end">${x} →</text>
+    <text class="axis-title" x="16" y="84" text-anchor="middle" transform="rotate(-90 16 84)">${y}</text>`;
   const charts = {
     "short-straddle": `
       <rect class="zone-itm" x="0" y="0" width="240" height="170"/><rect class="zone-otm" x="240" y="0" width="280" height="170"/><rect class="zone-itm" x="520" y="0" width="240" height="170"/>
-      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L275 52H485L700 142"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L275 52H485L700 142"/>
       <text class="accent-label" x="64" y="19">PUT WING ITM</text><text class="mark-label" x="314" y="19">PREMIUM KEPT</text><text class="accent-label" x="594" y="19">CALL WING ITM</text><text x="392" y="158">STRIKE</text>`,
     "diagonal": `
       <rect class="zone-otm" x="0" y="0" width="500" height="170"/><rect class="zone-itm" x="500" y="0" width="260" height="170"/>
-      ${baseGrid}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'POSITION P&L')}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/>
       <text class="mark-label" x="66" y="19">CARRY PAID</text><text class="accent-label" x="575" y="19">FAR WING PAYS</text><text x="512" y="158">WING STRIKE</text>`,
     "convex": `
       <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
-      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="secondary-line" d="M60 48L380 95L700 140"/><path class="payoff-line" d="M60 48C270 54 350 77 380 95C470 129 575 142 700 147"/>
+      ${baseGrid}${axisLabels('REALIZED VOLATILITY', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="secondary-line" d="M60 48L380 95L700 140"/><path class="payoff-line" d="M60 48C270 54 350 77 380 95C470 129 575 142 700 147"/>
       <text class="mark-label" x="67" y="19">REALIZED VOL &lt; STRIKE</text><text class="accent-label" x="506" y="19">SPIKE ABOVE STRIKE</text><text x="392" y="158">VOL STRIKE</text><text x="610" y="127">VOL</text><text x="610" y="154">VARIANCE</text>`,
     "dual-tail": `
       <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="270" height="170"/><rect class="zone-itm" x="515" y="0" width="245" height="170"/>
-      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L285 53H475L700 142"/>
+      ${baseGrid}${axisLabels('TERMINAL SWAP RATE', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L285 53H475L700 142"/>
       <text class="accent-label" x="66" y="19">RECEIVER TAIL</text><text class="mark-label" x="320" y="19">NEAR STRIKE</text><text class="accent-label" x="594" y="19">PAYER TAIL</text><text x="392" y="158">SWAP RATE STRIKE</text>`,
     "mark": `
       <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
-      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 132C225 130 340 113 430 91C535 64 620 39 700 29"/>
+      ${baseGrid}${axisLabels('VOLATILITY MARK σ', 'CONVEXITY ADJUSTMENT')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 132C225 130 340 113 430 91C535 64 620 39 700 29"/>
       <text class="mark-label" x="67" y="19">LOW σ / SMALL MARK</text><text class="accent-label" x="531" y="19">HIGH σ / LARGE MARK</text><text x="335" y="158">MODEL INPUT</text>`,
     "tranche": `
       <rect class="zone-otm" x="0" y="0" width="325" height="170"/><rect class="zone-itm" x="325" y="0" width="275" height="170"/><rect class="zone-otm" x="600" y="0" width="160" height="170"/>
-      ${baseGrid}<path class="strike" d="M325 22V145M600 22V145"/><path class="payoff-line" d="M60 132H325L600 38H700"/>
+      ${baseGrid}${axisLabels('PORTFOLIO LOSS', 'TRANCHE LOSS')}<path class="strike" d="M325 22V145M600 22V145"/><path class="payoff-line" d="M60 132H325L600 38H700"/>
       <text class="mark-label" x="67" y="19">BELOW ATTACHMENT</text><text class="accent-label" x="373" y="19">TRANCHE ABSORBS LOSS</text><text x="337" y="158">ATTACH</text><text x="612" y="158">DETACH</text>`,
     "collar": `
       <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="515" height="170"/>
-      ${baseGrid}<path class="strike" d="M245 22V145M430 22V145M615 22V145"/><path class="payoff-line" d="M60 145L245 91H430L615 38H700"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'HEDGED POSITION P&L')}<path class="strike" d="M245 22V145M430 22V145M615 22V145"/><path class="payoff-line" d="M60 145L245 91H430L615 38H700"/>
       <text class="accent-label" x="66" y="19">REOPENED TAIL</text><text class="mark-label" x="331" y="19">PROTECTED RANGE</text><text x="257" y="158">SHORT PUT</text><text x="442" y="158">LONG PUT</text><text x="627" y="158">SHORT CALL</text>`,
     "barrier": `
       <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="515" height="170"/>
-      ${baseGrid}<path class="strike" d="M245 22V145M455 22V145"/><path class="secondary-line" d="M60 37L455 96H700"/><path class="payoff-line" d="M60 145L245 145L455 96H700"/>
+      ${baseGrid}${axisLabels('FX SPOT PRICE', 'HEDGE P&L')}<path class="strike" d="M245 22V145M455 22V145"/><path class="secondary-line" d="M60 37L455 96H700"/><path class="payoff-line" d="M60 145L245 145L455 96H700"/>
       <text class="accent-label" x="66" y="19">BARRIER BREACHED</text><text class="mark-label" x="512" y="19">GAIN CAPPED</text><text x="257" y="158">KNOCK-OUT</text><text x="467" y="158">STRIKE</text>`,
     "funding": `
       <rect class="zone-otm" x="0" y="0" width="515" height="170"/><rect class="zone-itm" x="515" y="0" width="245" height="170"/>
-      ${baseGrid}<path class="strike" d="M515 22V145"/><path class="payoff-line" d="M60 69L485 76L535 91L590 126L700 146"/><path class="secondary-line" d="M60 85L515 85L700 133"/>
+      ${baseGrid}${axisLabels('MARKET / FUNDING STRESS', 'POSITION P&L')}<path class="strike" d="M515 22V145"/><path class="payoff-line" d="M60 69L485 76L535 91L590 126L700 146"/><path class="secondary-line" d="M60 85L515 85L700 133"/>
       <text class="mark-label" x="67" y="19">NORMAL CARRY</text><text class="accent-label" x="568" y="19">MARGIN + BASIS STRESS</text><text x="527" y="158">STRESS THRESHOLD</text>`
   };
 
