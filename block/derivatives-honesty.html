@@ -98,27 +98,35 @@ em.term{font-style:normal; color:var(--ink)}
 .tag.kept{background:var(--kept-soft); color:var(--kept)}
 
 /* compact payoff studies */
-.payoff-viz{grid-column:2;margin:14px 0 4px;border:1px solid var(--line-dark);background:rgba(255,255,255,.16)}
-.payoff-chart{display:block;width:100%;height:auto;aspect-ratio:760/170;border-bottom:1px solid var(--line)}
-.payoff-chart .grid{stroke:var(--line-soft);stroke-width:1}
-.payoff-chart .axis-line{stroke:var(--faint);stroke-width:1.2}
-.payoff-chart .strike{stroke:var(--tail);stroke-width:1.2;stroke-dasharray:5 5}
-.payoff-chart .zone-otm{fill:rgba(49,93,120,.055)}
-.payoff-chart .zone-itm{fill:rgba(182,61,75,.065)}
+.payoff-viz{grid-column:2;margin:14px 0 4px;border:1px solid #9f9d90;background:#f7f7f3;box-shadow:0 8px 22px rgba(71,62,22,.08)}
+.payoff-chart{display:block;width:100%;height:auto;aspect-ratio:760/170;border-bottom:1px solid #c9c9c1;background:#fafaf8}
+.payoff-chart .grid{stroke:#deded8;stroke-width:1}
+.payoff-chart .axis-line{stroke:#7e8380;stroke-width:1.2}
+.payoff-chart .strike{stroke:#cf3347;stroke-width:1.5;stroke-dasharray:5 5}
+.payoff-chart .zone-otm{fill:rgba(0,139,80,.13)}
+.payoff-chart .zone-itm{fill:rgba(207,51,71,.14)}
 .payoff-chart .payoff-line{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.payoff-chart .secondary-line{fill:none;stroke:var(--mark);stroke-width:2;stroke-dasharray:6 5}
+.payoff-chart .secondary-line{fill:none;stroke:#087f50;stroke-width:2.25;stroke-dasharray:6 5}
+.payoff-chart .good-point{fill:#008b50;stroke:#fff;stroke-width:2}
+.payoff-chart .bad-point{fill:#cf3347;stroke:#fff;stroke-width:2}
 .payoff-chart text{font:10px var(--mono);letter-spacing:.08em;fill:var(--muted);text-transform:uppercase}
 .payoff-chart .axis-title{font-size:9px;letter-spacing:.1em;fill:var(--ink);font-weight:500}
-.payoff-chart .accent-label{fill:var(--tail);font-weight:500}
-.payoff-chart .mark-label{fill:var(--mark);font-weight:500}
+.payoff-chart .accent-label{fill:#c5293e;font-weight:500}
+.payoff-chart .mark-label{fill:#007b46;font-weight:500}
 .payoff-states{display:grid;grid-template-columns:1fr 1fr}
 .payoff-state{padding:13px 15px 15px;min-width:0}
-.payoff-state+ .payoff-state{border-left:1px solid var(--line)}
+.payoff-state+ .payoff-state{border-left:1px solid #d2d2ca}
 .payoff-state .state-k{display:block;margin-bottom:4px;font:500 10px/1.3 var(--mono);letter-spacing:.13em;text-transform:uppercase}
-.payoff-state.otm .state-k{color:var(--mark)}
-.payoff-state.itm .state-k{color:var(--tail)}
+.payoff-state.otm{background:rgba(0,139,80,.035)}
+.payoff-state.itm{background:rgba(207,51,71,.04)}
+.payoff-state.otm .state-k{color:#007b46}
+.payoff-state.itm .state-k{color:#c5293e}
+.payoff-viz[data-shape="diagonal"] .payoff-state.otm{background:rgba(207,51,71,.04)}
+.payoff-viz[data-shape="diagonal"] .payoff-state.itm{background:rgba(0,139,80,.035)}
+.payoff-viz[data-shape="diagonal"] .payoff-state.otm .state-k{color:#c5293e}
+.payoff-viz[data-shape="diagonal"] .payoff-state.itm .state-k{color:#007b46}
 .payoff-state p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted);max-width:none}
-.payoff-note{margin:0;padding:8px 15px;border-top:1px solid var(--line-soft);font:10px/1.45 var(--mono);letter-spacing:.04em;color:var(--faint)}
+.payoff-note{margin:0;padding:8px 15px;border-top:1px solid #d2d2ca;background:#f1f1eb;font:10px/1.45 var(--mono);letter-spacing:.04em;color:#6f716b}
 
 /* scorecard */
 .scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--line-dark)}
@@ -156,7 +164,7 @@ footer .disc{margin-top:10px; font-style:normal}
   .payoff-viz{grid-column:1}
   .payoff-chart{aspect-ratio:620/180}
   .payoff-states{grid-template-columns:1fr}
-  .payoff-state+ .payoff-state{border-left:0;border-top:1px solid var(--line)}
+  .payoff-state+ .payoff-state{border-left:0;border-top:1px solid #d2d2ca}
 }
 </style>
 <link rel="stylesheet" href="/assets/site-wide.css">
@@ -438,39 +446,39 @@ footer .disc{margin-top:10px; font-style:normal}
   const charts = {
     "short-straddle": `
       <rect class="zone-itm" x="0" y="0" width="240" height="170"/><rect class="zone-otm" x="240" y="0" width="280" height="170"/><rect class="zone-itm" x="520" y="0" width="240" height="170"/>
-      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L275 52H485L700 142"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L275 52H485L700 142"/><circle class="good-point" cx="380" cy="52" r="5"/><circle class="bad-point" cx="650" cy="121" r="5"/>
       <text class="accent-label" x="64" y="19">PUT WING ITM</text><text class="mark-label" x="314" y="19">PREMIUM KEPT</text><text class="accent-label" x="594" y="19">CALL WING ITM</text><text x="392" y="158">STRIKE</text>`,
     "diagonal": `
-      <rect class="zone-otm" x="0" y="0" width="500" height="170"/><rect class="zone-itm" x="500" y="0" width="260" height="170"/>
-      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'POSITION P&L')}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/>
+      <rect class="zone-itm" x="0" y="0" width="500" height="170"/><rect class="zone-otm" x="500" y="0" width="260" height="170"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'POSITION P&L')}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/><circle class="bad-point" cx="290" cy="84" r="5"/><circle class="good-point" cx="650" cy="66" r="5"/>
       <text class="mark-label" x="66" y="19">CARRY PAID</text><text class="accent-label" x="575" y="19">FAR WING PAYS</text><text x="512" y="158">WING STRIKE</text>`,
     "convex": `
       <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
-      ${baseGrid}${axisLabels('REALIZED VOLATILITY', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="secondary-line" d="M60 48L380 95L700 140"/><path class="payoff-line" d="M60 48C270 54 350 77 380 95C470 129 575 142 700 147"/>
+      ${baseGrid}${axisLabels('REALIZED VOLATILITY', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="secondary-line" d="M60 48L380 95L700 140"/><path class="payoff-line" d="M60 48C270 54 350 77 380 95C470 129 575 142 700 147"/><circle class="good-point" cx="260" cy="59" r="5"/><circle class="bad-point" cx="610" cy="144" r="5"/>
       <text class="mark-label" x="67" y="19">REALIZED VOL &lt; STRIKE</text><text class="accent-label" x="506" y="19">SPIKE ABOVE STRIKE</text><text x="392" y="158">VOL STRIKE</text><text x="610" y="127">VOL</text><text x="610" y="154">VARIANCE</text>`,
     "dual-tail": `
       <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="270" height="170"/><rect class="zone-itm" x="515" y="0" width="245" height="170"/>
-      ${baseGrid}${axisLabels('TERMINAL SWAP RATE', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L285 53H475L700 142"/>
+      ${baseGrid}${axisLabels('TERMINAL SWAP RATE', 'SHORT POSITION P&L')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L285 53H475L700 142"/><circle class="good-point" cx="380" cy="53" r="5"/><circle class="bad-point" cx="650" cy="122" r="5"/>
       <text class="accent-label" x="66" y="19">RECEIVER TAIL</text><text class="mark-label" x="320" y="19">NEAR STRIKE</text><text class="accent-label" x="594" y="19">PAYER TAIL</text><text x="392" y="158">SWAP RATE STRIKE</text>`,
     "mark": `
       <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
-      ${baseGrid}${axisLabels('VOLATILITY MARK σ', 'CONVEXITY ADJUSTMENT')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 132C225 130 340 113 430 91C535 64 620 39 700 29"/>
+      ${baseGrid}${axisLabels('VOLATILITY MARK σ', 'CONVEXITY ADJUSTMENT')}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 132C225 130 340 113 430 91C535 64 620 39 700 29"/><circle class="good-point" cx="250" cy="123" r="5"/><circle class="bad-point" cx="620" cy="39" r="5"/>
       <text class="mark-label" x="67" y="19">LOW σ / SMALL MARK</text><text class="accent-label" x="531" y="19">HIGH σ / LARGE MARK</text><text x="335" y="158">MODEL INPUT</text>`,
     "tranche": `
-      <rect class="zone-otm" x="0" y="0" width="325" height="170"/><rect class="zone-itm" x="325" y="0" width="275" height="170"/><rect class="zone-otm" x="600" y="0" width="160" height="170"/>
-      ${baseGrid}${axisLabels('PORTFOLIO LOSS', 'TRANCHE LOSS')}<path class="strike" d="M325 22V145M600 22V145"/><path class="payoff-line" d="M60 132H325L600 38H700"/>
+      <rect class="zone-otm" x="0" y="0" width="325" height="170"/><rect class="zone-itm" x="325" y="0" width="435" height="170"/>
+      ${baseGrid}${axisLabels('PORTFOLIO LOSS', 'TRANCHE LOSS')}<path class="strike" d="M325 22V145M600 22V145"/><path class="payoff-line" d="M60 132H325L600 38H700"/><circle class="good-point" cx="240" cy="132" r="5"/><circle class="bad-point" cx="520" cy="65" r="5"/>
       <text class="mark-label" x="67" y="19">BELOW ATTACHMENT</text><text class="accent-label" x="373" y="19">TRANCHE ABSORBS LOSS</text><text x="337" y="158">ATTACH</text><text x="612" y="158">DETACH</text>`,
     "collar": `
       <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="515" height="170"/>
-      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'HEDGED POSITION P&L')}<path class="strike" d="M245 22V145M430 22V145M615 22V145"/><path class="payoff-line" d="M60 145L245 91H430L615 38H700"/>
+      ${baseGrid}${axisLabels('UNDERLYING PRICE', 'HEDGED POSITION P&L')}<path class="strike" d="M245 22V145M430 22V145M615 22V145"/><path class="payoff-line" d="M60 145L245 91H430L615 38H700"/><circle class="bad-point" cx="160" cy="116" r="5"/><circle class="good-point" cx="350" cy="91" r="5"/>
       <text class="accent-label" x="66" y="19">REOPENED TAIL</text><text class="mark-label" x="331" y="19">PROTECTED RANGE</text><text x="257" y="158">SHORT PUT</text><text x="442" y="158">LONG PUT</text><text x="627" y="158">SHORT CALL</text>`,
     "barrier": `
       <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="515" height="170"/>
-      ${baseGrid}${axisLabels('FX SPOT PRICE', 'HEDGE P&L')}<path class="strike" d="M245 22V145M455 22V145"/><path class="secondary-line" d="M60 37L455 96H700"/><path class="payoff-line" d="M60 145L245 145L455 96H700"/>
+      ${baseGrid}${axisLabels('FX SPOT PRICE', 'HEDGE P&L')}<path class="strike" d="M245 22V145M455 22V145"/><path class="secondary-line" d="M60 37L455 96H700"/><path class="payoff-line" d="M60 145L245 145L455 96H700"/><circle class="bad-point" cx="160" cy="145" r="5"/><circle class="good-point" cx="560" cy="96" r="5"/>
       <text class="accent-label" x="66" y="19">BARRIER BREACHED</text><text class="mark-label" x="512" y="19">GAIN CAPPED</text><text x="257" y="158">KNOCK-OUT</text><text x="467" y="158">STRIKE</text>`,
     "funding": `
       <rect class="zone-otm" x="0" y="0" width="515" height="170"/><rect class="zone-itm" x="515" y="0" width="245" height="170"/>
-      ${baseGrid}${axisLabels('MARKET / FUNDING STRESS', 'POSITION P&L')}<path class="strike" d="M515 22V145"/><path class="payoff-line" d="M60 69L485 76L535 91L590 126L700 146"/><path class="secondary-line" d="M60 85L515 85L700 133"/>
+      ${baseGrid}${axisLabels('MARKET / FUNDING STRESS', 'POSITION P&L')}<path class="strike" d="M515 22V145"/><path class="payoff-line" d="M60 69L485 76L535 91L590 126L700 146"/><path class="secondary-line" d="M60 85L515 85L700 133"/><circle class="good-point" cx="300" cy="73" r="5"/><circle class="bad-point" cx="620" cy="135" r="5"/>
       <text class="mark-label" x="67" y="19">NORMAL CARRY</text><text class="accent-label" x="568" y="19">MARGIN + BASIS STRESS</text><text x="527" y="158">STRESS THRESHOLD</text>`
   };
 
