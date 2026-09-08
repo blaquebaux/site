@@ -97,6 +97,28 @@ em.term{font-style:normal; color:var(--ink)}
 .tag.fund{background:var(--fund-soft); color:var(--fund)}
 .tag.kept{background:var(--kept-soft); color:var(--kept)}
 
+/* compact payoff studies */
+.payoff-viz{grid-column:2;margin:14px 0 4px;border:1px solid var(--line-dark);background:rgba(255,255,255,.16)}
+.payoff-chart{display:block;width:100%;height:auto;aspect-ratio:760/170;border-bottom:1px solid var(--line)}
+.payoff-chart .grid{stroke:var(--line-soft);stroke-width:1}
+.payoff-chart .axis-line{stroke:var(--faint);stroke-width:1.2}
+.payoff-chart .strike{stroke:var(--tail);stroke-width:1.2;stroke-dasharray:5 5}
+.payoff-chart .zone-otm{fill:rgba(49,93,120,.055)}
+.payoff-chart .zone-itm{fill:rgba(182,61,75,.065)}
+.payoff-chart .payoff-line{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.payoff-chart .secondary-line{fill:none;stroke:var(--mark);stroke-width:2;stroke-dasharray:6 5}
+.payoff-chart text{font:10px var(--mono);letter-spacing:.08em;fill:var(--muted);text-transform:uppercase}
+.payoff-chart .accent-label{fill:var(--tail);font-weight:500}
+.payoff-chart .mark-label{fill:var(--mark);font-weight:500}
+.payoff-states{display:grid;grid-template-columns:1fr 1fr}
+.payoff-state{padding:13px 15px 15px;min-width:0}
+.payoff-state+ .payoff-state{border-left:1px solid var(--line)}
+.payoff-state .state-k{display:block;margin-bottom:4px;font:500 10px/1.3 var(--mono);letter-spacing:.13em;text-transform:uppercase}
+.payoff-state.otm .state-k{color:var(--mark)}
+.payoff-state.itm .state-k{color:var(--tail)}
+.payoff-state p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted);max-width:none}
+.payoff-note{margin:0;padding:8px 15px;border-top:1px solid var(--line-soft);font:10px/1.45 var(--mono);letter-spacing:.04em;color:var(--faint)}
+
 /* scorecard */
 .scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--line-dark)}
 table{border-collapse:collapse; width:100%; font-size:14px; background:var(--surface)}
@@ -130,6 +152,10 @@ footer .disc{margin-top:10px; font-style:normal}
   .mast{padding:28px 20px}.mast h1{font-size:48px;letter-spacing:.02em}
   .var{grid-template-columns:1fr; gap:2px}
   .var .id{grid-row:auto}
+  .payoff-viz{grid-column:1}
+  .payoff-chart{aspect-ratio:620/180}
+  .payoff-states{grid-template-columns:1fr}
+  .payoff-state+ .payoff-state{border-left:0;border-top:1px solid var(--line)}
 }
 </style>
 <link rel="stylesheet" href="/assets/site-wide.css">
@@ -224,6 +250,10 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">No edge at fair pricing — every variant is ±0.2 Sharpe noise; the entire return is
     implied&gt;realized. The short strangle <b>"wins" +0.92 Sharpe in-sample — and that is the trap:</b> its
     catastrophe simply isn't in the monthly bars, but SVXY lived it (<b>−95%</b>, 2018).</p>
+    <figure class="payoff-viz" data-shape="short-straddle" aria-label="Short straddle payoff, from premium kept near the strike to losses in either tail">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">Options out of the money</span><p>The underlying finishes between the two breakevens. The short seller keeps the premium.</p></div><div class="payoff-state itm"><span class="state-k">Either option in the money</span><p>A large move breaches a wing. Losses grow as the market moves farther from strike.</p></div></figcaption>
+    </figure>
   </div>
   <div class="var">
     <div class="id">02</div>
@@ -231,6 +261,10 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">The one modification that genuinely <b>improves</b> — stripping directional noise lifts the
     Sharpe on the same premium (<b>+0.21 → +0.48</b>). But it cleans the harvest, it doesn't make selling vol
     safe: the short-gamma tail is untouched.</p>
+    <figure class="payoff-viz" data-shape="short-straddle" aria-label="Delta-hedged short straddle payoff showing cleaner premium capture but unchanged tail losses">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">Options out of the money</span><p>Delta hedging removes directional drift, leaving a cleaner volatility premium harvest.</p></div><div class="payoff-state itm"><span class="state-k">Either option in the money</span><p>Rebalancing cannot remove the short-gamma loss when the underlying moves sharply.</p></div></figcaption>
+    </figure>
   </div>
   <div class="var">
     <div class="id">03</div>
@@ -238,6 +272,10 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">On daily marks the far wings pay exactly in the crisis — COVID's <b>−21.6%</b> naked
     drawdown becomes the diagonal's <b>+6.9%</b> gain. But full-sample the diagonal's carry grinds a
     <b>−43%</b> drawdown vs the naked <b>−29%</b>: a ruin-aversion trade, not a free cap.</p>
+    <figure class="payoff-viz" data-shape="diagonal" aria-label="Calendar diagonal payoff showing carry cost near strike and protection in a far wing">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">Far wing out of the money</span><p>The long-dated protection is unused while repeated short-dated carry erodes the position.</p></div><div class="payoff-state itm"><span class="state-k">Far wing in the money</span><p>A crisis move activates the wing and caps the naked loss, as the COVID window demonstrated.</p></div></figcaption>
+    </figure>
   </div>
   <div class="var">
     <div class="id">04</div>
@@ -245,6 +283,11 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">"Fair" pricing is a loser (vol <b>−0.66</b>, var <b>−0.92</b> Sharpe) — trailing realized
     under-forecasts the forward. And convexity is terminal: a spike costs the <b>variance</b> swap ~k² vs the
     vol swap's ~k (worst month <b>−1779%</b> vs <b>−333%</b>). The vol swap dominates.</p>
+    <figure class="payoff-viz" data-shape="convex" aria-label="Variance and volatility swap comparison below and above the volatility strike">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">OTM analogue: realized vol below strike</span><p>The short position collects the spread when realized volatility stays below the swap strike.</p></div><div class="payoff-state itm"><span class="state-k">ITM analogue: realized vol above strike</span><p>The vol swap loss rises roughly linearly. The variance swap loss accelerates quadratically.</p></div></figcaption>
+      <p class="payoff-note">Moneyness is shown as an option-style analogue; volatility and variance swaps are forwards on realized measures.</p>
+    </figure>
   </div>
 
   <div class="block-h">Rates</div>
@@ -254,6 +297,10 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">A real rate vol-premium (short straddle <b>+0.17 → +0.89</b>), but rates have <b>two</b>
     tails: the violent one is the receiver / rates-down side (worst <b>−16%</b>, the 2020 bond spike), the
     payer / rates-up side a slow grind (2022 <b>−17%</b>). Tested against its own worst year, in-sample.</p>
+    <figure class="payoff-viz" data-shape="dual-tail" aria-label="Swaption straddle payoff showing receiver and payer tails around the strike">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">Both swaptions out of the money</span><p>The terminal swap rate stays near strike, so the short straddle keeps its premium.</p></div><div class="payoff-state itm"><span class="state-k">Receiver or payer in the money</span><p>Rates down activate the receiver tail. Rates up activate the payer tail.</p></div></figcaption>
+    </figure>
   </div>
   <div class="var">
     <div class="id">07</div>
@@ -261,6 +308,11 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">The convexity adjustment is <b>real</b> (Jensen; a 10y CMS carries ~25bp). But the margin
     hides in the vol mark — the same 10y is <b>9bp at σ=15% and 49bp at σ=35%.</b> The CMS spread option tells
     the same story on correlation (value swings <b>51%</b> across ρ). The fee is a mark, not a charge.</p>
+    <figure class="payoff-viz" data-shape="mark" aria-label="CMS valuation sensitivity showing a small and large convexity adjustment as the volatility mark changes">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">OTM analogue: low volatility mark</span><p>A low assumed σ produces a small convexity adjustment and a lower quoted value.</p></div><div class="payoff-state itm"><span class="state-k">ITM analogue: high volatility mark</span><p>A high assumed σ expands the adjustment. The economics move through an unobservable input.</p></div></figcaption>
+      <p class="payoff-note">A CMS itself has no formal ITM or OTM state. These panels show low-mark and high-mark valuation regimes.</p>
+    </figure>
   </div>
 
   <div class="block-h">Credit</div>
@@ -270,6 +322,11 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">Tranching <b>creates nothing</b> — Σ tranche loss = portfolio expected loss, exactly; it
     only redistributes. The senior "AAA safety" is a correlation bet: the super-senior loses <b>0.0% at ρ=0.1
     → 1.8–3.9% at ρ=0.9.</b> In 2008 ρ→1 and the impossible AAA losses simply happened.</p>
+    <figure class="payoff-viz" data-shape="tranche" aria-label="CDS tranche loss showing no loss below attachment and rapid loss through the tranche">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">OTM analogue: loss below attachment</span><p>Portfolio losses remain beneath the tranche attachment point, so the senior layer is untouched.</p></div><div class="payoff-state itm"><span class="state-k">ITM analogue: loss enters the tranche</span><p>Correlated defaults push loss through attachment. The tranche absorbs loss until detachment.</p></div></figcaption>
+      <p class="payoff-note">CDS tranches use attachment and detachment points, not conventional option moneyness.</p>
+    </figure>
   </div>
 
   <div class="block-h">Commodity</div>
@@ -280,6 +337,11 @@ footer .disc{margin-top:10px; font-style:normal}
     <b>+0.05</b>, positive skew). The <b>Asian option</b> pays the buyer — averaging cuts vol, so it's <b>44%
     cheaper</b> and the discount is fair. The <b>three-way collar</b> is the trap: re-selling a deep put reopens
     the tail (worst <b>−61%</b> vs a plain collar's −10%).</p>
+    <figure class="payoff-viz" data-shape="collar" aria-label="Three-way collar payoff showing the protected range and the reopened downside below the short put">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">Short put out of the money</span><p>The underlying stays above the deep put strike. The collar appears protected and inexpensive.</p></div><div class="payoff-state itm"><span class="state-k">Short put in the money</span><p>The market falls through the lower strike. Protection ends and downside reopens.</p></div></figcaption>
+      <p class="payoff-note">The chart isolates the three-way collar. The crack spread is linear exposure; the Asian option uses average price versus strike.</p>
+    </figure>
   </div>
 
   <div class="block-h">Foreign exchange</div>
@@ -289,6 +351,10 @@ footer .disc{margin-top:10px; font-style:normal}
     <p class="body">The corporate-hedge killers. The <b>TARF</b> caps the gain at <b>+5%</b> and leverages the
     loss to <b>−303%</b> (skew −1.56). The <b>down-and-out put</b> is 23% cheaper because the discount is the
     coverage: in the windows that actually crashed, it paid <b>0.0%</b> where a vanilla put paid 6.9%.</p>
+    <figure class="payoff-viz" data-shape="barrier" aria-label="Target forward and down-and-out put payoff showing capped gain and vanished protection beyond the barrier">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">Put out of the money</span><p>The FX rate stays above strike. The hedge is unused and the TARF gain is capped.</p></div><div class="payoff-state itm"><span class="state-k">Put in the money, then knocked out</span><p>The rate falls, but crossing the barrier removes the discounted put exactly when protection matters.</p></div></figcaption>
+    </figure>
   </div>
 
   <div class="block-h">Linear &amp; structural</div>
@@ -299,6 +365,11 @@ footer .disc{margin-top:10px; font-style:normal}
     the margin tail wipes 3× leverage in COVID and 5× in 2020 <i>and</i> 2022 (Archegos). The <b>cross-currency
     basis</b> is a fee for balance-sheet scarcity that gaps to <b>−140bp</b> in stress — quiet premium, then a
     gap. <span class="mono" style="color:var(--faint)">(Not ETF-observable; stated, not faked.)</span></p>
+    <figure class="payoff-viz" data-shape="funding" aria-label="Total return swap and cross-currency funding profile from normal carry to a margin and basis shock">
+      <svg class="payoff-chart" viewBox="0 0 760 170" role="img" aria-hidden="true"></svg>
+      <figcaption class="payoff-states"><div class="payoff-state otm"><span class="state-k">OTM analogue: normal funding</span><p>Asset return exceeds financing and margin remains manageable. The position behaves nearly linearly.</p></div><div class="payoff-state itm"><span class="state-k">ITM analogue: funding stress activates</span><p>Asset loss triggers margin while the cross-currency basis gaps. Leverage forces nonlinear liquidation.</p></div></figcaption>
+      <p class="payoff-note">TRS and cross-currency basis positions are linear or funding-dependent, so ITM and OTM are scenario analogues only.</p>
+    </figure>
   </div>
 </section>
 
@@ -354,6 +425,58 @@ footer .disc{margin-top:10px; font-style:normal}
 </footer>
 
 </div>
+
+<script>
+(() => {
+  const baseGrid = `
+    <path class="grid" d="M50 35H710M50 65H710M50 95H710M50 125H710M160 22V145M270 22V145M380 22V145M490 22V145M600 22V145"/>
+    <path class="axis-line" d="M50 95H710M380 22V145"/>`;
+  const charts = {
+    "short-straddle": `
+      <rect class="zone-itm" x="0" y="0" width="240" height="170"/><rect class="zone-otm" x="240" y="0" width="280" height="170"/><rect class="zone-itm" x="520" y="0" width="240" height="170"/>
+      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L275 52H485L700 142"/>
+      <text class="accent-label" x="64" y="19">PUT WING ITM</text><text class="mark-label" x="314" y="19">PREMIUM KEPT</text><text class="accent-label" x="594" y="19">CALL WING ITM</text><text x="392" y="158">STRIKE</text>`,
+    "diagonal": `
+      <rect class="zone-otm" x="0" y="0" width="500" height="170"/><rect class="zone-itm" x="500" y="0" width="260" height="170"/>
+      ${baseGrid}<path class="strike" d="M500 22V145"/><path class="secondary-line" d="M60 125L295 76L500 108L700 34"/><path class="payoff-line" d="M60 120L290 84L500 118L700 49"/>
+      <text class="mark-label" x="66" y="19">CARRY PAID</text><text class="accent-label" x="575" y="19">FAR WING PAYS</text><text x="512" y="158">WING STRIKE</text>`,
+    "convex": `
+      <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
+      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="secondary-line" d="M60 48L380 95L700 140"/><path class="payoff-line" d="M60 48C270 54 350 77 380 95C470 129 575 142 700 147"/>
+      <text class="mark-label" x="67" y="19">REALIZED VOL &lt; STRIKE</text><text class="accent-label" x="506" y="19">SPIKE ABOVE STRIKE</text><text x="392" y="158">VOL STRIKE</text><text x="610" y="127">VOL</text><text x="610" y="154">VARIANCE</text>`,
+    "dual-tail": `
+      <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="270" height="170"/><rect class="zone-itm" x="515" y="0" width="245" height="170"/>
+      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 142L285 53H475L700 142"/>
+      <text class="accent-label" x="66" y="19">RECEIVER TAIL</text><text class="mark-label" x="320" y="19">NEAR STRIKE</text><text class="accent-label" x="594" y="19">PAYER TAIL</text><text x="392" y="158">SWAP RATE STRIKE</text>`,
+    "mark": `
+      <rect class="zone-otm" x="0" y="0" width="380" height="170"/><rect class="zone-itm" x="380" y="0" width="380" height="170"/>
+      ${baseGrid}<path class="strike" d="M380 22V145"/><path class="payoff-line" d="M60 132C225 130 340 113 430 91C535 64 620 39 700 29"/>
+      <text class="mark-label" x="67" y="19">LOW σ / SMALL MARK</text><text class="accent-label" x="531" y="19">HIGH σ / LARGE MARK</text><text x="335" y="158">MODEL INPUT</text>`,
+    "tranche": `
+      <rect class="zone-otm" x="0" y="0" width="325" height="170"/><rect class="zone-itm" x="325" y="0" width="275" height="170"/><rect class="zone-otm" x="600" y="0" width="160" height="170"/>
+      ${baseGrid}<path class="strike" d="M325 22V145M600 22V145"/><path class="payoff-line" d="M60 132H325L600 38H700"/>
+      <text class="mark-label" x="67" y="19">BELOW ATTACHMENT</text><text class="accent-label" x="373" y="19">TRANCHE ABSORBS LOSS</text><text x="337" y="158">ATTACH</text><text x="612" y="158">DETACH</text>`,
+    "collar": `
+      <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="515" height="170"/>
+      ${baseGrid}<path class="strike" d="M245 22V145M430 22V145M615 22V145"/><path class="payoff-line" d="M60 145L245 91H430L615 38H700"/>
+      <text class="accent-label" x="66" y="19">REOPENED TAIL</text><text class="mark-label" x="331" y="19">PROTECTED RANGE</text><text x="257" y="158">SHORT PUT</text><text x="442" y="158">LONG PUT</text><text x="627" y="158">SHORT CALL</text>`,
+    "barrier": `
+      <rect class="zone-itm" x="0" y="0" width="245" height="170"/><rect class="zone-otm" x="245" y="0" width="515" height="170"/>
+      ${baseGrid}<path class="strike" d="M245 22V145M455 22V145"/><path class="secondary-line" d="M60 37L455 96H700"/><path class="payoff-line" d="M60 145L245 145L455 96H700"/>
+      <text class="accent-label" x="66" y="19">BARRIER BREACHED</text><text class="mark-label" x="512" y="19">GAIN CAPPED</text><text x="257" y="158">KNOCK-OUT</text><text x="467" y="158">STRIKE</text>`,
+    "funding": `
+      <rect class="zone-otm" x="0" y="0" width="515" height="170"/><rect class="zone-itm" x="515" y="0" width="245" height="170"/>
+      ${baseGrid}<path class="strike" d="M515 22V145"/><path class="payoff-line" d="M60 69L485 76L535 91L590 126L700 146"/><path class="secondary-line" d="M60 85L515 85L700 133"/>
+      <text class="mark-label" x="67" y="19">NORMAL CARRY</text><text class="accent-label" x="568" y="19">MARGIN + BASIS STRESS</text><text x="527" y="158">STRESS THRESHOLD</text>`
+  };
+
+  document.querySelectorAll('.payoff-viz').forEach((figure) => {
+    const svg = figure.querySelector('svg');
+    const drawing = charts[figure.dataset.shape];
+    if (svg && drawing) svg.innerHTML = drawing;
+  });
+})();
+</script>
 
 </body>
 </html>
