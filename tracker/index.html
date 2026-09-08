@@ -131,6 +131,24 @@ nav{position:sticky; top:0; z-index:30; background:rgba(223,234,221,.92); backdr
 .screener-name span{display:block;margin-top:5px;color:#71877a;font:11px "Space Grotesk",sans-serif;letter-spacing:normal}.screener-name:hover{color:#e8cb62}.screener-name:focus-visible{outline:2px solid #e8cb62;outline-offset:4px}
 .screener-footnote{margin:18px 0 0}
 
+.data-panel-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}.data-panel-head h3{margin:0;font-size:18px;font-weight:500}
+.data-status{color:#82978a;font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase;text-align:right}
+.data-footnote{margin:18px 0 0}
+.macro-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.5fr);border:1px solid #3a5544}
+.macro-curve{min-width:0;border-right:1px solid #3a5544}.macro-curve .panel-head{border-color:#3a5544}
+#macroCurve{display:block;width:100%;height:auto;padding:18px 14px 8px}
+.macro-line{fill:none;stroke:#e8cb62;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.macro-area{fill:#e8cb62;opacity:.06}.macro-dot{fill:#e8cb62;stroke:#0c1a12;stroke-width:3}.macro-grid{stroke:rgba(223,234,221,.13);stroke-width:1}.macro-label{fill:#91a398;font:10px var(--mono)}
+.macro-stats{display:grid;grid-template-columns:1fr}
+.macro-stat{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:18px 20px;border-bottom:1px solid #3a5544}.macro-stat:last-child{border-bottom:0}
+.macro-stat .name{font-size:13px;color:#a7b8ae}.macro-stat .obs{margin-top:6px;color:#6f8578;font:9px var(--mono)}.macro-stat .value{text-align:right;font:500 21px var(--mono)}.macro-stat .change{margin-top:5px;font:10px var(--mono)}
+.macro-stat .change.rise{color:#e8cb62}.macro-stat .change.fall{color:#8fc4d7}
+
+.option-controls{display:flex;align-items:end;gap:20px;margin-bottom:22px}.option-controls select{min-width:190px}.option-spot{margin-left:auto;text-align:right}.option-spot span{display:block;font:500 28px var(--mono);color:#f0f4f1}.option-spot small{display:block;margin-top:5px;color:#82978a;font:9px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.option-wrap{overflow:auto;border:1px solid #3a5544;max-height:620px}
+.option-table{width:100%;border-collapse:collapse;min-width:760px}
+.option-table thead{position:sticky;top:0;z-index:2;background:#0c1a12}.option-table th{padding:11px 13px;border-right:1px solid #294334;border-bottom:1px solid #3a5544;color:#82978a;text-align:right;font:9px var(--mono);letter-spacing:.09em;text-transform:uppercase}.option-table th:first-child{text-align:left}.option-table td{padding:11px 13px;border-right:1px solid #21392c;border-bottom:1px solid #21392c;color:#bdcbc2;text-align:right;font:12px var(--mono)}
+.option-table .strike-head,.option-table .strike{background:#102219;color:#f1f5f2;text-align:center;font-weight:500}.option-table tr.atm td{background:rgba(232,203,98,.07)}.option-table tr.atm .strike{color:#e8cb62}.option-table td.itm{color:#69d3a0;background:rgba(105,211,160,.035)}
+
 .controls{display:flex; flex-wrap:wrap; gap:20px 30px; align-items:end; margin-bottom:30px}
 .ctl label{display:block; font:9px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:8px}
 select{font-family:"Space Grotesk",sans-serif; font-size:16px; font-weight:500; letter-spacing:.04em; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:11px 14px; min-width:280px; cursor:pointer}
@@ -166,8 +184,8 @@ svg#chart{display:block; width:100%; height:auto; padding:14px 12px 6px; touch-a
 footer{border-top:1px solid var(--line); padding:26px 0 40px}
 .foot{font:8px/1.9 var(--mono); letter-spacing:.1em; text-transform:uppercase; color:#59695e}
 .foot b{color:var(--muted); font-weight:500}
-@media(max-width:900px){.heatmap-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.crypto-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quote-layout{grid-template-columns:1fr}.quote-primary{border-right:0;border-bottom:1px solid #3a5544}}
-@media(max-width:680px){.links a:nth-child(-n+2){display:none}.stat{border-right:0}.workstation-head{grid-template-columns:1fr;padding:22px}.workstation-meta{text-align:left}.terminal-tabs{padding:0}.terminal-tab{flex:0 0 auto;padding:14px 16px}.terminal-panel{padding:20px}.heatmap-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:104px}.heat-tile.major{grid-column:span 1;grid-row:span 1}.crypto-grid{grid-template-columns:1fr}.heatmap-legend{align-items:flex-start;flex-direction:column}.crypto-head,.quote-controls,.screener-head{align-items:flex-start;flex-direction:column}.crypto-status{text-align:left}.quote-controls .ctl,.quote-controls select,.screener-head .ctl,.screener-head select{width:100%;min-width:0}.terminal-action{width:100%}.quote-primary{padding:22px}.quote-stats{grid-template-columns:1fr}.quote-stat,.quote-stat:nth-child(even),.quote-stat:nth-last-child(-n+2){min-height:96px;border-right:0;border-bottom:1px solid #3a5544}.quote-stat:last-child{border-bottom:0}}
+@media(max-width:900px){.heatmap-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.crypto-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quote-layout,.macro-layout{grid-template-columns:1fr}.quote-primary,.macro-curve{border-right:0;border-bottom:1px solid #3a5544}.macro-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.macro-stat:nth-child(odd){border-right:1px solid #3a5544}}
+@media(max-width:680px){.links a:nth-child(-n+2){display:none}.stat{border-right:0}.workstation-head{grid-template-columns:1fr;padding:22px}.workstation-meta{text-align:left}.terminal-tabs{padding:0}.terminal-tab{flex:0 0 auto;padding:14px 16px}.terminal-panel{padding:20px}.heatmap-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:104px}.heat-tile.major{grid-column:span 1;grid-row:span 1}.crypto-grid{grid-template-columns:1fr}.heatmap-legend{align-items:flex-start;flex-direction:column}.crypto-head,.quote-controls,.screener-head,.data-panel-head,.option-controls{align-items:flex-start;flex-direction:column}.crypto-status,.data-status{text-align:left}.quote-controls .ctl,.quote-controls select,.screener-head .ctl,.screener-head select,.option-controls .ctl,.option-controls select{width:100%;min-width:0}.terminal-action{width:100%}.quote-primary{padding:22px}.quote-stats,.macro-stats{grid-template-columns:1fr}.quote-stat,.quote-stat:nth-child(even),.quote-stat:nth-last-child(-n+2){min-height:96px;border-right:0;border-bottom:1px solid #3a5544}.quote-stat:last-child{border-bottom:0}.macro-stat:nth-child(odd){border-right:0}.option-spot{margin-left:0;text-align:left}}
 </style>
 
 <nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links"><a href="/labs/">Labs</a><a href="/corpus/">Corpus</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/about/">About</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener">GitHub ↗</a></div></div></nav>
@@ -193,7 +211,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 
   <div class="workstation">
     <div class="workstation-head">
-      <div><div class="workstation-kicker">Market workstation / research view</div><h2 class="workstation-title">Five lenses. One governed record.</h2></div>
+      <div><div class="workstation-kicker">Market workstation / research view</div><h2 class="workstation-title">Seven lenses. One governed record.</h2></div>
       <div class="workstation-meta">Chart sleeve behavior, scan the research universe, and keep crypto market context in view without confusing indicative data for execution data.</div>
     </div>
     <div class="terminal-tabs" role="tablist" aria-label="Tracker views">
@@ -202,6 +220,8 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
       <button class="terminal-tab" id="tab-crypto" role="tab" aria-selected="false" aria-controls="panel-crypto" data-panel="crypto" tabindex="-1">Crypto</button>
       <button class="terminal-tab" id="tab-quotes" role="tab" aria-selected="false" aria-controls="panel-quotes" data-panel="quotes" tabindex="-1">Quotes</button>
       <button class="terminal-tab" id="tab-screener" role="tab" aria-selected="false" aria-controls="panel-screener" data-panel="screener" tabindex="-1">Screener</button>
+      <button class="terminal-tab" id="tab-macro" role="tab" aria-selected="false" aria-controls="panel-macro" data-panel="macro" tabindex="-1">Macro</button>
+      <button class="terminal-tab" id="tab-options" role="tab" aria-selected="false" aria-controls="panel-options" data-panel="options" tabindex="-1">Options</button>
     </div>
 
     <div class="terminal-panel active" id="panel-chart" role="tabpanel" aria-labelledby="tab-chart">
@@ -246,6 +266,19 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
       <div class="screener-head"><div><p class="terminal-note">Governed universe / seven promoted sleeves / simulated</p><h3>Research screener</h3></div><div class="ctl"><label for="screenSort">Rank by</label><select id="screenSort"><option value="return">YTD return</option><option value="daily">Latest move</option><option value="drawdown">Shallowest drawdown</option><option value="spy">Edge vs S&amp;P 500</option></select></div></div>
       <div class="screener-wrap"><table class="screener-table"><thead><tr><th>Sleeve</th><th>YTD</th><th>Latest</th><th>Max drawdown</th><th>vs S&amp;P 500</th><th>Value</th></tr></thead><tbody id="screenerBody"></tbody></table></div>
       <p class="terminal-note screener-footnote">Select a sleeve name to open its full chart. Rankings use the same published end-of-day research file as the Tracker.</p>
+    </div>
+
+    <div class="terminal-panel" id="panel-macro" role="tabpanel" aria-labelledby="tab-macro" hidden>
+      <div class="data-panel-head"><div><p class="terminal-note">Rates and volatility / official public observations</p><h3>Macro dashboard</h3></div><div class="data-status" id="macroStatus">Loading FRED snapshot</div></div>
+      <div class="macro-layout"><div class="macro-curve"><div class="panel-head"><h3>U.S. Treasury yield curve</h3><span class="data-status" id="macroDate">—</span></div><svg id="macroCurve" viewBox="0 0 700 280" role="img" aria-label="United States Treasury yield curve"></svg></div><div class="macro-stats" id="macroStats"></div></div>
+      <p class="terminal-note data-footnote">Source: Federal Reserve Economic Data (FRED). Values are published observations, may be revised, and are not a streaming market feed.</p>
+    </div>
+
+    <div class="terminal-panel" id="panel-options" role="tabpanel" aria-labelledby="tab-options" hidden>
+      <div class="data-panel-head"><div><p class="terminal-note">Instrument structure / routes to BLOCK</p><h3>Options chain</h3></div><a class="terminal-action" href="/block/">Open BLOCK →</a></div>
+      <div class="option-controls"><div class="ctl"><label for="optionSymbol">Underlying</label><select id="optionSymbol"></select></div><div class="ctl"><label for="optionExpiry">Expiration</label><select id="optionExpiry"></select></div><div class="option-spot"><span id="optionSpot">—</span><small id="optionSource">Loading snapshot</small></div></div>
+      <div class="option-wrap"><table class="option-table"><thead><tr><th colspan="3">Calls</th><th class="strike-head">Strike</th><th colspan="3">Puts</th></tr><tr><th>Bid</th><th>Ask</th><th>Open int.</th><th class="strike-head">Price</th><th>Bid</th><th>Ask</th><th>Open int.</th></tr></thead><tbody id="optionBody"></tbody></table></div>
+      <p class="terminal-note data-footnote">Nasdaq is queried first, with Yahoo Finance as fallback. Delayed, indicative, and incomplete values must not be used for execution or investment decisions.</p>
     </div>
     <div class="terminal-panel-credit terminal-note" style="padding:0 30px 24px">Interaction model adapted from <a href="https://github.com/ErTasselli/OpenTerminal" target="_blank" rel="noopener">OpenTerminal ↗</a>, MIT licensed. Market context is informational and not execution-grade.</div>
   </div>
@@ -328,11 +361,72 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
       const updated=coins[0]&&coins[0].last_updated?new Date(coins[0].last_updated).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}):'recently';
       status.textContent='CoinGecko / indicative / updated '+updated;
     }catch(error){
-      grid.className='crypto-empty';grid.textContent='The public crypto feed is temporarily unavailable. Charting and heatmap research views remain available.';
+      grid.className='crypto-empty';grid.textContent='The public crypto feed is temporarily unavailable. The other research views remain available.';
       status.textContent='Public feed unavailable';console.error('crypto load failed',error);
     }
   }
   loadCrypto();
+
+  async function loadMacro(){
+    const status=document.getElementById('macroStatus'),stats=document.getElementById('macroStats'),svg=document.getElementById('macroCurve');
+    try{
+      const response=await fetch('macro.json',{cache:'no-store'});if(!response.ok)throw new Error('macro snapshot '+response.status);
+      const data=await response.json(),observations=data.observations||[],byId=Object.fromEntries(observations.map(item=>[item.id,item]));
+      const yields=['DGS3MO','DGS2','DGS5','DGS10','DGS30'].map(id=>byId[id]).filter(Boolean);
+      if(!yields.length)throw new Error('macro snapshot contained no yield curve');
+      const NS='http://www.w3.org/2000/svg',W=700,H=280,L=54,R=24,T=24,B=42,iw=W-L-R,ih=H-T-B;
+      const low=Math.min(...yields.map(item=>item.value))-.15,high=Math.max(...yields.map(item=>item.value))+.15;
+      const x=i=>L+iw*i/Math.max(1,yields.length-1),y=value=>T+ih*(1-(value-low)/(high-low||1));
+      const make=(tag,attrs)=>{const el=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([key,value])=>el.setAttribute(key,value));return el;};
+      svg.textContent='';
+      for(let i=0;i<=4;i++){
+        const value=low+(high-low)*i/4,yy=y(value);svg.appendChild(make('line',{class:'macro-grid',x1:L,y1:yy,x2:W-R,y2:yy}));
+        const label=make('text',{class:'macro-label',x:L-9,y:yy+4,'text-anchor':'end'});label.textContent=value.toFixed(2)+'%';svg.appendChild(label);
+      }
+      let path='M'+x(0)+' '+y(yields[0].value);for(let i=1;i<yields.length;i++)path+=' L'+x(i)+' '+y(yields[i].value);
+      svg.appendChild(make('path',{class:'macro-area',d:path+' L'+x(yields.length-1)+' '+(H-B)+' L'+x(0)+' '+(H-B)+' Z'}));svg.appendChild(make('path',{class:'macro-line',d:path}));
+      yields.forEach(function(item,index){svg.appendChild(make('circle',{class:'macro-dot',cx:x(index),cy:y(item.value),r:6}));const label=make('text',{class:'macro-label',x:x(index),y:H-15,'text-anchor':'middle'});label.textContent=item.tenor;svg.appendChild(label);});
+      document.getElementById('macroDate').textContent='Observation / '+yields[0].date;
+      const display=[byId.DGS2,byId.DGS10,byId.DGS30,byId.DFF,byId.VIXCLS].filter(Boolean);
+      stats.innerHTML=display.map(function(item){
+        const isVix=item.id==='VIXCLS',value=isVix?item.value.toFixed(2):item.value.toFixed(2)+'%',delta=isVix?item.change:item.change*100;
+        const change=(delta>=0?'+':'')+delta.toFixed(isVix?2:0)+(isVix?' pts':' bp');
+        return '<div class="macro-stat"><div><div class="name">'+item.label+'</div><div class="obs">'+item.date+'</div></div><div><div class="value">'+value+'</div><div class="change '+(delta>=0?'rise':'fall')+'">'+change+'</div></div></div>';
+      }).join('');
+      status.textContent='FRED / snapshot '+new Date(data.updatedAt).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+    }catch(error){status.textContent='FRED snapshot unavailable';stats.innerHTML='<div class="crypto-empty">Macro observations are temporarily unavailable.</div>';console.error('macro load failed',error);}
+  }
+
+  let optionSnapshot=null;
+  const optionNumber=value=>value===null||value===undefined?'—':Number(value).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const optionInteger=value=>value===null||value===undefined?'—':Number(value).toLocaleString('en-US');
+  function renderOptionExpiry(){
+    const symbol=document.getElementById('optionSymbol').value,chain=optionSnapshot.chains.find(item=>item.symbol===symbol),expirySelect=document.getElementById('optionExpiry');
+    expirySelect.textContent='';chain.expirations.forEach(function(expiry){const option=document.createElement('option');option.value=expiry.date;option.textContent=new Date(expiry.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});expirySelect.appendChild(option);});
+    renderOptions();
+  }
+  function renderOptions(){
+    if(!optionSnapshot)return;
+    const symbol=document.getElementById('optionSymbol').value,expiryDate=document.getElementById('optionExpiry').value,chain=optionSnapshot.chains.find(item=>item.symbol===symbol),expiry=chain.expirations.find(item=>item.date===expiryDate)||chain.expirations[0];
+    const callMap=new Map(expiry.calls.map(item=>[item.strike,item])),putMap=new Map(expiry.puts.map(item=>[item.strike,item])),strikes=[...new Set([...callMap.keys(),...putMap.keys()])].filter(value=>value!==null).sort((a,b)=>a-b);
+    if(!strikes.length){document.getElementById('optionBody').innerHTML='<tr><td colspan="7">No strikes are available for this expiration.</td></tr>';return;}
+    const spot=chain.underlyingPrice??strikes[Math.floor(strikes.length/2)],atm=strikes.reduce((best,value)=>Math.abs(value-spot)<Math.abs(best-spot)?value:best,strikes[0]);
+    document.getElementById('optionSpot').textContent=chain.symbol+' / '+optionNumber(chain.underlyingPrice);
+    document.getElementById('optionSource').textContent=chain.source+' / snapshot '+new Date(optionSnapshot.updatedAt).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+    document.getElementById('optionBody').innerHTML=strikes.map(function(strike){
+      const call=callMap.get(strike)||{},put=putMap.get(strike)||{};
+      return '<tr class="'+(strike===atm?'atm':'')+'"><td class="'+(call.inTheMoney?'itm':'')+'">'+optionNumber(call.bid)+'</td><td class="'+(call.inTheMoney?'itm':'')+'">'+optionNumber(call.ask)+'</td><td>'+optionInteger(call.openInterest)+'</td><td class="strike">'+optionNumber(strike)+'</td><td class="'+(put.inTheMoney?'itm':'')+'">'+optionNumber(put.bid)+'</td><td class="'+(put.inTheMoney?'itm':'')+'">'+optionNumber(put.ask)+'</td><td>'+optionInteger(put.openInterest)+'</td></tr>';
+    }).join('');
+  }
+  async function loadOptions(){
+    try{
+      const response=await fetch('options.json',{cache:'no-store'});if(!response.ok)throw new Error('options snapshot '+response.status);
+      optionSnapshot=await response.json();const symbolSelect=document.getElementById('optionSymbol');
+      optionSnapshot.chains.forEach(function(chain){const option=document.createElement('option');option.value=chain.symbol;option.textContent=chain.symbol;symbolSelect.appendChild(option);});
+      symbolSelect.addEventListener('change',renderOptionExpiry);document.getElementById('optionExpiry').addEventListener('change',renderOptions);renderOptionExpiry();
+    }catch(error){document.getElementById('optionSource').textContent='Options snapshot unavailable';document.getElementById('optionBody').innerHTML='<tr><td colspan="7">Options data are temporarily unavailable.</td></tr>';console.error('options load failed',error);}
+  }
+  loadMacro();loadOptions();
 
   fetch('performance.json',{cache:'no-store'}).then(r=>r.json()).then(function(D){
   const S=D.series, dates=D.dates, N=dates.length;

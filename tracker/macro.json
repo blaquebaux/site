@@ -1,0 +1,62 @@
+{
+  "updatedAt": "2026-09-08T00:10:23.951Z",
+  "source": "FRED",
+  "observations": [
+    {
+      "id": "DGS3MO",
+      "label": "3M Treasury",
+      "tenor": "3M",
+      "value": 3.89,
+      "change": -0.029999999999999805,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "DGS2",
+      "label": "2Y Treasury",
+      "tenor": "2Y",
+      "value": 4.34,
+      "change": -0.04999999999999982,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "DGS5",
+      "label": "5Y Treasury",
+      "tenor": "5Y",
+      "value": 4.52,
+      "change": -0.020000000000000462,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "DGS10",
+      "label": "10Y Treasury",
+      "tenor": "10Y",
+      "value": 4.77,
+      "change": -0.020000000000000462,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "DGS30",
+      "label": "30Y Treasury",
+      "tenor": "30Y",
+      "value": 5.25,
+      "change": -0.019999999999999574,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "DFF",
+      "label": "Effective fed funds",
+      "tenor": "EFFR",
+      "value": 3.63,
+      "change": 0,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "VIXCLS",
+      "label": "VIX close",
+      "tenor": "VIX",
+      "value": 14.32,
+      "change": -0.879999999999999,
+      "date": "2026-09-03"
+    }
+  ]
+}
