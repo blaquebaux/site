@@ -1,38 +1,38 @@
 {
-  "updatedAt": "2026-09-11T18:27:07.356Z",
+  "updatedAt": "2026-09-11T20:24:12.132Z",
   "source": "FRED",
   "observations": [
     {
       "id": "DGS3MO",
       "label": "3M Treasury",
       "tenor": "3M",
-      "value": 3.95,
-      "change": 0.010000000000000231,
-      "date": "2026-09-09"
+      "value": 4,
+      "change": 0.04999999999999982,
+      "date": "2026-09-10"
     },
     {
       "id": "DGS2",
       "label": "2Y Treasury",
       "tenor": "2Y",
-      "value": 4.43,
-      "change": 0.040000000000000036,
-      "date": "2026-09-09"
+      "value": 4.56,
+      "change": 0.1299999999999999,
+      "date": "2026-09-10"
     },
     {
       "id": "DGS5",
       "label": "5Y Treasury",
       "tenor": "5Y",
-      "value": 4.61,
-      "change": 0.040000000000000036,
-      "date": "2026-09-09"
+      "value": 4.75,
+      "change": 0.13999999999999968,
+      "date": "2026-09-10"
     },
     {
       "id": "DGS10",
       "label": "10Y Treasury",
       "tenor": "10Y",
-      "value": 4.83,
-      "change": 0.03000000000000025,
-      "date": "2026-09-09"
+      "value": 4.95,
+      "change": 0.1200000000000001,
+      "date": "2026-09-10"
     },
     {
       "id": "DGS30",
