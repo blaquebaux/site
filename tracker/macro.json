@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T20:24:12.132Z",
+  "updatedAt": "2026-09-11T22:23:00.654Z",
   "source": "FRED",
   "observations": [
     {
@@ -38,9 +38,9 @@
       "id": "DGS30",
       "label": "30Y Treasury",
       "tenor": "30Y",
-      "value": 5.28,
-      "change": 0.03000000000000025,
-      "date": "2026-09-09"
+      "value": 5.37,
+      "change": 0.08999999999999986,
+      "date": "2026-09-10"
     },
     {
       "id": "DFF",
@@ -48,7 +48,7 @@
       "tenor": "EFFR",
       "value": 3.63,
       "change": 0,
-      "date": "2026-09-09"
+      "date": "2026-09-10"
     },
     {
       "id": "VIXCLS",
