@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T21:15:40.592Z",
+  "updatedAt": "2026-09-17T00:28:35.076Z",
   "providerOrder": [
     "Nasdaq",
     "Yahoo Finance"
@@ -7,39 +7,12 @@
   "chains": [
     {
       "symbol": "SPY",
-      "underlyingPrice": 754.13,
+      "underlyingPrice": 757.39,
       "source": "Nasdaq",
       "expirations": [
         {
           "date": "2026-09-16",
           "calls": [
-            {
-              "strike": 741,
-              "lastPrice": 13,
-              "bid": 13.05,
-              "ask": 13.07,
-              "volume": 147,
-              "openInterest": 13,
-              "inTheMoney": true
-            },
-            {
-              "strike": 742,
-              "lastPrice": 11.97,
-              "bid": 12.05,
-              "ask": 12.07,
-              "volume": 578,
-              "openInterest": 34,
-              "inTheMoney": true
-            },
-            {
-              "strike": 743,
-              "lastPrice": 11,
-              "bid": 11.05,
-              "ask": 11.07,
-              "volume": 329,
-              "openInterest": 51,
-              "inTheMoney": true
-            },
             {
               "strike": 744,
               "lastPrice": 10.18,
@@ -146,7 +119,7 @@
               "ask": 0.1,
               "volume": 155267,
               "openInterest": 1036,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 756,
@@ -155,7 +128,7 @@
               "ask": 0.04,
               "volume": 116943,
               "openInterest": 1733,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 757,
@@ -164,7 +137,7 @@
               "ask": 0.03,
               "volume": 104109,
               "openInterest": 4646,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 758,
@@ -264,36 +237,36 @@
               "volume": 99670,
               "openInterest": 2826,
               "inTheMoney": false
+            },
+            {
+              "strike": 769,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 93053,
+              "openInterest": 2170,
+              "inTheMoney": false
+            },
+            {
+              "strike": 770,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 99555,
+              "openInterest": 9898,
+              "inTheMoney": false
+            },
+            {
+              "strike": 771,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 30477,
+              "openInterest": 1266,
+              "inTheMoney": false
             }
           ],
           "puts": [
-            {
-              "strike": 741,
-              "lastPrice": 0.01,
-              "bid": null,
-              "ask": 0.01,
-              "volume": 3933,
-              "openInterest": 2027,
-              "inTheMoney": false
-            },
-            {
-              "strike": 742,
-              "lastPrice": 0.01,
-              "bid": null,
-              "ask": 0.01,
-              "volume": 7595,
-              "openInterest": 3005,
-              "inTheMoney": false
-            },
-            {
-              "strike": 743,
-              "lastPrice": 0.01,
-              "bid": null,
-              "ask": 0.01,
-              "volume": 9695,
-              "openInterest": 2116,
-              "inTheMoney": false
-            },
             {
               "strike": 744,
               "lastPrice": 0.01,
@@ -400,7 +373,7 @@
               "ask": 1.04,
               "volume": 217980,
               "openInterest": 6208,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 756,
@@ -409,7 +382,7 @@
               "ask": 2,
               "volume": 179693,
               "openInterest": 3882,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 757,
@@ -418,7 +391,7 @@
               "ask": 2.98,
               "volume": 190321,
               "openInterest": 6343,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 758,
@@ -518,39 +491,39 @@
               "volume": 2725,
               "openInterest": 374,
               "inTheMoney": true
+            },
+            {
+              "strike": 769,
+              "lastPrice": 15,
+              "bid": 14.93,
+              "ask": 14.96,
+              "volume": 2229,
+              "openInterest": 385,
+              "inTheMoney": true
+            },
+            {
+              "strike": 770,
+              "lastPrice": 15.95,
+              "bid": 15.94,
+              "ask": 15.96,
+              "volume": 1568,
+              "openInterest": 132,
+              "inTheMoney": true
+            },
+            {
+              "strike": 771,
+              "lastPrice": 16.96,
+              "bid": 16.93,
+              "ask": 16.96,
+              "volume": 816,
+              "openInterest": 90,
+              "inTheMoney": true
             }
           ]
         },
         {
           "date": "2026-09-17",
           "calls": [
-            {
-              "strike": 741,
-              "lastPrice": 13.14,
-              "bid": 13.41,
-              "ask": 13.47,
-              "volume": 391,
-              "openInterest": 20,
-              "inTheMoney": true
-            },
-            {
-              "strike": 742,
-              "lastPrice": 12.06,
-              "bid": 12.33,
-              "ask": 12.55,
-              "volume": 219,
-              "openInterest": 3,
-              "inTheMoney": true
-            },
-            {
-              "strike": 743,
-              "lastPrice": 11.45,
-              "bid": 11.55,
-              "ask": 11.59,
-              "volume": 251,
-              "openInterest": 11,
-              "inTheMoney": true
-            },
             {
               "strike": 744,
               "lastPrice": 10.71,
@@ -657,7 +630,7 @@
               "ask": 2.45,
               "volume": 36336,
               "openInterest": 1158,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 756,
@@ -666,7 +639,7 @@
               "ask": 1.97,
               "volume": 23838,
               "openInterest": 492,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 757,
@@ -675,7 +648,7 @@
               "ask": 1.56,
               "volume": 29771,
               "openInterest": 1018,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 758,
@@ -775,36 +748,36 @@
               "volume": 15498,
               "openInterest": 1087,
               "inTheMoney": false
+            },
+            {
+              "strike": 769,
+              "lastPrice": 0.03,
+              "bid": 0.03,
+              "ask": 0.04,
+              "volume": 8593,
+              "openInterest": 1052,
+              "inTheMoney": false
+            },
+            {
+              "strike": 770,
+              "lastPrice": 0.02,
+              "bid": 0.02,
+              "ask": 0.03,
+              "volume": 19947,
+              "openInterest": 3496,
+              "inTheMoney": false
+            },
+            {
+              "strike": 771,
+              "lastPrice": 0.03,
+              "bid": 0.02,
+              "ask": 0.03,
+              "volume": 8934,
+              "openInterest": 1762,
+              "inTheMoney": false
             }
           ],
           "puts": [
-            {
-              "strike": 741,
-              "lastPrice": 0.32,
-              "bid": 0.32,
-              "ask": 0.32,
-              "volume": 10375,
-              "openInterest": 285,
-              "inTheMoney": false
-            },
-            {
-              "strike": 742,
-              "lastPrice": 0.37,
-              "bid": 0.38,
-              "ask": 0.39,
-              "volume": 17103,
-              "openInterest": 857,
-              "inTheMoney": false
-            },
-            {
-              "strike": 743,
-              "lastPrice": 0.45,
-              "bid": 0.45,
-              "ask": 0.46,
-              "volume": 18405,
-              "openInterest": 1301,
-              "inTheMoney": false
-            },
             {
               "strike": 744,
               "lastPrice": 0.53,
@@ -911,7 +884,7 @@
               "ask": 3.34,
               "volume": 48948,
               "openInterest": 3505,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 756,
@@ -920,7 +893,7 @@
               "ask": 3.87,
               "volume": 26358,
               "openInterest": 1832,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 757,
@@ -929,7 +902,7 @@
               "ask": 4.43,
               "volume": 25482,
               "openInterest": 1796,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 758,
@@ -1029,39 +1002,39 @@
               "volume": 1350,
               "openInterest": 113,
               "inTheMoney": true
+            },
+            {
+              "strike": 769,
+              "lastPrice": 14.93,
+              "bid": 14.79,
+              "ask": 15.87,
+              "volume": 2067,
+              "openInterest": 43,
+              "inTheMoney": true
+            },
+            {
+              "strike": 770,
+              "lastPrice": 15.85,
+              "bid": 15.88,
+              "ask": 16.04,
+              "volume": 2385,
+              "openInterest": 681,
+              "inTheMoney": true
+            },
+            {
+              "strike": 771,
+              "lastPrice": 16.89,
+              "bid": 16.83,
+              "ask": 17.04,
+              "volume": 1113,
+              "openInterest": 100,
+              "inTheMoney": true
             }
           ]
         },
         {
           "date": "2026-09-18",
           "calls": [
-            {
-              "strike": 741,
-              "lastPrice": 12.99,
-              "bid": 13.51,
-              "ask": 13.67,
-              "volume": 40,
-              "openInterest": 1626,
-              "inTheMoney": true
-            },
-            {
-              "strike": 742,
-              "lastPrice": 12.74,
-              "bid": 12.45,
-              "ask": 12.73,
-              "volume": 131,
-              "openInterest": 2092,
-              "inTheMoney": true
-            },
-            {
-              "strike": 743,
-              "lastPrice": 11.67,
-              "bid": 11.67,
-              "ask": 11.85,
-              "volume": 214,
-              "openInterest": 1048,
-              "inTheMoney": true
-            },
             {
               "strike": 744,
               "lastPrice": 10.7,
@@ -1168,7 +1141,7 @@
               "ask": 2.96,
               "volume": 24072,
               "openInterest": 18476,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 756,
@@ -1177,7 +1150,7 @@
               "ask": 2.49,
               "volume": 8952,
               "openInterest": 2285,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 757,
@@ -1186,7 +1159,7 @@
               "ask": 2.07,
               "volume": 10448,
               "openInterest": 5100,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 758,
@@ -1286,36 +1259,36 @@
               "volume": 9711,
               "openInterest": 5106,
               "inTheMoney": false
+            },
+            {
+              "strike": 769,
+              "lastPrice": 0.12,
+              "bid": 0.12,
+              "ask": 0.13,
+              "volume": 5799,
+              "openInterest": 6843,
+              "inTheMoney": false
+            },
+            {
+              "strike": 770,
+              "lastPrice": 0.11,
+              "bid": 0.1,
+              "ask": 0.11,
+              "volume": 33220,
+              "openInterest": 25762,
+              "inTheMoney": false
+            },
+            {
+              "strike": 771,
+              "lastPrice": 0.09,
+              "bid": 0.08,
+              "ask": 0.09,
+              "volume": 7953,
+              "openInterest": 5849,
+              "inTheMoney": false
             }
           ],
           "puts": [
-            {
-              "strike": 741,
-              "lastPrice": 1.08,
-              "bid": 1.07,
-              "ask": 1.08,
-              "volume": 6846,
-              "openInterest": 5452,
-              "inTheMoney": false
-            },
-            {
-              "strike": 742,
-              "lastPrice": 1.2,
-              "bid": 1.19,
-              "ask": 1.21,
-              "volume": 9431,
-              "openInterest": 14592,
-              "inTheMoney": false
-            },
-            {
-              "strike": 743,
-              "lastPrice": 1.3,
-              "bid": 1.34,
-              "ask": 1.35,
-              "volume": 45627,
-              "openInterest": 48573,
-              "inTheMoney": false
-            },
             {
               "strike": 744,
               "lastPrice": 1.51,
@@ -1422,7 +1395,7 @@
               "ask": 5.26,
               "volume": 34646,
               "openInterest": 50488,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 756,
@@ -1431,7 +1404,7 @@
               "ask": 5.83,
               "volume": 9938,
               "openInterest": 5340,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 757,
@@ -1440,7 +1413,7 @@
               "ask": 6.45,
               "volume": 12952,
               "openInterest": 7112,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 758,
@@ -1540,6 +1513,33 @@
               "volume": 428,
               "openInterest": 3476,
               "inTheMoney": true
+            },
+            {
+              "strike": 769,
+              "lastPrice": 16.72,
+              "bid": 15.22,
+              "ask": 18.4,
+              "volume": 612,
+              "openInterest": 4192,
+              "inTheMoney": true
+            },
+            {
+              "strike": 770,
+              "lastPrice": 17.73,
+              "bid": 16.21,
+              "ask": 18.23,
+              "volume": 1877,
+              "openInterest": 16744,
+              "inTheMoney": true
+            },
+            {
+              "strike": 771,
+              "lastPrice": 19,
+              "bid": 17.18,
+              "ask": 19.94,
+              "volume": 251,
+              "openInterest": 2863,
+              "inTheMoney": true
             }
           ]
         }
@@ -1547,7 +1547,7 @@
     },
     {
       "symbol": "QQQ",
-      "underlyingPrice": 704.72,
+      "underlyingPrice": 704.54,
       "source": "Nasdaq",
       "expirations": [
         {
@@ -3087,21 +3087,12 @@
     },
     {
       "symbol": "IWM",
-      "underlyingPrice": 283.93,
+      "underlyingPrice": 285.14,
       "source": "Nasdaq",
       "expirations": [
         {
           "date": "2026-09-16",
           "calls": [
-            {
-              "strike": 271,
-              "lastPrice": 13.88,
-              "bid": 12.59,
-              "ask": 12.97,
-              "volume": null,
-              "openInterest": 1,
-              "inTheMoney": true
-            },
             {
               "strike": 272,
               "lastPrice": 17.37,
@@ -3226,7 +3217,7 @@
               "ask": 0.06,
               "volume": 14542,
               "openInterest": 1048,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 285,
@@ -3235,7 +3226,7 @@
               "ask": 0.02,
               "volume": 11587,
               "openInterest": 2461,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 286,
@@ -3344,18 +3335,18 @@
               "volume": 757,
               "openInterest": 1175,
               "inTheMoney": false
-            }
-          ],
-          "puts": [
+            },
             {
-              "strike": 271,
+              "strike": 298,
               "lastPrice": 0.01,
               "bid": null,
               "ask": 0.01,
-              "volume": 48,
-              "openInterest": 938,
+              "volume": 17,
+              "openInterest": 627,
               "inTheMoney": false
-            },
+            }
+          ],
+          "puts": [
             {
               "strike": 272,
               "lastPrice": 0.01,
@@ -3480,7 +3471,7 @@
               "ask": 0.32,
               "volume": 38811,
               "openInterest": 3782,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 285,
@@ -3489,7 +3480,7 @@
               "ask": 1.39,
               "volume": 38723,
               "openInterest": 5168,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 286,
@@ -3598,21 +3589,21 @@
               "volume": 2,
               "openInterest": null,
               "inTheMoney": true
+            },
+            {
+              "strike": 298,
+              "lastPrice": 12.13,
+              "bid": 14.03,
+              "ask": 14.39,
+              "volume": 8,
+              "openInterest": null,
+              "inTheMoney": true
             }
           ]
         },
         {
           "date": "2026-09-17",
           "calls": [
-            {
-              "strike": 271,
-              "lastPrice": 10.45,
-              "bid": 12.7,
-              "ask": 12.92,
-              "volume": 6,
-              "openInterest": 6,
-              "inTheMoney": true
-            },
             {
               "strike": 272,
               "lastPrice": 12.75,
@@ -3737,7 +3728,7 @@
               "ask": 1.38,
               "volume": 3696,
               "openInterest": 63,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 285,
@@ -3746,7 +3737,7 @@
               "ask": 0.89,
               "volume": 6362,
               "openInterest": 975,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 286,
@@ -3855,18 +3846,18 @@
               "volume": 234,
               "openInterest": 265,
               "inTheMoney": false
+            },
+            {
+              "strike": 298,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 61,
+              "openInterest": 306,
+              "inTheMoney": false
             }
           ],
           "puts": [
-            {
-              "strike": 271,
-              "lastPrice": 0.04,
-              "bid": 0.03,
-              "ask": 0.04,
-              "volume": 1633,
-              "openInterest": 1845,
-              "inTheMoney": false
-            },
             {
               "strike": 272,
               "lastPrice": 0.04,
@@ -3991,7 +3982,7 @@
               "ask": 1.6,
               "volume": 8192,
               "openInterest": 2145,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 285,
@@ -4000,7 +3991,7 @@
               "ask": 2.15,
               "volume": 5960,
               "openInterest": 1671,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 286,
@@ -4109,30 +4100,21 @@
               "volume": 11,
               "openInterest": 68,
               "inTheMoney": true
+            },
+            {
+              "strike": 298,
+              "lastPrice": 13.16,
+              "bid": 14.03,
+              "ask": 14.34,
+              "volume": 3,
+              "openInterest": null,
+              "inTheMoney": true
             }
           ]
         },
         {
           "date": "2026-09-18",
           "calls": [
-            {
-              "strike": 270,
-              "lastPrice": 11.5,
-              "bid": 13.88,
-              "ask": 14.2,
-              "volume": 802,
-              "openInterest": 808,
-              "inTheMoney": true
-            },
-            {
-              "strike": 271,
-              "lastPrice": 11.74,
-              "bid": 12.9,
-              "ask": 13.22,
-              "volume": 11,
-              "openInterest": 2,
-              "inTheMoney": true
-            },
             {
               "strike": 272,
               "lastPrice": 10.78,
@@ -4248,7 +4230,7 @@
               "ask": 1.95,
               "volume": 3562,
               "openInterest": 1801,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 285,
@@ -4257,7 +4239,7 @@
               "ask": 1.44,
               "volume": 11096,
               "openInterest": 31765,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 286,
@@ -4366,27 +4348,27 @@
               "volume": 772,
               "openInterest": 4012,
               "inTheMoney": false
+            },
+            {
+              "strike": 298,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 174,
+              "openInterest": 5587,
+              "inTheMoney": false
+            },
+            {
+              "strike": 299,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 484,
+              "openInterest": 5144,
+              "inTheMoney": false
             }
           ],
           "puts": [
-            {
-              "strike": 270,
-              "lastPrice": 0.12,
-              "bid": 0.12,
-              "ask": 0.13,
-              "volume": 9422,
-              "openInterest": 36708,
-              "inTheMoney": false
-            },
-            {
-              "strike": 271,
-              "lastPrice": 0.14,
-              "bid": 0.14,
-              "ask": 0.15,
-              "volume": 1195,
-              "openInterest": 2460,
-              "inTheMoney": false
-            },
             {
               "strike": 272,
               "lastPrice": 0.15,
@@ -4502,7 +4484,7 @@
               "ask": 2.08,
               "volume": 12179,
               "openInterest": 79763,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 285,
@@ -4511,7 +4493,7 @@
               "ask": 2.58,
               "volume": 33027,
               "openInterest": 96421,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 286,
@@ -4619,6 +4601,24 @@
               "ask": 13.34,
               "volume": 168,
               "openInterest": 3466,
+              "inTheMoney": true
+            },
+            {
+              "strike": 298,
+              "lastPrice": 14.02,
+              "bid": 14.02,
+              "ask": 14.41,
+              "volume": 44,
+              "openInterest": 1191,
+              "inTheMoney": true
+            },
+            {
+              "strike": 299,
+              "lastPrice": 15.04,
+              "bid": 15.02,
+              "ask": 15.41,
+              "volume": 62,
+              "openInterest": 357,
               "inTheMoney": true
             }
           ]
