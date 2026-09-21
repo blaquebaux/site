@@ -1,54 +1,54 @@
 {
-  "updatedAt": "2026-09-21T19:25:00.504Z",
+  "updatedAt": "2026-09-21T23:15:32.260Z",
   "source": "FRED",
   "observations": [
     {
       "id": "DGS3MO",
       "label": "3M Treasury",
       "tenor": "3M",
-      "value": 4.12,
-      "change": -0.019999999999999574,
-      "date": "2026-09-17"
+      "value": 4.14,
+      "change": 0.019999999999999574,
+      "date": "2026-09-18"
     },
     {
       "id": "DGS2",
       "label": "2Y Treasury",
       "tenor": "2Y",
-      "value": 4.67,
-      "change": -0.07000000000000028,
-      "date": "2026-09-17"
+      "value": 4.76,
+      "change": 0.08999999999999986,
+      "date": "2026-09-18"
     },
     {
       "id": "DGS5",
       "label": "5Y Treasury",
       "tenor": "5Y",
-      "value": 4.78,
-      "change": -0.08000000000000007,
-      "date": "2026-09-17"
+      "value": 4.86,
+      "change": 0.08000000000000007,
+      "date": "2026-09-18"
     },
     {
       "id": "DGS10",
       "label": "10Y Treasury",
       "tenor": "10Y",
-      "value": 4.94,
-      "change": -0.0699999999999994,
-      "date": "2026-09-17"
+      "value": 5.01,
+      "change": 0.0699999999999994,
+      "date": "2026-09-18"
     },
     {
       "id": "DGS30",
       "label": "30Y Treasury",
       "tenor": "30Y",
-      "value": 5.29,
-      "change": -0.05999999999999961,
-      "date": "2026-09-17"
+      "value": 5.34,
+      "change": 0.04999999999999982,
+      "date": "2026-09-18"
     },
     {
       "id": "DFF",
       "label": "Effective fed funds",
       "tenor": "EFFR",
       "value": 3.88,
-      "change": 0.25,
-      "date": "2026-09-17"
+      "change": 0,
+      "date": "2026-09-18"
     },
     {
       "id": "VIXCLS",
