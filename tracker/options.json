@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T04:50:36.586Z",
+  "updatedAt": "2026-09-22T11:33:33.817Z",
   "providerOrder": [
     "Nasdaq",
     "Yahoo Finance"
@@ -19,7 +19,7 @@
               "bid": 13.44,
               "ask": 13.53,
               "volume": 1546,
-              "openInterest": 1938,
+              "openInterest": 1842,
               "inTheMoney": true
             },
             {
@@ -28,7 +28,7 @@
               "bid": 12.44,
               "ask": 12.54,
               "volume": 2567,
-              "openInterest": 2199,
+              "openInterest": 2147,
               "inTheMoney": true
             },
             {
@@ -37,7 +37,7 @@
               "bid": 11.46,
               "ask": 11.55,
               "volume": 1727,
-              "openInterest": 2947,
+              "openInterest": 2538,
               "inTheMoney": true
             },
             {
@@ -46,7 +46,7 @@
               "bid": 10.47,
               "ask": 10.57,
               "volume": 1926,
-              "openInterest": 2086,
+              "openInterest": 1742,
               "inTheMoney": true
             },
             {
@@ -55,7 +55,7 @@
               "bid": 9.49,
               "ask": 9.59,
               "volume": 2685,
-              "openInterest": 1666,
+              "openInterest": 1685,
               "inTheMoney": true
             },
             {
@@ -64,7 +64,7 @@
               "bid": 8.53,
               "ask": 8.61,
               "volume": 4195,
-              "openInterest": 5106,
+              "openInterest": 5303,
               "inTheMoney": true
             },
             {
@@ -73,7 +73,7 @@
               "bid": 7.6,
               "ask": 7.65,
               "volume": 9971,
-              "openInterest": 3272,
+              "openInterest": 3540,
               "inTheMoney": true
             },
             {
@@ -82,7 +82,7 @@
               "bid": 6.62,
               "ask": 6.7,
               "volume": 17972,
-              "openInterest": 1654,
+              "openInterest": 3690,
               "inTheMoney": true
             },
             {
@@ -91,7 +91,7 @@
               "bid": 5.69,
               "ask": 5.77,
               "volume": 38707,
-              "openInterest": 2302,
+              "openInterest": 6459,
               "inTheMoney": true
             },
             {
@@ -100,7 +100,7 @@
               "bid": 4.8,
               "ask": 4.87,
               "volume": 32122,
-              "openInterest": 1443,
+              "openInterest": 6059,
               "inTheMoney": true
             },
             {
@@ -109,7 +109,7 @@
               "bid": 3.95,
               "ask": 4,
               "volume": 52442,
-              "openInterest": 3374,
+              "openInterest": 7359,
               "inTheMoney": true
             },
             {
@@ -118,7 +118,7 @@
               "bid": 3.16,
               "ask": 3.2,
               "volume": 32223,
-              "openInterest": 1116,
+              "openInterest": 5193,
               "inTheMoney": true
             },
             {
@@ -127,7 +127,7 @@
               "bid": 2.45,
               "ask": 2.48,
               "volume": 53437,
-              "openInterest": 6191,
+              "openInterest": 9313,
               "inTheMoney": true
             },
             {
@@ -136,7 +136,7 @@
               "bid": 1.85,
               "ask": 1.86,
               "volume": 76031,
-              "openInterest": 2107,
+              "openInterest": 9151,
               "inTheMoney": true
             },
             {
@@ -145,7 +145,7 @@
               "bid": 1.35,
               "ask": 1.37,
               "volume": 90632,
-              "openInterest": 1145,
+              "openInterest": 11764,
               "inTheMoney": false
             },
             {
@@ -154,7 +154,7 @@
               "bid": 0.97,
               "ask": 0.98,
               "volume": 107367,
-              "openInterest": 2195,
+              "openInterest": 27110,
               "inTheMoney": false
             },
             {
@@ -163,7 +163,7 @@
               "bid": 0.68,
               "ask": 0.69,
               "volume": 53242,
-              "openInterest": 2409,
+              "openInterest": 11426,
               "inTheMoney": false
             },
             {
@@ -172,7 +172,7 @@
               "bid": 0.47,
               "ask": 0.48,
               "volume": 41887,
-              "openInterest": 2162,
+              "openInterest": 8458,
               "inTheMoney": false
             },
             {
@@ -181,7 +181,7 @@
               "bid": 0.33,
               "ask": 0.34,
               "volume": 29169,
-              "openInterest": 1014,
+              "openInterest": 8047,
               "inTheMoney": false
             },
             {
@@ -190,7 +190,7 @@
               "bid": 0.23,
               "ask": 0.24,
               "volume": 27834,
-              "openInterest": 1242,
+              "openInterest": 6458,
               "inTheMoney": false
             },
             {
@@ -199,7 +199,7 @@
               "bid": 0.16,
               "ask": 0.17,
               "volume": 54924,
-              "openInterest": 1362,
+              "openInterest": 14020,
               "inTheMoney": false
             },
             {
@@ -208,7 +208,7 @@
               "bid": 0.12,
               "ask": 0.13,
               "volume": 21519,
-              "openInterest": 785,
+              "openInterest": 5007,
               "inTheMoney": false
             },
             {
@@ -217,7 +217,7 @@
               "bid": 0.08,
               "ask": 0.09,
               "volume": 15756,
-              "openInterest": 486,
+              "openInterest": 6976,
               "inTheMoney": false
             },
             {
@@ -226,7 +226,7 @@
               "bid": 0.06,
               "ask": 0.07,
               "volume": 6161,
-              "openInterest": 425,
+              "openInterest": 3590,
               "inTheMoney": false
             },
             {
@@ -235,7 +235,7 @@
               "bid": 0.05,
               "ask": 0.06,
               "volume": 4288,
-              "openInterest": 880,
+              "openInterest": 2494,
               "inTheMoney": false
             },
             {
@@ -244,7 +244,7 @@
               "bid": 0.04,
               "ask": 0.05,
               "volume": 5487,
-              "openInterest": 740,
+              "openInterest": 3829,
               "inTheMoney": false
             },
             {
@@ -253,7 +253,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 2597,
-              "openInterest": 1132,
+              "openInterest": 1987,
               "inTheMoney": false
             },
             {
@@ -262,7 +262,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 3843,
-              "openInterest": 1283,
+              "openInterest": 3325,
               "inTheMoney": false
             }
           ],
@@ -273,7 +273,7 @@
               "bid": 0.05,
               "ask": 0.06,
               "volume": 9562,
-              "openInterest": 2933,
+              "openInterest": 5482,
               "inTheMoney": false
             },
             {
@@ -282,7 +282,7 @@
               "bid": 0.07,
               "ask": 0.08,
               "volume": 7010,
-              "openInterest": 2242,
+              "openInterest": 4487,
               "inTheMoney": false
             },
             {
@@ -291,7 +291,7 @@
               "bid": 0.07,
               "ask": 0.08,
               "volume": 10150,
-              "openInterest": 1336,
+              "openInterest": 3599,
               "inTheMoney": false
             },
             {
@@ -300,7 +300,7 @@
               "bid": 0.09,
               "ask": 0.1,
               "volume": 7123,
-              "openInterest": 729,
+              "openInterest": 2046,
               "inTheMoney": false
             },
             {
@@ -309,7 +309,7 @@
               "bid": 0.11,
               "ask": 0.12,
               "volume": 14431,
-              "openInterest": 457,
+              "openInterest": 4646,
               "inTheMoney": false
             },
             {
@@ -318,7 +318,7 @@
               "bid": 0.14,
               "ask": 0.15,
               "volume": 27872,
-              "openInterest": 1545,
+              "openInterest": 6950,
               "inTheMoney": false
             },
             {
@@ -327,7 +327,7 @@
               "bid": 0.18,
               "ask": 0.19,
               "volume": 27692,
-              "openInterest": 148,
+              "openInterest": 5660,
               "inTheMoney": false
             },
             {
@@ -336,7 +336,7 @@
               "bid": 0.23,
               "ask": 0.24,
               "volume": 41121,
-              "openInterest": 124,
+              "openInterest": 9440,
               "inTheMoney": false
             },
             {
@@ -345,7 +345,7 @@
               "bid": 0.3,
               "ask": 0.31,
               "volume": 37801,
-              "openInterest": 148,
+              "openInterest": 8998,
               "inTheMoney": false
             },
             {
@@ -354,7 +354,7 @@
               "bid": 0.4,
               "ask": 0.41,
               "volume": 46589,
-              "openInterest": 99,
+              "openInterest": 8504,
               "inTheMoney": false
             },
             {
@@ -363,7 +363,7 @@
               "bid": 0.55,
               "ask": 0.56,
               "volume": 76173,
-              "openInterest": 212,
+              "openInterest": 13776,
               "inTheMoney": false
             },
             {
@@ -372,7 +372,7 @@
               "bid": 0.75,
               "ask": 0.76,
               "volume": 47295,
-              "openInterest": 37,
+              "openInterest": 6847,
               "inTheMoney": false
             },
             {
@@ -381,7 +381,7 @@
               "bid": 1.03,
               "ask": 1.04,
               "volume": 77706,
-              "openInterest": 458,
+              "openInterest": 10495,
               "inTheMoney": false
             },
             {
@@ -390,7 +390,7 @@
               "bid": 1.43,
               "ask": 1.44,
               "volume": 75028,
-              "openInterest": 90,
+              "openInterest": 9368,
               "inTheMoney": false
             },
             {
@@ -399,7 +399,7 @@
               "bid": 1.93,
               "ask": 1.94,
               "volume": 52508,
-              "openInterest": 99,
+              "openInterest": 6477,
               "inTheMoney": true
             },
             {
@@ -408,7 +408,7 @@
               "bid": 2.53,
               "ask": 2.55,
               "volume": 22550,
-              "openInterest": 5,
+              "openInterest": 4074,
               "inTheMoney": true
             },
             {
@@ -417,7 +417,7 @@
               "bid": 3.24,
               "ask": 3.28,
               "volume": 5059,
-              "openInterest": 15,
+              "openInterest": 1056,
               "inTheMoney": true
             },
             {
@@ -426,7 +426,7 @@
               "bid": 4.03,
               "ask": 4.05,
               "volume": 1563,
-              "openInterest": null,
+              "openInterest": 429,
               "inTheMoney": true
             },
             {
@@ -435,7 +435,7 @@
               "bid": 4.87,
               "ask": 4.94,
               "volume": 2337,
-              "openInterest": null,
+              "openInterest": 569,
               "inTheMoney": true
             },
             {
@@ -444,7 +444,7 @@
               "bid": 5.77,
               "ask": 5.85,
               "volume": 976,
-              "openInterest": null,
+              "openInterest": 374,
               "inTheMoney": true
             },
             {
@@ -453,7 +453,7 @@
               "bid": 6.7,
               "ask": 6.78,
               "volume": 1467,
-              "openInterest": null,
+              "openInterest": 581,
               "inTheMoney": true
             },
             {
@@ -462,7 +462,7 @@
               "bid": 7.64,
               "ask": 7.73,
               "volume": 903,
-              "openInterest": null,
+              "openInterest": 530,
               "inTheMoney": true
             },
             {
@@ -471,7 +471,7 @@
               "bid": 8.61,
               "ask": 8.71,
               "volume": 1973,
-              "openInterest": null,
+              "openInterest": 429,
               "inTheMoney": true
             },
             {
@@ -480,7 +480,7 @@
               "bid": 9.6,
               "ask": 9.71,
               "volume": 1285,
-              "openInterest": null,
+              "openInterest": 117,
               "inTheMoney": true
             },
             {
@@ -489,7 +489,7 @@
               "bid": 10.59,
               "ask": 10.71,
               "volume": 1014,
-              "openInterest": 2,
+              "openInterest": 45,
               "inTheMoney": true
             },
             {
@@ -498,7 +498,7 @@
               "bid": 11.59,
               "ask": 11.7,
               "volume": 720,
-              "openInterest": null,
+              "openInterest": 40,
               "inTheMoney": true
             },
             {
@@ -530,7 +530,7 @@
               "bid": 13.61,
               "ask": 13.71,
               "volume": 861,
-              "openInterest": 4379,
+              "openInterest": 4177,
               "inTheMoney": true
             },
             {
@@ -539,7 +539,7 @@
               "bid": 12.63,
               "ask": 12.74,
               "volume": 1507,
-              "openInterest": 1012,
+              "openInterest": 930,
               "inTheMoney": true
             },
             {
@@ -548,7 +548,7 @@
               "bid": 11.67,
               "ask": 11.77,
               "volume": 1431,
-              "openInterest": 2664,
+              "openInterest": 2450,
               "inTheMoney": true
             },
             {
@@ -557,7 +557,7 @@
               "bid": 10.72,
               "ask": 10.81,
               "volume": 1205,
-              "openInterest": 976,
+              "openInterest": 1001,
               "inTheMoney": true
             },
             {
@@ -566,7 +566,7 @@
               "bid": 9.77,
               "ask": 9.87,
               "volume": 845,
-              "openInterest": 493,
+              "openInterest": 456,
               "inTheMoney": true
             },
             {
@@ -575,7 +575,7 @@
               "bid": 8.84,
               "ask": 8.93,
               "volume": 2938,
-              "openInterest": 3817,
+              "openInterest": 3371,
               "inTheMoney": true
             },
             {
@@ -584,7 +584,7 @@
               "bid": 7.94,
               "ask": 8.01,
               "volume": 2586,
-              "openInterest": 1049,
+              "openInterest": 1391,
               "inTheMoney": true
             },
             {
@@ -593,7 +593,7 @@
               "bid": 7.04,
               "ask": 7.11,
               "volume": 5855,
-              "openInterest": 1248,
+              "openInterest": 2796,
               "inTheMoney": true
             },
             {
@@ -602,7 +602,7 @@
               "bid": 6.18,
               "ask": 6.24,
               "volume": 5095,
-              "openInterest": 1278,
+              "openInterest": 1192,
               "inTheMoney": true
             },
             {
@@ -611,7 +611,7 @@
               "bid": 5.35,
               "ask": 5.4,
               "volume": 5243,
-              "openInterest": 933,
+              "openInterest": 1576,
               "inTheMoney": true
             },
             {
@@ -620,7 +620,7 @@
               "bid": 4.58,
               "ask": 4.61,
               "volume": 12041,
-              "openInterest": 2237,
+              "openInterest": 3409,
               "inTheMoney": true
             },
             {
@@ -629,7 +629,7 @@
               "bid": 3.85,
               "ask": 3.88,
               "volume": 9655,
-              "openInterest": 841,
+              "openInterest": 1899,
               "inTheMoney": true
             },
             {
@@ -638,7 +638,7 @@
               "bid": 3.2,
               "ask": 3.22,
               "volume": 16948,
-              "openInterest": 2268,
+              "openInterest": 3920,
               "inTheMoney": true
             },
             {
@@ -647,7 +647,7 @@
               "bid": 2.62,
               "ask": 2.64,
               "volume": 10468,
-              "openInterest": 1563,
+              "openInterest": 2379,
               "inTheMoney": true
             },
             {
@@ -656,7 +656,7 @@
               "bid": 2.1,
               "ask": 2.12,
               "volume": 16805,
-              "openInterest": 2482,
+              "openInterest": 2694,
               "inTheMoney": false
             },
             {
@@ -665,7 +665,7 @@
               "bid": 1.67,
               "ask": 1.69,
               "volume": 18661,
-              "openInterest": 2574,
+              "openInterest": 4450,
               "inTheMoney": false
             },
             {
@@ -674,7 +674,7 @@
               "bid": 1.31,
               "ask": 1.33,
               "volume": 14966,
-              "openInterest": 1613,
+              "openInterest": 3989,
               "inTheMoney": false
             },
             {
@@ -683,7 +683,7 @@
               "bid": 1.02,
               "ask": 1.04,
               "volume": 11869,
-              "openInterest": 1198,
+              "openInterest": 2275,
               "inTheMoney": false
             },
             {
@@ -692,7 +692,7 @@
               "bid": 0.79,
               "ask": 0.81,
               "volume": 9808,
-              "openInterest": 2317,
+              "openInterest": 3075,
               "inTheMoney": false
             },
             {
@@ -701,7 +701,7 @@
               "bid": 0.62,
               "ask": 0.63,
               "volume": 9186,
-              "openInterest": 2714,
+              "openInterest": 4407,
               "inTheMoney": false
             },
             {
@@ -710,7 +710,7 @@
               "bid": 0.48,
               "ask": 0.49,
               "volume": 33462,
-              "openInterest": 3565,
+              "openInterest": 16575,
               "inTheMoney": false
             },
             {
@@ -719,7 +719,7 @@
               "bid": 0.37,
               "ask": 0.38,
               "volume": 6648,
-              "openInterest": 429,
+              "openInterest": 2910,
               "inTheMoney": false
             },
             {
@@ -728,7 +728,7 @@
               "bid": 0.29,
               "ask": 0.3,
               "volume": 3602,
-              "openInterest": 1097,
+              "openInterest": 2417,
               "inTheMoney": false
             },
             {
@@ -737,7 +737,7 @@
               "bid": 0.23,
               "ask": 0.24,
               "volume": 5562,
-              "openInterest": 1064,
+              "openInterest": 3828,
               "inTheMoney": false
             },
             {
@@ -746,7 +746,7 @@
               "bid": 0.18,
               "ask": 0.19,
               "volume": 1205,
-              "openInterest": 1264,
+              "openInterest": 1805,
               "inTheMoney": false
             },
             {
@@ -755,7 +755,7 @@
               "bid": 0.14,
               "ask": 0.15,
               "volume": 9638,
-              "openInterest": 1046,
+              "openInterest": 4624,
               "inTheMoney": false
             },
             {
@@ -764,7 +764,7 @@
               "bid": 0.12,
               "ask": 0.13,
               "volume": 2090,
-              "openInterest": 59,
+              "openInterest": 1665,
               "inTheMoney": false
             },
             {
@@ -773,7 +773,7 @@
               "bid": 0.1,
               "ask": 0.11,
               "volume": 462,
-              "openInterest": 130,
+              "openInterest": 379,
               "inTheMoney": false
             }
           ],
@@ -784,7 +784,7 @@
               "bid": 0.19,
               "ask": 0.2,
               "volume": 6880,
-              "openInterest": 2539,
+              "openInterest": 4734,
               "inTheMoney": false
             },
             {
@@ -793,7 +793,7 @@
               "bid": 0.21,
               "ask": 0.22,
               "volume": 1781,
-              "openInterest": 976,
+              "openInterest": 1381,
               "inTheMoney": false
             },
             {
@@ -802,7 +802,7 @@
               "bid": 0.25,
               "ask": 0.26,
               "volume": 2443,
-              "openInterest": 3769,
+              "openInterest": 4124,
               "inTheMoney": false
             },
             {
@@ -811,7 +811,7 @@
               "bid": 0.29,
               "ask": 0.3,
               "volume": 4280,
-              "openInterest": 431,
+              "openInterest": 2706,
               "inTheMoney": false
             },
             {
@@ -820,7 +820,7 @@
               "bid": 0.34,
               "ask": 0.35,
               "volume": 5537,
-              "openInterest": 451,
+              "openInterest": 4117,
               "inTheMoney": false
             },
             {
@@ -829,7 +829,7 @@
               "bid": 0.4,
               "ask": 0.41,
               "volume": 8568,
-              "openInterest": 474,
+              "openInterest": 4108,
               "inTheMoney": false
             },
             {
@@ -838,7 +838,7 @@
               "bid": 0.49,
               "ask": 0.5,
               "volume": 7318,
-              "openInterest": 109,
+              "openInterest": 1986,
               "inTheMoney": false
             },
             {
@@ -847,7 +847,7 @@
               "bid": 0.59,
               "ask": 0.61,
               "volume": 9262,
-              "openInterest": 134,
+              "openInterest": 3807,
               "inTheMoney": false
             },
             {
@@ -856,7 +856,7 @@
               "bid": 0.73,
               "ask": 0.74,
               "volume": 9912,
-              "openInterest": 162,
+              "openInterest": 2945,
               "inTheMoney": false
             },
             {
@@ -865,7 +865,7 @@
               "bid": 0.89,
               "ask": 0.91,
               "volume": 7526,
-              "openInterest": 58,
+              "openInterest": 1769,
               "inTheMoney": false
             },
             {
@@ -874,7 +874,7 @@
               "bid": 1.11,
               "ask": 1.13,
               "volume": 22737,
-              "openInterest": 139,
+              "openInterest": 7501,
               "inTheMoney": false
             },
             {
@@ -883,7 +883,7 @@
               "bid": 1.39,
               "ask": 1.41,
               "volume": 13152,
-              "openInterest": 138,
+              "openInterest": 3297,
               "inTheMoney": false
             },
             {
@@ -892,7 +892,7 @@
               "bid": 1.73,
               "ask": 1.75,
               "volume": 11678,
-              "openInterest": 50,
+              "openInterest": 2994,
               "inTheMoney": false
             },
             {
@@ -901,7 +901,7 @@
               "bid": 2.14,
               "ask": 2.16,
               "volume": 13016,
-              "openInterest": 41,
+              "openInterest": 4212,
               "inTheMoney": false
             },
             {
@@ -910,7 +910,7 @@
               "bid": 2.63,
               "ask": 2.65,
               "volume": 8612,
-              "openInterest": 18,
+              "openInterest": 2883,
               "inTheMoney": true
             },
             {
@@ -919,7 +919,7 @@
               "bid": 3.19,
               "ask": 3.22,
               "volume": 5928,
-              "openInterest": 50,
+              "openInterest": 2056,
               "inTheMoney": true
             },
             {
@@ -928,7 +928,7 @@
               "bid": 3.83,
               "ask": 3.87,
               "volume": 753,
-              "openInterest": 2,
+              "openInterest": 460,
               "inTheMoney": true
             },
             {
@@ -937,7 +937,7 @@
               "bid": 4.53,
               "ask": 4.58,
               "volume": 790,
-              "openInterest": 2,
+              "openInterest": 322,
               "inTheMoney": true
             },
             {
@@ -946,7 +946,7 @@
               "bid": 5.3,
               "ask": 5.36,
               "volume": 280,
-              "openInterest": null,
+              "openInterest": 137,
               "inTheMoney": true
             },
             {
@@ -955,7 +955,7 @@
               "bid": 6.12,
               "ask": 6.2,
               "volume": 204,
-              "openInterest": null,
+              "openInterest": 151,
               "inTheMoney": true
             },
             {
@@ -964,7 +964,7 @@
               "bid": 6.98,
               "ask": 7.06,
               "volume": 1053,
-              "openInterest": 4,
+              "openInterest": 233,
               "inTheMoney": true
             },
             {
@@ -973,7 +973,7 @@
               "bid": 7.87,
               "ask": 7.96,
               "volume": 367,
-              "openInterest": null,
+              "openInterest": 206,
               "inTheMoney": true
             },
             {
@@ -982,7 +982,7 @@
               "bid": 8.78,
               "ask": 8.88,
               "volume": 370,
-              "openInterest": null,
+              "openInterest": 196,
               "inTheMoney": true
             },
             {
@@ -991,7 +991,7 @@
               "bid": 9.73,
               "ask": 9.83,
               "volume": 246,
-              "openInterest": null,
+              "openInterest": 207,
               "inTheMoney": true
             },
             {
@@ -1000,7 +1000,7 @@
               "bid": 10.68,
               "ask": 10.78,
               "volume": 783,
-              "openInterest": null,
+              "openInterest": 191,
               "inTheMoney": true
             },
             {
@@ -1009,7 +1009,7 @@
               "bid": 11.65,
               "ask": 11.75,
               "volume": 196,
-              "openInterest": null,
+              "openInterest": 124,
               "inTheMoney": true
             },
             {
@@ -1018,7 +1018,7 @@
               "bid": 12.62,
               "ask": 12.73,
               "volume": 157,
-              "openInterest": null,
+              "openInterest": 43,
               "inTheMoney": true
             },
             {
@@ -1027,7 +1027,7 @@
               "bid": 13.6,
               "ask": 13.71,
               "volume": 82,
-              "openInterest": null,
+              "openInterest": 12,
               "inTheMoney": true
             }
           ]
@@ -1041,7 +1041,7 @@
               "bid": 13.88,
               "ask": 13.98,
               "volume": 1282,
-              "openInterest": 1891,
+              "openInterest": 2133,
               "inTheMoney": true
             },
             {
@@ -1050,7 +1050,7 @@
               "bid": 12.94,
               "ask": 13.03,
               "volume": 239,
-              "openInterest": 1356,
+              "openInterest": 1232,
               "inTheMoney": true
             },
             {
@@ -1059,7 +1059,7 @@
               "bid": 12,
               "ask": 12.09,
               "volume": 252,
-              "openInterest": 535,
+              "openInterest": 510,
               "inTheMoney": true
             },
             {
@@ -1068,7 +1068,7 @@
               "bid": 11.07,
               "ask": 11.16,
               "volume": 245,
-              "openInterest": 610,
+              "openInterest": 683,
               "inTheMoney": true
             },
             {
@@ -1077,7 +1077,7 @@
               "bid": 10.16,
               "ask": 10.24,
               "volume": 308,
-              "openInterest": 451,
+              "openInterest": 487,
               "inTheMoney": true
             },
             {
@@ -1086,7 +1086,7 @@
               "bid": 9.27,
               "ask": 9.34,
               "volume": 522,
-              "openInterest": 1551,
+              "openInterest": 1494,
               "inTheMoney": true
             },
             {
@@ -1095,7 +1095,7 @@
               "bid": 8.4,
               "ask": 8.46,
               "volume": 749,
-              "openInterest": 495,
+              "openInterest": 572,
               "inTheMoney": true
             },
             {
@@ -1113,7 +1113,7 @@
               "bid": 6.72,
               "ask": 6.77,
               "volume": 1504,
-              "openInterest": 525,
+              "openInterest": 876,
               "inTheMoney": true
             },
             {
@@ -1122,7 +1122,7 @@
               "bid": 5.93,
               "ask": 5.98,
               "volume": 1508,
-              "openInterest": 819,
+              "openInterest": 861,
               "inTheMoney": true
             },
             {
@@ -1131,7 +1131,7 @@
               "bid": 5.19,
               "ask": 5.23,
               "volume": 3562,
-              "openInterest": 1850,
+              "openInterest": 1903,
               "inTheMoney": true
             },
             {
@@ -1140,7 +1140,7 @@
               "bid": 4.5,
               "ask": 4.53,
               "volume": 1895,
-              "openInterest": 5273,
+              "openInterest": 5356,
               "inTheMoney": true
             },
             {
@@ -1149,7 +1149,7 @@
               "bid": 3.86,
               "ask": 3.89,
               "volume": 3035,
-              "openInterest": 908,
+              "openInterest": 988,
               "inTheMoney": true
             },
             {
@@ -1158,7 +1158,7 @@
               "bid": 3.28,
               "ask": 3.3,
               "volume": 2854,
-              "openInterest": 1586,
+              "openInterest": 1850,
               "inTheMoney": true
             },
             {
@@ -1167,7 +1167,7 @@
               "bid": 2.75,
               "ask": 2.78,
               "volume": 3457,
-              "openInterest": 633,
+              "openInterest": 1034,
               "inTheMoney": false
             },
             {
@@ -1176,7 +1176,7 @@
               "bid": 2.29,
               "ask": 2.31,
               "volume": 6330,
-              "openInterest": 816,
+              "openInterest": 2105,
               "inTheMoney": false
             },
             {
@@ -1185,7 +1185,7 @@
               "bid": 1.89,
               "ask": 1.91,
               "volume": 3834,
-              "openInterest": 594,
+              "openInterest": 1228,
               "inTheMoney": false
             },
             {
@@ -1194,7 +1194,7 @@
               "bid": 1.54,
               "ask": 1.57,
               "volume": 3176,
-              "openInterest": 989,
+              "openInterest": 1872,
               "inTheMoney": false
             },
             {
@@ -1203,7 +1203,7 @@
               "bid": 1.25,
               "ask": 1.27,
               "volume": 7808,
-              "openInterest": 645,
+              "openInterest": 3061,
               "inTheMoney": false
             },
             {
@@ -1212,7 +1212,7 @@
               "bid": 1.01,
               "ask": 1.03,
               "volume": 2797,
-              "openInterest": 399,
+              "openInterest": 975,
               "inTheMoney": false
             },
             {
@@ -1221,7 +1221,7 @@
               "bid": 0.82,
               "ask": 0.83,
               "volume": 5041,
-              "openInterest": 1211,
+              "openInterest": 2933,
               "inTheMoney": false
             },
             {
@@ -1230,7 +1230,7 @@
               "bid": 0.66,
               "ask": 0.67,
               "volume": 1306,
-              "openInterest": 614,
+              "openInterest": 995,
               "inTheMoney": false
             },
             {
@@ -1239,7 +1239,7 @@
               "bid": 0.53,
               "ask": 0.54,
               "volume": 1294,
-              "openInterest": 678,
+              "openInterest": 826,
               "inTheMoney": false
             },
             {
@@ -1248,7 +1248,7 @@
               "bid": 0.42,
               "ask": 0.44,
               "volume": 635,
-              "openInterest": 586,
+              "openInterest": 661,
               "inTheMoney": false
             },
             {
@@ -1257,7 +1257,7 @@
               "bid": 0.34,
               "ask": 0.36,
               "volume": 566,
-              "openInterest": 552,
+              "openInterest": 703,
               "inTheMoney": false
             },
             {
@@ -1266,7 +1266,7 @@
               "bid": 0.28,
               "ask": 0.29,
               "volume": 794,
-              "openInterest": 176,
+              "openInterest": 544,
               "inTheMoney": false
             },
             {
@@ -1275,7 +1275,7 @@
               "bid": 0.23,
               "ask": 0.24,
               "volume": 345,
-              "openInterest": 627,
+              "openInterest": 876,
               "inTheMoney": false
             },
             {
@@ -1284,7 +1284,7 @@
               "bid": 0.19,
               "ask": 0.2,
               "volume": 616,
-              "openInterest": 174,
+              "openInterest": 485,
               "inTheMoney": false
             }
           ],
@@ -1295,7 +1295,7 @@
               "bid": 0.38,
               "ask": 0.4,
               "volume": 3077,
-              "openInterest": 534,
+              "openInterest": 2065,
               "inTheMoney": false
             },
             {
@@ -1304,7 +1304,7 @@
               "bid": 0.43,
               "ask": 0.45,
               "volume": 825,
-              "openInterest": 1619,
+              "openInterest": 1811,
               "inTheMoney": false
             },
             {
@@ -1313,7 +1313,7 @@
               "bid": 0.49,
               "ask": 0.51,
               "volume": 911,
-              "openInterest": 716,
+              "openInterest": 693,
               "inTheMoney": false
             },
             {
@@ -1322,7 +1322,7 @@
               "bid": 0.56,
               "ask": 0.58,
               "volume": 1805,
-              "openInterest": 478,
+              "openInterest": 1623,
               "inTheMoney": false
             },
             {
@@ -1331,7 +1331,7 @@
               "bid": 0.65,
               "ask": 0.66,
               "volume": 882,
-              "openInterest": 384,
+              "openInterest": 599,
               "inTheMoney": false
             },
             {
@@ -1340,7 +1340,7 @@
               "bid": 0.75,
               "ask": 0.77,
               "volume": 3195,
-              "openInterest": 487,
+              "openInterest": 1069,
               "inTheMoney": false
             },
             {
@@ -1349,7 +1349,7 @@
               "bid": 0.87,
               "ask": 0.89,
               "volume": 2101,
-              "openInterest": 152,
+              "openInterest": 552,
               "inTheMoney": false
             },
             {
@@ -1358,7 +1358,7 @@
               "bid": 1.01,
               "ask": 1.04,
               "volume": 1629,
-              "openInterest": 649,
+              "openInterest": 1079,
               "inTheMoney": false
             },
             {
@@ -1367,7 +1367,7 @@
               "bid": 1.19,
               "ask": 1.21,
               "volume": 3582,
-              "openInterest": 57,
+              "openInterest": 1061,
               "inTheMoney": false
             },
             {
@@ -1376,7 +1376,7 @@
               "bid": 1.4,
               "ask": 1.42,
               "volume": 2528,
-              "openInterest": 102,
+              "openInterest": 1068,
               "inTheMoney": false
             },
             {
@@ -1385,7 +1385,7 @@
               "bid": 1.66,
               "ask": 1.68,
               "volume": 4164,
-              "openInterest": 125,
+              "openInterest": 1010,
               "inTheMoney": false
             },
             {
@@ -1394,7 +1394,7 @@
               "bid": 1.96,
               "ask": 1.99,
               "volume": 2084,
-              "openInterest": 16,
+              "openInterest": 760,
               "inTheMoney": false
             },
             {
@@ -1403,7 +1403,7 @@
               "bid": 2.32,
               "ask": 2.35,
               "volume": 2152,
-              "openInterest": 55,
+              "openInterest": 530,
               "inTheMoney": false
             },
             {
@@ -1412,7 +1412,7 @@
               "bid": 2.74,
               "ask": 2.76,
               "volume": 2651,
-              "openInterest": 9,
+              "openInterest": 1018,
               "inTheMoney": false
             },
             {
@@ -1421,7 +1421,7 @@
               "bid": 3.21,
               "ask": 3.24,
               "volume": 2265,
-              "openInterest": 6,
+              "openInterest": 810,
               "inTheMoney": true
             },
             {
@@ -1430,7 +1430,7 @@
               "bid": 3.75,
               "ask": 3.78,
               "volume": 1512,
-              "openInterest": 5,
+              "openInterest": 500,
               "inTheMoney": true
             },
             {
@@ -1439,7 +1439,7 @@
               "bid": 4.35,
               "ask": 4.38,
               "volume": 598,
-              "openInterest": null,
+              "openInterest": 222,
               "inTheMoney": true
             },
             {
@@ -1448,7 +1448,7 @@
               "bid": 5,
               "ask": 5.04,
               "volume": 116,
-              "openInterest": null,
+              "openInterest": 75,
               "inTheMoney": true
             },
             {
@@ -1457,7 +1457,7 @@
               "bid": 5.71,
               "ask": 5.76,
               "volume": 232,
-              "openInterest": null,
+              "openInterest": 163,
               "inTheMoney": true
             },
             {
@@ -1466,7 +1466,7 @@
               "bid": 6.47,
               "ask": 6.52,
               "volume": 184,
-              "openInterest": null,
+              "openInterest": 138,
               "inTheMoney": true
             },
             {
@@ -1475,7 +1475,7 @@
               "bid": 7.27,
               "ask": 7.33,
               "volume": 448,
-              "openInterest": 1,
+              "openInterest": 145,
               "inTheMoney": true
             },
             {
@@ -1484,7 +1484,7 @@
               "bid": 8.11,
               "ask": 8.19,
               "volume": 281,
-              "openInterest": null,
+              "openInterest": 171,
               "inTheMoney": true
             },
             {
@@ -1493,7 +1493,7 @@
               "bid": 8.98,
               "ask": 9.09,
               "volume": 310,
-              "openInterest": null,
+              "openInterest": 240,
               "inTheMoney": true
             },
             {
@@ -1502,7 +1502,7 @@
               "bid": 9.88,
               "ask": 9.97,
               "volume": 250,
-              "openInterest": null,
+              "openInterest": 228,
               "inTheMoney": true
             },
             {
@@ -1511,7 +1511,7 @@
               "bid": 10.8,
               "ask": 10.9,
               "volume": 2482,
-              "openInterest": null,
+              "openInterest": 492,
               "inTheMoney": true
             },
             {
@@ -1520,7 +1520,7 @@
               "bid": 11.74,
               "ask": 11.84,
               "volume": 708,
-              "openInterest": null,
+              "openInterest": 173,
               "inTheMoney": true
             },
             {
@@ -1529,7 +1529,7 @@
               "bid": 12.69,
               "ask": 12.8,
               "volume": 685,
-              "openInterest": null,
+              "openInterest": 165,
               "inTheMoney": true
             },
             {
@@ -1538,7 +1538,7 @@
               "bid": 13.65,
               "ask": 13.76,
               "volume": 1218,
-              "openInterest": null,
+              "openInterest": 273,
               "inTheMoney": true
             }
           ]
@@ -1559,7 +1559,7 @@
               "bid": 13.05,
               "ask": 14.88,
               "volume": 4285,
-              "openInterest": 1707,
+              "openInterest": 1991,
               "inTheMoney": true
             },
             {
@@ -1568,7 +1568,7 @@
               "bid": 12.06,
               "ask": 13.9,
               "volume": 6529,
-              "openInterest": 1095,
+              "openInterest": 1611,
               "inTheMoney": true
             },
             {
@@ -1577,7 +1577,7 @@
               "bid": 11.11,
               "ask": 12,
               "volume": 11171,
-              "openInterest": 3956,
+              "openInterest": 3601,
               "inTheMoney": true
             },
             {
@@ -1586,7 +1586,7 @@
               "bid": 10.23,
               "ask": 10.82,
               "volume": 10168,
-              "openInterest": 4795,
+              "openInterest": 2463,
               "inTheMoney": true
             },
             {
@@ -1595,7 +1595,7 @@
               "bid": 9.41,
               "ask": 9.84,
               "volume": 11740,
-              "openInterest": 4235,
+              "openInterest": 2761,
               "inTheMoney": true
             },
             {
@@ -1604,7 +1604,7 @@
               "bid": 8.54,
               "ask": 9.01,
               "volume": 12465,
-              "openInterest": 1210,
+              "openInterest": 1595,
               "inTheMoney": true
             },
             {
@@ -1613,7 +1613,7 @@
               "bid": 7.68,
               "ask": 8.15,
               "volume": 10746,
-              "openInterest": 679,
+              "openInterest": 1391,
               "inTheMoney": true
             },
             {
@@ -1622,7 +1622,7 @@
               "bid": 6.81,
               "ask": 7.32,
               "volume": 29556,
-              "openInterest": 1014,
+              "openInterest": 3654,
               "inTheMoney": true
             },
             {
@@ -1631,7 +1631,7 @@
               "bid": 6.01,
               "ask": 6.18,
               "volume": 18078,
-              "openInterest": 1432,
+              "openInterest": 3775,
               "inTheMoney": true
             },
             {
@@ -1640,7 +1640,7 @@
               "bid": 5.21,
               "ask": 5.41,
               "volume": 19375,
-              "openInterest": 1071,
+              "openInterest": 3207,
               "inTheMoney": true
             },
             {
@@ -1649,7 +1649,7 @@
               "bid": 4.45,
               "ask": 4.64,
               "volume": 37470,
-              "openInterest": 1307,
+              "openInterest": 8691,
               "inTheMoney": true
             },
             {
@@ -1658,7 +1658,7 @@
               "bid": 3.76,
               "ask": 3.91,
               "volume": 36294,
-              "openInterest": 374,
+              "openInterest": 7940,
               "inTheMoney": true
             },
             {
@@ -1667,7 +1667,7 @@
               "bid": 3.17,
               "ask": 3.26,
               "volume": 62395,
-              "openInterest": 1652,
+              "openInterest": 7822,
               "inTheMoney": true
             },
             {
@@ -1676,7 +1676,7 @@
               "bid": 2.62,
               "ask": 2.64,
               "volume": 37317,
-              "openInterest": 393,
+              "openInterest": 7320,
               "inTheMoney": true
             },
             {
@@ -1685,7 +1685,7 @@
               "bid": 2.12,
               "ask": 2.13,
               "volume": 35960,
-              "openInterest": 460,
+              "openInterest": 3989,
               "inTheMoney": false
             },
             {
@@ -1694,7 +1694,7 @@
               "bid": 1.66,
               "ask": 1.7,
               "volume": 30795,
-              "openInterest": 263,
+              "openInterest": 6054,
               "inTheMoney": false
             },
             {
@@ -1703,7 +1703,7 @@
               "bid": 1.31,
               "ask": 1.35,
               "volume": 45325,
-              "openInterest": 195,
+              "openInterest": 5759,
               "inTheMoney": false
             },
             {
@@ -1712,7 +1712,7 @@
               "bid": 1.03,
               "ask": 1.06,
               "volume": 34916,
-              "openInterest": 239,
+              "openInterest": 7584,
               "inTheMoney": false
             },
             {
@@ -1721,7 +1721,7 @@
               "bid": 0.8,
               "ask": 0.84,
               "volume": 17648,
-              "openInterest": 65,
+              "openInterest": 3570,
               "inTheMoney": false
             },
             {
@@ -1730,7 +1730,7 @@
               "bid": 0.62,
               "ask": 0.66,
               "volume": 12546,
-              "openInterest": 69,
+              "openInterest": 3186,
               "inTheMoney": false
             },
             {
@@ -1739,7 +1739,7 @@
               "bid": 0.48,
               "ask": 0.52,
               "volume": 26025,
-              "openInterest": 181,
+              "openInterest": 18152,
               "inTheMoney": false
             },
             {
@@ -1748,7 +1748,7 @@
               "bid": 0.37,
               "ask": 0.38,
               "volume": 8630,
-              "openInterest": 65,
+              "openInterest": 3573,
               "inTheMoney": false
             },
             {
@@ -1757,7 +1757,7 @@
               "bid": 0.28,
               "ask": 0.3,
               "volume": 26331,
-              "openInterest": 1026,
+              "openInterest": 8093,
               "inTheMoney": false
             },
             {
@@ -1766,7 +1766,7 @@
               "bid": 0.22,
               "ask": 0.23,
               "volume": 4096,
-              "openInterest": 85,
+              "openInterest": 2084,
               "inTheMoney": false
             },
             {
@@ -1775,7 +1775,7 @@
               "bid": 0.17,
               "ask": 0.19,
               "volume": 6357,
-              "openInterest": 14,
+              "openInterest": 3996,
               "inTheMoney": false
             },
             {
@@ -1784,7 +1784,7 @@
               "bid": 0.13,
               "ask": 0.15,
               "volume": 3993,
-              "openInterest": 188,
+              "openInterest": 2344,
               "inTheMoney": false
             },
             {
@@ -1793,7 +1793,7 @@
               "bid": 0.1,
               "ask": 0.12,
               "volume": 5551,
-              "openInterest": 130,
+              "openInterest": 3396,
               "inTheMoney": false
             },
             {
@@ -1802,7 +1802,7 @@
               "bid": 0.08,
               "ask": 0.09,
               "volume": 3083,
-              "openInterest": 187,
+              "openInterest": 1754,
               "inTheMoney": false
             }
           ],
@@ -1813,7 +1813,7 @@
               "bid": 0.2,
               "ask": 0.22,
               "volume": 21183,
-              "openInterest": 10,
+              "openInterest": 8266,
               "inTheMoney": false
             },
             {
@@ -1822,7 +1822,7 @@
               "bid": 0.24,
               "ask": 0.25,
               "volume": 34882,
-              "openInterest": 4,
+              "openInterest": 8401,
               "inTheMoney": false
             },
             {
@@ -1831,7 +1831,7 @@
               "bid": 0.28,
               "ask": 0.29,
               "volume": 43447,
-              "openInterest": 156,
+              "openInterest": 12206,
               "inTheMoney": false
             },
             {
@@ -1840,7 +1840,7 @@
               "bid": 0.33,
               "ask": 0.35,
               "volume": 18893,
-              "openInterest": 6,
+              "openInterest": 4543,
               "inTheMoney": false
             },
             {
@@ -1849,7 +1849,7 @@
               "bid": 0.39,
               "ask": 0.41,
               "volume": 29966,
-              "openInterest": null,
+              "openInterest": 8071,
               "inTheMoney": false
             },
             {
@@ -1858,7 +1858,7 @@
               "bid": 0.47,
               "ask": 0.5,
               "volume": 26410,
-              "openInterest": null,
+              "openInterest": 7127,
               "inTheMoney": false
             },
             {
@@ -1867,7 +1867,7 @@
               "bid": 0.57,
               "ask": 0.58,
               "volume": 30210,
-              "openInterest": null,
+              "openInterest": 8757,
               "inTheMoney": false
             },
             {
@@ -1876,7 +1876,7 @@
               "bid": 0.7,
               "ask": 0.71,
               "volume": 43394,
-              "openInterest": 22,
+              "openInterest": 9036,
               "inTheMoney": false
             },
             {
@@ -1885,7 +1885,7 @@
               "bid": 0.84,
               "ask": 0.87,
               "volume": 29751,
-              "openInterest": 2,
+              "openInterest": 5576,
               "inTheMoney": false
             },
             {
@@ -1894,7 +1894,7 @@
               "bid": 1.03,
               "ask": 1.06,
               "volume": 40592,
-              "openInterest": null,
+              "openInterest": 7192,
               "inTheMoney": false
             },
             {
@@ -1903,7 +1903,7 @@
               "bid": 1.27,
               "ask": 1.3,
               "volume": 47697,
-              "openInterest": null,
+              "openInterest": 9635,
               "inTheMoney": false
             },
             {
@@ -1912,7 +1912,7 @@
               "bid": 1.57,
               "ask": 1.6,
               "volume": 34568,
-              "openInterest": null,
+              "openInterest": 4617,
               "inTheMoney": false
             },
             {
@@ -1921,7 +1921,7 @@
               "bid": 1.91,
               "ask": 1.94,
               "volume": 41827,
-              "openInterest": null,
+              "openInterest": 6409,
               "inTheMoney": false
             },
             {
@@ -1930,7 +1930,7 @@
               "bid": 2.32,
               "ask": 2.38,
               "volume": 29266,
-              "openInterest": null,
+              "openInterest": 4734,
               "inTheMoney": false
             },
             {
@@ -1939,7 +1939,7 @@
               "bid": 2.83,
               "ask": 2.87,
               "volume": 23176,
-              "openInterest": null,
+              "openInterest": 4462,
               "inTheMoney": true
             },
             {
@@ -1948,7 +1948,7 @@
               "bid": 3.38,
               "ask": 3.44,
               "volume": 7273,
-              "openInterest": null,
+              "openInterest": 1427,
               "inTheMoney": true
             },
             {
@@ -1957,7 +1957,7 @@
               "bid": 4,
               "ask": 4.15,
               "volume": 3648,
-              "openInterest": null,
+              "openInterest": 1389,
               "inTheMoney": true
             },
             {
@@ -1966,7 +1966,7 @@
               "bid": 4.69,
               "ask": 4.89,
               "volume": 1167,
-              "openInterest": null,
+              "openInterest": 379,
               "inTheMoney": true
             },
             {
@@ -1975,7 +1975,7 @@
               "bid": 5.46,
               "ask": 5.66,
               "volume": 284,
-              "openInterest": null,
+              "openInterest": 97,
               "inTheMoney": true
             },
             {
@@ -1984,7 +1984,7 @@
               "bid": 6.27,
               "ask": 6.49,
               "volume": 84,
-              "openInterest": null,
+              "openInterest": 42,
               "inTheMoney": true
             },
             {
@@ -1993,7 +1993,7 @@
               "bid": 6.98,
               "ask": 7.59,
               "volume": 73,
-              "openInterest": null,
+              "openInterest": 48,
               "inTheMoney": true
             },
             {
@@ -2002,7 +2002,7 @@
               "bid": 7.83,
               "ask": 8.67,
               "volume": 146,
-              "openInterest": null,
+              "openInterest": 20,
               "inTheMoney": true
             },
             {
@@ -2011,7 +2011,7 @@
               "bid": 8.77,
               "ask": 9.5,
               "volume": 314,
-              "openInterest": null,
+              "openInterest": 104,
               "inTheMoney": true
             },
             {
@@ -2020,7 +2020,7 @@
               "bid": 9.7,
               "ask": 10.36,
               "volume": 229,
-              "openInterest": null,
+              "openInterest": 82,
               "inTheMoney": true
             },
             {
@@ -2029,7 +2029,7 @@
               "bid": 10.46,
               "ask": 12.1,
               "volume": 50,
-              "openInterest": null,
+              "openInterest": 6,
               "inTheMoney": true
             },
             {
@@ -2038,7 +2038,7 @@
               "bid": 11.41,
               "ask": 13.07,
               "volume": 6,
-              "openInterest": null,
+              "openInterest": 3,
               "inTheMoney": true
             },
             {
@@ -2047,7 +2047,7 @@
               "bid": 12.38,
               "ask": 14.05,
               "volume": 18,
-              "openInterest": null,
+              "openInterest": 3,
               "inTheMoney": true
             },
             {
@@ -2056,7 +2056,7 @@
               "bid": 13.74,
               "ask": 15.02,
               "volume": 27,
-              "openInterest": null,
+              "openInterest": 20,
               "inTheMoney": true
             }
           ]
@@ -2070,7 +2070,7 @@
               "bid": 13.43,
               "ask": 14.21,
               "volume": 858,
-              "openInterest": 797,
+              "openInterest": 670,
               "inTheMoney": true
             },
             {
@@ -2079,7 +2079,7 @@
               "bid": 12.64,
               "ask": 13.29,
               "volume": 1212,
-              "openInterest": 902,
+              "openInterest": 1075,
               "inTheMoney": true
             },
             {
@@ -2088,7 +2088,7 @@
               "bid": 11.65,
               "ask": 12.37,
               "volume": 2652,
-              "openInterest": 1990,
+              "openInterest": 1907,
               "inTheMoney": true
             },
             {
@@ -2097,7 +2097,7 @@
               "bid": 10.73,
               "ask": 11.37,
               "volume": 1366,
-              "openInterest": 1102,
+              "openInterest": 880,
               "inTheMoney": true
             },
             {
@@ -2106,7 +2106,7 @@
               "bid": 9.95,
               "ask": 10.59,
               "volume": 2055,
-              "openInterest": 875,
+              "openInterest": 935,
               "inTheMoney": true
             },
             {
@@ -2115,7 +2115,7 @@
               "bid": 9.24,
               "ask": 9.73,
               "volume": 2909,
-              "openInterest": 2192,
+              "openInterest": 1555,
               "inTheMoney": true
             },
             {
@@ -2124,7 +2124,7 @@
               "bid": 8.19,
               "ask": 8.86,
               "volume": 4053,
-              "openInterest": 2137,
+              "openInterest": 1726,
               "inTheMoney": true
             },
             {
@@ -2133,7 +2133,7 @@
               "bid": 7.52,
               "ask": 8.04,
               "volume": 7514,
-              "openInterest": 2867,
+              "openInterest": 1798,
               "inTheMoney": true
             },
             {
@@ -2142,7 +2142,7 @@
               "bid": 6.8,
               "ask": 7.18,
               "volume": 6169,
-              "openInterest": 536,
+              "openInterest": 1633,
               "inTheMoney": true
             },
             {
@@ -2151,7 +2151,7 @@
               "bid": 6.12,
               "ask": 6.39,
               "volume": 5859,
-              "openInterest": 1148,
+              "openInterest": 1625,
               "inTheMoney": true
             },
             {
@@ -2160,7 +2160,7 @@
               "bid": 5.47,
               "ask": 5.66,
               "volume": 6664,
-              "openInterest": 453,
+              "openInterest": 1331,
               "inTheMoney": true
             },
             {
@@ -2169,7 +2169,7 @@
               "bid": 4.81,
               "ask": 4.97,
               "volume": 6323,
-              "openInterest": 398,
+              "openInterest": 1400,
               "inTheMoney": true
             },
             {
@@ -2178,7 +2178,7 @@
               "bid": 4.19,
               "ask": 4.33,
               "volume": 20697,
-              "openInterest": 1675,
+              "openInterest": 6201,
               "inTheMoney": true
             },
             {
@@ -2187,7 +2187,7 @@
               "bid": 3.65,
               "ask": 3.71,
               "volume": 6619,
-              "openInterest": 905,
+              "openInterest": 1799,
               "inTheMoney": true
             },
             {
@@ -2196,7 +2196,7 @@
               "bid": 3.13,
               "ask": 3.19,
               "volume": 6793,
-              "openInterest": 563,
+              "openInterest": 1708,
               "inTheMoney": false
             },
             {
@@ -2205,7 +2205,7 @@
               "bid": 2.66,
               "ask": 2.7,
               "volume": 3905,
-              "openInterest": 895,
+              "openInterest": 1026,
               "inTheMoney": false
             },
             {
@@ -2214,7 +2214,7 @@
               "bid": 2.25,
               "ask": 2.3,
               "volume": 5661,
-              "openInterest": 267,
+              "openInterest": 1315,
               "inTheMoney": false
             },
             {
@@ -2223,7 +2223,7 @@
               "bid": 1.9,
               "ask": 1.93,
               "volume": 7462,
-              "openInterest": 1630,
+              "openInterest": 3440,
               "inTheMoney": false
             },
             {
@@ -2232,7 +2232,7 @@
               "bid": 1.58,
               "ask": 1.62,
               "volume": 4643,
-              "openInterest": 97,
+              "openInterest": 1077,
               "inTheMoney": false
             },
             {
@@ -2241,7 +2241,7 @@
               "bid": 1.32,
               "ask": 1.35,
               "volume": 4126,
-              "openInterest": 75,
+              "openInterest": 949,
               "inTheMoney": false
             },
             {
@@ -2250,7 +2250,7 @@
               "bid": 1.09,
               "ask": 1.12,
               "volume": 4184,
-              "openInterest": 182,
+              "openInterest": 969,
               "inTheMoney": false
             },
             {
@@ -2259,7 +2259,7 @@
               "bid": 0.89,
               "ask": 0.93,
               "volume": 3807,
-              "openInterest": 352,
+              "openInterest": 1225,
               "inTheMoney": false
             },
             {
@@ -2268,7 +2268,7 @@
               "bid": 0.73,
               "ask": 0.77,
               "volume": 22348,
-              "openInterest": 257,
+              "openInterest": 5514,
               "inTheMoney": false
             },
             {
@@ -2277,7 +2277,7 @@
               "bid": 0.6,
               "ask": 0.64,
               "volume": 2652,
-              "openInterest": null,
+              "openInterest": 1483,
               "inTheMoney": false
             },
             {
@@ -2286,7 +2286,7 @@
               "bid": 0.49,
               "ask": 0.52,
               "volume": 1501,
-              "openInterest": null,
+              "openInterest": 547,
               "inTheMoney": false
             },
             {
@@ -2295,7 +2295,7 @@
               "bid": 0.41,
               "ask": 0.43,
               "volume": 1552,
-              "openInterest": 10,
+              "openInterest": 700,
               "inTheMoney": false
             },
             {
@@ -2304,7 +2304,7 @@
               "bid": 0.34,
               "ask": 0.35,
               "volume": 1581,
-              "openInterest": 10,
+              "openInterest": 955,
               "inTheMoney": false
             },
             {
@@ -2313,7 +2313,7 @@
               "bid": 0.28,
               "ask": 0.29,
               "volume": 9246,
-              "openInterest": 103,
+              "openInterest": 7357,
               "inTheMoney": false
             }
           ],
@@ -2324,7 +2324,7 @@
               "bid": 0.58,
               "ask": 0.61,
               "volume": 5445,
-              "openInterest": 1,
+              "openInterest": 1581,
               "inTheMoney": false
             },
             {
@@ -2333,7 +2333,7 @@
               "bid": 0.65,
               "ask": 0.68,
               "volume": 3445,
-              "openInterest": 3,
+              "openInterest": 1022,
               "inTheMoney": false
             },
             {
@@ -2342,7 +2342,7 @@
               "bid": 0.74,
               "ask": 0.77,
               "volume": 10415,
-              "openInterest": 19,
+              "openInterest": 3188,
               "inTheMoney": false
             },
             {
@@ -2351,7 +2351,7 @@
               "bid": 0.84,
               "ask": 0.88,
               "volume": 2905,
-              "openInterest": 1,
+              "openInterest": 1146,
               "inTheMoney": false
             },
             {
@@ -2360,7 +2360,7 @@
               "bid": 0.97,
               "ask": 1,
               "volume": 7004,
-              "openInterest": null,
+              "openInterest": 1451,
               "inTheMoney": false
             },
             {
@@ -2369,7 +2369,7 @@
               "bid": 1.1,
               "ask": 1.14,
               "volume": 6465,
-              "openInterest": null,
+              "openInterest": 1140,
               "inTheMoney": false
             },
             {
@@ -2378,7 +2378,7 @@
               "bid": 1.26,
               "ask": 1.3,
               "volume": 5605,
-              "openInterest": null,
+              "openInterest": 1865,
               "inTheMoney": false
             },
             {
@@ -2387,7 +2387,7 @@
               "bid": 1.46,
               "ask": 1.47,
               "volume": 21243,
-              "openInterest": 1,
+              "openInterest": 7806,
               "inTheMoney": false
             },
             {
@@ -2396,7 +2396,7 @@
               "bid": 1.67,
               "ask": 1.71,
               "volume": 5782,
-              "openInterest": null,
+              "openInterest": 1563,
               "inTheMoney": false
             },
             {
@@ -2405,7 +2405,7 @@
               "bid": 1.92,
               "ask": 1.96,
               "volume": 6570,
-              "openInterest": null,
+              "openInterest": 1255,
               "inTheMoney": false
             },
             {
@@ -2414,7 +2414,7 @@
               "bid": 2.21,
               "ask": 2.25,
               "volume": 6771,
-              "openInterest": 2,
+              "openInterest": 1541,
               "inTheMoney": false
             },
             {
@@ -2423,7 +2423,7 @@
               "bid": 2.54,
               "ask": 2.59,
               "volume": 9449,
-              "openInterest": null,
+              "openInterest": 2573,
               "inTheMoney": false
             },
             {
@@ -2432,7 +2432,7 @@
               "bid": 2.92,
               "ask": 2.97,
               "volume": 7324,
-              "openInterest": 2,
+              "openInterest": 2800,
               "inTheMoney": false
             },
             {
@@ -2441,7 +2441,7 @@
               "bid": 3.36,
               "ask": 3.39,
               "volume": 3896,
-              "openInterest": null,
+              "openInterest": 759,
               "inTheMoney": false
             },
             {
@@ -2450,7 +2450,7 @@
               "bid": 3.82,
               "ask": 3.87,
               "volume": 4204,
-              "openInterest": null,
+              "openInterest": 1308,
               "inTheMoney": true
             },
             {
@@ -2459,7 +2459,7 @@
               "bid": 4.32,
               "ask": 4.45,
               "volume": 1855,
-              "openInterest": null,
+              "openInterest": 645,
               "inTheMoney": true
             },
             {
@@ -2468,7 +2468,7 @@
               "bid": 4.88,
               "ask": 5,
               "volume": 118,
-              "openInterest": null,
+              "openInterest": 67,
               "inTheMoney": true
             },
             {
@@ -2477,7 +2477,7 @@
               "bid": 5.52,
               "ask": 5.7,
               "volume": 627,
-              "openInterest": null,
+              "openInterest": 297,
               "inTheMoney": true
             },
             {
@@ -2486,7 +2486,7 @@
               "bid": 6.15,
               "ask": 6.45,
               "volume": 1102,
-              "openInterest": null,
+              "openInterest": 290,
               "inTheMoney": true
             },
             {
@@ -2495,7 +2495,7 @@
               "bid": 6.77,
               "ask": 7.15,
               "volume": 76,
-              "openInterest": null,
+              "openInterest": 49,
               "inTheMoney": true
             },
             {
@@ -2513,7 +2513,7 @@
               "bid": 8.34,
               "ask": 8.77,
               "volume": 3,
-              "openInterest": null,
+              "openInterest": 3,
               "inTheMoney": true
             },
             {
@@ -2522,7 +2522,7 @@
               "bid": 9.17,
               "ask": 9.61,
               "volume": 136,
-              "openInterest": 1,
+              "openInterest": 76,
               "inTheMoney": true
             },
             {
@@ -2531,7 +2531,7 @@
               "bid": 10.03,
               "ask": 10.51,
               "volume": 4,
-              "openInterest": 1,
+              "openInterest": 3,
               "inTheMoney": true
             },
             {
@@ -2549,7 +2549,7 @@
               "bid": 11.84,
               "ask": 12.33,
               "volume": 43,
-              "openInterest": null,
+              "openInterest": 43,
               "inTheMoney": true
             },
             {
@@ -2558,7 +2558,7 @@
               "bid": 12.66,
               "ask": 13.26,
               "volume": 2,
-              "openInterest": null,
+              "openInterest": 1,
               "inTheMoney": true
             },
             {
@@ -2567,7 +2567,7 @@
               "bid": 13.6,
               "ask": 14.21,
               "volume": 2,
-              "openInterest": null,
+              "openInterest": 1,
               "inTheMoney": true
             }
           ]
@@ -2581,7 +2581,7 @@
               "bid": 14.05,
               "ask": 16.32,
               "volume": 391,
-              "openInterest": 309,
+              "openInterest": 273,
               "inTheMoney": true
             },
             {
@@ -2590,7 +2590,7 @@
               "bid": 13.18,
               "ask": 13.81,
               "volume": 341,
-              "openInterest": 1471,
+              "openInterest": 1498,
               "inTheMoney": true
             },
             {
@@ -2599,7 +2599,7 @@
               "bid": 12.32,
               "ask": 12.94,
               "volume": 725,
-              "openInterest": 2693,
+              "openInterest": 2573,
               "inTheMoney": true
             },
             {
@@ -2608,7 +2608,7 @@
               "bid": 11.54,
               "ask": 12.06,
               "volume": 214,
-              "openInterest": 268,
+              "openInterest": 279,
               "inTheMoney": true
             },
             {
@@ -2617,7 +2617,7 @@
               "bid": 10.72,
               "ask": 11.2,
               "volume": 685,
-              "openInterest": 4507,
+              "openInterest": 4524,
               "inTheMoney": true
             },
             {
@@ -2626,7 +2626,7 @@
               "bid": 9.92,
               "ask": 10.38,
               "volume": 528,
-              "openInterest": 889,
+              "openInterest": 841,
               "inTheMoney": true
             },
             {
@@ -2635,7 +2635,7 @@
               "bid": 9.11,
               "ask": 9.57,
               "volume": 631,
-              "openInterest": 267,
+              "openInterest": 323,
               "inTheMoney": true
             },
             {
@@ -2644,7 +2644,7 @@
               "bid": 8.3,
               "ask": 8.78,
               "volume": 1537,
-              "openInterest": 1344,
+              "openInterest": 1380,
               "inTheMoney": true
             },
             {
@@ -2653,7 +2653,7 @@
               "bid": 7.72,
               "ask": 7.99,
               "volume": 1215,
-              "openInterest": 1038,
+              "openInterest": 1280,
               "inTheMoney": true
             },
             {
@@ -2662,7 +2662,7 @@
               "bid": 7.06,
               "ask": 7.26,
               "volume": 1188,
-              "openInterest": 417,
+              "openInterest": 522,
               "inTheMoney": true
             },
             {
@@ -2671,7 +2671,7 @@
               "bid": 6.38,
               "ask": 6.57,
               "volume": 1783,
-              "openInterest": 695,
+              "openInterest": 702,
               "inTheMoney": true
             },
             {
@@ -2680,7 +2680,7 @@
               "bid": 5.73,
               "ask": 5.91,
               "volume": 1816,
-              "openInterest": 149,
+              "openInterest": 748,
               "inTheMoney": true
             },
             {
@@ -2689,7 +2689,7 @@
               "bid": 5.12,
               "ask": 5.28,
               "volume": 2732,
-              "openInterest": 1112,
+              "openInterest": 1651,
               "inTheMoney": true
             },
             {
@@ -2698,7 +2698,7 @@
               "bid": 4.59,
               "ask": 4.66,
               "volume": 1288,
-              "openInterest": 172,
+              "openInterest": 336,
               "inTheMoney": true
             },
             {
@@ -2707,7 +2707,7 @@
               "bid": 4.06,
               "ask": 4.13,
               "volume": 2470,
-              "openInterest": 113,
+              "openInterest": 1359,
               "inTheMoney": false
             },
             {
@@ -2716,7 +2716,7 @@
               "bid": 3.57,
               "ask": 3.63,
               "volume": 1982,
-              "openInterest": 352,
+              "openInterest": 995,
               "inTheMoney": false
             },
             {
@@ -2725,7 +2725,7 @@
               "bid": 3.12,
               "ask": 3.18,
               "volume": 958,
-              "openInterest": 336,
+              "openInterest": 493,
               "inTheMoney": false
             },
             {
@@ -2734,7 +2734,7 @@
               "bid": 2.71,
               "ask": 2.77,
               "volume": 1816,
-              "openInterest": 206,
+              "openInterest": 778,
               "inTheMoney": false
             },
             {
@@ -2743,7 +2743,7 @@
               "bid": 2.34,
               "ask": 2.4,
               "volume": 1235,
-              "openInterest": 138,
+              "openInterest": 758,
               "inTheMoney": false
             },
             {
@@ -2752,7 +2752,7 @@
               "bid": 2.02,
               "ask": 2.07,
               "volume": 489,
-              "openInterest": 43,
+              "openInterest": 276,
               "inTheMoney": false
             },
             {
@@ -2761,7 +2761,7 @@
               "bid": 1.73,
               "ask": 1.78,
               "volume": 352,
-              "openInterest": 322,
+              "openInterest": 403,
               "inTheMoney": false
             },
             {
@@ -2770,7 +2770,7 @@
               "bid": 1.48,
               "ask": 1.52,
               "volume": 400,
-              "openInterest": 426,
+              "openInterest": 536,
               "inTheMoney": false
             },
             {
@@ -2779,7 +2779,7 @@
               "bid": 1.26,
               "ask": 1.3,
               "volume": 10597,
-              "openInterest": 313,
+              "openInterest": 3624,
               "inTheMoney": false
             },
             {
@@ -2788,7 +2788,7 @@
               "bid": 1.06,
               "ask": 1.1,
               "volume": 383,
-              "openInterest": 95,
+              "openInterest": 320,
               "inTheMoney": false
             },
             {
@@ -2797,7 +2797,7 @@
               "bid": 0.9,
               "ask": 0.94,
               "volume": 651,
-              "openInterest": 60,
+              "openInterest": 275,
               "inTheMoney": false
             },
             {
@@ -2806,7 +2806,7 @@
               "bid": 0.76,
               "ask": 0.8,
               "volume": 322,
-              "openInterest": 10,
+              "openInterest": 155,
               "inTheMoney": false
             },
             {
@@ -2815,7 +2815,7 @@
               "bid": 0.64,
               "ask": 0.68,
               "volume": 1543,
-              "openInterest": null,
+              "openInterest": 529,
               "inTheMoney": false
             },
             {
@@ -2824,7 +2824,7 @@
               "bid": 0.54,
               "ask": 0.58,
               "volume": 4655,
-              "openInterest": 2,
+              "openInterest": 4267,
               "inTheMoney": false
             }
           ],
@@ -2835,7 +2835,7 @@
               "bid": 1.05,
               "ask": 1.09,
               "volume": 3140,
-              "openInterest": null,
+              "openInterest": 1092,
               "inTheMoney": false
             },
             {
@@ -2844,7 +2844,7 @@
               "bid": 1.16,
               "ask": 1.2,
               "volume": 1301,
-              "openInterest": 1,
+              "openInterest": 473,
               "inTheMoney": false
             },
             {
@@ -2853,7 +2853,7 @@
               "bid": 1.29,
               "ask": 1.33,
               "volume": 2775,
-              "openInterest": 29,
+              "openInterest": 988,
               "inTheMoney": false
             },
             {
@@ -2862,7 +2862,7 @@
               "bid": 1.44,
               "ask": 1.48,
               "volume": 839,
-              "openInterest": 1,
+              "openInterest": 468,
               "inTheMoney": false
             },
             {
@@ -2871,7 +2871,7 @@
               "bid": 1.6,
               "ask": 1.64,
               "volume": 1810,
-              "openInterest": null,
+              "openInterest": 640,
               "inTheMoney": false
             },
             {
@@ -2880,7 +2880,7 @@
               "bid": 1.78,
               "ask": 1.82,
               "volume": 994,
-              "openInterest": null,
+              "openInterest": 325,
               "inTheMoney": false
             },
             {
@@ -2889,7 +2889,7 @@
               "bid": 1.98,
               "ask": 2.03,
               "volume": 676,
-              "openInterest": null,
+              "openInterest": 249,
               "inTheMoney": false
             },
             {
@@ -2898,7 +2898,7 @@
               "bid": 2.21,
               "ask": 2.26,
               "volume": 5257,
-              "openInterest": 70,
+              "openInterest": 1875,
               "inTheMoney": false
             },
             {
@@ -2907,7 +2907,7 @@
               "bid": 2.47,
               "ask": 2.51,
               "volume": 1134,
-              "openInterest": null,
+              "openInterest": 439,
               "inTheMoney": false
             },
             {
@@ -2916,7 +2916,7 @@
               "bid": 2.75,
               "ask": 2.8,
               "volume": 2906,
-              "openInterest": null,
+              "openInterest": 1025,
               "inTheMoney": false
             },
             {
@@ -2925,7 +2925,7 @@
               "bid": 3.07,
               "ask": 3.12,
               "volume": 1449,
-              "openInterest": null,
+              "openInterest": 615,
               "inTheMoney": false
             },
             {
@@ -2934,7 +2934,7 @@
               "bid": 3.41,
               "ask": 3.47,
               "volume": 1039,
-              "openInterest": null,
+              "openInterest": 392,
               "inTheMoney": false
             },
             {
@@ -2943,7 +2943,7 @@
               "bid": 3.81,
               "ask": 3.86,
               "volume": 1064,
-              "openInterest": null,
+              "openInterest": 471,
               "inTheMoney": false
             },
             {
@@ -2952,7 +2952,7 @@
               "bid": 4.23,
               "ask": 4.29,
               "volume": 924,
-              "openInterest": null,
+              "openInterest": 272,
               "inTheMoney": false
             },
             {
@@ -2961,7 +2961,7 @@
               "bid": 4.69,
               "ask": 4.75,
               "volume": 417,
-              "openInterest": 5,
+              "openInterest": 257,
               "inTheMoney": true
             },
             {
@@ -2970,7 +2970,7 @@
               "bid": 5.18,
               "ask": 5.31,
               "volume": 385,
-              "openInterest": null,
+              "openInterest": 142,
               "inTheMoney": true
             },
             {
@@ -2979,7 +2979,7 @@
               "bid": 5.69,
               "ask": 5.87,
               "volume": 109,
-              "openInterest": null,
+              "openInterest": 97,
               "inTheMoney": true
             },
             {
@@ -2988,7 +2988,7 @@
               "bid": 6.28,
               "ask": 6.47,
               "volume": 74,
-              "openInterest": null,
+              "openInterest": 48,
               "inTheMoney": true
             },
             {
@@ -2997,7 +2997,7 @@
               "bid": 6.91,
               "ask": 7.12,
               "volume": 91,
-              "openInterest": null,
+              "openInterest": 91,
               "inTheMoney": true
             },
             {
@@ -3006,7 +3006,7 @@
               "bid": 7.59,
               "ask": 7.79,
               "volume": 26,
-              "openInterest": null,
+              "openInterest": 26,
               "inTheMoney": true
             },
             {
@@ -3015,7 +3015,7 @@
               "bid": 8.12,
               "ask": 8.53,
               "volume": 1,
-              "openInterest": null,
+              "openInterest": 1,
               "inTheMoney": true
             },
             {
@@ -3024,7 +3024,7 @@
               "bid": 8.87,
               "ask": 9.29,
               "volume": 1,
-              "openInterest": null,
+              "openInterest": 1,
               "inTheMoney": true
             },
             {
@@ -3033,7 +3033,7 @@
               "bid": 9.64,
               "ask": 10.09,
               "volume": 49,
-              "openInterest": 2,
+              "openInterest": 51,
               "inTheMoney": true
             },
             {
@@ -3051,7 +3051,7 @@
               "bid": 11.28,
               "ask": 11.72,
               "volume": 7,
-              "openInterest": null,
+              "openInterest": 7,
               "inTheMoney": true
             },
             {
@@ -3108,7 +3108,7 @@
               "bid": 11.63,
               "ask": 11.87,
               "volume": 5,
-              "openInterest": 50,
+              "openInterest": 46,
               "inTheMoney": true
             },
             {
@@ -3117,7 +3117,7 @@
               "bid": 10.63,
               "ask": 10.83,
               "volume": 14,
-              "openInterest": 447,
+              "openInterest": 449,
               "inTheMoney": true
             },
             {
@@ -3135,7 +3135,7 @@
               "bid": 8.64,
               "ask": 8.87,
               "volume": 1,
-              "openInterest": 317,
+              "openInterest": 316,
               "inTheMoney": true
             },
             {
@@ -3162,7 +3162,7 @@
               "bid": 6.65,
               "ask": 6.84,
               "volume": 15,
-              "openInterest": 76,
+              "openInterest": 82,
               "inTheMoney": true
             },
             {
@@ -3171,7 +3171,7 @@
               "bid": 5.66,
               "ask": 5.89,
               "volume": 5,
-              "openInterest": 111,
+              "openInterest": 115,
               "inTheMoney": true
             },
             {
@@ -3189,7 +3189,7 @@
               "bid": 3.75,
               "ask": 3.86,
               "volume": 25,
-              "openInterest": 80,
+              "openInterest": 72,
               "inTheMoney": true
             },
             {
@@ -3198,7 +3198,7 @@
               "bid": 3.27,
               "ask": 3.37,
               "volume": 76,
-              "openInterest": 150,
+              "openInterest": 134,
               "inTheMoney": true
             },
             {
@@ -3207,7 +3207,7 @@
               "bid": 2.83,
               "ask": 2.92,
               "volume": 318,
-              "openInterest": 285,
+              "openInterest": 363,
               "inTheMoney": true
             },
             {
@@ -3216,7 +3216,7 @@
               "bid": 1.98,
               "ask": 2.07,
               "volume": 519,
-              "openInterest": 328,
+              "openInterest": 402,
               "inTheMoney": true
             },
             {
@@ -3225,7 +3225,7 @@
               "bid": 1.27,
               "ask": 1.34,
               "volume": 3928,
-              "openInterest": 881,
+              "openInterest": 1195,
               "inTheMoney": true
             },
             {
@@ -3234,7 +3234,7 @@
               "bid": 0.78,
               "ask": 0.79,
               "volume": 14317,
-              "openInterest": 3483,
+              "openInterest": 3262,
               "inTheMoney": false
             },
             {
@@ -3243,7 +3243,7 @@
               "bid": 0.42,
               "ask": 0.44,
               "volume": 13013,
-              "openInterest": 551,
+              "openInterest": 3675,
               "inTheMoney": false
             },
             {
@@ -3252,7 +3252,7 @@
               "bid": 0.21,
               "ask": 0.22,
               "volume": 9365,
-              "openInterest": 6539,
+              "openInterest": 7677,
               "inTheMoney": false
             },
             {
@@ -3261,7 +3261,7 @@
               "bid": 0.1,
               "ask": 0.12,
               "volume": 9864,
-              "openInterest": 5587,
+              "openInterest": 5082,
               "inTheMoney": false
             },
             {
@@ -3270,7 +3270,7 @@
               "bid": 0.05,
               "ask": 0.06,
               "volume": 2963,
-              "openInterest": 3413,
+              "openInterest": 4590,
               "inTheMoney": false
             },
             {
@@ -3279,7 +3279,7 @@
               "bid": 0.02,
               "ask": 0.03,
               "volume": 2720,
-              "openInterest": 399,
+              "openInterest": 1563,
               "inTheMoney": false
             },
             {
@@ -3288,7 +3288,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 1600,
-              "openInterest": 680,
+              "openInterest": 1481,
               "inTheMoney": false
             },
             {
@@ -3297,7 +3297,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 86,
-              "openInterest": 554,
+              "openInterest": 567,
               "inTheMoney": false
             },
             {
@@ -3306,7 +3306,7 @@
               "bid": null,
               "ask": 0.01,
               "volume": 118,
-              "openInterest": 249,
+              "openInterest": 316,
               "inTheMoney": false
             },
             {
@@ -3315,7 +3315,7 @@
               "bid": null,
               "ask": 0.01,
               "volume": 357,
-              "openInterest": 204,
+              "openInterest": 466,
               "inTheMoney": false
             },
             {
@@ -3324,7 +3324,7 @@
               "bid": null,
               "ask": 0.01,
               "volume": 5,
-              "openInterest": 90,
+              "openInterest": 95,
               "inTheMoney": false
             },
             {
@@ -3353,7 +3353,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 935,
-              "openInterest": 405,
+              "openInterest": 1318,
               "inTheMoney": false
             },
             {
@@ -3362,7 +3362,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 42,
-              "openInterest": 1153,
+              "openInterest": 1130,
               "inTheMoney": false
             },
             {
@@ -3371,7 +3371,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 65,
-              "openInterest": 607,
+              "openInterest": 620,
               "inTheMoney": false
             },
             {
@@ -3380,7 +3380,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 61,
-              "openInterest": 109,
+              "openInterest": 146,
               "inTheMoney": false
             },
             {
@@ -3389,7 +3389,7 @@
               "bid": 0.02,
               "ask": 0.03,
               "volume": 119,
-              "openInterest": 1301,
+              "openInterest": 1319,
               "inTheMoney": false
             },
             {
@@ -3398,7 +3398,7 @@
               "bid": 0.02,
               "ask": 0.03,
               "volume": 707,
-              "openInterest": 1383,
+              "openInterest": 1922,
               "inTheMoney": false
             },
             {
@@ -3407,7 +3407,7 @@
               "bid": 0.02,
               "ask": 0.03,
               "volume": 814,
-              "openInterest": 961,
+              "openInterest": 714,
               "inTheMoney": false
             },
             {
@@ -3416,7 +3416,7 @@
               "bid": 0.02,
               "ask": 0.03,
               "volume": 373,
-              "openInterest": 2077,
+              "openInterest": 2116,
               "inTheMoney": false
             },
             {
@@ -3425,7 +3425,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 815,
-              "openInterest": 1346,
+              "openInterest": 1686,
               "inTheMoney": false
             },
             {
@@ -3434,7 +3434,7 @@
               "bid": 0.06,
               "ask": 0.07,
               "volume": 969,
-              "openInterest": 695,
+              "openInterest": 1113,
               "inTheMoney": false
             },
             {
@@ -3443,7 +3443,7 @@
               "bid": 0.1,
               "ask": 0.11,
               "volume": 3456,
-              "openInterest": 1386,
+              "openInterest": 2247,
               "inTheMoney": false
             },
             {
@@ -3452,7 +3452,7 @@
               "bid": 0.13,
               "ask": 0.14,
               "volume": 633,
-              "openInterest": 947,
+              "openInterest": 1127,
               "inTheMoney": false
             },
             {
@@ -3461,7 +3461,7 @@
               "bid": 0.17,
               "ask": 0.19,
               "volume": 3028,
-              "openInterest": 562,
+              "openInterest": 1663,
               "inTheMoney": false
             },
             {
@@ -3470,7 +3470,7 @@
               "bid": 0.33,
               "ask": 0.34,
               "volume": 4188,
-              "openInterest": 707,
+              "openInterest": 1735,
               "inTheMoney": false
             },
             {
@@ -3479,7 +3479,7 @@
               "bid": 0.61,
               "ask": 0.63,
               "volume": 11593,
-              "openInterest": 473,
+              "openInterest": 2460,
               "inTheMoney": false
             },
             {
@@ -3488,7 +3488,7 @@
               "bid": 1.07,
               "ask": 1.1,
               "volume": 8618,
-              "openInterest": 337,
+              "openInterest": 2210,
               "inTheMoney": true
             },
             {
@@ -3497,7 +3497,7 @@
               "bid": 1.67,
               "ask": 1.77,
               "volume": 1504,
-              "openInterest": 443,
+              "openInterest": 765,
               "inTheMoney": true
             },
             {
@@ -3506,7 +3506,7 @@
               "bid": 2.47,
               "ask": 2.58,
               "volume": 529,
-              "openInterest": 1545,
+              "openInterest": 1735,
               "inTheMoney": true
             },
             {
@@ -3515,7 +3515,7 @@
               "bid": 3.36,
               "ask": 3.47,
               "volume": 34,
-              "openInterest": 122,
+              "openInterest": 115,
               "inTheMoney": true
             },
             {
@@ -3524,7 +3524,7 @@
               "bid": 4.29,
               "ask": 4.49,
               "volume": 99,
-              "openInterest": 338,
+              "openInterest": 377,
               "inTheMoney": true
             },
             {
@@ -3533,7 +3533,7 @@
               "bid": 5.26,
               "ask": 5.48,
               "volume": 5,
-              "openInterest": null,
+              "openInterest": 1,
               "inTheMoney": true
             },
             {
@@ -3542,7 +3542,7 @@
               "bid": 6.27,
               "ask": 6.48,
               "volume": 77,
-              "openInterest": null,
+              "openInterest": 74,
               "inTheMoney": true
             },
             {
@@ -3560,7 +3560,7 @@
               "bid": 8.25,
               "ask": 8.48,
               "volume": 240,
-              "openInterest": 21,
+              "openInterest": 16,
               "inTheMoney": true
             },
             {
@@ -3628,7 +3628,7 @@
               "bid": 10.61,
               "ask": 10.88,
               "volume": 3,
-              "openInterest": 247,
+              "openInterest": 246,
               "inTheMoney": true
             },
             {
@@ -3646,7 +3646,7 @@
               "bid": 8.62,
               "ask": 8.88,
               "volume": 25,
-              "openInterest": 142,
+              "openInterest": 167,
               "inTheMoney": true
             },
             {
@@ -3664,7 +3664,7 @@
               "bid": 7.64,
               "ask": 7.88,
               "volume": 1,
-              "openInterest": 12,
+              "openInterest": 11,
               "inTheMoney": true
             },
             {
@@ -3673,7 +3673,7 @@
               "bid": 6.66,
               "ask": 6.88,
               "volume": 85,
-              "openInterest": 8,
+              "openInterest": 93,
               "inTheMoney": true
             },
             {
@@ -3691,7 +3691,7 @@
               "bid": 4.81,
               "ask": 4.97,
               "volume": 125,
-              "openInterest": 79,
+              "openInterest": 142,
               "inTheMoney": true
             },
             {
@@ -3700,7 +3700,7 @@
               "bid": 3.86,
               "ask": 4.08,
               "volume": 16,
-              "openInterest": 153,
+              "openInterest": 158,
               "inTheMoney": true
             },
             {
@@ -3709,7 +3709,7 @@
               "bid": 3.5,
               "ask": 3.62,
               "volume": 72,
-              "openInterest": 238,
+              "openInterest": 243,
               "inTheMoney": true
             },
             {
@@ -3727,7 +3727,7 @@
               "bid": 2.34,
               "ask": 2.42,
               "volume": 284,
-              "openInterest": 2090,
+              "openInterest": 2107,
               "inTheMoney": true
             },
             {
@@ -3736,7 +3736,7 @@
               "bid": 1.68,
               "ask": 1.74,
               "volume": 1884,
-              "openInterest": 377,
+              "openInterest": 640,
               "inTheMoney": true
             },
             {
@@ -3745,7 +3745,7 @@
               "bid": 1.14,
               "ask": 1.2,
               "volume": 3576,
-              "openInterest": 856,
+              "openInterest": 1427,
               "inTheMoney": false
             },
             {
@@ -3754,7 +3754,7 @@
               "bid": 0.75,
               "ask": 0.78,
               "volume": 3623,
-              "openInterest": 1048,
+              "openInterest": 1014,
               "inTheMoney": false
             },
             {
@@ -3763,7 +3763,7 @@
               "bid": 0.47,
               "ask": 0.49,
               "volume": 4778,
-              "openInterest": 367,
+              "openInterest": 3081,
               "inTheMoney": false
             },
             {
@@ -3772,7 +3772,7 @@
               "bid": 0.28,
               "ask": 0.3,
               "volume": 1703,
-              "openInterest": 712,
+              "openInterest": 1418,
               "inTheMoney": false
             },
             {
@@ -3781,7 +3781,7 @@
               "bid": 0.17,
               "ask": 0.18,
               "volume": 4404,
-              "openInterest": 7891,
+              "openInterest": 9917,
               "inTheMoney": false
             },
             {
@@ -3790,7 +3790,7 @@
               "bid": 0.1,
               "ask": 0.11,
               "volume": 1532,
-              "openInterest": 286,
+              "openInterest": 1198,
               "inTheMoney": false
             },
             {
@@ -3799,7 +3799,7 @@
               "bid": 0.06,
               "ask": 0.07,
               "volume": 503,
-              "openInterest": 627,
+              "openInterest": 753,
               "inTheMoney": false
             },
             {
@@ -3808,7 +3808,7 @@
               "bid": 0.04,
               "ask": 0.05,
               "volume": 438,
-              "openInterest": 515,
+              "openInterest": 600,
               "inTheMoney": false
             },
             {
@@ -3817,7 +3817,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 254,
-              "openInterest": 1383,
+              "openInterest": 1423,
               "inTheMoney": false
             },
             {
@@ -3826,7 +3826,7 @@
               "bid": 0.02,
               "ask": 0.03,
               "volume": 71,
-              "openInterest": 950,
+              "openInterest": 987,
               "inTheMoney": false
             },
             {
@@ -3835,7 +3835,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 30,
-              "openInterest": 310,
+              "openInterest": 328,
               "inTheMoney": false
             },
             {
@@ -3853,7 +3853,7 @@
               "bid": 0.01,
               "ask": 0.02,
               "volume": 1,
-              "openInterest": 81,
+              "openInterest": 82,
               "inTheMoney": false
             }
           ],
@@ -3864,7 +3864,7 @@
               "bid": 0.02,
               "ask": 0.04,
               "volume": 4,
-              "openInterest": 450,
+              "openInterest": 449,
               "inTheMoney": false
             },
             {
@@ -3873,7 +3873,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 891,
-              "openInterest": 803,
+              "openInterest": 475,
               "inTheMoney": false
             },
             {
@@ -3882,7 +3882,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 63,
-              "openInterest": 236,
+              "openInterest": 275,
               "inTheMoney": false
             },
             {
@@ -3891,7 +3891,7 @@
               "bid": 0.04,
               "ask": 0.05,
               "volume": 53,
-              "openInterest": 168,
+              "openInterest": 176,
               "inTheMoney": false
             },
             {
@@ -3900,7 +3900,7 @@
               "bid": 0.05,
               "ask": 0.06,
               "volume": 109,
-              "openInterest": 241,
+              "openInterest": 288,
               "inTheMoney": false
             },
             {
@@ -3909,7 +3909,7 @@
               "bid": 0.06,
               "ask": 0.07,
               "volume": 23,
-              "openInterest": 240,
+              "openInterest": 247,
               "inTheMoney": false
             },
             {
@@ -3918,7 +3918,7 @@
               "bid": 0.06,
               "ask": 0.07,
               "volume": 103,
-              "openInterest": 317,
+              "openInterest": 336,
               "inTheMoney": false
             },
             {
@@ -3927,7 +3927,7 @@
               "bid": 0.08,
               "ask": 0.1,
               "volume": 265,
-              "openInterest": 453,
+              "openInterest": 575,
               "inTheMoney": false
             },
             {
@@ -3936,7 +3936,7 @@
               "bid": 0.12,
               "ask": 0.13,
               "volume": 339,
-              "openInterest": 2910,
+              "openInterest": 2928,
               "inTheMoney": false
             },
             {
@@ -3945,7 +3945,7 @@
               "bid": 0.17,
               "ask": 0.19,
               "volume": 1180,
-              "openInterest": 1587,
+              "openInterest": 2355,
               "inTheMoney": false
             },
             {
@@ -3954,7 +3954,7 @@
               "bid": 0.26,
               "ask": 0.28,
               "volume": 732,
-              "openInterest": 875,
+              "openInterest": 791,
               "inTheMoney": false
             },
             {
@@ -3963,7 +3963,7 @@
               "bid": 0.33,
               "ask": 0.35,
               "volume": 149,
-              "openInterest": 475,
+              "openInterest": 458,
               "inTheMoney": false
             },
             {
@@ -3972,7 +3972,7 @@
               "bid": 0.41,
               "ask": 0.44,
               "volume": 347,
-              "openInterest": 625,
+              "openInterest": 786,
               "inTheMoney": false
             },
             {
@@ -3981,7 +3981,7 @@
               "bid": 0.64,
               "ask": 0.68,
               "volume": 2141,
-              "openInterest": 1436,
+              "openInterest": 1548,
               "inTheMoney": false
             },
             {
@@ -3990,7 +3990,7 @@
               "bid": 0.96,
               "ask": 1.01,
               "volume": 4844,
-              "openInterest": 544,
+              "openInterest": 1340,
               "inTheMoney": false
             },
             {
@@ -3999,7 +3999,7 @@
               "bid": 1.41,
               "ask": 1.47,
               "volume": 1592,
-              "openInterest": 1553,
+              "openInterest": 1896,
               "inTheMoney": true
             },
             {
@@ -4008,7 +4008,7 @@
               "bid": 2,
               "ask": 2.1,
               "volume": 1087,
-              "openInterest": 382,
+              "openInterest": 631,
               "inTheMoney": true
             },
             {
@@ -4017,7 +4017,7 @@
               "bid": 2.7,
               "ask": 2.82,
               "volume": 138,
-              "openInterest": 258,
+              "openInterest": 357,
               "inTheMoney": true
             },
             {
@@ -4026,7 +4026,7 @@
               "bid": 3.42,
               "ask": 3.65,
               "volume": 20,
-              "openInterest": 127,
+              "openInterest": 130,
               "inTheMoney": true
             },
             {
@@ -4035,7 +4035,7 @@
               "bid": 4.3,
               "ask": 4.54,
               "volume": 70,
-              "openInterest": 551,
+              "openInterest": 601,
               "inTheMoney": true
             },
             {
@@ -4044,7 +4044,7 @@
               "bid": 5.27,
               "ask": 5.5,
               "volume": 7,
-              "openInterest": 139,
+              "openInterest": 142,
               "inTheMoney": true
             },
             {
@@ -4062,7 +4062,7 @@
               "bid": 7.23,
               "ask": 7.43,
               "volume": 2,
-              "openInterest": 21,
+              "openInterest": 22,
               "inTheMoney": true
             },
             {
@@ -4139,7 +4139,7 @@
               "bid": 10.68,
               "ask": 10.89,
               "volume": 1,
-              "openInterest": 410,
+              "openInterest": 411,
               "inTheMoney": true
             },
             {
@@ -4157,7 +4157,7 @@
               "bid": 8.72,
               "ask": 8.94,
               "volume": 25,
-              "openInterest": 17,
+              "openInterest": 40,
               "inTheMoney": true
             },
             {
@@ -4193,7 +4193,7 @@
               "bid": 5.87,
               "ask": 6.1,
               "volume": 2,
-              "openInterest": 19,
+              "openInterest": 20,
               "inTheMoney": true
             },
             {
@@ -4202,7 +4202,7 @@
               "bid": 4.97,
               "ask": 5.2,
               "volume": 38,
-              "openInterest": 19,
+              "openInterest": 38,
               "inTheMoney": true
             },
             {
@@ -4211,7 +4211,7 @@
               "bid": 4.19,
               "ask": 4.31,
               "volume": 10,
-              "openInterest": 28,
+              "openInterest": 26,
               "inTheMoney": true
             },
             {
@@ -4220,7 +4220,7 @@
               "bid": 3.79,
               "ask": 3.89,
               "volume": 7,
-              "openInterest": 11,
+              "openInterest": 14,
               "inTheMoney": true
             },
             {
@@ -4229,7 +4229,7 @@
               "bid": 3.4,
               "ask": 3.5,
               "volume": 39,
-              "openInterest": 104,
+              "openInterest": 97,
               "inTheMoney": true
             },
             {
@@ -4238,7 +4238,7 @@
               "bid": 2.68,
               "ask": 2.75,
               "volume": 50,
-              "openInterest": 144,
+              "openInterest": 148,
               "inTheMoney": true
             },
             {
@@ -4247,7 +4247,7 @@
               "bid": 2.03,
               "ask": 2.1,
               "volume": 120,
-              "openInterest": 93,
+              "openInterest": 124,
               "inTheMoney": true
             },
             {
@@ -4256,7 +4256,7 @@
               "bid": 1.49,
               "ask": 1.53,
               "volume": 645,
-              "openInterest": 235,
+              "openInterest": 448,
               "inTheMoney": false
             },
             {
@@ -4265,7 +4265,7 @@
               "bid": 1.06,
               "ask": 1.1,
               "volume": 705,
-              "openInterest": 267,
+              "openInterest": 438,
               "inTheMoney": false
             },
             {
@@ -4274,7 +4274,7 @@
               "bid": 0.73,
               "ask": 0.77,
               "volume": 1446,
-              "openInterest": 316,
+              "openInterest": 1387,
               "inTheMoney": false
             },
             {
@@ -4283,7 +4283,7 @@
               "bid": 0.48,
               "ask": 0.52,
               "volume": 437,
-              "openInterest": 325,
+              "openInterest": 527,
               "inTheMoney": false
             },
             {
@@ -4292,7 +4292,7 @@
               "bid": 0.32,
               "ask": 0.35,
               "volume": 1921,
-              "openInterest": 5120,
+              "openInterest": 6405,
               "inTheMoney": false
             },
             {
@@ -4301,7 +4301,7 @@
               "bid": 0.21,
               "ask": 0.24,
               "volume": 201,
-              "openInterest": 694,
+              "openInterest": 649,
               "inTheMoney": false
             },
             {
@@ -4310,7 +4310,7 @@
               "bid": 0.14,
               "ask": 0.16,
               "volume": 189,
-              "openInterest": 441,
+              "openInterest": 381,
               "inTheMoney": false
             },
             {
@@ -4319,7 +4319,7 @@
               "bid": 0.1,
               "ask": 0.12,
               "volume": 242,
-              "openInterest": 251,
+              "openInterest": 419,
               "inTheMoney": false
             },
             {
@@ -4328,7 +4328,7 @@
               "bid": 0.07,
               "ask": 0.08,
               "volume": 237,
-              "openInterest": 1095,
+              "openInterest": 1223,
               "inTheMoney": false
             },
             {
@@ -4337,7 +4337,7 @@
               "bid": 0.05,
               "ask": 0.06,
               "volume": 43,
-              "openInterest": 599,
+              "openInterest": 609,
               "inTheMoney": false
             },
             {
@@ -4346,7 +4346,7 @@
               "bid": 0.04,
               "ask": 0.05,
               "volume": 19,
-              "openInterest": 1641,
+              "openInterest": 1650,
               "inTheMoney": false
             },
             {
@@ -4355,7 +4355,7 @@
               "bid": 0.03,
               "ask": 0.04,
               "volume": 1,
-              "openInterest": 374,
+              "openInterest": 375,
               "inTheMoney": false
             },
             {
@@ -4384,7 +4384,7 @@
               "bid": 0.06,
               "ask": 0.07,
               "volume": 6,
-              "openInterest": 329,
+              "openInterest": 332,
               "inTheMoney": false
             },
             {
@@ -4393,7 +4393,7 @@
               "bid": 0.07,
               "ask": 0.09,
               "volume": 62,
-              "openInterest": 1335,
+              "openInterest": 1352,
               "inTheMoney": false
             },
             {
@@ -4402,7 +4402,7 @@
               "bid": 0.09,
               "ask": 0.1,
               "volume": 169,
-              "openInterest": 1093,
+              "openInterest": 1143,
               "inTheMoney": false
             },
             {
@@ -4411,7 +4411,7 @@
               "bid": 0.11,
               "ask": 0.13,
               "volume": 171,
-              "openInterest": 495,
+              "openInterest": 616,
               "inTheMoney": false
             },
             {
@@ -4420,7 +4420,7 @@
               "bid": 0.12,
               "ask": 0.14,
               "volume": 34,
-              "openInterest": 91,
+              "openInterest": 118,
               "inTheMoney": false
             },
             {
@@ -4429,7 +4429,7 @@
               "bid": 0.14,
               "ask": 0.16,
               "volume": 38,
-              "openInterest": 334,
+              "openInterest": 336,
               "inTheMoney": false
             },
             {
@@ -4438,7 +4438,7 @@
               "bid": 0.18,
               "ask": 0.21,
               "volume": 139,
-              "openInterest": 261,
+              "openInterest": 349,
               "inTheMoney": false
             },
             {
@@ -4447,7 +4447,7 @@
               "bid": 0.25,
               "ask": 0.27,
               "volume": 134,
-              "openInterest": 269,
+              "openInterest": 285,
               "inTheMoney": false
             },
             {
@@ -4456,7 +4456,7 @@
               "bid": 0.35,
               "ask": 0.37,
               "volume": 197,
-              "openInterest": 52,
+              "openInterest": 182,
               "inTheMoney": false
             },
             {
@@ -4465,7 +4465,7 @@
               "bid": 0.48,
               "ask": 0.51,
               "volume": 145,
-              "openInterest": 533,
+              "openInterest": 522,
               "inTheMoney": false
             },
             {
@@ -4474,7 +4474,7 @@
               "bid": 0.57,
               "ask": 0.6,
               "volume": 90,
-              "openInterest": 277,
+              "openInterest": 281,
               "inTheMoney": false
             },
             {
@@ -4483,7 +4483,7 @@
               "bid": 0.67,
               "ask": 0.71,
               "volume": 159,
-              "openInterest": 407,
+              "openInterest": 454,
               "inTheMoney": false
             },
             {
@@ -4492,7 +4492,7 @@
               "bid": 0.95,
               "ask": 0.97,
               "volume": 401,
-              "openInterest": 765,
+              "openInterest": 766,
               "inTheMoney": false
             },
             {
@@ -4501,7 +4501,7 @@
               "bid": 1.28,
               "ask": 1.34,
               "volume": 553,
-              "openInterest": 308,
+              "openInterest": 423,
               "inTheMoney": false
             },
             {
@@ -4510,7 +4510,7 @@
               "bid": 1.74,
               "ask": 1.79,
               "volume": 313,
-              "openInterest": 296,
+              "openInterest": 365,
               "inTheMoney": true
             },
             {
@@ -4519,7 +4519,7 @@
               "bid": 2.29,
               "ask": 2.37,
               "volume": 86,
-              "openInterest": 276,
+              "openInterest": 293,
               "inTheMoney": true
             },
             {
@@ -4528,7 +4528,7 @@
               "bid": 2.95,
               "ask": 3.05,
               "volume": 33,
-              "openInterest": 149,
+              "openInterest": 143,
               "inTheMoney": true
             },
             {
@@ -4537,7 +4537,7 @@
               "bid": 3.71,
               "ask": 3.82,
               "volume": 14,
-              "openInterest": 68,
+              "openInterest": 67,
               "inTheMoney": true
             },
             {
@@ -4546,7 +4546,7 @@
               "bid": 4.5,
               "ask": 4.68,
               "volume": 9,
-              "openInterest": 114,
+              "openInterest": 113,
               "inTheMoney": true
             },
             {
@@ -4555,7 +4555,7 @@
               "bid": 5.4,
               "ask": 5.57,
               "volume": 9,
-              "openInterest": 36,
+              "openInterest": 40,
               "inTheMoney": true
             },
             {
