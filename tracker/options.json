@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T22:12:36.447Z",
+  "updatedAt": "2026-10-01T01:16:58.280Z",
   "providerOrder": [
     "Nasdaq",
     "Yahoo Finance"
@@ -7,7 +7,7 @@
   "chains": [
     {
       "symbol": "SPY",
-      "underlyingPrice": 762.48,
+      "underlyingPrice": 762.63,
       "source": "Nasdaq",
       "expirations": [
         {
@@ -1043,7 +1043,7 @@
     },
     {
       "symbol": "IWM",
-      "underlyingPrice": 277.86,
+      "underlyingPrice": 277.89,
       "source": "Nasdaq",
       "expirations": [
         {
