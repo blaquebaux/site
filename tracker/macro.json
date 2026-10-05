@@ -1,46 +1,46 @@
 {
-  "updatedAt": "2026-10-05T14:30:37.724Z",
+  "updatedAt": "2026-10-05T22:36:02.028Z",
   "source": "FRED",
   "observations": [
     {
       "id": "DGS3MO",
       "label": "3M Treasury",
       "tenor": "3M",
-      "value": 4.17,
-      "change": -0.03000000000000025,
-      "date": "2026-10-01"
+      "value": 4.19,
+      "change": 0.020000000000000462,
+      "date": "2026-10-02"
     },
     {
       "id": "DGS2",
       "label": "2Y Treasury",
       "tenor": "2Y",
-      "value": 4.78,
-      "change": -0.09999999999999964,
-      "date": "2026-10-01"
+      "value": 4.83,
+      "change": 0.04999999999999982,
+      "date": "2026-10-02"
     },
     {
       "id": "DGS5",
       "label": "5Y Treasury",
       "tenor": "5Y",
-      "value": 5.01,
-      "change": -0.08000000000000007,
-      "date": "2026-10-01"
+      "value": 5.06,
+      "change": 0.04999999999999982,
+      "date": "2026-10-02"
     },
     {
       "id": "DGS10",
       "label": "10Y Treasury",
       "tenor": "10Y",
-      "value": 5.24,
-      "change": -0.04999999999999982,
-      "date": "2026-10-01"
+      "value": 5.28,
+      "change": 0.040000000000000036,
+      "date": "2026-10-02"
     },
     {
       "id": "DGS30",
       "label": "30Y Treasury",
       "tenor": "30Y",
-      "value": 5.61,
-      "change": -0.02999999999999936,
-      "date": "2026-10-01"
+      "value": 5.63,
+      "change": 0.019999999999999574,
+      "date": "2026-10-02"
     },
     {
       "id": "DFF",
@@ -48,7 +48,7 @@
       "tenor": "EFFR",
       "value": 3.88,
       "change": 0,
-      "date": "2026-10-01"
+      "date": "2026-10-02"
     },
     {
       "id": "VIXCLS",
