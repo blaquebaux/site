@@ -32,16 +32,16 @@ Use [BLOCK](https://www.blaquebaux.com/block/) as the canonical BLAQUE BAUX refe
 
 ## Current open research corpus
 
-As of September 2, 2026, the public BLAQUE BAUX organization contains 62 research repositories: one governed live spine, five live-path systems, three live drivers, 11 validation projects, seven research projects, six concepts, nine capstone meta-allocators, and 20 null results retained as a transparent research graveyard.
+As of October 6, 2026, the public BLAQUE BAUX organization contains 113 research repositories (alongside the BLOCK derivatives reference and the nullbar validation toolkit): one governed live spine, 5 live-path systems, 3 live drivers, 13 validation projects, 23 research projects, 14 concepts, 9 capstone meta-allocators, and 45 null results retained as a transparent research graveyard.
 
 - Live spine: BASE.
-- Live paths: BRICS, BONDS, BROAD, BOOM, and BENCHMARK.
-- Live drivers: BULL, BRIDGEWATER, and BLACKSTONE.
-- Validation: BRASH, BOUNCE, BLUE, BROWN, BITDOLLAR, BOTTOM, BORE, BLUNT, BLEED, BEYOND, and APAC.
-- Research: BEAR, BALANCED, BOGLE, BUFFETT, BASKET, BLOCK, and BOMBS AWAY.
-- Concepts: BELT-TIGHTENERS, BATTERED, BUREAUCRATS, BETS, BIGBROTHER, and BUYOUTS.
-- Capstones (meta-sleeves — themselves family sleeves, one layer up: the allocation layer that sits atop the strategy sleeves and allocates over their keepers; seven wired to governed live rails, two research-only controls): BREAKTHROUGH, BRILLIANT, BOSSY, BELIEVER, BEMUSED, BRIGADE, BOUNDLESS, BASTION, and BALSAMIC.
-- Null / graveyard: LATAM, BENEFACTORS, BIND, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, BUBBLE, BRACE, BOUNTY, BITE, BRIDGE, and BLOATED.
+- Live paths: BRICS, BONDS, BROAD, BOOM, BENCHMARK.
+- Live drivers: BULL, BRIDGEWATER, BLACKSTONE.
+- Validation: BRASH, BOUNCE, BLUE, BROWN, BITDOLLAR, BOTTOM, BORE, BLUNT, BLEED, BEYOND, APAC, BANKROLL, BOROUGH.
+- Research: BEAR, BALANCED, BOGLE, BUFFETT, BASKET, BLOCK, BOMBS AWAY, BALLAST, BAZAAR, BLEND, BOULDER, BRAID, BREACH, BULLION, BULWARK, BURDENSOME, BUSHEL, BIDIRECTIONAL, BACKWARDS, BUTTRESS, BARGAIN, BARREL, BRIEF.
+- Concepts: BELT TIGHTENERS, BATTERED, BUREAUCRATS, BETS, BIGBROTHER, BUYOUTS, BACKLASH, BARRAGE, BEQUEST, BIDDING, BIGHT, BRANCH, BROACHING, BROADCAST.
+- Capstones (meta-sleeves — themselves family sleeves, one layer up: the allocation layer that sits atop the strategy sleeves and allocates over their keepers; seven wired to governed live rails, two research-only controls): BREAKTHROUGH, BRILLIANT, BOSSY, BELIEVER, BEMUSED, BRIGADE, BOUNDLESS, BASTION, BALSAMIC.
+- Null / graveyard: LATAM, BENEFACTORS, BIND, EMEA, BULK, BRITTLE, BIO, BASEL, BELTWAY, BURRY, BLANK, BRUTE FORCE, BLURRED, BACKSLIDERS, BUBBLE, BRACE, BOUNTY, BITE, BRIDGE, BLOATED, BACKFILL, BANDS, BANDWAGON, BARBICAN, BASIC, BATON, BEACON, BEAMING, BELLWETHER, BESPOKE, BEVY, BLEACHER, BLEMISH, BLINK, BOLLINGER, BOURSE, BOWED, BRIDLE, BRUNT, BUDGET, BUNKER, BURRITO, BUZZ, BYPRODUCT, BIFURCATE.
 
 Use [THE CORPUS](https://www.blaquebaux.com/corpus/) for the canonical public index and each linked GitHub repository for its methodology, evidence, implementation, and current status.
 
