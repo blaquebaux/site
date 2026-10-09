@@ -18,6 +18,8 @@ jobs:
           node-version: 20
       - name: Refresh public market snapshots
         run: node scripts/update-market-data.mjs
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - name: Commit updated snapshots
         run: |
           git config user.name "blaquebaux-data-bot"

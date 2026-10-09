@@ -6,6 +6,9 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = resolve(root, "tracker");
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36";
 const now = new Date();
+// Official FRED JSON API (set FRED_API_KEY as a repo secret). The API tolerates datacenter IPs that
+// the public graph-CSV endpoint throttles; when the key is absent we fall back to the CSV path.
+const FRED_API_KEY = process.env.FRED_API_KEY?.trim();
 
 async function request(url, options = {}) {
   const controller = new AbortController();
@@ -30,18 +33,38 @@ function number(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+async function fredPoints(id) {
+  // Prefer the official JSON API (less likely to IP-block the runner); fall back to the graph CSV.
+  const errors = [];
+  if (FRED_API_KEY) {
+    try {
+      const url = `https://api.stlouisfed.org/fred/series/observations?series_id=${encodeURIComponent(id)}`
+        + `&api_key=${FRED_API_KEY}&file_type=json&sort_order=desc&limit=8`;
+      const data = await (await request(url)).json();
+      const points = (data.observations ?? [])
+        .map((obs) => ({ date: obs.date, value: number(obs.value) }))
+        .filter((p) => p.date && p.value !== null)
+        .reverse(); // ascending — latest observation last
+      if (points.length) return points;
+      errors.push(`API empty ${id}`);
+    } catch (err) {
+      errors.push(`API ${id}: ${err.message}`);
+    }
+  }
+  const response = await request(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${encodeURIComponent(id)}`);
+  const points = (await response.text()).trim().split(/\r?\n/).slice(1).map((row) => {
+    const [date, raw] = row.split(",");
+    return { date, value: number(raw) };
+  }).filter((p) => p.date && p.value !== null);
+  if (points.length) return points;
+  throw new Error(`no FRED data for ${id}${errors.length ? ` (${errors.join("; ")})` : ""}`);
+}
+
 async function fredSeries(id, attempts = 3) {
   let lastErr;
   for (let i = 0; i < attempts; i += 1) {
     try {
-      const response = await request(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${encodeURIComponent(id)}`);
-      const rows = (await response.text()).trim().split(/\r?\n/).slice(1);
-      const points = rows.map((row) => {
-        const [date, raw] = row.split(",");
-        return { date, value: number(raw) };
-      }).filter((row) => row.date && row.value !== null);
-      if (points.length) return points;
-      lastErr = new Error(`empty FRED series ${id}`);
+      return await fredPoints(id);
     } catch (err) {
       lastErr = err;
     }
