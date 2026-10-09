@@ -5,16 +5,24 @@ import os, json, urllib.request, datetime
 import numpy as np
 H={"APCA-API-KEY-ID":os.environ["ALPACA_KEY_ID"],"APCA-API-SECRET-KEY":os.environ["ALPACA_SECRET_KEY"]}
 _END=(datetime.date.today()-datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-def load(sym,start="2024-06-01",end=None):
+def _load_raw(sym,start="2024-06-01",end=None):
     end=end or _END
     u=(f"https://data.alpaca.markets/v2/stocks/bars?symbols={sym}&timeframe=1Day&start={start}&end={end}"
        f"&adjustment=all&feed=iex&limit=10000"); d=json.load(urllib.request.urlopen(urllib.request.Request(u,headers=H),timeout=40))
     b=d.get("bars",{}).get(sym,[]); return {x["t"][:10]:x["c"] for x in b}
+def load(sym,start="2024-06-01",end=None):
+    if sym!="WTPI": return _load_raw(sym,start,end)
+    # PUTW became WTPI on 2025-04-04. Stitch both tickers into one continuous fund history.
+    old=_load_raw("PUTW",start,"2025-04-04"); new=_load_raw("WTPI","2025-04-04",end)
+    if old and new:
+        scale=new[min(new)]/old[max(old)]
+        old={d:p*scale for d,p in old.items()}
+    return {**old,**new}
 SPINE=["SPY","IEF","GLD","DBC","DBA"]; TREND=["SPY","IEF","GLD","DBC"]; TAIL=["GLD","TLT"]
 PE=["BX","KKR","APO","CG","ARES","BAM"]; MF=["SPY","IEF","GLD","DBC","TLT","UUP","EEM","HYG","VNQ"]
 DEFENSIVE=["QUAL","USMV","VLUE","MOAT"]
 ALLSEASONS={"SPY":.30,"IEF":.15,"TLT":.40,"GLD":.075,"DBC":.075}
-MANDATE=["DIVO","MUB","VIXM","MTUM","EMB","BIL","LQD","PUTW","HYG"]
+MANDATE=["DIVO","MUB","VIXM","MTUM","EMB","BIL","LQD","WTPI","HYG"]
 NEAR=["BITO"]+DEFENSIVE+["MTUM","ILF"]
 BM=["SPY","DIA"]; HF=["QAI","DBMF","BRK.B"]; ALL=sorted(set(SPINE+TREND+TAIL+PE+NEAR+MF+["KSA","QQQ"]+BM+HF))
 ALL=sorted(set(ALL+MANDATE))
@@ -72,7 +80,7 @@ def fixed(weights): return sum(w*R[s] for s,w in weights.items())[252:]
 bulk=fixed({"USMV":.18,"DIVO":.14,"MUB":.18,"IEF":.18,"GLD":.12,"SPY":.12,"VIXM":.08})
 back=fixed({"SPY":.30,"LQD":.25,"TLT":.25,"GLD":.10,"VIXM":.10})
 brawl=fixed({"GLD":.40,"SPY":.30,"IEF":.20,"VIXM":.10})
-bodega=fixed({"DIVO":.35,"PUTW":.25,"MUB":.20,"HYG":.20})
+bodega=fixed({"DIVO":.35,"WTPI":.25,"MUB":.20,"HYG":.20})
 # BELLIGERENT: 40/30/15/15 return-seeker book, causally targeted to 18% vol (0.3x–2.0x).
 bellbase=.40*R["QQQ"]+.30*R["MTUM"]+.15*R["GLD"]+.15*R["EMB"]
 bell=np.zeros(T); lev=np.ones(T)
