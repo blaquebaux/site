@@ -174,15 +174,17 @@ nav{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.9);backdrop-fi
 .scenario-track i.negative{background:var(--red)}
 .scenario-zero{display:flex;justify-content:space-between;margin:4px 70px 0 162px;color:var(--dim);font:8px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
 .scenario-calc{position:absolute;right:18px;bottom:17px;color:var(--dim);font:8px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
-.base-panel .scenario-viz{inset:76px 34px 70px;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(150px,1fr)) auto auto;align-content:stretch;gap:12px}
-.base-panel .scenario-row{grid-template-columns:1fr auto;grid-template-rows:auto 1fr;align-items:start;gap:12px;padding:18px;border:1px solid var(--line);background:rgba(255,255,255,.32)}
-.base-panel .scenario-value{font-size:12px}
-.base-panel .scenario-track{grid-column:1/3;width:100%;height:42px;align-self:center}
-.base-panel .scenario-track i{top:7px;bottom:7px}
-.base-panel .scenario-zero{grid-column:1/3;margin:2px 4px 0}
-.scenario-summary{grid-column:1/3;border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:6px 24px}
+.base-panel{align-items:start}
+.base-panel .viz{height:min(650px,calc(100vh - 92px));min-height:560px;position:sticky;top:82px;align-self:start}
+.base-panel .scenario-viz{inset:76px 34px 70px;grid-template-columns:minmax(0,1fr) 210px;grid-template-rows:repeat(4,minmax(52px,1fr)) auto;align-content:stretch;gap:12px 28px}
+.base-panel .scenario-row{grid-column:1;grid-template-columns:138px minmax(0,1fr) 58px;align-items:center;gap:12px}
+.base-panel .scenario-value{font-size:10px}
+.base-panel .scenario-track{height:30px}
+.base-panel .scenario-track i{top:5px;bottom:5px}
+.base-panel .scenario-zero{grid-column:1;margin:2px 68px 0 150px}
+.scenario-summary{grid-column:2;grid-row:1/5;border-left:1px solid var(--line);padding-left:26px;display:flex;flex-direction:column;justify-content:center}
 .scenario-summary span{font:9px/1.5 "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
-.scenario-summary b{grid-row:1/3;grid-column:2;display:block;margin:0;font:300 clamp(42px,5vw,72px)/.95 "IBM Plex Mono";letter-spacing:-.06em}
+.scenario-summary b{display:block;margin:14px 0 12px;font:300 clamp(42px,5vw,72px)/.95 "IBM Plex Mono";letter-spacing:-.06em}
 .scenario-summary small{font:9px/1.65 "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 
 /* Light research surface */
@@ -224,7 +226,7 @@ nav{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.9);backdrop-fi
 .research-system figcaption{display:flex;justify-content:space-between;gap:20px;padding:12px 0 0;border-top:1px solid var(--line);font:9px "IBM Plex Mono";letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;font:9px "IBM Plex Mono";letter-spacing:.13em;color:#4d5359;text-transform:uppercase}
 .reveal{opacity:0;transform:translateY(15px);transition:.85s ease}.reveal.on{opacity:1;transform:none}
-@media(max-width:1000px){.active-grid,.feature-head,.labpanel,.intro{grid-template-columns:1fr}.detail{position:relative;top:auto}.labcopy{border-right:0;border-bottom:1px solid var(--line)}.labrow{grid-template-columns:55px 160px 1fr 90px}}
+@media(max-width:1000px){.active-grid,.feature-head,.labpanel,.intro{grid-template-columns:1fr}.detail{position:relative;top:auto}.labcopy{border-right:0;border-bottom:1px solid var(--line)}.labrow{grid-template-columns:55px 160px 1fr 90px}.base-panel .viz{position:relative;top:auto;height:560px}}
 @media(max-width:650px){
   html,body{max-width:100%;overflow-x:hidden}
   .shell{width:calc(100% - 24px)}
@@ -289,20 +291,8 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <p>Only repositories designated LIVE, LIVE PATH, or VALIDATION enter the lab. Each surface translates active research into an explorable model without replacing the underlying methodology or source.</p>
 <div class="statusline"><span><i class="dot"></i>1 live spine</span><span><i class="dot"></i>5 live paths</span><span><i class="dot"></i>3 live drivers</span><span>16 validation repositories</span><span>25 active repositories</span></div>
 </div></header>
-<section class="section" id="active"><div class="shell row"><div class="idx">01</div><div class="content">
-<div class="intro reveal"><div><div class="micro">Eligibility rule</div><h2>ONLY ACTIVE WORK ENTERS THE LAB.</h2></div><div><p>LABS is the interactive surface of the current BLAQUE BAUX research program. The governed spine, LIVE PATH, LIVE DRIVER, and VALIDATION repositories are visible here; Research, Concept, and Null work remains in the Corpus rather than being dressed up as an active model.</p><div class="counter">Current organization state / Oct 9 2026</div></div></div>
-<div class="active-grid">
-<div class="catalog reveal" id="catalog"></div>
-<aside class="detail reveal" id="detail">
-<div class="detail-top"><div><div class="micro">Selected lab</div><div class="detail-name" id="dName">BASE</div></div><div class="state live" id="dState"><i class="dot"></i>LIVE</div></div>
-<div class="detail-desc" id="dDesc"></div>
-<div class="detail-meta"><div><div class="meta-label">Role</div><div class="meta-val" id="dRole"></div></div><div><div class="meta-label">Interactive treatment</div><div class="meta-val" id="dTreatment"></div></div></div>
-<a class="source" id="dSource" target="_blank">Source ↗</a>
-</aside>
-</div>
-</div></div></section>
 <section class="section" id="featured"><div class="shell row"><div class="idx">02</div><div class="content">
-<div class="feature-head reveal"><div><div class="micro">Featured interactive studies</div><h2>The research, manipulable.</h2></div><p>Each study begins with the repository's actual thesis and reported finding, then exposes the idea through a restrained interactive surface. Reported metrics remain fixed to the research record; sliders and regime controls are used to explore the mechanism, not to manufacture new backtest claims.</p></div><div class="study-guide reveal">
+<div class="feature-head reveal"><div><div class="micro">Featured interactive studies</div><h2>Only active work enters the lab.</h2></div><p>LABS is the interactive surface of the current BLAQUE BAUX research program. The governed spine, LIVE PATH, LIVE DRIVER, and VALIDATION work appears here; Research, Concept, and Null work remains in the Corpus. Each study exposes the mechanism behind its repository's actual thesis and reported finding without manufacturing new backtest claims.</p></div><div class="study-guide reveal">
 <div>
 <span class="guide-kicker">HOW TO READ THE LABS</span>
 <p><b>Finding</b> is what the repository currently reports. <b>Interaction</b> lets you interrogate the mechanism behind that finding. <b>Source</b> remains authoritative for methodology, assumptions, code, and validation.</p>
@@ -668,9 +658,9 @@ const repos=[
 {name:"BARBELL",status:"VALIDATION",desc:"Safe core plus a small convex-risk wing.",role:"Convexity / crisis resilience",treatment:"Cash core + levered equity + long volatility",url:"https://github.com/blaquebaux/barbell"}
 ];
 const cat=document.getElementById("catalog");
-repos.forEach((r,i)=>{const d=document.createElement("div");const isLive=r.status.startsWith("LIVE");d.className="labrow"+(i===0?" active":"");d.innerHTML=`<span class="no">LAB / ${String(i+1).padStart(3,"0")}</span><span class="name">${r.name}</span><span class="desc">${r.desc}</span><span class="state ${isLive?"live":"validation"}">${isLive?'<i class="passdot"></i>':""}${r.status}</span>`;d.onclick=()=>selectRepo(r,d);cat.appendChild(d)});
+if(cat){repos.forEach((r,i)=>{const d=document.createElement("div");const isLive=r.status.startsWith("LIVE");d.className="labrow"+(i===0?" active":"");d.innerHTML=`<span class="no">LAB / ${String(i+1).padStart(3,"0")}</span><span class="name">${r.name}</span><span class="desc">${r.desc}</span><span class="state ${isLive?"live":"validation"}">${isLive?'<i class="passdot"></i>':""}${r.status}</span>`;d.onclick=()=>selectRepo(r,d);cat.appendChild(d)});
 function selectRepo(r,row){const isLive=r.status.startsWith("LIVE");document.querySelectorAll(".labrow").forEach(x=>x.classList.remove("active"));row.classList.add("active");dName.textContent=r.name;dState.innerHTML=(isLive?'<i class="passdot"></i>':"")+r.status;dState.className="state "+(isLive?"live good":"validation");dDesc.textContent=r.desc;dRole.textContent=r.role;dTreatment.textContent=r.treatment;dSource.href=r.url}
-selectRepo(repos[0],document.querySelector(".labrow"));
+selectRepo(repos[0],document.querySelector(".labrow"))}
 
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.1});document.querySelectorAll(".reveal").forEach(e=>obs.observe(e));
 
