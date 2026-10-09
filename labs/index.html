@@ -270,10 +270,10 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <header class="hero"><div class="shell hero-inner">
 <div class="micro">Interactive Research / Active Corpus</div><h1>LABS</h1>
 <p>Only repositories designated LIVE, LIVE PATH, or VALIDATION enter the lab. Each surface translates active research into an explorable model without replacing the underlying methodology or source.</p>
-<div class="statusline"><span><i class="dot"></i>1 live spine</span><span><i class="dot"></i>5 live paths</span><span><i class="dot"></i>3 live drivers</span><span>11 validation repositories</span><span>20 active repositories</span></div>
+<div class="statusline"><span><i class="dot"></i>1 live spine</span><span><i class="dot"></i>5 live paths</span><span><i class="dot"></i>3 live drivers</span><span>16 validation repositories</span><span>25 active repositories</span></div>
 </div></header>
 <section class="section" id="active"><div class="shell row"><div class="idx">01</div><div class="content">
-<div class="intro reveal"><div><div class="micro">Eligibility rule</div><h2>ONLY ACTIVE WORK ENTERS THE LAB.</h2></div><div><p>LABS is the interactive surface of the current BLAQUE BAUX research program. The governed spine, LIVE PATH, LIVE DRIVER, and VALIDATION repositories are visible here; Research, Concept, and Null work remains in the Corpus rather than being dressed up as an active model.</p><div class="counter">Current organization state / Aug 22 2026</div></div></div>
+<div class="intro reveal"><div><div class="micro">Eligibility rule</div><h2>ONLY ACTIVE WORK ENTERS THE LAB.</h2></div><div><p>LABS is the interactive surface of the current BLAQUE BAUX research program. The governed spine, LIVE PATH, LIVE DRIVER, and VALIDATION repositories are visible here; Research, Concept, and Null work remains in the Corpus rather than being dressed up as an active model.</p><div class="counter">Current organization state / Oct 9 2026</div></div></div>
 <div class="active-grid">
 <div class="catalog reveal" id="catalog"></div>
 <aside class="detail reveal" id="detail">
@@ -580,7 +580,12 @@ const repos=[
 {name:"BLEED",status:"VALIDATION",desc:"Two-flavour crash-insurance / tail-hedge sleeve.",role:"Tail protection",treatment:"Payoff / crisis protection surface",url:"https://github.com/blaquebaux/bleed"},
 {name:"BITDOLLAR",status:"VALIDATION",desc:"Governed crypto trend sleeve focused on BTC / ETH.",role:"Crypto trend / vol target",treatment:"Trend-vs-buy-hold risk comparison",url:"https://github.com/blaquebaux/bitdollar"},
 {name:"BEYOND",status:"VALIDATION",desc:"Cross-section reversal-to-momentum sleeve.",role:"Horizon transition",treatment:"Reversal → momentum phase map",url:"https://github.com/blaquebaux/beyond"},
-{name:"APAC",status:"VALIDATION",desc:"Directional Asia-Pacific sleeve — qualified keeper.",role:"Regional directional sleeve",treatment:"Regional signal + risk map",url:"https://github.com/blaquebaux/apac"}
+{name:"APAC",status:"VALIDATION",desc:"Directional Asia-Pacific sleeve — qualified keeper.",role:"Regional directional sleeve",treatment:"Regional signal + risk map",url:"https://github.com/blaquebaux/apac"},
+{name:"BANKROLL",status:"VALIDATION",desc:"Selective, calm-gated options-income sleeve.",role:"Options income / conditional carry",treatment:"Buy-write hurdle + calm-regime gate",url:"https://github.com/blaquebaux/bankroll"},
+{name:"BOROUGH",status:"VALIDATION",desc:"Municipal and tax-exempt relative-value sleeve.",role:"Tax-aware fixed income",treatment:"Tax-equivalent carry + Treasury hurdle",url:"https://github.com/blaquebaux/borough"},
+{name:"BRIER",status:"VALIDATION",desc:"Prediction-market order flow with observable 0/1 ground truth.",role:"Prediction-market validation",treatment:"Order-flow impact + gate specificity",url:"https://github.com/blaquebaux/brier"},
+{name:"BINNACLE",status:"VALIDATION",desc:"Liability-duration matching for funded-ratio stability.",role:"LDI / duration immunization",treatment:"Asset-liability duration + surplus risk",url:"https://github.com/blaquebaux/binnacle"},
+{name:"BARBELL",status:"VALIDATION",desc:"Safe core plus a small convex-risk wing.",role:"Convexity / crisis resilience",treatment:"Cash core + levered equity + long volatility",url:"https://github.com/blaquebaux/barbell"}
 ];
 const cat=document.getElementById("catalog");
 repos.forEach((r,i)=>{const d=document.createElement("div");const isLive=r.status.startsWith("LIVE");d.className="labrow"+(i===0?" active":"");d.innerHTML=`<span class="no">LAB / ${String(i+1).padStart(3,"0")}</span><span class="name">${r.name}</span><span class="desc">${r.desc}</span><span class="state ${isLive?"live":"validation"}">${isLive?'<i class="passdot"></i>':""}${r.status}</span>`;d.onclick=()=>selectRepo(r,d);cat.appendChild(d)});
