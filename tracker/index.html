@@ -204,7 +204,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
   <div class="micro">Sleeve performance / measured honestly</div>
   <h1>TRACKER</h1>
   <p>How each sleeve would have done this year — read the way it matters, against the S&amp;P 500 and the Dow.</p>
-  <div class="statusline"><span><i class="dot"></i>7 capstone sleeves</span><span><i class="dot"></i>vs S&amp;P 500 &amp; Dow</span><span>Simulated · end-of-day</span></div>
+  <div class="statusline"><span><i class="dot"></i>14 capstone sleeves</span><span><i class="dot"></i>vs S&amp;P 500 &amp; Dow</span><span>Simulated · end-of-day</span></div>
 </div></header>
 
 <section class="market-evolution" aria-labelledby="evolution-title"><div class="shell evolution-head"><div><div class="micro">Market information / three eras</div><h2 id="evolution-title">The tools changed. The premise did not.</h2></div><p>From paper ticker tape to mobile portfolios, every generation faces the same task: separate signal from noise, understand the risk, and decide what deserves capital.</p></div><img class="evolution-art" src="/assets/tracker-market-timeline-v3.png" alt="An engraved timeline showing an early market professional reading ticker tape, a 1980s trader using a brick mobile phone, and a contemporary investor reviewing a portfolio on a smartphone."></section>
@@ -219,7 +219,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 
   <div class="workstation">
     <div class="workstation-head">
-      <div><div class="workstation-kicker">Market workstation / research view</div><h2 class="workstation-title">Seven lenses. One governed record.</h2></div>
+      <div><div class="workstation-kicker">Market workstation / research view</div><h2 class="workstation-title">Fourteen lenses. One research record.</h2></div>
       <div class="workstation-meta">Chart sleeve behavior, scan the research universe, and keep crypto market context in view without confusing indicative data for execution data.</div>
     </div>
     <div class="terminal-tabs" role="tablist" aria-label="Tracker views">
@@ -271,7 +271,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     </div>
 
     <div class="terminal-panel" id="panel-screener" role="tabpanel" aria-labelledby="tab-screener" hidden>
-      <div class="screener-head"><div><p class="terminal-note">Governed universe / seven promoted sleeves / simulated</p><h3>Research screener</h3></div><div class="ctl"><label for="screenSort">Rank by</label><select id="screenSort"><option value="return">YTD return</option><option value="daily">Latest move</option><option value="drawdown">Shallowest drawdown</option><option value="spy">Edge vs S&amp;P 500</option></select></div></div>
+      <div class="screener-head"><div><p class="terminal-note">Capstone universe / fourteen sleeves / simulated</p><h3>Research screener</h3></div><div class="ctl"><label for="screenSort">Rank by</label><select id="screenSort"><option value="return">YTD return</option><option value="daily">Latest move</option><option value="drawdown">Shallowest drawdown</option><option value="spy">Edge vs S&amp;P 500</option></select></div></div>
       <div class="screener-wrap"><table class="screener-table"><thead><tr><th>Sleeve</th><th>YTD</th><th>Latest</th><th>Max drawdown</th><th>vs S&amp;P 500</th><th>Value</th></tr></thead><tbody id="screenerBody"></tbody></table></div>
       <p class="terminal-note screener-footnote">Select a sleeve name to open its full chart. Rankings use the same published end-of-day research file as the Tracker.</p>
     </div>
@@ -438,15 +438,16 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 
   fetch('performance.json',{cache:'no-store'}).then(r=>r.json()).then(function(D){
   const S=D.series, dates=D.dates, N=dates.length;
-  const tapeOrder=['SPY','DIA','breakthrough','balsamic','bossy','brigade','brilliant','believer','bastion'];
-  const tapeNames={SPY:'SPY',DIA:'DIA',breakthrough:'BREAKTHROUGH',balsamic:'BALSAMIC',bossy:'BOSSY',brigade:'BRIGADE',brilliant:'BRILLIANT',believer:'BELIEVER',bastion:'BASTION'};
+  const capstoneOrder=['breakthrough','brilliant','bossy','believer','bemused','brigade','boundless','bastion','balsamic','bulkhead','belligerent','backstop','brawl','bodega'];
+  const tapeOrder=['SPY','DIA',...capstoneOrder];
+  const tapeNames={SPY:'SPY',DIA:'DIA',...Object.fromEntries(capstoneOrder.map(key=>[key,key.toUpperCase()]))};
   const tapeItems=tapeOrder.filter(k=>S[k]&&S[k].equity.length>1).map(k=>{
     const e=S[k].equity, last=e[e.length-1], prev=e[e.length-2], change=(last/prev-1)*100;
     return `<span class="tape-item"><span class="tape-symbol">${tapeNames[k]}</span><span class="tape-value">$${Math.round(last).toLocaleString('en-US')}</span><span class="tape-change ${change>=0?'up':'down'}">${change>=0?'+':''}${change.toFixed(2)}%</span></span>`;
   }).join('');
   const tapeLabel=`<span class="tape-label">End-of-day / ${D.asof} / rebased $100k / simulated</span>`;
   document.getElementById('tapeTrack').innerHTML=`<div class="tape-group">${tapeLabel}${tapeItems}</div><div class="tape-group" aria-hidden="true">${tapeLabel}${tapeItems}</div>`;
-  const heatOrder=['SPY','DIA','breakthrough','balsamic','bossy','brigade','brilliant','believer','bastion','QAI','DBMF','BRK.B'];
+  const heatOrder=['SPY','DIA',...capstoneOrder,'QAI','DBMF','BRK.B'];
   const heatmap=document.getElementById('heatmapGrid');
   heatOrder.filter(k=>S[k]&&S[k].equity.length).forEach(function(key){
     const series=S[key],first=series.equity[0],last=series.equity[series.equity.length-1],ret=(last/first-1)*100;
@@ -459,7 +460,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     tile.append(symbol,name,value);heatmap.appendChild(tile);
   });
   const sel=document.getElementById('sel'),quoteSel=document.getElementById('quoteSel');
-  const order=["breakthrough","balsamic","bossy","brigade","brilliant","believer","bastion"];
+  const order=capstoneOrder;
   order.filter(k=>S[k]).forEach(k=>{
     const o=document.createElement('option');o.value=k;o.textContent=S[k].label;sel.appendChild(o);
     quoteSel.appendChild(o.cloneNode(true));

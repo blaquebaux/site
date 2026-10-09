@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Compute SIMULATED YTD-2026 equity curves ($100k base) for the capstones + balsamic, vs SPY & DIA.
+# Compute SIMULATED YTD-2026 equity curves ($100k base) for all capstones, vs SPY & DIA.
 # Simulated = each sleeve's rule run on ETF data, gross of costs. NOT a live track record.
 import os, json, urllib.request, datetime
 import numpy as np
@@ -11,8 +11,13 @@ def load(sym,start="2024-06-01",end=None):
        f"&adjustment=all&feed=iex&limit=10000"); d=json.load(urllib.request.urlopen(urllib.request.Request(u,headers=H),timeout=40))
     b=d.get("bars",{}).get(sym,[]); return {x["t"][:10]:x["c"] for x in b}
 SPINE=["SPY","IEF","GLD","DBC","DBA"]; TREND=["SPY","IEF","GLD","DBC"]; TAIL=["GLD","TLT"]
-PE=["BX","KKR","APO","CG","ARES","BAM"]; NEAR=["USMV","VNQ","EEM"]; MF=["SPY","IEF","GLD","DBC","TLT","UUP","EEM","HYG","VNQ"]
+PE=["BX","KKR","APO","CG","ARES","BAM"]; MF=["SPY","IEF","GLD","DBC","TLT","UUP","EEM","HYG","VNQ"]
+DEFENSIVE=["QUAL","USMV","VLUE","MOAT"]
+ALLSEASONS={"SPY":.30,"IEF":.15,"TLT":.40,"GLD":.075,"DBC":.075}
+MANDATE=["DIVO","MUB","VIXM","MTUM","EMB","BIL","LQD","PUTW","HYG"]
+NEAR=["BITO"]+DEFENSIVE+["MTUM","ILF"]
 BM=["SPY","DIA"]; HF=["QAI","DBMF","BRK.B"]; ALL=sorted(set(SPINE+TREND+TAIL+PE+NEAR+MF+["KSA","QQQ"]+BM+HF))
+ALL=sorted(set(ALL+MANDATE))
 D={s:load(s) for s in ALL}; dates=sorted(set.intersection(*[set(D[s]) for s in ALL]))
 P={s:np.array([D[s][d] for d in dates],float) for s in ALL}; R={s:P[s][1:]/P[s][:-1]-1 for s in ALL}
 DT=dates[1:]; T=len(R["SPY"]); VW,REB=60,21
@@ -32,7 +37,19 @@ def _trend(syms,ls=False):
         out[t]=float(sum(w[i]*R[syms[i]][t] for i in range(len(syms))))
     return out
 KEEP={"spine":_invvol(SPINE),"trend":_trend(TREND),"tail":_invvol(TAIL),"gulf":R["KSA"],"growth":R["QQQ"],"PE":np.mean(np.vstack([R[s] for s in PE]),axis=0)}
-KM=np.vstack(list(KEEP.values())); KMx=np.vstack(list(KEEP.values())+[R[s] for s in NEAR])
+KM=np.vstack(list(KEEP.values()))
+rev=np.zeros(T)
+for t in range(5,T): rev[t]=-np.sign(np.prod(1+R["SPY"][t-5:t])-1)*R["SPY"][t]
+NEAR_STREAMS={
+    "crypto":R["BITO"],
+    "defensive":np.mean(np.vstack([R[s] for s in DEFENSIVE]),axis=0),
+    "reversal":rev,
+    "allweather":sum(w*R[s] for s,w in ALLSEASONS.items()),
+    "momentum":R["MTUM"],
+    "latam":R["ILF"],
+}
+KMx=np.vstack(list(KEEP.values())+[NEAR_STREAMS[k] for k in ["crypto","defensive","reversal"]])
+KMall=np.vstack(list(KEEP.values())+list(NEAR_STREAMS.values()))
 def run(M,rule):
     k,Tn=M.shape; out=np.zeros(Tn); w=np.ones(k)/k
     for t in range(252,Tn):
@@ -45,14 +62,37 @@ def run(M,rule):
             elif rule=="eq": w=np.ones(k)/k
         out[t]=float(w@M[:,t])
     return out[252:]
-bt=run(KM,"rp"); bril=run(KM,"mv"); belv=run(KM,"eq"); brig=run(KMx,"rp")
+bt=run(KM,"rp"); bril=run(KM,"mv"); belv=run(KM,"eq"); brig=run(KMx,"rp"); bound=run(KMall,"rp")
+# BEMUSED is a distributional null. A seeded long-only draw makes its Tracker path reproducible.
+rng=np.random.default_rng(42); bemw=rng.random(KM.shape[0]); bemw/=bemw.sum(); bem=bemw@KM[:,252:]
 bear=_trend(["SPY"]); bas=0.85*bt+0.15*np.where(bear[252:]==0.,-1.*R["SPY"][252:],0.)
 sat=_trend(MF,ls=True)[252:]; vc,vs=bt[-60:].std(),sat[-60:].std(); a=(0.30/0.70)*(vc/vs)
 bals=bt+a*sat; boss=1.5*bt
+def fixed(weights): return sum(w*R[s] for s,w in weights.items())[252:]
+bulk=fixed({"USMV":.18,"DIVO":.14,"MUB":.18,"IEF":.18,"GLD":.12,"SPY":.12,"VIXM":.08})
+back=fixed({"SPY":.30,"LQD":.25,"TLT":.25,"GLD":.10,"VIXM":.10})
+brawl=fixed({"GLD":.40,"SPY":.30,"IEF":.20,"VIXM":.10})
+bodega=fixed({"DIVO":.35,"PUTW":.25,"MUB":.20,"HYG":.20})
+# BELLIGERENT: 40/30/15/15 return-seeker book, causally targeted to 18% vol (0.3x–2.0x).
+bellbase=.40*R["QQQ"]+.30*R["MTUM"]+.15*R["GLD"]+.15*R["EMB"]
+bell=np.zeros(T); lev=np.ones(T)
+for t in range(1,T):
+    hist=bellbase[max(0,t-63):t]
+    vol=hist.std()*np.sqrt(252) if len(hist)>5 else .18
+    lev[t]=min(2.,max(.3,.18/vol)) if vol>0 else 1.
+    bell[t]=lev[t]*bellbase[t]-(lev[t]-1)*R["BIL"][t]
+bell=bell[252:]
 DTc=DT[252:]
-streams={"breakthrough":bt,"brilliant":bril,"bossy":boss,"believer":belv,"brigade":brig,"bastion":bas,"balsamic":bals}
+streams={"breakthrough":bt,"brilliant":bril,"bossy":boss,"believer":belv,"bemused":bem,"brigade":brig,
+         "boundless":bound,"bastion":bas,"balsamic":bals,"bulkhead":bulk,"belligerent":bell,
+         "backstop":back,"brawl":brawl,"bodega":bodega}
 labels={"breakthrough":"Breakthrough — risk parity","brilliant":"Brilliant — optimizer","bossy":"Bossy — 1.5× levered",
-        "believer":"Believer — buy & hold","brigade":"Brigade — curated breadth","bastion":"Bastion — with insurance","balsamic":"Balsamic — core + trend"}
+        "believer":"Believer — buy & hold","bemused":"Bemused — seeded random allocation",
+        "brigade":"Brigade — curated breadth","boundless":"Boundless — kitchen-sink breadth",
+        "bastion":"Bastion — with insurance","balsamic":"Balsamic — core + trend",
+        "bulkhead":"Bulkhead — preservation book","belligerent":"Belligerent — vol-targeted growth",
+        "backstop":"Backstop — liability-driven book","brawl":"Brawl — Austrian doctrine",
+        "bodega":"Bodega — dealer carry"}
 # slice YTD 2026, rebase to 100k
 ix=[i for i,d in enumerate(DTc) if d>="2026-01-01"]
 if not ix: raise SystemExit("no 2026 data")
