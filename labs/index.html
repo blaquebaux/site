@@ -174,6 +174,16 @@ nav{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.9);backdrop-fi
 .scenario-track i.negative{background:var(--red)}
 .scenario-zero{display:flex;justify-content:space-between;margin:4px 70px 0 162px;color:var(--dim);font:8px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
 .scenario-calc{position:absolute;right:18px;bottom:17px;color:var(--dim);font:8px "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
+.base-panel .scenario-viz{inset:76px 34px 70px;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(150px,1fr)) auto auto;align-content:stretch;gap:12px}
+.base-panel .scenario-row{grid-template-columns:1fr auto;grid-template-rows:auto 1fr;align-items:start;gap:12px;padding:18px;border:1px solid var(--line);background:rgba(255,255,255,.32)}
+.base-panel .scenario-value{font-size:12px}
+.base-panel .scenario-track{grid-column:1/3;width:100%;height:42px;align-self:center}
+.base-panel .scenario-track i{top:7px;bottom:7px}
+.base-panel .scenario-zero{grid-column:1/3;margin:2px 4px 0}
+.scenario-summary{grid-column:1/3;border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:6px 24px}
+.scenario-summary span{font:9px/1.5 "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
+.scenario-summary b{grid-row:1/3;grid-column:2;display:block;margin:0;font:300 clamp(42px,5vw,72px)/.95 "IBM Plex Mono";letter-spacing:-.06em}
+.scenario-summary small{font:9px/1.65 "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 
 /* Light research surface */
 .links,.hero p,.statusline,.counter,.desc,.detail-desc,.meta-val,
@@ -246,6 +256,13 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
   .scenario-row{grid-template-columns:98px minmax(0,1fr) 50px;gap:8px}
   .scenario-name{font-size:8px}.scenario-zero{margin-left:106px;margin-right:58px}
   .scenario-calc{left:14px;right:14px;bottom:76px;line-height:1.5}
+  .base-panel .scenario-viz{inset:118px 14px 112px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(4,46px) auto auto;gap:10px}
+  .base-panel .scenario-row{grid-column:1;grid-template-columns:92px minmax(0,1fr) 50px;grid-template-rows:1fr;padding:0;border:0;background:transparent;align-items:center}
+  .base-panel .scenario-value{font-size:9px}
+  .base-panel .scenario-track{height:24px}
+  .base-panel .scenario-zero{grid-column:1;margin-left:100px;margin-right:58px}
+  .scenario-summary{grid-column:1;grid-row:auto;border-left:0;border-top:1px solid var(--line);padding:12px 0 0;display:grid;grid-template-columns:1fr auto;align-items:end;gap:5px 12px}
+  .scenario-summary b{grid-row:1/3;grid-column:2;margin:0;font-size:34px}.scenario-summary small{font-size:8px}
   .foot{display:block;line-height:2}
   .research-system{padding:42px 0 24px}
   .research-system-head{display:block}
@@ -319,7 +336,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 
 <!-- APAC -->
 
-<div class="labpanel reveal" id="base-explorer">
+<div class="labpanel reveal base-panel" id="base-explorer">
 <div class="labcopy">
 <div class="tag">LAB 001 / LIVE</div><h3>BASE</h3><div class="sub">The governed spine / risk structure</div>
 <div class="finding"><b>Repository finding:</b> the production spine combines an inverse-vol / equal-risk-contribution base with 12-month time-series trend, volatility-targets each sleeve, blends them, then applies a drawdown regime brake. Reported production profile: ~0.97 Sharpe, ~1.30 Sortino, ~−11% max drawdown.</div>
@@ -338,6 +355,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
   <div class="scenario-row"><span class="scenario-name">Blended scenario</span><span class="scenario-track"><i id="blendScenarioBar"></i></span><output class="scenario-value" id="blendScenarioV">−6.3%</output></div>
   <div class="scenario-row"><span class="scenario-name">After brake</span><span class="scenario-track"><i id="brakedScenarioBar"></i></span><output class="scenario-value" id="brakedScenarioV">−6.3%</output></div>
   <div class="scenario-zero"><span>Loss</span><span>0</span><span>Gain</span></div>
+  <div class="scenario-summary"><span>Net hypothetical result</span><b id="scenarioSummaryV">−6.3%</b><small id="scenarioSummaryL">No brake applied</small></div>
 </div>
 <div class="scenario-calc">weight × supplied outcome; brake scales gross exposure</div>
 <div class="legend"><span>red / hypothetical loss</span><span>green / hypothetical gain</span><span>record remains fixed</span></div></div>
@@ -545,7 +563,69 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:25px;
 <div class="viz"><div class="vizlabel">Relative strength / FX drag</div><div class="vizstate">[ VALIDATION / QUALIFIED NULL ]</div>
 <div class="bars"><div class="barwrap"><div class="bar goodbar" id="ap1"></div><div class="barlabel" id="ap1l">APAC LS<br/>+0.30</div></div><div class="barwrap"><div class="bar badbar" id="ap2"></div><div class="barlabel" id="ap2l">EMEA LS<br/>−0.23</div></div><div class="barwrap"><div class="bar badbar" id="ap3"></div><div class="barlabel" id="ap3l">LATAM LS<br/>−0.04</div></div></div>
 <div class="legend"><span id="apLeft">country dispersion</span><span id="apMid">relative strength, not beta</span><span id="apRight">FX matters</span></div></div>
-</div><div class="note">Prototype note: repository names, LIVE / VALIDATION eligibility, thesis language, and quoted research metrics are taken from the BLAQUE BAUX GitHub corpus. Reported metrics are labeled as repository findings. Interactive response curves and regime controls are explanatory UI demonstrations unless explicitly tied to a reported scorecard value. Production LABS should execute repository code, a verified browser-safe port, or an embedded notebook before presenting newly computed results.</div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 021 / VALIDATION</div><h3>BANKROLL</h3><div class="sub">Selective options income / calm-regime gate</div>
+<div class="finding"><b>Repository finding:</b> naive always-write funds trail after risk adjustment, while selective active writing survives. DIVO reports +1.18 Sharpe and −14% max drawdown versus SPY +1.06 / −24%; calm-regime gating also clears the index hurdle while writing into rich volatility does not.</div>
+<div class="control"><label><span>Scorecard view</span><span id="bankrollViewV">Sharpe</span></label><input id="bankrollView" max="1" min="0" type="range" value="0"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/bankroll" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Options income / selectivity versus blanket writing</div><div class="vizstate">[ VALIDATION / CONDITIONAL KEEPER ]</div>
+<div class="bars"><div class="barwrap"><div class="bar neutralbar" id="bankrollSpy"></div><div class="barlabel" id="bankrollSpyL">SPY<br/>+1.06</div></div><div class="barwrap"><div class="bar goodbar" id="bankrollDivo"></div><div class="barlabel" id="bankrollDivoL">DIVO<br/>+1.18</div></div><div class="barwrap"><div class="bar badbar" id="bankrollNaive"></div><div class="barlabel" id="bankrollNaiveL">Naive write<br/>0.7–1.0</div></div></div>
+<div class="legend"><span>index hurdle</span><span>selective / calm only</span><span>always-write drag</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 022 / VALIDATION</div><h3>BOROUGH</h3><div class="sub">Municipal carry / tax-equivalent hurdle</div>
+<div class="finding"><b>Repository finding:</b> the edge is the tax exemption, not pre-tax alpha. Munis return about +2.1%/yr at 5% volatility and +0.46 Sharpe; at a 37% tax rate that is roughly +3.3% tax-equivalent. Ratio mean reversion is thin and leveraged muni CEFs retain a rate/liquidity tail.</div>
+<div class="control"><label><span>Marginal tax rate</span><span id="boroughTaxV">37%</span></label><input id="boroughTax" max="50" min="0" type="range" value="37"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/borough" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Tax-aware carry / holder-specific economics</div><div class="vizstate">[ VALIDATION / TAXABLE CAPITAL ]</div>
+<div class="center-readout"><b id="boroughTEY">+3.3%</b><span>Tax-equivalent annual carry</span></div>
+<div class="legend"><span>muni carry +2.1%</span><span id="boroughTaxL">37% marginal rate</span><span>MUB Sharpe +0.46</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 023 / VALIDATION</div><h3>BRIER</h3><div class="sub">Prediction-market order flow / observable truth</div>
+<div class="finding"><b>Repository finding:</b> the simulator validates the gate where contracts settle to an observable 0 or 1. High- and low-impact OFI regimes both beat random entry at p≈0.000; the pure-noise control is correctly indistinguishable at p≈0.68. The live tradable edge remains parked on feed integration.</div>
+<div class="control"><label><span>Impact regime</span><span id="brierRegimeV">High impact</span></label><input id="brierRegime" max="2" min="0" step="1" type="range" value="0"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/brier" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">OFI gate / answer-key calibration</div><div class="vizstate" id="brierState">[ GATE POWER CONFIRMED ]</div>
+<div class="splitviz"><div class="statcol"><div class="statbar goodbar" id="brierR2"></div><div class="statlabel" id="brierR2L">OFI → move<br/>R² 97.9%</div></div><div class="statcol"><div class="statbar goodbar" id="brierGate"></div><div class="statlabel" id="brierGateL">Gate p<br/>≈0.000</div></div><div class="statcol"><div class="statbar goodbar" id="brierScore"></div><div class="statlabel" id="brierScoreL">Brier<br/>0.228</div></div></div>
+<div class="legend"><span>known signal</span><span>random-entry specificity</span><span>resolved 0 / 1 truth</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 024 / VALIDATION</div><h3>BINNACLE</h3><div class="sub">Liability duration / funded-ratio stability</div>
+<div class="finding"><b>Repository finding:</b> surplus volatility falls as asset duration approaches the liability. A TLT-matched reference eliminates the modeled mismatch; intermediate bonds and equity leave large funded-ratio risk. The usable compromise is 40% SPY / 60% TLT at +9.8% surplus volatility and +6.2% surplus return.</div>
+<div class="control"><label><span>Asset book</span><span id="binnacleBookV">Duration matched</span></label><input id="binnacleBook" max="3" min="0" step="1" type="range" value="0"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/binnacle" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Asset / liability mismatch spectrum</div><div class="vizstate">[ VALIDATION / IMMUNIZATION ]</div>
+<div class="splitviz"><div class="statcol"><div class="statbar goodbar" id="binnacleVol"></div><div class="statlabel" id="binnacleVolL">Surplus vol<br/>0.0%</div></div><div class="statcol"><div class="statbar neutralbar" id="binnacleRet"></div><div class="statlabel" id="binnacleRetL">Surplus ret<br/>0.0%</div></div><div class="statcol"><div class="statbar goodbar" id="binnacleDD"></div><div class="statlabel" id="binnacleDDL">FR maxDD<br/>0%</div></div></div>
+<div class="legend"><span>match, don't beat</span><span id="binnacleMode">TLT / TLT reference</span><span>funded-ratio lens</span></div></div>
+</div>
+
+<div class="labpanel reveal">
+<div class="labcopy">
+<div class="tag">LAB 025 / VALIDATION</div><h3>BARBELL</h3><div class="sub">Safe core / convex sliver / no middle</div>
+<div class="finding"><b>Repository finding:</b> the two-wing 85% BIL / 7.5% UPRO / 7.5% VIXM barbell beats the 60/40 on Sharpe, Calmar, skew, and drawdown, but consciously gives up absolute return. The higher-return cousin is a 90% SPY / 10% VIXM overlay rather than a preservation barbell.</div>
+<div class="control"><label><span>Book</span><span id="barbellBookV">Two-wing barbell</span></label><input id="barbellBook" max="2" min="0" step="1" type="range" value="1"/></div>
+<div class="buttons"><a class="btn" href="https://github.com/blaquebaux/barbell" target="_blank">Source ↗</a></div>
+</div>
+<div class="viz"><div class="vizlabel">Preservation / middle / growth-overlay comparison</div><div class="vizstate">[ VALIDATION / CONDITIONAL KEEPER ]</div>
+<div class="splitviz"><div class="statcol"><div class="statbar goodbar" id="barbellSharpe"></div><div class="statlabel" id="barbellSharpeL">Sharpe<br/>+1.58</div></div><div class="statcol"><div class="statbar goodbar" id="barbellDD"></div><div class="statlabel" id="barbellDDL">Max DD<br/>−4%</div></div><div class="statcol"><div class="statbar neutralbar" id="barbellCagr"></div><div class="statlabel" id="barbellCagrL">CAGR<br/>+4.2%</div></div></div>
+<div class="legend"><span>risk-adjusted shape</span><span id="barbellMode">85 BIL / 7.5 UPRO / 7.5 VIXM</span><span>mandate decides</span></div></div>
+</div>
+
+<div class="note">Prototype note: repository names, LIVE / VALIDATION eligibility, thesis language, and quoted research metrics are taken from the BLAQUE BAUX GitHub corpus. Reported metrics are labeled as repository findings. Interactive response curves and regime controls are explanatory UI demonstrations unless explicitly tied to a reported scorecard value. Production LABS should execute repository code, a verified browser-safe port, or an embedded notebook before presenting newly computed results.</div>
 </div></div></section>
 <section class="research-system" aria-labelledby="research-system-title"><div class="shell">
   <div class="research-system-head reveal">
@@ -628,7 +708,7 @@ function setBD(){let sharpe=+bdView.value===1;bdViewV.textContent=sharpe?"Sharpe
 /* BASE */
 function scenarioPct(v){return(v>0?"+":"")+v.toFixed(1)+"%"}
 function setScenarioBar(bar,out,value){const width=Math.min(Math.abs(value)/40*50,50);bar.classList.toggle("negative",value<0);bar.style.width=width+"%";bar.style.left=value>=0?"50%":"auto";bar.style.right=value<0?"50%":"auto";out.textContent=scenarioPct(value);setReadoutSemantic(out,value>0?"good":value<0?"bad":"neutral")}
-function setBase(){let w=+baseW.value/100,br=+brake.value/100,baseMove=+baseShock.value,trendMove=+trendShock.value;baseWv.textContent=Math.round(w*100)+"%";baseShockV.textContent=scenarioPct(baseMove);trendShockV.textContent=scenarioPct(trendMove);brakeV.textContent=Math.round(br*100)+"%";let basePart=w*baseMove,trendPart=(1-w)*trendMove,blend=basePart+trendPart,after=blend*(1-br);setScenarioBar(baseContributionBar,baseContributionV,basePart);setScenarioBar(trendContributionBar,trendContributionV,trendPart);setScenarioBar(blendScenarioBar,blendScenarioV,blend);setScenarioBar(brakedScenarioBar,brakedScenarioV,after)}
+function setBase(){let w=+baseW.value/100,br=+brake.value/100,baseMove=+baseShock.value,trendMove=+trendShock.value;baseWv.textContent=Math.round(w*100)+"%";baseShockV.textContent=scenarioPct(baseMove);trendShockV.textContent=scenarioPct(trendMove);brakeV.textContent=Math.round(br*100)+"%";let basePart=w*baseMove,trendPart=(1-w)*trendMove,blend=basePart+trendPart,after=blend*(1-br);setScenarioBar(baseContributionBar,baseContributionV,basePart);setScenarioBar(trendContributionBar,trendContributionV,trendPart);setScenarioBar(blendScenarioBar,blendScenarioV,blend);setScenarioBar(brakedScenarioBar,brakedScenarioV,after);scenarioSummaryV.textContent=scenarioPct(after);scenarioSummaryL.textContent=br?Math.round(br*100)+"% gross-exposure brake":"No brake applied";setReadoutSemantic(scenarioSummaryV,after>0?"good":after<0?"bad":"neutral")}
 [baseW,baseShock,trendShock,brake].forEach(el=>el.oninput=setBase);baseReset.onclick=()=>{baseW.value=55;baseShock.value=-18;trendShock.value=8;brake.value=0;setBase()};setBase();
 
 /* BROWN */
@@ -667,6 +747,13 @@ function setBenchmark(){let on=+benchG.value===1;benchGv.textContent=on?"On":"Of
 function setBull(){let on=+bullO.value===1;bullOv.textContent=on?"On":"Off";bullSharpe.style.height=on?"82%":"74%";bullDD.style.height=on?"52%":"68%";bullKeep.style.height=on?"90%":"100%";bullSharpeL.innerHTML=`Sharpe<br>${on?"+1.04":"+0.96"}`;bullDDL.innerHTML=`Max DD<br>${on?"−30%":"−35%"}`;bullKeepL.innerHTML=`Return kept<br>${on?"90%":"100%"}`;setBarSemantic(bullSharpe,on?"good":"neutral");setBarSemantic(bullDD,on?"good":"bad");setBarSemantic(bullKeep,"good")}bullO.oninput=setBull;setBull();
 function setBridgewater(){let on=+bridgeO.value===1;bridgeOv.textContent=on?"On / exploratory":"Off / governed default";bridgeDiversify.style.height="86%";bridgeCorr.style.height="92%";bridgeOverlay.style.height=on?"66%":"22%";bridgeOverlayL.innerHTML=on?"Overlay<br>exploratory":"Overlay<br>off";setBarSemantic(bridgeDiversify,"good");setBarSemantic(bridgeCorr,"neutral");setBarSemantic(bridgeOverlay,on?"bad":"neutral")}bridgeO.oninput=setBridgewater;setBridgewater();
 function setBlackstone(){let on=+blackO.value===1;blackOv.textContent=on?"On":"Off";blackSharpe.style.height=on?"80%":"63%";blackDD.style.height=on?"54%":"88%";blackSharpeL.innerHTML=`Sharpe<br>${on?"+0.95":"+0.76"}`;blackDDL.innerHTML=`Max DD<br>${on?"−31%":"−45%"}`;setBarSemantic(blackSharpe,on?"good":"neutral");setBarSemantic(blackDD,on?"good":"bad")}blackO.oninput=setBlackstone;setBlackstone();
+
+/* COMPLETING VALIDATION LABS */
+function setBankroll(){let dd=+bankrollView.value===1;bankrollViewV.textContent=dd?"Max drawdown":"Sharpe";if(dd){bankrollSpy.style.height="86%";bankrollDivo.style.height="50%";bankrollNaive.style.height="72%";bankrollSpyL.innerHTML="SPY<br>−24%";bankrollDivoL.innerHTML="DIVO<br>−14%";bankrollNaiveL.innerHTML="Naive write<br>−19 to −25%";setBarSemantic(bankrollSpy,"bad");setBarSemantic(bankrollDivo,"good");setBarSemantic(bankrollNaive,"bad")}else{bankrollSpy.style.height="76%";bankrollDivo.style.height="88%";bankrollNaive.style.height="62%";bankrollSpyL.innerHTML="SPY<br>+1.06";bankrollDivoL.innerHTML="DIVO<br>+1.18";bankrollNaiveL.innerHTML="Naive write<br>0.7–1.0";setBarSemantic(bankrollSpy,"neutral");setBarSemantic(bankrollDivo,"good");setBarSemantic(bankrollNaive,"bad")}}bankrollView.oninput=setBankroll;setBankroll();
+function setBorough(){let rate=+boroughTax.value/100,tey=2.1/(1-rate);boroughTaxV.textContent=Math.round(rate*100)+"%";boroughTaxL.textContent=Math.round(rate*100)+"% marginal rate";boroughTEY.textContent="+"+tey.toFixed(1)+"%";setReadoutSemantic(boroughTEY,rate>0?"good":"neutral")}boroughTax.oninput=setBorough;setBorough();
+function setBrier(){let i=+brierRegime.value,names=["High impact","Low impact","Pure noise"],r2=[97.9,65.2,0],p=["≈0.000","≈0.000","≈0.68"],score=[.228,.238,.268];brierRegimeV.textContent=names[i];brierR2.style.height=(18+r2[i]*.72)+"%";brierGate.style.height=i===2?"18%":"86%";brierScore.style.height=i===2?"34%":"70%";brierR2L.innerHTML=`OFI → move<br>R² ${r2[i].toFixed(1)}%`;brierGateL.innerHTML=`Gate p<br>${p[i]}`;brierScoreL.innerHTML=`Brier<br>${score[i].toFixed(3)}`;brierState.textContent=i===2?"[ CORRECTLY SILENT ON NOISE ]":"[ GATE POWER CONFIRMED ]";setBarSemantic(brierR2,i===2?"bad":"good");setBarSemantic(brierGate,i===2?"neutral":"good");setBarSemantic(brierScore,i===2?"bad":"good")}brierRegime.oninput=setBrier;setBrier();
+function setBinnacle(){let i=+binnacleBook.value,books=[{n:"Duration matched",m:"TLT / TLT reference",v:0,r:0,d:0},{n:"Under-hedged",m:"IEF / long liability",v:9.2,r:1.1,d:21},{n:"Growth hybrid",m:"40 SPY / 60 TLT",v:9.8,r:6.2,d:21},{n:"Equity",m:"SPY / long liability",v:24.5,r:15.4,d:48}],b=books[i];binnacleBookV.textContent=b.n;binnacleMode.textContent=b.m;binnacleVol.style.height=(18+b.v*2.7)+"%";binnacleRet.style.height=(18+Math.max(0,b.r)*4.2)+"%";binnacleDD.style.height=(18+b.d*1.55)+"%";binnacleVolL.innerHTML=`Surplus vol<br>${b.v.toFixed(1)}%`;binnacleRetL.innerHTML=`Surplus ret<br>${b.r>=0?"+":""}${b.r.toFixed(1)}%`;binnacleDDL.innerHTML=`FR maxDD<br>−${b.d}%`;setBarSemantic(binnacleVol,i===0?"good":i===3?"bad":"neutral");setBarSemantic(binnacleRet,b.r>0?"good":"neutral");setBarSemantic(binnacleDD,i===0?"good":i===3?"bad":"neutral")}binnacleBook.oninput=setBinnacle;setBinnacle();
+function setBarbell(){let i=+barbellBook.value,books=[{n:"60 / 40 middle",m:"60 SPY / 40 IEF",s:.93,d:21,c:9.7},{n:"Two-wing barbell",m:"85 BIL / 7.5 UPRO / 7.5 VIXM",s:1.58,d:4,c:4.2},{n:"Growth overlay",m:"90 SPY / 10 VIXM",s:.98,d:25,c:13.1}],b=books[i];barbellBookV.textContent=b.n;barbellMode.textContent=b.m;barbellSharpe.style.height=(24+b.s*42)+"%";barbellDD.style.height=(18+b.d*2.4)+"%";barbellCagr.style.height=(20+b.c*5)+"%";barbellSharpeL.innerHTML=`Sharpe<br>+${b.s.toFixed(2)}`;barbellDDL.innerHTML=`Max DD<br>−${b.d}%`;barbellCagrL.innerHTML=`CAGR<br>+${b.c.toFixed(1)}%`;setBarSemantic(barbellSharpe,i===1?"good":"neutral");setBarSemantic(barbellDD,i===1?"good":"bad");setBarSemantic(barbellCagr,i===2?"good":"neutral")}barbellBook.oninput=setBarbell;setBarbell();
 
 
 addEventListener("resize",()=>{drawBrash();drawBounce();drawBlunt();drawBeyond()});
