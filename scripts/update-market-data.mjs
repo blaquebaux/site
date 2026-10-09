@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -11,7 +11,11 @@ async function request(url, options = {}) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 20_000);
   try {
-    const response = await fetch(url, { ...options, signal: controller.signal });
+    const response = await fetch(url, {
+      ...options,
+      headers: { "User-Agent": UA, Accept: "text/csv,text/plain,application/json;q=0.9,*/*;q=0.8", ...(options.headers || {}) },
+      signal: controller.signal,
+    });
     if (!response.ok) throw new Error(`${response.status} ${url}`);
     return response;
   } finally {
@@ -26,13 +30,24 @@ function number(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
-async function fredSeries(id) {
-  const response = await request(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${encodeURIComponent(id)}`);
-  const rows = (await response.text()).trim().split(/\r?\n/).slice(1);
-  return rows.map((row) => {
-    const [date, raw] = row.split(",");
-    return { date, value: number(raw) };
-  }).filter((row) => row.date && row.value !== null);
+async function fredSeries(id, attempts = 3) {
+  let lastErr;
+  for (let i = 0; i < attempts; i += 1) {
+    try {
+      const response = await request(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${encodeURIComponent(id)}`);
+      const rows = (await response.text()).trim().split(/\r?\n/).slice(1);
+      const points = rows.map((row) => {
+        const [date, raw] = row.split(",");
+        return { date, value: number(raw) };
+      }).filter((row) => row.date && row.value !== null);
+      if (points.length) return points;
+      lastErr = new Error(`empty FRED series ${id}`);
+    } catch (err) {
+      lastErr = err;
+    }
+    if (i < attempts - 1) await new Promise((r) => setTimeout(r, 800 * (i + 1)));
+  }
+  throw lastErr ?? new Error(`FRED fetch failed ${id}`);
 }
 
 async function buildMacro() {
@@ -53,7 +68,18 @@ async function buildMacro() {
     return { id, label, tenor, value: latest.value, change: latest.value - previous.value, date: latest.date };
   }));
   const observations = results.filter((result) => result.status === "fulfilled").map((result) => result.value);
-  if (!observations.length) throw new Error("No FRED macro data available");
+  if (!observations.length) {
+    // FRED unreachable from the runner (datacenter-IP throttling or an outage): keep the last-good
+    // snapshot rather than throwing and taking the whole update (options included) down with it. The
+    // file is left byte-identical so there is no commit churn; its updatedAt shows the true age.
+    try {
+      const prev = JSON.parse(await readFile(resolve(outDir, "macro.json"), "utf8"));
+      console.warn("FRED unavailable; keeping previous macro.json snapshot.");
+      return prev;
+    } catch {
+      throw new Error("No FRED macro data available and no previous snapshot to fall back to");
+    }
+  }
   return { updatedAt: now.toISOString(), source: "FRED", observations };
 }
 
@@ -168,9 +194,22 @@ async function buildOptions() {
 }
 
 await mkdir(outDir, { recursive: true });
-const [macro, options] = await Promise.all([buildMacro(), buildOptions()]);
-await Promise.all([
-  writeFile(resolve(outDir, "macro.json"), `${JSON.stringify(macro, null, 2)}\n`),
-  writeFile(resolve(outDir, "options.json"), `${JSON.stringify(options, null, 2)}\n`),
-]);
-console.log(`Updated ${macro.observations.length} FRED observations and ${options.chains.length} option chains.`);
+// Build independently so a failure in one source never blocks writing the other.
+const [macroRes, optionsRes] = await Promise.allSettled([buildMacro(), buildOptions()]);
+const writes = [];
+if (macroRes.status === "fulfilled") {
+  writes.push(writeFile(resolve(outDir, "macro.json"), `${JSON.stringify(macroRes.value, null, 2)}\n`));
+} else {
+  console.error("macro update failed:", macroRes.reason?.message ?? macroRes.reason);
+}
+if (optionsRes.status === "fulfilled") {
+  writes.push(writeFile(resolve(outDir, "options.json"), `${JSON.stringify(optionsRes.value, null, 2)}\n`));
+} else {
+  console.error("options update failed:", optionsRes.reason?.message ?? optionsRes.reason);
+}
+await Promise.all(writes);
+if (!writes.length) {
+  console.error("Both macro and options updates failed; leaving snapshots unchanged.");
+  process.exit(1);
+}
+console.log(`Wrote ${writes.length} snapshot file(s): ${macroRes.status === "fulfilled" ? "macro" : "(macro skipped)"}, ${optionsRes.status === "fulfilled" ? "options" : "(options skipped)"}.`);
