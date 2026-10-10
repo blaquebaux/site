@@ -1,10 +1,10 @@
 name: Validate and publish reviewed briefings
 on:
   pull_request:
-    paths: ['bumble/briefings/**', 'scripts/publish-briefings.py', '.github/workflows/briefings.yml']
+    paths: ['bumble/briefings/**', 'scripts/publish-briefings.py', 'scripts/ingest-briefing.py', 'tests/test_briefings.py', 'tests/test_ingest.py', '.github/workflows/briefings.yml']
   push:
     branches: [main]
-    paths: ['bumble/briefings/**', 'scripts/publish-briefings.py', '.github/workflows/briefings.yml']
+    paths: ['bumble/briefings/**', 'scripts/publish-briefings.py', 'scripts/ingest-briefing.py', 'tests/test_briefings.py', 'tests/test_ingest.py', '.github/workflows/briefings.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -14,19 +14,40 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
       - run: python3 tests/test_briefings.py
       - run: python3 tests/test_ingest.py
       - run: python3 scripts/publish-briefings.py
-      - name: Publish archive on main only
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+  publish:
+    needs: validate
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - run: python3 scripts/publish-briefings.py
+      - name: Commit compiled archive
+        id: archive
         run: |
           git config user.name "blaquebaux-editorial-bot"
           git config user.email "actions@users.noreply.github.com"
           git add bumble/briefings.json
-          git diff --cached --quiet || git commit -m "Publish reviewed Bumble briefings"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Publish reviewed Bumble briefings"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Request Pages build explicitly
+        if: steps.archive.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '.status'
