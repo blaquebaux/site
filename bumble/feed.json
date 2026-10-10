@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-10T17:46:18+00:00",
- "count": 15,
+ "generated_at": "2026-10-10T17:51:59+00:00",
+ "count": 16,
  "events": [
   {
    "sender": "TAPE",
@@ -51,7 +51,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev11"
+   "id": "ev12"
   },
   {
    "sender": "TAPE",
@@ -102,7 +102,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev12"
+   "id": "ev13"
   },
   {
    "sender": "TAPE",
@@ -153,7 +153,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev13"
+   "id": "ev14"
   },
   {
    "sender": "TAPE",
@@ -204,7 +204,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev14"
+   "id": "ev15"
   },
   {
    "sender": "EDGAR",
@@ -368,6 +368,58 @@
   },
   {
    "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 4",
+   "tkr": "SMCIP",
+   "cls": "sell",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "2 insiders sold $9,004,000 open-market",
+   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
+   "evi": "insider cluster \u00b7 modest documented edge",
+   "detail": {
+    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
+    "title": "SMCIP \u00b7 2 insiders sell $9,004,000",
+    "sub": "Super Micro Computer, Inc.  (CIK 0001375365) \u00b7 open-market P/S \u00b7 filed 2026-10-09",
+    "sections": [
+     {
+      "h": "Who",
+      "list": [
+       "Liang Charles (Dir/10%/President and CEO) $4,502,000",
+       "Liu Liang Chiu-Chu Sara (Dir/10%) $4,502,000"
+      ]
+     }
+    ],
+    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev3"
+  },
+  {
+   "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D",
    "tkr": "NCMI",
    "cls": "buy",
@@ -413,7 +465,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev3"
+   "id": "ev4"
   },
   {
    "sender": "EDGAR",
@@ -462,7 +514,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev4"
+   "id": "ev5"
   },
   {
    "sender": "EDGAR",
@@ -511,7 +563,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev5"
+   "id": "ev6"
   },
   {
    "sender": "EDGAR",
@@ -560,7 +612,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev6"
+   "id": "ev7"
   },
   {
    "sender": "EDGAR",
@@ -609,7 +661,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev7"
+   "id": "ev8"
   },
   {
    "sender": "EDGAR",
@@ -658,7 +710,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev8"
+   "id": "ev9"
   },
   {
    "sender": "EDGAR",
@@ -707,7 +759,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev9"
+   "id": "ev10"
   },
   {
    "sender": "EDGAR",
@@ -756,7 +808,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev10"
+   "id": "ev11"
   }
  ]
 }
