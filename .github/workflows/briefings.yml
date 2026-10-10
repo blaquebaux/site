@@ -19,6 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 tests/test_briefings.py
+      - run: python3 tests/test_ingest.py
       - run: python3 scripts/publish-briefings.py
       - name: Publish archive on main only
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

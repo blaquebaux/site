@@ -34,6 +34,6 @@ This is a schema example, not a publishable report. Replace example sources and 
 
 Em dashes in editorial text are replaced with the chosen semicolon or colon during compilation; URLs are preserved. Prefer editing punctuation manually for sentence meaning. No raw HTML is accepted. Article links use `/bumble/#brief/<id>` and survive reload; the detail view includes the archive navigation and source links.
 
-No automatic connection to the ChatGPT scheduled briefings exists in this repository. The producing task must export complete, sourced JSON to this editorial input directory through an authorized repository update. The publisher does not generate or invent market data. The initial archive is intentionally empty because recovered reports are incomplete and their citations are unresolved.
+The existing ChatGPT briefing chat is connected by the desktop scheduled publisher described in [SCHEDULED-PUBLISHING.md](SCHEDULED-PUBLISHING.md). It checks for new completed editions every 30 minutes. It does not generate or invent market data; missing citations retain the archived verification-pending label.
 
 Legacy EDGAR/TAPE items remain visible and are labeled as source events with unverified analysis. The publisher does not retroactively verify those items. Failure of either feed is visibly reported while the other remains usable.

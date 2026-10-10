@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_thread_id": "6a920c82-1ff0-83ea-b4be-bb7adfe637d5",
+  "known_message_ids": [
+    "863d42c6-3ed6-4f16-9908-c9f966bcd1e2",
+    "74bf06d5-054e-4505-9cfc-5b1a5c09585a",
+    "0b6b1895-e7b7-4b49-b10f-5cff5b5a6e9c",
+    "8b0fb884-12a7-4152-8377-dfd7973520ae",
+    "85ae24c5-d116-4ca3-b2b9-652c550f43de",
+    "344e7081-6172-487b-9778-0537a4aaebf4",
+    "1ebfaf8d-9572-40a3-a61a-49d1ace782a5",
+    "22dfe72a-ee2b-4a8c-8ed7-14add970c8bb",
+    "1b20dc6e-2942-4313-8008-324aeaa231dd",
+    "51903bbe-ae30-4eea-a944-93578fb5dd97"
+  ],
+  "description": "Baseline through October 10, 2026. Only new completed briefing messages are automatically eligible. Earlier history is not backfilled without user request."
+}

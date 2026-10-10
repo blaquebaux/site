@@ -16,7 +16,8 @@ def validate(a, now):
         assert isinstance(a[k], str) and a[k].strip(), f"missing {k}"
     t = datetime.fromisoformat(a["published_at"])
     assert t.tzinfo and t <= now, "publication needs an offset and cannot be future dated"
-    local = t.astimezone(ET)
+    local = datetime.fromisoformat(a["edition_date"]) if a.get("edition_date") else t.astimezone(ET)
+    assert local.date() <= now.astimezone(ET).date(), "edition cannot be future dated"
     assert local.weekday() == 5 if a["kind"] == "weekly" else local.weekday() < 5, "wrong edition day in ET"
     observed = datetime.fromisoformat(a["observed_at"])
     assert observed.tzinfo and observed <= t, "invalid observation timestamp"
