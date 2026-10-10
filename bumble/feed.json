@@ -1,0 +1,762 @@
+{
+ "generated_at": "2026-10-10T17:46:18+00:00",
+ "count": 15,
+ "events": [
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "QETA",
+   "cls": "watch",
+   "pct": "+41%",
+   "pdir": "up",
+   "date": "October 10, 2026",
+   "ts": "2026-10-10T23:58",
+   "time": "today",
+   "head": "Top gainer: +41% to $16.41",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "QETA \u00b7 +41% to $16.41",
+    "sub": "top gainer \u00b7 October 10, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev11"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "MRNX",
+   "cls": "watch",
+   "pct": "+28%",
+   "pdir": "up",
+   "date": "October 10, 2026",
+   "ts": "2026-10-10T23:58",
+   "time": "today",
+   "head": "Top gainer: +28% to $183.82",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "MRNX \u00b7 +28% to $183.82",
+    "sub": "top gainer \u00b7 October 10, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev12"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "XRPN",
+   "cls": "watch",
+   "pct": "-29%",
+   "pdir": "dn",
+   "date": "October 10, 2026",
+   "ts": "2026-10-10T23:57",
+   "time": "today",
+   "head": "Top decliner: -29% to $17.09",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "XRPN \u00b7 -29% to $17.09",
+    "sub": "top decliner \u00b7 October 10, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev13"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "CABO",
+   "cls": "watch",
+   "pct": "-28%",
+   "pdir": "dn",
+   "date": "October 10, 2026",
+   "ts": "2026-10-10T23:57",
+   "time": "today",
+   "head": "Top decliner: -28% to $11.14",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "CABO \u00b7 -28% to $11.14",
+    "sub": "top decliner \u00b7 October 10, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev14"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 4",
+   "tkr": "CRNC",
+   "cls": "sell",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "5 insiders sold $2,126,656 open-market incl. the CFO",
+   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
+   "evi": "insider cluster \u00b7 modest documented edge",
+   "detail": {
+    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
+    "title": "CRNC \u00b7 5 insiders sell $2,126,656",
+    "sub": "Cerence Inc.  (CIK 0001768267) \u00b7 open-market P/S \u00b7 filed 2026-10-09",
+    "sections": [
+     {
+      "h": "Who",
+      "list": [
+       "Rodriquez Antonio (CFO) $612,912",
+       "Salinas Jennifer (EVP Chief Admin Officer) $529,224",
+       "Schanz Nils (EVP Product & Technology) $419,512",
+       "Mentz Christian (EVP, Chief Revenue Officer) $391,384",
+       "Krzanich Brian M (Dir/Chief Executive Officer) $173,624"
+      ]
+     }
+    ],
+    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev0"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 4",
+   "tkr": "IMVT",
+   "cls": "sell",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "3 insiders sold $236,507 open-market",
+   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
+   "evi": "insider cluster \u00b7 modest documented edge",
+   "detail": {
+    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
+    "title": "IMVT \u00b7 3 insiders sell $236,507",
+    "sub": "Immunovant, Inc.  (CIK 0001764013) \u00b7 open-market P/S \u00b7 filed 2026-10-09",
+    "sections": [
+     {
+      "h": "Who",
+      "list": [
+       "Stout Jay S (Chief Technology Officer) $122,117",
+       "Gloria Melanie (Chief Operating Officer) $71,846",
+       "Van Tuyl Christopher (Chief Legal Officer) $42,544"
+      ]
+     }
+    ],
+    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev1"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 4",
+   "tkr": "AHRT-PA",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "2 insiders bought $17,936 open-market",
+   "note": "Cluster buys skew bullish; strongest when the CFO or CEO leads.",
+   "evi": "insider cluster \u00b7 modest documented edge",
+   "detail": {
+    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
+    "title": "AHRT-PA \u00b7 2 insiders buy $17,936",
+    "sub": "AH Realty Trust, Inc.  (CIK 0001569187) \u00b7 open-market P/S \u00b7 filed 2026-10-09",
+    "sections": [
+     {
+      "h": "Who",
+      "list": [
+       "BIGMAN THEODORE (Dir) $11,200",
+       "Wimbush Frederick Blair (Dir) $6,736"
+      ]
+     }
+    ],
+    "pri": "Potential outcome: mild positive drift; size as a tilt, not a thesis. Confirm the buys continue."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev2"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "NCMI",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Blantyre Capital II Ltd discloses a new stake (new activist)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "NCMI \u00b7 Blantyre Capital II Ltd",
+    "sub": "National CineMedia, Inc. \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev3"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "MLCO",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Melco International Development LTD adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "MLCO \u00b7 Melco International Development LTD",
+    "sub": "Melco Resorts & Entertainment LTD \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev4"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "OMTK",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Hard Rock Holdco LLC discloses a new stake (new activist)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "OMTK \u00b7 Hard Rock Holdco LLC",
+    "sub": "Omnitek Engineering Corp \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev5"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "SYRE",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Fairmount Funds Management LLC adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "SYRE \u00b7 Fairmount Funds Management LLC",
+    "sub": "Spyre Therapeutics, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev6"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "KARX",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Morsevo Trade, Inc. adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "KARX \u00b7 Morsevo Trade, Inc.",
+    "sub": "Karbon-X Corp. \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev7"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "GWLL",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Zhou Ming discloses a new stake (new activist)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "GWLL \u00b7 Zhou Ming",
+    "sub": "GOLDENWELL BIOTECH, INC. \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev8"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "GGROW",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Gold Sino Assets Ltd adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "GGROW \u00b7 Gold Sino Assets Ltd",
+    "sub": "Gogoro Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev9"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "DPU",
+   "cls": "buy",
+   "date": "October 9, 2026",
+   "ts": "2026-10-09",
+   "time": "10-09",
+   "head": "Xu Ruilin discloses a new stake (new activist)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "DPU \u00b7 Xu Ruilin",
+    "sub": "Nexpu Ltd. \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev10"
+  }
+ ]
+}

@@ -1,0 +1,1348 @@
+{
+ "apac": {
+  "asset_class": "em_intl",
+  "curated": true,
+  "desc": "Directional Asia-Pacific sleeve (qualified keeper). [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "backfill": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Inversion H: do extreme overnight gaps mean-revert intraday? Null \u2014 gap-ups CONTINUE (+0.08% O->C), fading loses net; any snap-back is intraday-only (mirror of ",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "backlash": {
+  "asset_class": "vol_options",
+  "curated": false,
+  "desc": "Max-pain pin vs gamma-snap (options-expiry inversion, N) \u2014 STUB, blocked on an options open-interest + intraday feed.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "backsliders": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Falling-knife shorts \u2014 the long bounce is the edge. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "backstop": {
+  "asset_class": "rates",
+  "curated": true,
+  "desc": "The liability-driven book capstone (pension/insurer). KEEPER on the funded-ratio mandate: +5.9%/yr surplus over the liability at funded-ratio drawdown -22% vs a",
+  "role": "capstone/allocator",
+  "status": "keeper",
+  "styles": [
+   "tail/hedge",
+   "macro/regime"
+  ]
+ },
+ "backwards": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Risk-managed (vol-scaled) momentum, a reverse test. Partial: vol-scaling's skew repair IS momentum-specific as claimed, but immaterial in-sample (2009 crash pre",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "balanced": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The value factor & margin of safety \u2014 still crucial? Value LAGGED growth risk-adjusted (a different beta, not alpha), crashed HARDER (pure value -51% vs -37% \u2014 ",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "value",
+   "macro/regime"
+  ]
+ },
+ "ballast": {
+  "asset_class": "fx",
+  "curated": false,
+  "desc": "Dollar-neutral construction vs post-hoc regress-out-beta (simplified AlphaZeroBeta proxy, no RL). Conditional keeper: building beta-neutrality in beats hedging ",
+  "role": "market-neutral",
+  "status": "keeper",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "balsamic": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Dark and rich in holdings \u2014 a breakthrough CORE + an uncorrelated managed-futures TREND satellite (70/30 risk). The one outside sleeve that lifts the mega-capst",
+  "role": "capstone/allocator",
+  "status": "research",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bands": {
+  "asset_class": "rates",
+  "curated": true,
+  "desc": "Fixed-income relative value & securitized (curve shape, breakeven/TIPS, agency MBS) \u2014 honest null: ETF-level curve alpha is a regime-bound short-duration bet, n",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV",
+   "carry/income"
+  ]
+ },
+ "bandwagon": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Inversion M: once smart money is crowded via public trackers, does the edge vanish? Null/supported \u2014 NANC/KRUZ track-or-lag SPY (alpha -0.5% / -4.1%); crowded s",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "positioning/alt-data"
+  ]
+ },
+ "bankroll": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Systematic options income. Naive buy-write (XYLD/QYLD) is a drag (caps upside, negative M2), but selective/active (DIVO +2.0% M2, -14% DD, beats SPY) and calm-r",
+  "role": "carry/income",
+  "status": "validation",
+  "styles": [
+   "short-vol/premium",
+   "carry/income"
+  ]
+ },
+ "banyan": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The endowment model (Yale/Swensen) replicated in liquid form. NULL: dominated by a boring 60/40 (replica Sharpe +0.57/-35% DD vs 60/40 +0.93/-21%); it's global ",
+  "role": "capstone/allocator",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "barbell": {
+  "asset_class": "vol_options",
+  "curated": false,
+  "desc": "Taleb's barbell \u2014 safe core + convex sliver vs the mediocre middle. CONDITIONAL KEEPER: the two-wing barbell (85 cash/7.5 UPRO/7.5 VIXM) dominates a 60/40 on Sh",
+  "role": "long-beta",
+  "status": "keeper",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "barbican": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Tax-loss / turn-of-the-year (January effect) reversal. Null: the small-cap January premium has decayed/reversed and the large-cap loser-bounce is noise net of c",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV",
+   "short-vol/premium"
+  ]
+ },
+ "bargain": {
+  "asset_class": "credit",
+  "curated": false,
+  "desc": "Closed-end-fund discount RV. Conditional, data-gated: the discount-reversion edge shows up on a price proxy (Sharpe +0.87) but needs a NAV feed to be real; PCEF",
+  "role": "long-beta",
+  "status": "conditional",
+  "styles": [
+   "value",
+   "mean-reversion/RV"
+  ]
+ },
+ "barrage": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Opening-auction order-flow imbalance \u2014 STUB, blocked on an exchange opening-imbalance feed.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "barrel": {
+  "asset_class": "commodity",
+  "curated": true,
+  "desc": "Commodity curve roll-carry. Conditional/null-ish: the contango bleed is the headline (UNG -22%/yr, avoid front-month ETFs); a clean roll-carry harvest needs fut",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "basel": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "US banks are ~one regulated factor (economy + short duration) \u2014 no price-alpha to pick; a coherent macro/known-beta sleeve, not a keeper. The anti-Bio. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "basic": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Convertible arbitrage & capital-structure relative value \u2014 honest null: the ETF-packaged version is equity beta plus a liquidity crash risk, not a premium.",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "basket": {
+  "asset_class": "credit",
+  "curated": false,
+  "desc": "Exchange (swap) funds, examined \u2014 all Reg D private, now democratized to accredited/$100k via Cache. No alpha (index minus fee); the product is the capital-gain",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bastion": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "The insurance capstone -- a standalone NULL (bear) rehabilitated as a portfolio keeper. bear loses alone (-0.34 Sharpe) but at -0.82 corr it lifts the whole boo",
+  "role": "capstone/allocator",
+  "status": "keeper",
+  "styles": [
+   "tail/hedge"
+  ]
+ },
+ "baton": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Macro-driven factor rotation. Null: macro factor-timing ties (doesn't beat) a static multi-factor blend net of turnover, fails its one job in 2022, and is teste",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "battered": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Distressed assets that survive to pay out \u2014 fallen angels (ANGL), high-yield, the MF Global playbook (right thesis, killed by leverage). A conditional-keeper ca",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "bazaar": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "EM debt & FX carry. Conditional: a real carry stream (EMB cleanest) but substantially a short-dollar bet (beta to USD -0.62) with a crash-correlated tail; overl",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "beacon": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Kalman dynamic-beta pairs vs static OLS. Honest null: dynamic hedging tightens the gross spread but its churn makes it net-worse; neither selection nor the filt",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "beaming": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Fleury OPPW TQQQ strategy (static vs adaptive). Null: the headline Sharpe is a daily-bar fill artifact; the executable version is 3x-NDX leverage beta that lose",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bear": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The honest bear \u2014 a regime-gated short (the only non-suicidal kind, since perma-short bleeds the risk premium). Tested full-cycle: it halves the bleed but still",
+  "role": "hedge/short",
+  "status": "null",
+  "styles": [
+   "tail/hedge"
+  ]
+ },
+ "bedrock": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Spread-over-liabilities carry \u2014 the insurer's net carry. CONDITIONAL/credit-risk premium: the duration-neutral credit spread (LQD-IEF) is real but thin (+1.8%/y",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "believer": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The faith benchmark capstone: buy-and-hold the keepers, never rebalance. Earns +0.92 Sharpe but drifts into growth/PE concentration (-25% DD); disciplined risk ",
+  "role": "capstone/allocator",
+  "status": "validation",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "belligerent": {
+  "asset_class": "commodity",
+  "curated": false,
+  "desc": "The aggressive/HF book capstone \u2014 bulkhead's opposite number. Vol-targeted leverage on the return-seeking keepers (QQQ/MTUM/GLD/EMB). KEEPER: beats SPY on CAGR ",
+  "role": "capstone/allocator",
+  "status": "keeper",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bellwether": {
+  "asset_class": "credit",
+  "curated": false,
+  "desc": "Cross-asset lead-lag canary signal (copper/gold, AUD/JPY, HY credit -> equities). Null: the canaries are COINCIDENT (same-day corr +0.55) not predictive (next-d",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "belt-tighteners": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The inflation domino \u2014 belt-tightening cascades across sectors (XLY to XLP to XLB to XLU to XLRE to XLE), then globally when the US and China sneeze together. A",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "beltway": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Democratic-era darlings (Biden/Obama/Clinton) \u2014 the thesis runs backwards: party-aligned baskets lose under their own party (clean energy \u221221%/yr under Biden), ",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bemused": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The know-nothing benchmark: random allocation over the keepers -- the null hypothesis for the allocation layer. Dual verdict: allocation skill is real (breakthr",
+  "role": "capstone/allocator",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "benchmark": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Market internals as a risk-regime read \u2014 internals coincide (don't lead), but the composite gates SPY net of cost (Sharpe +0.87\u2192+1.11). Regime emitter built: pu",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "benefactors": {
+  "asset_class": "credit",
+  "curated": false,
+  "desc": "Foreign creditors of the US \u2014 does holding Treasuries help a country's market? FRED data (Japan/China). Honest null: Treasury buying is weakly, coincidentally l",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bequest": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Systematic dividend capture (friction-adjusted) \u2014 STUB, blocked on ex-dividend dates/amounts.",
+  "role": "carry/income",
+  "status": "stub",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "bespoke": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Residual (idiosyncratic) momentum vs raw price momentum. Null-ish this window: residualizing gives ~the same Sharpe on large caps 2016-26; the documented edge n",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "bets": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The gambling complex as a sector \u2014 sports betting, casinos, prediction markets (Kalshi/Polymarket private). A durable 'house always wins' premium, or levered co",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "positioning/alt-data"
+  ]
+ },
+ "bevy": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Crowded-loser short-leg filter for momentum crashes. Null: on large-cap/post-2009 price data the crash sits in the WINNER leg, not a loser squeeze; the thesis n",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "beyond": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Cross-section reversal-to-momentum sleeve. [Validation]",
+  "role": "market-neutral",
+  "status": "validation",
+  "styles": [
+   "momentum/trend",
+   "mean-reversion/RV"
+  ]
+ },
+ "bezel": {
+  "asset_class": "crypto",
+  "curated": false,
+  "desc": "Structured-product fee autopsy \u2014 buffered/defined-outcome ETFs (BLOCK's 'where the fee lives', tradable). CONDITIONAL: the buffer is symmetric beta-reduction dr",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "bidding": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Index-inclusion & passive-flow drift \u2014 STUB, blocked on an index-rebalance announcement feed.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "event/activist"
+  ]
+ },
+ "bide": {
+  "asset_class": "rates",
+  "curated": true,
+  "desc": "Cash as a position \u2014 'wait for the fat pitch' (Baupost/Klarman). NULL: a static 60/40 dominates it on Sharpe (0.93 vs 0.59), return AND drawdown \u2014 78% cash is d",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "low-vol"
+  ]
+ },
+ "bidirectional": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Contrarian-sentiment asymmetry. Confirmed: contrarian at bottoms (a bull-flattered dip-bounce), momentum-confirmation at tops (fade only under tightening) - a r",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "momentum/trend",
+   "positioning/alt-data",
+   "macro/regime"
+  ]
+ },
+ "bifurcate": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Capital-structure divergence (equity vs credit). Null at the index level: credit and equity are coincident not lead-lag, the divergence doesn't resolve, and the",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "event/activist",
+   "mean-reversion/RV"
+  ]
+ },
+ "bigbrother": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "America's new SOEs \u2014 when Washington takes an equity stake (Intel, CHIPS, bailouts), does government backing prop up the stock or drag it like a China SOE? Two ",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "event/activist",
+   "macro/regime"
+  ]
+ },
+ "bight": {
+  "asset_class": "vol_options",
+  "curated": false,
+  "desc": "Volatility-surface skew (25-delta risk reversal) mean-reversion \u2014 STUB, blocked on an options IV surface.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "bind": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The rest of the hedge-fund landscape (Millennium/Citadel/pod shops) via the only price window \u2014 liquid-alt replicators. Diagnostic null: watered-down beta (+3.5",
+  "role": "market-neutral",
+  "status": "research",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "binnacle": {
+  "asset_class": "muni",
+  "curated": false,
+  "desc": "LDI duration-matching \u2014 immunize the funded ratio. VALIDATION: matching asset duration to a long liability drives funded-ratio vol toward zero (matched ~0% vs e",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bio": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Biotech idiosyncrasy (the anti-Basel) \u2014 high dispersion but not price-predictable; a systematic stock-picking null. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bitdollar": {
+  "asset_class": "crypto",
+  "curated": true,
+  "desc": "Governed crypto trend sleeve (BTC/ETH). [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "bite": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Event-driven / merger arbitrage. Honest null: MNA is watered-down (excess-over-cash +0.7%/yr, skew -2.36, crisis-corr +0.70 -- deals break when markets fall), f",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "event/activist"
+  ]
+ },
+ "blackstone": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Listed private-equity managers (BX/KKR/Apollo/Carlyle/Ares) \u2014 a levered pro-cyclical market/credit factor (beta-SPY 1.39, credit +1.55), not diversification. Go",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "blank": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "SPACs / de-SPAC decay \u2014 the complex is genuinely bad, but the short is run over by the right tail then buried by borrow; the sound trust carry needs data beyond",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "event/activist"
+  ]
+ },
+ "bleacher": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Selling vol at the level (CBOE VARB-X). Null/landmine: the 19%/6.4%-std brochure is a calm window ending the month of Volmageddon; true vol 33%, maxDD -72%; the",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "short-vol/premium"
+  ]
+ },
+ "bleed": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "Two-flavour crash-insurance / tail-hedge sleeve. [Validation]",
+  "role": "hedge/short",
+  "status": "validation",
+  "styles": [
+   "tail/hedge"
+  ]
+ },
+ "blemish": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Inversion F: is the Quality premium just value in disguise? Null \u2014 quality is ~SPY-like in ETF form and the valuation conditioning runs the wrong way; no revers",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "value",
+   "quality",
+   "mean-reversion/RV",
+   "short-vol/premium"
+  ]
+ },
+ "blend": {
+  "asset_class": "commodity",
+  "curated": true,
+  "desc": "Processing-margin spreads (crack/crush/spark). Conditional: the crack spread is an independent, positive-skew diversifier (+0.43 Sharpe) but its return is reali",
+  "role": "market-neutral",
+  "status": "conditional",
+  "styles": [
+   "mean-reversion/RV",
+   "carry/income"
+  ]
+ },
+ "blink": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Short-horizon / microstructure premia \u2014 overnight-vs-intraday, 1-week reversal. Honest friction-null: real gross, erased net; the liquidity rent is the spread y",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "bloated": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Honest null: bolting NVDA onto the diversified capstones lifts every Sharpe it touches \u2014 and gets worse. Passes the outside-sleeve law's arithmetic, fails its s",
+  "role": "capstone/allocator",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bloodhound": {
+  "asset_class": "credit",
+  "curated": false,
+  "desc": "Does credit lead equity? (the bond knows first). Null at the ETF level: the credit impulse (HY minus duration Treasury) is strongly coincident with SPY (+0.72 s",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "blue": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Blue camp-rotation sleeve (brown/blue pair). [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "blunt": {
+  "asset_class": "commodity",
+  "curated": true,
+  "desc": "Short-horizon tactical sleeve (paper A/B leg). [Validation]",
+  "role": "market-neutral",
+  "status": "validation",
+  "styles": [
+   "mean-reversion/RV",
+   "momentum/trend"
+  ]
+ },
+ "blurred": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Deliberately uncorrelated names \u2014 a floor, not an edge. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bodega": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "The dealer book capstone (sell-side: sell structure/income/insurance, be the house). CONDITIONAL: steady low-vol carry (+6.9%/yr, Sharpe +0.73) but structurally",
+  "role": "capstone/allocator",
+  "status": "conditional",
+  "styles": [
+   "low-vol",
+   "carry/income",
+   "tail/hedge"
+  ]
+ },
+ "bogle": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Bogle's bet, quantified \u2014 the low-cost-index HURDLE the family must clear. VOO Sharpe +0.89 is the bar: broader diversification cost return this decade, 0/7 Van",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "low-vol"
+  ]
+ },
+ "bollinger": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Compression breakout system, tested cross-symbol vs buy-hold. Null: no directional edge, loses to holding the stock; '+899% on AAPL' is beta + selection, and co",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bombs-away": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "Fragility monitor \u2014 the tail's smoke detector. Honestly not a crash-timer (the composite fails to warn); its value is a per-tell dashboard + sizing the always-o",
+  "role": "hedge/short",
+  "status": "research",
+  "styles": [
+   "tail/hedge",
+   "macro/regime"
+  ]
+ },
+ "bonds": {
+  "asset_class": "rates",
+  "curated": true,
+  "desc": "The bond\u2013equity relationship \u2014 a governed regime overlay + regime-signal emitter. Live driver built; validation PASS as an overlay (cuts equity drawdown 41% ful",
+  "role": "hedge/short",
+  "status": "live",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bonfire": {
+  "asset_class": "commodity",
+  "curated": false,
+  "desc": "Commodity seasonality \u2014 real calendar premium or backtest artifact? Honest out-of-sample test (expanding window, no look-ahead). NULL: in-sample best-months loo",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV",
+   "short-vol/premium"
+  ]
+ },
+ "boom": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Mega-cap blue-chip momentum tilt (vol-targeted, per-name capped) \u2014 governed live driver, validation PASS. Bonds-regime overlay wired but OFF (full-cycle: no ben",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "momentum/trend",
+   "quality"
+  ]
+ },
+ "bootstrap": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The hedge fund in an ETF \u2014 are HF returns rentable factor beta? (Lo, on QAI/DBMF/MNA/BTAL). CONDITIONAL: multi-strat clone QAI is 75% replicable beta, ~0 alpha,",
+  "role": "market-neutral",
+  "status": "research",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bore": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Beta-hedged cross-sectional momentum sleeve. [Validation]",
+  "role": "market-neutral",
+  "status": "validation",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "borough": {
+  "asset_class": "muni",
+  "curated": true,
+  "desc": "Municipal / tax-exempt RV. Conditional keeper for taxable capital: low-vol tax-advantaged carry (~+3.3% tax-equivalent, Sharpe +0.46 vs IEF +0.19); the edge is ",
+  "role": "carry/income",
+  "status": "keeper",
+  "styles": [
+   "carry/income",
+   "low-vol"
+  ]
+ },
+ "bossy": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The 3rd-place capstone allocator: CONVICTION / concentration / leverage over the keepers. Concentration underperforms risk parity risk-adjusted (+0.68/+0.72, de",
+  "role": "capstone/allocator",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bottom": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Drawdown-bounce sleeve. [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "boulder": {
+  "asset_class": "commodity",
+  "curated": true,
+  "desc": "Cross-asset trend / managed futures. Conditional: a genuinely uncorrelated diversifier (not a dollar bet - brics null rejected) that pays in slow bears, but the",
+  "role": "long-beta",
+  "status": "conditional",
+  "styles": [
+   "momentum/trend",
+   "macro/regime"
+  ]
+ },
+ "boulevard": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "REIT sub-sector rotation \u2014 a real edge, or one rate factor? NULL: sub-sectors are one factor (1.2 effective bets, +0.78 corr); a top-2 momentum rotation (+0.4% ",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "momentum/trend",
+   "value"
+  ]
+ },
+ "bounce": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Conditional diversifier sleeve (beta ~0). [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "boundless": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The kitchen-sink capstone -- risk parity over EVERYTHING (keepers + all near-keepers, no curation). More is not better: boundless +1.51 < curated brigade +1.54 ",
+  "role": "capstone/allocator",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bounty": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Carry \u2014 the ETF-harvestable slice (credit/term/EM spread) is a crash-risk premium, not clean alpha: weak +0.39 Sharpe, corr-SPY +0.80, skew -2.02, crisis-corr +",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "bourse": {
+  "asset_class": "fx",
+  "curated": true,
+  "desc": "G10 FX carry + trend. Null: carry is thin and crash-prone (confirms bounty's weak-carry note), trend too weak on six liquid crosses to stand alone.",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "bowed": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Preferred stock / hybrids. Null-as-alpha: bond-like return but worse risk-adjusted than bonds, with a -29% equity crash (skew -3.73) - levered credit+duration, ",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "bowline": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The glide path (target-date de-risking) \u2014 an edge, or just a schedule? CONDITIONAL: no return edge (glide ~= its own average static allocation, timing neutral);",
+  "role": "long-beta",
+  "status": "research",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "brace": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "The vol-risk-premium harvest \u2014 bleed's counterparty. Honest null: selling vol is the insurer's side (negative skew), it lags the index gated or not (gating cuts",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "short-vol/premium"
+  ]
+ },
+ "braid": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Dynamic laddered, delta-selected buy-write (CALRD/RUTD). Conditional: laddering genuinely removes single-date timing luck and delta-strikes keep upside, but it'",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "short-vol/premium"
+  ]
+ },
+ "branch": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Supply-chain network momentum \u2014 STUB, blocked on a supplier/customer relationship graph.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "brash": {
+  "asset_class": "crypto",
+  "curated": true,
+  "desc": "Higher-volatility crypto trend sleeve. [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "bravado": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "The hall-of-fame audit \u2014 edge, convexity-luck, or ruin? A diagnostic: the celebrated bets (Soros/LTCM/Big Short/MF Global/Volmageddon/Taleb) are survivorship. T",
+  "role": "market-neutral",
+  "status": "research",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "brawl": {
+  "asset_class": "rates",
+  "curated": false,
+  "desc": "The economics horse-race \u2014 whose doctrine wins by P&L? Capstone on doctrine not mandate. No school wins outright: raw return \u2192 equity (Behavioral ~ Chicago, so ",
+  "role": "capstone/allocator",
+  "status": "research",
+  "styles": [
+   "tail/hedge"
+  ]
+ },
+ "breach": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "Conditional tail-exceedance regime, pre-registered OOS. Real and out-of-sample-stable (and sharper than vol-state) but forecasts magnitude not direction: a risk",
+  "role": "hedge/short",
+  "status": "research",
+  "styles": [
+   "tail/hedge"
+  ]
+ },
+ "breakthrough": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The capstone meta-allocator \u2014 assemble the family's keepers (spine/trend/tail/gulf/growth/PE) into one risk-budgeted portfolio. It COMPOUNDS: Sharpe +1.16 (best",
+  "role": "capstone/allocator",
+  "status": "keeper",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "brics": {
+  "asset_class": "em_intl",
+  "curated": true,
+  "desc": "The tradable core of BRICS \u2014 the Gulf pocket (KSA/UAE/QAT) as a low-corr EM diversifier. Live driver + dollar-regime overlay (validated ON: Sharpe +0.48\u2192+0.51, ",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "bridge": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Statistical arbitrage / pairs \u2014 the ideal portable-alpha VEHICLE (market-neutral, crisis-corr +0.09, tail-safe) with no alpha left to carry. A rules-based pairs",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "bridgewater": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Bridgewater's All-Weather (replicable) & Pure Alpha (a data gap). All-Weather = a low-vol risk-parity compounder the family spine already beats (corr 0.96). Gov",
+  "role": "capstone/allocator",
+  "status": "live",
+  "styles": [
+   "low-vol",
+   "tail/hedge",
+   "macro/regime"
+  ]
+ },
+ "bridle": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Betting-Against-Beta (BAB). Null this window: low-beta didn't beat high-beta in the growth bull; the levered book's Sharpe is residual beta + leverage, not a cl",
+  "role": "market-neutral",
+  "status": "null",
+  "styles": [
+   "low-vol"
+  ]
+ },
+ "brief": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Calendar/seasonal/overnight premia \u2014 the premia you earn in a blink. The equity premium lives overnight (IWM intraday is negative!), but it's un-harvestable net",
+  "role": "carry/income",
+  "status": "research",
+  "styles": [
+   "mean-reversion/RV",
+   "short-vol/premium"
+  ]
+ },
+ "brier": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Order-flow imbalance in prediction markets + the gate's ground truth. Binary contracts resolve 0/1, so pricing error (Brier score) is observable \u2014 the one marke",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "brigade": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The expanded capstone -- risk parity over the keepers PLUS the curated void-filling near-keepers (crypto/defensive/reversal). Curated breadth beats the pure boo",
+  "role": "capstone/allocator",
+  "status": "validation",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "brilliant": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The 2nd-place capstone allocator: the OPTIMIZER (max-Sharpe / min-variance) over the keepers. Clears the Bogle hurdle but can't beat breakthrough's humble risk ",
+  "role": "capstone/allocator",
+  "status": "validation",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "brittle": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "Near-expiry far-OTM options \u2014 the short-vol premium is a trap; naked short-vol rejected. [Null]",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "short-vol/premium"
+  ]
+ },
+ "broaching": {
+  "asset_class": "vol_options",
+  "curated": false,
+  "desc": "Post-event volatility bleed (sell straddles after earnings/FDA) \u2014 STUB, blocked on options chains + event calendar.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "broad": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Broad/thematic ETF exposure \u2014 managed-QQQ trend + vol-target keeper (the leverage wrapper itself was rejected). Governed live driver, validation PASS; consumes ",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "momentum/trend",
+   "macro/regime"
+  ]
+ },
+ "broadcast": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Post-Earnings Announcement Drift (PEAD) \u2014 STUB, blocked on an earnings/SUE feed.",
+  "role": "long-beta",
+  "status": "stub",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "brown": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Brown camp-rotation sleeve (brown/blue pair). [Validation]",
+  "role": "long-beta",
+  "status": "validation",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "brownstone": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Real estate as an archetype \u2014 income, rate-beta, or a landmine? NULL as alpha: equity REITs are ~0.8 SPY + 0.24 TLT beta with NEGATIVE residual alpha (adding 10",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "brunt": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Skeptic test of a claimed Sharpe>13 'drift-regime' factor. Implausible/not reproducible: a faithful price-only analog loses money, and the 'regime' is just a mo",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "momentum/trend",
+   "macro/regime"
+  ]
+ },
+ "brute-force": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Propped-up-by-flows sleeve \u2014 fade rejected. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bubble": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "The AI complex as one crowded factor \u2014 a risk diagnostic. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "positioning/alt-data"
+  ]
+ },
+ "buckler": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Annuity / guaranteed-income replication (buffer + bond ladder). CONDITIONAL: the investment side is a cheaply-replicable bond ladder + equity sliver; the ~2.5%/",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "budget": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "Systematic put/call selling \u2014 the '16%/yr at 4% drawdown' claim taken apart. Null/landmine: a window trick + collateral yield + tiny delta; put-selling is the i",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "short-vol/premium"
+  ]
+ },
+ "buffett": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Buffett in fragments \u2014 a QUAL/USMV/VLUE/MOAT blend. Live driver built but validation MIXED on full history: market-like (DD \u221235% \u2248 SPY), not genuinely defensive",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "quality",
+   "value",
+   "low-vol"
+  ]
+ },
+ "bulk": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Defense & military sector \u2014 a moderate common factor; systematic stock-picking null. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bulkhead": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "The preservation capstone \u2014 the family-office book + a convex tail layer. KEEPER: beats 60/40, all-weather and the aggressive book on every preservation axis \u2014 ",
+  "role": "capstone/allocator",
+  "status": "keeper",
+  "styles": [
+   "tail/hedge",
+   "macro/regime"
+  ]
+ },
+ "bull": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "A naive long-growth book made ownable \u2014 equal-weight QQQ/VUG/XLK, governed, with balanced's rate_regime overlay validated ON by default: de-risking when rates r",
+  "role": "long-beta",
+  "status": "live",
+  "styles": [
+   "momentum/trend",
+   "quality"
+  ]
+ },
+ "bullion": {
+  "asset_class": "commodity",
+  "curated": true,
+  "desc": "Miners vs metal. Conditional: miners are ~1.9x-levered gold with a -4.3%/yr idiosyncratic drag (a bad way to own gold); the market-neutral GDX/GLD ratio RV (Sha",
+  "role": "market-neutral",
+  "status": "conditional",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "bulwark": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Dynamic 52-week-high momentum (D52WH). Conditional: the dynamic anchor's crash-dodge is confirmed and material (halves left skew) but buys the calm with return ",
+  "role": "long-beta",
+  "status": "conditional",
+  "styles": [
+   "momentum/trend"
+  ]
+ },
+ "bunker": {
+  "asset_class": "rates",
+  "curated": false,
+  "desc": "Inversion L: are low-vol stocks a long-duration bond trap in rising rates? Null/rejected \u2014 near-zero daily corr to Treasuries and no underperformance when rates",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "low-vol"
+  ]
+ },
+ "burdensome": {
+  "asset_class": "credit",
+  "curated": true,
+  "desc": "Catastrophe / reinsurance risk premium. Conditional: real, compensated, and distinct from selling puts (56% residual) - but a specialty-equity bet with full mar",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "short-vol/premium",
+   "carry/income"
+  ]
+ },
+ "bureaucrats": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Do lawmakers beat the market? Congressional trading under the STOCK Act via the NANC/KRUZ tracker ETFs (2023+) plus hand-supplied disclosures. Insider edge, or ",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "positioning/alt-data"
+  ]
+ },
+ "burrito": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "The 'TACO Index' policy-pressure reversal. Null/not-properly-testable: the testable panic-fade is the known dip-bounce that loses to buy-hold; the policy compos",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV"
+  ]
+ },
+ "burry": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Michael Burry, re-examined \u2014 the style is mostly equity beta, buying the hated nulls out, fading froth is a -98% widow-maker, and his concentration is a ruin ma",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "unclassified"
+  ]
+ },
+ "bushel": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "VIX term-structure roll-carry \u2014 harvest the contango, gated. Raw short-vol is a landmine (SVXY -95%, skew -7.9); a term-structure gate shrinks the crater (-64% ",
+  "role": "carry/income",
+  "status": "conditional",
+  "styles": [
+   "short-vol/premium",
+   "carry/income"
+  ]
+ },
+ "buttress": {
+  "asset_class": "vol_options",
+  "curated": true,
+  "desc": "Inversion G: can a convex tail hedge let levered momentum beat unlevered? Null for alpha / conditional insurance \u2014 Sharpe-neutral (+0.80 vs +0.79); hedge is a r",
+  "role": "hedge/short",
+  "status": "research",
+  "styles": [
+   "tail/hedge"
+  ]
+ },
+ "buyouts": {
+  "asset_class": "equity",
+  "curated": true,
+  "desc": "Post-buyout targets \u2014 is the 'cash out' a pump-and-dump? The private leg is invisible; the testable exit is sponsor-backed IPOs/re-IPOs + post-lockup drift (a s",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "event/activist"
+  ]
+ },
+ "buzz": {
+  "asset_class": "equity",
+  "curated": false,
+  "desc": "Alt-data/sentiment via ETF proxies (social BUZZ / 13F GURU / insider KNOW / buyback PKW): NULL \u2014 every live fund underperforms SPY net of the growth tilt, and t",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "mean-reversion/RV",
+   "positioning/alt-data"
+  ]
+ },
+ "byproduct": {
+  "asset_class": "crypto",
+  "curated": true,
+  "desc": "Crypto beyond trend \u2014 futures basis carry, crypto-equity basis (MSTR/COIN), funding/staking yield. Honest null: on-screen crypto carry is mostly collateral yiel",
+  "role": "carry/income",
+  "status": "null",
+  "styles": [
+   "carry/income"
+  ]
+ },
+ "emea": {
+  "asset_class": "em_intl",
+  "curated": true,
+  "desc": "Europe/Middle East/Africa \u2014 US beta wearing a flag (11 ETFs \u2192 1.8 bets), FX drag, no rotation edge. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ },
+ "latam": {
+  "asset_class": "em_intl",
+  "curated": true,
+  "desc": "Latin America regional sleeve. [Null]",
+  "role": "long-beta",
+  "status": "null",
+  "styles": [
+   "macro/regime"
+  ]
+ }
+}

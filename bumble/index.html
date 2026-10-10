@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BUMBLE / BlaqueBere : the signal terminal</title>
+<meta name="description" content="BUMBLE: a live signal terminal of significant market events (insider clusters, activist stakes, tape movers) routed to the Blaque Baux sleeve library, in a BlaqueBere handheld.">
+<link rel="canonical" href="https://www.blaquebaux.com/bumble/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Carter Warrens">
+<meta property="og:title" content="BUMBLE / BlaqueBere : the signal terminal">
+<meta property="og:description" content="Significant market events routed to the Blaque Baux sleeve library, in a BlaqueBere handheld.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://www.blaquebaux.com/bumble/">
+<meta property="og:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png"><meta name="theme-color" content="#050608">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+:root{--bg:#050608;--fg:#f4f4f1;--muted:#858b91;--line:#252b32;--green:#35e38a;--red:#ff5d6c;--amber:#d3b85f;--screen:#0a1410;--screenglow:#0d1a14}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#050608 60%);color:var(--fg);font-family:"Space Grotesk",sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:30px 16px 60px}
+.caption{font:9px "IBM Plex Mono";letter-spacing:.18em;text-transform:uppercase;color:#6b7178;margin-bottom:20px;text-align:center;max-width:560px;line-height:1.7}
+.caption b{color:var(--amber);font-weight:500}
+.bb{width:372px;border-radius:30px;padding:16px 14px 12px;background:linear-gradient(180deg,#2a2d31,#141619 32%,#101215 70%,#17191c);box-shadow:0 0 0 1px #000,0 2px 0 1px #3a3d41 inset,0 40px 80px -30px #000,0 0 120px -40px #35e38a22;position:relative}
+.bb-top{display:flex;align-items:center;justify-content:center;gap:12px;height:30px;position:relative}
+.speaker{width:46px;height:6px;border-radius:4px;background:linear-gradient(90deg,#0a0b0d,#2a2d31,#0a0b0d);box-shadow:0 1px 0 #3a3d41}
+.brand{position:absolute;right:12px;font:8px "IBM Plex Mono";letter-spacing:.2em;color:#6b7178;text-transform:uppercase}.brand b{color:#9aa0a6;font-weight:600}
+.screen{margin-top:10px;border-radius:7px;background:linear-gradient(180deg,var(--screenglow),var(--screen));border:1px solid #000;box-shadow:0 0 0 2px #26282c,0 0 40px -6px #35e38a22 inset;overflow:hidden}
+.statusbar{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;font:8px "IBM Plex Mono";letter-spacing:.12em;color:#5f8f78;border-bottom:1px solid #16271f;background:linear-gradient(180deg,#0c1712,#0a130f)}.statusbar .sig b{color:var(--green)}
+.apphead{display:flex;align-items:center;gap:8px;padding:9px 11px;border-bottom:1px solid #16271f;font:600 13px "IBM Plex Mono";letter-spacing:.16em;color:#dff5ea}
+.apphead .live{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.apphead .sub{font:8px "IBM Plex Mono";letter-spacing:.14em;color:#5f8f78;font-weight:400;margin-left:auto}
+.apphead .back{cursor:pointer;color:var(--green);font-size:15px;line-height:1;margin-right:2px}.apphead .back:hover{color:#8affc9}
+.view{height:452px;overflow-y:auto}.view::-webkit-scrollbar{width:0}
+.datesep{display:flex;align-items:center;gap:9px;padding:9px 11px 7px;color:#4f7d68;font:7px "IBM Plex Mono";letter-spacing:.18em;text-transform:uppercase}.datesep::before,.datesep::after{content:"";height:1px;background:#14231b;flex:1}
+.msg{display:flex;border-bottom:1px solid #112019;cursor:pointer;transition:background .15s}.msg:hover{background:#0c1813}
+.msg .accent{width:3px;flex:0 0 3px}.msg.buy .accent{background:var(--green)}.msg.sell .accent{background:var(--red)}.msg.watch .accent{background:var(--amber)}.msg.brief .accent{background:linear-gradient(180deg,var(--green),var(--amber))}
+.msg .body{padding:9px 11px 10px 9px;min-width:0;flex:1}
+.meta{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.chip{font:7px "IBM Plex Mono";letter-spacing:.1em;padding:2px 5px;border-radius:3px;text-transform:uppercase;border:1px solid;white-space:nowrap}
+.chip.edgar{color:#8fd7ff;border-color:#2b4a5c;background:#0c1a22}.chip.tape{color:#9affc9;border-color:#204a37;background:#0a1a13}.chip.chain{color:#ffd79a;border-color:#4a3a20;background:#1a140a}.chip.wire{color:#ff9aa8;border-color:#4a2028;background:#1a0a0e}.chip.brief{color:#dff5ea;border-color:#2f5a46;background:#0e1f18}
+.tkr{font:600 12px "IBM Plex Mono";letter-spacing:.06em;color:#eaf6ef}.pct{font:600 10px "IBM Plex Mono";margin-left:3px}.pct.up{color:var(--green)}.pct.dn{color:var(--red)}
+.time{margin-left:auto;font:7px "IBM Plex Mono";color:#4f7d68;letter-spacing:.08em}.chev{color:#2f5a46;font:11px "IBM Plex Mono";margin-left:7px}
+.head{font:400 12.5px/1.4 "Space Grotesk";color:#eef3f0}.head b{font-weight:600}
+.note{margin-top:5px;font:400 11px/1.45 "Space Grotesk";color:#8aa79a}
+.evi{display:inline-block;margin-top:6px;font:7px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#6b8a7c;border:1px dashed #243a30;border-radius:3px;padding:2px 5px}
+.detail{display:none;padding:13px 13px 24px}
+.dt-kicker{font:7px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#5f8f78;margin-bottom:7px}
+.dt-title{font:600 17px/1.25 "Space Grotesk";color:#f2f8f5;letter-spacing:.01em;margin-bottom:4px}.dt-sub{font:8px "IBM Plex Mono";letter-spacing:.08em;color:#4f7d68;margin-bottom:13px}
+.dt h4{font:600 8px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#7fb39c;margin:16px 0 7px;padding-bottom:5px;border-bottom:1px solid #14231b}
+.dt p{font:400 12px/1.6 "Space Grotesk";color:#c3d4cc;margin:0 0 9px}.dt p b{color:#eef3f0;font-weight:600}
+.dt ul{margin:0 0 9px;padding-left:16px}.dt li{font:400 12px/1.55 "Space Grotesk";color:#c3d4cc;margin-bottom:4px}
+.dt .pri{margin-top:12px;padding:10px;border:1px solid #2f5a46;border-radius:5px;background:#0e1f18;font:400 11.5px/1.55 "Space Grotesk";color:#dff5ea}.dt .pri b{color:var(--green)}
+.dt .tag{display:inline-block;margin-top:10px;font:7px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#6b8a7c;border:1px dashed #243a30;border-radius:3px;padding:3px 6px}
+.fit{display:flex;gap:9px;margin:7px 0;align-items:flex-start}
+.fit .verb{flex:0 0 46px;font:7px "IBM Plex Mono";letter-spacing:.06em;text-transform:uppercase;padding:3px 0;text-align:center;border-radius:3px;border:1px solid;margin-top:1px}
+.fit.help .verb{color:var(--green);border-color:#204a37;background:#0a1a13}.fit.hurt .verb{color:var(--amber);border-color:#4a3a20;background:#1a140a}.fit.na .verb{color:#9aa0a6;border-color:#2a3138;background:#0e1216}
+.fit .ft{font:400 11px/1.5 "Space Grotesk";color:#c3d4cc}.fit .ft b{color:#eef3f0;font:600 11px "IBM Plex Mono";letter-spacing:.03em}
+.empty{padding:40px 16px;text-align:center;color:#5f8f78;font:9px "IBM Plex Mono";letter-spacing:.1em;line-height:2;text-transform:uppercase}
+.bb-controls{padding:12px 6px 4px}
+.navrow{display:grid;grid-template-columns:1fr 1fr 54px 1fr 1fr;gap:7px;align-items:center;margin-bottom:11px}
+.key{height:22px;border-radius:7px;background:linear-gradient(180deg,#303337,#191b1e);box-shadow:0 1px 0 #3f4247 inset,0 1px 2px #000;display:flex;align-items:center;justify-content:center;font:8px "IBM Plex Mono";color:#aab0b6}.key.call{color:var(--green)}.key.end{color:var(--red)}.key.nav{cursor:pointer}.key.nav:hover{color:#fff}
+.trackpad{height:34px;width:34px;margin:auto;border-radius:50%;background:radial-gradient(circle at 40% 35%,#3a3d41,#131517 70%);box-shadow:0 0 0 2px #0c0d0f,0 1px 2px #000}
+.kbd{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}.kbd .k{height:17px;border-radius:5px;background:linear-gradient(180deg,#2b2e32,#17191c);box-shadow:0 1px 0 #3a3d41 inset,0 1px 1px #000;font:7px "IBM Plex Mono";color:#8b9196;display:flex;align-items:center;justify-content:center}
+.frets{height:1px;background:#000;margin:9px 2px 0;box-shadow:0 1px 0 #2a2d31}
+.legend{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#6b7178}.legend span{display:flex;align-items:center;gap:6px}.legend i{width:8px;height:8px;border-radius:2px;display:inline-block}.legend .g{background:var(--green)}.legend .r{background:var(--red)}.legend .a{background:var(--amber)}
+.hint{margin-top:11px;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#4f7d68;text-align:center;max-width:520px;line-height:1.8}
+.hint a{color:#7fb39c}
+</style>
+</head>
+<body>
+<a href="/" style="font:500 12px 'Space Grotesk';letter-spacing:.32em;color:#9aa0a6;text-decoration:none;margin-bottom:18px">BLAQUE BAUX</a>
+<div class="caption">BUMBLE on <b>BlaqueBere</b> : a live signal terminal. Significant events routed to the Blaque Baux sleeve library. Simulated/illustrative analysis; not investment advice.</div>
+<div class="bb">
+  <div class="bb-top"><span class="speaker"></span><span class="brand"><b>Blaque</b>Bere</span></div>
+  <div class="screen">
+    <div class="statusbar"><span class="sig">BAUX <b>&#9642;&#9642;&#9642;&#9642;</b>&#9642;</span><span>EDGAR &middot; NYSE &middot; the tape</span><span id="clock">--:-- &#9646;84%</span></div>
+    <div class="apphead" id="apphead"><span class="live"></span>BUMBLE<span class="sub">// significant events</span></div>
+    <div class="view" id="feed"><div class="empty">loading the tape&hellip;</div></div>
+    <div class="view detail" id="detail"></div>
+  </div>
+  <div class="bb-controls">
+    <div class="navrow"><div class="key call">&#8627; CALL</div><div class="key">&#8801; MENU</div><div class="trackpad"></div><div class="key nav" onclick="goBack()">&#8617; BACK</div><div class="key end">&#9089; END</div></div>
+    <div class="frets"></div>
+    <div class="kbd" style="margin-top:9px"><div class="k">Q</div><div class="k">W</div><div class="k">E</div><div class="k">R</div><div class="k">T</div><div class="k">Y</div><div class="k">U</div><div class="k">I</div><div class="k">O</div><div class="k">P</div></div>
+    <div class="kbd" style="margin-top:5px;grid-template-columns:repeat(9,1fr);padding:0 8px"><div class="k">A</div><div class="k">S</div><div class="k">D</div><div class="k">F</div><div class="k">G</div><div class="k">H</div><div class="k">J</div><div class="k">K</div><div class="k">L</div></div>
+    <div class="kbd" style="margin-top:5px;grid-template-columns:repeat(9,1fr);padding:0 16px"><div class="k">&#8679;</div><div class="k">Z</div><div class="k">X</div><div class="k">C</div><div class="k">V</div><div class="k">B</div><div class="k">N</div><div class="k">M</div><div class="k">&#9003;</div></div>
+  </div>
+</div>
+<div class="legend"><span><i class="g"></i> buy / bullish</span><span><i class="r"></i> sell / risk</span><span><i class="a"></i> watch</span><span>EDGAR = filings</span><span>TAPE = price</span></div>
+<div class="hint" id="hint">tap an item to read it full-screen &middot; BACK returns<br><a href="/">home</a> &middot; <a href="/corpus/">corpus</a> &middot; <a href="/toolkit/">toolkit</a> &middot; <a href="/capstone/">capstone</a> &middot; <a href="/tracker/">tracker</a></div>
+
+<script>
+let ITEMS = [];
+const feedEl = document.getElementById("feed"), detailEl = document.getElementById("detail"), apphead = document.getElementById("apphead");
+const chipClass = s => ({EDGAR:"edgar",TAPE:"tape",CHAIN:"chain",WIRE:"wire",PULSE:"brief",WEEKLY:"brief"}[s] || "edgar");
+const esc = s => String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+function render(){
+  if(!ITEMS.length){ feedEl.innerHTML = '<div class="empty">no events on the tape right now.<br>the feed refreshes intraday.</div>'; return; }
+  let html = "", lastDate = null;
+  ITEMS.forEach((e,i)=>{
+    if(e.date !== lastDate){ lastDate = e.date; html += `<div class="datesep">${esc(e.date)}</div>`; }
+    const pct = e.pct ? `<span class="pct ${e.pdir==="up"?"up":"dn"}">${esc(e.pct)}</span>` : "";
+    html += `<div class="msg ${esc(e.cls)}" onclick="openDetail(${i})"><div class="accent"></div><div class="body">
+      <div class="meta"><span class="chip ${chipClass(e.sender)}">${esc(e.chip)}</span><span class="tkr">${esc(e.tkr)}${pct}</span><span class="time">${esc(e.time)}</span><span class="chev">&rsaquo;</span></div>
+      <div class="head">${esc(e.head)}</div><div class="note">${esc(e.note)}</div></div></div>`;
+  });
+  feedEl.innerHTML = html;
+}
+function fitRow(verb, cls, arr){ return `<div class="fit ${cls}"><span class="verb">${verb}</span><span class="ft"><b>${arr.map(esc).join(" &middot; ")}</b></span></div>`; }
+function openDetail(i){
+  const e = ITEMS[i], d = e.detail || {};
+  let h = `<div class="dt-kicker">${esc(d.kicker||e.chip)}</div><div class="dt-title">${esc(d.title||e.head)}</div><div class="dt-sub">${esc(d.sub||"")}</div><div class="dt">`;
+  (d.sections||[]).forEach(s=>{ h += `<h4>${esc(s.h)}</h4>`; if(s.p) h += `<p>${esc(s.p)}</p>`; if(s.list) h += `<ul>${s.list.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`; });
+  if(e.fit){
+    h += `<h4>Sleeve fit &middot; if you act on this</h4><p>${esc(e.fit.intro||"")}</p>`;
+    if(e.fit.with && e.fit.with.length) h += fitRow("with","help",e.fit.with);
+    if(e.fit.against && e.fit.against.length) h += fitRow("against","hurt",e.fit.against);
+    if(e.fit.na && e.fit.na.length) h += fitRow("n/a","na",e.fit.na.slice(0,6));
+  }
+  if(d.pri) h += `<div class="pri">${esc(d.pri).replace(/^Potential outcome:/,"<b>Potential outcome:</b>")}</div>`;
+  if(e.evi) h += `<div class="tag">${esc(e.evi)}</div>`;
+  h += `</div>`;
+  detailEl.innerHTML = h; feedEl.style.display = "none"; detailEl.style.display = "block"; detailEl.scrollTop = 0;
+  apphead.innerHTML = `<span class="back" onclick="goBack()">&lsaquo;</span> BUMBLE <span class="sub">// ${esc(e.tkr)}</span>`;
+}
+function goBack(){ detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="live"></span>BUMBLE<span class="sub">// significant events</span>`; }
+
+fetch("feed.json?t=" + Date.now()).then(r=>r.json()).then(d=>{
+  ITEMS = d.events || []; render();
+  if(d.generated_at){
+    const t = new Date(d.generated_at);
+    document.getElementById("clock").innerHTML = t.toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"}) + " &#9646;84%";
+    document.getElementById("hint").innerHTML += ` &middot; updated ${t.toLocaleString([], {month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}`;
+  }
+}).catch(()=>{ feedEl.innerHTML = '<div class="empty">the tape is unavailable right now.<br>try again shortly.</div>'; });
+</script>
+</body>
+</html>
