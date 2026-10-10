@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BUMBLE / BlaqueBerē : the signal terminal</title>
-<meta name="description" content="BUMBLE: a live signal terminal of significant market events (insider clusters, activist stakes, tape movers) routed to the Blaque Baux sleeve library, in a BlaqueBerē handheld.">
+<meta name="description" content="BUMBLE: a terminal of reviewed briefings and significant market events (insider clusters, activist stakes, tape movers) routed to the Blaque Baux sleeve library, in a BlaqueBerē handheld.">
 <link rel="canonical" href="https://www.blaquebaux.com/bumble/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -20,7 +20,7 @@
 body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#050608 60%);color:var(--fg);font-family:"Space Grotesk",sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:30px 16px 60px}
 .caption{font:9px "IBM Plex Mono";letter-spacing:.18em;text-transform:uppercase;color:#6b7178;margin-bottom:20px;text-align:center;max-width:560px;line-height:1.7}
 .caption b{color:var(--amber);font-weight:500}
-.bb{width:372px;border-radius:30px;padding:16px 14px 12px;background:linear-gradient(180deg,#2a2d31,#141619 32%,#101215 70%,#17191c);box-shadow:0 0 0 1px #000,0 2px 0 1px #3a3d41 inset,0 40px 80px -30px #000,0 0 120px -40px #35e38a22;position:relative}
+.bb{width:min(372px,100%);border-radius:30px;padding:16px 14px 12px;background:linear-gradient(180deg,#2a2d31,#141619 32%,#101215 70%,#17191c);box-shadow:0 0 0 1px #000,0 2px 0 1px #3a3d41 inset,0 40px 80px -30px #000,0 0 120px -40px #35e38a22;position:relative}
 .bb-top{display:flex;align-items:center;justify-content:center;gap:12px;height:30px;position:relative}
 .speaker{width:46px;height:6px;border-radius:4px;background:linear-gradient(90deg,#0a0b0d,#2a2d31,#0a0b0d);box-shadow:0 1px 0 #3a3d41}
 .brand{position:absolute;right:12px;font:8px "IBM Plex Mono";letter-spacing:.2em;color:#6b7178;text-transform:uppercase}.brand b{color:#9aa0a6;font-weight:600}
@@ -30,7 +30,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 .apphead .live{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .apphead .sub{font:8px "IBM Plex Mono";letter-spacing:.14em;color:#5f8f78;font-weight:400;margin-left:auto}
-.apphead .back{cursor:pointer;color:var(--green);font-size:15px;line-height:1;margin-right:2px}.apphead .back:hover{color:#8affc9}
+.apphead .back{background:transparent;border:0;padding:0;cursor:pointer;color:var(--green);font-size:15px;line-height:1;margin-right:2px}.apphead .back:hover{color:#8affc9}
 .view{height:452px;overflow-y:auto}.view::-webkit-scrollbar{width:0}
 .datesep{display:flex;align-items:center;gap:9px;padding:9px 11px 7px;color:#4f7d68;font:7px "IBM Plex Mono";letter-spacing:.18em;text-transform:uppercase}.datesep::before,.datesep::after{content:"";height:1px;background:#14231b;flex:1}
 .msg{display:flex;border-bottom:1px solid #112019;cursor:pointer;transition:background .15s}.msg:hover{background:#0c1813}
@@ -67,10 +67,12 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 .hint{margin-top:11px;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#4f7d68;text-align:center;max-width:520px;line-height:1.8}
 .hint a{color:#7fb39c}
 </style>
+<link rel="stylesheet" href="/assets/navigation.css">
+<script src="/assets/navigation.js" defer></script>
 </head>
-<body>
-<a href="/" style="font:500 12px 'Space Grotesk';letter-spacing:.32em;color:#9aa0a6;text-decoration:none;margin-bottom:18px">BLAQUE BAUX</a>
-<div class="caption">BUMBLE on <b>BlaqueBerē</b> : a live signal terminal. Significant events routed to the Blaque Baux sleeve library. Simulated/illustrative analysis; not investment advice.</div>
+<body class="bb-terminal-page">
+<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/" aria-current="page">Bumble</a><a href="/about/">About</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
+<div class="caption">BUMBLE on <b>BlaqueBerē</b> : reviewed briefings and market signals. Each item shows its verification status; mock items are illustrative. Briefings are dated snapshots, not streaming quotes.</div>
 <div class="bb">
   <div class="bb-top"><span class="speaker"></span><span class="brand"><b>Blaque</b>Berē</span></div>
   <div class="screen">
@@ -92,9 +94,10 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 
 <script>
 let ITEMS = [];
+let articles = [];
 const feedEl = document.getElementById("feed"), detailEl = document.getElementById("detail"), apphead = document.getElementById("apphead");
 const chipClass = s => ({EDGAR:"edgar",TAPE:"tape",CHAIN:"chain",WIRE:"wire",PULSE:"brief",WEEKLY:"brief"}[s] || "edgar");
-const esc = s => String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const esc = s => String(s==null?"":s).replace(/[&<>"\']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","\'":"&#39;"}[c]));
 
 function render(){
   if(!ITEMS.length){ feedEl.innerHTML = '<div class="empty">no events on the tape right now.<br>the feed refreshes intraday.</div>'; return; }
@@ -102,14 +105,15 @@ function render(){
   ITEMS.forEach((e,i)=>{
     if(e.date !== lastDate){ lastDate = e.date; html += `<div class="datesep">${esc(e.date)}</div>`; }
     const pct = e.pct ? `<span class="pct ${e.pdir==="up"?"up":"dn"}">${esc(e.pct)}</span>` : "";
-    html += `<div class="msg ${esc(e.cls)}" onclick="openDetail(${i})"><div class="accent"></div><div class="body">
+    html += `<div class="msg ${esc(e.cls)}" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetail(${i})}" onclick="openDetail(${i})"><div class="accent"></div><div class="body">
       <div class="meta"><span class="chip ${chipClass(e.sender)}">${esc(e.chip)}</span><span class="tkr">${esc(e.tkr)}${pct}</span><span class="time">${esc(e.time)}</span><span class="chev">&rsaquo;</span></div>
-      <div class="head">${esc(e.head)}</div><div class="note">${esc(e.note)}</div></div></div>`;
+      <div class="head">${esc(e.head)}</div><div class="note">${esc(e.note)}</div><div class="evi">${esc(e.article ? (e.article.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : "MOCK / ILLUSTRATIVE") : "SOURCE EVENT / ANALYSIS UNVERIFIED")}</div></div></div>`;
   });
   feedEl.innerHTML = html;
 }
 function fitRow(verb, cls, arr){ return `<div class="fit ${cls}"><span class="verb">${verb}</span><span class="ft"><b>${arr.map(esc).join(" &middot; ")}</b></span></div>`; }
 function openDetail(i){
+  if (ITEMS[i].article) { location.hash = "brief/" + ITEMS[i].article.id; showArticle(ITEMS[i].article); return; }
   const e = ITEMS[i], d = e.detail || {};
   let h = `<div class="dt-kicker">${esc(d.kicker||e.chip)}</div><div class="dt-title">${esc(d.title||e.head)}</div><div class="dt-sub">${esc(d.sub||"")}</div><div class="dt">`;
   (d.sections||[]).forEach(s=>{ h += `<h4>${esc(s.h)}</h4>`; if(s.p) h += `<p>${esc(s.p)}</p>`; if(s.list) h += `<ul>${s.list.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`; });
@@ -125,16 +129,39 @@ function openDetail(i){
   detailEl.innerHTML = h; feedEl.style.display = "none"; detailEl.style.display = "block"; detailEl.scrollTop = 0;
   apphead.innerHTML = `<span class="back" onclick="goBack()">&lsaquo;</span> BUMBLE <span class="sub">// ${esc(e.tkr)}</span>`;
 }
-function goBack(){ detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="live"></span>BUMBLE<span class="sub">// significant events</span>`; }
+function goBack(){
+  if(location.hash) history.replaceState(null, "", location.pathname + location.search); detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="live"></span>BUMBLE<span class="sub">// significant events</span>`; }
 
-fetch("feed.json?t=" + Date.now()).then(r=>r.json()).then(d=>{
-  ITEMS = d.events || []; render();
-  if(d.generated_at){
-    const t = new Date(d.generated_at);
-    document.getElementById("clock").innerHTML = t.toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"}) + " &#9646;84%";
-    document.getElementById("hint").innerHTML += ` &middot; updated ${t.toLocaleString([], {month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}`;
-  }
-}).catch(()=>{ feedEl.innerHTML = '<div class="empty">the tape is unavailable right now.<br>try again shortly.</div>'; });
+const et = t => new Date(t).toLocaleString("en-US", {timeZone:"America/New_York", dateStyle:"medium",timeStyle:"short"}) + " ET";
+function showArticle(a){
+  const label = a.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : "MOCK / ILLUSTRATIVE";
+  detailEl.innerHTML = `<div class="dt-kicker">${esc(a.kind)} · ${label}</div><div class="dt-title">${esc(a.title)}</div><div class="dt-sub">Published ${esc(et(a.published_at))}<br>Observed ${esc(et(a.observed_at))}</div><div class="dt">` +
+    a.sections.map(s=>`<h4>${esc(s.heading)}</h4>`+(s.paragraphs||[]).map(p=>`<p>${esc(p)}</p>`).join("")+(s.list ? `<ul>${s.list.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>` : "")).join("") +
+    (a.signal ? `<div class="pri">${esc(a.signal)}</div>` : "") + `<h4>Sources</h4>` +
+    a.sources.map(s=>`<a class="tag" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a> `).join("") +
+    `<p>Reviewed by ${esc(a.reviewed_by)}</p><a class="tag" href="#">All articles</a>` +
+    articles.filter(x=>x.id!==a.id).map(x=>`<a class="tag" href="#brief/${esc(x.id)}">${esc(x.title)} · ${esc(et(x.published_at))}</a>`).join(" ") + `</div>`;
+  feedEl.style.display="none"; detailEl.style.display="block"; detailEl.scrollTop=0;
+  apphead.innerHTML=`<button class="back" onclick="goBack()" aria-label="Back to feed">‹</button> BUMBLE<span class="sub">// ${esc(a.kind)} brief</span>`;
+}
+function route(){
+  const id = location.hash.replace(/^#brief\//, "");
+  const a = articles.find(x=>x.id===id);
+  if(a) showArticle(a); else {goBack(); if(id) feedEl.insertAdjacentHTML("afterbegin", '<div class="empty">Article unavailable</div>');}
+}
+window.addEventListener("hashchange", route);
+Promise.allSettled([fetch("feed.json").then(r=>{if(!r.ok)throw Error();return r.json();}),fetch("briefings.json").then(r=>{if(!r.ok)throw Error();return r.json();})]).then(([signals,briefs])=>{
+  articles = briefs.status === "fulfilled" ? briefs.value.articles || [] : [];
+  ITEMS = signals.status === "fulfilled" ? signals.value.events || [] : [];
+  ITEMS = articles.map(a=>({article:a,sender:a.kind==="weekly"?"WEEKLY":"PULSE",chip:a.kind==="weekly"?"WEEKLY":"PULSE",tkr:a.kind==="weekly"?"WEEKLY BRIEF":"MARKET PULSE",cls:"brief",date:new Date(a.published_at).toLocaleDateString("en-US",{timeZone:"America/New_York",year:"numeric",month:"long",day:"numeric"}),ts:a.published_at,time:et(a.published_at),head:a.title,note:a.summary})).concat(ITEMS);
+  ITEMS.sort((a,b)=>Date.parse(b.ts)-Date.parse(a.ts)); render();
+  feedEl.insertAdjacentHTML("afterbegin", `<div class="empty" style="padding:10px">${briefs.status === "rejected" ? "Briefings unavailable; retry later" : articles.length ? "Weekday morning / afternoon · Saturday weekly" : "No reviewed briefings published yet"}</div>`);
+  if(signals.status === "rejected") feedEl.insertAdjacentHTML("beforeend", '<div class="empty">Market signals unavailable</div>');
+  const generated = signals.status === "fulfilled" && signals.value.generated_at;
+  document.getElementById("clock").textContent = generated ? new Date(generated).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit"}) + " ET" : "No signal timestamp";
+  if(generated) document.getElementById("hint").append(document.createTextNode(" · Signals fetched " + et(generated)));
+  route();
+});
 </script>
 </body>
 </html>
