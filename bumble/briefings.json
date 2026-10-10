@@ -1,4 +1,283 @@
 {
   "schema_version": 1,
-  "articles": []
+  "articles": [
+    {
+      "id": "2026-10-10-weekly",
+      "kind": "weekly",
+      "status": "archived-unverified",
+      "title": "Weekly Brief: capital availability, affordability and productivity",
+      "summary": "Reviewing October 5\u20139: the cost of capital, Treasury demand and AI infrastructure financing.",
+      "published_at": "2026-10-10T18:20:08+00:00",
+      "observed_at": "2026-10-09T16:00:00-04:00",
+      "original_edition_date": "October 10, 2026; reviewing October 5\u20139",
+      "reviewed_by": "Codex; archival import and formatting only",
+      "source_note": "Archived original briefing; historical figures, not live quotes. Source verification is pending. Recovered references and original-conversation provenance appear below.",
+      "sections": [
+        {
+          "heading": "Weekly overview",
+          "paragraphs": [
+            "This week's central finding: Capital remains available, but the price of capital is becoming an increasingly important constraint on economic growth and investment.",
+            "Equities advanced, Treasury auctions demonstrated substantial institutional demand, and inflation concerns persisted. Beneath those developments, a more interesting relationship is emerging between sovereign borrowing, corporate investment, and the financing requirements of artificial intelligence."
+          ]
+        },
+        {
+          "heading": "Equities advanced, but participation remained uneven",
+          "paragraphs": [
+            "U.S. equities finished the week higher despite considerable volatility in energy and government bonds.",
+            "Closing levels and weekly changes reported in the original briefing.",
+            "The S&P 500 and Nasdaq established records during the week, but small-cap underperformance suggests investors remain selective about companies exposed to elevated financing costs."
+          ],
+          "table": {
+            "headers": [
+              "Market",
+              "Weekly change",
+              "Friday close"
+            ],
+            "rows": [
+              [
+                "S&P 500",
+                "+1.2%",
+                "7,811.54"
+              ],
+              [
+                "Nasdaq Composite",
+                "+0.6%",
+                "27,366.17"
+              ],
+              [
+                "Dow Jones Industrial Average",
+                "+0.9%",
+                "51,654.95"
+              ],
+              [
+                "Russell 2000",
+                "\u22120.9%",
+                "2,806.98"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Treasury demand returned at elevated yields",
+          "paragraphs": [
+            "The 10-year Treasury yield reached approximately 5.36% before retreating, finishing Friday near 5.26%.",
+            "Two auctions provided important evidence:",
+            "Both demonstrated substantial demand for long-duration government securities at prevailing yields."
+          ],
+          "list": [
+            "Wednesday: $39 billion in 10-year notes attracted a 2.77 bid-to-cover ratio, with indirect bidders taking 80.3%.",
+            "Thursday: $22 billion in 30-year bonds cleared at 5.618%, attracting a 2.54 bid-to-cover ratio."
+          ]
+        },
+        {
+          "heading": "Inflation pressure remained persistent",
+          "paragraphs": [
+            "September's ISM Services PMI declined modestly to 54.9, but its prices-paid component increased to 74.0: the highest since July 2022.",
+            "Friday's preliminary October consumer sentiment reading declined to 46.3, while one-year inflation expectations increased to 4.7% and five-year expectations to 3.5%.",
+            "Energy remained volatile. Brent finished Friday near $104 per barrel, while gold recovered toward $4,194 per ounce. The dollar remained supported by elevated U.S. yields and European fiscal uncertainty, particularly in France."
+          ]
+        },
+        {
+          "heading": "The week's most consequential development was not an equity record",
+          "paragraphs": [
+            "It was evidence that the AI investment cycle is beginning to influence the Treasury market itself.",
+            "The September Federal Reserve meeting minutes, released Wednesday, explicitly identified competition for capital from AI infrastructure borrowing as a potential contributor to higher Treasury term premiums.",
+            "This is a meaningful development.",
+            "AI infrastructure investment is no longer exclusively a corporate earnings and technology-adoption story.",
+            "It is increasingly a capital-allocation and financing story.",
+            "The mechanism is straightforward:",
+            "AI infrastructure expansion \u2192 corporate borrowing requirements \u2192 competition for long-duration capital \u2192 potentially higher financing costs.",
+            "Higher financing costs can subsequently influence the economics of additional AI investment.",
+            "That does not establish that AI borrowing is the dominant cause of rising Treasury yields. Energy prices, fiscal uncertainty, expected monetary policy and economic resilience remain important competing explanations."
+          ]
+        },
+        {
+          "heading": "Credit provides an important qualification",
+          "paragraphs": [
+            "The ICE BofA U.S. High Yield Option-Adjusted Spread increased from 310 basis points on October 2 to 315 basis points on October 8, the latest available observation.",
+            "More significantly, it has increased from 260 basis points on August 28.",
+            "That represents 55 basis points of widening in approximately six weeks.",
+            "This is not evidence of a systemic credit crisis. However, it suggests that financing pressure is becoming more visible beyond sovereign debt markets.",
+            "BLAQUE BAUX interpretation: The market is not experiencing an obvious shortage of capital. Instead, capital providers appear increasingly selective about the compensation required for duration, credit risk and uncertainty.",
+            "That distinction matters for governments, corporate borrowers and capital-intensive technology investment alike."
+          ]
+        },
+        {
+          "heading": "October 12\u201316: Inflation meets earnings",
+          "paragraphs": [
+            "Wednesday, October 14: September CPI",
+            "This is the week's principal macroeconomic release.",
+            "We will prioritize core inflation, services inflation and the composition of monthly price changes rather than relying exclusively on the headline reading.",
+            "Thursday, October 15: September PPI",
+            "Producer prices should provide additional evidence about whether elevated energy and input costs are being transmitted through supply chains.",
+            "Third-quarter bank earnings",
+            "Major U.S. banks begin reporting next week. We will examine net interest margins, credit-loss provisions, lending volumes, funding costs and management commentary on borrower quality.",
+            "These results should help distinguish profitable lending at elevated rates from deteriorating credit demand and repayment capacity.",
+            "Cross-asset monitoring",
+            "Our priority indicators are Treasury yields and term premium, MOVE and VIX volatility, investment-grade and high-yield spreads, Brent crude, equity breadth and the dollar.",
+            "A particularly informative signal would be whether corporate spreads continue widening even if Treasury yields stabilize."
+          ]
+        },
+        {
+          "heading": "Near term: Stabilization remains plausible, but fragile",
+          "paragraphs": [
+            "Our central scenario favors continued market resilience accompanied by elevated cross-asset volatility.",
+            "Successful Treasury auctions reduce the likelihood that recent yield increases reflect a generalized unwillingness to hold U.S. government debt.",
+            "However, persistent services inflation, elevated energy costs and rising household inflation expectations make a sustained decline in borrowing costs less certain.",
+            "Three outcomes deserve consideration.",
+            "Constructive: Inflation moderates, energy stabilizes, Treasury yields decline and corporate spreads remain contained. This would improve the probability of broader equity participation.",
+            "Central: Economic activity remains resilient, inflation declines unevenly and borrowing costs remain elevated. Equity performance becomes increasingly dependent on earnings delivery rather than valuation expansion.",
+            "Adverse: Inflation surprises higher, long yields resume climbing and credit spreads widen materially. This would increase pressure on refinancing, capital-intensive investment and rate-sensitive businesses.",
+            "We currently regard the central scenario as more plausible than either extreme, without sufficient evidence to assign precise numerical probabilities."
+          ]
+        },
+        {
+          "heading": "Beyond next week",
+          "paragraphs": [
+            "One longer-term question deserves continued research:",
+            "Can the productivity gains associated with AI investment eventually exceed the financing costs required to build the infrastructure supporting those gains?",
+            "If productivity improvements arrive quickly enough, today's investment cycle could support stronger economic growth and debt-servicing capacity.",
+            "If monetization and productivity improvements lag infrastructure spending, capital markets may become increasingly discriminating about which investments deserve financing.",
+            "Both possibilities remain credible.",
+            "The timing matters as much as the eventual outcome."
+          ]
+        },
+        {
+          "heading": "BLAQUE BAUX: Weekly Signal",
+          "paragraphs": [
+            "Capital availability \u2260 capital affordability \u2260 capital productivity.",
+            "This week's Treasury auctions demonstrated availability.",
+            "Credit spreads and borrowing costs continue to challenge affordability.",
+            "The expanding AI investment cycle will increasingly test productivity.",
+            "The next phase of market differentiation may depend less on who can raise capital and more on who can generate sufficient returns on it."
+          ]
+        },
+        {
+          "heading": "X / Twitter: Weekly Briefing Teaser",
+          "paragraphs": [
+            "The most interesting market development this week wasn't an equity record. It was the Fed acknowledging that AI infrastructure borrowing may be influencing Treasury yields.",
+            "AI is becoming a capital-markets story.",
+            "What happens when innovation competes with governments for capital?",
+            "Read the full BLAQUE BAUX weekly briefing: blaquebaux.com",
+            "BLAQUE BAUX Research | October 10, 2026",
+            "Analysis reflects information available through the October 9 market close. Forward-looking assessments are conditional research interpretations, not investment recommendations."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Original BLAQUE BAUX briefing conversation",
+          "url": "https://chatgpt.com/c/6a920c82-1ff0-83ea-b4be-bb7adfe637d5"
+        },
+        {
+          "label": "Michigan: October 2026 preliminary sentiment",
+          "url": "https://www.sca.isr.umich.edu/"
+        },
+        {
+          "label": "Reuters: October 9 consumer sentiment",
+          "url": "https://www.marketscreener.com/news/us-consumer-sentiment-deteriorates-further-in-october-ce785ddcd88af324"
+        },
+        {
+          "label": "AP: October 9 closes and weekly changes",
+          "url": "https://apnews.com/article/dafbd0c4037ee10e2a9e305f3cfa8e70"
+        },
+        {
+          "label": "Federal Reserve: September meeting minutes",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+        }
+      ],
+      "archived_at": "2026-10-10T18:20:08+00:00"
+    },
+    {
+      "id": "2026-10-09-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse: duration risk turns technical",
+      "summary": "October 9 afternoon: inflation expectations, energy costs and Treasury hedging flows.",
+      "published_at": "2026-10-09T15:47:00-04:00",
+      "observed_at": "2026-10-09T15:47:00-04:00",
+      "original_edition_date": "October 9, 2026; afternoon at 3:47 p.m. ET",
+      "reviewed_by": "Codex; archival import and formatting only",
+      "source_note": "Archived original briefing; historical figures, not live quotes. Source verification is pending. Recovered references and original-conversation provenance appear below.",
+      "sections": [
+        {
+          "heading": "What Changed: Observed",
+          "paragraphs": [
+            "Equities are recovering, but today's inflation data and Treasury-market developments complicate the morning's constructive outlook.",
+            "U.S. stocks advanced in mid-afternoon trading, with the S&P 500 gaining approximately 0.58%, Nasdaq 0.56%, and Dow 0.83%. Market breadth was positive, although Nasdaq recorded 173 new 52-week lows against just 35 highs.",
+            "Three developments deserve attention.",
+            "1. Consumer inflation expectations deteriorated.",
+            "October's preliminary University of Michigan consumer sentiment index declined to 46.3 from 48.1, below expectations.",
+            "More consequentially: - One-year inflation expectations increased to 4.7% from 4.6%. - Five-year expectations rose to 3.5% from 3.4%. - Current economic conditions fell to a record-low 44.7.",
+            "Lower-income households experienced particularly pronounced deterioration.",
+            "2. Oil relief proved incomplete.",
+            "Brent initially declined following reduced expectations of immediate U.S. military action against Iran. However, crude subsequently recovered toward $104.50, limiting the anticipated disinflationary benefit.",
+            "3. Treasury-market risks are becoming more technical.",
+            "The 10-year Treasury yield remained near 5.23%\u20135.25%, while the 30-year traded around 5.61%.",
+            "Importantly, Reuters identified increasing interest-rate volatility, mortgage convexity hedging, and corporate-bond issuance as potential amplifiers of Treasury selling.",
+            "Investment-grade credit spreads remain relatively tight, despite increasing issuance and hedging activity."
+          ]
+        },
+        {
+          "heading": "What Mattered: Interpretation",
+          "paragraphs": [
+            "Today's most interesting development is the potential emergence of a self-reinforcing duration cycle.",
+            "Higher yields can trigger additional Treasury selling through mortgage hedging and corporate-duration management.",
+            "That selling can subsequently push yields higher, creating additional hedging requirements.",
+            "This mechanism differs from inflation-driven repricing alone.",
+            "It suggests that even without materially changing expectations for Federal Reserve policy, market structure could amplify interest-rate volatility.",
+            "The distinction is particularly relevant to AI infrastructure financing.",
+            "Corporate borrowing to fund capital-intensive AI development is increasingly interacting with sovereign debt markets through issuance, portfolio substitution and interest-rate hedging.",
+            "Our interpretation: Strong Treasury auctions demonstrate available demand, but do not eliminate the possibility of technically driven selling between issuance events."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "paragraphs": [
+            "Next week introduces two important confirmation opportunities.",
+            "Wednesday, October 14: September CPI. Consensus expectations are approximately 3.6% headline inflation and 2.5% core inflation year-over-year. An upside surprise would increase the probability of renewed rate pressure.",
+            "Tuesday\u2013Wednesday: Major bank earnings. Funding costs, credit provisions, loan demand and capital-markets activity should help establish whether elevated borrowing costs are affecting economic intermediation.",
+            "We would also monitor Treasury swaption volatility, mortgage hedging activity and investment-grade credit spreads."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "Our near-term assessment remains neutral with elevated volatility risk.",
+            "Equity resilience and successful Treasury auctions support a constructive scenario.",
+            "However, rising household inflation expectations, persistent energy costs and increasingly complex duration-market dynamics argue against assuming financial conditions will continue easing.",
+            "A meaningful deterioration in credit spreads would strengthen the adverse interpretation. Stable spreads alongside moderating yields would favor stabilization.",
+            "Neither outcome currently commands sufficient evidence for a high-conviction forecast."
+          ]
+        },
+        {
+          "heading": "BLAQUE BAUX Signal",
+          "paragraphs": [
+            "The Treasury market may be transitioning from an inflation-driven repricing toward a more complex interaction between inflation, issuance and hedging flows.",
+            "That distinction matters.",
+            "Inflation determines part of the fundamental justification for higher yields.",
+            "Market structure can determine how violently those yields adjust.",
+            "Priority: CPI \u2192 Treasury volatility \u2192 corporate credit spreads \u2192 bank earnings \u2192 energy.",
+            "The question heading into next week is no longer simply whether investors will purchase duration at current yields.",
+            "It is whether the mechanisms used to manage duration risk could themselves become a source of market instability."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Original BLAQUE BAUX briefing conversation",
+          "url": "https://chatgpt.com/c/6a920c82-1ff0-83ea-b4be-bb7adfe637d5"
+        },
+        {
+          "label": "Michigan: October 2026 preliminary sentiment",
+          "url": "https://www.sca.isr.umich.edu/"
+        },
+        {
+          "label": "Reuters: October 9 consumer sentiment",
+          "url": "https://www.marketscreener.com/news/us-consumer-sentiment-deteriorates-further-in-october-ce785ddcd88af324"
+        }
+      ],
+      "archived_at": "2026-10-10T18:20:08+00:00"
+    }
+  ]
 }

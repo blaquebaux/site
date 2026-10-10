@@ -11,7 +11,7 @@ KINDS = {"morning": "PULSE", "afternoon": "PULSE", "weekly": "WEEKLY"}
 def validate(a, now):
     assert re.fullmatch(r"[a-z0-9][a-z0-9-]{2,100}", a["id"]), "invalid id"
     assert a["kind"] in KINDS, "invalid edition"
-    assert a["status"] in ("verified", "mock"), "status must be verified or mock"
+    assert a["status"] in ("verified", "mock", "archived-unverified"), "status must be verified, mock, or archived-unverified"
     for k in ("title", "summary", "reviewed_by"):
         assert isinstance(a[k], str) and a[k].strip(), f"missing {k}"
     t = datetime.fromisoformat(a["published_at"])

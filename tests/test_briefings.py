@@ -6,6 +6,7 @@ m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 now=datetime(2026,10,10,18,tzinfo=timezone.utc)
 a=dict(id='example-afternoon',kind='afternoon',status='mock',title='Pulse — example',summary='Example — no market data',reviewed_by='Test editor',published_at='2026-10-09T15:47:00-04:00',observed_at='2026-10-09T15:45:00-04:00',sections=[dict(heading='Observed',paragraphs=['Example'])],sources=[dict(label='Example',url='https://example.com/')])
 assert m.validate(a,now)['title']=='Pulse; example'
+assert m.validate(dict(a,status='archived-unverified'),now)['status']=='archived-unverified'
 for patch in [dict(status='live'),dict(sources=[]),dict(published_at='2026-10-11T12:00:00-04:00'),dict(title='chatgpt-content-reference'),dict(observed_at='2026-10-10T12:00:00-04:00'),dict(kind='weekly')]:
     try: m.validate(dict(a,**patch),now)
     except (AssertionError,ValueError): pass

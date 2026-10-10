@@ -1,0 +1,91 @@
+{
+  "id": "2026-10-09-afternoon",
+  "kind": "afternoon",
+  "status": "archived-unverified",
+  "title": "Market Pulse: duration risk turns technical",
+  "summary": "October 9 afternoon: inflation expectations, energy costs and Treasury hedging flows.",
+  "published_at": "2026-10-09T15:47:00-04:00",
+  "observed_at": "2026-10-09T15:47:00-04:00",
+  "original_edition_date": "October 9, 2026; afternoon at 3:47 p.m. ET",
+  "reviewed_by": "Codex; archival import and formatting only",
+  "source_note": "Archived original briefing; historical figures, not live quotes. Source verification is pending. Recovered references and original-conversation provenance appear below.",
+  "sections": [
+    {
+      "heading": "What Changed: Observed",
+      "paragraphs": [
+        "Equities are recovering, but today's inflation data and Treasury-market developments complicate the morning's constructive outlook.",
+        "U.S. stocks advanced in mid-afternoon trading, with the S&P 500 gaining approximately 0.58%, Nasdaq 0.56%, and Dow 0.83%. Market breadth was positive, although Nasdaq recorded 173 new 52-week lows against just 35 highs.",
+        "Three developments deserve attention.",
+        "1. Consumer inflation expectations deteriorated.",
+        "October's preliminary University of Michigan consumer sentiment index declined to 46.3 from 48.1, below expectations.",
+        "More consequentially: - One-year inflation expectations increased to 4.7% from 4.6%. - Five-year expectations rose to 3.5% from 3.4%. - Current economic conditions fell to a record-low 44.7.",
+        "Lower-income households experienced particularly pronounced deterioration.",
+        "2. Oil relief proved incomplete.",
+        "Brent initially declined following reduced expectations of immediate U.S. military action against Iran. However, crude subsequently recovered toward $104.50, limiting the anticipated disinflationary benefit.",
+        "3. Treasury-market risks are becoming more technical.",
+        "The 10-year Treasury yield remained near 5.23%–5.25%, while the 30-year traded around 5.61%.",
+        "Importantly, Reuters identified increasing interest-rate volatility, mortgage convexity hedging, and corporate-bond issuance as potential amplifiers of Treasury selling.",
+        "Investment-grade credit spreads remain relatively tight, despite increasing issuance and hedging activity."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "Today's most interesting development is the potential emergence of a self-reinforcing duration cycle.",
+        "Higher yields can trigger additional Treasury selling through mortgage hedging and corporate-duration management.",
+        "That selling can subsequently push yields higher, creating additional hedging requirements.",
+        "This mechanism differs from inflation-driven repricing alone.",
+        "It suggests that even without materially changing expectations for Federal Reserve policy, market structure could amplify interest-rate volatility.",
+        "The distinction is particularly relevant to AI infrastructure financing.",
+        "Corporate borrowing to fund capital-intensive AI development is increasingly interacting with sovereign debt markets through issuance, portfolio substitution and interest-rate hedging.",
+        "Our interpretation: Strong Treasury auctions demonstrate available demand, but do not eliminate the possibility of technically driven selling between issuance events."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "paragraphs": [
+        "Next week introduces two important confirmation opportunities.",
+        "Wednesday, October 14: September CPI. Consensus expectations are approximately 3.6% headline inflation and 2.5% core inflation year-over-year. An upside surprise would increase the probability of renewed rate pressure.",
+        "Tuesday–Wednesday: Major bank earnings. Funding costs, credit provisions, loan demand and capital-markets activity should help establish whether elevated borrowing costs are affecting economic intermediation.",
+        "We would also monitor Treasury swaption volatility, mortgage hedging activity and investment-grade credit spreads."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "Our near-term assessment remains neutral with elevated volatility risk.",
+        "Equity resilience and successful Treasury auctions support a constructive scenario.",
+        "However, rising household inflation expectations, persistent energy costs and increasingly complex duration-market dynamics argue against assuming financial conditions will continue easing.",
+        "A meaningful deterioration in credit spreads would strengthen the adverse interpretation. Stable spreads alongside moderating yields would favor stabilization.",
+        "Neither outcome currently commands sufficient evidence for a high-conviction forecast."
+      ]
+    },
+    {
+      "heading": "BLAQUE BAUX Signal",
+      "paragraphs": [
+        "The Treasury market may be transitioning from an inflation-driven repricing toward a more complex interaction between inflation, issuance and hedging flows.",
+        "That distinction matters.",
+        "Inflation determines part of the fundamental justification for higher yields.",
+        "Market structure can determine how violently those yields adjust.",
+        "Priority: CPI → Treasury volatility → corporate credit spreads → bank earnings → energy.",
+        "The question heading into next week is no longer simply whether investors will purchase duration at current yields.",
+        "It is whether the mechanisms used to manage duration risk could themselves become a source of market instability."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Original BLAQUE BAUX briefing conversation",
+      "url": "https://chatgpt.com/c/6a920c82-1ff0-83ea-b4be-bb7adfe637d5"
+    },
+    {
+      "label": "Michigan: October 2026 preliminary sentiment",
+      "url": "https://www.sca.isr.umich.edu/"
+    },
+    {
+      "label": "Reuters: October 9 consumer sentiment",
+      "url": "https://www.marketscreener.com/news/us-consumer-sentiment-deteriorates-further-in-october-ce785ddcd88af324"
+    }
+  ],
+  "archived_at": "2026-10-10T18:20:08+00:00"
+}

@@ -66,6 +66,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 .legend{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#6b7178}.legend span{display:flex;align-items:center;gap:6px}.legend i{width:8px;height:8px;border-radius:2px;display:inline-block}.legend .g{background:var(--green)}.legend .r{background:var(--red)}.legend .a{background:var(--amber)}
 .hint{margin-top:11px;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#4f7d68;text-align:center;max-width:520px;line-height:1.8}
 .hint a{color:#7fb39c}
+.article-table{overflow-x:auto;margin:10px 0}.article-table table{width:100%;border-collapse:collapse;font:10px/1.5 "IBM Plex Mono",monospace;color:#c3d4cc}.article-table th,.article-table td{text-align:left;padding:7px 4px;border-bottom:1px solid #243a30}.article-table th{color:#7fb39c}
 </style>
 <link rel="stylesheet" href="/assets/navigation.css">
 <script src="/assets/navigation.js" defer></script>
@@ -107,7 +108,7 @@ function render(){
     const pct = e.pct ? `<span class="pct ${e.pdir==="up"?"up":"dn"}">${esc(e.pct)}</span>` : "";
     html += `<div class="msg ${esc(e.cls)}" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetail(${i})}" onclick="openDetail(${i})"><div class="accent"></div><div class="body">
       <div class="meta"><span class="chip ${chipClass(e.sender)}">${esc(e.chip)}</span><span class="tkr">${esc(e.tkr)}${pct}</span><span class="time">${esc(e.time)}</span><span class="chev">&rsaquo;</span></div>
-      <div class="head">${esc(e.head)}</div><div class="note">${esc(e.note)}</div><div class="evi">${esc(e.article ? (e.article.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : "MOCK / ILLUSTRATIVE") : "SOURCE EVENT / ANALYSIS UNVERIFIED")}</div></div></div>`;
+      <div class="head">${esc(e.head)}</div><div class="note">${esc(e.note)}</div><div class="evi">${esc(e.article ? editorialLabel(e.article) : "SOURCE EVENT / ANALYSIS UNVERIFIED")}</div></div></div>`;
   });
   feedEl.innerHTML = html;
 }
@@ -132,11 +133,12 @@ function openDetail(i){
 function goBack(){
   if(location.hash) history.replaceState(null, "", location.pathname + location.search); detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="live"></span>BUMBLE<span class="sub">// significant events</span>`; }
 
+const editorialLabel = a => a.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : a.status === "archived-unverified" ? "ARCHIVED / VERIFICATION PENDING" : "MOCK / ILLUSTRATIVE";
 const et = t => new Date(t).toLocaleString("en-US", {timeZone:"America/New_York", dateStyle:"medium",timeStyle:"short"}) + " ET";
 function showArticle(a){
-  const label = a.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : "MOCK / ILLUSTRATIVE";
-  detailEl.innerHTML = `<div class="dt-kicker">${esc(a.kind)} · ${label}</div><div class="dt-title">${esc(a.title)}</div><div class="dt-sub">Published ${esc(et(a.published_at))}<br>Observed ${esc(et(a.observed_at))}</div><div class="dt">` +
-    a.sections.map(s=>`<h4>${esc(s.heading)}</h4>`+(s.paragraphs||[]).map(p=>`<p>${esc(p)}</p>`).join("")+(s.list ? `<ul>${s.list.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>` : "")).join("") +
+  const label = editorialLabel(a);
+  detailEl.innerHTML = `<div class="dt-kicker">${esc(a.kind)} · ${label}</div><div class="dt-title">${esc(a.title)}</div><div class="dt-sub">${a.original_edition_date ? "Original edition: " + esc(a.original_edition_date) : "Published " + esc(et(a.published_at))}<br>Observed ${esc(et(a.observed_at))}${a.archived_at ? "<br>Archived " + esc(et(a.archived_at)) : ""}</div><div class="dt">` + (a.source_note ? `<div class="pri">${esc(a.source_note)}</div>` : "") +
+    a.sections.map(s=>`<h4>${esc(s.heading)}</h4>`+(s.paragraphs||[]).map(p=>`<p>${esc(p)}</p>`).join("")+(s.table ? `<div class="article-table"><table><thead><tr>${s.table.headers.map(x=>`<th scope="col">${esc(x)}</th>`).join("")}</tr></thead><tbody>${s.table.rows.map(row=>`<tr>${row.map(x=>`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>` : "")+(s.list ? `<ul>${s.list.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>` : "")).join("") +
     (a.signal ? `<div class="pri">${esc(a.signal)}</div>` : "") + `<h4>Sources</h4>` +
     a.sources.map(s=>`<a class="tag" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a> `).join("") +
     `<p>Reviewed by ${esc(a.reviewed_by)}</p><a class="tag" href="#">All articles</a>` +
@@ -153,7 +155,7 @@ window.addEventListener("hashchange", route);
 Promise.allSettled([fetch("feed.json").then(r=>{if(!r.ok)throw Error();return r.json();}),fetch("briefings.json").then(r=>{if(!r.ok)throw Error();return r.json();})]).then(([signals,briefs])=>{
   articles = briefs.status === "fulfilled" ? briefs.value.articles || [] : [];
   ITEMS = signals.status === "fulfilled" ? signals.value.events || [] : [];
-  ITEMS = articles.map(a=>({article:a,sender:a.kind==="weekly"?"WEEKLY":"PULSE",chip:a.kind==="weekly"?"WEEKLY":"PULSE",tkr:a.kind==="weekly"?"WEEKLY BRIEF":"MARKET PULSE",cls:"brief",date:new Date(a.published_at).toLocaleDateString("en-US",{timeZone:"America/New_York",year:"numeric",month:"long",day:"numeric"}),ts:a.published_at,time:et(a.published_at),head:a.title,note:a.summary})).concat(ITEMS);
+  ITEMS = articles.map(a=>({article:a,sender:a.kind==="weekly"?"WEEKLY":"PULSE",chip:a.kind==="weekly"?"WEEKLY":"PULSE",tkr:a.kind==="weekly"?"WEEKLY BRIEF":"MARKET PULSE",cls:"brief",date:new Date(a.published_at).toLocaleDateString("en-US",{timeZone:"America/New_York",year:"numeric",month:"long",day:"numeric"}),ts:a.published_at,time:a.kind === "weekly" ? "WEEKLY" : new Date(a.published_at).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"numeric",minute:"2-digit"}) + " ET",head:a.title,note:a.summary})).concat(ITEMS);
   ITEMS.sort((a,b)=>Date.parse(b.ts)-Date.parse(a.ts)); render();
   feedEl.insertAdjacentHTML("afterbegin", `<div class="empty" style="padding:10px">${briefs.status === "rejected" ? "Briefings unavailable; retry later" : articles.length ? "Weekday morning / afternoon · Saturday weekly" : "No reviewed briefings published yet"}</div>`);
   if(signals.status === "rejected") feedEl.insertAdjacentHTML("beforeend", '<div class="empty">Market signals unavailable</div>');
