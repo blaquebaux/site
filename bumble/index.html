@@ -65,7 +65,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 .frets{height:1px;background:#000;margin:9px 2px 0;box-shadow:0 1px 0 #2a2d31}
 .legend{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#6b7178}.legend span{display:flex;align-items:center;gap:6px}.legend i{width:8px;height:8px;border-radius:2px;display:inline-block}.legend .g{background:var(--green)}.legend .r{background:var(--red)}.legend .a{background:var(--amber)}
 .hint{margin-top:11px;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;color:#4f7d68;text-align:center;max-width:520px;line-height:1.8}
-.hint a{color:#7fb39c}
+@media(min-width:768px){.caption{font-size:13px;letter-spacing:.09em;color:#a6adb4;max-width:720px;line-height:1.8;margin-bottom:24px}}
 .article-table{overflow-x:auto;margin:10px 0}.article-table table{width:100%;border-collapse:collapse;font:10px/1.5 "IBM Plex Mono",monospace;color:#c3d4cc}.article-table th,.article-table td{text-align:left;padding:7px 4px;border-bottom:1px solid #243a30}.article-table th{color:#7fb39c}
 </style>
 <link rel="stylesheet" href="/assets/navigation.css">
@@ -91,7 +91,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
   </div>
 </div>
 <div class="legend"><span><i class="g"></i> buy / bullish</span><span><i class="r"></i> sell / risk</span><span><i class="a"></i> watch</span><span>EDGAR = filings</span><span>TAPE = price</span></div>
-<div class="hint" id="hint">tap an item to read it full-screen &middot; BACK returns<br><a href="/">home</a> &middot; <a href="/corpus/">corpus</a> &middot; <a href="/toolkit/">toolkit</a> &middot; <a href="/capstone/">capstone</a> &middot; <a href="/tracker/">tracker</a></div>
+<div class="hint" id="hint">tap an item to read it full-screen &middot; BACK returns</div>
 
 <script>
 let ITEMS = [];
