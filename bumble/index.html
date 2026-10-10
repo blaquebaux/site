@@ -152,7 +152,7 @@ function route(){
   if(a) showArticle(a); else {goBack(); if(id) feedEl.insertAdjacentHTML("afterbegin", '<div class="empty">Article unavailable</div>');}
 }
 window.addEventListener("hashchange", route);
-Promise.allSettled([fetch("feed.json").then(r=>{if(!r.ok)throw Error();return r.json();}),fetch("briefings.json").then(r=>{if(!r.ok)throw Error();return r.json();})]).then(([signals,briefs])=>{
+Promise.allSettled([fetch("feed.json?t=" + Date.now(), {cache:"no-store"}).then(r=>{if(!r.ok)throw Error();return r.json();}),fetch("briefings.json?t=" + Date.now(), {cache:"no-store"}).then(r=>{if(!r.ok)throw Error();return r.json();})]).then(([signals,briefs])=>{
   articles = briefs.status === "fulfilled" ? briefs.value.articles || [] : [];
   ITEMS = signals.status === "fulfilled" ? signals.value.events || [] : [];
   ITEMS = articles.map(a=>({article:a,sender:a.kind==="weekly"?"WEEKLY":"PULSE",chip:a.kind==="weekly"?"WEEKLY":"PULSE",tkr:a.kind==="weekly"?"WEEKLY BRIEF":"MARKET PULSE",cls:"brief",date:new Date(a.published_at).toLocaleDateString("en-US",{timeZone:"America/New_York",year:"numeric",month:"long",day:"numeric"}),ts:a.published_at,time:a.kind === "weekly" ? "WEEKLY" : new Date(a.published_at).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"numeric",minute:"2-digit"}) + " ET",head:a.title,note:a.summary})).concat(ITEMS);
