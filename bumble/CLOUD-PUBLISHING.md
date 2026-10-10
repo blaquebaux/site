@@ -2,7 +2,7 @@
 
 The repository can now receive a complete article JSON from the existing cloud briefing producer. It validates and compiles the archive on GitHub Actions, then explicitly requests a GitHub Pages build after a compiler-generated commit. No desktop or separate machine is required for that downstream path.
 
-The producer connection is not enabled until its scheduled task has authenticated GitHub write access and the publication instructions below are saved to each existing schedule. The desktop relay remains a separate temporary service; do not describe it as cloud-hosted.
+The publication instructions below are saved to both existing cloud schedules. Their installed GitHub plugin reached the repository in the Weekly duplicate-check run. The first fresh scheduled write remains to be observed. The desktop relay is paused.
 
 ## Instructions to append to the existing AM, PM, and Weekly schedules
 
