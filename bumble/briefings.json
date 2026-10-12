@@ -2,6 +2,62 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-12-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Energy risk trades while cash bonds are closed",
+      "summary": "October 12 premarket: energy risk and incomplete fixed-income price discovery.",
+      "published_at": "2026-10-12T09:09:00-04:00",
+      "observed_at": "2026-10-12T07:12:00-04:00",
+      "reviewed_by": "ChatGPT; verification pending",
+      "source_note": "Historical morning pulse reconstructed from the October 12 briefing. Market figures and source references require independent editorial verification; not live quotes.",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "Earlier reporting cited Dow futures +0.06%, S&P 500 futures +0.03%, Nasdaq 100 futures -0.23% at 7:12 a.m. ET. These numbers remain unverified.",
+            "The original briefing reported Brent above $106 amid geopolitical developments. The figure and attribution remain verification pending.",
+            "U.S. cash fixed-income markets were scheduled for a holiday closure, limiting same-day price discovery."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "Equity futures stability does not demonstrate improved financing conditions when cash Treasury and corporate credit markets are not trading normally.",
+            "Proposed energy-supply agreements should not be confused with confirmed physical supply normalization."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Tuesday: cash Treasury and corporate credit reopening.",
+            "Wednesday: CPI and underlying price components.",
+            "Thursday: PPI and energy-cost transmission.",
+            "Bank earnings: funding costs, provisions and borrower quality."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "Near-term assessment remains neutral with elevated event risk. Moderating energy and orderly credit favor stabilization; renewed energy escalation and widening spreads would weaken it.",
+            "Neither path merits high conviction without fresh evidence."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Energy risk is trading; cash duration and corporate credit largely are not. Apparent stability requires confirmation.",
+      "sources": [
+        {
+          "label": "Reuters market reporting; citation verification pending",
+          "url": "https://www.reuters.com/"
+        },
+        {
+          "label": "Bureau of Labor Statistics release calendar",
+          "url": "https://www.bls.gov/schedule/news_release/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-10-weekly",
       "kind": "weekly",
       "status": "archived-unverified",
