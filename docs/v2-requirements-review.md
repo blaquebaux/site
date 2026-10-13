@@ -118,12 +118,12 @@ The v2.0 principle is simple: every claim should tell the reader whether it is a
 - Added a same-origin browser smoke harness for navigation, Analysis, Bumble, Tracker, and mobile-width rendering.
 - Added visible stale, unavailable, and last-success states for Analysis, Bumble, Tracker crypto, FRED, options, and simulated performance data.
 
-### Phase 2: two to four iterations
+### Phase 2: completed in this review branch
 
-- Add per-study provenance drawers with data window, benchmark, costs, validation stage, code commit, and limitations.
-- Add a release manifest containing site commit, registry version, and data artifact timestamps.
-- Add accessibility checks and a preview deployment gate.
-- Consolidate duplicated navigation markup through a safe static build step while preserving no-JavaScript navigation.
+- Added per-study Corpus provenance drawers with evidence date, data window, benchmark, costs, validation stage, code commit, limitations, and repository methods. Unavailable fields are explicitly marked instead of inferred.
+- Added a release manifest containing the source commit, registry version and entry count, data artifact timestamps, and performance disclaimer.
+- Added dependency-free accessibility checks across 13 public pages and a required pull-request quality workflow that packages a 14-day review artifact.
+- Consolidated duplicated navigation through a deterministic static build step. The rendered navigation remains present and usable without JavaScript.
 
 ### Phase 3: evidence-gated only
 
@@ -141,9 +141,9 @@ The v2.0 principle is simple: every claim should tell the reader whether it is a
 
 ## Remaining gaps and blockers
 
-- The repository has no browser-test dependency, so this change adds source-level contract coverage but cannot certify full visual and interaction behavior.
+- The dependency-free browser smoke harness verifies critical interactions, but it is not a pixel-diff visual regression suite.
 - The public crawler returned stale Corpus content during the audit. Production freshness must be checked after deployment and cache invalidation.
-- The 133-entry catalog is encoded directly in HTML. Count drift will remain a maintenance risk until Phase 1 introduces a central registry.
+- Per-study data windows, benchmarks, cost assumptions, and source commit hashes are not consistently published across all 133 repositories. Phase 2 exposes those gaps rather than inventing values.
 - Claims inside external research repositories were not independently reproduced in this site-focused pass. Links indicate provenance, not third-party validation.
 - Verified actual performance, licensed real-time data, institutional entitlements, and legal approval are outside the evidence currently available.
 

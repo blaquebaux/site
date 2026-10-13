@@ -78,6 +78,14 @@ def build() -> dict:
                 "finding": clean(match.group("finding")),
                 "evidence_date": EVIDENCE_DATE,
                 "methods": repository_url + "#readme",
+                "provenance": {
+                    "data_window": "Not standardized in the site registry; see repository methods.",
+                    "benchmark": "Not standardized in the site registry; see repository methods.",
+                    "costs": "Not standardized in the site registry; see repository methods.",
+                    "validation_stage": clean(match.group("status")).removeprefix("● "),
+                    "code_commit": None,
+                    "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release.",
+                },
                 "related_products": related_products(repository),
                 "corpus_url": f"/corpus/#research-{repository}",
             }
@@ -85,7 +93,7 @@ def build() -> dict:
     if len(entries) != 133:
         raise ValueError(f"Expected 133 Corpus entries, found {len(entries)}")
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": "2026-10-13",
         "source": "/corpus/",
         "evidence_date": EVIDENCE_DATE,

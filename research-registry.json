@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-10-13",
   "source": "/corpus/",
   "evidence_date": "2026-10-09",
@@ -16,6 +16,14 @@
       "finding": "Predictive-return tests failed, but diversification and trend premia persisted out of sample. The spine has also completed the governed path from data through orders and reconciliation.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/base#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs",
         "toolkit"
@@ -33,6 +41,14 @@
       "finding": "The broad BRICS basket was mostly emerging-market beta, but the Gulf pocket supplied genuinely lower correlation. A dollar overlay materially reduced drawdown and improved risk-adjusted return.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brics#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE PATH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -49,6 +65,14 @@
       "finding": "The stock–bond correlation regime was detectable ahead of time even though the other predictive components were null. That makes BONDS useful as a portfolio overlay and signal emitter, not a standalone trade.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bonds#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE PATH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -65,6 +89,14 @@
       "finding": "Leveraged wrappers lost their appeal once risk was matched. Unlevered QQQ with trend and volatility targeting preserved participation while controlling drawdown. The edge was exposure management, not leverage.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/broad#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE PATH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -81,6 +113,14 @@
       "finding": "Twelve-to-one momentum captured persistent mega-cap leadership. Position caps and volatility targeting made the result governable, though dependence on a few winners keeps concentration risk explicit.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/boom#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE PATH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -97,6 +137,14 @@
       "finding": "Market internals mostly coincided with stress rather than leading it, but volatility regimes persisted long enough to inform sizing. BENCHMARK therefore emits a bounded risk input instead of claiming new alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/benchmark#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE PATH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -113,6 +161,14 @@
       "finding": "Raw growth exposure was largely beta. Conditioning it on the rate regime improved Sharpe, skew, and drawdown enough to make that beta ownable within a governed portfolio.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bull#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE DRIVER",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -129,6 +185,14 @@
       "finding": "All Weather remained a valid low-volatility compounder, although it was highly correlated with the existing spine. The recognized allocation was retained as a governed book; a redundant overlay was not.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bridgewater#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE DRIVER",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -145,6 +209,14 @@
       "finding": "Listed private equity proved to be leveraged, procyclical equity and credit exposure, not a hedge. A market-regime overlay cut drawdown enough to turn that transparent factor into a usable governed sleeve.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blackstone#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "LIVE DRIVER",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -161,6 +233,14 @@
       "finding": "Aggression multiplied both growth and ruin; full Kelly and beyond deepened drawdown without improving the underlying edge. Fractional Kelly with volatility targeting preserved the return source within explicit risk limits.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brash#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -177,6 +257,14 @@
       "finding": "Fading the index failed, but ten-day cross-sectional reversal remained modestly positive in choppy regimes and near market-neutral. The edge is relative dislocation, not a broad-market call.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bounce#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -193,6 +281,14 @@
       "finding": "Static ownership of either thematic camp underperformed. Relative trend between the camps added value, making rotation rather than permanent allegiance the investable finding.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blue#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -209,6 +305,14 @@
       "finding": "The conservative and real-asset camp was not a superior static holding. Its value emerged only when relative trend rotated exposure between Brown and Blue regimes.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brown#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -225,6 +329,14 @@
       "finding": "Trend and volatility targeting retained much of crypto's upside while sharply reducing its deepest loss. The dollar-axis thesis was rejected; disciplined exposure control was the survivor.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bitdollar#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -241,6 +353,14 @@
       "finding": "Moving down the capitalization ladder added idiosyncratic risk and trading cost rather than edge. Liquid large-cap drawdown bounces were the only version robust enough to keep.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bottom#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -257,6 +377,14 @@
       "finding": "Hedging removed the flattering market beta but left a smaller, real momentum residue. Used as portable alpha over an index, it improved the portfolio rather than pretending neutrality was free.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bore#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -273,6 +401,14 @@
       "finding": "Five short-horizon ideas failed; a one-day crude-to-refiner lead–lag remained. The result rewards observed follow-through in a linked market rather than trading the headline itself.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blunt#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -289,6 +425,14 @@
       "finding": "Static long volatility carried too much annual cost. A diversified basket covering both inflationary and deflationary crises delivered negative crisis correlation with tolerable carry, so it earned a role as insurance.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bleed#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -305,6 +449,14 @@
       "finding": "Very short horizons reversed while horizons beyond roughly twenty days became momentum. Long winners survived; acceleration did not, and overlap with BOOM limits the sleeve's independent weight.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/beyond#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -321,6 +473,14 @@
       "finding": "Unhedged regional exposure was mostly US beta plus FX drag. Cross-country relative strength was the durable pulse, provided the implementation remains hedged or dollar-neutral.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/apac#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -337,6 +497,14 @@
       "finding": "Naive buy-write is a drag, but selective, calm-gated writing (DIVO) clears the hurdle with the upside intact — the first sell-side sleeve to escape 'insurance-selling, not alpha.'",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bankroll#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -353,6 +521,14 @@
       "finding": "A low-vol, tax-advantaged carry stream (~+3.3% tax-equivalent) that beats Treasuries for taxable capital; the edge is the exemption, not pre-tax alpha, so it is a conditional keeper.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/borough#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -369,6 +545,14 @@
       "finding": "Binary contracts resolve 0/1, so pricing error is observable — the one market where the random-entry gate can be checked against known truth. The gate shows power (fires on real order-flow impact) and specificity (silent on noise); the live tradable edge is parked on data (brier_2).",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brier#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -385,6 +569,14 @@
       "finding": "Matching asset duration to a long liability drives funded-ratio volatility toward zero; core bonds and equity leave large surplus risk. Risk elimination, not a return edge - and 2022 showed under-hedging is a rate bet. The liability capstone's stabilizer.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/binnacle#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -401,6 +593,14 @@
       "finding": "The two-wing barbell (cash + levered equity + long-vol) dominates a 60/40 on Sharpe (+1.58), Calmar (+0.98), skew (+0.63) and a -4% drawdown - convexity done right beats the mediocre middle, at the cost of absolute return. Antifragile, green in every crisis.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/barbell#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -417,6 +617,14 @@
       "finding": "Risk parity over the validated keepers, paired with conditional insurance, converted many separate findings into one diversified and governable portfolio rather than another prediction.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/breakthrough#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -433,6 +641,14 @@
       "finding": "Minimum-variance and maximum-Sharpe optimization cleared the index hurdle, but neither reliably beat risk parity. Covariance information was useful; precise return forecasts were not.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brilliant#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -449,6 +665,14 @@
       "finding": "Concentrating conviction worsened risk-adjusted results. Modest leverage on diversified risk parity raised return without inventing a new edge, while making the deeper drawdown explicit.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bossy#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -465,6 +689,14 @@
       "finding": "Buying and holding the keepers was already strong, but drift recreated concentration. Rebalancing by risk budget improved the portfolio, showing that allocation discipline matters after selection.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/believer#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -481,6 +713,14 @@
       "finding": "Random allocations of validated keepers were already strong, while BREAKTHROUGH ranked near the top of the distribution. Most value came from ingredient quality; allocation skill was real but smaller.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bemused#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -497,6 +737,14 @@
       "finding": "Adding carefully selected, low-correlation void-fillers improved risk-adjusted return. Breadth helped only when each addition filled a portfolio need rather than repeating an existing bet.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brigade#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -513,6 +761,14 @@
       "finding": "Adding every near-keeper diluted the portfolio because correlated ingredients could not manufacture diversification. The control proves that curation, not maximal breadth, is the allocation edge.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/boundless#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -529,6 +785,14 @@
       "finding": "A weak standalone bear sleeve became valuable at a small portfolio weight because its negative correlation reduced drawdown. Portfolio contribution, rather than standalone return, earned its place.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bastion#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -545,6 +809,14 @@
       "finding": "A managed-futures trend satellite complemented the risk-parity core across different regimes. The combined book improved resilience and passed the governed dry-run without duplicating the core.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/balsamic#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "GOVERNED",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -561,6 +833,14 @@
       "finding": "The FO-mandate book — low-vol equity, muni, gold and a long-vol tail. Beats 60/40, all-weather and the aggressive book on every preservation axis (Sharpe +1.20, maxDD -12%, the only positive-skew book), giving up CAGR. The tail layer flips the skew.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bulkhead#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -577,6 +857,14 @@
       "finding": "Levers the return-seeking keepers (QQQ/MTUM/GLD/EMB), vol-targeted to 18%. Beats SPY on CAGR (+19.3%), Sharpe (+1.02) and Calmar at a -30% drawdown, and crushes naive 3x leverage (-77% DD). The edge is disciplined leverage, not alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/belligerent#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -593,6 +881,14 @@
       "finding": "LDI hedge + spread carry + plain-equity growth + a convex tail. Earns +5.9%/yr surplus over the liability at a funded-ratio drawdown of -22% (vs a naive 60/40's -37%), positive skew, crisis-convex. Funds the obligations without betting the funded ratio on rates.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/backstop#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "VALIDATION",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -609,6 +905,14 @@
       "finding": "Builds the book each economic school prescribes and scores by P&L. No doctrine wins outright: on return Behavioral = Chicago (behavioral is beta); risk-adjusted goes to Austrian (gold's decade). The race crowns whoever's asset had the decade - regime-dependence wearing a philosophy.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brawl#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -625,6 +929,14 @@
       "finding": "Sells income, structure and insurance for a steady carry (+6.9%/yr) but is structurally short convexity (skew -1.24) - the counterparty to the preservation books. Slightly dominated by a 60/40; the real dealer edge (franchise, flow, balance sheet) isn't replicable in ETFs.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bodega#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -641,6 +953,14 @@
       "finding": "The gated short still paid persistent carry and covered only part of major crashes. A coincident regime signal cannot reliably time the short, and BLEED already provides broader protection.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bear#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bear"
     },
@@ -655,6 +975,14 @@
       "finding": "Value behaved largely as a rate-sensitive factor: volatility fell, but crashes remained and growth led over the test period. It may be a conditional ingredient, not a durable standalone edge.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/balanced#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-balanced"
     },
@@ -669,6 +997,14 @@
       "finding": "None of the tested Vanguard tilts reliably beat the low-cost index on a risk-adjusted basis. Apparent winners were mostly beta, making BOGLE the hurdle every active idea must clear.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bogle#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bogle"
     },
@@ -683,6 +1019,14 @@
       "finding": "The factor decomposition was coherent, but neither the public factors nor Berkshire reliably beat the index in the recent sample. Selection and cheap float appear central, and the proxies do not fully capture them.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/buffett#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-buffett"
     },
@@ -697,6 +1041,14 @@
       "finding": "The vehicle creates no alpha; its value is tax deferral under narrow conditions: large embedded gains, low fees, and a long holding period. Suitability depends more on the owner than the market.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/basket#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-basket"
     },
@@ -711,6 +1063,14 @@
       "finding": "Cross-asset lead–lag relationships were too weak to trade reliably. The durable output is the governed four-block allocation, supported by an open derivatives reference rather than a single predictive sleeve.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/block#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -727,6 +1087,14 @@
       "finding": "The fragility tells describe building stress but do not predict forward drawdowns or sudden shocks. The monitor survives only as a bounded tail-hedge sizing input, not a market-timing switch.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bombs-away#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bombs-away"
     },
@@ -741,6 +1109,14 @@
       "finding": "Building beta-neutrality in beats regressing it out after the fact, which over-corrects; a conditional keeper that scopes the full reinforcement-learning go/no-go still to be run.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/ballast#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-ballast"
     },
@@ -755,6 +1131,14 @@
       "finding": "A real carry stream (EMB cleanest) but substantially a short-dollar bet with a crash-correlated tail that overlaps the BRICS dollar regime.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bazaar#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bazaar"
     },
@@ -769,6 +1153,14 @@
       "finding": "The crack spread is an independent, positive-skew diversifier (+0.43 Sharpe), but its return is realized margin expansion, not carry, and crush/spark need a futures feed.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blend#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-blend"
     },
@@ -783,6 +1175,14 @@
       "finding": "A genuinely uncorrelated diversifier that pays in slow bears, but the positive-skew crisis convexity is absent on ETF proxies and needs a futures universe.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/boulder#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-boulder"
     },
@@ -797,6 +1197,14 @@
       "finding": "Laddering removes single-date timing luck and the delta-strikes keep upside, but it is a steadier buy-write, not new alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/braid#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-braid"
     },
@@ -811,6 +1219,14 @@
       "finding": "Real and out-of-sample stable, and sharper than a plain vol-state, but it forecasts magnitude not direction — a risk/sizing flag, not alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/breach#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-breach"
     },
@@ -825,6 +1241,14 @@
       "finding": "Miners are ~1.9x-levered gold with an idiosyncratic drag, but the market-neutral GDX/GLD ratio RV (+0.61 Sharpe) is a real conditional sleeve.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bullion#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bullion"
     },
@@ -839,6 +1263,14 @@
       "finding": "The dynamic anchor's crash-dodge is confirmed and material — it halves the left skew — but it buys the calm with foregone return versus plain momentum.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bulwark#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bulwark"
     },
@@ -853,6 +1285,14 @@
       "finding": "Real, compensated, and partly distinct from selling puts, but a specialty-equity bet with full market beta and a worse drawdown; a later mirage audit downgraded the distinct-premium claim to fragile.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/burdensome#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-burdensome"
     },
@@ -867,6 +1307,14 @@
       "finding": "Raw short-vol is a landmine; a term-structure gate shrinks the crater but cannot remove the tail — conditional insurance-selling, the mirror of the TAIL sleeve, not alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bushel#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bushel"
     },
@@ -881,6 +1329,14 @@
       "finding": "Contrarian at bottoms and momentum-confirmation at tops hold up, but only as a regime rule — fade solely under tightening — not a symmetric standalone sleeve.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bidirectional#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bidirectional"
     },
@@ -895,6 +1351,14 @@
       "finding": "Vol-scaling's skew repair is momentum-specific as claimed, but immaterial in-sample because the 2009 crash predates the data window.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/backwards#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-backwards"
     },
@@ -909,6 +1373,14 @@
       "finding": "Adding a convex hedge to levered momentum is Sharpe-neutral (+0.80 vs +0.79): the hedge is a risk choice, not an edge — null for alpha, conditional as insurance.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/buttress#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-buttress"
     },
@@ -923,6 +1395,14 @@
       "finding": "The discount-reversion edge shows up on a price proxy (+0.87 Sharpe) but needs a NAV feed to be real, and the tradable PCEF basket does not beat 60/40.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bargain#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bargain"
     },
@@ -937,6 +1417,14 @@
       "finding": "The contango bleed is the headline (avoid front-month ETFs); a clean roll-carry harvest needs a futures term structure to test, so the verdict is conditional/null-ish.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/barrel#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-barrel"
     },
@@ -951,6 +1439,14 @@
       "finding": "The equity premium genuinely lives overnight, but it is un-harvestable net of a daily round-trip and the seasonal tilts have decayed — an honest execution insight, not a sleeve.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brief#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-brief"
     },
@@ -965,6 +1461,14 @@
       "finding": "Buffered/defined-outcome ETFs sell a buffer for a cap. The autopsy: it's symmetric beta-reduction dressed as asymmetry (up-capture ~ down-capture), and the fee lives in forgone dividends + the cap - a plain SPY+cash mix replicates it near-free. BLOCK's 'where the fee lives', made tradable.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bezel#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bezel"
     },
@@ -979,6 +1483,14 @@
       "finding": "The celebrated unorthodox bets, sorted by tail sign: convex winners (Big Short, Taleb) paid once and can't be timed; steady-Sharpe winners (LTCM, MF Global, Volmageddon) were negative-skew ruin. Proven on 2016+ data (SVXY's -83% day). A diagnostic that motivates the ruin-gate.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bravado#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bravado"
     },
@@ -993,6 +1505,14 @@
       "finding": "The duration-neutral credit spread is real but thin (+1.8%/yr), badly negative-skew (-1.96) and crash-correlated; decomposed it is credit beta with ~0 residual alpha. A compensated credit-risk premium, not an edge - the spread is the risk. A liability ingredient.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bedrock#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bedrock"
     },
@@ -1007,6 +1527,14 @@
       "finding": "The multi-strategy HF clone is 75% replicable beta with ~0 alpha and lags a 60/40 - 2-and-20 ate the rest (Lo confirmed). The honest exception is managed futures (DBMF): low correlation, a genuine diversifier the linear clone can't capture. Rent that; skip the rest.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bootstrap#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bootstrap"
     },
@@ -1021,6 +1549,14 @@
       "finding": "The investment side of an annuity is a cheap bond ladder + equity sliver; the ~2.5%/yr variable-annuity wrapper more than halves the return. The one unreplicable value is the mortality credit (longevity pooling) - DIY the investment, buy only the longevity insurance.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/buckler#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-buckler"
     },
@@ -1035,6 +1571,14 @@
       "finding": "Gliding adds no return edge - it matches its own average static allocation, so the timing is neutral. Its real value is sequence-of-returns protection: a -9% late-horizon drawdown vs -17% for a static mix, shielding the largest balance from a late crash. A schedule, not alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bowline#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "RESEARCH",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bowline"
     },
@@ -1049,6 +1593,14 @@
       "finding": "The proposed inflation domino is plausible, but the test still needs breakeven and CPI data plus enough global history to separate a durable cascade from one episode.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/belt-tighteners#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-belt-tighteners"
     },
@@ -1063,6 +1615,14 @@
       "finding": "The hypothesis depends on surviving distress through payout, but liquid ETFs are poor proxies and survivorship is severe. Tradable data has not yet isolated the intended carry.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/battered#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-battered"
     },
@@ -1077,6 +1637,14 @@
       "finding": "Public congressional-trading funds have too little history to distinguish information from a technology tilt. A credible test needs transaction-level disclosure data and lag-aware execution.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bureaucrats#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bureaucrats"
     },
@@ -1091,6 +1659,14 @@
       "finding": "The true house edge lives in private prediction and sportsbook data, while listed companies mix that economics with consumer beta. The accessible proxies have not yet isolated the premium.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bets#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bets"
     },
@@ -1105,6 +1681,14 @@
       "finding": "State ownership could create a backstop premium or an operating drag, but investable events are rare and heterogeneous. The test requires a hand-curated event history rather than a broad industry proxy.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bigbrother#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bigbrother"
     },
@@ -1119,6 +1703,14 @@
       "finding": "Private-company performance is not directly observable. The testable residue is post-lockup sponsor behavior, but it still needs a clean event set and realistic borrow assumptions.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/buyouts#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-buyouts"
     },
@@ -1133,6 +1725,14 @@
       "finding": "Stubbed — the test is blocked on an options open-interest plus intraday feed the public data does not provide.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/backlash#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-backlash"
     },
@@ -1147,6 +1747,14 @@
       "finding": "Stubbed — blocked on an exchange opening-imbalance feed.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/barrage#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-barrage"
     },
@@ -1161,6 +1769,14 @@
       "finding": "Stubbed — blocked on ex-dividend dates and amounts.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bequest#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bequest"
     },
@@ -1175,6 +1791,14 @@
       "finding": "Stubbed — blocked on an index-rebalance announcement feed.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bidding#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bidding"
     },
@@ -1189,6 +1813,14 @@
       "finding": "Stubbed — blocked on an options implied-volatility surface.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bight#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bight"
     },
@@ -1203,6 +1835,14 @@
       "finding": "Stubbed — blocked on a supplier/customer relationship graph.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/branch#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-branch"
     },
@@ -1217,6 +1857,14 @@
       "finding": "Stubbed — blocked on options chains plus an event calendar.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/broaching#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-broaching"
     },
@@ -1231,6 +1879,14 @@
       "finding": "Stubbed — blocked on an earnings/SUE feed.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/broadcast#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "CONCEPT",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-broadcast"
     },
@@ -1245,6 +1901,14 @@
       "finding": "While US and commodity beta dominated, the sleeve carried the worst tail and unhedgeable FX, and rotation reduced rather than improved the result. Geography within equities proved to be more beta with a fatter tail.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/latam#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-latam"
     },
@@ -1259,6 +1923,14 @@
       "finding": "Foreign Treasury flows were weak and coincident; markets and economic conditions often moved before the creditor data. The series is a macro read, not a tradable leading signal.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/benefactors#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-benefactors"
     },
@@ -1273,6 +1945,14 @@
       "finding": "Liquid hedge-fund replicators delivered watered-down market beta while the true pod-level edge remained private. The useful defensive residues were already represented elsewhere in the family.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bind#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bind"
     },
@@ -1287,6 +1967,14 @@
       "finding": "Eleven country ETFs collapsed into fewer than two effective bets, dominated by US beta and currency drag. Rotation was negative, so regional labels did not produce real diversification.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/emea#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-emea"
     },
@@ -1301,6 +1989,14 @@
       "finding": "Defense stocks behaved as equity beta with a compelling narrative, while geopolitical shocks were priced too quickly for the tested rules. Trend filters added whipsaw rather than protection.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bulk#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "capstone"
       ],
@@ -1317,6 +2013,14 @@
       "finding": "The volatility risk premium was real, but naked short volatility eventually surrendered the carry in the tail. Defined-risk versions then underperformed the index after paying for protection.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brittle#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-brittle"
     },
@@ -1331,6 +2035,14 @@
       "finding": "FDA and clinical outcomes created genuine dispersion but were not predictable from price alone. Without domain-specific fundamental data, the sleeve remained a risk diagnostic rather than an edge.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bio#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bio"
     },
@@ -1345,6 +2057,14 @@
       "finding": "Seventeen banks reduced to roughly one and a half effective bets, driven by the economy and the short end of the curve. Stock selection and timing added no durable alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/basel#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-basel"
     },
@@ -1359,6 +2079,14 @@
       "finding": "Party-aligned baskets often ran opposite the political story as rates and macro conditions dominated. Recent winners also reverted, leaving no stable partisan signal.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/beltway#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-beltway"
     },
@@ -1373,6 +2101,14 @@
       "finding": "The public style was mostly equity beta; hated-name reversal failed, froth shorts produced ruinous drawdown, and concentration worsened risk-adjusted return. Discretion did not survive systematization.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/burry#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-burry"
     },
@@ -1387,6 +2123,14 @@
       "finding": "Post-merger decay was visible but difficult to short because borrow and the occasional explosive winner dominated execution. The safer trust-carry trade required deal data the public proxy did not provide.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blank#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-blank"
     },
@@ -1401,6 +2145,14 @@
       "finding": "Price and volume alone could not distinguish artificial support from ordinary momentum. Fading the pattern lost money; a credible test would require positioning and flow data.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brute-force#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-brute-force"
     },
@@ -1415,6 +2167,14 @@
       "finding": "Equity correlations shared a common beta and rose precisely when diversification was needed. Low historical correlation was unstable, while pair spreads lacked durable cointegration.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blurred#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-blurred"
     },
@@ -1429,6 +2189,14 @@
       "finding": "Recent losers tended to bounce, so systematic shorting lost. True terminal declines were obscured by delistings and missing data, implying a fundamental specialist edge rather than a price rule.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/backsliders#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-backsliders"
     },
@@ -1443,6 +2211,14 @@
       "finding": "AI names formed one crowded growth factor, but price alone could not time its reversal. The practical response is to size and insure the exposure, not mechanically short the story.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bubble#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bubble"
     },
@@ -1457,6 +2233,14 @@
       "finding": "Listed short-volatility products lagged the index and carried severe negative skew. Regime gates merely exchanged return for drawdown because coincident signals could not defuse the tail.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brace#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-brace"
     },
@@ -1471,6 +2255,14 @@
       "finding": "Liquid carry proxies offered weak excess return, equity correlation, and negative crisis skew. The apparent yield was compensation for crash exposure, not portable alpha.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bounty#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bounty"
     },
@@ -1485,6 +2277,14 @@
       "finding": "The public merger-arbitrage proxy earned little over cash while retaining negative skew and crisis correlation. The real edge requires deal selection, leverage, and access the ETF cannot reproduce.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bite#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bite"
     },
@@ -1499,6 +2299,14 @@
       "finding": "The pairs framework achieved neutrality but earned approximately nothing after costs. The vehicle was sound; the historical mean-reversion signal had decayed.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bridge#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [
         "labs"
       ],
@@ -1515,6 +2323,14 @@
       "finding": "Adding NVIDIA raised backtested Sharpe but repeated growth exposure already embedded in the capstones and deepened drawdown. The apparent improvement was concentration and sample-period luck, not diversification.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bloated#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bloated"
     },
@@ -1529,6 +2345,14 @@
       "finding": "Gap-ups continue rather than revert (+0.08% open-to-close); fading loses net and any snap-back is intraday-only.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/backfill#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-backfill"
     },
@@ -1543,6 +2367,14 @@
       "finding": "ETF-level curve alpha is a regime-bound short-duration bet, not a durable premium.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bands#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bands"
     },
@@ -1557,6 +2389,14 @@
       "finding": "Once crowded via public trackers the edge is gone — NANC/KRUZ track-or-lag SPY; crowded smart money is just beta.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bandwagon#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bandwagon"
     },
@@ -1571,6 +2411,14 @@
       "finding": "The small-cap January premium has decayed or reversed and the large-cap loser-bounce is noise net of cost, surviving only in untradable illiquid names.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/barbican#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-barbican"
     },
@@ -1585,6 +2433,14 @@
       "finding": "The ETF-packaged version is equity beta plus a liquidity-crash risk, not a premium.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/basic#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-basic"
     },
@@ -1599,6 +2455,14 @@
       "finding": "Macro factor-timing ties but does not beat a static multi-factor blend net of turnover, and fails its one job in 2022 — the factors are the edge, timing them is not.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/baton#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-baton"
     },
@@ -1613,6 +2477,14 @@
       "finding": "Dynamic hedging tightens the gross spread but its churn makes it net-worse; neither selection nor the filter earns net on liquid pairs.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/beacon#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-beacon"
     },
@@ -1627,6 +2499,14 @@
       "finding": "The headline Sharpe is a daily-bar fill artifact; the executable version is 3x-NDX leverage beta that loses to holding QQQ, and the adaptive layer is overfit.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/beaming#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-beaming"
     },
@@ -1641,6 +2521,14 @@
       "finding": "The canaries are coincident (same-day corr +0.55), not predictive (next-day -0.02) — the lead-lag is arbitraged away in daily data.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bellwether#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bellwether"
     },
@@ -1655,6 +2543,14 @@
       "finding": "Residualizing gives about the same Sharpe on large caps this window; the documented edge needs a broad/small-cap universe and multi-factor residualization.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bespoke#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bespoke"
     },
@@ -1669,6 +2565,14 @@
       "finding": "On large-cap, post-2009 price data the momentum crash sits in the winner leg, not a loser squeeze; the thesis needs small-caps and short-interest data.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bevy#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bevy"
     },
@@ -1683,6 +2587,14 @@
       "finding": "The brochure's calm window ends the month of Volmageddon; true vol is 33% with a -72% drawdown — the risk limit bounds the loss, not the edge.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bleacher#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bleacher"
     },
@@ -1697,6 +2609,14 @@
       "finding": "Quality is ~SPY-like in ETF form and the valuation conditioning runs the wrong way; there is no reversal to exploit.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blemish#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-blemish"
     },
@@ -1711,6 +2631,14 @@
       "finding": "Real gross, erased net — the overnight-vs-intraday and weekly-reversal edges are the liquidity rent you pay in the spread.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/blink#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-blink"
     },
@@ -1725,6 +2653,14 @@
       "finding": "No directional edge and it loses to holding the stock; the '+899%' headline is beta plus selection, and compression does not even precede expansion at the trade horizon.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bollinger#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bollinger"
     },
@@ -1739,6 +2675,14 @@
       "finding": "Carry is thin and crash-prone and trend is too weak on six liquid crosses to stand alone.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bourse#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bourse"
     },
@@ -1753,6 +2697,14 @@
       "finding": "Bond-like return but worse risk-adjusted than bonds, with a -29% equity-correlated crash — levered credit plus duration, not a diversifier.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bowed#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bowed"
     },
@@ -1767,6 +2719,14 @@
       "finding": "Low-beta did not beat high-beta in the growth bull; the levered book's Sharpe is residual beta plus leverage, a known weak decade for the factor.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bridle#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bridle"
     },
@@ -1781,6 +2741,14 @@
       "finding": "Implausible and not reproducible — a faithful price-only analog loses money and the 'drift regime' is just a momentum screen.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brunt#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-brunt"
     },
@@ -1795,6 +2763,14 @@
       "finding": "A window trick plus collateral yield plus a tiny delta; put-selling is the insurer's fat-tail seat, not a free premium.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/budget#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-budget"
     },
@@ -1809,6 +2785,14 @@
       "finding": "Rejected — near-zero daily correlation to Treasuries and no underperformance when rates spike; defensiveness dominates.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bunker#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bunker"
     },
@@ -1823,6 +2807,14 @@
       "finding": "The testable panic-fade is the known dip-bounce that loses to buy-and-hold, and the policy composite adds nothing atop an untested 'always walks back' assumption.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/burrito#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-burrito"
     },
@@ -1837,6 +2829,14 @@
       "finding": "Every live fund underperforms SPY net of its growth tilt and the only 'winners' are delisted mid-sample — the survivorship trap is the finding; raw feeds needed.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/buzz#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-buzz"
     },
@@ -1851,6 +2851,14 @@
       "finding": "On-screen crypto carry is mostly collateral yield plus a regime-bound basis, not a harvestable premium.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/byproduct#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-byproduct"
     },
@@ -1865,6 +2873,14 @@
       "finding": "At the index level credit and equity are coincident, the divergence does not resolve, and the convergence trade inverts — the real edge is issuer-level CDS.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bifurcate#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bifurcate"
     },
@@ -1879,6 +2895,14 @@
       "finding": "At the ETF level the credit impulse (high yield minus a duration Treasury) is strongly coincident with equity (+0.72 same-day) but does not lead it (next-day -0.12), and the timing overlay loses to buy-and-hold. The issuer-level diffusion edge needs single-name bonds (bloodhound_2).",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bloodhound#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bloodhound"
     },
@@ -1893,6 +2917,14 @@
       "finding": "Equity REITs are ~0.8 SPY + 0.24 TLT beta with negative residual alpha; adding 10% to a 60/40 lowers its Sharpe. Mortgage REITs are a -70%-drawdown yield landmine and the sub-sectors are one rate factor. A documented beta ingredient, not an edge.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/brownstone#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-brownstone"
     },
@@ -1907,6 +2939,14 @@
       "finding": "The Baupost/Klarman patient-cash posture is dominated by a boring 60/40 on Sharpe (0.59 vs 0.93), return AND drawdown - being 78% in cash is drag. The preservation DNA is real (positive skew) but a bull decade is its worst case, and Klarman's edge is security selection, not cash-timing.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bide#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bide"
     },
@@ -1921,6 +2961,14 @@
       "finding": "The liquid Yale replica is dominated by a boring 60/40 - global equity beta (corr->SPY +0.88, 1.4 effective bets) whose 'alts' are levered equity. It can't buy the real edge (illiquidity, manager selection), which is exactly why Swensen told retail investors to index.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/banyan#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-banyan"
     },
@@ -1935,6 +2983,14 @@
       "finding": "In-sample 'best months' look great but decay out-of-sample (the honest expanding-window test). The physical seasonals (nat-gas winter, gasoline spring) are real but un-harvestable on ETFs - UNG bleeds -22%/yr to contango, swamping the seasonal. The premium lives in the futures curve.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/bonfire#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-bonfire"
     },
@@ -1949,6 +3005,14 @@
       "finding": "REIT sub-sectors are one rate factor (1.2 effective bets, +0.78 correlation); a momentum rotation underperforms both an equal-weight basket and simply holding broad REIT, net of cost - value-destroying turnover. You can't rotate within one factor. Confirms brownstone.",
       "evidence_date": "2026-10-09",
       "methods": "https://github.com/blaquebaux/boulevard#readme",
+      "provenance": {
+        "data_window": "Not standardized in the site registry; see repository methods.",
+        "benchmark": "Not standardized in the site registry; see repository methods.",
+        "costs": "Not standardized in the site registry; see repository methods.",
+        "validation_stage": "NULL",
+        "code_commit": null,
+        "limitations": "Site summary only. Repository assumptions and results have not been independently reproduced for this release."
+      },
       "related_products": [],
       "corpus_url": "/corpus/#research-boulevard"
     }

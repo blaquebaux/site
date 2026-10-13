@@ -102,11 +102,26 @@ class SiteContractTests(unittest.TestCase):
         self.assertEqual(133, len(entries))
         self.assertEqual(133, len({entry["id"] for entry in entries}))
         self.assertEqual(133, len({entry["slug"] for entry in entries}))
-        required = {"id", "slug", "name", "repository", "category", "status", "finding", "evidence_date", "methods", "related_products", "corpus_url"}
+        required = {"id", "slug", "name", "repository", "category", "status", "finding", "evidence_date", "methods", "provenance", "related_products", "corpus_url"}
+        provenance_required = {"data_window", "benchmark", "costs", "validation_stage", "code_commit", "limitations"}
         corpus = (ROOT / "corpus/index.html").read_text()
         for entry in entries:
             self.assertTrue(required.issubset(entry), entry["slug"])
+            self.assertTrue(provenance_required.issubset(entry["provenance"]), entry["slug"])
             self.assertIn(f'id="research-{entry["slug"]}"', corpus)
+
+    def test_generated_navigation_and_accessibility_contracts(self):
+        subprocess.run(["python3", "scripts/build_navigation.py", "--check"], cwd=ROOT, check=True)
+        subprocess.run(["python3", "scripts/audit_accessibility.py"], cwd=ROOT, check=True)
+
+    def test_release_manifest_contract(self):
+        manifest = json.loads((ROOT / "release-manifest.json").read_text())
+        self.assertRegex(manifest["site_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(133, manifest["registry"]["entries"])
+        expected = {"research-registry.json", "analysis/data.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"}
+        self.assertEqual(expected, set(manifest["data_artifacts"]))
+        self.assertTrue(all(item["timestamp"] for item in manifest["data_artifacts"].values()))
+        self.assertIn("not verified actual performance", manifest["performance_note"])
 
     def test_homepage_counts_match_registry_taxonomy(self):
         entries = json.loads((ROOT / "research-registry.json").read_text())["entries"]

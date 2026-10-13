@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-13T19:07:38+00:00",
+  "site_commit": "a731bc373e04c972d59c0824b7a2ff7d10691735",
+  "registry": {
+    "schema_version": 2,
+    "generated_at": "2026-10-13",
+    "entries": 133
+  },
+  "data_artifacts": {
+    "research-registry.json": {
+      "timestamp": "2026-10-13"
+    },
+    "analysis/data.json": {
+      "timestamp": "2026-10-12"
+    },
+    "bumble/feed.json": {
+      "timestamp": "2026-10-13T16:30:17+00:00"
+    },
+    "bumble/briefings.json": {
+      "timestamp": "2026-10-13T10:24:00-04:00"
+    },
+    "tracker/performance.json": {
+      "timestamp": "2026-10-12"
+    },
+    "tracker/macro.json": {
+      "timestamp": "2026-10-13T15:55:19.110Z"
+    },
+    "tracker/options.json": {
+      "timestamp": "2026-10-13T15:55:19.110Z"
+    }
+  },
+  "performance_note": "Published research and simulated artifacts are not verified actual performance."
+}
