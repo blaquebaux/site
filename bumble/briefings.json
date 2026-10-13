@@ -2,6 +2,70 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-13-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Oil retreats as Treasury price discovery returns",
+      "summary": "October 13 morning: reported oil relief, Treasury reopening and renewed attention to AI-linked equity valuations.",
+      "published_at": "2026-10-13T10:24:00-04:00",
+      "observed_at": "2026-10-13T07:33:00-04:00",
+      "original_edition_date": "October 13, 2026; morning edition",
+      "reviewed_by": "ChatGPT; archival transcription only, source verification pending",
+      "source_note": "Verification pending: recovered October 13 morning briefing. Specific Reuters figures and quotations were cited by unresolved conversation markers; these are historical, unverified observations, not live market quotes. The publication timestamp records this later archive submission, not the original edition time. The source links below are known source pages, not evidence that each historical claim has been independently checked.",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "Equities: The original morning report stated that Monday ended with the S&P 500 down 0.1%, Nasdaq down 0.4% and Dow up 0.4%; semiconductor weakness contributed to the divergence. These closing figures require independent verification.",
+            "Energy: The original report stated Brent declined from a Monday close of $106.65 to $104.63 by 6:49 a.m. ET, a reported 1.89% decline. It attributed some relief to prospective additional Russian diesel supply, while noting unresolved Middle East infrastructure and shipping risks. These observations require source verification.",
+            "Rates, currencies and gold: The original report described Treasury trading resuming after Monday's holiday; it also reported a declining 10-year yield, an easing dollar and spot gold up 0.3% to $4,184.84 by 7:33 a.m. ET. Exact market figures remain unverified.",
+            "Policy: The original briefing attributed to Federal Reserve Governor Christopher Waller the view that economic strength and structural forces, including AI investment and government borrowing, contributed to higher long-term yields. The attribution remains verification pending."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The important change since Monday is the reported partial reversal in energy prices alongside renewed Treasury price discovery. Lower oil could ease near-term inflation pressure, but sustained improvement in financing conditions requires confirmation from Treasury yields and corporate credit spreads.",
+            "Higher yields can reflect stronger growth, financing demand or inflation expectations; these explanations have different implications for equities and credit. Semiconductor weakness raises a separate question about AI investment economics and earnings expectations."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Rates and credit: Treasury curve changes, investment-grade spreads and high-yield spreads.",
+            "Bank earnings: net interest income, funding costs, credit provisions and loan growth.",
+            "Energy: actual Russian diesel deliveries and Gulf shipping conditions.",
+            "Inflation: September CPI scheduled for Wednesday, October 14, and PPI for Thursday, October 15; confirm the official calendar before treating these dates as final.",
+            "Equities: whether semiconductor weakness spreads into broader market participation."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "The original morning assessment favored selective, volatile trading ahead of inflation data and bank earnings.",
+            "A constructive outcome would combine moderating energy prices, stable or declining long-term yields and contained credit spreads. An adverse outcome would involve renewed energy escalation, higher yields and deteriorating credit conditions alongside semiconductor weakness.",
+            "The available evidence does not justify precise numerical probabilities or a high-conviction directional forecast."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The important test is not whether oil declines for one session. It is whether Treasury and credit markets confirm improving financial conditions while AI-related equities face a separate earnings and valuation test.",
+      "sources": [
+        {
+          "label": "Associated Press: October 12 market closing report, cited in original briefing",
+          "url": "https://apnews.com/article/f07713e8b2e438ac5903b50f5ce97235"
+        },
+        {
+          "label": "Bureau of Labor Statistics: official economic release calendar",
+          "url": "https://www.bls.gov/schedule/news_release/"
+        },
+        {
+          "label": "Federal Reserve: speeches and testimony, for verification of attributed remarks",
+          "url": "https://www.federalreserve.gov/newsevents/speeches.htm"
+        }
+      ]
+    },
+    {
       "id": "2026-10-12-morning",
       "kind": "morning",
       "status": "archived-unverified",
