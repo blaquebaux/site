@@ -21,6 +21,7 @@ PRIMARY_PAGES = [
     "toolkit/index.html",
     "bumble/index.html",
     "about/index.html",
+    "evidence/index.html",
 ]
 NAV_DESTINATIONS = {
     "/",
@@ -35,6 +36,7 @@ NAV_DESTINATIONS = {
     "/toolkit/",
     "/bumble/",
     "/about/",
+    "/evidence/",
     "/#carter-warrens",
     "https://github.com/blaquebaux",
 }
@@ -118,10 +120,20 @@ class SiteContractTests(unittest.TestCase):
         manifest = json.loads((ROOT / "release-manifest.json").read_text())
         self.assertRegex(manifest["site_commit"], r"^[0-9a-f]{40}$")
         self.assertEqual(133, manifest["registry"]["entries"])
-        expected = {"research-registry.json", "analysis/data.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"}
+        expected = {"research-registry.json", "evidence-readiness.json", "analysis/data.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"}
         self.assertEqual(expected, set(manifest["data_artifacts"]))
         self.assertTrue(all(item["timestamp"] for item in manifest["data_artifacts"].values()))
         self.assertIn("not verified actual performance", manifest["performance_note"])
+
+    def test_phase_three_release_gates_remain_closed(self):
+        readiness = json.loads((ROOT / "evidence-readiness.json").read_text())
+        self.assertEqual("RESEARCH_ONLY", readiness["release_state"])
+        for family in ("actual_performance_gates", "real_time_data_gates"):
+            gates = readiness[family]
+            self.assertFalse(gates["approved_for_publication"])
+        evidence_page = (ROOT / "evidence/index.html").read_text()
+        self.assertIn("CURRENT RELEASE / RESEARCH ONLY", evidence_page)
+        self.assertIn("No gate opens by implication.", evidence_page)
 
     def test_homepage_counts_match_registry_taxonomy(self):
         entries = json.loads((ROOT / "research-registry.json").read_text())["entries"]

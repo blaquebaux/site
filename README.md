@@ -35,6 +35,8 @@ Production static site for **www.blaquebaux.com**.
 
 See [`docs/v2-requirements-review.md`](docs/v2-requirements-review.md) for the source-grounded v2.0 inventory, acceptance criteria, dependencies, and roadmap.
 
+The public [Data and Evidence policy](evidence/index.html) and [`evidence-readiness.json`](evidence-readiness.json) keep actual-performance and real-time-data publication gates closed until their evidence and approvals exist.
+
 ## Validation
 
 - Run `python3 scripts/build_research_registry.py --check` to verify the registry and Corpus anchors.

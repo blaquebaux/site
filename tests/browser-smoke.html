@@ -12,10 +12,11 @@
 <ol id="results"></ol>
 <script>
 const checks=[
-  ["home mobile navigation","/",doc=>doc.querySelectorAll(".bb-menu-panel a").length===14],
+  ["home mobile navigation","/",doc=>doc.querySelectorAll(".bb-menu-panel a").length===15],
   ["Analysis controls and data","/analysis/",doc=>doc.querySelector("#run")&&!doc.querySelector("#asof").textContent.includes("Loading")],
   ["Bumble reviewed feed","/bumble/",doc=>doc.querySelectorAll(".msg").length>0],
   ["Tracker simulated series","/tracker/",doc=>doc.querySelectorAll("#sel option").length===14],
+  ["Evidence gates closed","/evidence/",doc=>doc.querySelectorAll(".gate span:last-child").length===6&&[...doc.querySelectorAll(".gate span:last-child")].every(node=>node.textContent==="NOT APPROVED")],
 ];
 const results=document.getElementById("results"),summary=document.getElementById("summary");
 function run([name,url,test]){return new Promise(resolve=>{const frame=document.createElement("iframe");frame.src=url;document.body.append(frame);const timer=setTimeout(()=>finish(false,"timeout"),10000);function finish(ok,detail=""){clearTimeout(timer);const li=document.createElement("li");li.className=ok?"pass":"fail";li.textContent=(ok?"PASS ":"FAIL ")+name+(detail?" / "+detail:"");results.append(li);frame.remove();resolve(ok)}frame.onload=()=>setTimeout(()=>{try{finish(Boolean(test(frame.contentDocument)))}catch(error){finish(false,error.message)}},500)})}

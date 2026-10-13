@@ -22,6 +22,7 @@ PAGES = {
     "toolkit/index.html": "/toolkit/",
     "bumble/index.html": "/bumble/",
     "about/index.html": "/about/",
+    "evidence/index.html": "/evidence/",
     "404.html": None,
 }
 LINKS = [
@@ -29,6 +30,7 @@ LINKS = [
     ("System", "/#system"), ("Corpus", "/corpus/"), ("Labs", "/labs/"),
     ("Capstone", "/capstone/"), ("Block", "/block/"), ("Tracker", "/tracker/"),
     ("Toolkit", "/toolkit/"), ("Bumble", "/bumble/"), ("About", "/about/"),
+    ("Data & evidence", "/evidence/"),
     ("Carter Warrens", "/#carter-warrens"),
 ]
 NAV_RE = re.compile(r'<nav class="bb-site-nav".*?</nav>', re.S)

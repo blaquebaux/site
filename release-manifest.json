@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-13T19:07:38+00:00",
-  "site_commit": "a731bc373e04c972d59c0824b7a2ff7d10691735",
+  "generated_at": "2026-10-13T19:41:53+00:00",
+  "site_commit": "fa2540ef9ff767414a7753894c20eb40f71885ec",
   "registry": {
     "schema_version": 2,
     "generated_at": "2026-10-13",
@@ -9,6 +9,9 @@
   },
   "data_artifacts": {
     "research-registry.json": {
+      "timestamp": "2026-10-13"
+    },
+    "evidence-readiness.json": {
       "timestamp": "2026-10-13"
     },
     "analysis/data.json": {

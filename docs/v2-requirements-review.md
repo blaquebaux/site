@@ -125,10 +125,13 @@ The v2.0 principle is simple: every claim should tell the reader whether it is a
 - Added dependency-free accessibility checks across 13 public pages and a required pull-request quality workflow that packages a 14-day review artifact.
 - Consolidated duplicated navigation through a deterministic static build step. The rendered navigation remains present and usable without JavaScript.
 
-### Phase 3: evidence-gated only
+### Phase 3: readiness layer completed; publication gates remain closed
 
-- Introduce actual-performance surfaces only after independent evidence, operational controls, legal review, and a clear separation between simulated, paper, proprietary, and client results.
-- Add real-time or Bloomberg-level features only with licensed data, entitlements, redistribution rights, timestamp and latency disclosure, and operational monitoring.
+- Added a public Data and Evidence policy separating simulated research, repository findings, delayed or indicative context, paper results, proprietary actual performance, and client results.
+- Added a machine-readable readiness manifest. Actual-performance and real-time-data approvals remain false by default.
+- Added contract coverage that fails if Phase 3 is represented as publication-ready without an explicit manifest change.
+- Actual-performance surfaces remain blocked pending independent evidence, operational controls, legal review, and unambiguous result-type separation.
+- Real-time or Bloomberg-level features remain blocked pending licensed data, entitlements, redistribution rights, timestamp and latency disclosure, and operational monitoring.
 
 ## Test plan
 
