@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BLAQUE BAUX / ANALYSIS: Sleeve &amp; Portfolio Classifier</title>
+<meta name="description" content="Enter your tickers and a goal; BLAQUE BAUX classifies each into a research sleeve and its factor exposures, scores the portfolio's diversification and skew, and suggests complements to fit your mandate. Research only, not advice.">
+<link rel="canonical" href="https://www.blaquebaux.com/analysis/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Carter Warrens">
+<meta property="og:title" content="BLAQUE BAUX / ANALYSIS: Sleeve &amp; Portfolio Classifier">
+<meta property="og:description" content="Classify your tickers into research sleeves and factor exposures; score diversification and skew; align to a mandate. Research only.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.blaquebaux.com/analysis/">
+<meta property="og:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png">
+<meta name="theme-color" content="#050608">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+:root{--bg:#050608;--fg:#f4f4f1;--muted:#858b91;--line:#252b32;--green:#35e38a;--red:#ff5d6c;--gold:#d3b85f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:"Space Grotesk",sans-serif}
+a{color:inherit;text-decoration:none}.shell{width:min(1200px,calc(100% - 44px));margin:auto}
+nav{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(5,6,8,.88);backdrop-filter:blur(14px)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:14px;letter-spacing:.32em;font-weight:500}.links{display:flex;gap:26px;font:9px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#aaa}
+.hero{padding:120px 0 40px;border-bottom:1px solid var(--line)}.micro{font:9px "IBM Plex Mono";letter-spacing:.19em;text-transform:uppercase;color:#737980}
+h1{font-size:clamp(46px,8vw,96px);line-height:.85;letter-spacing:.12em;margin:22px 0 22px}.lead{max-width:760px;color:#9aa0a6;font:300 12px/1.8 "IBM Plex Mono";letter-spacing:.06em;text-transform:uppercase}
+.panel{padding:40px 0;border-bottom:1px solid var(--line)}
+textarea{width:100%;min-height:70px;background:#0b0e12;border:1px solid var(--line);color:var(--fg);font:14px "IBM Plex Mono";padding:14px;border-radius:4px;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:16px}
+select,.btn{background:#0b0e12;border:1px solid #343a42;color:var(--fg);font:10px "IBM Plex Mono";letter-spacing:.12em;text-transform:uppercase;padding:12px 16px;border-radius:4px;cursor:pointer}
+.btn.go{border-color:var(--green);color:var(--green)}
+.chip{display:inline-block;font:8px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line);border-radius:3px;color:var(--muted);margin:3px 4px 0 0}
+.ex{font:9px "IBM Plex Mono";color:#6a7178;letter-spacing:.08em}.ex b{color:var(--gold);cursor:pointer;font-weight:400}
+h2{font-size:30px;letter-spacing:.06em;font-weight:400;margin:0 0 6px}
+.card{border:1px solid var(--line);border-radius:5px;padding:18px 20px;margin-top:14px;background:linear-gradient(180deg,rgba(255,255,255,.015),transparent)}
+.tk{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}.tk b{font-size:19px;letter-spacing:.08em}.tk .cls{font:9px "IBM Plex Mono";color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.sleeve{font:9px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase}.sleeve a{color:var(--gold)}
+.bars{margin-top:10px;display:flex;flex-direction:column;gap:5px}
+.bar{display:grid;grid-template-columns:90px 1fr 42px;align-items:center;gap:10px;font:9px "IBM Plex Mono";color:var(--muted)}
+.bar .t{height:8px;background:#11161c;border:1px solid var(--line);border-radius:2px;overflow:hidden}.bar .t i{display:block;height:100%;background:var(--green)}
+.why{margin-top:10px;color:#b4b9be;font:400 13px/1.5 "Space Grotesk";}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:18px}
+.tile{background:var(--bg);padding:18px}.tile b{display:block;font:400 clamp(20px,2.4vw,30px)/1 "IBM Plex Mono"}.tile b.red{color:var(--red)}.tile b.good{color:var(--green)}.tile span{display:block;margin-top:8px;color:var(--muted);font-size:11px;line-height:1.4}
+.gap{border-left:2px solid var(--gold);padding:10px 14px;margin-top:10px;color:#cfd3d7;font-size:13px;line-height:1.5}.gap b{color:var(--gold)}
+.note{margin-top:22px;color:#596068;font:8px/1.7 "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}
+footer{padding:28px 0}.foot{display:flex;justify-content:space-between;color:#4e545b;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:760px){.links a:not(:nth-last-child(-n+3)){display:none}.strip{grid-template-columns:1fr 1fr}.bar{grid-template-columns:78px 1fr 38px}}
+</style>
+<link rel="stylesheet" href="../assets/site-wide.css">
+</head>
+<body>
+<nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links"><a href="/">Home</a><a href="/corpus/">Corpus</a><a href="/analysis/">Analysis</a><a href="/capstone/">Capstone</a><a href="/toolkit/">Toolkit</a><a href="/block/">Block</a><a href="/about/">About</a></div></div></nav>
+
+<header class="hero"><div class="shell">
+<div class="micro">Research / risk / diversification / goal alignment</div>
+<h1>ANALYSIS</h1>
+<p class="lead">Enter your tickers and a goal. BLAQUE BAUX classifies each into a research sleeve and its factor exposures, scores the portfolio's real diversification and skew, and names what is missing to fit your mandate. Rule-based from the open corpus, not live data, not advice.</p>
+</div></header>
+
+<section class="panel"><div class="shell">
+<div class="micro">Your book</div>
+<div style="margin-top:12px"><textarea id="tickers" placeholder="Enter tickers: equities, ETFs, crypto. e.g.  AAPL NVDA QQQ TLT GLD BTC"></textarea></div>
+<div class="row">
+  <select id="goal">
+    <option value="balanced">Goal: Balanced</option>
+    <option value="aggressive">Goal: Aggressive growth (HF)</option>
+    <option value="preservation">Goal: Capital preservation (FO)</option>
+    <option value="income">Goal: Income / carry</option>
+    <option value="liability">Goal: Liability-matched (pension)</option>
+  </select>
+  <button class="btn go" id="run">Analyze</button>
+  <span class="ex">Try:
+    <b data-ex="AAPL MSFT NVDA GOOGL AMZN TSLA">6 mega-caps</b> ·
+    <b data-ex="SPY QQQ MTUM GLD TLT">a classic mix</b> ·
+    <b data-ex="BTC ETH IBIT COIN MSTR">crypto book</b> ·
+    <b data-ex="VNQ GLD TLT USMV MUB VIXM">a defensive book</b>
+  </span>
+</div>
+</div></section>
+
+<section class="panel" id="out" style="display:none"><div class="shell"></div></section>
+
+<footer><div class="shell foot"><span>BLAQUE BAUX / ANALYSIS</span><span>CLASSIFY · DIVERSIFY · ALIGN</span></div></footer>
+
+<script>
+// ---- factor vocabulary ------------------------------------------------------------
+const FACTORS=["MKT","GROWTH","MOM","VALUE","LOWVOL","RATES","CREDIT","GOLD","COMMOD","REALEST","INTL","EM","CRYPTO","VOL","INCOME"];
+const L=(o)=>{const v={};FACTORS.forEach(f=>v[f]=o[f]||0);return v;};
+// skew tag: +1 convex/positive, 0 neutral, -1 negative/crash-correlated
+function K(n,cls,sleeve,f,skew,risk){return {n,cls,sleeve,f:L(f),skew,risk};}
+// ---- the BB knowledge base (ticker -> sleeve + factor loadings) --------------------
+const KB={
+ // broad equity / index
+ SPY:K("S&P 500","US equity index",[["bogle","bogle"]],{MKT:1},0,"market beta"),
+ VOO:K("S&P 500","US equity index",[["bogle","bogle"]],{MKT:1},0,"market beta"),
+ VTI:K("US total market","US equity index",[["bogle","bogle"]],{MKT:1},0,"market beta"),
+ QQQ:K("Nasdaq 100","US growth index",[["broad","broad"],["bull","bull"]],{MKT:.85,GROWTH:.4},-1,"growth beta, deeper drawdowns"),
+ DIA:K("Dow 30","US equity index",[["bogle","bogle"]],{MKT:.95,VALUE:.1},0,"large-cap beta"),
+ IWM:K("Russell 2000","US small cap",[["bogle","bogle"]],{MKT:1.1,VALUE:.15},-1,"small-cap beta, higher vol"),
+ // factor ETFs
+ MTUM:K("Momentum factor","US equity factor",[["boom","boom"],["bulwark","bulwark"]],{MKT:.9,MOM:.6},-1,"momentum, crash-prone"),
+ QUAL:K("Quality factor","US equity factor",[["buffett","buffett"],["blemish","blemish"]],{MKT:.9,GROWTH:.2},0,"quality ~ SPY-like"),
+ VLUE:K("Value factor","US equity factor",[["balanced","balanced"]],{MKT:.95,VALUE:.5},0,"value, regime-dependent"),
+ USMV:K("Min-volatility","US equity factor",[["bunker","bunker"]],{MKT:.7,LOWVOL:.6},0,"low-vol defensive"),
+ SPLV:K("Low volatility","US equity factor",[["bunker","bunker"]],{MKT:.7,LOWVOL:.6},0,"low-vol defensive"),
+ // sectors
+ XLK:K("Technology","US sector",[["broad","broad"]],{MKT:.9,GROWTH:.5},-1,"growth/tech beta"),
+ XLF:K("Financials","US sector",[["basel","basel"]],{MKT:1,VALUE:.2,RATES:.2},-1,"banks ~ one rate factor"),
+ XLE:K("Energy","US sector",[["barrel","barrel"]],{MKT:.8,COMMOD:.5},-1,"commodity/energy beta"),
+ XLV:K("Healthcare","US sector",[["bio","bio"]],{MKT:.7,LOWVOL:.2},0,"defensive-ish sector"),
+ XLP:K("Staples","US sector",[["belt-tighteners","belt-tighteners"]],{MKT:.5,LOWVOL:.5},+1,"defensive, holds in stress"),
+ XLU:K("Utilities","US sector",[["bunker","bunker"]],{MKT:.5,LOWVOL:.4,RATES:.3},0,"rate-sensitive defensive"),
+ XLY:K("Discretionary","US sector",[["broad","broad"]],{MKT:1,GROWTH:.2},-1,"cyclical beta"),
+ XLRE:K("Real estate","US sector",[["brownstone","brownstone"]],{MKT:.8,RATES:.25,REALEST:.6},-1,"equity + duration beta"),
+ // bonds / rates
+ TLT:K("20y+ Treasuries","long duration",[["binnacle","binnacle"],["backstop","backstop"]],{RATES:1},+1,"long duration, rate bet"),
+ EDV:K("Extended duration","long duration",[["binnacle","binnacle"]],{RATES:1.2},+1,"very long duration"),
+ IEF:K("7-10y Treasuries","duration",[["binnacle","binnacle"]],{RATES:.6},+1,"intermediate duration"),
+ SHY:K("1-3y Treasuries","short duration",[["bide","bide"]],{RATES:.2},0,"near-cash"),
+ BIL:K("T-bills","cash",[["bide","bide"]],{},0,"cash, no risk premium"),
+ AGG:K("US aggregate bonds","core bonds",[["bands","bands"]],{RATES:.5,CREDIT:.2},0,"core bond beta"),
+ BND:K("US total bond","core bonds",[["bands","bands"]],{RATES:.5,CREDIT:.2},0,"core bond beta"),
+ TIP:K("TIPS","inflation-linked",[["belt-tighteners","belt-tighteners"]],{RATES:.5,COMMOD:.2},0,"real-rate / inflation"),
+ LQD:K("IG credit","credit",[["bedrock","bedrock"]],{RATES:.5,CREDIT:.5},-1,"credit spread, crash-correlated"),
+ HYG:K("High-yield credit","credit",[["bedrock","bedrock"],["battered","battered"]],{MKT:.3,CREDIT:.8},-1,"HY spread, equity-like tail"),
+ EMB:K("EM debt","credit / EM",[["bazaar","bazaar"]],{CREDIT:.6,EM:.4},-1,"short-dollar carry, crash tail"),
+ MUB:K("Municipals","muni carry",[["borough","borough"]],{RATES:.4,CREDIT:.2,INCOME:.3},0,"tax-advantaged carry"),
+ PFF:K("Preferreds","hybrids",[["bowed","bowed"]],{CREDIT:.5,RATES:.3,INCOME:.3},-1,"levered credit+duration tail"),
+ // real assets
+ GLD:K("Gold","real asset",[["bullion","bullion"]],{GOLD:1},+1,"hard-money diversifier"),
+ SLV:K("Silver","real asset",[["bullion","bullion"]],{GOLD:.8,COMMOD:.3},-1,"higher-beta precious"),
+ GDX:K("Gold miners","real asset",[["bullion","bullion"]],{GOLD:1,MKT:.4},-1,"1.9x-levered gold, idiosyncratic drag"),
+ DBC:K("Broad commodities","real asset",[["barrel","barrel"],["bounty","bounty"]],{COMMOD:1},0,"commodity beta"),
+ USO:K("Crude oil","real asset",[["barrel","barrel"]],{COMMOD:1},-1,"contango bleed"),
+ UNG:K("Natural gas","real asset",[["bonfire","bonfire"]],{COMMOD:1},-1,"heavy contango bleed"),
+ VNQ:K("US REITs","real estate",[["brownstone","brownstone"]],{MKT:.8,RATES:.25,REALEST:.7},-1,"equity+duration, not a diversifier"),
+ IYR:K("US REITs","real estate",[["brownstone","brownstone"]],{MKT:.8,RATES:.25,REALEST:.7},-1,"equity+duration beta"),
+ REM:K("Mortgage REITs","real estate",[["brownstone","brownstone"]],{MKT:.6,CREDIT:.4,REALEST:.5},-1,"-70% drawdown yield landmine"),
+ // international
+ EFA:K("Developed ex-US","intl equity",[["emea","emea"]],{MKT:.9,INTL:.7},-1,"US beta wearing a flag"),
+ VEA:K("Developed ex-US","intl equity",[["emea","emea"]],{MKT:.9,INTL:.7},-1,"US beta + FX drag"),
+ EEM:K("Emerging markets","EM equity",[["brics","brics"]],{MKT:.9,EM:.8},-1,"EM beta, short-dollar"),
+ VWO:K("Emerging markets","EM equity",[["brics","brics"]],{MKT:.9,EM:.8},-1,"EM beta"),
+ // crypto
+ BTC:K("Bitcoin","crypto",[["bitdollar","bitdollar"]],{CRYPTO:1},-1,"crypto beta, fat tails"),
+ ETH:K("Ethereum","crypto",[["bitdollar","bitdollar"],["brash","brash"]],{CRYPTO:1.1},-1,"higher-beta crypto"),
+ IBIT:K("Bitcoin ETF","crypto",[["bitdollar","bitdollar"]],{CRYPTO:1},-1,"spot BTC"),
+ BITO:K("Bitcoin futures ETF","crypto",[["bitdollar","bitdollar"]],{CRYPTO:1},-1,"BTC + roll"),
+ ETHA:K("Ethereum ETF","crypto",[["brash","brash"]],{CRYPTO:1.1},-1,"spot ETH"),
+ COIN:K("Coinbase","crypto equity",[["byproduct","byproduct"]],{MKT:.6,CRYPTO:1.3},-1,"levered crypto proxy"),
+ MSTR:K("MicroStrategy","crypto equity",[["byproduct","byproduct"]],{MKT:.5,CRYPTO:1.7},-1,"levered BTC proxy, extreme tail"),
+ // volatility
+ VIXM:K("Mid-term VIX","long volatility",[["bleed","bleed"]],{VOL:1},+1,"convex tail hedge, bleeds"),
+ VXZ:K("Mid-term VIX","long volatility",[["bleed","bleed"]],{VOL:1},+1,"convex tail hedge"),
+ VXX:K("Short-term VIX","long volatility",[["bleed","bleed"]],{VOL:1.3},+1,"convex but heavy bleed"),
+ UVXY:K("1.5x VIX","long volatility",[["bleed","bleed"]],{VOL:2},+1,"levered vol, severe bleed"),
+ SVXY:K("Short VIX","short volatility",[["bravado","bravado"],["bushel","bushel"]],{VOL:-1.5},-1,"short-vol ruin shape (-83% day)"),
+ // income / liquid alts / structure
+ DIVO:K("Covered-call income","buy-write",[["bankroll","bankroll"]],{MKT:.6,INCOME:.5},-1,"income, caps upside"),
+ JEPI:K("Equity premium income","buy-write",[["bankroll","bankroll"]],{MKT:.6,INCOME:.5},-1,"income, caps upside"),
+ PUTW:K("Put-write","short volatility",[["bankroll","bankroll"],["bodega","bodega"]],{MKT:.6,VOL:-.4,INCOME:.4},-1,"sells vol, short convexity"),
+ QAI:K("HF multi-strategy","liquid alt",[["bootstrap","bootstrap"]],{MKT:.5,CREDIT:.2},0,"rentable HF beta, cash-like"),
+ DBMF:K("Managed futures","liquid alt",[["bootstrap","bootstrap"],["boulder","boulder"]],{COMMOD:.3,MOM:.3},+1,"low-corr crisis diversifier"),
+ BALT:K("Buffered equity","defined outcome",[["bezel","bezel"],["buckler","buckler"]],{MKT:.4,LOWVOL:.3},0,"symmetric beta-reduction + fee"),
+ BUFR:K("Laddered buffer","defined outcome",[["bezel","bezel"]],{MKT:.55,LOWVOL:.2},0,"capped equity + fee"),
+ UPRO:K("3x S&P 500","leveraged",[["belligerent","belligerent"],["beaming","beaming"]],{MKT:3},-1,"3x beta, ruin-shaped drawdowns"),
+ TQQQ:K("3x Nasdaq","leveraged",[["belligerent","belligerent"]],{MKT:2.6,GROWTH:1.2},-1,"3x growth, ruin-shaped"),
+};
+// mega-cap single names -> factor map (BB sleeves are factor/ETF-level; stocks map to exposures)
+const STOCK=(mkt,growth,risk,extra)=>K(extra&&extra.n||"US large cap","single stock",[["bogle","bogle"]],Object.assign({MKT:mkt,GROWTH:growth},extra&&extra.f||{}),risk,(extra&&extra.r)||"single-name: maps to factor exposure, not a sleeve");
+["AAPL","MSFT","GOOGL","GOOG","AMZN","META"].forEach(t=>KB[t]=STOCK(1.05,.5,-1,{r:"mega-cap growth: concentrated MKT+growth beta"}));
+KB.NVDA=STOCK(1.3,.9,-1,{r:"high-beta growth, fat right+left tail"});
+KB.TSLA=STOCK(1.5,.9,-1,{r:"high-beta growth, extreme idiosyncratic tail"});
+["JPM","BAC","WFC","GS"].forEach(t=>KB[t]=K("US bank","single stock",[["basel","basel"]],{MKT:1,VALUE:.3,RATES:.3},-1,"bank: economy + short-duration factor"));
+["BRK.B","BRKB"].forEach(t=>KB[t]=K("Berkshire","single stock",[["buffett","buffett"]],{MKT:.8,VALUE:.3,LOWVOL:.2},0,"quality/value conglomerate"));
+KB.XOM=K("Exxon","single stock",[["barrel","barrel"]],{MKT:.7,COMMOD:.5},-1,"energy beta");
+KB.JNJ=K("J&J","single stock",[["bio","bio"]],{MKT:.6,LOWVOL:.3},0,"defensive large cap");
+
+// ---- mandate targets (desired factor mix + skew) ----------------------------------
+const MANDATES={
+ balanced:{t:{MKT:.35,RATES:.25,CREDIT:.1,GOLD:.1,LOWVOL:.1,VOL:.1},skew:0,cap:"bulkhead",name:"Balanced"},
+ aggressive:{t:{MKT:.3,GROWTH:.25,MOM:.2,CRYPTO:.15,COMMOD:.1},skew:-1,cap:"belligerent",name:"Aggressive growth"},
+ preservation:{t:{LOWVOL:.25,GOLD:.2,RATES:.2,VOL:.2,CREDIT:.1,MKT:.05},skew:1,cap:"bulkhead",name:"Capital preservation"},
+ income:{t:{INCOME:.35,CREDIT:.25,VALUE:.15,REALEST:.1,LOWVOL:.15},skew:-1,cap:"bodega",name:"Income / carry"},
+ liability:{t:{RATES:.45,CREDIT:.25,MKT:.15,VOL:.1,GOLD:.05},skew:1,cap:"backstop",name:"Liability-matched"},
+};
+const CAP_URL={bulkhead:"bulkhead",belligerent:"belligerent",bodega:"bodega",backstop:"backstop"};
+
+// ---- math helpers -----------------------------------------------------------------
+function unit(v){const n=Math.sqrt(FACTORS.reduce((s,f)=>s+v[f]*v[f],0));return n>0?FACTORS.map(f=>v[f]/n):FACTORS.map(()=>0);}
+function cos(a,b){let d=0,na=0,nb=0;for(let i=0;i<a.length;i++){d+=a[i]*b[i];na+=a[i]*a[i];nb+=b[i]*b[i];}return (na>0&&nb>0)?d/Math.sqrt(na*nb):0;}
+function dominant(v){let best="MKT",bv=-1;FACTORS.forEach(f=>{if(Math.abs(v[f])>bv){bv=Math.abs(v[f]);best=f;}});return best;}
+
+function analyze(tks,goalKey){
+ const known=[],unknown=[];
+ tks.forEach(t=>{const k=KB[t]; k?known.push([t,k]):unknown.push(t);});
+ if(!known.length) return {err:"No recognized tickers. Try ETFs like SPY, QQQ, TLT, GLD, or crypto like BTC.",unknown};
+ // portfolio factor vector (equal weight, raw loadings averaged)
+ const pv=L({}); known.forEach(([,k])=>FACTORS.forEach(f=>pv[f]+=k.f[f]/known.length));
+ const tot=FACTORS.reduce((s,f)=>s+Math.abs(pv[f]),0)||1;
+ const shares=FACTORS.map(f=>[f,Math.abs(pv[f])/tot]).filter(x=>x[1]>0.01).sort((a,b)=>b[1]-a[1]);
+ // effective bets from cosine-sim of factor vectors
+ const U=known.map(([,k])=>unit(k.f)); const n=U.length; let s=0;
+ for(let i=0;i<n;i++)for(let j=0;j<n;j++)s+=cos(U[i],U[j]);
+ const eff= s>0 ? (n*n)/s : 1;
+ // book skew
+ const sk=known.reduce((a,[,k])=>a+k.skew,0)/n;
+ const skLabel = sk>0.25?["positive","good"]: sk<-0.25?["negative","red"]:["roughly neutral",""];
+ // mandate fit
+ const M=MANDATES[goalKey]; const mt=L(M.t); const fit=cos(unit(pv),unit(mt));
+ // gaps: mandate factors materially under-represented
+ const pvN={}; FACTORS.forEach(f=>pvN[f]=Math.abs(pv[f])/tot);
+ const mtTot=FACTORS.reduce((a,f)=>a+mt[f],0); const gaps=[];
+ FACTORS.forEach(f=>{const want=mt[f]/mtTot; if(want>0.08 && pvN[f] < want*0.5) gaps.push([f,want]);});
+ // suggestions: a ticker from KB whose dominant factor fills each gap
+ const suggFor=(f)=>{const c=Object.entries(KB).filter(([t,k])=>dominant(k.f)===f && !tks.includes(t) && k.cls!=="single stock");
+   c.sort((a,b)=>(Math.abs(Math.abs(a[1].f[f])-1)-Math.abs(Math.abs(b[1].f[f])-1))||(b[1].skew-a[1].skew)); return c[0];};
+ const sugg=gaps.map(([f])=>[f,suggFor(f)]).filter(x=>x[1]);
+ return {known,unknown,shares,eff,sk,skLabel,M,fit,gaps,sugg,n};
+}
+
+// ---- render -----------------------------------------------------------------------
+const FNAME={MKT:"Market",GROWTH:"Growth",MOM:"Momentum",VALUE:"Value",LOWVOL:"Low-vol",RATES:"Duration",CREDIT:"Credit",GOLD:"Gold",COMMOD:"Commodity",REALEST:"Real estate",INTL:"Intl",EM:"EM",CRYPTO:"Crypto",VOL:"Long-vol",INCOME:"Income"};
+function bar(label,frac,cls){return `<div class="bar"><span>${label}</span><span class="t"><i style="width:${Math.min(100,frac*100).toFixed(0)}%;${cls?'background:var(--'+cls+')':''}"></i></span><span>${(frac*100).toFixed(0)}%</span></div>`;}
+function slv(list){return list.map(([name,repo])=>`<a href="https://github.com/blaquebaux/${repo}" target="_blank" rel="noopener">${name}</a>`).join(" · ");}
+
+function render(r){
+ const out=document.querySelector("#out"); const sh=out.querySelector(".shell"); out.style.display="block";
+ if(r.err){sh.innerHTML=`<div class="card"><div class="why">${r.err}</div></div>`;return;}
+ let h=`<div class="micro">Per ticker: sleeve + factor exposure</div>`;
+ r.known.forEach(([t,k])=>{
+  const bars=FACTORS.filter(f=>Math.abs(k.f[f])>0).sort((a,b)=>Math.abs(k.f[b])-Math.abs(k.f[a]))
+    .map(f=>bar(FNAME[f],Math.min(1,Math.abs(k.f[f])),k.f[f]<0?'red':'')).join("");
+  const sc=k.skew>0?["convex / positive skew","good"]:k.skew<0?["negative skew / crash-correlated","red"]:["neutral skew",""];
+  h+=`<div class="card"><div class="tk"><b>${t}</b><span class="cls">${k.n} · ${k.cls}</span></div>
+      <div class="sleeve" style="margin-top:6px">SLEEVE: ${slv(k.sleeve)}</div>
+      <div class="bars">${bars}</div>
+      <div class="why"><span class="chip" ${sc[1]?'style="color:var(--'+sc[1]+');border-color:var(--'+sc[1]+')"':''}>${sc[0]}</span> ${k.risk}.</div></div>`;
+ });
+ if(r.unknown.length) h+=`<div class="note">Not in the BB map (ignored): ${r.unknown.join(", ")}. The map covers common ETFs, crypto, and mega-caps; more can be added.</div>`;
+
+ // portfolio
+ const concentration=r.shares[0];
+ h+=`<div class="micro" style="margin-top:40px">Portfolio: diversification, skew, mandate fit</div>
+ <h2>${r.n} holdings &middot; ${r.eff.toFixed(1)} effective bets</h2>
+ <div class="strip">
+   <div class="tile"><b class="${r.eff<2?'red':r.eff>=3?'good':''}">${r.eff.toFixed(1)}</b><span>effective bets (of ${r.n} names)</span></div>
+   <div class="tile"><b class="${concentration[1]>0.5?'red':''}">${(concentration[1]*100).toFixed(0)}%</b><span>in ${FNAME[concentration[0]]}, the top factor</span></div>
+   <div class="tile"><b class="${r.skLabel[1]}">${r.sk>0?'+':''}${r.sk.toFixed(2)}</b><span>book skew (${r.skLabel[0]})</span></div>
+   <div class="tile"><b class="${r.fit>0.6?'good':r.fit<0.35?'red':''}">${(r.fit*100).toFixed(0)}%</b><span>fit to ${r.M.name}</span></div>
+ </div>`;
+
+ // factor exposure bars
+ h+=`<div class="card"><div class="micro">Aggregate factor exposure</div><div class="bars" style="margin-top:12px">`;
+ r.shares.slice(0,8).forEach(([f,v])=>h+=bar(FNAME[f],v,''));
+ h+=`</div></div>`;
+
+ // verdict + gaps + suggestions
+ const capUrl=CAP_URL[r.M.cap]||"";
+ h+=`<div class="gap"><b>Goal: ${r.M.name}.</b> This book fits it <b>${(r.fit*100).toFixed(0)}%</b>. `;
+ if(r.eff<2) h+=`It is concentrated (${r.eff.toFixed(1)} effective bets): most names load the same factor, so it is closer to one bet than ${r.n}. `;
+ if(r.M.skew>0 && r.sk<0) h+=`The mandate wants a positive-skew book but yours is negative-skew: it will bleed in the tail you are trying to protect. `;
+ if(r.M.skew<0 && r.sk>0) h+=`This mandate accepts (even wants) negative skew to earn carry; your book is defensively skewed, which caps the income. `;
+ h+=`The matching capstone is <a href="https://github.com/blaquebaux/${capUrl}" target="_blank" rel="noopener" style="color:var(--gold)">${r.M.cap}</a>.</div>`;
+
+ if(r.sugg.length){
+  h+=`<div class="gap"><b>To fit the goal, add:</b><br>`;
+  h+=r.sugg.map(([f,[t,k]])=>`&bull; <b>${t}</b> (${k.n}) for ${FNAME[f]} exposure &rarr; sleeve ${slv(k.sleeve)}`).join("<br>");
+  h+=`</div>`;
+ } else {
+  h+=`<div class="gap">No major factor gaps for this goal: the book already spans the mandate's exposures.</div>`;
+ }
+
+ h+=`<div class="note">Rule-based classification from the open BLAQUE BAUX corpus (sleeve findings + factor tags), not live prices and not a backtest. Effective bets and skew are computed from factor tags, so they are indicative, not a live risk model. Research only. Not investment advice. See the <a href="/corpus/" style="color:var(--gold)">corpus</a> for each sleeve's evidence and the <a href="/capstone/" style="color:var(--gold)">capstones</a> for the mandate books.</div>`;
+ sh.innerHTML=h; out.scrollIntoView({behavior:"smooth"});
+}
+
+function go(){const tks=document.querySelector("#tickers").value.toUpperCase().split(/[^A-Z.]+/).filter(Boolean);
+ render(analyze(tks,document.querySelector("#goal").value));}
+document.querySelector("#run").addEventListener("click",go);
+document.querySelectorAll("[data-ex]").forEach(b=>b.addEventListener("click",()=>{document.querySelector("#tickers").value=b.dataset.ex;go();}));
+</script>
+</body></html>
