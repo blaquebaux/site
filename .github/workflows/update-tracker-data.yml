@@ -20,10 +20,22 @@ jobs:
         run: node scripts/update-market-data.mjs
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - name: Refresh Bumble feed (redundant trigger; GitHub cron is unreliable alone)
+        continue-on-error: true
+        run: python3 scripts/bumble-feed.py
+        env:
+          BUMBLE_DIR: bumble
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
       - name: Commit updated snapshots
         run: |
           git config user.name "blaquebaux-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add tracker/macro.json tracker/options.json
-          git diff --cached --quiet || git commit -m "Update Tracker market snapshots"
-          git push
+          git add tracker/macro.json tracker/options.json bumble/feed.json
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "Update Tracker + Bumble feed"
+            git pull --rebase origin main || true
+            git push
+          fi

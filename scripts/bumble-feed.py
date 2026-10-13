@@ -64,7 +64,7 @@ def fmt_date(d):   # "2026-10-09" -> "October 9, 2026"
 def usd(x): return f"${x:,.0f}"
 
 # ---------------------------------------------------------------- Form 4 clusters
-def fts_form4(start, end, pages=40):
+def fts_form4(start, end, pages=90):
     hits = []
     for p in range(pages):
         try: d = _getj(f"https://efts.sec.gov/LATEST/search-index?forms=4&startdt={start}&enddt={end}&from={p*10}")
@@ -184,7 +184,7 @@ def movers(limit=6):
         n = 0
         for row in m.get(side, []):
             s = row["symbol"]; pc = row["percent_change"]; px = row["price"]
-            if not clean_sym(s) or px < 10 or abs(pc) < 7 or abs(pc) > 75: continue
+            if not clean_sym(s) or px < 5 or abs(pc) < 5 or abs(pc) > 90: continue
             evs.append({
                 "sender": "TAPE", "chip": "TAPE", "tkr": s, "cls": cls, "pct": f"{pc:+.0f}%", "pdir": dirn,
                 "date": dlabel, "ts": today + ("T23:58" if side == "gainers" else "T23:57"), "time": "today",
@@ -205,7 +205,7 @@ def run():
     from datetime import timedelta
     now = datetime.now(timezone.utc)
     f4_start = (now - timedelta(days=4)).strftime("%Y-%m-%d"); f4_end = (now + timedelta(days=1)).strftime("%Y-%m-%d")
-    d13 = [(now - timedelta(days=i)).strftime("%Y%m%d") for i in range(0, 4)]
+    d13 = [(now - timedelta(days=i)).strftime("%Y%m%d") for i in range(0, 8)]
     events = []
     try: events += insider_clusters(f4_start, f4_end)
     except Exception as e: print("insider error:", e)
