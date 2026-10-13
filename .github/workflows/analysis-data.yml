@@ -1,0 +1,36 @@
+name: Update Analysis data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 9 * * 2-6"   # Tue-Sat 09:25 UTC: refreshes with each prior US close (data is T-1 on the basic SIP plan)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy
+      - name: Rebuild analysis/data.json
+        run: python analysis/build_data.py
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      - name: Commit refreshed data
+        run: |
+          git config user.name "blaquebaux-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add analysis/data.json
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "analysis: refresh data.json"
+            git pull --rebase origin main || true
+            git push
+          fi
