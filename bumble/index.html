@@ -27,7 +27,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 .screen{margin-top:10px;border-radius:7px;background:linear-gradient(180deg,var(--screenglow),var(--screen));border:1px solid #000;box-shadow:0 0 0 2px #26282c,0 0 40px -6px #35e38a22 inset;overflow:hidden}
 .statusbar{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;font:8px "IBM Plex Mono";letter-spacing:.12em;color:#5f8f78;border-bottom:1px solid #16271f;background:linear-gradient(180deg,#0c1712,#0a130f)}.statusbar .sig b{color:var(--green)}
 .apphead{display:flex;align-items:center;gap:8px;padding:9px 11px;border-bottom:1px solid #16271f;font:600 13px "IBM Plex Mono";letter-spacing:.16em;color:#dff5ea}
-.apphead .live{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+.apphead .feed-status{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .apphead .sub{font:8px "IBM Plex Mono";letter-spacing:.14em;color:#5f8f78;font-weight:400;margin-left:auto}
 .apphead .back{background:transparent;border:0;padding:0;cursor:pointer;color:var(--green);font-size:15px;line-height:1;margin-right:2px}.apphead .back:hover{color:#8affc9}
@@ -78,7 +78,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
   <div class="bb-top"><span class="speaker"></span><span class="brand"><b>Blaque</b>Berē</span></div>
   <div class="screen">
     <div class="statusbar"><span class="sig">BAUX <b>&#9642;&#9642;&#9642;&#9642;</b>&#9642;</span><span>EDGAR &middot; NYSE &middot; the tape</span><span id="clock">--:-- &#9646;84%</span></div>
-    <div class="apphead" id="apphead"><span class="live"></span>BUMBLE<span class="sub">// significant events</span></div>
+    <div class="apphead" id="apphead"><span class="feed-status"></span>BUMBLE<span class="sub">// reviewed snapshots</span></div>
     <div class="view" id="feed"><div class="empty">loading the tape&hellip;</div></div>
     <div class="view detail" id="detail"></div>
   </div>
@@ -131,7 +131,7 @@ function openDetail(i){
   apphead.innerHTML = `<span class="back" onclick="goBack()">&lsaquo;</span> BUMBLE <span class="sub">// ${esc(e.tkr)}</span>`;
 }
 function goBack(){
-  if(location.hash) history.replaceState(null, "", location.pathname + location.search); detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="live"></span>BUMBLE<span class="sub">// significant events</span>`; }
+  if(location.hash) history.replaceState(null, "", location.pathname + location.search); detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="feed-status"></span>BUMBLE<span class="sub">// reviewed snapshots</span>`; }
 
 const editorialLabel = a => a.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : a.status === "archived-unverified" ? "ARCHIVED / VERIFICATION PENDING" : "MOCK / ILLUSTRATIVE";
 const et = t => new Date(t).toLocaleString("en-US", {timeZone:"America/New_York", dateStyle:"medium",timeStyle:"short"}) + " ET";
