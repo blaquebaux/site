@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-13",
+  "release_state": "RESEARCH_ONLY",
+  "public_result_types": ["simulated", "research_finding", "delayed_public_observation", "indicative_public_quote"],
+  "prohibited_without_approval": ["paper_performance", "proprietary_actual_performance", "client_performance", "real_time_market_data"],
+  "actual_performance_gates": {
+    "independent_evidence": false,
+    "operational_controls": false,
+    "legal_review": false,
+    "result_type_separation": true,
+    "approved_for_publication": false
+  },
+  "real_time_data_gates": {
+    "licensed_source": false,
+    "entitlements": false,
+    "redistribution_rights": false,
+    "timestamp_and_latency_disclosure": false,
+    "operational_monitoring": false,
+    "approved_for_publication": false
+  },
+  "current_surfaces": {
+    "analysis": "simulated and estimated research with indicative public spot context",
+    "labs": "interactive explanations of repository findings",
+    "capstone": "simulated allocation research",
+    "tracker": "simulated sleeve history with delayed or indicative public context",
+    "bumble": "reviewed editorial and market context",
+    "corpus": "research record and provenance index"
+  },
+  "authority_note": "This manifest records publication readiness only. False gates must not be interpreted as pending approval or evidence that approval will be granted."
+}

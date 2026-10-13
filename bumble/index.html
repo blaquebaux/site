@@ -27,7 +27,7 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 .screen{margin-top:10px;border-radius:7px;background:linear-gradient(180deg,var(--screenglow),var(--screen));border:1px solid #000;box-shadow:0 0 0 2px #26282c,0 0 40px -6px #35e38a22 inset;overflow:hidden}
 .statusbar{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;font:8px "IBM Plex Mono";letter-spacing:.12em;color:#5f8f78;border-bottom:1px solid #16271f;background:linear-gradient(180deg,#0c1712,#0a130f)}.statusbar .sig b{color:var(--green)}
 .apphead{display:flex;align-items:center;gap:8px;padding:9px 11px;border-bottom:1px solid #16271f;font:600 13px "IBM Plex Mono";letter-spacing:.16em;color:#dff5ea}
-.apphead .live{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+.apphead .feed-status{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .apphead .sub{font:8px "IBM Plex Mono";letter-spacing:.14em;color:#5f8f78;font-weight:400;margin-left:auto}
 .apphead .back{background:transparent;border:0;padding:0;cursor:pointer;color:var(--green);font-size:15px;line-height:1;margin-right:2px}.apphead .back:hover{color:#8affc9}
@@ -72,13 +72,13 @@ body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0d1016,#05060
 <script src="/assets/navigation.js" defer></script>
 </head>
 <body class="bb-terminal-page">
-<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/analysis/">Analysis</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/" aria-current="page">Bumble</a><a href="/about/">About</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
+<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><span class="bb-positioning">Quantitative Intelligence for Finance</span><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/analysis/">Analysis</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/" aria-current="page">Bumble</a><a href="/about/">About</a><a href="/evidence/">Data & evidence</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
 <div class="caption">BUMBLE on <b>BlaqueBerē</b> : reviewed briefings and market signals. Each item shows its verification status; mock items are illustrative. Briefings are dated snapshots, not streaming quotes.</div>
 <div class="bb">
   <div class="bb-top"><span class="speaker"></span><span class="brand"><b>Blaque</b>Berē</span></div>
   <div class="screen">
     <div class="statusbar"><span class="sig">BAUX <b>&#9642;&#9642;&#9642;&#9642;</b>&#9642;</span><span>EDGAR &middot; NYSE &middot; the tape</span><span id="clock">--:-- &#9646;84%</span></div>
-    <div class="apphead" id="apphead"><span class="live"></span>BUMBLE<span class="sub">// significant events</span></div>
+    <div class="apphead" id="apphead"><span class="feed-status"></span>BUMBLE<span class="sub">// reviewed snapshots</span></div>
     <div class="view" id="feed"><div class="empty">loading the tape&hellip;</div></div>
     <div class="view detail" id="detail"></div>
   </div>
@@ -131,7 +131,7 @@ function openDetail(i){
   apphead.innerHTML = `<span class="back" onclick="goBack()">&lsaquo;</span> BUMBLE <span class="sub">// ${esc(e.tkr)}</span>`;
 }
 function goBack(){
-  if(location.hash) history.replaceState(null, "", location.pathname + location.search); detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="live"></span>BUMBLE<span class="sub">// significant events</span>`; }
+  if(location.hash) history.replaceState(null, "", location.pathname + location.search); detailEl.style.display = "none"; feedEl.style.display = "block"; apphead.innerHTML = `<span class="feed-status"></span>BUMBLE<span class="sub">// reviewed snapshots</span>`; }
 
 const editorialLabel = a => a.status === "verified" ? "VERIFIED EDITORIAL SNAPSHOT" : a.status === "archived-unverified" ? "ARCHIVED / VERIFICATION PENDING" : "MOCK / ILLUSTRATIVE";
 const et = t => new Date(t).toLocaleString("en-US", {timeZone:"America/New_York", dateStyle:"medium",timeStyle:"short"}) + " ET";
@@ -160,8 +160,9 @@ Promise.allSettled([fetch("feed.json?t=" + Date.now(), {cache:"no-store"}).then(
   feedEl.insertAdjacentHTML("afterbegin", `<div class="empty" style="padding:10px">${briefs.status === "rejected" ? "Briefings unavailable; retry later" : articles.length ? "Weekday morning / afternoon · Saturday weekly" : "No reviewed briefings published yet"}</div>`);
   if(signals.status === "rejected") feedEl.insertAdjacentHTML("beforeend", '<div class="empty">Market signals unavailable</div>');
   const generated = signals.status === "fulfilled" && signals.value.generated_at;
-  document.getElementById("clock").textContent = generated ? new Date(generated).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit"}) + " ET" : "No signal timestamp";
-  if(generated) document.getElementById("hint").append(document.createTextNode(" · Signals fetched " + et(generated)));
+  const signalAgeHours = generated ? (Date.now() - Date.parse(generated)) / 3600000 : Infinity;
+  document.getElementById("clock").textContent = generated ? (signalAgeHours > 36 ? "STALE / " : "AS OF / ") + new Date(generated).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit"}) + " ET" : "No signal timestamp";
+  if(generated) document.getElementById("hint").append(document.createTextNode(" · Signals fetched " + et(generated) + (signalAgeHours > 36 ? " · refresh overdue" : "")));
   route();
 });
 </script>

@@ -1,0 +1,33 @@
+name: Site quality and preview artifact
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify generated contracts
+        run: |
+          python3 scripts/build_navigation.py --check
+          python3 scripts/build_research_registry.py --check
+      - name: Run site and accessibility tests
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/audit_accessibility.py
+      - name: Stamp preview release manifest
+        run: python3 scripts/build_release_manifest.py
+      - name: Package reviewable preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview-${{ github.sha }}
+          path: .
+          retention-days: 14

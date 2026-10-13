@@ -2,6 +2,7 @@
 .bb-site-nav{position:sticky;top:0;z-index:100;width:100%;background:#080c10;color:#edf2f0;border-bottom:1px solid #30373d;backdrop-filter:blur(14px)}
 .bb-site-nav .bb-nav-inner{width:min(1500px,calc(100% - 32px));height:64px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .bb-site-nav .bb-wordmark{font:500 13px/1.4 "Space Grotesk",system-ui,sans-serif;letter-spacing:.26em;color:#edf2f0;text-decoration:none;white-space:nowrap}
+.bb-site-nav .bb-positioning{margin-right:auto;padding-left:16px;border-left:1px solid #30373d;font:9px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#9ca8a2;white-space:nowrap}
 .bb-site-nav .bb-menu{position:relative;margin:0;font:11px/1.5 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
 .bb-site-nav summary{cursor:pointer;list-style:none;padding:10px 14px;border:1px solid #505b62;border-radius:3px;user-select:none}
 .bb-site-nav summary::-webkit-details-marker{display:none}
@@ -12,4 +13,5 @@
 .bb-site-nav .bb-menu-panel a:hover,.bb-site-nav .bb-menu-panel a[aria-current="page"]{background:#21352c;color:#8ff0ba}
 .bb-site-nav a:focus-visible,.bb-site-nav summary:focus-visible{outline:2px solid #8ff0ba;outline-offset:3px}
 body.bb-terminal-page>.bb-site-nav{margin:-30px -16px 22px;width:calc(100% + 32px)}
+@media(max-width:760px){.bb-site-nav .bb-positioning{display:none}}
 @media(max-width:420px){.bb-site-nav .bb-wordmark{font-size:11px;letter-spacing:.18em}.bb-site-nav .bb-nav-inner{height:58px}}

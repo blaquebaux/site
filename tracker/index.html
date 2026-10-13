@@ -1,6 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <title>Sleeve Tracker</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/navigation.css">
 <script src="/assets/navigation.js" defer></script>
 <style>
@@ -195,8 +199,10 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 @media(max-width:900px){.evolution-head{grid-template-columns:1fr;gap:18px}.heatmap-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.crypto-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quote-layout,.macro-layout{grid-template-columns:1fr}.quote-primary,.macro-curve{border-right:0;border-bottom:1px solid #3a5544}.macro-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.macro-stat:nth-child(odd){border-right:1px solid #3a5544}}
 @media(max-width:680px){.links a:nth-child(-n+2){display:none}.stat{border-right:0}.workstation-head{grid-template-columns:1fr;padding:22px}.workstation-meta{text-align:left}.terminal-tabs{padding:0}.terminal-tab{flex:0 0 auto;padding:14px 16px}.terminal-panel{padding:20px}.heatmap-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:104px}.heat-tile.major{grid-column:span 1;grid-row:span 1}.crypto-grid{grid-template-columns:1fr}.heatmap-legend{align-items:flex-start;flex-direction:column}.crypto-head,.quote-controls,.screener-head,.data-panel-head,.option-controls{align-items:flex-start;flex-direction:column}.crypto-status,.data-status{text-align:left}.quote-controls .ctl,.quote-controls select,.screener-head .ctl,.screener-head select,.option-controls .ctl,.option-controls select{width:100%;min-width:0}.terminal-action{width:100%}.quote-primary{padding:22px}.quote-stats,.macro-stats{grid-template-columns:1fr}.quote-stat,.quote-stat:nth-child(even),.quote-stat:nth-last-child(-n+2){min-height:96px;border-right:0;border-bottom:1px solid #3a5544}.quote-stat:last-child{border-bottom:0}.macro-stat:nth-child(odd){border-right:0}.option-spot{margin-left:0;text-align:left}}
 </style>
+</head>
+<body>
 
-<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/analysis/">Analysis</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/" aria-current="page">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/">Bumble</a><a href="/about/">About</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
+<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><span class="bb-positioning">Quantitative Intelligence for Finance</span><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/analysis/">Analysis</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/" aria-current="page">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/">Bumble</a><a href="/about/">About</a><a href="/evidence/">Data & evidence</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
 
 <div class="market-tape" aria-label="Delayed end-of-day research tape">
   <div class="tape-track" id="tapeTrack"><div class="tape-group"><span class="tape-label">End-of-day research tape / loading</span></div></div>
@@ -265,7 +271,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
 
     <div class="terminal-panel" id="panel-quotes" role="tabpanel" aria-labelledby="tab-quotes" hidden>
       <p class="terminal-note">Selected sleeve / concise research snapshot / simulated</p>
-      <div class="quote-controls"><div class="ctl"><label for="quoteSel">Sleeve</label><select id="quoteSel"></select></div><button class="terminal-action" id="quoteToChart" type="button">Open in charting →</button></div>
+      <div class="quote-controls"><div class="ctl"><label for="quoteSel">Sleeve</label><select id="quoteSel"></select></div><a class="terminal-action" id="quoteCorpus" href="/corpus/">Corpus entry →</a><button class="terminal-action" id="quoteToChart" type="button">Open in charting →</button></div>
       <div class="quote-layout">
         <div class="quote-primary"><div class="quote-symbol" id="quoteSymbol">—</div><div class="quote-name" id="quoteName">—</div><div class="quote-value" id="quoteValue">—</div><div class="quote-move" id="quoteMove">—</div><svg class="quote-spark" id="quoteSpark" viewBox="0 0 500 150" role="img" aria-label="Selected sleeve year-to-date trend"></svg></div>
         <div class="quote-stats" id="quoteStats"></div>
@@ -345,6 +351,11 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     const digits=value<1?4:value<100?2:0;
     return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:digits,maximumFractionDigits:digits}).format(value);
   }
+  function snapshotLabel(source,updatedAt,maxAgeHours){
+    const date=new Date(updatedAt),ageHours=(Date.now()-date.getTime())/3600000;
+    const stamp=date.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+    return source+' / '+(ageHours>maxAgeHours?'stale snapshot':'snapshot')+' / '+stamp;
+  }
   async function loadCrypto(){
     const grid=document.getElementById('cryptoGrid'),status=document.getElementById('cryptoStatus');
     try{
@@ -403,7 +414,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
         const change=(delta>=0?'+':'')+delta.toFixed(isVix?2:0)+(isVix?' pts':' bp');
         return '<div class="macro-stat"><div><div class="name">'+item.label+'</div><div class="obs">'+item.date+'</div></div><div><div class="value">'+value+'</div><div class="change '+(delta>=0?'rise':'fall')+'">'+change+'</div></div></div>';
       }).join('');
-      status.textContent='FRED / snapshot '+new Date(data.updatedAt).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+      status.textContent=snapshotLabel('FRED',data.updatedAt,72);
     }catch(error){status.textContent='FRED snapshot unavailable';stats.innerHTML='<div class="crypto-empty">Macro observations are temporarily unavailable.</div>';console.error('macro load failed',error);}
   }
 
@@ -422,7 +433,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     if(!strikes.length){document.getElementById('optionBody').innerHTML='<tr><td colspan="7">No strikes are available for this expiration.</td></tr>';return;}
     const spot=chain.underlyingPrice??strikes[Math.floor(strikes.length/2)],atm=strikes.reduce((best,value)=>Math.abs(value-spot)<Math.abs(best-spot)?value:best,strikes[0]);
     document.getElementById('optionSpot').textContent=chain.symbol+' / '+optionNumber(chain.underlyingPrice);
-    document.getElementById('optionSource').textContent=chain.source+' / snapshot '+new Date(optionSnapshot.updatedAt).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+    document.getElementById('optionSource').textContent=snapshotLabel(chain.source,optionSnapshot.updatedAt,36);
     document.getElementById('optionBody').innerHTML=strikes.map(function(strike){
       const call=callMap.get(strike)||{},put=putMap.get(strike)||{};
       return '<tr class="'+(strike===atm?'atm':'')+'"><td class="'+(call.inTheMoney?'itm':'')+'">'+optionNumber(call.bid)+'</td><td class="'+(call.inTheMoney?'itm':'')+'">'+optionNumber(call.ask)+'</td><td>'+optionInteger(call.openInterest)+'</td><td class="strike">'+optionNumber(strike)+'</td><td class="'+(put.inTheMoney?'itm':'')+'">'+optionNumber(put.bid)+'</td><td class="'+(put.inTheMoney?'itm':'')+'">'+optionNumber(put.ask)+'</td><td>'+optionInteger(put.openInterest)+'</td></tr>';
@@ -481,6 +492,7 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     const series=S[key],equity=series.equity,ret=seriesReturn(key),daily=latestMove(key),dd=maxDD(equity),spy=seriesReturn('SPY');
     document.getElementById('quoteSymbol').textContent=key.toUpperCase();
     document.getElementById('quoteName').textContent=series.label;
+    document.getElementById('quoteCorpus').href='/corpus/#research-'+key.toLowerCase();
     document.getElementById('quoteValue').textContent=fmt(equity[equity.length-1]);
     const move=document.getElementById('quoteMove');move.textContent=pct(daily)+' latest session';move.className='quote-move '+(daily>=0?'up':'down');
     const quoteStats=[['YTD return',pct(ret),ret],['Max drawdown',dd.toFixed(1)+'%',dd],['vs S&P 500',pct(ret-spy),ret-spy],['Observation date',D.asof,null]];
@@ -536,7 +548,8 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
     const sr=r(key),spr=r('SPY'),dr=r('DIA'),hfr=r('QAI');
     document.getElementById('heroVal').textContent=fmt(S[key].equity[N-1]);
     const hr=document.getElementById('heroRet'); hr.textContent=pct(sr)+' YTD'; hr.className='r '+(sr>=0?'up':'down');
-    document.getElementById('asof').textContent='Simulated · $100,000 base · Jan 1 → '+D.asof+' · updated end-of-day';
+    const ageDays=Math.floor((Date.now()-Date.parse(D.asof+'T23:59:59Z'))/86400000);
+    document.getElementById('asof').textContent='Simulated · $100,000 base · Jan 1 → '+D.asof+' · '+(ageDays>3?'stale snapshot / '+ageDays+' days old':'updated end-of-day');
     const stats=[['YTD return',pct(sr),sr>=0],['vs S&P 500',pct(sr-spr),sr-spr>=0],['vs Dow',pct(sr-dr),sr-dr>=0],
       ['vs Hedge funds',pct(sr-hfr),sr-hfr>=0],['Max drawdown',maxDD(e0).toFixed(1)+'%',false],['Value on $100k',fmt(S[key].equity[N-1]),sr>=0]];
     document.getElementById('stats').innerHTML=stats.map(([k,v,g])=>`<div class="stat"><div class="k">${k}</div><div class="v ${k.startsWith('vs')||k.startsWith('YTD')?(g?'up':'down'):''}">${v}</div></div>`).join('');
@@ -566,3 +579,5 @@ footer{border-top:1px solid var(--line); padding:26px 0 40px}
   }).catch(e=>{document.getElementById('heroVal').textContent='data unavailable';document.getElementById('tapeTrack').innerHTML='<div class="tape-group"><span class="tape-label">End-of-day research tape / data unavailable</span></div>';console.error('tracker load failed',e);});
 })();
 </script>
+</body>
+</html>

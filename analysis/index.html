@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BLAQUE BAUX / ANALYSIS: Sleeve &amp; Portfolio Classifier</title>
-<meta name="description" content="Enter your tickers and a goal; BLAQUE BAUX classifies each into a research sleeve with its real factor exposures, trailing performance and a trend/momentum read, scores the portfolio's diversification and skew, and suggests complements to fit your mandate. Daily data, research only, not advice.">
+<meta name="description" content="Enter your tickers and a goal; BLAQUE BAUX classifies each into a research sleeve with estimated trailing factor exposures, historical performance and a trend/momentum read, scores the portfolio's diversification and skew, and suggests complements to fit your mandate. Daily data, research only, not advice.">
 <link rel="canonical" href="https://www.blaquebaux.com/analysis/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Carter Warrens">
 <meta property="og:title" content="BLAQUE BAUX / ANALYSIS: Sleeve &amp; Portfolio Classifier">
-<meta property="og:description" content="Classify your tickers into research sleeves with real factor exposures; score diversification and skew; align to a mandate. Daily data, research only.">
+<meta property="og:description" content="Classify your tickers into research sleeves with estimated trailing factor exposures; score diversification and skew; align to a mandate. Daily data, research only.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.blaquebaux.com/analysis/">
 <meta property="og:site_name" content="BLAQUE BAUX">
@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="BLAQUE BAUX systematic research engine visualization">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BLAQUE BAUX / ANALYSIS: Sleeve &amp; Portfolio Classifier">
-<meta name="twitter:description" content="Classify your tickers, inspect real factor exposures, and test portfolio fit against a stated mandate.">
+<meta name="twitter:description" content="Classify your tickers, inspect estimated trailing factor exposures, and test portfolio fit against a stated mandate.">
 <meta name="twitter:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png">
 <meta name="theme-color" content="#e8e1ec">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://www.blaquebaux.com/analysis/#webapp","url":"https://www.blaquebaux.com/analysis/","name":"BLAQUE BAUX Analysis — Sleeve & Portfolio Classifier","description":"An interactive research tool that classifies tickers into systematic research sleeves, measures factor exposures and portfolio concentration, and evaluates mandate fit.","applicationCategory":"FinanceApplication","operatingSystem":"Web","isAccessibleForFree":true,"audience":{"@type":"Audience","audienceType":"Portfolio managers, family offices, hedge funds, asset managers, and institutional investors"},"isPartOf":{"@id":"https://www.blaquebaux.com/#website"},"about":{"@id":"https://www.blaquebaux.com/#organization"},"inLanguage":"en-US"}</script>
@@ -67,12 +67,12 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;
 <script src="/assets/navigation.js" defer></script>
 </head>
 <body>
-<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/analysis/" aria-current="page">Analysis</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/">Bumble</a><a href="/about/">About</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
+<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><span class="bb-positioning">Quantitative Intelligence for Finance</span><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/analysis/" aria-current="page">Analysis</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/">Bumble</a><a href="/about/">About</a><a href="/evidence/">Data & evidence</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
 
 <header class="hero"><div class="shell">
 <div class="micro">Research / risk / diversification / goal alignment</div>
 <h1>ANALYSIS</h1>
-<p class="lead">Enter your tickers and a goal. BLAQUE BAUX classifies each into a research sleeve with its real factor exposures, trailing performance and a trend / momentum read, scores the portfolio's diversification and skew, and names what is missing to fit your mandate.</p>
+<p class="lead">Enter your tickers and a goal. BLAQUE BAUX classifies each into a research sleeve with estimated trailing factor exposures, historical performance and a trend / momentum read, scores the portfolio's diversification and skew, and names what is missing to fit your mandate.</p>
 <div class="asof" id="asof">Loading market data ...</div>
 </div></header>
 
@@ -100,7 +100,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;
 <section class="panel" id="out" style="display:none" aria-label="Portfolio analysis results" aria-live="polite"><div class="shell"></div></section>
 
 <aside class="site-contact" aria-label="Contact Carter Warrens"><div class="site-contact-inner"><div><span class="site-contact-label">Advisory and collaboration</span><span class="site-contact-title">Work with Carter Warrens</span></div><a class="site-contact-link" href="mailto:ceo@carterwarrens.com"><span>ceo@carterwarrens.com</span><span>→</span></a></div></aside>
-<footer><div class="shell foot"><span>BLAQUE BAUX / ANALYSIS</span><span>A CARTER WARRENS RESEARCH INITIATIVE</span><span>CLASSIFY &middot; DIVERSIFY &middot; ALIGN</span></div></footer>
+<footer><div class="shell foot"><span>BLAQUE BAUX / ANALYSIS</span><span>A CARTER WARRENS COMPANY</span><span>CLASSIFY &middot; DIVERSIFY &middot; ALIGN</span></div></footer>
 
 <script>
 let DATA=null;
@@ -114,11 +114,11 @@ const MANDATES={
 };
 const cos=(a,b)=>{let d=0,na=0,nb=0;for(const k in a){d+=(a[k]||0)*(b[k]||0);na+=(a[k]||0)**2;}for(const k in b)nb+=(b[k]||0)**2;return (na>0&&nb>0)?d/Math.sqrt(na*nb):0;};
 
-async function liveCrypto(){
+async function indicativeCrypto(){
  const map={BTC:"BTC-USD",ETH:"ETH-USD",SOL:"SOL-USD"};
  await Promise.all(Object.entries(map).map(async([t,p])=>{
   try{const r=await fetch("https://api.coinbase.com/v2/prices/"+p+"/spot");const j=await r.json();
-   const px=parseFloat(j.data.amount); if(px&&DATA.stats[t]){DATA.stats[t].px=px;DATA.stats[t].live=true;}}catch(e){}
+   const px=parseFloat(j.data.amount); if(px&&DATA.stats[t]){DATA.stats[t].px=px;DATA.stats[t].indicative=true;}}catch(e){}
  }));
 }
 function regimeTag(m){const map={2:["risk-on","good"],1:["lean risk-on","good"],0:["neutral",""],[-1]:["lean risk-off","red"],[-2]:["risk-off","red"]};
@@ -126,7 +126,7 @@ function regimeTag(m){const map={2:["risk-on","good"],1:["lean risk-on","good"],
 
 function barSigned(label,v){const pos=v>=0;const w=Math.min(50,Math.abs(v)*50);
  return `<div class="bar"><span>${label}</span><span class="t"><span class="mid"></span><i class="${pos?'':'neg'}" style="width:${w}%;${pos?'left:50%':'left:'+(50-w)+'%'}"></i></span><span>${v>=0?'+':''}${v.toFixed(2)}</span></div>`;}
-function slv(list){return (list||[]).map(([n,r])=>`<a href="https://github.com/blaquebaux/${r}" target="_blank" rel="noopener">${n}</a>`).join(" &middot; ");}
+function slv(list){return (list||[]).map(([n,r])=>`<a href="/corpus/#research-${r}" title="Open ${n} in the Corpus">${n}</a>`).join(" &middot; ");}
 const pct=x=>x==null?"n/a":(x>=0?"+":"")+(x*100).toFixed(1)+"%";
 
 function analyze(tks,goalKey){
@@ -162,7 +162,7 @@ function render(r){
   const sc=m.skew>0?["convex / positive skew","g"]:m.skew<0?["negative skew / crash-correlated","r"]:["neutral skew",""];
   const tr=["weak","soft","flat","firm","strong"][s.trend+2]||"flat";
   const mo=["weak","soft","flat","firm","strong"][s.mom+2]||"flat";
-  h+=`<div class="card"><div class="tk"><b>${t}${s.live?' <span style="color:var(--green);font-size:9px">&bull; live</span>':''}</b><span class="cls">${m.n} &middot; ${m.cls} &middot; ${m.sector}</span></div>
+  h+=`<div class="card"><div class="tk"><b>${t}${s.indicative?' <span style="color:var(--green);font-size:9px">&bull; indicative spot</span>':''}</b><span class="cls">${m.n} &middot; ${m.cls} &middot; ${m.sector}</span></div>
    <div class="sleeve">SLEEVE: ${slv(m.sleeve)}</div>
    <div class="stats">
      <span class="pill">px <b>${s.px!=null?s.px:"n/a"}</b></span>
@@ -200,7 +200,7 @@ function render(r){
  if(r.sugg.length) h+=`<div class="gap"><b>To fit the goal, add:</b><br>`+r.sugg.map(([f,[t,m]])=>`&bull; <b>${t}</b> (${m.n}) for ${FNAME[f]||f} exposure &rarr; sleeve ${slv(m.sleeve)}`).join("<br>")+`</div>`;
  else h+=`<div class="gap">No major factor gaps for this goal: the book already spans the mandate's exposures.</div>`;
 
- h+=`<div class="note">Factor exposures are trailing correlations and betas from daily data to <b style="color:var(--gold)">${DATA.asof}</b> (crypto spot is live where shown); effective bets and skew are indicative, not a live risk model. Rule-based from the open BLAQUE BAUX corpus. Research only. Not investment advice. See the <a href="/corpus/">corpus</a> for each sleeve's evidence and the <a href="/capstone/">capstones</a> for the mandate books.</div>`;
+ h+=`<div class="note">Factor exposures are estimated trailing correlations and betas from daily data to <b style="color:var(--gold)">${DATA.asof}</b> (crypto spot is indicative where shown); effective bets and skew are illustrative, not a production risk model. Rule-based from the open BLAQUE BAUX corpus. Research only. Not investment advice. See the <a href="/corpus/">corpus</a> for each sleeve's evidence and the <a href="/capstone/">capstones</a> for the mandate books.</div>`;
  sh.innerHTML=h;out.scrollIntoView({behavior:"smooth"});
 }
 
@@ -210,8 +210,9 @@ document.querySelector("#run").addEventListener("click",go);
 document.querySelectorAll("[data-ex]").forEach(b=>b.addEventListener("click",()=>{document.querySelector("#tickers").value=b.dataset.ex;go();}));
 
 fetch("data.json").then(r=>r.json()).then(async d=>{DATA=d;
- document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
- try{await liveCrypto();}catch(e){}
+ const ageDays=Math.floor((Date.now()-Date.parse(d.asof+"T23:59:59Z"))/86400000),freshness=ageDays>3?`<b style="color:var(--red)">stale snapshot / ${ageDays} days old</b>`:"daily snapshot";
+ document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${freshness} &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
+ try{await indicativeCrypto();}catch(e){}
 }).catch(e=>{document.querySelector("#asof").textContent="Data file unavailable; try again shortly.";});
 </script>
 </body></html>
