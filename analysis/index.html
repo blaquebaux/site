@@ -13,26 +13,36 @@
 <meta property="og:description" content="Classify your tickers into research sleeves with real factor exposures; score diversification and skew; align to a mandate. Daily data, research only.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.blaquebaux.com/analysis/">
+<meta property="og:site_name" content="BLAQUE BAUX">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png">
-<meta name="theme-color" content="#050608">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BLAQUE BAUX systematic research engine visualization">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BLAQUE BAUX / ANALYSIS: Sleeve &amp; Portfolio Classifier">
+<meta name="twitter:description" content="Classify your tickers, inspect real factor exposures, and test portfolio fit against a stated mandate.">
+<meta name="twitter:image" content="https://www.blaquebaux.com/assets/blaque-baux-social.png">
+<meta name="theme-color" content="#e8e1ec">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://www.blaquebaux.com/analysis/#webapp","url":"https://www.blaquebaux.com/analysis/","name":"BLAQUE BAUX Analysis — Sleeve & Portfolio Classifier","description":"An interactive research tool that classifies tickers into systematic research sleeves, measures factor exposures and portfolio concentration, and evaluates mandate fit.","applicationCategory":"FinanceApplication","operatingSystem":"Web","isAccessibleForFree":true,"audience":{"@type":"Audience","audienceType":"Portfolio managers, family offices, hedge funds, asset managers, and institutional investors"},"isPartOf":{"@id":"https://www.blaquebaux.com/#website"},"about":{"@id":"https://www.blaquebaux.com/#organization"},"inLanguage":"en-US"}</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-:root{--bg:#050608;--fg:#f4f4f1;--muted:#858b91;--line:#252b32;--green:#35e38a;--red:#ff5d6c;--gold:#d3b85f}
+:root{--bg:#e8e1ec;--panel:#f3eef5;--fg:#211a26;--muted:#675d6d;--line:#b9aebf;--green:#147553;--red:#a43e52;--gold:#76591a;--deep:#44304f}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:"Space Grotesk",sans-serif}
-a{color:inherit;text-decoration:none}.shell{width:min(1200px,calc(100% - 44px));margin:auto}
-nav{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(5,6,8,.88);backdrop-filter:blur(14px)}
-.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:14px;letter-spacing:.32em;font-weight:500}.links{display:flex;gap:26px;font:9px "IBM Plex Mono";letter-spacing:.16em;text-transform:uppercase;color:#aaa}
-.hero{padding:120px 0 34px;border-bottom:1px solid var(--line)}.micro{font:9px "IBM Plex Mono";letter-spacing:.19em;text-transform:uppercase;color:#737980}
-h1{font-size:clamp(46px,8vw,96px);line-height:.85;letter-spacing:.12em;margin:22px 0 22px}.lead{max-width:780px;color:#9aa0a6;font:300 12px/1.8 "IBM Plex Mono";letter-spacing:.06em;text-transform:uppercase}
-.asof{margin-top:14px;font:9px "IBM Plex Mono";letter-spacing:.1em;color:#6a7178}.asof b{color:var(--gold)}
+a{color:inherit;text-decoration:none}.shell{width:min(1480px,calc(100% - 44px));margin:auto}
+.hero{position:relative;overflow:hidden;padding:112px 0 58px;border-bottom:1px solid var(--line)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(68,48,79,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(68,48,79,.055) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,#000,transparent 72%)}
+.hero:after{content:"";position:absolute;width:620px;height:620px;border:1px solid rgba(68,48,79,.2);border-radius:50%;right:-150px;top:-330px;box-shadow:0 0 0 58px rgba(68,48,79,.025),0 0 0 126px rgba(68,48,79,.018)}
+.hero .shell{position:relative;z-index:1}.micro{font:9px "IBM Plex Mono";letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(56px,9vw,128px);line-height:.82;letter-spacing:.14em;margin:28px 0 28px}.lead{max-width:850px;color:#514758;font-size:16px;line-height:1.75}
+.asof{margin-top:24px;font:9px "IBM Plex Mono";letter-spacing:.1em;color:var(--muted)}.asof b{color:var(--gold)}
 .panel{padding:36px 0;border-bottom:1px solid var(--line)}
-textarea{width:100%;min-height:64px;background:#0b0e12;border:1px solid var(--line);color:var(--fg);font:14px "IBM Plex Mono";padding:14px;border-radius:4px;resize:vertical}
+textarea{width:100%;min-height:72px;background:var(--panel);border:1px solid var(--line);color:var(--fg);font:14px "IBM Plex Mono";padding:16px;border-radius:3px;resize:vertical}
 .row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:16px}
-select,.btn{background:#0b0e12;border:1px solid #343a42;color:var(--fg);font:10px "IBM Plex Mono";letter-spacing:.12em;text-transform:uppercase;padding:12px 16px;border-radius:4px;cursor:pointer}
+select,.btn{background:var(--panel);border:1px solid #8f8197;color:var(--fg);font:10px "IBM Plex Mono";letter-spacing:.12em;text-transform:uppercase;padding:12px 16px;border-radius:3px;cursor:pointer}
 .btn.go{border-color:var(--green);color:var(--green)}
-.ex{font:9px "IBM Plex Mono";color:#6a7178;letter-spacing:.08em}.ex b{color:var(--gold);cursor:pointer;font-weight:400}
+.btn.go:hover,.btn.go:focus-visible{background:var(--green);color:#fff}.ex{font:9px "IBM Plex Mono";color:var(--muted);letter-spacing:.08em}.ex b{color:var(--gold);cursor:pointer;font-weight:500}
 h2{font-size:30px;letter-spacing:.06em;font-weight:400;margin:0 0 6px}
-.card{border:1px solid var(--line);border-radius:5px;padding:16px 20px;margin-top:14px;background:linear-gradient(180deg,rgba(255,255,255,.015),transparent)}
+.card{border:1px solid var(--line);border-radius:3px;padding:18px 20px;margin-top:14px;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,.08))}
 .tk{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}.tk b{font-size:19px;letter-spacing:.08em}.tk .cls{font:9px "IBM Plex Mono";color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
 .sleeve{font:9px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;margin-top:6px}.sleeve a{color:var(--gold)}
 .stats{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
@@ -40,22 +50,24 @@ h2{font-size:30px;letter-spacing:.06em;font-weight:400;margin:0 0 6px}
 .pill b{color:var(--fg);font-weight:500}.pill.g b{color:var(--green)}.pill.r b{color:var(--red)}
 .bars{margin-top:10px;display:flex;flex-direction:column;gap:5px}
 .bar{display:grid;grid-template-columns:86px 1fr 40px;align-items:center;gap:10px;font:9px "IBM Plex Mono";color:var(--muted)}
-.bar .t{height:8px;background:#11161c;border:1px solid var(--line);border-radius:2px;position:relative;overflow:hidden}
+.bar .t{height:8px;background:rgba(255,255,255,.36);border:1px solid var(--line);border-radius:2px;position:relative;overflow:hidden}
 .bar .t i{position:absolute;top:0;bottom:0;left:50%;background:var(--green)}.bar .t i.neg{background:var(--red)}
-.mid{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#2f363d}
-.why{margin-top:10px;color:#b4b9be;font:400 13px/1.5 "Space Grotesk"}
+.mid{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#786c7f}
+.why{margin-top:10px;color:#4f4655;font:400 13px/1.5 "Space Grotesk"}
 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:18px}
-.tile{background:var(--bg);padding:18px}.tile b{display:block;font:400 clamp(20px,2.4vw,30px)/1 "IBM Plex Mono"}.tile b.red{color:var(--red)}.tile b.good{color:var(--green)}.tile span{display:block;margin-top:8px;color:var(--muted);font-size:11px;line-height:1.4}
-.gap{border-left:2px solid var(--gold);padding:10px 14px;margin-top:10px;color:#cfd3d7;font-size:13px;line-height:1.55}.gap b{color:var(--gold)}
+.tile{background:var(--panel);padding:18px}.tile b{display:block;font:400 clamp(20px,2.4vw,30px)/1 "IBM Plex Mono"}.tile b.red{color:var(--red)}.tile b.good{color:var(--green)}.tile span{display:block;margin-top:8px;color:var(--muted);font-size:11px;line-height:1.4}
+.gap{border-left:2px solid var(--gold);padding:10px 14px;margin-top:10px;color:#413847;font-size:13px;line-height:1.55}.gap b{color:var(--gold)}
 .regime{display:inline-block;font:9px "IBM Plex Mono";letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border:1px solid var(--line);border-radius:3px;margin-top:10px}
-.note{margin-top:22px;color:#596068;font:8px/1.7 "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}.note a{color:var(--gold)}
-footer{padding:28px 0}.foot{display:flex;justify-content:space-between;color:#4e545b;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
-@media(max-width:760px){.links a:not(:nth-last-child(-n+3)){display:none}.strip{grid-template-columns:1fr 1fr}.bar{grid-template-columns:74px 1fr 36px}}
+.note{margin-top:22px;color:#62596a;font:8px/1.7 "IBM Plex Mono";letter-spacing:.08em;text-transform:uppercase}.note a{color:var(--gold)}
+footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;color:#62586a;font:8px "IBM Plex Mono";letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:760px){.shell{width:min(100% - 28px,1480px)}.hero{padding:82px 0 48px}.hero:after{right:-390px}.strip{grid-template-columns:1fr 1fr}.bar{grid-template-columns:74px 1fr 36px}.foot{display:block;line-height:2.1}}
 </style>
-<link rel="stylesheet" href="../assets/site-wide.css">
+<link rel="stylesheet" href="/assets/site-wide.css">
+<link rel="stylesheet" href="/assets/navigation.css">
+<script src="/assets/navigation.js" defer></script>
 </head>
 <body>
-<nav><div class="shell nav"><a class="brand" href="/">BLAQUE BAUX</a><div class="links"><a href="/">Home</a><a href="/corpus/">Corpus</a><a href="/analysis/">Analysis</a><a href="/capstone/">Capstone</a><a href="/toolkit/">Toolkit</a><a href="/block/">Block</a><a href="/about/">About</a></div></div></nav>
+<nav class="bb-site-nav" aria-label="Site navigation"><div class="bb-nav-inner"><a class="bb-wordmark" href="/">BLAQUE BAUX</a><details class="bb-menu"><summary>Explore</summary><div class="bb-menu-panel"><a href="/">Home</a><a href="/start/">Start here</a><a href="/#system">System</a><a href="/corpus/">Corpus</a><a href="/analysis/" aria-current="page">Analysis</a><a href="/labs/">Labs</a><a href="/capstone/">Capstone</a><a href="/block/">Block</a><a href="/tracker/">Tracker</a><a href="/toolkit/">Toolkit</a><a href="/bumble/">Bumble</a><a href="/about/">About</a><a href="/#carter-warrens">Carter Warrens</a><a href="https://github.com/blaquebaux" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></details></div></nav>
 
 <header class="hero"><div class="shell">
 <div class="micro">Research / risk / diversification / goal alignment</div>
@@ -66,16 +78,16 @@ footer{padding:28px 0}.foot{display:flex;justify-content:space-between;color:#4e
 
 <section class="panel"><div class="shell">
 <div class="micro">Your book</div>
-<div style="margin-top:12px"><textarea id="tickers" placeholder="Enter tickers: equities, ETFs, crypto. e.g.  AAPL NVDA QQQ TLT GLD BTC"></textarea></div>
+<div style="margin-top:12px"><textarea id="tickers" aria-label="Portfolio tickers" placeholder="Enter tickers: equities, ETFs, crypto. e.g.  AAPL NVDA QQQ TLT GLD BTC"></textarea></div>
 <div class="row">
-  <select id="goal">
+  <select id="goal" aria-label="Portfolio goal">
     <option value="balanced">Goal: Balanced</option>
     <option value="aggressive">Goal: Aggressive growth (HF)</option>
     <option value="preservation">Goal: Capital preservation (FO)</option>
     <option value="income">Goal: Income / carry</option>
     <option value="liability">Goal: Liability-matched (pension)</option>
   </select>
-  <button class="btn go" id="run">Analyze</button>
+  <button class="btn go" id="run" type="button">Analyze</button>
   <span class="ex">Try:
     <b data-ex="AAPL MSFT NVDA GOOGL AMZN TSLA">6 mega-caps</b> &middot;
     <b data-ex="SPY QQQ MTUM GLD TLT">a classic mix</b> &middot;
@@ -85,9 +97,10 @@ footer{padding:28px 0}.foot{display:flex;justify-content:space-between;color:#4e
 </div>
 </div></section>
 
-<section class="panel" id="out" style="display:none"><div class="shell"></div></section>
+<section class="panel" id="out" style="display:none" aria-label="Portfolio analysis results" aria-live="polite"><div class="shell"></div></section>
 
-<footer><div class="shell foot"><span>BLAQUE BAUX / ANALYSIS</span><span>CLASSIFY &middot; DIVERSIFY &middot; ALIGN</span></div></footer>
+<aside class="site-contact" aria-label="Contact Carter Warrens"><div class="site-contact-inner"><div><span class="site-contact-label">Advisory and collaboration</span><span class="site-contact-title">Work with Carter Warrens</span></div><a class="site-contact-link" href="mailto:ceo@carterwarrens.com"><span>ceo@carterwarrens.com</span><span>→</span></a></div></aside>
+<footer><div class="shell foot"><span>BLAQUE BAUX / ANALYSIS</span><span>A CARTER WARRENS RESEARCH INITIATIVE</span><span>CLASSIFY &middot; DIVERSIFY &middot; ALIGN</span></div></footer>
 
 <script>
 let DATA=null;
