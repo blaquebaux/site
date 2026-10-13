@@ -160,8 +160,9 @@ Promise.allSettled([fetch("feed.json?t=" + Date.now(), {cache:"no-store"}).then(
   feedEl.insertAdjacentHTML("afterbegin", `<div class="empty" style="padding:10px">${briefs.status === "rejected" ? "Briefings unavailable; retry later" : articles.length ? "Weekday morning / afternoon · Saturday weekly" : "No reviewed briefings published yet"}</div>`);
   if(signals.status === "rejected") feedEl.insertAdjacentHTML("beforeend", '<div class="empty">Market signals unavailable</div>');
   const generated = signals.status === "fulfilled" && signals.value.generated_at;
-  document.getElementById("clock").textContent = generated ? new Date(generated).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit"}) + " ET" : "No signal timestamp";
-  if(generated) document.getElementById("hint").append(document.createTextNode(" · Signals fetched " + et(generated)));
+  const signalAgeHours = generated ? (Date.now() - Date.parse(generated)) / 3600000 : Infinity;
+  document.getElementById("clock").textContent = generated ? (signalAgeHours > 36 ? "STALE / " : "AS OF / ") + new Date(generated).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit"}) + " ET" : "No signal timestamp";
+  if(generated) document.getElementById("hint").append(document.createTextNode(" · Signals fetched " + et(generated) + (signalAgeHours > 36 ? " · refresh overdue" : "")));
   route();
 });
 </script>

@@ -1,4 +1,6 @@
 import re
+import json
+import subprocess
 import unittest
 import xml.etree.ElementTree as ET
 from collections import Counter
@@ -92,6 +94,28 @@ class SiteContractTests(unittest.TestCase):
         self.assertEqual(51, counts["NULL"])
         for label in ("Active research / 25", "Meta-sleeves / 14", "Research / 29", "Concept / 14", "Null / graveyard / 51"):
             self.assertIn(label, corpus)
+
+    def test_research_registry_is_current_and_complete(self):
+        subprocess.run(["python3", "scripts/build_research_registry.py", "--check"], cwd=ROOT, check=True)
+        registry = json.loads((ROOT / "research-registry.json").read_text())
+        entries = registry["entries"]
+        self.assertEqual(133, len(entries))
+        self.assertEqual(133, len({entry["id"] for entry in entries}))
+        self.assertEqual(133, len({entry["slug"] for entry in entries}))
+        required = {"id", "slug", "name", "repository", "category", "status", "finding", "evidence_date", "methods", "related_products", "corpus_url"}
+        corpus = (ROOT / "corpus/index.html").read_text()
+        for entry in entries:
+            self.assertTrue(required.issubset(entry), entry["slug"])
+            self.assertIn(f'id="research-{entry["slug"]}"', corpus)
+
+    def test_homepage_counts_match_registry_taxonomy(self):
+        entries = json.loads((ROOT / "research-registry.json").read_text())["entries"]
+        operational = sum(entry["status"] in {"LIVE", "LIVE PATH", "LIVE DRIVER"} for entry in entries)
+        categories = Counter(entry["category"] for entry in entries)
+        home = (ROOT / "index.html").read_text()
+        expected = [operational, categories["capstone"], 16, categories["research"] + categories["concept"], categories["null"]]
+        for value in expected:
+            self.assertRegex(home, rf'<div class="metric"><b>{value}</b>')
 
     def test_sitemap_covers_primary_pages(self):
         root = ET.parse(ROOT / "sitemap.xml").getroot()

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BLAQUE BAUX browser smoke tests</title>
+<style>body{font:15px system-ui;margin:32px;background:#101419;color:#eef2ef}.pass{color:#64e6a0}.fail{color:#ff7d8a}iframe{position:absolute;width:390px;height:760px;left:-10000px}</style>
+</head>
+<body>
+<h1>Browser smoke tests</h1>
+<p id="summary">Running...</p>
+<ol id="results"></ol>
+<script>
+const checks=[
+  ["home mobile navigation","/",doc=>doc.querySelectorAll(".bb-menu-panel a").length===14],
+  ["Analysis controls and data","/analysis/",doc=>doc.querySelector("#run")&&!doc.querySelector("#asof").textContent.includes("Loading")],
+  ["Bumble reviewed feed","/bumble/",doc=>doc.querySelectorAll(".msg").length>0],
+  ["Tracker simulated series","/tracker/",doc=>doc.querySelectorAll("#sel option").length===14],
+];
+const results=document.getElementById("results"),summary=document.getElementById("summary");
+function run([name,url,test]){return new Promise(resolve=>{const frame=document.createElement("iframe");frame.src=url;document.body.append(frame);const timer=setTimeout(()=>finish(false,"timeout"),10000);function finish(ok,detail=""){clearTimeout(timer);const li=document.createElement("li");li.className=ok?"pass":"fail";li.textContent=(ok?"PASS ":"FAIL ")+name+(detail?" / "+detail:"");results.append(li);frame.remove();resolve(ok)}frame.onload=()=>setTimeout(()=>{try{finish(Boolean(test(frame.contentDocument)))}catch(error){finish(false,error.message)}},500)})}
+(async()=>{const outcomes=[];for(const check of checks)outcomes.push(await run(check));const passed=outcomes.filter(Boolean).length;summary.textContent=`${passed} / ${outcomes.length} passed`;summary.className=passed===outcomes.length?"pass":"fail";document.title=`${passed===outcomes.length?"PASS":"FAIL"} / BLAQUE BAUX browser smoke tests`})();
+</script>
+</body>
+</html>

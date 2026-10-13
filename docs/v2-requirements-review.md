@@ -110,13 +110,13 @@ The v2.0 principle is simple: every claim should tell the reader whether it is a
 - Add Start to the sitemap.
 - Add source-grounded requirements and content-contract tests.
 
-### Phase 1: one to two iterations
+### Phase 1: completed in this review branch
 
-- Create `research-registry.json` with canonical id, repository, category, status, finding, evidence date, methods link, and related products.
-- Generate or validate homepage counts and Corpus sections from that registry.
-- Add direct Corpus anchors and consistent links from Analysis, Labs, Tracker, Capstone, and Toolkit.
-- Add browser smoke tests for Analysis, Bumble, Tracker, menu behavior, and mobile layouts.
-- Add visible stale/error states and last-success timestamps for external feeds.
+- Created `research-registry.json` with canonical id, repository, category, status, finding, evidence date, methods link, related products, and direct Corpus URL.
+- Added a reproducible registry builder and contract checks that reconcile homepage counts and Corpus sections.
+- Added stable Corpus anchors and direct entry links from Analysis, Labs, Tracker, Capstone, and Toolkit while retaining canonical repository links where both are useful.
+- Added a same-origin browser smoke harness for navigation, Analysis, Bumble, Tracker, and mobile-width rendering.
+- Added visible stale, unavailable, and last-success states for Analysis, Bumble, Tracker crypto, FRED, options, and simulated performance data.
 
 ### Phase 2: two to four iterations
 

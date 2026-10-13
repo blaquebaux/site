@@ -34,3 +34,9 @@ Production static site for **www.blaquebaux.com**.
 6. Enable HTTPS after GitHub provisions the certificate.
 
 See [`docs/v2-requirements-review.md`](docs/v2-requirements-review.md) for the source-grounded v2.0 inventory, acceptance criteria, dependencies, and roadmap.
+
+## Validation
+
+- Run `python3 scripts/build_research_registry.py --check` to verify the registry and Corpus anchors.
+- Run `python3 -m unittest discover -s tests -v` for content, navigation, count, and provenance contracts.
+- Serve the repository root and open `/tests/browser-smoke.html` for same-origin browser smoke checks at desktop or mobile widths.

@@ -126,7 +126,7 @@ function regimeTag(m){const map={2:["risk-on","good"],1:["lean risk-on","good"],
 
 function barSigned(label,v){const pos=v>=0;const w=Math.min(50,Math.abs(v)*50);
  return `<div class="bar"><span>${label}</span><span class="t"><span class="mid"></span><i class="${pos?'':'neg'}" style="width:${w}%;${pos?'left:50%':'left:'+(50-w)+'%'}"></i></span><span>${v>=0?'+':''}${v.toFixed(2)}</span></div>`;}
-function slv(list){return (list||[]).map(([n,r])=>`<a href="https://github.com/blaquebaux/${r}" target="_blank" rel="noopener">${n}</a>`).join(" &middot; ");}
+function slv(list){return (list||[]).map(([n,r])=>`<a href="/corpus/#research-${r}" title="Open ${n} in the Corpus">${n}</a>`).join(" &middot; ");}
 const pct=x=>x==null?"n/a":(x>=0?"+":"")+(x*100).toFixed(1)+"%";
 
 function analyze(tks,goalKey){
@@ -210,7 +210,8 @@ document.querySelector("#run").addEventListener("click",go);
 document.querySelectorAll("[data-ex]").forEach(b=>b.addEventListener("click",()=>{document.querySelector("#tickers").value=b.dataset.ex;go();}));
 
 fetch("data.json").then(r=>r.json()).then(async d=>{DATA=d;
- document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
+ const ageDays=Math.floor((Date.now()-Date.parse(d.asof+"T23:59:59Z"))/86400000),freshness=ageDays>3?`<b style="color:var(--red)">stale snapshot / ${ageDays} days old</b>`:"daily snapshot";
+ document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${freshness} &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
  try{await indicativeCrypto();}catch(e){}
 }).catch(e=>{document.querySelector("#asof").textContent="Data file unavailable; try again shortly.";});
 </script>
