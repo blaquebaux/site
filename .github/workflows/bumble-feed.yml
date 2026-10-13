@@ -2,9 +2,15 @@ name: Update Bumble feed
 
 on:
   workflow_dispatch:
+  # ride the briefings' reliable cloud-publish cadence: refresh the feed whenever a
+  # briefing is published (the cloud trigger commits to bumble/briefings/, firing that
+  # workflow, which this one then follows). GitHub cron below is a best-effort backup.
+  workflow_run:
+    workflows: ["Validate and publish reviewed briefings"]
+    types: [completed]
   schedule:
-    # twice hourly at uncongested minutes during US market hours on weekdays
-    # (GitHub drops scheduled runs at :00/:05; :23 and :53 fire far more reliably)
+    # uncongested minutes fire more reliably than :00/:05, but GitHub still throttles;
+    # the scheduled cloud task (dispatch) is the primary intraday driver.
     - cron: "23,53 13-21 * * 1-5"
 
 permissions:
