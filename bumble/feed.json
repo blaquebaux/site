@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T01:18:19+00:00",
+ "generated_at": "2026-10-14T06:23:36+00:00",
  "count": 12,
  "events": [
   {
@@ -215,18 +215,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D",
-   "tkr": "NCMI",
+   "tkr": "ITGR",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Blantyre Capital II Ltd discloses a new stake (new activist)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "Tarheel Investors III L.P. discloses a new stake (new activist)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "NCMI \u00b7 Blantyre Capital II Ltd",
-    "sub": "National CineMedia, Inc. \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "title": "ITGR \u00b7 Tarheel Investors III L.P.",
+    "sub": "Integer Holdings Corp \u00b7 new Schedule 13D \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -264,18 +264,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "MLCO",
+   "tkr": "PED",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Melco International Development LTD adds to a stake (accumulation)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "SGK 2018 REVOCABLE TRUST adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "MLCO \u00b7 Melco International Development LTD",
-    "sub": "Melco Resorts & Entertainment LTD \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "title": "PED \u00b7 SGK 2018 REVOCABLE TRUST",
+    "sub": "PEDEVCO CORP \u00b7 amendment (accumulation) \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -312,19 +312,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D",
-   "tkr": "OMTK",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "GME-WT",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Hard Rock Holdco LLC discloses a new stake (new activist)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "Cohen Ryan adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "OMTK \u00b7 Hard Rock Holdco LLC",
-    "sub": "Omnitek Engineering Corp \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "title": "GME-WT \u00b7 Cohen Ryan",
+    "sub": "GameStop Corp. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -362,18 +362,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "SYRE",
+   "tkr": "PCRX",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Fairmount Funds Management LLC adds to a stake (accumulation)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "Doma Perpetual Capital Management LLC adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "SYRE \u00b7 Fairmount Funds Management LLC",
-    "sub": "Spyre Therapeutics, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "title": "PCRX \u00b7 Doma Perpetual Capital Management LLC",
+    "sub": "Pacira BioSciences, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -411,18 +411,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "KARX",
+   "tkr": "SAMG",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Morsevo Trade, Inc. adds to a stake (accumulation)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "Equinox Partners Investment Management LLC adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "KARX \u00b7 Morsevo Trade, Inc.",
-    "sub": "Karbon-X Corp. \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "title": "SAMG \u00b7 Equinox Partners Investment Management LLC",
+    "sub": "Silvercrest Asset Management Group Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -459,19 +459,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D",
-   "tkr": "GWLL",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "BAFN",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Zhou Ming discloses a new stake (new activist)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "LEHMAN KENNETH R adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "GWLL \u00b7 Zhou Ming",
-    "sub": "GOLDENWELL BIOTECH, INC. \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "title": "BAFN \u00b7 LEHMAN KENNETH R",
+    "sub": "BayFirst Financial Corp. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -508,19 +508,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "GGROW",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "BORR",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Gold Sino Assets Ltd adds to a stake (accumulation)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "Drew Holdings Ltd discloses a new stake (new activist)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "GGROW \u00b7 Gold Sino Assets Ltd",
-    "sub": "Gogoro Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-09",
+    "title": "BORR \u00b7 Drew Holdings Ltd",
+    "sub": "Borr Drilling Ltd \u00b7 new Schedule 13D \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
@@ -557,19 +557,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D",
-   "tkr": "DPU",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "TALO",
    "cls": "buy",
-   "date": "October 9, 2026",
-   "ts": "2026-10-09",
-   "time": "10-09",
-   "head": "Xu Ruilin discloses a new stake (new activist)",
+   "date": "October 13, 2026",
+   "ts": "2026-10-13",
+   "time": "10-13",
+   "head": "HELU CARLOS SLIM adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "DPU \u00b7 Xu Ruilin",
-    "sub": "Nexpu Ltd. \u00b7 new Schedule 13D \u00b7 2026-10-09",
+    "title": "TALO \u00b7 HELU CARLOS SLIM",
+    "sub": "TALOS ENERGY INC. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
     "sections": [
      {
       "h": "Read",
