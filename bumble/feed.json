@@ -1,23 +1,23 @@
 {
- "generated_at": "2026-10-14T18:34:55+00:00",
- "count": 17,
+ "generated_at": "2026-10-14T20:51:05+00:00",
+ "count": 15,
  "events": [
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "BSP",
    "cls": "watch",
-   "pct": "+39%",
+   "pct": "+41%",
    "pdir": "up",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:58",
    "time": "today",
-   "head": "Top gainer: +39% to $52.66",
+   "head": "Top gainer: +41% to $53.46",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BSP \u00b7 +39% to $52.66",
+    "title": "BSP \u00b7 +41% to $53.46",
     "sub": "top gainer \u00b7 October 14, 2026",
     "sections": [
      {
@@ -51,6 +51,159 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
+   "id": "ev10"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "NXGL",
+   "cls": "watch",
+   "pct": "+35%",
+   "pdir": "up",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14T23:58",
+   "time": "today",
+   "head": "Top gainer: +35% to $5.46",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "NXGL \u00b7 +35% to $5.46",
+    "sub": "top gainer \u00b7 October 14, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev11"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "AEHL",
+   "cls": "watch",
+   "pct": "+34%",
+   "pdir": "up",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14T23:58",
+   "time": "today",
+   "head": "Top gainer: +34% to $11.49",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "AEHL \u00b7 +34% to $11.49",
+    "sub": "top gainer \u00b7 October 14, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev12"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "RPGL",
+   "cls": "watch",
+   "pct": "-65%",
+   "pdir": "dn",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14T23:57",
+   "time": "today",
+   "head": "Top decliner: -65% to $15.49",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "RPGL \u00b7 -65% to $15.49",
+    "sub": "top decliner \u00b7 October 14, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
    "id": "ev13"
   },
   {
@@ -58,17 +211,17 @@
    "chip": "TAPE",
    "tkr": "BKHA",
    "cls": "watch",
-   "pct": "-50%",
+   "pct": "-38%",
    "pdir": "dn",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:57",
    "time": "today",
-   "head": "Top decliner: -50% to $6.18",
+   "head": "Top decliner: -38% to $7.74",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BKHA \u00b7 -50% to $6.18",
+    "title": "BKHA \u00b7 -38% to $7.74",
     "sub": "top decliner \u00b7 October 14, 2026",
     "sections": [
      {
@@ -105,129 +258,29 @@
    "id": "ev14"
   },
   {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "CRWG",
-   "cls": "watch",
-   "pct": "-33%",
-   "pdir": "dn",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:57",
-   "time": "today",
-   "head": "Top decliner: -33% to $9.54",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CRWG \u00b7 -33% to $9.54",
-    "sub": "top decliner \u00b7 October 14, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev15"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "CWVX",
-   "cls": "watch",
-   "pct": "-33%",
-   "pdir": "dn",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:57",
-   "time": "today",
-   "head": "Top decliner: -33% to $7.97",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CWVX \u00b7 -33% to $7.97",
-    "sub": "top decliner \u00b7 October 14, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev16"
-  },
-  {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 4",
-   "tkr": "ZM",
+   "tkr": "FERG",
    "cls": "sell",
    "date": "October 13, 2026",
    "ts": "2026-10-13",
    "time": "10-13",
-   "head": "3 insiders sold $1,887,336 open-market incl. the CFO",
+   "head": "6 insiders sold $5,959,863 open-market incl. the CFO",
    "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
    "evi": "insider cluster \u00b7 modest documented edge",
    "detail": {
     "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "ZM \u00b7 3 insiders sell $1,887,336",
-    "sub": "Zoom Communications, Inc.  (CIK 0001585521) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
+    "title": "FERG \u00b7 6 insiders sell $5,959,863",
+    "sub": "Ferguson Enterprises Inc. /DE/  (CIK 0002011641) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
     "sections": [
      {
       "h": "Who",
       "list": [
-       "Chang Michelle (Chief Financial Officer) $844,341",
-       "Sankarlingam Velchamy (Pres. of Engineering & Product) $758,875",
-       "McMaster Herbert Raymond (Dir) $284,120"
+       "Murphy Kevin Michael (Dir/See Remarks) $2,440,726",
+       "Brundage William (Dir/Chief Financial Officer) $1,309,378",
+       "Thees William T. Jr (Chief Operating Officer) $772,200",
+       "Schlicher Jake (Chief Strategy Officer) $686,406",
+       "Graham Ian T. (See Remarks) $405,544"
       ]
      }
     ],
@@ -267,12 +320,12 @@
    "date": "October 13, 2026",
    "ts": "2026-10-13",
    "time": "10-13",
-   "head": "4 insiders bought $700,027 open-market",
+   "head": "8 insiders bought $1,400,595 open-market",
    "note": "Cluster buys skew bullish; strongest when the CFO or CEO leads.",
    "evi": "insider cluster \u00b7 modest documented edge",
    "detail": {
     "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "HEI-A \u00b7 4 insiders buy $700,027",
+    "title": "HEI-A \u00b7 8 insiders buy $1,400,595",
     "sub": "HEICO CORP  (CIK 0000046619) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
     "sections": [
      {
@@ -281,7 +334,8 @@
        "Fine Carol F. (Dir) $175,142",
        "CHERUVATATH NANDAKUMAR (Dir) $175,142",
        "Hildebrandt Mark H (Dir) $175,142",
-       "Neitzel Julie (Dir) $174,601"
+       "CULLIGAN THOMAS M (Dir) $175,142",
+       "SCHRIESHEIM ALAN (Dir) $175,142"
       ]
      }
     ],
@@ -312,161 +366,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
    "id": "ev1"
-  },
-  {
-   "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 4",
-   "tkr": "PATH",
-   "cls": "sell",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "2 insiders sold $772,820 open-market",
-   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
-   "evi": "insider cluster \u00b7 modest documented edge",
-   "detail": {
-    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "PATH \u00b7 2 insiders sell $772,820",
-    "sub": "UiPath, Inc.  (CIK 0001734722) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
-    "sections": [
-     {
-      "h": "Who",
-      "list": [
-       "Malpani Raghavendra (CPO & CTO) $399,265",
-       "Brubaker Brad (Chief Legal & Admin Officer) $373,555"
-      ]
-     }
-    ],
-    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev2"
-  },
-  {
-   "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 4",
-   "tkr": "HBIA",
-   "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "2 insiders bought $47,000 open-market",
-   "note": "Cluster buys skew bullish; strongest when the CFO or CEO leads.",
-   "evi": "insider cluster \u00b7 modest documented edge",
-   "detail": {
-    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "HBIA \u00b7 2 insiders buy $47,000",
-    "sub": "HILLS BANCORPORATION  (CIK 0000732417) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
-    "sections": [
-     {
-      "h": "Who",
-      "list": [
-       "Slattery Thomas M. (Dir) $47,000"
-      ]
-     }
-    ],
-    "pri": "Potential outcome: mild positive drift; size as a tilt, not a thesis. Confirm the buys continue."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev3"
-  },
-  {
-   "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 4",
-   "tkr": "HNGE",
-   "cls": "sell",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "2 insiders sold $25,547,949 open-market incl. the CFO",
-   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
-   "evi": "insider cluster \u00b7 modest documented edge",
-   "detail": {
-    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "HNGE \u00b7 2 insiders sell $25,547,949",
-    "sub": "Hinge Health, Inc.  (CIK 0001673743) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
-    "sections": [
-     {
-      "h": "Who",
-      "list": [
-       "Mecklenburg Gabriel M.I. (Dir) $20,626,371",
-       "Budge James (Chief Financial Officer) $4,921,578"
-      ]
-     }
-    ],
-    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev4"
   },
   {
    "sender": "EDGAR",
@@ -515,7 +414,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev5"
+   "id": "ev2"
   },
   {
    "sender": "EDGAR",
@@ -564,7 +463,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev6"
+   "id": "ev3"
   },
   {
    "sender": "EDGAR",
@@ -613,7 +512,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev7"
+   "id": "ev4"
   },
   {
    "sender": "EDGAR",
@@ -662,7 +561,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev8"
+   "id": "ev5"
   },
   {
    "sender": "EDGAR",
@@ -711,7 +610,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev9"
+   "id": "ev6"
   },
   {
    "sender": "EDGAR",
@@ -760,7 +659,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev10"
+   "id": "ev7"
   },
   {
    "sender": "EDGAR",
@@ -809,7 +708,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev11"
+   "id": "ev8"
   },
   {
    "sender": "EDGAR",
@@ -858,7 +757,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev12"
+   "id": "ev9"
   }
  ]
 }
