@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T07:33:35.394Z",
+  "updatedAt": "2026-10-14T13:40:37.126Z",
   "source": "FRED",
   "observations": [
     {
@@ -54,9 +54,9 @@
       "id": "VIXCLS",
       "label": "VIX close",
       "tenor": "VIX",
-      "value": 15.21,
-      "change": 0.370000000000001,
-      "date": "2026-10-12"
+      "value": 15.27,
+      "change": 0.05999999999999872,
+      "date": "2026-10-13"
     }
   ]
 }

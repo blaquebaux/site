@@ -1,23 +1,23 @@
 {
- "generated_at": "2026-10-14T12:12:21+00:00",
- "count": 12,
+ "generated_at": "2026-10-14T13:40:46+00:00",
+ "count": 15,
  "events": [
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "BMBL",
+   "tkr": "BSP",
    "cls": "watch",
-   "pct": "+57%",
+   "pct": "+40%",
    "pdir": "up",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:58",
    "time": "today",
-   "head": "Top gainer: +57% to $5.95",
+   "head": "Top gainer: +40% to $53.12",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BMBL \u00b7 +57% to $5.95",
+    "title": "BSP \u00b7 +40% to $53.12",
     "sub": "top gainer \u00b7 October 14, 2026",
     "sections": [
      {
@@ -56,19 +56,19 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "PMI",
+   "tkr": "LQDA",
    "cls": "watch",
-   "pct": "+35%",
+   "pct": "+37%",
    "pdir": "up",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:58",
    "time": "today",
-   "head": "Top gainer: +35% to $15.33",
+   "head": "Top gainer: +37% to $36.85",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "PMI \u00b7 +35% to $15.33",
+    "title": "LQDA \u00b7 +37% to $36.85",
     "sub": "top gainer \u00b7 October 14, 2026",
     "sections": [
      {
@@ -103,6 +103,159 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
    "id": "ev11"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "BKHA",
+   "cls": "watch",
+   "pct": "-29%",
+   "pdir": "dn",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14T23:57",
+   "time": "today",
+   "head": "Top decliner: -29% to $8.84",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "BKHA \u00b7 -29% to $8.84",
+    "sub": "top decliner \u00b7 October 14, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev12"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "CRWG",
+   "cls": "watch",
+   "pct": "-27%",
+   "pdir": "dn",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14T23:57",
+   "time": "today",
+   "head": "Top decliner: -27% to $10.37",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "CRWG \u00b7 -27% to $10.37",
+    "sub": "top decliner \u00b7 October 14, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev13"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "CWVX",
+   "cls": "watch",
+   "pct": "-27%",
+   "pdir": "dn",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14T23:57",
+   "time": "today",
+   "head": "Top decliner: -27% to $8.63",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "CWVX \u00b7 -27% to $8.63",
+    "sub": "top decliner \u00b7 October 14, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev14"
   },
   {
    "sender": "EDGAR",
