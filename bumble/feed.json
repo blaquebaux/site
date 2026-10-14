@@ -1,23 +1,23 @@
 {
- "generated_at": "2026-10-14T13:40:46+00:00",
- "count": 15,
+ "generated_at": "2026-10-14T17:25:11+00:00",
+ "count": 14,
  "events": [
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "BSP",
    "cls": "watch",
-   "pct": "+40%",
+   "pct": "+49%",
    "pdir": "up",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:58",
    "time": "today",
-   "head": "Top gainer: +40% to $53.12",
+   "head": "Top gainer: +49% to $56.36",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BSP \u00b7 +40% to $53.12",
+    "title": "BSP \u00b7 +49% to $56.36",
     "sub": "top gainer \u00b7 October 14, 2026",
     "sections": [
      {
@@ -58,17 +58,17 @@
    "chip": "TAPE",
    "tkr": "LQDA",
    "cls": "watch",
-   "pct": "+37%",
+   "pct": "+27%",
    "pdir": "up",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:58",
    "time": "today",
-   "head": "Top gainer: +37% to $36.85",
+   "head": "Top gainer: +27% to $33.98",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "LQDA \u00b7 +37% to $36.85",
+    "title": "LQDA \u00b7 +27% to $33.98",
     "sub": "top gainer \u00b7 October 14, 2026",
     "sections": [
      {
@@ -109,17 +109,17 @@
    "chip": "TAPE",
    "tkr": "BKHA",
    "cls": "watch",
-   "pct": "-29%",
+   "pct": "-54%",
    "pdir": "dn",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:57",
    "time": "today",
-   "head": "Top decliner: -29% to $8.84",
+   "head": "Top decliner: -54% to $5.70",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BKHA \u00b7 -29% to $8.84",
+    "title": "BKHA \u00b7 -54% to $5.70",
     "sub": "top decliner \u00b7 October 14, 2026",
     "sections": [
      {
@@ -160,17 +160,17 @@
    "chip": "TAPE",
    "tkr": "CRWG",
    "cls": "watch",
-   "pct": "-27%",
+   "pct": "-30%",
    "pdir": "dn",
    "date": "October 14, 2026",
    "ts": "2026-10-14T23:57",
    "time": "today",
-   "head": "Top decliner: -27% to $10.37",
+   "head": "Top decliner: -30% to $9.97",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CRWG \u00b7 -27% to $10.37",
+    "title": "CRWG \u00b7 -30% to $9.97",
     "sub": "top decliner \u00b7 October 14, 2026",
     "sections": [
      {
@@ -205,57 +205,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
    "id": "ev13"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "CWVX",
-   "cls": "watch",
-   "pct": "-27%",
-   "pdir": "dn",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:57",
-   "time": "today",
-   "head": "Top decliner: -27% to $8.63",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CWVX \u00b7 -27% to $8.63",
-    "sub": "top decliner \u00b7 October 14, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev14"
   },
   {
    "sender": "EDGAR",
@@ -320,20 +269,19 @@
    "date": "October 13, 2026",
    "ts": "2026-10-13",
    "time": "10-13",
-   "head": "3 insiders sold $1,887,336 open-market incl. the CFO",
+   "head": "2 insiders sold $1,603,215 open-market incl. the CFO",
    "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
    "evi": "insider cluster \u00b7 modest documented edge",
    "detail": {
     "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "ZM \u00b7 3 insiders sell $1,887,336",
+    "title": "ZM \u00b7 2 insiders sell $1,603,215",
     "sub": "Zoom Communications, Inc.  (CIK 0001585521) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
     "sections": [
      {
       "h": "Who",
       "list": [
        "Chang Michelle (Chief Financial Officer) $844,341",
-       "Sankarlingam Velchamy (Pres. of Engineering & Product) $758,875",
-       "McMaster Herbert Raymond (Dir) $284,120"
+       "Sankarlingam Velchamy (Pres. of Engineering & Product) $758,875"
       ]
      }
     ],
