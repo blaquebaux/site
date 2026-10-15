@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-10-15T17:41:37+00:00",
- "count": 14,
+ "generated_at": "2026-10-15T20:47:56+00:00",
+ "count": 12,
  "events": [
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "RPGL",
+   "tkr": "FBYDP",
    "cls": "watch",
-   "pct": "+56%",
-   "pdir": "up",
+   "pct": "-39%",
+   "pdir": "dn",
    "date": "October 15, 2026",
-   "ts": "2026-10-15T23:58",
+   "ts": "2026-10-15T23:57",
    "time": "today",
-   "head": "Top gainer: +56% to $24.09",
+   "head": "Top decliner: -39% to $8.70",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "RPGL \u00b7 +56% to $24.09",
-    "sub": "top gainer \u00b7 October 15, 2026",
+    "title": "FBYDP \u00b7 -39% to $8.70",
+    "sub": "top decliner \u00b7 October 15, 2026",
     "sections": [
      {
       "h": "Read",
@@ -29,18 +29,18 @@
    },
    "fit": {
     "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
      "bleed",
      "bear",
      "bombs-away",
      "breach",
      "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
     ],
     "na": [
      "apac",
@@ -49,128 +49,26 @@
      "bargain",
      "barrel"
     ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
    "id": "ev10"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "RGC",
-   "cls": "watch",
-   "pct": "+33%",
-   "pdir": "up",
-   "date": "October 15, 2026",
-   "ts": "2026-10-15T23:58",
-   "time": "today",
-   "head": "Top gainer: +33% to $10.80",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "RGC \u00b7 +33% to $10.80",
-    "sub": "top gainer \u00b7 October 15, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev11"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "FBYDP",
-   "cls": "watch",
-   "pct": "-43%",
-   "pdir": "dn",
-   "date": "October 15, 2026",
-   "ts": "2026-10-15T23:57",
-   "time": "today",
-   "head": "Top decliner: -43% to $8.23",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "FBYDP \u00b7 -43% to $8.23",
-    "sub": "top decliner \u00b7 October 15, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev12"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
    "tkr": "FMC",
    "cls": "watch",
-   "pct": "-32%",
+   "pct": "-31%",
    "pdir": "dn",
    "date": "October 15, 2026",
    "ts": "2026-10-15T23:57",
    "time": "today",
-   "head": "Top decliner: -32% to $5.49",
+   "head": "Top decliner: -31% to $5.62",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "FMC \u00b7 -32% to $5.49",
+    "title": "FMC \u00b7 -31% to $5.62",
     "sub": "top decliner \u00b7 October 15, 2026",
     "sections": [
      {
@@ -204,7 +102,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev13"
+   "id": "ev11"
   },
   {
    "sender": "EDGAR",
