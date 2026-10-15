@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-14T23:34:37+00:00",
- "count": 15,
+ "generated_at": "2026-10-15T02:37:43+00:00",
+ "count": 13,
  "events": [
   {
    "sender": "TAPE",
@@ -9,8 +9,8 @@
    "cls": "watch",
    "pct": "+41%",
    "pdir": "up",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:58",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15T23:58",
    "time": "today",
    "head": "Top gainer: +41% to $53.46",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -18,7 +18,109 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "BSP \u00b7 +41% to $53.46",
-    "sub": "top gainer \u00b7 October 14, 2026",
+    "sub": "top gainer \u00b7 October 15, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev8"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "NXGL",
+   "cls": "watch",
+   "pct": "+35%",
+   "pdir": "up",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15T23:58",
+   "time": "today",
+   "head": "Top gainer: +35% to $5.46",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "NXGL \u00b7 +35% to $5.46",
+    "sub": "top gainer \u00b7 October 15, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "ev9"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "AEHL",
+   "cls": "watch",
+   "pct": "+34%",
+   "pdir": "up",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15T23:58",
+   "time": "today",
+   "head": "Top gainer: +34% to $11.49",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "AEHL \u00b7 +34% to $11.49",
+    "sub": "top gainer \u00b7 October 15, 2026",
     "sections": [
      {
       "h": "Read",
@@ -56,114 +158,12 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "NXGL",
-   "cls": "watch",
-   "pct": "+35%",
-   "pdir": "up",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:58",
-   "time": "today",
-   "head": "Top gainer: +35% to $5.46",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NXGL \u00b7 +35% to $5.46",
-    "sub": "top gainer \u00b7 October 14, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev11"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "AEHL",
-   "cls": "watch",
-   "pct": "+34%",
-   "pdir": "up",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:58",
-   "time": "today",
-   "head": "Top gainer: +34% to $11.49",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "AEHL \u00b7 +34% to $11.49",
-    "sub": "top gainer \u00b7 October 14, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev12"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
    "tkr": "RPGL",
    "cls": "watch",
    "pct": "-65%",
    "pdir": "dn",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:57",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15T23:57",
    "time": "today",
    "head": "Top decliner: -65% to $15.49",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -171,7 +171,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "RPGL \u00b7 -65% to $15.49",
-    "sub": "top decliner \u00b7 October 14, 2026",
+    "sub": "top decliner \u00b7 October 15, 2026",
     "sections": [
      {
       "h": "Read",
@@ -204,7 +204,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev13"
+   "id": "ev11"
   },
   {
    "sender": "TAPE",
@@ -213,8 +213,8 @@
    "cls": "watch",
    "pct": "-38%",
    "pdir": "dn",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14T23:57",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15T23:57",
    "time": "today",
    "head": "Top decliner: -38% to $7.74",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -222,7 +222,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "BKHA \u00b7 -38% to $7.74",
-    "sub": "top decliner \u00b7 October 14, 2026",
+    "sub": "top decliner \u00b7 October 15, 2026",
     "sections": [
      {
       "h": "Read",
@@ -255,51 +255,45 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ev14"
+   "id": "ev12"
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 4",
-   "tkr": "FERG",
-   "cls": "sell",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "6 insiders sold $5,959,863 open-market incl. the CFO",
-   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
-   "evi": "insider cluster \u00b7 modest documented edge",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "FSP",
+   "cls": "buy",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "Powell Anderson Capital Partners LLC discloses a new stake (new activist)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
    "detail": {
-    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "FERG \u00b7 6 insiders sell $5,959,863",
-    "sub": "Ferguson Enterprises Inc. /DE/  (CIK 0002011641) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "FSP \u00b7 Powell Anderson Capital Partners LLC",
+    "sub": "FRANKLIN STREET PROPERTIES CORP /MA/ \u00b7 new Schedule 13D \u00b7 2026-10-14",
     "sections": [
      {
-      "h": "Who",
-      "list": [
-       "Murphy Kevin Michael (Dir/See Remarks) $2,440,726",
-       "Brundage William (Dir/Chief Financial Officer) $1,309,378",
-       "Thees William T. Jr (Chief Operating Officer) $772,200",
-       "Schlicher Jake (Chief Strategy Officer) $686,406",
-       "Graham Ian T. (See Remarks) $405,544"
-      ]
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
      }
     ],
-    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
    },
    "fit": {
     "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
      "bleed",
      "bear",
      "bombs-away",
      "breach",
      "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
     ],
     "na": [
      "apac",
@@ -308,46 +302,40 @@
      "bargain",
      "barrel"
     ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
    "id": "ev0"
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 4",
-   "tkr": "HEI-A",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "QVCG",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "8 insiders bought $1,400,595 open-market",
-   "note": "Cluster buys skew bullish; strongest when the CFO or CEO leads.",
-   "evi": "insider cluster \u00b7 modest documented edge",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "GOLDENTREE ASSET MANAGEMENT LP adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
    "detail": {
-    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
-    "title": "HEI-A \u00b7 8 insiders buy $1,400,595",
-    "sub": "HEICO CORP  (CIK 0000046619) \u00b7 open-market P/S \u00b7 filed 2026-10-13",
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "QVCG \u00b7 GOLDENTREE ASSET MANAGEMENT LP",
+    "sub": "QVC Group, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-14",
     "sections": [
      {
-      "h": "Who",
-      "list": [
-       "Fine Carol F. (Dir) $175,142",
-       "CHERUVATATH NANDAKUMAR (Dir) $175,142",
-       "Hildebrandt Mark H (Dir) $175,142",
-       "CULLIGAN THOMAS M (Dir) $175,142",
-       "SCHRIESHEIM ALAN (Dir) $175,142"
-      ]
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
      }
     ],
-    "pri": "Potential outcome: mild positive drift; size as a tilt, not a thesis. Confirm the buys continue."
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
    },
    "fit": {
     "with": [
-     "boom",
-     "broad",
-     "bull",
      "benchmark",
-     "blackstone"
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
     ],
     "against": [
      "bleed",
@@ -369,19 +357,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D",
-   "tkr": "ITGR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "NFJ",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "Tarheel Investors III L.P. discloses a new stake (new activist)",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "Saba Capital Management, L.P. adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "ITGR \u00b7 Tarheel Investors III L.P.",
-    "sub": "Integer Holdings Corp \u00b7 new Schedule 13D \u00b7 2026-10-13",
+    "title": "NFJ \u00b7 Saba Capital Management, L.P.",
+    "sub": "Virtus Dividend, Interest & Premium Strategy Fund \u00b7 amendment (accumulation) \u00b7 2026-10-14",
     "sections": [
      {
       "h": "Read",
@@ -418,19 +406,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "PED",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "TCPC",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "SGK 2018 REVOCABLE TRUST adds to a stake (accumulation)",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "Saba Capital Management, L.P. discloses a new stake (new activist)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "PED \u00b7 SGK 2018 REVOCABLE TRUST",
-    "sub": "PEDEVCO CORP \u00b7 amendment (accumulation) \u00b7 2026-10-13",
+    "title": "TCPC \u00b7 Saba Capital Management, L.P.",
+    "sub": "BlackRock TCP Capital Corp. \u00b7 new Schedule 13D \u00b7 2026-10-14",
     "sections": [
      {
       "h": "Read",
@@ -467,19 +455,19 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "GME-WT",
+   "chip": "EDGAR \u00b7 13D",
+   "tkr": "TROO",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "Cohen Ryan adds to a stake (accumulation)",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "Prime Ocean Holdings Ltd discloses a new stake (new activist)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "GME-WT \u00b7 Cohen Ryan",
-    "sub": "GameStop Corp. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
+    "title": "TROO \u00b7 Prime Ocean Holdings Ltd",
+    "sub": "Troops, Inc. /Cayman Islands/ \u00b7 new Schedule 13D \u00b7 2026-10-14",
     "sections": [
      {
       "h": "Read",
@@ -517,18 +505,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "PCRX",
+   "tkr": "EVOTF",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "Doma Perpetual Capital Management LLC adds to a stake (accumulation)",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "Mubadala Investment Co PJSC adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "PCRX \u00b7 Doma Perpetual Capital Management LLC",
-    "sub": "Pacira BioSciences, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
+    "title": "EVOTF \u00b7 Mubadala Investment Co PJSC",
+    "sub": "Evotec SE \u00b7 amendment (accumulation) \u00b7 2026-10-14",
     "sections": [
      {
       "h": "Read",
@@ -566,18 +554,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "SAMG",
+   "tkr": "AIFU",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "Equinox Partners Investment Management LLC adds to a stake (accumulation)",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "Liu Yif adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "SAMG \u00b7 Equinox Partners Investment Management LLC",
-    "sub": "Silvercrest Asset Management Group Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
+    "title": "AIFU \u00b7 Liu Yif",
+    "sub": "AIFU Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-14",
     "sections": [
      {
       "h": "Read",
@@ -615,18 +603,18 @@
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "BAFN",
+   "tkr": "NVGS",
    "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "LEHMAN KENNETH R adds to a stake (accumulation)",
+   "date": "October 14, 2026",
+   "ts": "2026-10-14",
+   "time": "10-14",
+   "head": "BW Group Ltd adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "BAFN \u00b7 LEHMAN KENNETH R",
-    "sub": "BayFirst Financial Corp. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
+    "title": "NVGS \u00b7 BW Group Ltd",
+    "sub": "Navigator Holdings Ltd. \u00b7 amendment (accumulation) \u00b7 2026-10-14",
     "sections": [
      {
       "h": "Read",
@@ -660,104 +648,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
    "id": "ev7"
-  },
-  {
-   "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D",
-   "tkr": "BORR",
-   "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "Drew Holdings Ltd discloses a new stake (new activist)",
-   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
-   "evi": "activist \u00b7 real pop, fades",
-   "detail": {
-    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "BORR \u00b7 Drew Holdings Ltd",
-    "sub": "Borr Drilling Ltd \u00b7 new Schedule 13D \u00b7 2026-10-13",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
-     }
-    ],
-    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
-   },
-   "fit": {
-    "with": [
-     "benchmark",
-     "blackstone",
-     "broad",
-     "bigbrother",
-     "blue"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev8"
-  },
-  {
-   "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "TALO",
-   "cls": "buy",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13",
-   "time": "10-13",
-   "head": "HELU CARLOS SLIM adds to a stake (accumulation)",
-   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
-   "evi": "activist \u00b7 real pop, fades",
-   "detail": {
-    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "TALO \u00b7 HELU CARLOS SLIM",
-    "sub": "TALOS ENERGY INC. \u00b7 amendment (accumulation) \u00b7 2026-10-13",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
-     }
-    ],
-    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
-   },
-   "fit": {
-    "with": [
-     "benchmark",
-     "blackstone",
-     "broad",
-     "bigbrother",
-     "blue"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "ev9"
   }
  ]
 }
