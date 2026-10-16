@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-16T19:46:30+00:00",
+ "generated_at": "2026-10-16T21:03:58+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,20 +10,20 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "CORD",
+   "tkr": "PMI",
    "cls": "watch",
-   "pct": "+27%",
+   "pct": "+28%",
    "pdir": "up",
    "category": "equities",
    "date": "October 16, 2026",
    "ts": "2026-10-16T23:58",
    "time": "today",
-   "head": "Top gainer: +27% to $5.19",
+   "head": "Top gainer: +28% to $12.75",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CORD \u00b7 +27% to $5.19",
+    "title": "PMI \u00b7 +28% to $12.75",
     "sub": "top gainer \u00b7 October 16, 2026",
     "sections": [
      {
@@ -57,129 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "7181ee8f9eea1431add3"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "NBIZ",
-   "cls": "watch",
-   "pct": "+26%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "October 16, 2026",
-   "ts": "2026-10-16T23:58",
-   "time": "today",
-   "head": "Top gainer: +26% to $37.50",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NBIZ \u00b7 +26% to $37.50",
-    "sub": "top gainer \u00b7 October 16, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "51e03aec478af51d6c35"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "AXTQ",
-   "cls": "watch",
-   "pct": "+25%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "October 16, 2026",
-   "ts": "2026-10-16T23:58",
-   "time": "today",
-   "head": "Top gainer: +25% to $47.45",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "AXTQ \u00b7 +25% to $47.45",
-    "sub": "top gainer \u00b7 October 16, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "487a28d563e3274285d1"
+   "id": "bda0b8ca5f133b8415e3"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "RPGL",
    "cls": "watch",
-   "pct": "-50%",
+   "pct": "-48%",
    "pdir": "dn",
    "category": "equities",
    "date": "October 16, 2026",
    "ts": "2026-10-16T23:57",
    "time": "today",
-   "head": "Top decliner: -50% to $6.70",
+   "head": "Top decliner: -48% to $6.89",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "RPGL \u00b7 -50% to $6.70",
+    "title": "RPGL \u00b7 -48% to $6.89",
     "sub": "top decliner \u00b7 October 16, 2026",
     "sections": [
      {
@@ -213,7 +109,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "63914d11220b7a0dab32"
+   "id": "2ff8c8e9ff03a70f892a"
   },
   {
    "sender": "FED",
@@ -231,7 +127,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-16T19:47:55+00:00"
+    "retrieved_at": "2026-10-16T21:05:43+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -266,6 +162,106 @@
    "id": "18015bf8c4e311333b18"
   },
   {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "PAG",
+   "cls": "buy",
+   "category": "equities",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15",
+   "time": "10-15",
+   "head": "MITSUI & CO LTD adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "PAG \u00b7 MITSUI & CO LTD",
+    "sub": "PENSKE AUTOMOTIVE GROUP, INC. \u00b7 amendment (accumulation) \u00b7 2026-10-15",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "5f22810aa818ba380dac"
+  },
+  {
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "TCRT",
+   "cls": "buy",
+   "category": "equities",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15",
+   "time": "10-15",
+   "head": "Postma Robert W adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
+   "detail": {
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "TCRT \u00b7 Postma Robert W",
+    "sub": "Alaunos Therapeutics, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-15",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+     }
+    ],
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+   },
+   "fit": {
+    "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "b49b24710875e4b8c2dc"
+  },
+  {
    "sender": "FED",
    "chip": "POLICY \u00b7 FED",
    "tkr": "FED",
@@ -281,7 +277,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-16T19:47:55+00:00"
+    "retrieved_at": "2026-10-16T21:05:43+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
