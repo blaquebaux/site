@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T23:28:52+00:00",
+ "generated_at": "2026-10-16T00:22:15+00:00",
  "count": 11,
  "events": [
   {
@@ -9,8 +9,8 @@
    "cls": "watch",
    "pct": "-39%",
    "pdir": "dn",
-   "date": "October 15, 2026",
-   "ts": "2026-10-15T23:57",
+   "date": "October 16, 2026",
+   "ts": "2026-10-16T23:57",
    "time": "today",
    "head": "Top decliner: -39% to $8.70",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -18,7 +18,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "FBYDP \u00b7 -39% to $8.70",
-    "sub": "top decliner \u00b7 October 15, 2026",
+    "sub": "top decliner \u00b7 October 16, 2026",
     "sections": [
      {
       "h": "Read",
@@ -60,8 +60,8 @@
    "cls": "watch",
    "pct": "-31%",
    "pdir": "dn",
-   "date": "October 15, 2026",
-   "ts": "2026-10-15T23:57",
+   "date": "October 16, 2026",
+   "ts": "2026-10-16T23:57",
    "time": "today",
    "head": "Top decliner: -31% to $5.62",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -69,7 +69,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "FMC \u00b7 -31% to $5.62",
-    "sub": "top decliner \u00b7 October 15, 2026",
+    "sub": "top decliner \u00b7 October 16, 2026",
     "sections": [
      {
       "h": "Read",
