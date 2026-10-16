@@ -11,7 +11,8 @@
 # Env: ALPACA_KEY_ID, ALPACA_SECRET_KEY.  BUMBLE_DIR points at the folder holding
 # sleeve_exposure.json and receiving feed.json (default: this script's directory).
 # =============================================================================
-import os, json, re, time, urllib.request
+import os, json, re, time, urllib.request, csv, io, hashlib
+from email.utils import parsedate_to_datetime
 from collections import defaultdict
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
@@ -25,6 +26,95 @@ def _get(url, hdr=UA, timeout=25):
     return urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=timeout).read()
 def _getj(url, hdr=UA):
     return json.loads(_get(url, hdr))
+
+FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
+INDICATORS = (
+    ("DGS10", "U.S. 10-year Treasury yield", "rates", "rates", "bearish", "%"),
+    ("DGS2", "U.S. 2-year Treasury yield", "rates", "rates", "bearish", "%"),
+    ("BAMLH0A0HYM2", "U.S. high-yield option-adjusted spread", "credit", "credit", "bearish", "%"),
+    ("VIXCLS", "CBOE VIX", "volatility", "vol_options", "bearish", ""),
+    ("DTWEXBGS", "Broad U.S. dollar index", "fx", "fx", "bullish", ""),
+    ("DCOILBRENTEU", "Brent crude oil", "commodities", "commodity", "bullish", " USD/bbl"),
+    ("GOLDAMGBD228NLBM", "Gold fixing price", "commodities", "commodity", "bullish", " USD/oz"),
+)
+
+def _fred_latest(series):
+    body = _get(FRED.format(series)).decode("utf-8", "replace")
+    rows = []
+    for row in csv.DictReader(io.StringIO(body)):
+        raw = row.get(series, ".")
+        if raw not in (None, "", "."):
+            rows.append((row["DATE"], float(raw)))
+    if len(rows) < 2: raise ValueError(f"{series}: fewer than two observations")
+    return rows[-2], rows[-1]
+
+def cross_asset_indicators():
+    events = []
+    for series, label, category, asset, rising, suffix in INDICATORS:
+        try: (previous_date, previous), (date, value) = _fred_latest(series)
+        except Exception as error:
+            print(f"indicator gap {series}: {error}"); continue
+        change = value - previous
+        direction = rising if change >= 0 else ("bullish" if rising == "bearish" else "bearish")
+        source = FRED.format(series)
+        events.append({
+            "sender":"FRED", "chip":f"{category.upper()} · {series}", "tkr":series, "category":category,
+            "cls":"watch", "date":fmt_date(date), "ts":date + "T23:59:00Z", "time":date[5:],
+            "head":f"{label}: {value:,.2f}{suffix} ({change:+,.2f} from {previous:,.2f})",
+            "note":f"Latest available official observation; previous observation was {previous_date}. Publication lags and revisions may apply.",
+            "evi":"verified source observation · interpretation conditional",
+            "provenance":{"provider":"Federal Reserve Bank of St. Louis FRED", "series":series, "url":source,
+                          "observed_at":date, "retrieved_at":datetime.now(timezone.utc).isoformat(timespec="seconds")},
+            "detail":{"kicker":f"FRED · {category.upper()}", "title":label, "sub":f"{date} observation · {series}",
+                      "sections":[{"h":"Observed", "p":f"{value:,.2f}{suffix}; prior {previous:,.2f}{suffix} on {previous_date}."},
+                                  {"h":"Source", "p":source}],
+                      "pri":"Potential outcome is conditional; confirm alongside related markets and newer releases."},
+            "fit":sleeve_fit(asset, direction, {"macro/regime"}),
+        })
+    return events
+
+def official_policy_updates(limit=2):
+    """Verified Federal Reserve policy/macro releases; no generated interpretation."""
+    url = "https://www.federalreserve.gov/feeds/press_all.xml"
+    root = ET.fromstring(_get(url))
+    events = []
+    for item in root.findall(".//item")[:limit]:
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        published = parsedate_to_datetime(item.findtext("pubDate")).astimezone(timezone.utc)
+        if not title or not link.startswith("https://www.federalreserve.gov/"): continue
+        stamp = published.isoformat(timespec="seconds")
+        events.append({
+            "sender":"FED", "chip":"POLICY · FED", "tkr":"FED", "category":"policy", "cls":"watch",
+            "date":published.strftime("%B %-d, %Y"), "ts":stamp, "time":published.strftime("%H:%M UTC"),
+            "head":title, "note":"Official Federal Reserve release; open the source for the complete statement.",
+            "evi":"verified official release · no inferred market direction",
+            "provenance":{"provider":"Board of Governors of the Federal Reserve System", "url":link,
+                          "observed_at":stamp, "retrieved_at":datetime.now(timezone.utc).isoformat(timespec="seconds")},
+            "detail":{"kicker":"FEDERAL RESERVE · POLICY", "title":title, "sub":stamp,
+                      "sections":[{"h":"Official source", "p":link}],
+                      "pri":"Development only; market implications require separate sourced analysis."},
+            "fit":sleeve_fit("rates", "bearish", {"macro/regime"}),
+        })
+    return events
+
+def event_key(event):
+    raw = "|".join(str(event.get(k, "")) for k in ("sender", "category", "tkr", "ts", "head"))
+    return hashlib.sha256(raw.encode()).hexdigest()[:20]
+
+def balanced(events, per_category=4, total=24):
+    buckets, seen = defaultdict(list), set()
+    for event in sorted(events, key=lambda x: x.get("ts", ""), reverse=True):
+        key = event_key(event)
+        if key in seen: continue
+        seen.add(key); event["id"] = key
+        category = event.get("category", "equities")
+        if len(buckets[category]) < per_category: buckets[category].append(event)
+    output = []
+    while len(output) < total and any(buckets.values()):
+        for category in sorted(buckets):
+            if buckets[category] and len(output) < total: output.append(buckets[category].pop(0))
+    return sorted(output, key=lambda x: x.get("ts", ""), reverse=True)
 
 TABLE = json.load(open(os.path.join(OUT, "sleeve_exposure.json")))
 CIK2TK = {int(v["cik_str"]): v["ticker"] for v in _getj("https://www.sec.gov/files/company_tickers.json").values()}
@@ -119,7 +209,7 @@ def insider_clusters(start, end, limit=8):
         nm = names[tkr]
         top = sorted(side.items(), key=lambda x: -x[1])[:5]
         events.append({
-            "sender": "EDGAR", "chip": "EDGAR · 4", "tkr": tkr, "cls": "buy" if buy else "sell",
+            "sender": "EDGAR", "chip": "EDGAR · 4", "tkr": tkr, "cls": "buy" if buy else "sell", "category": "equities",
             "date": fmt_date(dt), "ts": dt, "time": dt[5:],
             "head": f"{len(who)} insiders {'bought' if buy else 'sold'} {usd(tot)} open-market" + (" incl. the CFO" if any('CFO' in r or 'Chief Financial' in r for r in roles.values()) else ""),
             "note": ("Cluster buys skew bullish; strongest when the CFO or CEO leads." if buy else "Cluster selling by multiple insiders; context matters, but a tell worth watching."),
@@ -158,7 +248,7 @@ def daily_13d(dates, limit=8):
         new = form == "SCHEDULE 13D"
         d = f"{raw_dt[:4]}-{raw_dt[4:6]}-{raw_dt[6:]}"
         events.append({
-            "sender": "EDGAR", "chip": "EDGAR · 13D" + ("" if new else "/A"), "tkr": tkr, "cls": "buy",
+            "sender": "EDGAR", "chip": "EDGAR · 13D" + ("" if new else "/A"), "tkr": tkr, "cls": "buy", "category": "equities",
             "date": fmt_date(d), "ts": d, "time": d[5:],
             "head": f"{who} {'discloses a new' if new else 'adds to a'} stake" + (" (new activist)" if new else " (accumulation)"),
             "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
@@ -186,7 +276,7 @@ def movers(limit=6):
             s = row["symbol"]; pc = row["percent_change"]; px = row["price"]
             if not clean_sym(s) or px < 5 or abs(pc) < 5 or abs(pc) > 90: continue
             evs.append({
-                "sender": "TAPE", "chip": "TAPE", "tkr": s, "cls": cls, "pct": f"{pc:+.0f}%", "pdir": dirn,
+                "sender": "TAPE", "chip": "TAPE", "tkr": s, "cls": cls, "pct": f"{pc:+.0f}%", "pdir": dirn, "category": "equities",
                 "date": dlabel, "ts": today + ("T23:58" if side == "gainers" else "T23:57"), "time": "today",
                 "head": f"{'Top gainer' if side=='gainers' else 'Top decliner'}: {pc:+.0f}% to ${px:,.2f}",
                 "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -213,12 +303,15 @@ def run():
     except Exception as e: print("13d error:", e)
     try: events += movers()
     except Exception as e: print("movers error:", e)
-    for i, ev in enumerate(events): ev["id"] = f"ev{i}"
-    events.sort(key=lambda e: e["ts"], reverse=True)
-    feed = {"generated_at": now.isoformat(timespec="seconds"), "count": len(events), "events": events}
+    try: events += cross_asset_indicators()
+    except Exception as e: print("cross-asset error:", e)
+    try: events += official_policy_updates()
+    except Exception as e: print("policy feed gap:", e)
+    events = balanced(events)
+    categories = {name: sum(e.get("category", "equities") == name for e in events) for name in sorted({e.get("category", "equities") for e in events})}
+    feed = {"schema_version":2, "generated_at":now.isoformat(timespec="seconds"), "count":len(events), "categories":categories, "events":events}
     with open(os.path.join(OUT, "feed.json"), "w") as f: json.dump(feed, f, indent=1)
-    print(f"wrote {OUT}/feed.json : {len(events)} events  ({sum(e['sender']=='EDGAR' and '4' in e['chip'] for e in events)} insider, "
-          f"{sum('13D' in e['chip'] for e in events)} activist, {sum(e['sender']=='TAPE' for e in events)} tape)")
+    print(f"wrote {OUT}/feed.json : {len(events)} events; categories={categories}")
 
 if __name__ == "__main__":
     run()

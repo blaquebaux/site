@@ -34,6 +34,6 @@ This is a schema example, not a publishable report. Replace example sources and 
 
 Em dashes in editorial text are replaced with the chosen semicolon or colon during compilation; URLs are preserved. Prefer editing punctuation manually for sentence meaning. No raw HTML is accepted. Article links use `/bumble/#brief/<id>` and survive reload; the detail view includes the archive navigation and source links.
 
-The existing cloud briefing tasks publish directly through the GitHub plugin as described in [SCHEDULED-PUBLISHING.md](SCHEDULED-PUBLISHING.md). GitHub Actions validates, compiles and deploys each new article; the desktop relay is paused. Missing citations retain the archived verification-pending label.
+The existing cloud briefing tasks publish directly through the GitHub plugin using the atomic, retryable, create-only protocol in [CLOUD-PUBLISHING.md](CLOUD-PUBLISHING.md). GitHub Actions validates, compiles and deploys each new article; the desktop relay is paused. Missing citations retain the archived verification-pending label.
 
 Legacy EDGAR/TAPE items remain visible and are labeled as source events with unverified analysis. The publisher does not retroactively verify those items. Failure of either feed is visibly reported while the other remains usable.

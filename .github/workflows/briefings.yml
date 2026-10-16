@@ -42,12 +42,26 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Publish reviewed Bumble briefings"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep $((attempt * 5))
+            done
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
       - name: Request Pages build explicitly
         if: steps.archive.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '.status'
+        run: |
+          for attempt in 1 2 3; do
+            if gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '.status'; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          exit 1
+      - name: Record actionable failure summary
+        if: failure()
+        run: |
+          echo '## BUMBLE publication failed' >> "$GITHUB_STEP_SUMMARY"
+          echo "Edition inputs remain immutable. Retry this run after inspecting the failed step; do not replace an existing edition." >> "$GITHUB_STEP_SUMMARY"
