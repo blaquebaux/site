@@ -2,6 +2,81 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-16-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Import inflation broadens as bonds regain defensive appeal",
+      "summary": "Friday morning: import prices surprise to the upside, Treasury demand and a softer dollar contrast with AI credit stress, and equity futures remain mixed.",
+      "published_at": "2026-10-16T08:52:23.587-04:00",
+      "observed_at": "2026-10-16T08:51:00-04:00",
+      "edition_date": "2026-10-16T08:51:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated source review; independent human editorial verification pending",
+      "source_note": "Verification pending: this automated morning edition cites checked BLS and Reuters reports but has not received independent human editorial signoff. Intraday quotes are reported snapshots at different times, not synchronized live prices. The observation cutoff is 8:51 a.m. ET, October 16, 2026.",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "Inflation: The BLS reported September import prices up 1.1% month over month and 8.1% year over year, with nonfuel imports up 0.7% and fuel imports up 4.8% for the month. Export prices rose 2.2% monthly. This morning's import-price release adds to the week's CPI and PPI inflation concerns.",
+            "Equities and volatility: At Reuters' 7:51 a.m. ET snapshot, Dow futures were down 0.04%, S&P 500 futures up 0.04% and Nasdaq 100 futures down 0.28%. CoreWeave was down 5.2% premarket; other AI infrastructure and chip names remained weak. Asian technology markets partially rebounded: Reuters earlier reported South Korea's KOSPI up about 3% after Thursday's near-8% fall. These are separate, unsynchronized snapshots.",
+            "Rates, currencies and commodities: Reuters reported the dollar index down 0.4% at 101.65 in European trading, with the euro near $1.1257. Government bonds had regained safe-haven demand despite hot inflation; the 10-year Treasury yield had eased roughly 26 basis points from last week's 5.3645% high, according to Reuters. Brent traded around $106.14 per barrel and gold near $4,174.52 an ounce in the cited global-markets snapshot.",
+            "Credit and flows: Reuters reported CoreWeave bonds issued in June at a 9.675% yield trading at yields around 15% this week, evidence of issuer-specific financing stress rather than a measured market-wide spread move. Global equity funds received $20.01 billion in the week through October 14, while technology funds lost $4.75 billion; bond funds attracted $7.79 billion, according to LSEG Lipper data reported by Reuters."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The new signal since Thursday afternoon is that import-price inflation is broadening beyond fuel while sovereign bonds retain defensive appeal. Lower government yields alongside expensive financing for leveraged AI infrastructure are not contradictory: risk-free yields and borrower-specific credit premiums can move in opposite directions.",
+            "Equity and fund-flow data suggest rotation and discrimination rather than an indiscriminate withdrawal from risk. The AI credit repricing matters more for financing viability than for any single stock's intraday move. Broad investment-grade and high-yield spread changes were not independently established for this cutoff."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "9:15 a.m. ET: September U.S. industrial production and capacity utilization; compare actual output with inflation-sensitive demand.",
+            "Rates and credit: Treasury curve direction, broad IG/HY spreads, and whether AI borrower funding stress spreads to unrelated issuers.",
+            "Equities and volatility: semiconductor breadth, defensive-sector leadership and whether futures stabilization survives the U.S. cash open.",
+            "Commodities and geopolitics: Brent, refined products and verified shipping disruptions near the Strait of Hormuz.",
+            "FX and policy: dollar response to U.S. data and Fed commentary ahead of the October 27-28 meeting."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If Treasury demand persists while broad credit spreads stay contained, a selective equity stabilization becomes more plausible. If issuer stress spreads into wider corporate credit while import and producer inflation remain elevated, the probability of a broader risk reduction increases.",
+            "The available evidence does not support a precise directional probability or a confident call before the U.S. session and industrial production release."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Broadening imported inflation, lower sovereign yields and selective AI credit stress form a three-way divergence. Watch whether broad credit spreads confirm contagion; without that confirmation, avoid treating one distressed borrower as the entire credit market.",
+      "sources": [
+        {
+          "label": "BLS: September 2026 U.S. Import and Export Price Indexes (released October 16, 8:30 a.m. ET)",
+          "url": "https://www.bls.gov/news.release/ximpim.nr0.htm"
+        },
+        {
+          "label": "Reuters: October 16 U.S. futures and sector rotation",
+          "url": "https://www.reuters.com/business/wall-st-futures-mixed-tech-wobbles-again-tesla-gains-2026-10-16/"
+        },
+        {
+          "label": "Reuters: October 16 global markets, rates, currencies and commodities",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-16/"
+        },
+        {
+          "label": "Reuters: October 16 CoreWeave bond repricing and AI financing",
+          "url": "https://www.reuters.com/legal/transactional/coreweave-bond-rout-tests-markets-math-ai-buildout-2026-10-16/"
+        },
+        {
+          "label": "Reuters: October 16 global equity and bond fund flows through October 14",
+          "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-16/"
+        },
+        {
+          "label": "Reuters: October 16 Morning Bid, Asia rebound and Fed policy",
+          "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-10-16/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-13-morning",
       "kind": "morning",
       "status": "archived-unverified",
