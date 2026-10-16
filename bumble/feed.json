@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-16T01:50:44+00:00",
+ "generated_at": "2026-10-16T06:37:19+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -113,20 +113,20 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D",
-   "tkr": "FSP",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "PAG",
    "cls": "buy",
    "category": "equities",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14",
-   "time": "10-14",
-   "head": "Powell Anderson Capital Partners LLC discloses a new stake (new activist)",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15",
+   "time": "10-15",
+   "head": "MITSUI & CO LTD adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "FSP \u00b7 Powell Anderson Capital Partners LLC",
-    "sub": "FRANKLIN STREET PROPERTIES CORP /MA/ \u00b7 new Schedule 13D \u00b7 2026-10-14",
+    "title": "PAG \u00b7 MITSUI & CO LTD",
+    "sub": "PENSKE AUTOMOTIVE GROUP, INC. \u00b7 amendment (accumulation) \u00b7 2026-10-15",
     "sections": [
      {
       "h": "Read",
@@ -159,24 +159,24 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "d9c9a16d4fd36e13b932"
+   "id": "5f22810aa818ba380dac"
   },
   {
    "sender": "EDGAR",
    "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "QVCG",
+   "tkr": "TCRT",
    "cls": "buy",
    "category": "equities",
-   "date": "October 14, 2026",
-   "ts": "2026-10-14",
-   "time": "10-14",
-   "head": "GOLDENTREE ASSET MANAGEMENT LP adds to a stake (accumulation)",
+   "date": "October 15, 2026",
+   "ts": "2026-10-15",
+   "time": "10-15",
+   "head": "Postma Robert W adds to a stake (accumulation)",
    "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
    "evi": "activist \u00b7 real pop, fades",
    "detail": {
     "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "QVCG \u00b7 GOLDENTREE ASSET MANAGEMENT LP",
-    "sub": "QVC Group, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-14",
+    "title": "TCRT \u00b7 Postma Robert W",
+    "sub": "Alaunos Therapeutics, Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-15",
     "sections": [
      {
       "h": "Read",
@@ -209,7 +209,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "e940afb41e49fd900b5c"
+   "id": "b49b24710875e4b8c2dc"
   },
   {
    "sender": "FED",
@@ -227,7 +227,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-16T01:52:34+00:00"
+    "retrieved_at": "2026-10-16T06:38:31+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -277,7 +277,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
     "observed_at": "2026-10-09T14:00:00+00:00",
-    "retrieved_at": "2026-10-16T01:52:34+00:00"
+    "retrieved_at": "2026-10-16T06:38:31+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
