@@ -1,0 +1,99 @@
+{
+  "id": "2026-10-17-weekly",
+  "kind": "weekly",
+  "status": "archived-unverified",
+  "title": "Weekly Brief | Inflation, Defensive Duration and the AI Credit Test",
+  "summary": "Week of October 12-16, 2026: technology led the equity decline even as Treasuries rallied; producer inflation, energy disruptions and leveraged AI financing set the cross-asset agenda.",
+  "edition_date": "2026-10-17",
+  "published_at": "2026-10-17T12:21:49.531+00:00",
+  "observed_at": "2026-10-16T16:00:00-04:00",
+  "reviewed_by": "BLAQUE BAUX automated research; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened | October 12-16, 2026",
+      "paragraphs": [
+        "Equities: The Nasdaq Composite lost about 4.5% for the week and the S&P 500 about 1.9%, while the Dow gained approximately 0.7%. The divergence reflects concentrated technology and semiconductor weakness rather than a uniform decline across sectors. Friday's closing levels were S&P 500 7,659.44 and Nasdaq 26,140.03. [AP, October 16; Barron's, October 16]",
+        "Inflation: September CPI rose 0.6% month over month and 3.7% year over year; gasoline increased 9.1% for the month. Core CPI rose 0.3% monthly and 2.6% annually. September PPI climbed 1.3% monthly and 6.3% annually. Import prices increased 1.1% in September, including a 0.7% gain for nonfuel imports. [BLS, October 14-16]",
+        "Rates, currencies and volatility: The 10-year Treasury yield finished near 5.09% on Friday despite the inflation surprises; benchmark yields declined roughly 15 basis points over the week. The dollar index fell approximately 0.35% on the week in Reuters' Friday snapshot. The VIX exceeded 20 during the equity selloff. These observations have different measurement cutoffs. [AP; WSJ; Reuters; Barron's, October 16]",
+        "Commodities and geopolitics: Brent settled Friday at $109.86 per barrel and WTI at $101.41, supported by renewed concern about Middle East energy infrastructure and shipping. Tanker freight rates retreated from extraordinary peaks but remained elevated, illustrating the difference between marginal easing and normalized logistics. [Financial Times; Reuters, October 16]",
+        "Credit and real activity: Reuters reported that CoreWeave's debt traded at yields near 15-16%, with default insurance near 1,200 basis points; these are issuer-specific signs of strain, not a verified broad-credit-spread reading. U.S. industrial production increased 0.7% in September, but manufacturing rose only 0.3%; utilities rose 3.5%, and capacity utilization was 76.9%. [Reuters, October 16; Federal Reserve, October 16]"
+      ]
+    },
+    {
+      "heading": "What Mattered | Interpretation",
+      "paragraphs": [
+        "The central cross-asset tension is hotter inflation alongside stronger demand for Treasuries. Falling government yields can reflect defensive allocation, not a general easing in borrowing conditions. The relevant confirmation is whether investment-grade and high-yield option-adjusted spreads remain contained while vulnerable borrowers face sharply higher funding costs.",
+        "The equity correction also sharpened the distinction between AI demand and AI project finance. A profitable supplier, a diversified platform and a debt-dependent infrastructure operator do not share the same refinancing, utilization or customer-concentration risks. CoreWeave is an important stress observation, but extrapolating its bond yields to the entire credit market would be unsound.",
+        "Energy remains the macro transmission mechanism: sustained crude and freight-cost increases can affect input prices, margins and inflation expectations. Meanwhile, positive industrial output is evidence against a blanket economic-contraction narrative; its composition shows less momentum in factories than the headline suggests."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "Credit breadth: investment-grade and high-yield option-adjusted spreads, new-issue concessions, AI infrastructure CDS and refinancing access; distinguish isolated distress from contagion.",
+        "Rates and FX: the 2-year/10-year Treasury response to inflation expectations, real yields, dollar direction and the persistence of demand for duration.",
+        "Energy and policy: verified tanker flows, refinery disruptions, sanctions developments and the pass-through from crude into transport and producer costs.",
+        "Equity breadth and earnings: semiconductor participation, defensive-sector leadership, AI capital expenditure, utilization, contract concentration and operating cash generation as major corporate reports arrive.",
+        "Macro: housing and purchasing-manager surveys in the coming week; monetary-policy communications ahead of the late-October Federal Reserve meeting. Verify release schedules before positioning."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "Constructive conditional path: energy logistics stabilize, Treasury yields settle without an inflation-expectations breakout, and broad credit spreads remain orderly. That combination would raise the likelihood of a selective equity recovery, although leadership need not return immediately to leveraged AI infrastructure.",
+        "Adverse conditional path: sustained energy disruption meets widening credit spreads and weaker financing access. That would raise the probability of broader de-risking even if Treasury yields continue falling. A persistent Treasury rally paired with widening corporate spreads would be a warning about growth and credit, not an all-clear on financial conditions.",
+        "Current assessment: the evidence favors monitoring credit breadth and energy pass-through rather than assigning a precise market direction or numerical scenario probabilities. Data gaps include a synchronized Friday close for every asset and a verified broad-credit-spread series."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: Inflation accelerated, Treasuries rallied, and AI-linked credit repriced. The market's next regime shift will be better identified by the breadth of corporate credit stress and the persistence of energy-cost pressure than by any single equity index.",
+  "verification_note": "Verification pending: automated synthesis from the linked public releases and reporting. Sources were reviewed for the cited observations, but no independent human claim-by-claim editorial sign-off has occurred; archived-unverified is not a live-quote designation.",
+  "social_teaser": "Hotter inflation, lower Treasury yields, and stressed AI debt: three markets, three different messages. The key signal is whether financing pressure spreads beyond leveraged infrastructure while energy costs remain elevated. Read the BLAQUE BAUX Weekly Brief: https://www.blaquebaux.com/bumble/#brief/2026-10-17-weekly",
+  "sources": [
+    {
+      "label": "Associated Press, US market closes and weekly index performance, October 16",
+      "url": "https://apnews.com/article/c27809783ae3230b44c26e5ee4bea056"
+    },
+    {
+      "label": "BLS, September 2026 CPI, released October 14",
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+    },
+    {
+      "label": "BLS, September 2026 PPI, released October 15",
+      "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm"
+    },
+    {
+      "label": "BLS, September 2026 import/export prices, released October 16",
+      "url": "https://www.bls.gov/news.release/archives/ximpim_10162026.htm"
+    },
+    {
+      "label": "Federal Reserve, September 2026 industrial production, October 16",
+      "url": "https://www.federalreserve.gov/releases/g17/20261016/g17.pdf"
+    },
+    {
+      "label": "Reuters, private credit and AI financing, October 16",
+      "url": "https://www.reuters.com/legal/transactional/private-credit-roundup-coreweaves-debt-stress-tests-private-credits-ai-financing-2026-10-16/"
+    },
+    {
+      "label": "Financial Times, oil and Middle East supply risk, October 16",
+      "url": "https://www.ft.com/content/8ee22d89-03eb-48dc-99a5-27555373a89c"
+    },
+    {
+      "label": "Reuters, tanker freight rates, October 16",
+      "url": "https://www.reuters.com/business/energy/supertanker-rates-fall-record-highs-2026-10-16/"
+    },
+    {
+      "label": "Reuters, dollar and Fed expectations, October 16",
+      "url": "https://www.reuters.com/world/asia-pacific/euro-gets-much-needed-reprieve-ai-wobbles-rock-dollar-2026-10-16/"
+    },
+    {
+      "label": "Wall Street Journal, Treasury weekly yield change, October 16",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-and-nasdaq-10-16-2026/card/benchmark-treasurys-are-having-their-best-week-since-february-BjK7I9a84OaGV81qHY2L"
+    },
+    {
+      "label": "Barron's, weekly market and volatility recap, October 16",
+      "url": "https://www.barrons.com/articles/stocks-today-ai-bloodbath-tech-selloff-deepens-42490090"
+    }
+  ]
+}
