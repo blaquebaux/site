@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-16T22:21:59+00:00",
+ "generated_at": "2026-10-17T00:26:36+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -15,8 +15,8 @@
    "pct": "+28%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 16, 2026",
-   "ts": "2026-10-16T23:58",
+   "date": "October 17, 2026",
+   "ts": "2026-10-17T23:58",
    "time": "today",
    "head": "Top gainer: +28% to $12.75",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -24,7 +24,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "PMI \u00b7 +28% to $12.75",
-    "sub": "top gainer \u00b7 October 16, 2026",
+    "sub": "top gainer \u00b7 October 17, 2026",
     "sections": [
      {
       "h": "Read",
@@ -57,7 +57,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "bda0b8ca5f133b8415e3"
+   "id": "024cbf16f39c62606cbd"
   },
   {
    "sender": "TAPE",
@@ -67,8 +67,8 @@
    "pct": "-48%",
    "pdir": "dn",
    "category": "equities",
-   "date": "October 16, 2026",
-   "ts": "2026-10-16T23:57",
+   "date": "October 17, 2026",
+   "ts": "2026-10-17T23:57",
    "time": "today",
    "head": "Top decliner: -48% to $6.89",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -76,7 +76,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "RPGL \u00b7 -48% to $6.89",
-    "sub": "top decliner \u00b7 October 16, 2026",
+    "sub": "top decliner \u00b7 October 17, 2026",
     "sections": [
      {
       "h": "Read",
@@ -109,7 +109,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "2ff8c8e9ff03a70f892a"
+   "id": "ef8756a1fa42745fce54"
   },
   {
    "sender": "FED",
@@ -127,7 +127,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-16T22:23:33+00:00"
+    "retrieved_at": "2026-10-17T00:28:17+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -283,7 +283,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-16T22:23:33+00:00"
+    "retrieved_at": "2026-10-17T00:28:17+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
