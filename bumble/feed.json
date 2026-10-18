@@ -1,10 +1,9 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-17T23:16:06+00:00",
- "count": 6,
+ "generated_at": "2026-10-18T01:18:56+00:00",
+ "count": 4,
  "categories": {
-  "equities": 4,
-  "policy": 2
+  "equities": 4
  },
  "events": [
   {
@@ -15,8 +14,8 @@
    "pct": "+28%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 17, 2026",
-   "ts": "2026-10-17T23:58",
+   "date": "October 18, 2026",
+   "ts": "2026-10-18T23:58",
    "time": "today",
    "head": "Top gainer: +28% to $12.75",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -24,7 +23,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "PMI \u00b7 +28% to $12.75",
-    "sub": "top gainer \u00b7 October 17, 2026",
+    "sub": "top gainer \u00b7 October 18, 2026",
     "sections": [
      {
       "h": "Read",
@@ -57,7 +56,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "024cbf16f39c62606cbd"
+   "id": "0d63044d9cc0545dae03"
   },
   {
    "sender": "TAPE",
@@ -67,8 +66,8 @@
    "pct": "-48%",
    "pdir": "dn",
    "category": "equities",
-   "date": "October 17, 2026",
-   "ts": "2026-10-17T23:57",
+   "date": "October 18, 2026",
+   "ts": "2026-10-18T23:57",
    "time": "today",
    "head": "Top decliner: -48% to $6.89",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -76,7 +75,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "RPGL \u00b7 -48% to $6.89",
-    "sub": "top decliner \u00b7 October 17, 2026",
+    "sub": "top decliner \u00b7 October 18, 2026",
     "sections": [
      {
       "h": "Read",
@@ -109,57 +108,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ef8756a1fa42745fce54"
-  },
-  {
-   "sender": "FED",
-   "chip": "POLICY \u00b7 FED",
-   "tkr": "FED",
-   "category": "policy",
-   "cls": "watch",
-   "date": "October 16, 2026",
-   "ts": "2026-10-16T15:00:00+00:00",
-   "time": "15:00 UTC",
-   "head": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-   "note": "Official Federal Reserve release; open the source for the complete statement.",
-   "evi": "verified official release \u00b7 no inferred market direction",
-   "provenance": {
-    "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-    "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-17T23:17:18+00:00"
-   },
-   "detail": {
-    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-    "sub": "2026-10-16T15:00:00+00:00",
-    "sections": [
-     {
-      "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
-     }
-    ],
-    "pri": "Development only; market implications require separate sourced analysis."
-   },
-   "fit": {
-    "with": [
-     "bonds"
-    ],
-    "against": [
-     "bands",
-     "bide",
-     "bunker"
-    ],
-    "na": [
-     "apac",
-     "backfill",
-     "backlash",
-     "backsliders",
-     "backwards"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "18015bf8c4e311333b18"
+   "id": "c530aeea7b795909f708"
   },
   {
    "sender": "EDGAR",
@@ -266,56 +215,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
    "id": "376f1f7877756c760ab6"
-  },
-  {
-   "sender": "FED",
-   "chip": "POLICY \u00b7 FED",
-   "tkr": "FED",
-   "category": "policy",
-   "cls": "watch",
-   "date": "October 13, 2026",
-   "ts": "2026-10-13T18:00:00+00:00",
-   "time": "18:00 UTC",
-   "head": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-   "note": "Official Federal Reserve release; open the source for the complete statement.",
-   "evi": "verified official release \u00b7 no inferred market direction",
-   "provenance": {
-    "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-    "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-17T23:17:18+00:00"
-   },
-   "detail": {
-    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-    "sub": "2026-10-13T18:00:00+00:00",
-    "sections": [
-     {
-      "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
-     }
-    ],
-    "pri": "Development only; market implications require separate sourced analysis."
-   },
-   "fit": {
-    "with": [
-     "bonds"
-    ],
-    "against": [
-     "bands",
-     "bide",
-     "bunker"
-    ],
-    "na": [
-     "apac",
-     "backfill",
-     "backlash",
-     "backsliders",
-     "backwards"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "5c751c0f5da89965e185"
   }
  ]
 }
