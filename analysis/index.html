@@ -253,6 +253,6 @@ fetch("data.json").then(r=>r.json()).then(async d=>{DATA=d;
  document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${freshness} &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
  try{await indicativeCrypto();}catch(e){}
 }).catch(e=>{document.querySelector("#asof").textContent="Data file unavailable; try again shortly.";});
-fetch("public-source-network.json").then(r=>r.json()).then(d=>{PUBLIC_NETWORK=d;}).catch(()=>{PUBLIC_NETWORK=null;});
+fetch("public-source-network.json"+location.search).then(r=>r.json()).then(d=>{PUBLIC_NETWORK=d;}).catch(()=>{PUBLIC_NETWORK=null;});
 </script>
 </body></html>
