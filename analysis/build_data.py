@@ -10,6 +10,7 @@
 # =============================================================================
 import os, json, math, urllib.request, urllib.parse, datetime, time
 import numpy as np
+from universe import discover_sec_alpaca_universe
 
 def fetch(u, tries=6):
     for a in range(tries):
@@ -186,6 +187,30 @@ ST={
 for t,(n,sec,rep,sk,risk) in ST.items():
     U[t]=S(n,"Single stock",sec,[[rep,rep]],sk,"single-name: "+risk)
 
+# Expand beyond the curated research set. Discovery establishes only identity
+# and price eligibility; it does not infer sector, sleeve, skew, or issuer risk.
+SEC_META={}
+previous_path=os.path.join(os.path.dirname(__file__),"data.json")
+if os.path.exists(previous_path):
+    try:
+        previous=json.load(open(previous_path))
+        for t,m in previous.get("meta",{}).items():
+            if m.get("classification_state")=="automated_unclassified":
+                U.setdefault(t,S(m["n"],"Single stock","Unclassified",[],0,"automated market snapshot; research classification pending"))
+                SEC_META[t]={"cik":m.get("cik"),"exchange":m.get("exchange"),"provider_symbol":m.get("provider_symbol",t)}
+    except (OSError,ValueError,KeyError):
+        pass
+try:
+    discovered=discover_sec_alpaca_universe(H)
+    for t,m in discovered.items():
+        SEC_META[t]=m
+        U.setdefault(t,S(m["name"],"Single stock","Unclassified",[],0,"automated market snapshot; research classification pending"))
+    print(f"discovered {len(discovered)} active SEC-mapped US equities")
+except Exception as e:
+    if not SEC_META:
+        raise
+    print(f"universe discovery failed; preserving {len(SEC_META)} prior automated symbols:",e)
+
 EQ=[t for t in U if U[t][1]!="Crypto" or U[t][2]!="Crypto"]  # placeholder
 EQUITIES=[t for t in U if U[t][1] not in ("Crypto",) or t in ("IBIT","BITO","ETHA","COIN","MSTR","MARA","RIOT")]
 CRYPTO=["BTC","ETH","SOL"]
@@ -310,8 +335,16 @@ def ratio_up(a,b,n=63):
 macro=sum([ratio_up("HYG","LQD"),ratio_up("SPY","TLT"),ratio_up("XLY","XLP"),ratio_up("IWM","SPY")])
 macro=int(max(-2,min(2,round(macro/2))))
 
-meta={t:dict(n=U[t][0],cls=U[t][1],sector=U[t][2],sleeve=U[t][3],skew=U[t][4],risk=U[t][5]) for t in tickers if t in U}
+meta={}
+for t in tickers:
+    if t not in U: continue
+    m=dict(n=U[t][0],cls=U[t][1],sector=U[t][2],sleeve=U[t][3],skew=U[t][4],risk=U[t][5])
+    if t in SEC_META:
+        m.update(cik=SEC_META[t].get("cik"),exchange=SEC_META[t].get("exchange"),provider_symbol=SEC_META[t].get("provider_symbol",t))
+    m["classification_state"]="curated" if U[t][3] else "automated_unclassified"
+    meta[t]=m
 out=dict(asof=spd[-1], macro=macro, factors=FKEYS, meta=meta, stats=tickers,
-         n=len(tickers), generated=datetime.datetime.utcnow().isoformat()+"Z")
+         n=len(tickers), generated=datetime.datetime.utcnow().isoformat()+"Z",
+         universe_note="Active SEC-mapped US equities with sufficient Alpaca price history, plus curated ETFs and crypto. Automated additions remain unclassified until research review.")
 json.dump(out, open(os.path.join(os.path.dirname(__file__),"data.json"),"w"), separators=(",",":"))
 print(f"wrote data.json: {len(tickers)} tickers, asof {spd[-1]}, macro {macro}")

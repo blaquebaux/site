@@ -143,13 +143,13 @@ function regimeTag(m){const map={2:["risk-on","good"],1:["lean risk-on","good"],
 
 function barSigned(label,v){const pos=v>=0;const w=Math.min(50,Math.abs(v)*50);
  return `<div class="bar"><span>${label}</span><span class="t"><span class="mid"></span><i class="${pos?'':'neg'}" style="width:${w}%;${pos?'left:50%':'left:'+(50-w)+'%'}"></i></span><span>${v>=0?'+':''}${v.toFixed(2)}</span></div>`;}
-function slv(list){return (list||[]).map(([n,r])=>`<a href="/corpus/#research-${r}" title="Open ${n} in the Corpus">${n}</a>`).join(" &middot; ");}
+function slv(list){return list&&list.length?list.map(([n,r])=>`<a href="/corpus/#research-${r}" title="Open ${n} in the Corpus">${n}</a>`).join(" &middot; "):`<span style="color:var(--gold)">UNCLASSIFIED / REVIEW PENDING</span>`;}
 const pct=x=>x==null?"n/a":(x>=0?"+":"")+(x*100).toFixed(1)+"%";
 
 function analyze(tks,goalKey){
  const known=[],unknown=[];
  tks.forEach(t=>{const s=DATA.stats[t],m=DATA.meta[t]; (s&&m)?known.push([t,s,m]):unknown.push(t);});
- if(!known.length) return {err:"No recognized tickers. The map covers common ETFs, crypto, and large-cap stocks (e.g. SPY, QQQ, TLT, GLD, BTC, AAPL, NVDA).",unknown};
+ if(!known.length) return {err:"No priced ticker was recognized in the current snapshot. Active SEC-mapped US equities enter automatically when the market feed has sufficient price history; ETFs, foreign listings, OTC securities and crypto have separate coverage limits.",unknown};
  const fxv=t=>{const o={};DATA.factors.forEach(f=>o[f]=(DATA.stats[t].fx||{})[f]||0);return o;};
  // portfolio avg exposure
  const pv={};DATA.factors.forEach(f=>pv[f]=known.reduce((a,[t])=>a+fxv(t)[f],0)/known.length);
@@ -180,11 +180,11 @@ function render(r){
   const tr=["weak","soft","flat","firm","strong"][s.trend+2]||"flat";
   const mo=["weak","soft","flat","firm","strong"][s.mom+2]||"flat";
   const filingReady=PUBLIC_NETWORK&&PUBLIC_NETWORK.entities[t];
-  const filingLabel=filingReady?(filingReady.review_state==='structured_only'?'XBRL available':'reviewed'):'not yet available';
+  const filingLabel=filingReady?(filingReady.review_state==='structured_only'?'XBRL available':'reviewed'):(m.cik?'mapped / filing pending':'not yet available');
   h+=`<div class="card"><div class="tk"><b>${t}${s.indicative?' <span style="color:var(--green);font-size:9px">&bull; indicative spot</span>':''}</b><span class="cls">${m.n} &middot; ${m.cls} &middot; ${m.sector}</span></div>
    <div class="sleeve">SLEEVE: ${slv(m.sleeve)}</div>
    <div class="stats">
-     <span class="pill ${filingReady?'g':''}">SEC intelligence <b>${filingLabel}</b></span>
+     <span class="pill ${filingReady?'g':''}">SEC coverage <b>${filingLabel}</b></span>
      <span class="pill">px <b>${s.px!=null?s.px:"n/a"}</b></span>
      <span class="pill ${s.betaSPY>=1.2?'r':''}">mkt beta <b>${s.betaSPY}x</b></span>
      <span class="pill ${s.r1y>=0?'g':'r'}">1y <b>${pct(s.r1y)}</b></span>
@@ -198,7 +198,7 @@ function render(r){
    <div class="bars">${fx.map(([f,v])=>barSigned(FNAME[f]||f,v)).join("")}</div>
    <div class="why"><span class="pill ${sc[1]}">${sc[0]}</span> &nbsp;${m.risk}.</div></div>`;
  });
- if(r.unknown.length) h+=`<div class="note">Not in the data map (ignored): ${r.unknown.join(", ")}. Covers ~180 common ETFs, crypto and large caps; more can be added to build_data.py.</div>`;
+ if(r.unknown.length) h+=`<div class="note">Not priced in the current snapshot (ignored): ${r.unknown.join(", ")}. This can mean insufficient history, an unsupported listing type, a ticker change, or a temporary provider gap.</div>`;
 
  const conc=r.shares[0]||["MKT",0];
  h+=`<div class="micro" style="margin-top:38px">Portfolio: diversification, skew, mandate fit</div>
@@ -220,11 +220,11 @@ function render(r){
  if(r.sugg.length) h+=`<div class="gap"><b>To fit the goal, add:</b><br>`+r.sugg.map(([f,[t,m]])=>`&bull; <b>${t}</b> (${m.n}) for ${FNAME[f]||f} exposure &rarr; sleeve ${slv(m.sleeve)}`).join("<br>")+`</div>`;
  else h+=`<div class="gap">No major factor gaps for this goal: the book already spans the mandate's exposures.</div>`;
 
- const requested=r.known.map(([t,,m])=>({ticker:t,name:m.n,record:PUBLIC_NETWORK&&PUBLIC_NETWORK.entities[t]}));
+ const requested=r.known.map(([t,,m])=>({ticker:t,name:m.n,cik:m.cik,record:PUBLIC_NETWORK&&PUBLIC_NETWORK.entities[t]}));
  const available=requested.filter(x=>x.record).map(x=>x.ticker);
  const reviewed=requested.filter(x=>x.record&&x.record.review_state!=='structured_only').length;
  const structured=requested.filter(x=>x.record&&x.record.review_state==='structured_only').length;
- h+=`<div class="card"><div class="micro">Security intelligence / SEC filing coverage</div><h2>${available.length} of ${requested.length} holdings</h2><div class="why">${reviewed} filing record${reviewed===1?' is':'s are'} reviewed and ${structured} ${structured===1?'has':'have'} an automated SEC XBRL snapshot. Structured facts are filing data, but they are not narrative or relationship conclusions.</div><div class="coverage-roster">${requested.map(x=>`<div class="coverage-row ${x.record?'reviewed':''}"><b>${x.ticker}</b><span>${!x.record?'SEC intelligence not yet available':x.record.review_state==='structured_only'?`${x.record.source_form} XBRL snapshot &middot; period ${x.record.source_period} &middot; relationships not reviewed`:`${x.record.source_form} reviewed &middot; period ${x.record.source_period}`}</span></div>`).join("")}</div></div>`;
+ h+=`<div class="card"><div class="micro">Security intelligence / SEC filing coverage</div><h2>${available.length} of ${requested.length} holdings have prepared filing intelligence</h2><div class="why">${reviewed} filing record${reviewed===1?' is':'s are'} reviewed and ${structured} ${structured===1?'has':'have'} an automated SEC XBRL snapshot. SEC identity mapping does not imply that narrative disclosures or economic relationships have been reviewed.</div><div class="coverage-roster">${requested.map(x=>`<div class="coverage-row ${x.record?'reviewed':''}"><b>${x.ticker}</b><span>${x.record?(x.record.review_state==='structured_only'?`${x.record.source_form} XBRL snapshot &middot; period ${x.record.source_period} &middot; relationships not reviewed`:`${x.record.source_form} reviewed &middot; period ${x.record.source_period}`):x.cik?`SEC mapped &middot; <a href="https://www.sec.gov/edgar/browse/?CIK=${x.cik}&owner=exclude" target="_blank" rel="noopener">open issuer filings ↗</a> &middot; intelligence preparation pending`:'SEC intelligence not yet available'}</span></div>`).join("")}</div></div>`;
  if(available.length) h+=available.map(t=>renderPublicNetwork(PUBLIC_NETWORK.entities[t])).join("");
  h+=`<div class="note">Factor exposures are estimated trailing correlations and betas from daily data to <b style="color:var(--gold)">${DATA.asof}</b> (crypto spot is indicative where shown); effective bets and skew are illustrative, not a production risk model. Rule-based from the open BLAQUE BAUX corpus. Research only. Not investment advice. See the <a href="/corpus/">corpus</a> for each sleeve's evidence and the <a href="/capstone/">capstones</a> for the mandate books.</div>`;
  sh.innerHTML=h;out.scrollIntoView({behavior:"smooth"});
@@ -241,7 +241,7 @@ function renderPublicNetwork(e){
  return `<div class="fixture-banner" style="border-color:${structured?'var(--gold)':'var(--green)'};color:${structured?'var(--gold)':'var(--green)'}">PUBLIC-SOURCE SEC INTELLIGENCE / ${state} / NOT REAL-TIME</div><div class="card"><div class="micro">Security intelligence / SEC filing</div><h2>${e.name}</h2><div class="meta-line">${e.source_form} for period ${e.source_period} &middot; filed ${e.source_filed} &middot; accession ${e.source_accession} &middot; <a href="${e.source_url}" target="_blank" rel="noopener" style="color:var(--gold)">open EDGAR source ↗</a></div>${structured?`<div class="gap"><b>Automated boundary:</b> ${e.review_note}</div>`:''}${obs}</div>${relationshipPanel}<div class="note">Coverage limitation: ${PUBLIC_NETWORK.coverage_note}</div>`;
 }
 
-function go(){if(!DATA){return;}const tks=document.querySelector("#tickers").value.toUpperCase().split(/[^A-Z.]+/).filter(Boolean);
+function go(){if(!DATA){return;}const tks=document.querySelector("#tickers").value.toUpperCase().split(/[^A-Z0-9.-]+/).filter(Boolean).map(t=>t.replace(/-/g,"."));
  render(analyze(tks,document.querySelector("#goal").value));}
 
 document.querySelector("#run").addEventListener("click",go);
@@ -250,7 +250,7 @@ document.querySelectorAll("[data-ex]").forEach(b=>b.addEventListener("click",()=
 
 fetch("data.json"+location.search).then(r=>r.json()).then(async d=>{DATA=d;
  const ageDays=Math.floor((Date.now()-Date.parse(d.asof+"T23:59:59Z"))/86400000),freshness=ageDays>3?`<b style="color:var(--red)">stale snapshot / ${ageDays} days old</b>`:"daily snapshot";
- document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${freshness} &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
+ document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${freshness} &middot; ${d.n} priced instruments &middot; `+regimeTag(d.macro);
  try{await indicativeCrypto();}catch(e){}
 }).catch(e=>{document.querySelector("#asof").textContent="Data file unavailable; try again shortly.";});
 fetch("public-source-network.json"+location.search).then(r=>r.json()).then(d=>{PUBLIC_NETWORK=d;}).catch(()=>{PUBLIC_NETWORK=null;});

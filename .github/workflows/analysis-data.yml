@@ -2,6 +2,11 @@ name: Update Analysis data
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/analysis-data.yml"
+      - "analysis/build_data.py"
+      - "analysis/universe.py"
   schedule:
     - cron: "25 9 * * 2-6"   # Tue-Sat 09:25 UTC: refreshes with each prior US close (data is T-1 on the basic SIP plan)
 
@@ -31,6 +36,6 @@ jobs:
             echo "no change"
           else
             git commit -m "analysis: refresh data.json"
-            git pull --rebase origin main || true
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi

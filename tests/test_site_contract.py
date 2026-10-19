@@ -6,6 +6,9 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
+from unittest.mock import patch
+
+from analysis.universe import canonical_ticker, discover_sec_alpaca_universe
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,6 +70,23 @@ class CorpusStatusParser(HTMLParser):
 
 
 class SiteContractTests(unittest.TestCase):
+    def test_broad_sec_universe_discovery_is_identity_only(self):
+        sec = {
+            "0": {"ticker": "CRWV", "title": "CoreWeave, Inc.", "cik_str": 1769628},
+            "1": {"ticker": "BRK-B", "title": "Berkshire Hathaway Inc.", "cik_str": 1067983},
+        }
+        assets = [
+            {"symbol": "CRWV", "status": "active", "tradable": True, "exchange": "NASDAQ"},
+            {"symbol": "BRK.B", "status": "active", "tradable": True, "exchange": "NYSE"},
+            {"symbol": "NOSEC", "status": "active", "tradable": True, "exchange": "NYSE"},
+        ]
+        with patch("analysis.universe.request_json", side_effect=[sec, assets]):
+            universe = discover_sec_alpaca_universe({"APCA-API-KEY-ID": "test"})
+        self.assertEqual("BRK.B", canonical_ticker("brk-b"))
+        self.assertEqual({"CRWV", "BRK.B"}, set(universe))
+        self.assertEqual("0001769628", universe["CRWV"]["cik"])
+        self.assertNotIn("sector", universe["CRWV"])
+
     def test_primary_pages_share_navigation_destinations(self):
         for page in PRIMARY_PAGES:
             text = (ROOT / page).read_text()
@@ -237,6 +257,12 @@ class SiteContractTests(unittest.TestCase):
             self.assertTrue(all("SEC XBRL structured fact" in item["classification"] for item in entity["observations"]))
         analysis = (ROOT / "analysis/index.html").read_text()
         self.assertIn('fetch("data.json"+location.search)', analysis)
+        self.assertIn("UNCLASSIFIED / REVIEW PENDING", analysis)
+        self.assertIn("Active SEC-mapped US equities enter automatically", analysis)
+        self.assertIn("SEC mapped &middot;", analysis)
+        self.assertIn("mapped / filing pending", analysis)
+        self.assertIn("classification_state", (ROOT / "analysis/build_data.py").read_text())
+        self.assertTrue((ROOT / "analysis/universe.py").exists())
         self.assertIn("PUBLIC-SOURCE SEC INTELLIGENCE", analysis)
         self.assertIn("open EDGAR source", analysis)
         self.assertIn('fetch("public-source-network.json"+location.search)', analysis)
