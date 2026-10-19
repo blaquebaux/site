@@ -1,8 +1,8 @@
 {
   "schema_version": "an-211.public.v0.1",
   "dataset_state": "CURRENT_PUBLIC_SOURCE",
-  "refreshed_at": "2026-10-18T23:45:00-04:00",
-  "coverage_note": "SEC filings disclose economically relevant concentrations and groups but often do not identify the counterparties. Unnamed entities remain unnamed.",
+  "refreshed_at": "2026-10-19T03:55:51+00:00",
+  "coverage_note": "SEC XBRL supplies issuer-tagged financial facts, not named supply-chain relationships. Relationship maps remain empty until narrative disclosures or counterparty filings are reviewed.",
   "entities": {
     "AAPL": {
       "name": "Apple Inc.",
@@ -166,7 +166,374 @@
           "confidence": "low; conditional scenario"
         }
       ],
-      "eligible_sleeves": ["bellwether", "bogle", "bedrock"],
+      "eligible_sleeves": [
+        "bellwether",
+        "bogle",
+        "bedrock"
+      ],
+      "assigned_sleeve": null
+    },
+    "MSFT": {
+      "name": "MICROSOFT CORP",
+      "cik": "0000789019",
+      "source_period": "2026-06-30",
+      "source_filed": "2026-07-29",
+      "source_form": "10-K",
+      "source_accession": "0001193125-26-323660",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "latest_detected": {
+        "form": "10-K",
+        "filing_date": "2026-07-29",
+        "accession": "0001193125-26-323660"
+      },
+      "review_state": "structured_only",
+      "review_note": "Automated SEC filing metadata and issuer-tagged XBRL facts. Narrative context and relationships have not been reviewed.",
+      "observations": [
+        {
+          "id": "0001193125-26-323660-revenuefromcontractwithcustomerexcludingassessedtax",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Revenue",
+          "value": "$331.8B",
+          "period": "2025-07-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; fiscal period FY. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Revenue scale or change requires segment, margin, demand and comparability context.",
+          "source_locator": "SEC Companyfacts / us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        {
+          "id": "0001193125-26-323660-netincomeloss",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Net income",
+          "value": "$133.7B",
+          "period": "2025-07-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetIncomeLoss; fiscal period FY. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Net income requires reconciliation to operating drivers, cash flow and non-recurring items.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetIncomeLoss"
+        },
+        {
+          "id": "0001193125-26-323660-netcashprovidedbyusedinoperatingactivities",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Operating cash flow",
+          "value": "$182.9B",
+          "period": "2025-07-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetCashProvidedByUsedInOperatingActivities; fiscal period FY. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash generation should be read with working capital, capital spending and period length.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetCashProvidedByUsedInOperatingActivities"
+        },
+        {
+          "id": "0001193125-26-323660-paymentsforrepurchaseofcommonstock",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Share repurchases",
+          "value": "$22.3B",
+          "period": "2025-07-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:PaymentsForRepurchaseOfCommonStock; fiscal period FY. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Repurchases may be constructive or adverse depending on valuation, funding, liquidity and alternatives.",
+          "source_locator": "SEC Companyfacts / us-gaap:PaymentsForRepurchaseOfCommonStock"
+        },
+        {
+          "id": "0001193125-26-323660-cashandcashequivalentsatcarryingvalue",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Cash and equivalents",
+          "value": "$20.9B",
+          "period": "2026-06-30",
+          "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period FY. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
+          "source_locator": "SEC Companyfacts / us-gaap:CashAndCashEquivalentsAtCarryingValue"
+        }
+      ],
+      "relationships": [],
+      "hypotheses": [],
+      "eligible_sleeves": [],
+      "assigned_sleeve": null
+    },
+    "NVDA": {
+      "name": "NVIDIA CORP",
+      "cik": "0001045810",
+      "source_period": "2026-07-26",
+      "source_filed": "2026-08-26",
+      "source_form": "10-Q",
+      "source_accession": "0001045810-26-000075",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "latest_detected": {
+        "form": "10-Q",
+        "filing_date": "2026-08-26",
+        "accession": "0001045810-26-000075"
+      },
+      "review_state": "structured_only",
+      "review_note": "Automated SEC filing metadata and issuer-tagged XBRL facts. Narrative context and relationships have not been reviewed.",
+      "observations": [
+        {
+          "id": "0001045810-26-000075-revenues",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Revenue",
+          "value": "$96.2B",
+          "period": "2026-04-27 to 2026-07-26",
+          "detail": "Issuer-tagged us-gaap:Revenues; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Revenue scale or change requires segment, margin, demand and comparability context.",
+          "source_locator": "SEC Companyfacts / us-gaap:Revenues"
+        },
+        {
+          "id": "0001045810-26-000075-netincomeloss",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Net income",
+          "value": "$59.7B",
+          "period": "2026-04-27 to 2026-07-26",
+          "detail": "Issuer-tagged us-gaap:NetIncomeLoss; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Net income requires reconciliation to operating drivers, cash flow and non-recurring items.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetIncomeLoss"
+        },
+        {
+          "id": "0001045810-26-000075-netcashprovidedbyusedinoperatingactivities",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Operating cash flow",
+          "value": "$74.4B",
+          "period": "2026-01-26 to 2026-07-26",
+          "detail": "Issuer-tagged us-gaap:NetCashProvidedByUsedInOperatingActivities; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash generation should be read with working capital, capital spending and period length.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetCashProvidedByUsedInOperatingActivities"
+        },
+        {
+          "id": "0001045810-26-000075-paymentsforrepurchaseofcommonstock",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Share repurchases",
+          "value": "$39.0B",
+          "period": "2026-01-26 to 2026-07-26",
+          "detail": "Issuer-tagged us-gaap:PaymentsForRepurchaseOfCommonStock; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Repurchases may be constructive or adverse depending on valuation, funding, liquidity and alternatives.",
+          "source_locator": "SEC Companyfacts / us-gaap:PaymentsForRepurchaseOfCommonStock"
+        },
+        {
+          "id": "0001045810-26-000075-cashandcashequivalentsatcarryingvalue",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Cash and equivalents",
+          "value": "$22.4B",
+          "period": "2026-07-26",
+          "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
+          "source_locator": "SEC Companyfacts / us-gaap:CashAndCashEquivalentsAtCarryingValue"
+        }
+      ],
+      "relationships": [],
+      "hypotheses": [],
+      "eligible_sleeves": [],
+      "assigned_sleeve": null
+    },
+    "GOOGL": {
+      "name": "Alphabet Inc.",
+      "cik": "0001652044",
+      "source_period": "2026-06-30",
+      "source_filed": "2026-07-23",
+      "source_form": "10-Q",
+      "source_accession": "0001652044-26-000071",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+      "latest_detected": {
+        "form": "10-Q",
+        "filing_date": "2026-07-23",
+        "accession": "0001652044-26-000071"
+      },
+      "review_state": "structured_only",
+      "review_note": "Automated SEC filing metadata and issuer-tagged XBRL facts. Narrative context and relationships have not been reviewed.",
+      "observations": [
+        {
+          "id": "0001652044-26-000071-revenues",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Revenue",
+          "value": "$119.8B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:Revenues; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Revenue scale or change requires segment, margin, demand and comparability context.",
+          "source_locator": "SEC Companyfacts / us-gaap:Revenues"
+        },
+        {
+          "id": "0001652044-26-000071-netincomeloss",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Net income",
+          "value": "$112.2B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetIncomeLoss; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Net income requires reconciliation to operating drivers, cash flow and non-recurring items.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetIncomeLoss"
+        },
+        {
+          "id": "0001652044-26-000071-netcashprovidedbyusedinoperatingactivities",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Operating cash flow",
+          "value": "$84.9B",
+          "period": "2026-01-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetCashProvidedByUsedInOperatingActivities; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash generation should be read with working capital, capital spending and period length.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetCashProvidedByUsedInOperatingActivities"
+        },
+        {
+          "id": "0001652044-26-000071-paymentsforrepurchaseofcommonstock",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Share repurchases",
+          "value": "$0",
+          "period": "2026-01-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:PaymentsForRepurchaseOfCommonStock; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Repurchases may be constructive or adverse depending on valuation, funding, liquidity and alternatives.",
+          "source_locator": "SEC Companyfacts / us-gaap:PaymentsForRepurchaseOfCommonStock"
+        },
+        {
+          "id": "0001652044-26-000071-cashandcashequivalentsatcarryingvalue",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Cash and equivalents",
+          "value": "$55.9B",
+          "period": "2026-06-30",
+          "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
+          "source_locator": "SEC Companyfacts / us-gaap:CashAndCashEquivalentsAtCarryingValue"
+        }
+      ],
+      "relationships": [],
+      "hypotheses": [],
+      "eligible_sleeves": [],
+      "assigned_sleeve": null
+    },
+    "AMZN": {
+      "name": "AMAZON COM INC",
+      "cik": "0001018724",
+      "source_period": "2026-06-30",
+      "source_filed": "2026-07-31",
+      "source_form": "10-Q",
+      "source_accession": "0001018724-26-000026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "latest_detected": {
+        "form": "10-Q",
+        "filing_date": "2026-07-31",
+        "accession": "0001018724-26-000026"
+      },
+      "review_state": "structured_only",
+      "review_note": "Automated SEC filing metadata and issuer-tagged XBRL facts. Narrative context and relationships have not been reviewed.",
+      "observations": [
+        {
+          "id": "0001018724-26-000026-revenuefromcontractwithcustomerexcludingassessedtax",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Revenue",
+          "value": "$200.6B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Revenue scale or change requires segment, margin, demand and comparability context.",
+          "source_locator": "SEC Companyfacts / us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        {
+          "id": "0001018724-26-000026-netincomeloss",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Net income",
+          "value": "$62.6B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetIncomeLoss; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Net income requires reconciliation to operating drivers, cash flow and non-recurring items.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetIncomeLoss"
+        },
+        {
+          "id": "0001018724-26-000026-netcashprovidedbyusedinoperatingactivities",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Operating cash flow",
+          "value": "$45.4B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetCashProvidedByUsedInOperatingActivities; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash generation should be read with working capital, capital spending and period length.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetCashProvidedByUsedInOperatingActivities"
+        },
+        {
+          "id": "0001018724-26-000026-cashandcashequivalentsatcarryingvalue",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Cash and equivalents",
+          "value": "$78.2B",
+          "period": "2026-06-30",
+          "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
+          "source_locator": "SEC Companyfacts / us-gaap:CashAndCashEquivalentsAtCarryingValue"
+        }
+      ],
+      "relationships": [],
+      "hypotheses": [],
+      "eligible_sleeves": [],
+      "assigned_sleeve": null
+    },
+    "TSLA": {
+      "name": "Tesla, Inc.",
+      "cik": "0001318605",
+      "source_period": "2026-06-30",
+      "source_filed": "2026-07-23",
+      "source_form": "10-Q",
+      "source_accession": "0001628280-26-049270",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+      "latest_detected": {
+        "form": "10-Q",
+        "filing_date": "2026-07-23",
+        "accession": "0001628280-26-049270"
+      },
+      "review_state": "structured_only",
+      "review_note": "Automated SEC filing metadata and issuer-tagged XBRL facts. Narrative context and relationships have not been reviewed.",
+      "observations": [
+        {
+          "id": "0001628280-26-049270-revenuefromcontractwithcustomerexcludingassessedtax",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Revenue",
+          "value": "$28.2B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Revenue scale or change requires segment, margin, demand and comparability context.",
+          "source_locator": "SEC Companyfacts / us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        {
+          "id": "0001628280-26-049270-netincomeloss",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Net income",
+          "value": "$1.1B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetIncomeLoss; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Net income requires reconciliation to operating drivers, cash flow and non-recurring items.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetIncomeLoss"
+        },
+        {
+          "id": "0001628280-26-049270-netcashprovidedbyusedinoperatingactivities",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Operating cash flow",
+          "value": "$8.6B",
+          "period": "2026-01-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetCashProvidedByUsedInOperatingActivities; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash generation should be read with working capital, capital spending and period length.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetCashProvidedByUsedInOperatingActivities"
+        },
+        {
+          "id": "0001628280-26-049270-cashandcashequivalentsatcarryingvalue",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Cash and equivalents",
+          "value": "$15.2B",
+          "period": "2026-06-30",
+          "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
+          "source_locator": "SEC Companyfacts / us-gaap:CashAndCashEquivalentsAtCarryingValue"
+        }
+      ],
+      "relationships": [],
+      "hypotheses": [],
+      "eligible_sleeves": [],
       "assigned_sleeve": null
     }
   }

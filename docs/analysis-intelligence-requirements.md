@@ -1,7 +1,7 @@
 # BLAQUE BAUX ANALYSIS v2.0 intelligence requirements
 
-Status: approved product direction, implementation specification  
-Release posture: research only; review branch; no direct deployment  
+Status: approved product direction, implementation specification
+Release posture: research only; production with explicit evidence-state labels
 Primary surface: `/analysis/`
 
 ## Product principle
@@ -18,7 +18,7 @@ An anomaly is a neutral deviation from a defined baseline. It is not inherently 
 
 The v2.0 system produces evidence-linked research objects and bounded hypotheses. It does not claim causal certainty, calculate unsupported downstream revenue impacts, identify undisclosed counterparties, provide investment advice, or treat price movement alone as evidence of operating contagion.
 
-The first vertical slice is an explicitly fictional, non-live AN-211 fixture. It validates the interface and contract without presenting invented company relationships as facts. Production company networks remain gated on trustworthy source coverage and review.
+The initial fictional fixture remains a contract-test asset but is no longer presented in the production interface. Production currently includes one reviewed Apple filing analysis and automated SEC submissions/Companyfacts snapshots for Microsoft, Nvidia, Alphabet, Amazon, and Tesla. Automated snapshots expose issuer-tagged structured facts with exact periods and filing provenance, but publish no relationship, propagation, or sleeve conclusions until narrative review.
 
 ## Core object model
 
@@ -102,7 +102,7 @@ Issuer filings, official investor materials, regulatory records, contractual dis
 ## User experience requirements
 
 1. Preserve the existing ticker classification and portfolio workflow.
-2. Add an Economic Network preview that is visibly labeled `ILLUSTRATIVE FIXTURE / NON-LIVE` before interaction and inside every rendered result.
+2. Keep illustrative fixtures out of the production interface. Public-source results must identify whether they are reviewed narrative analysis or automated structured-data snapshots.
 3. Show the focal entity, directional relationship, validity, source class, confidence, materiality, substitutability, consequence polarity, propagation depth, conditions, and unknowns.
 4. Show positive and negative consequences side by side where both are plausible.
 5. Separate facts, management assertions, models, and analyst hypotheses visually and semantically.
@@ -122,6 +122,8 @@ Issuer filings, official investor materials, regulatory records, contractual dis
 Exit criterion: no fixture entity can reasonably be mistaken for a real disclosed relationship, and all existing site tests pass.
 
 ### Phase 1: Security Intelligence from primary filings
+
+Current progress: issuer/CIK resolution, SEC submissions ingestion, accession-level filing links, conservative Companyfacts extraction, automated refresh, and explicit reviewed-versus-structured-only UX are deployed for the six-stock mega-cap example. Narrative MD&A/risk-factor review and Bumble/Corpus review workflow remain open.
 
 - Add issuer/entity resolution using CIK and security identifiers.
 - Ingest SEC submissions and applicable Inline XBRL facts with accession-level provenance.
@@ -171,7 +173,7 @@ Exit criterion: legal, data, model-risk, operations, and product owners sign off
 ## Acceptance tests
 
 - Existing ANALYSIS examples and unknown-ticker handling continue to work.
-- The fixture is labeled illustrative and non-live in both source data and rendered UX.
+- The retained fixture is labeled illustrative and non-live in source data and is not rendered in the production UX.
 - Every edge includes direction, relationship type, source, validity, confidence, materiality, and substitutability.
 - Consequences include polarity, depth, conditions, confidence, and no fabricated quantitative impact.
 - At least one second-order and one third-order path are represented, with third-order uncertainty visible.

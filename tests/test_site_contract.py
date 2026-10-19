@@ -120,7 +120,7 @@ class SiteContractTests(unittest.TestCase):
         manifest = json.loads((ROOT / "release-manifest.json").read_text())
         self.assertRegex(manifest["site_commit"], r"^[0-9a-f]{40}$")
         self.assertEqual(133, manifest["registry"]["entries"])
-        expected = {"research-registry.json", "evidence-readiness.json", "analysis/data.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"}
+        expected = {"research-registry.json", "evidence-readiness.json", "analysis/data.json", "analysis/public-source-network.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"}
         self.assertEqual(expected, set(manifest["data_artifacts"]))
         self.assertTrue(all(item["timestamp"] for item in manifest["data_artifacts"].values()))
         self.assertIn("not verified actual performance", manifest["performance_note"])
@@ -214,6 +214,7 @@ class SiteContractTests(unittest.TestCase):
     def test_public_source_network_contract(self):
         subprocess.run(["python3", "scripts/update_analysis_network.py", "--check"], cwd=ROOT, check=True)
         feed = json.loads((ROOT / "analysis/public-source-network.json").read_text())
+        self.assertTrue({"AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "TSLA"}.issubset(feed["entities"]))
         apple = feed["entities"]["AAPL"]
         self.assertEqual("0000320193", apple["cik"])
         self.assertTrue(apple["source_url"].startswith("https://www.sec.gov/"))
@@ -222,13 +223,21 @@ class SiteContractTests(unittest.TestCase):
         self.assertTrue(all(edge["source_locator"] for edge in apple["relationships"]))
         self.assertTrue(all("confidence" in edge and "limitations" in edge for edge in apple["relationships"]))
         self.assertTrue(all("hypothesis" in item["confidence"] or "scenario" in item["confidence"] or "independently sourced" in item["confidence"] for item in apple["hypotheses"]))
+        for ticker in ("MSFT", "NVDA", "GOOGL", "AMZN", "TSLA"):
+            entity = feed["entities"][ticker]
+            self.assertEqual("structured_only", entity["review_state"])
+            self.assertTrue(entity["observations"])
+            self.assertEqual([], entity["relationships"])
+            self.assertEqual([], entity["hypotheses"])
+            self.assertIsNone(entity["assigned_sleeve"])
+            self.assertTrue(all("SEC XBRL structured fact" in item["classification"] for item in entity["observations"]))
         analysis = (ROOT / "analysis/index.html").read_text()
-        self.assertIn("VERIFIED PUBLIC-SOURCE ANALYSIS", analysis)
+        self.assertIn("PUBLIC-SOURCE SEC INTELLIGENCE", analysis)
         self.assertIn("open EDGAR source", analysis)
         self.assertIn('fetch("public-source-network.json")', analysis)
-        self.assertIn("SEC intelligence not yet reviewed", analysis)
-        self.assertIn("reviewed filing coverage", analysis)
-        self.assertIn("no relationship conclusions shown", analysis)
+        self.assertIn("AUTOMATED XBRL SNAPSHOT", analysis)
+        self.assertIn("relationships not reviewed", analysis)
+        self.assertIn("No relationship conclusion", analysis)
 
 
 if __name__ == "__main__":
