@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-13T19:41:53+00:00",
-  "site_commit": "fa2540ef9ff767414a7753894c20eb40f71885ec",
+  "generated_at": "2026-10-19T03:57:40+00:00",
+  "site_commit": "eff1d10a4e62130008940a2316f3fccd2861a86c",
   "registry": {
     "schema_version": 2,
     "generated_at": "2026-10-13",
@@ -15,22 +15,25 @@
       "timestamp": "2026-10-13"
     },
     "analysis/data.json": {
-      "timestamp": "2026-10-12"
+      "timestamp": "2026-10-16"
+    },
+    "analysis/public-source-network.json": {
+      "timestamp": "2026-10-19T03:55:51+00:00"
     },
     "bumble/feed.json": {
-      "timestamp": "2026-10-13T16:30:17+00:00"
+      "timestamp": "2026-10-19T00:19:25+00:00"
     },
     "bumble/briefings.json": {
-      "timestamp": "2026-10-13T10:24:00-04:00"
+      "timestamp": "2026-10-17T12:21:49.531+00:00"
     },
     "tracker/performance.json": {
-      "timestamp": "2026-10-12"
+      "timestamp": "2026-10-16"
     },
     "tracker/macro.json": {
-      "timestamp": "2026-10-13T15:55:19.110Z"
+      "timestamp": "2026-10-17T00:26:28.140Z"
     },
     "tracker/options.json": {
-      "timestamp": "2026-10-13T15:55:19.110Z"
+      "timestamp": "2026-10-17T00:26:28.140Z"
     }
   },
   "performance_note": "Published research and simulated artifacts are not verified actual performance."

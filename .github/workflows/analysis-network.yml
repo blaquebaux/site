@@ -1,4 +1,4 @@
-name: Monitor Analysis public-source network
+name: Refresh Analysis SEC intelligence
 
 on:
   workflow_dispatch:
@@ -16,11 +16,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Check SEC submissions for a newer periodic filing
+      - name: Refresh SEC submissions and XBRL facts
         run: python3 scripts/update_analysis_network.py
       - name: Validate feed contract
         run: python3 scripts/update_analysis_network.py --check
-      - name: Publish review-state changes
+      - name: Publish SEC intelligence refresh
         run: |
           git config user.name "blaquebaux-data-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -28,7 +28,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "no change"
           else
-            git commit -m "analysis: flag newer SEC filing for review"
+            git commit -m "analysis: refresh SEC filing intelligence"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

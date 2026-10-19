@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "release-manifest.json"
-ARTIFACTS = ["research-registry.json", "evidence-readiness.json", "analysis/data.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"]
+ARTIFACTS = ["research-registry.json", "evidence-readiness.json", "analysis/data.json", "analysis/public-source-network.json", "bumble/feed.json", "bumble/briefings.json", "tracker/performance.json", "tracker/macro.json", "tracker/options.json"]
 
 
 def timestamp(path: Path) -> str | None:
@@ -21,7 +21,7 @@ def timestamp(path: Path) -> str | None:
         payload = json.loads(path.read_text())
     except (OSError, json.JSONDecodeError):
         return None
-    for key in ("generated_at", "reviewed_at", "asof", "updated_at", "updatedAt", "published_at"):
+    for key in ("generated_at", "reviewed_at", "refreshed_at", "asof", "updated_at", "updatedAt", "published_at"):
         if payload.get(key):
             return str(payload[key])
     articles = payload.get("articles")
