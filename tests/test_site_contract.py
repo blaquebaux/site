@@ -234,7 +234,7 @@ class SiteContractTests(unittest.TestCase):
         analysis = (ROOT / "analysis/index.html").read_text()
         self.assertIn("PUBLIC-SOURCE SEC INTELLIGENCE", analysis)
         self.assertIn("open EDGAR source", analysis)
-        self.assertIn('fetch("public-source-network.json")', analysis)
+        self.assertIn('fetch("public-source-network.json"+location.search)', analysis)
         self.assertIn("AUTOMATED XBRL SNAPSHOT", analysis)
         self.assertIn("relationships not reviewed", analysis)
         self.assertIn("No relationship conclusion", analysis)
