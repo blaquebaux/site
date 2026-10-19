@@ -236,6 +236,7 @@ class SiteContractTests(unittest.TestCase):
             self.assertIsNone(entity["assigned_sleeve"])
             self.assertTrue(all("SEC XBRL structured fact" in item["classification"] for item in entity["observations"]))
         analysis = (ROOT / "analysis/index.html").read_text()
+        self.assertIn('fetch("data.json"+location.search)', analysis)
         self.assertIn("PUBLIC-SOURCE SEC INTELLIGENCE", analysis)
         self.assertIn("open EDGAR source", analysis)
         self.assertIn('fetch("public-source-network.json"+location.search)', analysis)
