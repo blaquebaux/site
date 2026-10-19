@@ -1,0 +1,173 @@
+{
+  "schema_version": "an-211.public.v0.1",
+  "dataset_state": "CURRENT_PUBLIC_SOURCE",
+  "refreshed_at": "2026-10-18T23:45:00-04:00",
+  "coverage_note": "SEC filings disclose economically relevant concentrations and groups but often do not identify the counterparties. Unnamed entities remain unnamed.",
+  "entities": {
+    "AAPL": {
+      "name": "Apple Inc.",
+      "cik": "0000320193",
+      "source_period": "2026-06-27",
+      "source_filed": "2026-07-31",
+      "source_form": "10-Q",
+      "source_accession": "0000320193-26-000020",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "latest_detected": {
+        "form": "10-Q",
+        "filing_date": "2026-07-31",
+        "accession": "0000320193-26-000020"
+      },
+      "review_state": "current",
+      "observations": [
+        {
+          "id": "aapl-capital-return-q3-2026",
+          "type": "capital_allocation",
+          "classification": "issuer-reported fact",
+          "label": "Share repurchases",
+          "value": "$61.8B",
+          "period": "nine months ended 2026-06-27",
+          "detail": "Apple reported repurchasing 215 million shares for $61.8 billion. Remaining availability under the May 2025 authorization was $38.0 billion; an additional program of up to $100 billion was announced on April 30, 2026.",
+          "interpretation": "Neutral observation. Scale alone does not establish value creation or balance-sheet stress; valuation, cash generation, liquidity, debt maturity and alternative uses of capital remain necessary context.",
+          "source_locator": "Note 7 and Part II, Item 2"
+        },
+        {
+          "id": "aapl-debt-q3-2026",
+          "type": "financing",
+          "classification": "issuer-reported fact",
+          "label": "Debt funding",
+          "value": "$84.3B",
+          "period": "as of 2026-06-27",
+          "detail": "$82.3 billion aggregate carrying amount of fixed-rate notes plus $2.0 billion of commercial paper. Apple states commercial-paper proceeds support general corporate purposes, including dividends and repurchases.",
+          "interpretation": "Neutral observation. Debt must be read with liquidity, maturity, interest cost, hedging and operating cash flow; it is not inherently adverse.",
+          "source_locator": "Condensed balance sheet and Note 6"
+        },
+        {
+          "id": "aapl-manufacturing-obligations-q3-2026",
+          "type": "supplier_commitment",
+          "classification": "issuer-reported fact",
+          "label": "Manufacturing purchase obligations",
+          "value": "$57.0B",
+          "period": "as of 2026-06-27",
+          "detail": "$56.2 billion was payable within 12 months. Apple describes several outsourcing partners and a wide variety of component suppliers but does not name them in this disclosure.",
+          "interpretation": "The obligation indicates scale of committed manufacturing demand, not supplier-level revenue exposure or guaranteed future volume for any named company.",
+          "source_locator": "MD&A, Liquidity and Capital Resources"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "aapl-customer-concentration-2026q3",
+          "from_name": "One unnamed customer",
+          "to_name": "Apple Inc.",
+          "direction": "customer owes trade receivables to issuer",
+          "type": "customer",
+          "identity_state": "not disclosed",
+          "evidence_state": "issuer disclosed",
+          "metric": "18% of total trade receivables",
+          "materiality": "quantified concentration",
+          "substitutability": "unknown",
+          "confidence": "high for aggregate; none for identity",
+          "valid_from": "2026-06-27",
+          "valid_to": null,
+          "source_locator": "Note 4, Accounts Receivable",
+          "limitations": "This is receivables concentration, not a disclosed percentage of revenue. Apple does not name the customer."
+        },
+        {
+          "id": "aapl-carrier-concentration-2026q3",
+          "from_name": "Third-party cellular carriers (aggregate)",
+          "to_name": "Apple Inc.",
+          "direction": "carrier and reseller group owes trade receivables to issuer",
+          "type": "customer / distributor",
+          "identity_state": "group disclosed; members not enumerated",
+          "evidence_state": "issuer disclosed",
+          "metric": "27% of total trade receivables",
+          "materiality": "quantified aggregate concentration",
+          "substitutability": "unknown",
+          "confidence": "high for aggregate; none for member allocation",
+          "valid_from": "2026-06-27",
+          "valid_to": null,
+          "source_locator": "Note 4, Accounts Receivable",
+          "limitations": "The filing gives a group total, not individual carrier exposure."
+        },
+        {
+          "id": "aapl-vendor-one-2026q3",
+          "from_name": "Apple Inc.",
+          "to_name": "Unnamed manufacturing vendor 1",
+          "direction": "issuer supplies components to manufacturing vendor",
+          "type": "manufacturing counterparty",
+          "identity_state": "not disclosed",
+          "evidence_state": "issuer disclosed",
+          "metric": "47% of vendor non-trade receivables",
+          "materiality": "quantified concentration",
+          "substitutability": "unknown",
+          "confidence": "high for aggregate; none for identity",
+          "valid_from": "2026-06-27",
+          "valid_to": null,
+          "source_locator": "Note 4, Vendor Non-Trade Receivables",
+          "limitations": "This is a share of Apple's vendor non-trade receivables, not the vendor's revenue dependence on Apple."
+        },
+        {
+          "id": "aapl-vendor-two-2026q3",
+          "from_name": "Apple Inc.",
+          "to_name": "Unnamed manufacturing vendor 2",
+          "direction": "issuer supplies components to manufacturing vendor",
+          "type": "manufacturing counterparty",
+          "identity_state": "not disclosed",
+          "evidence_state": "issuer disclosed",
+          "metric": "22% of vendor non-trade receivables",
+          "materiality": "quantified concentration",
+          "substitutability": "unknown",
+          "confidence": "high for aggregate; none for identity",
+          "valid_from": "2026-06-27",
+          "valid_to": null,
+          "source_locator": "Note 4, Vendor Non-Trade Receivables",
+          "limitations": "This is a share of Apple's vendor non-trade receivables, not the vendor's revenue dependence on Apple."
+        },
+        {
+          "id": "aapl-commercial-paper-2026q3",
+          "from_name": "Commercial-paper investors (aggregate)",
+          "to_name": "Apple Inc.",
+          "direction": "financing market provides unsecured short-term funding",
+          "type": "lender / financing counterparty",
+          "identity_state": "aggregate disclosed; holders not named",
+          "evidence_state": "issuer disclosed",
+          "metric": "$2.0B outstanding",
+          "materiality": "quantified balance",
+          "substitutability": "unknown",
+          "confidence": "high for aggregate; none for holder identity",
+          "valid_from": "2026-06-27",
+          "valid_to": null,
+          "source_locator": "Note 6, Commercial Paper",
+          "limitations": "The filing does not identify individual holders or renewal terms."
+        }
+      ],
+      "hypotheses": [
+        {
+          "polarity": "mixed",
+          "depth": 1,
+          "affected": "Apple Inc.",
+          "statement": "Repurchases can improve per-share economics when funded from durable excess cash at attractive valuation, or reduce flexibility when valuation, liquidity or refinancing conditions are unfavorable.",
+          "conditions": "Requires valuation, free cash flow, maturity schedule, liquidity and alternative-use analysis.",
+          "confidence": "analytical hypothesis; not a filing fact"
+        },
+        {
+          "polarity": "negative",
+          "depth": 2,
+          "affected": "Unnamed manufacturing counterparties",
+          "statement": "A sustained reduction in Apple production commitments could pressure exposed manufacturers.",
+          "conditions": "Only if orders fall, the counterparty is materially dependent on Apple, and replacement demand or capacity redeployment is limited.",
+          "confidence": "low until identities and counterparty dependence are independently sourced"
+        },
+        {
+          "polarity": "negative",
+          "depth": 2,
+          "affected": "Carrier / reseller channel",
+          "statement": "Channel stress could slow collections or alter purchasing behavior.",
+          "conditions": "Requires evidence of counterparty stress and exposure beyond the disclosed aggregate; Apple reports requiring credit support or collateral from certain customers.",
+          "confidence": "low; conditional scenario"
+        }
+      ],
+      "eligible_sleeves": ["bellwether", "bogle", "bedrock"],
+      "assigned_sleeve": null
+    }
+  }
+}

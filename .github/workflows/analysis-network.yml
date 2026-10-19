@@ -1,0 +1,34 @@
+name: Monitor Analysis public-source network
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 12 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check SEC submissions for a newer periodic filing
+        run: python3 scripts/update_analysis_network.py
+      - name: Validate feed contract
+        run: python3 scripts/update_analysis_network.py --check
+      - name: Publish review-state changes
+        run: |
+          git config user.name "blaquebaux-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add analysis/public-source-network.json
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "analysis: flag newer SEC filing for review"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

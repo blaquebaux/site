@@ -207,6 +207,22 @@ class SiteContractTests(unittest.TestCase):
             self.assertTrue(edge_required.issubset(edge), edge["id"])
             self.assertEqual("illustrative", edge["evidence_state"])
 
+    def test_public_source_network_contract(self):
+        subprocess.run(["python3", "scripts/update_analysis_network.py", "--check"], cwd=ROOT, check=True)
+        feed = json.loads((ROOT / "analysis/public-source-network.json").read_text())
+        apple = feed["entities"]["AAPL"]
+        self.assertEqual("0000320193", apple["cik"])
+        self.assertTrue(apple["source_url"].startswith("https://www.sec.gov/"))
+        self.assertEqual("issuer-reported fact", apple["observations"][0]["classification"])
+        self.assertTrue(any(edge["identity_state"] == "not disclosed" for edge in apple["relationships"]))
+        self.assertTrue(all(edge["source_locator"] for edge in apple["relationships"]))
+        self.assertTrue(all("confidence" in edge and "limitations" in edge for edge in apple["relationships"]))
+        self.assertTrue(all("hypothesis" in item["confidence"] or "scenario" in item["confidence"] or "independently sourced" in item["confidence"] for item in apple["hypotheses"]))
+        analysis = (ROOT / "analysis/index.html").read_text()
+        self.assertIn("VERIFIED PUBLIC-SOURCE ANALYSIS", analysis)
+        self.assertIn("open EDGAR source", analysis)
+        self.assertIn('fetch("public-source-network.json")', analysis)
+
 
 if __name__ == "__main__":
     unittest.main()

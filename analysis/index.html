@@ -122,6 +122,7 @@ footer{padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;
 <script>
 let DATA=null;
 let NETWORK=null;
+let PUBLIC_NETWORK=null;
 const FNAME={MKT:"Market",RATES:"Duration",CREDIT:"Credit",COMMOD:"Commodity",GOLD:"Gold",MOM:"Momentum",VALUE:"Value",LOWVOL:"Low-vol",REALEST:"Real estate",INTL:"Intl",EM:"EM",CRYPTO:"Crypto",VOL:"Long-vol"};
 const MANDATES={
  balanced:{t:{MKT:.4,RATES:.4,GOLD:.3,VOL:.2,CREDIT:.2},cap:"bulkhead",name:"Balanced",wantPos:false},
@@ -218,8 +219,18 @@ function render(r){
  if(r.sugg.length) h+=`<div class="gap"><b>To fit the goal, add:</b><br>`+r.sugg.map(([f,[t,m]])=>`&bull; <b>${t}</b> (${m.n}) for ${FNAME[f]||f} exposure &rarr; sleeve ${slv(m.sleeve)}`).join("<br>")+`</div>`;
  else h+=`<div class="gap">No major factor gaps for this goal: the book already spans the mandate's exposures.</div>`;
 
+ const verified=r.known.map(([t])=>t).filter(t=>PUBLIC_NETWORK&&PUBLIC_NETWORK.entities[t]);
+ if(verified.length) h+=verified.map(t=>renderPublicNetwork(PUBLIC_NETWORK.entities[t])).join("");
  h+=`<div class="note">Factor exposures are estimated trailing correlations and betas from daily data to <b style="color:var(--gold)">${DATA.asof}</b> (crypto spot is indicative where shown); effective bets and skew are illustrative, not a production risk model. Rule-based from the open BLAQUE BAUX corpus. Research only. Not investment advice. See the <a href="/corpus/">corpus</a> for each sleeve's evidence and the <a href="/capstone/">capstones</a> for the mandate books.</div>`;
  sh.innerHTML=h;out.scrollIntoView({behavior:"smooth"});
+}
+
+function renderPublicNetwork(e){
+ const state=e.review_state==='current'?'CURRENT / REVIEWED':'NEWER FILING DETECTED / REVIEW REQUIRED';
+ const obs=e.observations.map(o=>`<div class="consequence"><b>${o.label}: ${o.value}</b> &middot; ${o.detail}<div class="meta-line">${o.classification} &middot; ${o.period} &middot; ${o.source_locator}</div><div class="why">${o.interpretation}</div></div>`).join("");
+ const edges=e.relationships.map(x=>`<div class="network-edge"><span>${x.from_name}</span><span class="arrow">${x.direction} &rarr;</span><span>${x.to_name}</span><div class="meta-line" style="grid-column:1/-1">${x.type} &middot; ${x.metric} &middot; identity: ${x.identity_state} &middot; confidence: ${x.confidence} &middot; valid from ${x.valid_from} &middot; substitutability: ${x.substitutability}<br>${x.limitations}</div></div>`).join("");
+ const hyp=e.hypotheses.map(x=>`<div class="consequence ${x.polarity==='negative'?'neg':x.polarity==='positive'?'pos':''}"><b>${x.polarity.toUpperCase()} / order ${x.depth}</b> &middot; ${x.affected}: ${x.statement}<div class="meta-line">Conditions: ${x.conditions} &middot; confidence: ${x.confidence}</div></div>`).join("");
+ return `<div class="fixture-banner" style="border-color:var(--green);color:var(--green)">VERIFIED PUBLIC-SOURCE ANALYSIS / ${state} / NOT REAL-TIME</div><div class="card"><div class="micro">Security intelligence / SEC filing</div><h2>${e.name}</h2><div class="meta-line">${e.source_form} for period ${e.source_period} &middot; filed ${e.source_filed} &middot; accession ${e.source_accession} &middot; <a href="${e.source_url}" target="_blank" rel="noopener" style="color:var(--gold)">open EDGAR source ↗</a></div>${obs}</div><div class="card"><div class="micro">AN-211 / disclosed economic relationships</div><div class="network-list">${edges}</div></div><div class="card"><div class="micro">Conditional consequences / hypotheses, not filing facts</div>${hyp}</div><div class="card"><div class="micro">Sleeve routing</div><div class="why">Eligible: <b>${e.eligible_sleeves.join(", ")}</b>. Assigned: <b>${e.assigned_sleeve||"none"}</b>.</div><div class="meta-line">Eligibility is not portfolio advice. Assignment requires governed review.</div></div><div class="note">Coverage limitation: ${PUBLIC_NETWORK.coverage_note}</div>`;
 }
 
 function go(){if(!DATA){return;}const tks=document.querySelector("#tickers").value.toUpperCase().split(/[^A-Z.]+/).filter(Boolean);
@@ -241,5 +252,6 @@ fetch("data.json").then(r=>r.json()).then(async d=>{DATA=d;
  try{await indicativeCrypto();}catch(e){}
 }).catch(e=>{document.querySelector("#asof").textContent="Data file unavailable; try again shortly.";});
 fetch("network-fixtures.json").then(r=>r.json()).then(d=>{NETWORK=d;}).catch(()=>{NETWORK=null;});
+fetch("public-source-network.json").then(r=>r.json()).then(d=>{PUBLIC_NETWORK=d;}).catch(()=>{PUBLIC_NETWORK=null;});
 </script>
 </body></html>
