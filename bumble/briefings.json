@@ -2,6 +2,81 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-19-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Oil relief lifts futures as sovereign and emerging-market risks diverge",
+      "summary": "Monday premarket: U.S. technology futures recover as oil and Treasury yields ease, while France's fiscal risk and Indonesia's index-classification shock expose divergent sovereign and capital-flow pressures.",
+      "published_at": "2026-10-19T08:07:01-04:00",
+      "observed_at": "2026-10-19T07:05:00-04:00",
+      "edition_date": "2026-10-19T08:07:01-04:00",
+      "reviewed_by": "BLAQUE BAUX automated source review; independent human editorial verification pending",
+      "source_note": "Verification pending: this automated edition uses attributable Reuters reporting and a dated economic calendar, but has not received independent human editorial signoff. The latest specifically timed U.S. futures snapshot was 7:05 a.m. ET on October 19; other international prices are separate, nonsynchronized observations. No U.S. cash-market opening or live credit-spread reading is claimed.",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "U.S. equities: At Reuters' 7:05 a.m. ET snapshot, S&P 500 futures were up 0.47% and Nasdaq 100 futures rose 1.05%, while Dow futures slipped 0.14%. This is a tentative rebound after last week's technology-led losses, not a cash-session result. AI-linked infrastructure and semiconductor names were firmer in premarket trading.",
+            "Energy and rates: Reuters reported Brent futures down about 1.3% near $108.50 a barrel and the 10-year U.S. Treasury yield at 5.0812%. The oil retreat followed reports of possible U.S. sanctions relief affecting Russia, but the final policy decision remained unsettled. Iran separately reported another tanker mine incident in the Strait of Hormuz. Falling benchmark yields do not establish improving corporate borrowing terms.",
+            "Macro, currencies and sovereign risk: China's third-quarter GDP grew 4.5% year over year, slightly above forecasts; September retail sales rose 1.1% year over year. In Europe, French political unrest and budget concerns weighed on the euro; Reuters reported French government borrowing costs rising relative to German bonds. Indonesia's stock benchmark fell more than 5% after MSCI warned it could move the market out of emerging-market classification; the rupiah and local sovereign bonds also weakened.",
+            "Credit and volatility: No synchronized, independently verified U.S. investment-grade, high-yield or VIX reading was established for this morning's cutoff. Prior AI-borrower credit concerns remain context, not proof of new market-wide deterioration."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The change since Friday is a partial U.S. futures rebound alongside softer oil and Treasury yields. Relief in the energy and discount-rate channels can support growth valuations, but does not resolve whether debt-financed AI capacity can earn an adequate return. This week's earnings and cash-flow guidance are more informative than a single futures move.",
+            "The divergence across sovereign markets is material: U.S. government bonds attracted defensive demand while French fiscal risk and Indonesia's benchmark-eligibility threat raised local financing and capital-flow concerns. Index methodology, regulation and political credibility can transmit shocks into equities, currencies and sovereign debt simultaneously."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Today, 10:00 a.m. ET: October NAHB housing-market index; Tuesday: U.S. housing starts and permits.",
+            "Wednesday technology earnings, including Meta, Tesla and semiconductor suppliers; assess AI monetization, free cash flow, capex commitments and refinancing exposure.",
+            "Energy: confirmed Strait of Hormuz shipping disruptions versus the final scope and timing of any Russia sanctions relief.",
+            "Rates and credit: 2-year/10-year Treasury moves, broad IG/HY spreads and AI-infrastructure borrower financing costs; do not infer contagion from issuer-specific stress.",
+            "Global risk: France-Germany sovereign spreads, euro sensitivity, and Indonesia's response to MSCI; Friday's U.S. flash PMIs and inflation expectations."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If lower oil prices persist and broad credit spreads remain contained, a selective rebound in growth equities becomes more plausible. If shipping disruptions revive energy inflation or earnings fail to demonstrate returns on AI spending, renewed volatility becomes more likely.",
+            "If sovereign and emerging-market funding stresses remain local, their U.S. spillover should be limited; synchronized currency weakness, widening credit spreads and rising term premiums would raise the probability of broader transmission. No precise probability or directional forecast is warranted before cash trading and earnings."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: A softer oil price and lower Treasury yield can support a technology rebound without repairing leveraged borrowers' balance sheets. Track cash-flow validation, broad credit spreads and cross-border sovereign risk before calling this a durable risk-on turn.",
+      "sources": [
+        {
+          "label": "Reuters: October 19 U.S. futures, AI earnings, oil and Treasury yields; 7:05 a.m. ET snapshot",
+          "url": "https://www.reuters.com/business/wall-st-futures-climb-ai-stocks-rebound-oil-yields-fall-2026-10-19/"
+        },
+        {
+          "label": "Reuters: October 19 global markets, European fiscal risk and Chinese growth",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-19/"
+        },
+        {
+          "label": "Reuters: October 19 euro, French sovereign spreads and monetary policy",
+          "url": "https://www.reuters.com/world/asia-pacific/dollar-firmer-euro-weakens-french-protests-turn-violent-2026-10-19/"
+        },
+        {
+          "label": "Reuters: October 19 Indonesian market, rupiah and sovereign bond selloff",
+          "url": "https://www.reuters.com/world/asia-pacific/frail-indonesian-markets-reel-after-msci-shock-warning-2026-10-19/"
+        },
+        {
+          "label": "Reuters: October 19 China third-quarter GDP and demand",
+          "url": "https://www.reuters.com/world/china/chinas-economic-growth-picks-up-third-quarter-beating-expectations-2026-10-19/"
+        },
+        {
+          "label": "eOption: October 19 to 23 economic and earnings calendar",
+          "url": "https://www.eoption.com/weekly-event-calendar-10-19-2026-10-23-2026/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-17-weekly",
       "kind": "weekly",
       "status": "archived-unverified",
