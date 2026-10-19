@@ -187,7 +187,11 @@ class SiteContractTests(unittest.TestCase):
             "Legal/compliance review",
         ):
             self.assertIn(phrase, spec)
-        self.assertIn("ILLUSTRATIVE FIXTURE / NON-LIVE", analysis)
+        self.assertNotIn("OPEN AN-211 PREVIEW", analysis)
+        self.assertNotIn("Fictional Manufacturer A", analysis)
+        self.assertIn("Run verified AAPL network", analysis)
+        self.assertIn("Verified anonymous", analysis)
+        self.assertIn("Coverage gap", analysis)
         for destination in ("/bumble/", "/corpus/", "/capstone/"):
             self.assertIn(f'href="{destination}"', analysis)
         self.assertEqual("ILLUSTRATIVE_NON_LIVE", fixture["dataset_state"])
