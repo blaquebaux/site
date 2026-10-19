@@ -10,7 +10,7 @@ import urllib.request
 
 
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
-ALPACA_ASSETS_URL = "https://api.alpaca.markets/v2/assets?status=active&asset_class=us_equity"
+ALPACA_ASSETS_URL = "https://paper-api.alpaca.markets/v2/assets?status=active&asset_class=us_equity"
 # Restrict automatic admission to active national-exchange listings.
 SUPPORTED_EXCHANGES = {"AMEX", "ARCA", "BATS", "NASDAQ", "NYSE"}
 
