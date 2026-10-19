@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-19T11:01:30+00:00",
+ "generated_at": "2026-10-19T13:05:32+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -127,7 +127,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-19T11:03:15+00:00"
+    "retrieved_at": "2026-10-19T13:06:40+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -219,42 +219,48 @@
   },
   {
    "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "NVAX",
-   "cls": "buy",
+   "chip": "EDGAR \u00b7 4",
+   "tkr": "MPLT",
+   "cls": "sell",
    "category": "equities",
    "date": "October 16, 2026",
    "ts": "2026-10-16",
    "time": "10-16",
-   "head": "SHAH CAPITAL MANAGEMENT adds to a stake (accumulation)",
-   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
-   "evi": "activist \u00b7 real pop, fades",
+   "head": "6 insiders sold $1,063,572 open-market incl. the CFO",
+   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
+   "evi": "insider cluster \u00b7 modest documented edge",
    "detail": {
-    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "NVAX \u00b7 SHAH CAPITAL MANAGEMENT",
-    "sub": "NOVAVAX INC \u00b7 amendment (accumulation) \u00b7 2026-10-16",
+    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
+    "title": "MPLT \u00b7 6 insiders sell $1,063,572",
+    "sub": "MapLight Therapeutics, Inc.  (CIK 0001770069) \u00b7 open-market P/S \u00b7 filed 2026-10-16",
     "sections": [
      {
-      "h": "Read",
-      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+      "h": "Who",
+      "list": [
+       "Kroeger Christopher A. (Dir/Chief Executive Officer) $595,423",
+       "Foff Erin Pennock (Chief Medical Officer) $124,068",
+       "Kreitzer Anatol (Chief Discovery Officer) $96,024",
+       "Lillie James Woodruff (Chief Scientific Officer) $93,025",
+       "GILLIS JONATHAN (CAO and Interim CFO) $82,149"
+      ]
      }
     ],
-    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
    },
    "fit": {
     "with": [
-     "benchmark",
-     "blackstone",
-     "broad",
-     "bigbrother",
-     "blue"
-    ],
-    "against": [
      "bleed",
      "bear",
      "bombs-away",
      "breach",
      "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
     ],
     "na": [
      "apac",
@@ -263,9 +269,9 @@
      "bargain",
      "barrel"
     ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "376f1f7877756c760ab6"
+   "id": "c658f23de4369e1195e0"
   },
   {
    "sender": "FED",
@@ -283,7 +289,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-19T11:03:15+00:00"
+    "retrieved_at": "2026-10-19T13:06:40+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
