@@ -180,11 +180,11 @@ function render(r){
   const tr=["weak","soft","flat","firm","strong"][s.trend+2]||"flat";
   const mo=["weak","soft","flat","firm","strong"][s.mom+2]||"flat";
   const filingReady=PUBLIC_NETWORK&&PUBLIC_NETWORK.entities[t];
-  const filingLabel=filingReady?(filingReady.review_state==='structured_only'?'XBRL available':'reviewed'):'not yet available';
+  const filingLabel=filingReady?(filingReady.review_state==='structured_only'?'XBRL available':'reviewed'):(m.cik?'mapped / filing pending':'not yet available');
   h+=`<div class="card"><div class="tk"><b>${t}${s.indicative?' <span style="color:var(--green);font-size:9px">&bull; indicative spot</span>':''}</b><span class="cls">${m.n} &middot; ${m.cls} &middot; ${m.sector}</span></div>
    <div class="sleeve">SLEEVE: ${slv(m.sleeve)}</div>
    <div class="stats">
-     <span class="pill ${filingReady?'g':''}">SEC intelligence <b>${filingLabel}</b></span>
+     <span class="pill ${filingReady?'g':''}">SEC coverage <b>${filingLabel}</b></span>
      <span class="pill">px <b>${s.px!=null?s.px:"n/a"}</b></span>
      <span class="pill ${s.betaSPY>=1.2?'r':''}">mkt beta <b>${s.betaSPY}x</b></span>
      <span class="pill ${s.r1y>=0?'g':'r'}">1y <b>${pct(s.r1y)}</b></span>

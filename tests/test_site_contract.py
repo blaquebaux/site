@@ -260,6 +260,7 @@ class SiteContractTests(unittest.TestCase):
         self.assertIn("UNCLASSIFIED / REVIEW PENDING", analysis)
         self.assertIn("Active SEC-mapped US equities enter automatically", analysis)
         self.assertIn("SEC mapped &middot;", analysis)
+        self.assertIn("mapped / filing pending", analysis)
         self.assertIn("classification_state", (ROOT / "analysis/build_data.py").read_text())
         self.assertTrue((ROOT / "analysis/universe.py").exists())
         self.assertIn("PUBLIC-SOURCE SEC INTELLIGENCE", analysis)
