@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-19T19:53:36+00:00",
+ "generated_at": "2026-10-19T21:54:20+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -12,18 +12,18 @@
    "chip": "TAPE",
    "tkr": "IRON",
    "cls": "watch",
-   "pct": "+37%",
+   "pct": "+39%",
    "pdir": "up",
    "category": "equities",
    "date": "October 19, 2026",
    "ts": "2026-10-19T23:58",
    "time": "today",
-   "head": "Top gainer: +37% to $78.12",
+   "head": "Top gainer: +39% to $78.93",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "IRON \u00b7 +37% to $78.12",
+    "title": "IRON \u00b7 +39% to $78.93",
     "sub": "top gainer \u00b7 October 19, 2026",
     "sections": [
      {
@@ -57,7 +57,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "acc1ca4e8247571a4300"
+   "id": "0e5470c64d0c77a0e483"
   },
   {
    "sender": "TAPE",
@@ -70,12 +70,12 @@
    "date": "October 19, 2026",
    "ts": "2026-10-19T23:57",
    "time": "today",
-   "head": "Top decliner: -31% to $16.32",
+   "head": "Top decliner: -31% to $16.34",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "IAM \u00b7 -31% to $16.32",
+    "title": "IAM \u00b7 -31% to $16.34",
     "sub": "top decliner \u00b7 October 19, 2026",
     "sections": [
      {
@@ -109,7 +109,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "571cbd098ae573941db9"
+   "id": "f2d6ff7bfb055ea2b2d5"
   },
   {
    "sender": "FED",
@@ -127,7 +127,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-19T19:55:02+00:00"
+    "retrieved_at": "2026-10-19T21:55:44+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -283,7 +283,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-19T19:55:02+00:00"
+    "retrieved_at": "2026-10-19T21:55:44+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
