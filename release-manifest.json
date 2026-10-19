@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T03:57:40+00:00",
-  "site_commit": "eff1d10a4e62130008940a2316f3fccd2861a86c",
+  "generated_at": "2026-10-19T04:08:29+00:00",
+  "site_commit": "8ed5f7d261dcdfff06e47df27cbdb7dc84fea8db",
   "registry": {
     "schema_version": 2,
     "generated_at": "2026-10-13",
@@ -18,7 +18,7 @@
       "timestamp": "2026-10-16"
     },
     "analysis/public-source-network.json": {
-      "timestamp": "2026-10-19T03:55:51+00:00"
+      "timestamp": "2026-10-19T04:08:29+00:00"
     },
     "bumble/feed.json": {
       "timestamp": "2026-10-19T00:19:25+00:00"

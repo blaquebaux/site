@@ -214,7 +214,11 @@ class SiteContractTests(unittest.TestCase):
     def test_public_source_network_contract(self):
         subprocess.run(["python3", "scripts/update_analysis_network.py", "--check"], cwd=ROOT, check=True)
         feed = json.loads((ROOT / "analysis/public-source-network.json").read_text())
-        self.assertTrue({"AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "TSLA"}.issubset(feed["entities"]))
+        market = json.loads((ROOT / "analysis/data.json").read_text())
+        self.assertIn("SPCX", market["meta"])
+        self.assertIn("SPCX", market["stats"])
+        self.assertIsNone(market["stats"]["SPCX"]["r1y"])
+        self.assertTrue({"AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "TSLA", "SPCX"}.issubset(feed["entities"]))
         apple = feed["entities"]["AAPL"]
         self.assertEqual("0000320193", apple["cik"])
         self.assertTrue(apple["source_url"].startswith("https://www.sec.gov/"))
@@ -223,7 +227,7 @@ class SiteContractTests(unittest.TestCase):
         self.assertTrue(all(edge["source_locator"] for edge in apple["relationships"]))
         self.assertTrue(all("confidence" in edge and "limitations" in edge for edge in apple["relationships"]))
         self.assertTrue(all("hypothesis" in item["confidence"] or "scenario" in item["confidence"] or "independently sourced" in item["confidence"] for item in apple["hypotheses"]))
-        for ticker in ("MSFT", "NVDA", "GOOGL", "AMZN", "TSLA"):
+        for ticker in ("MSFT", "NVDA", "GOOGL", "AMZN", "TSLA", "SPCX"):
             entity = feed["entities"][ticker]
             self.assertEqual("structured_only", entity["review_state"])
             self.assertTrue(entity["observations"])

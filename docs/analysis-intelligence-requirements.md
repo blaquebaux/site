@@ -18,7 +18,7 @@ An anomaly is a neutral deviation from a defined baseline. It is not inherently 
 
 The v2.0 system produces evidence-linked research objects and bounded hypotheses. It does not claim causal certainty, calculate unsupported downstream revenue impacts, identify undisclosed counterparties, provide investment advice, or treat price movement alone as evidence of operating contagion.
 
-The initial fictional fixture remains a contract-test asset but is no longer presented in the production interface. Production currently includes one reviewed Apple filing analysis and automated SEC submissions/Companyfacts snapshots for Microsoft, Nvidia, Alphabet, Amazon, and Tesla. Automated snapshots expose issuer-tagged structured facts with exact periods and filing provenance, but publish no relationship, propagation, or sleeve conclusions until narrative review.
+The initial fictional fixture remains a contract-test asset but is no longer presented in the production interface. Production currently includes one reviewed Apple filing analysis and automated SEC submissions/Companyfacts snapshots for Microsoft, Nvidia, Alphabet, Amazon, Tesla, and SpaceX. Automated snapshots expose issuer-tagged structured facts with exact periods and filing provenance, but publish no relationship, propagation, or sleeve conclusions until narrative review.
 
 ## Core object model
 
@@ -123,7 +123,7 @@ Exit criterion: no fixture entity can reasonably be mistaken for a real disclose
 
 ### Phase 1: Security Intelligence from primary filings
 
-Current progress: issuer/CIK resolution, SEC submissions ingestion, accession-level filing links, conservative Companyfacts extraction, automated refresh, and explicit reviewed-versus-structured-only UX are deployed for the six-stock mega-cap example. Narrative MD&A/risk-factor review and Bumble/Corpus review workflow remain open.
+Current progress: issuer/CIK resolution, SEC submissions ingestion, accession-level filing links, conservative Companyfacts extraction, automated refresh, and explicit reviewed-versus-structured-only UX are deployed for the mega-cap example and SPCX. Narrative MD&A/risk-factor review and Bumble/Corpus review workflow remain open.
 
 - Add issuer/entity resolution using CIK and security identifiers.
 - Ingest SEC submissions and applicable Inline XBRL facts with accession-level provenance.

@@ -1,7 +1,7 @@
 {
   "schema_version": "an-211.public.v0.1",
   "dataset_state": "CURRENT_PUBLIC_SOURCE",
-  "refreshed_at": "2026-10-19T03:55:51+00:00",
+  "refreshed_at": "2026-10-19T04:08:29+00:00",
   "coverage_note": "SEC XBRL supplies issuer-tagged financial facts, not named supply-chain relationships. Relationship maps remain empty until narrative disclosures or counterparty filings are reviewed.",
   "entities": {
     "AAPL": {
@@ -525,6 +525,72 @@
           "classification": "SEC XBRL structured fact; automated extraction",
           "label": "Cash and equivalents",
           "value": "$15.2B",
+          "period": "2026-06-30",
+          "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
+          "source_locator": "SEC Companyfacts / us-gaap:CashAndCashEquivalentsAtCarryingValue"
+        }
+      ],
+      "relationships": [],
+      "hypotheses": [],
+      "eligible_sleeves": [],
+      "assigned_sleeve": null
+    },
+    "SPCX": {
+      "name": "SPACE EXPLORATION TECHNOLOGIES CORP",
+      "cik": "0001181412",
+      "source_period": "2026-06-30",
+      "source_filed": "2026-08-04",
+      "source_form": "10-Q",
+      "source_accession": "0001628280-26-052535",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+      "latest_detected": {
+        "form": "10-Q",
+        "filing_date": "2026-08-04",
+        "accession": "0001628280-26-052535"
+      },
+      "review_state": "structured_only",
+      "review_note": "Automated SEC filing metadata and issuer-tagged XBRL facts. Narrative context and relationships have not been reviewed.",
+      "observations": [
+        {
+          "id": "0001628280-26-052535-revenuefromcontractwithcustomerexcludingassessedtax",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Revenue",
+          "value": "$7.8B",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Revenue scale or change requires segment, margin, demand and comparability context.",
+          "source_locator": "SEC Companyfacts / us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        {
+          "id": "0001628280-26-052535-netincomeloss",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Net income",
+          "value": "-$541.0M",
+          "period": "2026-04-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetIncomeLoss; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Net income requires reconciliation to operating drivers, cash flow and non-recurring items.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetIncomeLoss"
+        },
+        {
+          "id": "0001628280-26-052535-netcashprovidedbyusedinoperatingactivities",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Operating cash flow",
+          "value": "$3.5B",
+          "period": "2026-01-01 to 2026-06-30",
+          "detail": "Issuer-tagged us-gaap:NetCashProvidedByUsedInOperatingActivities; fiscal period Q2. No adjustment or cross-company normalization applied.",
+          "interpretation": "Neutral observation. Cash generation should be read with working capital, capital spending and period length.",
+          "source_locator": "SEC Companyfacts / us-gaap:NetCashProvidedByUsedInOperatingActivities"
+        },
+        {
+          "id": "0001628280-26-052535-cashandcashequivalentsatcarryingvalue",
+          "type": "structured_financial_fact",
+          "classification": "SEC XBRL structured fact; automated extraction",
+          "label": "Cash and equivalents",
+          "value": "$93.5B",
           "period": "2026-06-30",
           "detail": "Issuer-tagged us-gaap:CashAndCashEquivalentsAtCarryingValue; fiscal period Q2. No adjustment or cross-company normalization applied.",
           "interpretation": "Neutral observation. Cash is a liquidity input, not a standalone conclusion about resilience or excess capital.",
