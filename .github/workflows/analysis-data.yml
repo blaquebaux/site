@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - ".github/workflows/analysis-data.yml"
       - "analysis/build_data.py"
       - "analysis/universe.py"
   schedule:
@@ -35,6 +36,6 @@ jobs:
             echo "no change"
           else
             git commit -m "analysis: refresh data.json"
-            git pull --rebase origin main || true
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
