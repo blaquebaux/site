@@ -1,0 +1,102 @@
+{
+  "schema_version": "an-211.v0.1",
+  "dataset_state": "ILLUSTRATIVE_NON_LIVE",
+  "generated_at": "2026-10-18T00:00:00Z",
+  "provenance": {
+    "source_class": "product-design fixture",
+    "source": "BLAQUE BAUX ANALYSIS v2.0 requirements",
+    "source_url": "/docs/analysis-intelligence-requirements.md",
+    "method": "Fictional entities and qualitative scenarios created solely to exercise the AN-211 interface and data contract.",
+    "limitations": "Not observed market data. Not a statement about any real issuer, security, relationship, exposure, or expected impact."
+  },
+  "scenarios": [
+    {
+      "id": "an211-fixture-01",
+      "label": "Illustrative capital-allocation propagation",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "focal_entity": "Fictional Manufacturer A",
+      "observation": {
+        "type": "capital_allocation_deviation",
+        "statement": "Fictional Manufacturer A changes its mix of debt funding and share repurchases relative to its fictional baseline.",
+        "baseline": "Illustrative three-year policy range; no numerical values are asserted.",
+        "classification": "illustrative hypothesis",
+        "interpretation": {
+          "positive": "Could indicate confidence, balance-sheet optimization, or funding of durable expansion if liquidity and coverage remain sound.",
+          "negative": "Could reduce flexibility or increase refinancing risk if cash generation weakens or maturities concentrate.",
+          "indeterminate": "The deviation alone is not a risk or opportunity signal; funding source, use of proceeds, valuation, covenants, and operating context are required."
+        }
+      },
+      "entities": [
+        {"id": "mfr-a", "name": "Fictional Manufacturer A", "kind": "focal issuer"},
+        {"id": "cust-b", "name": "Fictional Customer B", "kind": "customer"},
+        {"id": "supp-c", "name": "Fictional Supplier C", "kind": "supplier"},
+        {"id": "lender-d", "name": "Fictional Lender D", "kind": "lender"},
+        {"id": "competitor-e", "name": "Fictional Competitor E", "kind": "competitor"},
+        {"id": "logistics-f", "name": "Fictional Logistics F", "kind": "counterparty"}
+      ],
+      "relationships": [
+        {
+          "id": "edge-01", "from": "cust-b", "to": "mfr-a", "direction": "customer purchases from focal issuer", "type": "customer",
+          "source": "illustrative fixture", "source_url": "/docs/analysis-intelligence-requirements.md", "evidence_state": "illustrative",
+          "valid_from": "2026-01-01", "valid_to": "2026-12-31", "observed_at": null, "last_verified_at": null,
+          "confidence": "not_applicable", "confidence_rationale": "Fictional relationship; no real-world assertion.",
+          "materiality": "unknown", "materiality_basis": "No quantitative exposure is asserted.",
+          "substitutability": "unknown", "substitutability_rationale": "Would require product, capacity, qualification, and contract evidence."
+        },
+        {
+          "id": "edge-02", "from": "mfr-a", "to": "supp-c", "direction": "focal issuer purchases from supplier", "type": "supplier",
+          "source": "illustrative fixture", "source_url": "/docs/analysis-intelligence-requirements.md", "evidence_state": "illustrative",
+          "valid_from": "2026-01-01", "valid_to": "2026-12-31", "observed_at": null, "last_verified_at": null,
+          "confidence": "not_applicable", "confidence_rationale": "Fictional relationship; no real-world assertion.",
+          "materiality": "unknown", "materiality_basis": "No quantitative exposure is asserted.",
+          "substitutability": "unknown", "substitutability_rationale": "Would require qualification time, alternate capacity, and contract evidence."
+        },
+        {
+          "id": "edge-03", "from": "lender-d", "to": "mfr-a", "direction": "lender provides financing to focal issuer", "type": "lender",
+          "source": "illustrative fixture", "source_url": "/docs/analysis-intelligence-requirements.md", "evidence_state": "illustrative",
+          "valid_from": "2026-01-01", "valid_to": "2026-12-31", "observed_at": null, "last_verified_at": null,
+          "confidence": "not_applicable", "confidence_rationale": "Fictional relationship; no real-world assertion.",
+          "materiality": "unknown", "materiality_basis": "No balance or facility amount is asserted.",
+          "substitutability": "unknown", "substitutability_rationale": "Would require facility terms, market access, and lender appetite."
+        },
+        {
+          "id": "edge-04", "from": "competitor-e", "to": "mfr-a", "direction": "competitor contests focal issuer demand", "type": "competitor",
+          "source": "illustrative fixture", "source_url": "/docs/analysis-intelligence-requirements.md", "evidence_state": "illustrative",
+          "valid_from": "2026-01-01", "valid_to": "2026-12-31", "observed_at": null, "last_verified_at": null,
+          "confidence": "not_applicable", "confidence_rationale": "Fictional relationship; no real-world assertion.",
+          "materiality": "unknown", "materiality_basis": "No market-share effect is asserted.",
+          "substitutability": "unknown", "substitutability_rationale": "Would require product comparability and switching-cost evidence."
+        },
+        {
+          "id": "edge-05", "from": "supp-c", "to": "logistics-f", "direction": "supplier purchases logistics services", "type": "counterparty",
+          "source": "illustrative fixture", "source_url": "/docs/analysis-intelligence-requirements.md", "evidence_state": "illustrative",
+          "valid_from": "2026-01-01", "valid_to": "2026-12-31", "observed_at": null, "last_verified_at": null,
+          "confidence": "not_applicable", "confidence_rationale": "Fictional relationship; no real-world assertion.",
+          "materiality": "unknown", "materiality_basis": "No volume or revenue effect is asserted.",
+          "substitutability": "unknown", "substitutability_rationale": "Would require route, capacity, and contract evidence."
+        }
+      ],
+      "consequences": [
+        {"affected": "mfr-a", "polarity": "mixed", "depth": 1, "mechanism": "A funding change can support investment or weaken flexibility depending on coverage, maturity, and use of proceeds.", "conditions": "Liquidity, valuation, covenants, operating cash flow, and stated use of proceeds.", "confidence": "illustrative_only"},
+        {"affected": "supp-c", "polarity": "negative", "depth": 2, "mechanism": "Lower focal-issuer purchasing could pressure a supplier if the relationship is material and difficult to replace.", "conditions": "Actual order reduction, meaningful concentration, limited substitution, and insufficient alternate demand.", "confidence": "illustrative_only"},
+        {"affected": "competitor-e", "polarity": "positive", "depth": 2, "mechanism": "A competitor could gain demand if customers switch and it has qualified spare capacity.", "conditions": "Customer switching, comparable product, capacity, and acceptable economics.", "confidence": "illustrative_only"},
+        {"affected": "logistics-f", "polarity": "negative", "depth": 3, "mechanism": "A supplier volume decline could reduce downstream logistics demand.", "conditions": "Prior conditions hold and shipment volume actually declines; third-order uncertainty is high.", "confidence": "illustrative_only"}
+      ],
+      "shared_dependency": {
+        "state": "scenario_hypothesis",
+        "portfolio_holdings": ["Illustrative Holding 1", "Illustrative Holding 2"],
+        "common_node": "Fictional Manufacturer A",
+        "basis": "Both fictional holdings are modeled as exposed through different directional paths.",
+        "valid_from": "2026-01-01", "valid_to": "2026-12-31", "confidence": "illustrative_only"
+      },
+      "sleeve_decision": {
+        "eligible_sleeves": ["bellwether", "bedrock"],
+        "assigned_sleeve": null,
+        "assignment_status": "unassigned_fixture",
+        "rule_version": "illustrative-v0",
+        "reason": "Eligibility demonstrates multi-sleeve routing; assignment requires a reviewed production observation."
+      }
+    }
+  ]
+}
