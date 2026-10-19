@@ -226,6 +226,9 @@ class SiteContractTests(unittest.TestCase):
         self.assertIn("VERIFIED PUBLIC-SOURCE ANALYSIS", analysis)
         self.assertIn("open EDGAR source", analysis)
         self.assertIn('fetch("public-source-network.json")', analysis)
+        self.assertIn("SEC intelligence not yet reviewed", analysis)
+        self.assertIn("reviewed filing coverage", analysis)
+        self.assertIn("no relationship conclusions shown", analysis)
 
 
 if __name__ == "__main__":
