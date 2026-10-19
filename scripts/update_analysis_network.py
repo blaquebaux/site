@@ -17,6 +17,7 @@ HEADERS = {"User-Agent": "BLAQUE BAUX research contact ceo@carterwarrens.com"}
 ISSUERS = {
     "AAPL": "0000320193", "MSFT": "0000789019", "NVDA": "0001045810",
     "GOOGL": "0001652044", "AMZN": "0001018724", "TSLA": "0001318605",
+    "SPCX": "0001181412",
 }
 FACTS = (
     ("Revenue", ("RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues")),
@@ -77,11 +78,12 @@ def compact_value(value, unit):
     if unit == "shares":
         return f"{value / 1_000_000:.1f}M shares"
     magnitude = abs(value)
+    sign = "-" if value < 0 else ""
     if magnitude >= 1_000_000_000:
-        return f"${value / 1_000_000_000:.1f}B"
+        return f"{sign}${magnitude / 1_000_000_000:.1f}B"
     if magnitude >= 1_000_000:
-        return f"${value / 1_000_000:.1f}M"
-    return f"${value:,.0f}"
+        return f"{sign}${magnitude / 1_000_000:.1f}M"
+    return f"{sign}${magnitude:,.0f}"
 
 
 def observation(label, selected):

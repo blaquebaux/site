@@ -177,7 +177,9 @@ ST={
  "GE":("GE Aerospace","Industrials","bigbrother",-1,"aerospace cyclical"),"HON":("Honeywell","Industrials","bigbrother",0,"diversified industrial"),
  "UNP":("Union Pacific","Industrials","bellwether",-1,"rail bellwether"),"UPS":("UPS","Industrials","bellwether",-1,"logistics bellwether"),
  "LMT":("Lockheed","Industrials","bulk",0,"defense, low-beta"),"RTX":("RTX","Industrials","bulk",0,"defense"),
- "TSLA":("Tesla","Discretionary","bogle",-1,"high-beta growth/EV, extreme tail"),"F":("Ford","Discretionary","battered",-1,"auto cyclical"),
+ "TSLA":("Tesla","Discretionary","bogle",-1,"high-beta growth/EV, extreme tail"),
+ "SPCX":("SpaceX","Technology","bogle",-1,"newly listed aerospace, connectivity and AI; limited trading history"),
+ "F":("Ford","Discretionary","battered",-1,"auto cyclical"),
  "GM":("General Motors","Discretionary","battered",-1,"auto cyclical"),"RIVN":("Rivian","Discretionary","bogle",-1,"EV, cash-burn tail"),
  "T":("AT&T","Communication","belt-tighteners",0,"telecom income"),"VZ":("Verizon","Communication","belt-tighteners",0,"telecom income"),
 }
