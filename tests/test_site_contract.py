@@ -168,6 +168,45 @@ class SiteContractTests(unittest.TestCase):
         self.assertIn("indicative spot", analysis)
         self.assertNotIn("crypto spot is live", analysis)
 
+    def test_analysis_intelligence_contract_and_fixture(self):
+        spec = (ROOT / "docs/analysis-intelligence-requirements.md").read_text()
+        analysis = (ROOT / "analysis/index.html").read_text()
+        fixture = json.loads((ROOT / "analysis/network-fixtures.json").read_text())
+        for phrase in (
+            "AN-211 economic relationship and consequence map",
+            "customer, supplier, lender, borrower, competitor, counterparty",
+            "point-in-time",
+            "positive, negative, mixed, or indeterminate",
+            "second-order",
+            "third-order",
+            "eligible_sleeves",
+            "assigned_sleeve",
+            "Inline XBRL",
+            "MDRM is used only when an applicable bank regulatory filing",
+            "licensed supply-chain datasets",
+            "Legal/compliance review",
+        ):
+            self.assertIn(phrase, spec)
+        self.assertIn("ILLUSTRATIVE FIXTURE / NON-LIVE", analysis)
+        for destination in ("/bumble/", "/corpus/", "/capstone/"):
+            self.assertIn(f'href="{destination}"', analysis)
+        self.assertEqual("ILLUSTRATIVE_NON_LIVE", fixture["dataset_state"])
+        self.assertIn("Not observed market data", fixture["provenance"]["limitations"])
+        scenario = fixture["scenarios"][0]
+        self.assertIsNone(scenario["sleeve_decision"]["assigned_sleeve"])
+        self.assertGreater(len(scenario["sleeve_decision"]["eligible_sleeves"]), 1)
+        self.assertIn(2, {item["depth"] for item in scenario["consequences"]})
+        self.assertIn(3, {item["depth"] for item in scenario["consequences"]})
+        edge_required = {
+            "from", "to", "direction", "type", "source", "source_url",
+            "valid_from", "valid_to", "confidence", "confidence_rationale",
+            "materiality", "materiality_basis", "substitutability",
+            "substitutability_rationale",
+        }
+        for edge in scenario["relationships"]:
+            self.assertTrue(edge_required.issubset(edge), edge["id"])
+            self.assertEqual("illustrative", edge["evidence_state"])
+
 
 if __name__ == "__main__":
     unittest.main()
