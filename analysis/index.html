@@ -248,7 +248,7 @@ document.querySelector("#run").addEventListener("click",go);
 document.querySelector("#run-aapl").addEventListener("click",()=>{document.querySelector("#tickers").value="AAPL";go();});
 document.querySelectorAll("[data-ex]").forEach(b=>b.addEventListener("click",()=>{document.querySelector("#tickers").value=b.dataset.ex;go();}));
 
-fetch("data.json").then(r=>r.json()).then(async d=>{DATA=d;
+fetch("data.json"+location.search).then(r=>r.json()).then(async d=>{DATA=d;
  const ageDays=Math.floor((Date.now()-Date.parse(d.asof+"T23:59:59Z"))/86400000),freshness=ageDays>3?`<b style="color:var(--red)">stale snapshot / ${ageDays} days old</b>`:"daily snapshot";
  document.querySelector("#asof").innerHTML=`Data as of <b>${d.asof}</b> &middot; ${freshness} &middot; ${d.n} instruments mapped &middot; `+regimeTag(d.macro);
  try{await indicativeCrypto();}catch(e){}
