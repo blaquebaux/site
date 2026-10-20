@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-20T15:30:54+00:00",
+ "generated_at": "2026-10-20T16:59:26+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -12,18 +12,18 @@
    "chip": "TAPE",
    "tkr": "SAIQ",
    "cls": "watch",
-   "pct": "+54%",
+   "pct": "+60%",
    "pdir": "up",
    "category": "equities",
    "date": "October 20, 2026",
    "ts": "2026-10-20T23:58",
    "time": "today",
-   "head": "Top gainer: +54% to $5.24",
+   "head": "Top gainer: +60% to $5.47",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "SAIQ \u00b7 +54% to $5.24",
+    "title": "SAIQ \u00b7 +60% to $5.47",
     "sub": "top gainer \u00b7 October 20, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "56fff20b72f4902d2ddb"
+   "id": "3d770878ed33ec0001a5"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "BRZE",
    "cls": "watch",
-   "pct": "+51%",
+   "pct": "+52%",
    "pdir": "up",
    "category": "equities",
    "date": "October 20, 2026",
    "ts": "2026-10-20T23:58",
    "time": "today",
-   "head": "Top gainer: +51% to $45.30",
+   "head": "Top gainer: +52% to $45.55",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BRZE \u00b7 +51% to $45.30",
+    "title": "BRZE \u00b7 +52% to $45.55",
     "sub": "top gainer \u00b7 October 20, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "e1b3fa0d850129a77f91"
+   "id": "9be82b8885ada2afe1b2"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "MYGN",
    "cls": "watch",
-   "pct": "+39%",
+   "pct": "+37%",
    "pdir": "up",
    "category": "equities",
    "date": "October 20, 2026",
    "ts": "2026-10-20T23:58",
    "time": "today",
-   "head": "Top gainer: +39% to $5.84",
+   "head": "Top gainer: +37% to $5.77",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "MYGN \u00b7 +39% to $5.84",
+    "title": "MYGN \u00b7 +37% to $5.77",
     "sub": "top gainer \u00b7 October 20, 2026",
     "sections": [
      {
@@ -161,48 +161,46 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "83a8cfb01aa1b3eefa4f"
+   "id": "7ada06474d6c238112e9"
   },
   {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "ATII",
-   "cls": "watch",
-   "pct": "-22%",
-   "pdir": "dn",
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 13D/A",
+   "tkr": "JXG",
+   "cls": "buy",
    "category": "equities",
-   "date": "October 20, 2026",
-   "ts": "2026-10-20T23:57",
-   "time": "today",
-   "head": "Top decliner: -22% to $6.69",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
+   "date": "October 19, 2026",
+   "ts": "2026-10-19",
+   "time": "10-19",
+   "head": "Sun Lei adds to a stake (accumulation)",
+   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
+   "evi": "activist \u00b7 real pop, fades",
    "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "ATII \u00b7 -22% to $6.69",
-    "sub": "top decliner \u00b7 October 20, 2026",
+    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
+    "title": "JXG \u00b7 Sun Lei",
+    "sub": "JX Luxventure Group Inc. \u00b7 amendment (accumulation) \u00b7 2026-10-19",
     "sections": [
      {
       "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
      }
     ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
    },
    "fit": {
     "with": [
+     "benchmark",
+     "blackstone",
+     "broad",
+     "bigbrother",
+     "blue"
+    ],
+    "against": [
      "bleed",
      "bear",
      "bombs-away",
      "breach",
      "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
     ],
     "na": [
      "apac",
@@ -211,9 +209,9 @@
      "bargain",
      "barrel"
     ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "7d558f1498a8a6e767ab"
+   "id": "1e873514e1433a28996d"
   },
   {
    "sender": "FED",
@@ -231,7 +229,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-20T15:32:50+00:00"
+    "retrieved_at": "2026-10-20T16:59:32+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +279,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-20T15:32:50+00:00"
+    "retrieved_at": "2026-10-20T16:59:32+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
