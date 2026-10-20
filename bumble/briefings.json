@@ -2,6 +2,83 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-20-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 20 Afternoon: Housing contracts slump as oil reverses and equities recover",
+      "summary": "Housing starts and pending sales weakened sharply, while crude retreated from morning highs and U.S. equities recovered. The signal is uneven demand and financing sensitivity, not a uniform risk-on turn.",
+      "edition_date": "2026-10-20T15:00:00-04:00",
+      "published_at": "2026-10-20T19:03:14.141+00:00",
+      "observed_at": "2026-10-20T13:48:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "U.S. equities reversed the cautious morning tone. At 1:48 p.m. ET, the S&P 500 was up 0.4%, the Dow gained 539 points or 1%, and the Nasdaq rose 0.2%. Equifax, Hasbro and 3M advanced after earnings, while General Motors fell despite beating profit expectations as its full-year outlook disappointed. These are intraday observations, not closing prices.",
+            "Brent crude reversed an early move toward $112 per barrel and traded at $108.70, down 0.8%, in the 1:48 p.m. ET Associated Press snapshot. Earlier Gulf supply concerns remained unresolved; a price reversal is not confirmation that physical shipping risks have disappeared.",
+            "September U.S. housing starts fell 5.2% to a 1.221 million annual rate. Single-family starts fell 4.6% to 859,000; single-family permits dropped 4.0% to 845,000. Separately, pending home sales fell 7.3% month over month to an index of 66.0, the lowest since that series began in 2001; all four regions declined.",
+            "Treasury yields eased in a 10:40 a.m. ET Wall Street Journal snapshot, with the 10-year around 5.081% and the two-year around 4.740%. In a separate 12:54 p.m. ET Reuters global-market snapshot, the dollar index fell 0.22% to 101.75 and the euro rose 0.17% to $1.1229. French sovereign bonds remained under pressure relative to German Bunds, with the ten-year spread around 150 basis points in Reuters reporting.",
+            "No synchronized afternoon U.S. investment-grade, high-yield or VIX reading was independently established for this edition. Issuer-specific AI volatility should not be presented as proof of system-wide credit stress."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The key change since the morning pulse is the reversal in crude and equities despite a materially weaker housing data set. Earnings and lower fuel costs appear to have supported selected stocks; the smaller Nasdaq gain shows that AI financing concerns have not disappeared.",
+            "Housing is a more direct transmission channel for elevated rates than a headline equity index. Weak contract signings and reduced construction plans point to constrained affordability and softer near-term residential activity, although they do not establish a broad recession.",
+            "Lower U.S. Treasury yields coexist with a persistent French sovereign risk premium. This argues for separating benchmark-rate relief from borrower-specific and sovereign funding conditions."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "After-close earnings, especially evidence that AI spending is converting into operating cash flow rather than only revenue growth.",
+            "Verified Gulf vessel movements, insurance and freight costs, and whether the intraday oil reversal persists.",
+            "The next mortgage-rate readings, home-sales closings and housing-sector credit conditions after the starts and pending-sales declines.",
+            "Investment-grade and high-yield spreads, AI infrastructure refinancing terms, Treasury curve changes and French-German sovereign spreads.",
+            "Whether the equity recovery broadens beyond earnings beneficiaries and defensive groups."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If energy flows remain intact, oil stabilizes below its morning highs and corporate spreads stay contained, selective equity stabilization becomes more plausible even with weak housing.",
+            "If crude rebounds on verified supply disruption while housing and financing conditions worsen, the probability of renewed volatility and narrower market leadership rises.",
+            "The evidence does not support precise scenario probabilities or a high-conviction directional forecast. Verification pending: this automated edition uses attributable published sources but has not received independent editorial sign-off."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Housing demand is weakening at the same time that earnings and an oil-price reversal are lifting parts of the equity market. The decisive test is whether financing relief reaches households and leveraged companies, not merely whether the S&P 500 closes higher.",
+      "sources": [
+        {
+          "label": "Associated Press, U.S. stocks and oil, October 20, 1:48 p.m. ET snapshot",
+          "url": "https://apnews.com/article/stock-markets-oil-ai-rates-inflation-b972b64127db5412a2b02c35ecf95c88"
+        },
+        {
+          "label": "Reuters, September U.S. housing starts and permits, October 20",
+          "url": "https://www.reuters.com/world/us/us-single-family-housing-starts-building-permits-tumble-september-2026-10-20/"
+        },
+        {
+          "label": "National Association of Realtors, September pending home sales, October 20",
+          "url": "https://www.nar.realtor/newsroom/pending-home-sales-decreased-7-3-percent-in-september"
+        },
+        {
+          "label": "Wall Street Journal, Treasury yields after housing data, October 20",
+          "url": "https://www.wsj.com/finance/jgbs-fall-tracking-declines-in-u-s-treasurys-a46665da"
+        },
+        {
+          "label": "Reuters via MarketScreener, global markets, October 20, 12:54 p.m. ET",
+          "url": "https://ca.marketscreener.com/news/stocks-mostly-rise-as-oil-us-yields-ease-euro-edges-up-ce785cd8dd89f027"
+        },
+        {
+          "label": "Reuters, French sovereign yields and spreads, October 20",
+          "url": "https://www.reuters.com/markets/us/french-bond-yields-near-24-year-high-new-protests-loom-2026-10-20/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-19-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
