@@ -1,7 +1,7 @@
 {
   "schema_version": "an-211.public.v0.1",
   "dataset_state": "CURRENT_PUBLIC_SOURCE",
-  "refreshed_at": "2026-10-19T18:49:40+00:00",
+  "refreshed_at": "2026-10-20T17:29:32+00:00",
   "coverage_note": "SEC XBRL supplies issuer-tagged financial facts, not named supply-chain relationships. Relationship maps remain empty until narrative disclosures or counterparty filings are reviewed.",
   "entities": {
     "AAPL": {
