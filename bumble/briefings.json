@@ -2,6 +2,80 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-21-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 21 Morning: Earnings support risk appetite as oil and sovereign yields rise",
+      "summary": "U.S. equity futures recover after Tuesday's uneven close, but oil has rebounded above $110 and France's 10-year yield has touched 5%. The central question is whether earnings resilience can withstand financing and energy-cost pressure.",
+      "edition_date": "2026-10-21T08:00:00-04:00",
+      "published_at": "2026-10-21T08:05:46-04:00",
+      "observed_at": "2026-10-21T08:05:11-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "U.S. equities finished Tuesday unevenly: the Dow rose 1.02% and the S&P 500 gained 0.28%, while the Nasdaq Composite slipped 0.02%. Early Wednesday reporting showed S&P 500 futures up roughly 0.2%, Nasdaq futures up 0.4% and Dow futures little changed. These are separately timed premarket observations, not cash-session returns.",
+            "Early earnings are providing support but not uniformly. Reuters reported that 86% of the 13% of S&P 500 companies that had reported results exceeded estimates. Netflix fell more than 6% in premarket trading after lowering its advertising outlook, while Australia's NextDC lost nearly half its value after reducing revenue forecasts and suspending planned developments. South Korea's Elice Group rebounded nearly 30% after its weak Tuesday debut.",
+            "Brent crude rebounded above $110 per barrel following Tuesday afternoon's decline; an Associated Press Wednesday snapshot placed it at $110.21, up 1.3%. Reuters reported spot gold near $4,127.53 per ounce at 10:45 GMT. Rising oil prices renew inflation concerns even while gold remains pressured by interest-rate expectations.",
+            "French 10-year government yields touched 5% for the first time since 2002; the French-German 10-year spread reached about 157 basis points, with French yields up roughly 20 basis points this week. UK September inflation rose to 3.5%. In Asia, Indonesia held its main policy rate steady while increasing its deposit-facility rate by 25 basis points and reducing bank reserve requirements by 2 percentage points. The dollar index was near 101.79 in Reuters' separate global-markets snapshot.",
+            "An independently synchronized U.S. investment-grade spread, high-yield spread or cash VIX observation was not established for this edition. Company-specific financing pressure should not be treated as proof of broad credit deterioration."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The change since Tuesday afternoon is the renewed energy-price increase alongside firmer U.S. equity futures. Better-than-expected earnings are supporting sentiment, but weak guidance and abrupt AI-infrastructure repricing demonstrate that revenue growth, capital intensity and debt-service capacity must be assessed separately.",
+            "French sovereign repricing and UK inflation complicate any simple narrative of easing global financing conditions. The transmission question is whether higher sovereign yields and energy costs begin to affect corporate funding spreads and investment plans; that spillover has not yet been established by the available U.S. credit data."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Meta and Tesla earnings after Wednesday's close; focus on free cash flow, AI capital spending, operating margins and forward guidance.",
+            "Brent prices and verified Gulf shipping volumes, freight and insurance costs; distinguish supply disruption from geopolitical risk premium.",
+            "French-German sovereign spreads, UK inflation-linked rate expectations, U.S. Treasury yields and broad corporate credit spreads.",
+            "Thursday's U.S. jobless claims and Friday's flash manufacturing/services PMIs and final consumer-sentiment inflation expectations."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If earnings quality holds, oil stabilizes and corporate spreads remain contained, a selective equity recovery becomes more plausible. If higher energy prices persist alongside widening sovereign and corporate spreads, the probability of broader risk reduction increases.",
+            "Neither scenario supports a precise probability or a high-conviction market forecast at this cutoff. Verification pending: this automated edition uses attributable reporting but has not received independent editorial sign-off."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Strong earnings can lift equity futures without repairing the funding environment. Monitor the joint behavior of oil, sovereign spreads and corporate credit; the key risk is transmission from energy and sovereign stress into private financing.",
+      "sources": [
+        {
+          "label": "Associated Press, U.S. futures, earnings and oil, October 21",
+          "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        },
+        {
+          "label": "Reuters, global markets and French sovereign yields, October 21",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-21/"
+        },
+        {
+          "label": "Reuters, gold and oil-inflation outlook, October 21",
+          "url": "https://www.reuters.com/world/india/gold-dips-fourth-session-oil-rally-fans-inflation-concerns-2026-10-21/"
+        },
+        {
+          "label": "Reuters, Netflix guidance and premarket shares, October 21",
+          "url": "https://www.reuters.com/business/media-telecom/netflix-slides-weak-profit-ad-outlook-intensify-investor-anxiety-2026-10-21/"
+        },
+        {
+          "label": "Wall Street Journal, October 20 U.S. equity close",
+          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-strong-earnings-offset-ai-credit-fears-d55414c3"
+        },
+        {
+          "label": "Kiplinger, October 19-23 U.S. economic calendar",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
+        }
+      ]
+    },
+    {
       "id": "2026-10-20-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
