@@ -2,6 +2,81 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-22-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 22 Morning: AI capital discipline meets renewed energy and sovereign stress",
+      "summary": "Thursday's early selloff reverses Wednesday's technology rally as AI investment economics, higher oil prices and widening French sovereign spreads challenge risk appetite. Treasuries and haven currencies strengthen, but broad corporate credit transmission is unconfirmed.",
+      "edition_date": "2026-10-22T08:00:00-04:00",
+      "published_at": "2026-10-22T08:04:15-04:00",
+      "observed_at": "2026-10-22T07:10:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "At 7:10 a.m. ET, Nasdaq 100 futures were down 1.72%, S&P 500 futures 1.04% and Dow futures 0.69%, reversing Wednesday's technology-led advance. Reuters reported the Cboe VIX at 18.25, up 1.57 points. These are premarket or separately timed observations, not cash-session returns.",
+            "The overnight earnings debate has shifted from demand to capital efficiency. Tesla reduced its 2026 capital spending outlook to roughly $20 billion from more than $25 billion; third-quarter free cash flow was about $1.53 billion as investment came in below expectations. Reuters reported Tesla and Meta shares weaker in premarket trading as investors questioned the pace, funding and eventual returns of AI expansion.",
+            "Brent crude was around $111.92 per barrel, up more than 2.8%, in Reuters' early U.S. market snapshot. Reports of attacks on Saudi targets and incidents involving vessels in Gulf waters have increased the supply-risk premium; the scale and duration of any physical supply loss remain uncertain.",
+            "The U.S. 10-year Treasury yield eased to roughly 5.065% in the 7:10 a.m. ET snapshot. French 10-year borrowing costs climbed to about 5.11%, with the French-German spread near 174 basis points in separate Thursday reporting. The yen and Swiss franc strengthened as investors sought havens, illustrating divergent sovereign and currency responses.",
+            "A current, independently synchronized U.S. investment-grade or high-yield spread reading was not established. The increase in equity volatility and issuer-specific AI financing concerns do not by themselves demonstrate broad credit contagion."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The material change since Wednesday afternoon is the reversal of the AI-led equity recovery after new earnings disclosures, alongside renewed oil strength. Tesla's lower near-term spending supports cash flow but may also defer projects that underpin longer-term expectations. This is a capital-allocation trade-off, not evidence that demand for AI infrastructure has vanished.",
+            "Higher energy prices can raise inflation and transport costs even as defensive Treasury buying lowers benchmark yields. France's rising sovereign risk premium shows why lower U.S. yields should not be equated with easier financing everywhere. Whether these pressures transmit into broad corporate spreads is still unverified."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "U.S. initial jobless claims at 8:30 a.m. ET; assess whether labor-market resilience offsets weakening housing activity.",
+            "Actual Gulf oil exports, shipping disruptions, freight and insurance costs; separate verified lost supply from geopolitical risk premium.",
+            "U.S. investment-grade and high-yield spreads, AI-linked refinancing terms, and the French-German sovereign spread.",
+            "Technology earnings revisions, cash conversion, capital expenditure commitments and semiconductor market breadth.",
+            "Friday's U.S. flash manufacturing and services PMIs and consumer inflation expectations."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If oil supply flows remain intact and corporate spreads hold steady, a selective equity stabilization becomes more plausible once investors absorb the earnings revisions. If energy disruption persists while sovereign and corporate financing premiums widen, broader risk reduction becomes more likely.",
+            "Neither outcome warrants a precise probability or high-conviction directional forecast at this cutoff. Verification pending: the edition is source-attributed but has not received independent editorial sign-off."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Lower U.S. Treasury yields are not synonymous with easier financing. The pivotal test is whether AI capital discipline, higher oil costs and French sovereign stress transmit into broader corporate credit and real investment.",
+      "sources": [
+        {
+          "label": "Reuters, Nasdaq futures, AI earnings, VIX and Treasury yield, October 22",
+          "url": "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+        },
+        {
+          "label": "Reuters, Middle East oil supply risk, October 22",
+          "url": "https://www.reuters.com/business/energy/oil-rises-us-orders-diplomats-leave-saudi-arabia-amid-escalating-tensions-2026-10-22/"
+        },
+        {
+          "label": "Reuters, French sovereign debt spreads, October 22",
+          "url": "https://www.reuters.com/world/europe/french-debt-risk-premium-reaches-euro-zone-sovereign-crisis-levels-2026-10-22/"
+        },
+        {
+          "label": "Reuters, yen and Swiss franc haven flows, October 22",
+          "url": "https://www.reuters.com/world/asia-pacific/dip-dollar-takes-breather-with-fed-focus-2026-10-22/"
+        },
+        {
+          "label": "Reuters, Tesla spending and cash flow, October 22",
+          "url": "https://www.reuters.com/business/autos-transportation/tesla-drops-spending-pullback-clouds-ai-robotics-ambitions-2026-10-22/"
+        },
+        {
+          "label": "Investing.com, U.S. economic calendar October 19-23",
+          "url": "https://uk.investing.com/news/stock-market-news/us-economic-calendar-preview-key-releases-for-the-week-of-oct-1923-2026-93CH-4918228"
+        }
+      ]
+    },
+    {
       "id": "2026-10-21-morning",
       "kind": "morning",
       "status": "archived-unverified",
