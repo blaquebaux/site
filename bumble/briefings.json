@@ -2,6 +2,85 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-22-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 22 Afternoon: AI credit reprices as equities slide",
+      "summary": "The afternoon selloff has broadened beyond AI equity valuations into observable issuer credit risk. Meta default protection reached a record, chip stocks fell sharply, oil climbed, and French sovereign spreads widened; weekly U.S. claims remained low.",
+      "edition_date": "2026-10-22T15:00:00-04:00",
+      "published_at": "2026-10-22T14:57:39.010-04:00",
+      "observed_at": "2026-10-22T14:57:39.010-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "In Reuters' October 22 afternoon market snapshot, the Nasdaq Composite fell 2.68%, the S&P 500 declined 1.41%, and the Dow lost 0.20%. The Philadelphia Semiconductor Index fell 6.3%. These are reported intraday figures, not independently verified closing prices.",
+            "The new credit signal is material: Meta's five-year credit default swap spread reached a reported record 114.79 basis points after the company raised the lower end of its 2026 AI capital expenditure forecast to $135 billion, leaving the upper end at $145 billion. Reuters reported Meta shares down more than 7%; a CDS rise can reflect hedging demand as well as changing perceived default risk. Broader U.S. investment-grade and high-yield index spread moves were not independently established.",
+            "Initial U.S. jobless claims fell 6,000 to 194,000 for the week ended October 17, versus expectations of 200,000. Continuing claims rose 25,000 to 1.728 million for the prior reporting week. Layoffs remain subdued despite weaker hiring momentum.",
+            "Brent crude rose around 3% to approximately $112.33 per barrel in Reuters' October 22 report amid renewed attacks and supply concerns around Saudi Arabia and regional shipping. Actual export volumes and sustained supply losses require separate confirmation.",
+            "French 10-year government yields reached approximately 5.14%, and the yield premium over German Bunds widened to around 177.7 basis points in Reuters' October 22 reporting. U.S. Treasury yields declined with defensive buying; the U.S. 10-year briefly traded below 5% in a separate intraday report. These observations are not synchronized."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The change since the morning pulse is evidence of credit repricing at a major cash-generative AI investor, not just weakness among leveraged infrastructure providers. Meta's wider default-insurance spread raises the relevance of financing structures, capital intensity, cash conversion and hedging flows; it does not by itself establish imminent distress or market-wide contagion.",
+            "Low initial unemployment claims complicate a straightforward growth-scare explanation for lower Treasury yields. Investors appear to be seeking sovereign safety while pricing higher issuer-specific and French fiscal risk. Rising oil simultaneously keeps the inflation channel active."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Meta, Oracle and other AI-exposed issuer CDS alongside broad U.S. investment-grade and high-yield spreads; distinguish concentrated hedging from systematic repricing.",
+            "Semiconductor breadth, data-center financing costs, earnings cash conversion and revisions to AI capital spending.",
+            "French-German sovereign spread, U.S. Treasury yields and cross-border funding conditions.",
+            "Confirmed Middle East export flows, freight and insurance rates; distinguish physical supply disruption from geopolitical premium.",
+            "Friday's flash PMIs and inflation-expectations releases for evidence on growth and price persistence."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If CDS widening remains issuer-specific, broad credit spreads stay contained and energy exports remain resilient, selective equity stabilization becomes more plausible. If issuer repricing spreads across corporate credit while oil and sovereign risk premiums remain elevated, a broader tightening of financial conditions becomes more likely.",
+            "The available evidence does not support precise scenario probabilities or a directional forecast. Verification pending: this source-attributed edition has not received independent editorial sign-off."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The notable shift is from AI equity skepticism toward measurable issuer credit repricing. Track whether Meta's default-insurance move stays concentrated or becomes a wider financing shock, especially with French sovereign spreads and energy risk elevated.",
+      "sources": [
+        {
+          "label": "Reuters, October 22 U.S. stocks and semiconductor selloff",
+          "url": "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+        },
+        {
+          "label": "Reuters, October 22 Meta AI spending and credit default swaps",
+          "url": "https://www.reuters.com/business/meta-falls-investors-balance-muse-growth-with-rising-ai-costs-2026-10-22/"
+        },
+        {
+          "label": "Reuters, October 22 Meta CDS record and other AI credit indicators",
+          "url": "https://www.reuters.com/business/metas-credit-risk-indicator-jumps-record-high-after-results-2026-10-22/"
+        },
+        {
+          "label": "Reuters, October 22 weekly U.S. jobless claims",
+          "url": "https://www.reuters.com/business/us-weekly-jobless-claims-near-57-year-lows-2026-10-22/"
+        },
+        {
+          "label": "Reuters, October 22 oil prices and Saudi supply risk",
+          "url": "https://www.reuters.com/business/energy/oil-rises-us-orders-diplomats-leave-saudi-arabia-amid-escalating-tensions-2026-10-22/"
+        },
+        {
+          "label": "Reuters, October 22 French sovereign risk premium",
+          "url": "https://www.reuters.com/world/europe/french-debt-risk-premium-reaches-euro-zone-sovereign-crisis-levels-2026-10-22/"
+        },
+        {
+          "label": "Wall Street Journal, October 22 U.S. 10-year Treasury yield below 5%",
+          "url": "https://www.wsj.com/finance/investing/french-government-bond-yields-rise-spread-widens-as-treasury-yields-fall-e67fc4cd"
+        }
+      ]
+    },
+    {
       "id": "2026-10-22-morning",
       "kind": "morning",
       "status": "archived-unverified",
