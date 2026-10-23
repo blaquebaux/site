@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T21:32:06.506Z",
+  "updatedAt": "2026-10-23T00:38:22.364Z",
   "providerOrder": [
     "Nasdaq",
     "Yahoo Finance"
@@ -7,12 +7,21 @@
   "chains": [
     {
       "symbol": "SPY",
-      "underlyingPrice": 764.06,
+      "underlyingPrice": 763.96,
       "source": "Nasdaq",
       "expirations": [
         {
           "date": "2026-10-22",
           "calls": [
+            {
+              "strike": 750,
+              "lastPrice": 13.34,
+              "bid": 13.95,
+              "ask": 14.13,
+              "volume": 265,
+              "openInterest": 47,
+              "inTheMoney": true
+            },
             {
               "strike": 751,
               "lastPrice": 11.14,
@@ -137,7 +146,7 @@
               "ask": 0.42,
               "volume": 457927,
               "openInterest": 410,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 765,
@@ -255,18 +264,18 @@
               "volume": 20099,
               "openInterest": 4934,
               "inTheMoney": false
-            },
-            {
-              "strike": 778,
-              "lastPrice": 0.04,
-              "bid": null,
-              "ask": 0.01,
-              "volume": 16611,
-              "openInterest": 6052,
-              "inTheMoney": false
             }
           ],
           "puts": [
+            {
+              "strike": 750,
+              "lastPrice": 0.01,
+              "bid": null,
+              "ask": 0.01,
+              "volume": 19187,
+              "openInterest": 3094,
+              "inTheMoney": false
+            },
             {
               "strike": 751,
               "lastPrice": 0.01,
@@ -391,7 +400,7 @@
               "ask": 0.4,
               "volume": 356763,
               "openInterest": 6143,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 765,
@@ -509,21 +518,21 @@
               "volume": 568,
               "openInterest": 780,
               "inTheMoney": true
-            },
-            {
-              "strike": 778,
-              "lastPrice": 14.3,
-              "bid": 13.88,
-              "ask": 14.05,
-              "volume": 390,
-              "openInterest": 1061,
-              "inTheMoney": true
             }
           ]
         },
         {
           "date": "2026-10-23",
           "calls": [
+            {
+              "strike": 750,
+              "lastPrice": 14.81,
+              "bid": 14.36,
+              "ask": 14.55,
+              "volume": 243,
+              "openInterest": 1522,
+              "inTheMoney": true
+            },
             {
               "strike": 751,
               "lastPrice": 11.49,
@@ -648,7 +657,7 @@
               "ask": 3.02,
               "volume": 58511,
               "openInterest": 1599,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 765,
@@ -766,18 +775,18 @@
               "volume": 17064,
               "openInterest": 4811,
               "inTheMoney": false
-            },
-            {
-              "strike": 778,
-              "lastPrice": 0.04,
-              "bid": 0.04,
-              "ask": 0.05,
-              "volume": 10654,
-              "openInterest": 10782,
-              "inTheMoney": false
             }
           ],
           "puts": [
+            {
+              "strike": 750,
+              "lastPrice": 0.17,
+              "bid": 0.16,
+              "ask": 0.18,
+              "volume": 31079,
+              "openInterest": 15401,
+              "inTheMoney": false
+            },
             {
               "strike": 751,
               "lastPrice": 0.21,
@@ -902,7 +911,7 @@
               "ask": 2.71,
               "volume": 39011,
               "openInterest": 4646,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 765,
@@ -1020,21 +1029,21 @@
               "volume": 781,
               "openInterest": 3017,
               "inTheMoney": true
-            },
-            {
-              "strike": 778,
-              "lastPrice": 13.37,
-              "bid": 13.6,
-              "ask": 14.32,
-              "volume": 228,
-              "openInterest": 1955,
-              "inTheMoney": true
             }
           ]
         },
         {
           "date": "2026-10-26",
           "calls": [
+            {
+              "strike": 750,
+              "lastPrice": 15.35,
+              "bid": 15,
+              "ask": 15.34,
+              "volume": 185,
+              "openInterest": 111,
+              "inTheMoney": true
+            },
             {
               "strike": 751,
               "lastPrice": 13.43,
@@ -1159,7 +1168,7 @@
               "ask": 4.38,
               "volume": 6505,
               "openInterest": 386,
-              "inTheMoney": true
+              "inTheMoney": false
             },
             {
               "strike": 765,
@@ -1277,18 +1286,18 @@
               "volume": 3789,
               "openInterest": 823,
               "inTheMoney": false
-            },
-            {
-              "strike": 778,
-              "lastPrice": 0.22,
-              "bid": 0.22,
-              "ask": 0.23,
-              "volume": 3165,
-              "openInterest": 1317,
-              "inTheMoney": false
             }
           ],
           "puts": [
+            {
+              "strike": 750,
+              "lastPrice": 0.79,
+              "bid": 0.77,
+              "ask": 0.8,
+              "volume": 103673,
+              "openInterest": 4146,
+              "inTheMoney": false
+            },
             {
               "strike": 751,
               "lastPrice": 0.89,
@@ -1413,7 +1422,7 @@
               "ask": 3.99,
               "volume": 4224,
               "openInterest": 701,
-              "inTheMoney": false
+              "inTheMoney": true
             },
             {
               "strike": 765,
@@ -1530,15 +1539,6 @@
               "ask": 13.42,
               "volume": 136,
               "openInterest": 454,
-              "inTheMoney": true
-            },
-            {
-              "strike": 778,
-              "lastPrice": 15.65,
-              "bid": 12.91,
-              "ask": 14.76,
-              "volume": 48,
-              "openInterest": 156,
               "inTheMoney": true
             }
           ]
@@ -3087,7 +3087,7 @@
     },
     {
       "symbol": "IWM",
-      "underlyingPrice": 276.72,
+      "underlyingPrice": 276.67,
       "source": "Nasdaq",
       "expirations": [
         {
