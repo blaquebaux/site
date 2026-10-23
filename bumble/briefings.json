@@ -2,6 +2,85 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-23-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 23 Morning: Treasury safety bid meets $114 oil",
+      "summary": "Friday opens with U.S. futures subdued after a severe AI-led selloff, a powerful Treasury rally and Brent above $114. Credit repricing remains concentrated, while France faces a sovereign rating review and U.S. PMIs are due.",
+      "edition_date": "2026-10-23T08:00:00-04:00",
+      "published_at": "2026-10-23T08:13:04-04:00",
+      "observed_at": "2026-10-23T08:11:32-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "At 6:35 a.m. ET, S&P 500 futures were down 0.2%, Dow futures 0.6% and Nasdaq 100 futures 0.01%, according to Business Insider. Thursday's Nasdaq fell about 2.6% and the Philadelphia Semiconductor Index nearly 7%, Reuters reported. U.S. cash trading had not opened at this edition's cutoff; these are separately timed observations.",
+            "Brent crude briefly reached $114.72 per barrel early Friday, its highest level since May, according to Business Insider. Regional attacks and reports of renewed Iran strike planning have raised the geopolitical supply premium. An intercepted drone at Saudi Aramco's Shaybah field reportedly did not disrupt operations; the size of any sustained physical supply loss remains unconfirmed.",
+            "The U.S. 10-year Treasury yield fell roughly 19 basis points on Thursday, its largest one-day decline since March 2023. It edged up to about 4.985% in European trading Friday, according to Wall Street Journal reporting. French 10-year yields eased toward 5.04%, with the premium over German bonds still around 170 basis points; eurozone flash business surveys disappointed.",
+            "Meta shares fell nearly 8% and CoreWeave about 10% on Thursday, Reuters reported, while financing concerns widened default-insurance premiums for AI-exposed borrowers. A synchronized broad U.S. investment-grade or high-yield spread reading was not established. Reuters reported the dollar index up 0.2% on Friday and the yen benefiting from haven demand; gold was roughly flat near $4,022 in a separate London snapshot.",
+            "Moody's is due to review France's Aa3 sovereign rating after U.S. markets close Friday. A possible downgrade is not yet a decision. The U.S. October flash PMIs and final Michigan consumer sentiment release are scheduled later this morning."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The change since Thursday afternoon is the scale of the Treasury safety bid, followed by tentative stabilization in Asian equities even as oil reached a new five-month high. Lower benchmark yields can coexist with more expensive default protection and selective capital-market access. That is a financing divergence, not evidence that broad credit contagion has been established.",
+            "AI infrastructure is increasingly being evaluated on cash conversion, capital structure and funding duration rather than spending announcements alone. Oil-related inflation risk and France's fiscal premium make the policy backdrop less forgiving if growth weakens."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "9:45 a.m. ET U.S. flash manufacturing and services PMIs; 10:00 a.m. ET final Michigan consumer sentiment and inflation expectations.",
+            "Moody's France rating review after U.S. market close; monitor the French-German spread and any cross-border funding response.",
+            "Confirmed Gulf export and tanker flows versus geopolitical headlines; watch Brent, refined products and freight insurance.",
+            "AI-exposed issuer CDS, refinancing terms and broad investment-grade/high-yield spreads; distinguish concentration from market-wide repricing.",
+            "Next week's Federal Reserve meeting and whether oil-driven inflation expectations constrain the policy response."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If oil shipments remain resilient and issuer credit repricing stays concentrated, selective equity stabilization becomes more plausible. If physical energy disruption persists and funding premiums broaden beyond AI infrastructure and French sovereign debt, a more sustained tightening of financial conditions becomes more likely.",
+            "These are conditional scenarios, not numerical forecasts. Verification pending: this source-attributed edition has not received independent editorial sign-off."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: A Treasury rally is not a credit recovery. The decisive test is whether AI funding pressure and French sovereign risk remain localized while $114 oil challenges inflation and policy flexibility.",
+      "sources": [
+        {
+          "label": "Reuters, October 23 global markets, futures, oil, rates and currencies",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-23/"
+        },
+        {
+          "label": "Business Insider, October 23 6:35 a.m. ET U.S. futures and Brent",
+          "url": "https://markets.businessinsider.com/news/stocks/stock-market-futures-brent-crude-oil-price-nasdaq-tech-ai-2026-10"
+        },
+        {
+          "label": "Associated Press, October 23 U.S. futures, energy and AI investment",
+          "url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        },
+        {
+          "label": "Reuters Morning Bid, October 23 Treasury rally and AI credit",
+          "url": "https://wtvbam.com/2026/10/23/morning-bid-wake-up-the-long-bonds-up-two-points/"
+        },
+        {
+          "label": "Wall Street Journal, October 23 Treasury and French sovereign yields",
+          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-edge-up-bond-market-focus-to-stay-on-france-8b28a326"
+        },
+        {
+          "label": "Reuters, October 23 Moody's France rating review",
+          "url": "https://www.reuters.com/world/europe/unrest-hit-france-poised-moodys-ratings-verdict-2026-10-23/"
+        },
+        {
+          "label": "October 2026 U.S. economic calendar",
+          "url": "https://macrobullseye.com/calendar/2026/10/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-22-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
