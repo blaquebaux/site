@@ -2,6 +2,81 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-23-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 23 Afternoon: Oil shock meets resilient demand and weak breadth",
+      "summary": "Brent settled near $117 as U.S. equity breadth weakened. October flash PMIs still indicate strong expansion but faster selling-price increases, while consumer sentiment remained depressed. The cross-asset question is whether energy-driven inflation risk spreads into financing costs.",
+      "edition_date": "2026-10-23T15:00:00-04:00",
+      "published_at": "2026-10-23T15:48:20-04:00",
+      "observed_at": "2026-10-23T15:15:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "At 3:15 p.m. ET, Associated Press reported the S&P 500 down 0.4%, the Dow down 598 points or 1.1%, and the Nasdaq down 0.1%. About three quarters of S&P 500 constituents were lower. Micron, Intel, Microsoft and AMD were among the technology shares advancing against weaker overall breadth. These are intraday equity observations, not closing index values.",
+            "Brent crude settled at $116.72 per barrel, up 3.1%, after touching $117.45, according to Associated Press and Reuters. Reuters attributed the surge to renewed Saudi infrastructure attack reports, tanker security concerns and a reported spill off the UAE. The precise duration and size of physical supply disruptions remain uncertain.",
+            "October's flash S&P Global U.S. composite PMI eased to 57.6 from 58.4 in September, still indicating expansion. New orders rose to 58.2 and the output-prices index to 59.8, according to Reuters; demand remained robust even as supplier delays and selling-price pressure intensified.",
+            "Final University of Michigan October consumer sentiment registered 48.0, above the preliminary 46.3 but just below September's 48.1. Year-ahead inflation expectations were 4.7%, and longer-run expectations were 3.5%, according to the Wall Street Journal and Trading Economics.",
+            "The U.S. 10-year Treasury yield edged to about 4.99% from 4.96% late Thursday, according to Associated Press. French bond yields eased modestly ahead of Moody's scheduled sovereign rating review. No synchronized broad U.S. credit spread, cash VIX or foreign-exchange quote was independently established for this edition."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The important change since the morning pulse is that oil extended its rise while fresh activity surveys showed strong demand and accelerating price transmission. This is more difficult for policy than a straightforward growth slowdown: business expansion and inflation pressure are coexisting.",
+            "Equity weakness is now broader than Thursday's concentrated AI selloff, although selected chip and software names rose. That distinction argues against equating individual technology rebounds with improving market-wide risk appetite. The slight Treasury yield rebound also does not establish easier corporate funding."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Confirmed Gulf production, tanker flows, shipping insurance and refined-product prices; distinguish supply losses from geopolitical premiums.",
+            "U.S. inflation expectations, Treasury real yields and the October 27-28 Federal Reserve decision; assess whether price persistence narrows policy flexibility.",
+            "Broad investment-grade and high-yield spreads versus AI issuer CDS; test whether financing repricing spreads beyond individual borrowers.",
+            "Next week's large-platform earnings, especially capital expenditure, operating cash flow and funding duration; compare reported AI demand with investment returns.",
+            "Moody's France rating review after the U.S. session and the French-German sovereign spread."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If physical energy flows remain resilient and corporate spreads stay contained, selective equity stabilization remains plausible despite weak breadth. If oil disruptions persist while price expectations and broad credit premiums rise together, the probability of wider financial tightening increases.",
+            "These are conditional pathways rather than numerical forecasts. Verification pending: source-attributed automated research has not received independent editorial sign-off."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The afternoon's key development is not simply weaker equities; it is strong underlying demand meeting a renewed oil shock and faster selling-price pressure. Watch whether that combination forces higher financing premiums beyond individual AI borrowers.",
+      "sources": [
+        {
+          "label": "Associated Press, October 23, 3:15 p.m. ET equity breadth, Treasury yield and Brent settlement",
+          "url": "https://apnews.com/article/7b47ef3b037bfba4e34f685329b9b963"
+        },
+        {
+          "label": "Reuters, October 23, Brent, Gulf shipping and Saudi infrastructure",
+          "url": "https://www.reuters.com/business/energy/oil-little-changed-supply-concern-lingers-amid-houthi-attacks-saudi-arabia-2026-10-23/"
+        },
+        {
+          "label": "Reuters, October 23, U.S. flash PMI activity, orders and output prices",
+          "url": "https://www.reuters.com/business/us-business-activity-cools-october-strong-demand-fueling-price-pressures-2026-10-23/"
+        },
+        {
+          "label": "Wall Street Journal, October 23, final Michigan consumer sentiment",
+          "url": "https://www.wsj.com/economy/central-banking/consumer-sentiment-declined-slightly-in-october-bae24944"
+        },
+        {
+          "label": "Trading Economics, October 23, Michigan sentiment and inflation expectations",
+          "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+        },
+        {
+          "label": "Reuters, October 23, Moody's scheduled France sovereign review",
+          "url": "https://www.reuters.com/world/europe/unrest-hit-france-poised-moodys-ratings-verdict-2026-10-23/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-23-morning",
       "kind": "morning",
       "status": "archived-unverified",
