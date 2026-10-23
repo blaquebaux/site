@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-23T19:24:19+00:00",
+ "generated_at": "2026-10-23T22:27:46+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -12,18 +12,18 @@
    "chip": "TAPE",
    "tkr": "BOLT",
    "cls": "watch",
-   "pct": "+53%",
+   "pct": "+50%",
    "pdir": "up",
    "category": "equities",
    "date": "October 23, 2026",
    "ts": "2026-10-23T23:58",
    "time": "today",
-   "head": "Top gainer: +53% to $6.41",
+   "head": "Top gainer: +50% to $6.27",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BOLT \u00b7 +53% to $6.41",
+    "title": "BOLT \u00b7 +50% to $6.27",
     "sub": "top gainer \u00b7 October 23, 2026",
     "sections": [
      {
@@ -57,7 +57,59 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "a32b6b380a046a35d6a6"
+   "id": "b12b4463be8d0fb7e25c"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "IMC",
+   "cls": "watch",
+   "pct": "+28%",
+   "pdir": "up",
+   "category": "equities",
+   "date": "October 23, 2026",
+   "ts": "2026-10-23T23:58",
+   "time": "today",
+   "head": "Top gainer: +28% to $8.99",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "IMC \u00b7 +28% to $8.99",
+    "sub": "top gainer \u00b7 October 23, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "24f530c6c21ba3b6709e"
   },
   {
    "sender": "TAPE",
@@ -110,58 +162,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
    "id": "21df2d240be87859295d"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "WZRD",
-   "cls": "watch",
-   "pct": "+24%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "October 23, 2026",
-   "ts": "2026-10-23T23:58",
-   "time": "today",
-   "head": "Top gainer: +24% to $5.80",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "WZRD \u00b7 +24% to $5.80",
-    "sub": "top gainer \u00b7 October 23, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "0b1096382561bb324779"
   },
   {
    "sender": "TAPE",
@@ -231,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-23T19:25:47+00:00"
+    "retrieved_at": "2026-10-23T22:29:14+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-23T19:25:47+00:00"
+    "retrieved_at": "2026-10-23T22:29:14+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
