@@ -2,6 +2,95 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-26-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 26 Afternoon: AI equity rebounds as financing risk migrates",
+      "summary": "U.S. equities rebounded on AI optimism while Meta outlined up to $95 billion of equity funding and Brazil suffered a sovereign-risk shock. Oil retraced its morning decline. The key test is whether capital-market funding and cash conversion can support the next wave of AI investment.",
+      "edition_date": "2026-10-26T14:57:10-04:00",
+      "published_at": "2026-10-26T14:57:10-04:00",
+      "observed_at": "2026-10-26T13:15:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "U.S. stocks recovered from last week's technology-led weakness. At 1:15 p.m. ET, Associated Press reported the S&P 500 up 0.8%, Nasdaq up 1.1% and Dow up about 0.3%; Nvidia gained 2.5%. These are intraday readings, not closing prices. Anthropic's IPO filing, which disclosed fast revenue growth alongside large losses, helped restore some AI risk appetite; Reuters reported the Philadelphia Semiconductor Index up more than 3% in a separate Monday snapshot.",
+            "The financing picture became more concrete. Meta announced roughly $35 billion of common and preferred stock offerings and a potential later share-sale program of up to $60 billion, for as much as $95 billion overall. Nvidia, AMD and Broadcom expressed interest in buying up to $5 billion of Meta shares collectively. Reuters reported Meta's third-quarter free cash flow at negative $2.12 billion versus positive $10.63 billion a year earlier. Separately, SpaceX disclosed an approximately $40 billion AI hardware purchase-and-lease arrangement with an Apollo affiliate. These are proposed or announced financing arrangements, not evidence that all funds have been raised.",
+            "Oil reversed much of its early decline. Associated Press reported Brent near $111.40 a barrel after trading toward $109 earlier on Monday, versus Friday's $116.72 settlement. Reports of Qatar-mediated diplomacy tempered supply fears, while Houthi claims of fresh attacks on Saudi facilities maintained geopolitical risk. The extent of verified physical supply disruption remains uncertain.",
+            "In U.S. rates, Associated Press put the 10-year Treasury yield at 4.98%, down from 5.00% late Friday, while the two-year edged up to 4.71% from 4.69%. Reuters reported the onshore Chinese yuan briefly strengthening to 6.6682 per dollar in Asian trade. A synchronized cash VIX and broad U.S. investment-grade or high-yield spread snapshot was not established for this edition.",
+            "Brazil supplied the clearest new sovereign-credit shock. Associated Press reported the Bovespa down 14.6% after Lula's reelection; Reuters reported a trading halt, an early real decline exceeding 11% at its worst and five-year sovereign CDS widening to 151.67 basis points from 120.21 on Friday. The Brazilian Treasury cancelled scheduled bond auctions. French government bond yields, by contrast, eased Monday.",
+            "EQT announced a roughly $13 billion all-stock acquisition of Range Resources, combining U.S. gas production and infrastructure positioned to serve LNG exports and electricity demand, including data centers. The proposed combined producer would have output above 9 billion cubic feet equivalent per day, according to Reuters."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The material change since the morning pulse is a stronger equity rebound despite fresh evidence that AI expansion increasingly depends on outside capital. Anthropic's proposed listing may support sentiment, but Meta's equity plans and SpaceX's lease financing sharpen the question of dilution, financing duration and realized cash returns. Supplier participation in customer funding creates potential circular exposure; it is not itself evidence of default risk.",
+            "Brazil shows that fiscal credibility can dominate local asset pricing even when global equities rise and U.S. Treasuries strengthen. The distinction matters: issuer and sovereign risk premiums can diverge sharply from benchmark yields. Oil's intraday rebound also argues against treating diplomatic headlines as proof that supply risk has disappeared."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Meta's proposed equity issuance terms, dilution and investor take-up; AI infrastructure funding costs, cash conversion and supplier-customer capital links.",
+            "Alphabet and Microsoft earnings Wednesday, Amazon Thursday; cloud demand, AI utilization, capital expenditure and free cash flow.",
+            "The Federal Reserve's Wednesday decision and Thursday's U.S. GDP and inflation releases; compare policy-rate expectations with long-end Treasury yields.",
+            "Brazil's fiscal appointments and sovereign CDS; whether emerging-market risk remains localized. Compare with French-German sovereign spreads.",
+            "Confirmed Gulf export and tanker flows, Brent's reaction to diplomacy, broad U.S. credit spreads and cash VIX when synchronized observations become available.",
+            "EQT-Range transaction terms and implications for natural gas, LNG, grid supply and AI power infrastructure."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If AI earnings demonstrate stronger cash conversion, the Meta financing finds durable demand, and oil shipments remain intact, selective equity stabilization becomes more plausible. If capital raising proves costly while sovereign or corporate spreads widen and energy supply tightens, the probability of broader financial tightening increases.",
+            "Neither path warrants a precise probability or a high-conviction index forecast. Verification pending: source-attributed automated research has not received independent editorial sign-off; observations are not a live quote feed."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Monday's rebound is not a financing resolution. The critical test is whether AI investment can transition from announced spending and cross-company funding arrangements to independently sustainable cash flows, while sovereign risk remains contained.",
+      "sources": [
+        {
+          "label": "Associated Press, October 26, U.S. equities at 1:15 p.m. ET, Treasuries, oil and Brazil",
+          "url": "https://apnews.com/article/stocks-markets-oil-earnings-trump-be3a56f58a77c5be863f0289d280be92"
+        },
+        {
+          "label": "Reuters, October 26, AI-linked equities and Anthropic IPO filing",
+          "url": "https://www.reuters.com/legal/transactional/ai-stocks-rise-anthropic-nears-wall-street-debut-amid-investor-caution-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, Meta's proposed $95 billion equity fundraising and cash flow",
+          "url": "https://www.reuters.com/legal/transactional/meta-launches-35-billion-stock-offering-fund-ai-expansion-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, SpaceX and Apollo AI hardware lease financing",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-enters-40-billion-deal-with-apollo-ai-chip-financing-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, Brazilian equity, currency, bond and sovereign CDS moves",
+          "url": "https://www.reuters.com/business/finance/investors-expect-markets-unwind-brazils-lula-reelected-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, EQT acquisition of Range Resources and power demand",
+          "url": "https://www.reuters.com/business/eqt-buy-range-resources-over-50-billion-deal-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, China's yuan and PBOC fixing",
+          "url": "https://www.reuters.com/world/asia-pacific/chinas-yuan-climbs-fresh-4-year-high-ahead-key-policy-meetings-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, global markets, oil diplomacy and Saudi attack claims",
+          "url": "https://www.reuters.com/world/asia-pacific/global-markets-pix-2026-10-26/"
+        },
+        {
+          "label": "Reuters, October 26, U.S. stocks, Fed, Thursday data and hyperscaler earnings",
+          "url": "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-24-weekly",
       "kind": "weekly",
       "status": "archived-unverified",
