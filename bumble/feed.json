@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-25T22:42:45+00:00",
+ "generated_at": "2026-10-26T00:54:54+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -15,8 +15,8 @@
    "pct": "+50%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 25, 2026",
-   "ts": "2026-10-25T23:58",
+   "date": "October 26, 2026",
+   "ts": "2026-10-26T23:58",
    "time": "today",
    "head": "Top gainer: +50% to $6.27",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -24,7 +24,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "BOLT \u00b7 +50% to $6.27",
-    "sub": "top gainer \u00b7 October 25, 2026",
+    "sub": "top gainer \u00b7 October 26, 2026",
     "sections": [
      {
       "h": "Read",
@@ -57,7 +57,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "769d605f5908eb38b0bb"
+   "id": "c0fb18e040ea2af92e33"
   },
   {
    "sender": "TAPE",
@@ -67,8 +67,8 @@
    "pct": "+28%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 25, 2026",
-   "ts": "2026-10-25T23:58",
+   "date": "October 26, 2026",
+   "ts": "2026-10-26T23:58",
    "time": "today",
    "head": "Top gainer: +28% to $8.99",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -76,7 +76,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "IMC \u00b7 +28% to $8.99",
-    "sub": "top gainer \u00b7 October 25, 2026",
+    "sub": "top gainer \u00b7 October 26, 2026",
     "sections": [
      {
       "h": "Read",
@@ -109,7 +109,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "77362a0818b0bb40c223"
+   "id": "782c5b5a1127ba765331"
   },
   {
    "sender": "TAPE",
@@ -119,8 +119,8 @@
    "pct": "+26%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 25, 2026",
-   "ts": "2026-10-25T23:58",
+   "date": "October 26, 2026",
+   "ts": "2026-10-26T23:58",
    "time": "today",
    "head": "Top gainer: +26% to $5.40",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -128,7 +128,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "BKHA \u00b7 +26% to $5.40",
-    "sub": "top gainer \u00b7 October 25, 2026",
+    "sub": "top gainer \u00b7 October 26, 2026",
     "sections": [
      {
       "h": "Read",
@@ -161,7 +161,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "d73a1c9b8e1502455b8e"
+   "id": "317b64227eccbad1c0cd"
   },
   {
    "sender": "TAPE",
@@ -171,8 +171,8 @@
    "pct": "-53%",
    "pdir": "dn",
    "category": "equities",
-   "date": "October 25, 2026",
-   "ts": "2026-10-25T23:57",
+   "date": "October 26, 2026",
+   "ts": "2026-10-26T23:57",
    "time": "today",
    "head": "Top decliner: -53% to $15.00",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -180,7 +180,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "KCAI \u00b7 -53% to $15.00",
-    "sub": "top decliner \u00b7 October 25, 2026",
+    "sub": "top decliner \u00b7 October 26, 2026",
     "sections": [
      {
       "h": "Read",
@@ -213,7 +213,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "8b88d878f5b59005f4ba"
+   "id": "ad21a8549344bd405408"
   },
   {
    "sender": "FED",
@@ -231,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-25T22:43:02+00:00"
+    "retrieved_at": "2026-10-26T00:56:11+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-25T22:43:02+00:00"
+    "retrieved_at": "2026-10-26T00:56:11+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
