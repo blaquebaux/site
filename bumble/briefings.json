@@ -2,6 +2,87 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-27-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 27 Morning: Semiconductor relief meets an unresolved funding test",
+      "summary": "U.S. futures were modestly positive and Asian chip shares rebounded, while long Treasury yields stayed below 5% and physical Gulf oil flows remained constrained. China's industrial profits showed sharply uneven sector performance. The next test is whether AI spending produces cash returns without wider credit stress.",
+      "edition_date": "2026-10-27T08:04:07-04:00",
+      "published_at": "2026-10-27T08:04:07-04:00",
+      "observed_at": "2026-10-27T06:56:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "Tuesday's U.S. cash session had not opened. At 6:56 a.m. ET, Reuters reported Dow futures up 0.32%, S&P 500 futures up 0.19% and Nasdaq 100 futures up 0.27%. Monday's U.S. cash session had closed with the S&P 500 up 0.7% and Nasdaq up 0.8%, according to AP. These are different session observations, not comparable intraday returns.",
+            "The recovery extended to Asian semiconductor exposure: Reuters reported South Korea's KOSPI up 3.6% and AP reported Japan's Nikkei up 2.2% in their respective Tuesday snapshots. European participation was less uniform: Reuters reported the STOXX 600 down 0.2%, with HSBC down 7% following a revenue miss. A regional technology rebound therefore does not establish global breadth.",
+            "Reuters reported the U.S. 10-year Treasury yield at 4.986%, the euro near $1.115 and spot gold at $3,992.70 in a European-session snapshot. These observations are not synchronized with the 6:56 a.m. ET U.S. futures snapshot. Broad U.S. investment-grade spreads, high-yield spreads and a cash VIX quote were not independently established.",
+            "Energy remained volatile amid diplomacy and attacks. Reuters recorded Brent at $116.26 per barrel at 09:18 GMT, while a separately timed AP report quoted $109.82; the conflicting snapshots have not been reconciled and are not treated as one consolidated current price. Reuters cited ANZ research estimating Strait of Hormuz crude flows at about 60% of normal, Gulf exports down for a fourth week and global distillate inventories almost 5% below their five-year average.",
+            "New Chinese industrial data showed September profits rising 14.4% year over year, compared with 4.2% in August. Reuters reported that profits in computer, communications and electronics manufacturing more than doubled over the first nine months, while furniture manufacturing profits more than halved. The strength is concentrated rather than economy-wide."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The principal change since Monday afternoon is stronger Asian chip participation without corresponding evidence that the financing challenge has eased. The rebound may reflect renewed confidence in AI demand, but large capital commitments, supplier-customer funding links and future cash conversion still need testing against this week's earnings.",
+            "China's industrial-profit split adds a supply-chain dimension: electronics suppliers can benefit from AI investment even while unrelated domestic manufacturers deteriorate. Equity performance at a headline index level misses that divergence.",
+            "Energy and rates remain an uncomfortable pairing. Defensive Treasury demand can lower benchmark yields while physical supply constraints keep inflation risk elevated. HSBC's weakness is an earnings-specific observation, not proof of broad bank or credit stress. The inconsistent Brent quotations are a data-quality limitation, not evidence of a single precise spot move."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Wednesday's Federal Reserve decision and guidance: distinguish a widely expected hold from the path implied for December and beyond; the Fed's official calendar confirms its October 27-28 meeting.",
+            "Alphabet and Microsoft earnings Wednesday, followed by Amazon Thursday: cloud demand, AI utilization, cash conversion, capital expenditure and financing obligations.",
+            "Investment-grade and high-yield spreads, AI issuer CDS and bank funding costs; test whether credit repricing remains concentrated.",
+            "Verified Strait of Hormuz cargo flows, freight insurance and distillate inventories; reconcile divergent Brent snapshots before treating price direction as confirmed.",
+            "China's electronics versus consumer-manufacturing profits and semiconductor supplier order books; Brazil's sovereign CDS and fiscal policy signals following Monday's market shock."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If chip demand and hyperscaler earnings translate into stronger cash generation, physical oil flows improve and broad credit spreads stay contained, selective equity stabilization becomes more plausible.",
+            "If financing costs spread beyond individual AI issuers while energy logistics remain constrained, a broader tightening of financial conditions becomes more likely. Neither path justifies a precise probability or high-conviction index forecast.",
+            "Verification pending: this source-attributed automated edition has not received independent editorial sign-off; source snapshots are separately timed and do not constitute a live quote feed."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Asian semiconductor shares are recovering faster than the evidence on financing conditions. The next confirmation must come from hyperscaler cash conversion, credit-spread breadth and verified energy flows, not equity prices alone.",
+      "sources": [
+        {
+          "label": "Reuters, October 27, U.S. futures at 6:56 a.m. ET and Fed expectations",
+          "url": "https://www.reuters.com/business/us-stock-futures-muted-oil-holds-near-april-highs-ahead-fed-decision-2026-10-27/"
+        },
+        {
+          "label": "Reuters, October 27, European equities, Treasury yield, euro and gold",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-27/"
+        },
+        {
+          "label": "Reuters, October 27, Brent at 09:18 GMT and physical Gulf oil flows",
+          "url": "https://www.reuters.com/business/energy/oil-eases-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-2026-10-27/"
+        },
+        {
+          "label": "Reuters, October 27, China's industrial profits and sector divergence",
+          "url": "https://www.reuters.com/world/asia-pacific/chinas-industrial-profit-growth-picks-up-amid-two-speed-economy-2026-10-27/"
+        },
+        {
+          "label": "Reuters, October 27, Morning Bid and South Korean chip shares",
+          "url": "https://www.reuters.com/business/media-telecom/global-markets-view-europe-2026-10-27/"
+        },
+        {
+          "label": "Associated Press, October 27, Asian shares, prior U.S. session and separately timed Brent quotation",
+          "url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-088e6d5a0e6df20d3d8614c7f7f82baa"
+        },
+        {
+          "label": "Federal Reserve, official 2026 FOMC meeting calendar",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
       "id": "2026-10-26-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
