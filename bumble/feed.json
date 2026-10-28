@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-27T22:47:53+00:00",
+ "generated_at": "2026-10-28T01:18:07+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -15,8 +15,8 @@
    "pct": "+75%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 27, 2026",
-   "ts": "2026-10-27T23:58",
+   "date": "October 28, 2026",
+   "ts": "2026-10-28T23:58",
    "time": "today",
    "head": "Top gainer: +75% to $5.41",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -24,7 +24,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "NUWE \u00b7 +75% to $5.41",
-    "sub": "top gainer \u00b7 October 27, 2026",
+    "sub": "top gainer \u00b7 October 28, 2026",
     "sections": [
      {
       "h": "Read",
@@ -57,7 +57,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "e73dc63aa310adda1547"
+   "id": "8bd9a9f2d338a30dc7b4"
   },
   {
    "sender": "TAPE",
@@ -67,8 +67,8 @@
    "pct": "+55%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 27, 2026",
-   "ts": "2026-10-27T23:58",
+   "date": "October 28, 2026",
+   "ts": "2026-10-28T23:58",
    "time": "today",
    "head": "Top gainer: +55% to $21.45",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -76,7 +76,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "CRMX \u00b7 +55% to $21.45",
-    "sub": "top gainer \u00b7 October 27, 2026",
+    "sub": "top gainer \u00b7 October 28, 2026",
     "sections": [
      {
       "h": "Read",
@@ -109,7 +109,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "ca3dda8c814ef0f0949b"
+   "id": "87a2602e8231f98ec60c"
   },
   {
    "sender": "TAPE",
@@ -119,8 +119,8 @@
    "pct": "+47%",
    "pdir": "up",
    "category": "equities",
-   "date": "October 27, 2026",
-   "ts": "2026-10-27T23:58",
+   "date": "October 28, 2026",
+   "ts": "2026-10-28T23:58",
    "time": "today",
    "head": "Top gainer: +47% to $13.42",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -128,7 +128,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "AIOK \u00b7 +47% to $13.42",
-    "sub": "top gainer \u00b7 October 27, 2026",
+    "sub": "top gainer \u00b7 October 28, 2026",
     "sections": [
      {
       "h": "Read",
@@ -161,7 +161,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "f4888941e42e192e46bd"
+   "id": "6dcd0ef04555b4b6752f"
   },
   {
    "sender": "EDGAR",
@@ -229,7 +229,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-27T22:49:00+00:00"
+    "retrieved_at": "2026-10-28T01:19:45+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -279,7 +279,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-27T22:49:00+00:00"
+    "retrieved_at": "2026-10-28T01:19:45+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
