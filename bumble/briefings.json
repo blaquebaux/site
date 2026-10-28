@@ -2,6 +2,86 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-28-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 28 Morning: Memory profits meet an energy and policy test",
+      "summary": "SK Hynix's record profit and long-term memory orders strengthened the AI supply-chain case, but a renewed oil rise, central-bank surprises and tonight's hyperscaler results leave financing and inflation risks unresolved.",
+      "edition_date": "2026-10-28T07:56:25-04:00",
+      "published_at": "2026-10-28T07:56:25-04:00",
+      "observed_at": "2026-10-28T07:24:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "Tuesday's U.S. session finished with the S&P 500 up 0.60%, Nasdaq Composite up 1.18% and Dow up 0.03%. At 4:53 a.m. ET Wednesday, Nasdaq 100 futures rose 0.41%, S&P 500 futures 0.10%, while Dow futures fell 0.17%. U.S. cash markets were not yet open; futures are an earlier, separately timed snapshot.",
+            "SK Hynix reported July-September operating profit of 83.3 trillion won versus 11.4 trillion won a year earlier, beating a 76.7 trillion won analyst estimate. Revenue increased 328% to 104.6 trillion won. The chipmaker announced about 100 trillion won ($75 billion) of planned 2026 shareholder returns and said long-term contracts with 14 customers cover more than half its 2027-2028 production capacity. South Korea's Kospi rose about 6% in Reuters' Wednesday London-session report.",
+            "Oil reversed part of Tuesday's easing after a reported Saudi refinery attack. In Reuters' Wednesday London-market snapshot, Brent gained about 1.1% to $115.13 a barrel and European natural-gas futures rose 3.3% to 99.2 euros per MWh. Spot gold declined 0.3% to $4,046.62 at 10:49 GMT in separately timed Reuters reporting.",
+            "New Zealand's central bank unexpectedly held its benchmark rate at 2.75%; the New Zealand dollar fell more than 1.3% in Reuters' global-markets account. The STOXX 600 declined 0.25% while U.S. index futures were mixed to modestly higher in that report. Synchronized fresh U.S. Treasury benchmark yields, investment-grade and high-yield spreads, issuer CDS and cash VIX readings were not independently established for this cutoff."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The material change since Tuesday afternoon is stronger direct evidence of memory-chip pricing power and committed future supply demand. SK Hynix's profit, contracted capacity and shareholder-return plan support supplier economics, but do not establish the eventual return on capital for AI compute customers.",
+            "The equity recovery and renewed oil rally pull financial conditions in different directions. Higher energy prices could reinforce inflation concerns even if technology earnings improve; the Reserve Bank of New Zealand surprise illustrates policy divergence rather than a synchronized global easing cycle.",
+            "Financing risk should be mapped across chip suppliers, hyperscalers, lenders, leasing vehicles and power infrastructure. A strong supplier income statement does not automatically imply that every downstream project has positive free cash flow. Without synchronized credit-spread data, broad credit improvement or deterioration remains unconfirmed."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Federal Reserve decision Wednesday at 2:00 p.m. ET and press conference at 2:30 p.m.: hold versus the tone of inflation and December guidance; distinguish market pricing from an actual decision.",
+            "Microsoft and Alphabet earnings after Wednesday's U.S. close: cloud monetization, capital expenditure, operating cash conversion, depreciation, capacity utilization and financing commitments.",
+            "Thursday October 29 at 8:30 a.m. ET: BEA advance third-quarter GDP and September personal income and outlays, including PCE inflation.",
+            "AI memory supply-chain contracts and margins: SK Hynix HBM allocation, customer concentration, pricing, capacity additions and possible competitive supply.",
+            "Actual Gulf export and refinery throughput, Brent and European gas; obtain fresh U.S. Treasury, investment-grade/high-yield spread and VIX readings before inferring cross-asset transmission."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If hyperscaler results confirm improving cash returns, memory demand stays supported and energy flows normalize, selective technology strength becomes more plausible. That is conditional, not a broad equity forecast.",
+            "If energy costs persist and the Fed signals more restrictive policy while credit premiums widen, financing-sensitive AI projects and nontechnology sectors would face a higher risk of underperformance. The available evidence does not support numerical probabilities.",
+            "Verification pending: this source-attributed automated edition has not received independent editorial sign-off. Market quotes are historical snapshots, not live prices; current broad credit and volatility readings were not established."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: SK Hynix validates the supplier side of AI demand; Microsoft and Alphabet must now help validate the customer's cash economics. Watch the financing chain as oil and central-bank risk reprice.",
+      "sources": [
+        {
+          "label": "Reuters, October 27, U.S. equity closing performance and AI financing context",
+          "url": "https://www.reuters.com/business/us-stock-futures-muted-oil-holds-near-april-highs-ahead-fed-decision-2026-10-27/"
+        },
+        {
+          "label": "Reuters, October 28, SK Hynix record profit, shareholder return and customer contracts",
+          "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-q3-profit-jumps-more-than-7-fold-beats-forecasts-2026-10-27/"
+        },
+        {
+          "label": "Reuters, October 28, global equities, energy and New Zealand rate decision",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-28/"
+        },
+        {
+          "label": "Reuters, October 28, gold price and inflation expectations",
+          "url": "https://www.reuters.com/business/gold-slips-oil-fuelled-inflation-fears-ahead-fed-meeting-2026-10-28/"
+        },
+        {
+          "label": "Reuters via WTAQ, October 28, U.S. futures 4:53 a.m. ET",
+          "url": "https://wtaq.com/2026/10/28/nasdaq-futures-rise-as-sk-hynix-boosts-chips-before-fed-decision-earnings/"
+        },
+        {
+          "label": "Federal Reserve, October 2026 meeting and press-conference calendar",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
+        },
+        {
+          "label": "Bureau of Economic Analysis, GDP and Personal Income and Outlays release schedule",
+          "url": "https://www.bea.gov/news/schedule/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-27-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
