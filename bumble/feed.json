@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-28T14:44:51+00:00",
+ "generated_at": "2026-10-28T16:36:20+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -12,18 +12,18 @@
    "chip": "TAPE",
    "tkr": "BOOM",
    "cls": "watch",
-   "pct": "+34%",
+   "pct": "+38%",
    "pdir": "up",
    "category": "equities",
    "date": "October 28, 2026",
    "ts": "2026-10-28T23:58",
    "time": "today",
-   "head": "Top gainer: +34% to $7.17",
+   "head": "Top gainer: +38% to $7.41",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BOOM \u00b7 +34% to $7.17",
+    "title": "BOOM \u00b7 +38% to $7.41",
     "sub": "top gainer \u00b7 October 28, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "2b779f8d0ee9ae43b7f3"
+   "id": "95e9f82a9a244d5b5c93"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "VRTL",
+   "tkr": "GMAB",
    "cls": "watch",
-   "pct": "+27%",
+   "pct": "+29%",
    "pdir": "up",
    "category": "equities",
    "date": "October 28, 2026",
    "ts": "2026-10-28T23:58",
    "time": "today",
-   "head": "Top gainer: +27% to $21.04",
+   "head": "Top gainer: +29% to $57.69",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "VRTL \u00b7 +27% to $21.04",
+    "title": "GMAB \u00b7 +29% to $57.69",
     "sub": "top gainer \u00b7 October 28, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "39f022b51e4cb08e943c"
+   "id": "ecfaf18b4ba3a0ee51ed"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "AIOK",
+   "tkr": "AXGN",
    "cls": "watch",
-   "pct": "+27%",
+   "pct": "+28%",
    "pdir": "up",
    "category": "equities",
    "date": "October 28, 2026",
    "ts": "2026-10-28T23:58",
    "time": "today",
-   "head": "Top gainer: +27% to $17.03",
+   "head": "Top gainer: +28% to $48.10",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "AIOK \u00b7 +27% to $17.03",
+    "title": "AXGN \u00b7 +28% to $48.10",
     "sub": "top gainer \u00b7 October 28, 2026",
     "sections": [
      {
@@ -161,25 +161,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "19f7deac510c121b9415"
+   "id": "5a49b5c0a6d42ecb3764"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "BCAX",
    "cls": "watch",
-   "pct": "-38%",
+   "pct": "-47%",
    "pdir": "dn",
    "category": "equities",
    "date": "October 28, 2026",
    "ts": "2026-10-28T23:57",
    "time": "today",
-   "head": "Top decliner: -38% to $10.86",
+   "head": "Top decliner: -47% to $9.32",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BCAX \u00b7 -38% to $10.86",
+    "title": "BCAX \u00b7 -47% to $9.32",
     "sub": "top decliner \u00b7 October 28, 2026",
     "sections": [
      {
@@ -213,7 +213,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "953c01339a0b56c8791e"
+   "id": "7686fe941d3d9b89a4ab"
   },
   {
    "sender": "FED",
@@ -231,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
     "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-28T14:46:23+00:00"
+    "retrieved_at": "2026-10-28T16:37:53+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
     "observed_at": "2026-10-13T18:00:00+00:00",
-    "retrieved_at": "2026-10-28T14:46:23+00:00"
+    "retrieved_at": "2026-10-28T16:37:53+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
