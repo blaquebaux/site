@@ -1,0 +1,84 @@
+{
+  "id": "2026-10-28-afternoon",
+  "kind": "afternoon",
+  "status": "archived-unverified",
+  "title": "Market Pulse | October 28 Afternoon: Fed holds as Canada tightens",
+  "summary": "The Fed held rates at 3.75%-4.00% with two votes for a hike, while Canada raised rates to 2.50%; elevated oil and financing costs now frame the next AI earnings test.",
+  "edition_date": "2026-10-28T14:56:01-04:00",
+  "published_at": "2026-10-28T14:56:01-04:00",
+  "observed_at": "2026-10-28T14:03:00-04:00",
+  "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What changed: observed",
+      "paragraphs": [
+        "The Federal Reserve held the federal-funds target at 3.75%-4.00% in a 10-2 vote at 2:00 p.m. ET. Lisa Cook and Beth Hammack preferred a 25-basis-point increase. The statement described strong economic expansion, resilient spending and robust capital investment, while warning that inflation remains elevated. This decision, not a forecast, is the principal change since the morning pulse.",
+        "The Bank of Canada increased its policy rate by 25 basis points to 2.50%. It projected Canadian CPI inflation around 3.5% by end-2026 and about 3% during 2027, citing energy costs and the prospect of greater input-cost pass-through. The two North American central banks therefore delivered different immediate actions while sharing inflation concerns.",
+        "Before the Fed announcement, Reuters reported the U.S. 10-year Treasury yield at 5.0112% and the dollar index near 102.40; these are pre-decision observations, not post-Fed quotes. A separately timed late-morning market snapshot placed the S&P 500 up 0.18%, Nasdaq down 0.04%, and VIX at 17.23. No reliable synchronized post-announcement index, Treasury, broad investment-grade or high-yield spread series was established for this edition.",
+        "Reuters reported Brent near $115.47 per barrel, up about 1.4%, after a claimed attack on Saudi refining infrastructure; Saudi confirmation and sustained physical damage were not established in that report. A secondary EIA inventory calendar reported a 1.892-million-barrel U.S. crude draw for the week ending October 23, versus an expected small build; this secondary reading has not been reconciled against the primary EIA release."
+      ]
+    },
+    {
+      "heading": "What mattered: interpretation",
+      "paragraphs": [
+        "The key new signal is the Fed's internal split: a hold was the majority decision, but two policymakers already favored tightening. That increases the importance of upcoming inflation and growth data without making a December hike certain. Canada's actual increase demonstrates that elevated energy costs can prompt policy action even when the United States waits.",
+        "AI supplier earnings remain strong, but financing costs near a 5% U.S. 10-year yield and the possibility of further monetary tightening raise the hurdle for downstream returns. The research question is whether cloud customers' incremental cash generation compensates lenders, equipment lessors, chip suppliers and power providers for capital committed.",
+        "The oil price rise is an observable risk premium, not proof of an equivalent physical supply loss. The absence of a verified post-Fed broad-credit and volatility snapshot prevents a claim that the policy decision materially eased or tightened financial conditions across all markets."
+      ]
+    },
+    {
+      "heading": "What we are watching",
+      "list": [
+        "Chair Warsh's press conference and any subsequently verified change in Treasury yields, the dollar, VIX and broad credit spreads; do not infer a market reaction from pre-announcement prices.",
+        "Microsoft and Alphabet results after Wednesday's close: cloud revenue, AI utilization, operating cash flow, capital expenditure and supplier-customer financing commitments.",
+        "Thursday's scheduled U.S. GDP and PCE releases: whether resilient demand is accompanied by persistent price pressure.",
+        "Bank of Canada's projected energy-cost pass-through and subsequent Canadian rate expectations; compare with Fed policy divergence and USD/CAD.",
+        "Verified Gulf export throughput, refinery damage and freight insurance; compare actual supply flows with Brent and distillate prices."
+      ]
+    },
+    {
+      "heading": "Where we see things going",
+      "paragraphs": [
+        "If incoming inflation data moderates and hyperscaler cash conversion improves while corporate credit remains orderly, a selective technology recovery becomes more plausible even without immediate Fed easing.",
+        "If energy costs feed into wider inflation and funding premiums rise across AI issuers and counterparties, additional policy tightening and weaker capital-intensive returns become more likely. Neither path warrants numerical probabilities from the currently synchronized evidence.",
+        "Verification pending: this source-attributed automated edition has not received independent editorial sign-off. Quoted market prices are separately timed historical snapshots, not live prices; no synchronized post-Fed broad-credit or VIX update was verified."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: The Fed held, but two policymakers voted to tighten while Canada actually raised rates. AI supplier demand is visible; the next test is whether compute customers can finance and monetize that demand under persistent energy and interest-rate pressure.",
+  "sources": [
+    {
+      "label": "Federal Reserve, October 28, 2026, FOMC statement and 10-2 vote",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+    },
+    {
+      "label": "Bank of Canada, October 28, 2026, policy-rate decision and inflation outlook",
+      "url": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/"
+    },
+    {
+      "label": "Reuters, October 28, 2026, Fed decision at 2:03 p.m. EDT",
+      "url": "https://www.streetinsider.com/Reuters/Fed%2Bholds%2Brates%2Bsteady%2Bas%2Bit%2Bawaits%2Baccumulation%2Bof%2Bmore%2Binformation/27248284.html"
+    },
+    {
+      "label": "Reuters, October 28, 2026, pre-Fed dollar and Treasury market snapshot",
+      "url": "https://www.reuters.com/business/dollar-holds-gains-ahead-fed-policy-signal-rbnz-decision-2026-10-28/"
+    },
+    {
+      "label": "Reuters, October 28, 2026, oil and Saudi refinery reports",
+      "url": "https://www.reuters.com/world/asia-pacific/oil-prices-rise-after-attack-saudi-arabian-refinery-reignites-supply-concerns-2026-10-28/"
+    },
+    {
+      "label": "The Closing Print, October 28, 2026, late-morning U.S. equity and volatility snapshots",
+      "url": "https://www.theclosingprint.net/2026/10/fed-decision-prediction-october-2026/"
+    },
+    {
+      "label": "Investing.com, October 28, 2026, secondary EIA crude inventory calendar",
+      "url": "https://www.investing.com/economiccalendar/eia-crude-oil-inventories-75"
+    },
+    {
+      "label": "BEA, October 2026 economic release schedule",
+      "url": "https://www.bea.gov/news/schedule/"
+    }
+  ]
+}
