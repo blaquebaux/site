@@ -2,6 +2,78 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-29-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 29 Afternoon: Growth accelerates, inflation persists, AI financing reprices",
+      "summary": "U.S. GDP accelerated to 3.4% in the third quarter while September headline PCE inflation reached 3.6%; the Nasdaq declined 1.41% in a 1:12 p.m. ET snapshot as AI cash-burn concerns outweighed macro resilience.",
+      "edition_date": "2026-10-29T14:55:17-04:00",
+      "published_at": "2026-10-29T14:55:17-04:00",
+      "observed_at": "2026-10-29T13:12:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "Thursday's new U.S. macro releases changed the picture since the morning pulse. BEA estimated third-quarter real GDP growth at a 3.4% annual rate, up from 2.2% in the second quarter; real final sales to private domestic purchasers rose 4.9%. Investment, including information-processing equipment, helped drive growth. These are quarterly annualized rates, not year-over-year changes.",
+            "September's headline PCE price index rose 0.5% month over month and 3.6% year over year; core PCE rose 0.3% monthly and 3.1% annually. Nominal personal spending rose 0.5% but real spending was essentially unchanged; real disposable personal income declined 0.3%. The quarterly GDP report's 2.1% annualized Q3 PCE price increase and September's 3.6% year-over-year inflation measure cover different periods and are not contradictory.",
+            "At 1:12 p.m. ET, Reuters reported the S&P 500 down 0.42%, Nasdaq Composite down 1.41% and Dow down 0.38%. Alphabet's decline after its AI-related cash burn disclosure and steep post-earnings losses in ServiceNow and Fortinet weighed on technology. These are intraday, not closing, prices.",
+            "In Reuters' Thursday afternoon market snapshot, the 10-year Treasury yield was 4.999%, down 4.61 basis points; the two-year yield was 4.668%, down 6.66 basis points. The dollar index was 101.96, down 0.16%; Brent crude was $115.08 a barrel, down 0.21%, as reported diplomatic initiatives tempered supply fears without confirming an agreement. The ECB held its policy rate at 2.5% while signaling elevated energy-driven inflation risk and a possible December increase; France's 10-year borrowing premium over Germany was around 155 basis points. Updated synchronized U.S. investment-grade and high-yield spreads and a cash VIX quote were not established."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The key new tension is not weak demand. Third-quarter growth and investment were robust, but September's inflation and flat real spending limit the case for easier monetary policy. A strong aggregate economy can still leave rate-sensitive borrowers and households under pressure.",
+            "Equity losses alongside falling Treasury yields are consistent with investors distinguishing the economics of AI infrastructure investment from the strength of equipment demand. Alphabet's cash use matters to its suppliers, lessors, lenders and power counterparties; it does not alone prove broad credit contagion. The absence of synchronized spread data limits any systemic-credit conclusion.",
+            "Europe faces a parallel constraint: the ECB is considering additional inflation restraint even as higher sovereign yields threaten growth. Oil's diplomatic risk premium may ease, but only verified shipping and export normalization would establish durable supply relief."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Amazon and Intel earnings after Thursday's close: AWS growth, capital expenditure, free cash flow, chip demand and supplier-customer financing dependencies.",
+            "Post-data Treasury repricing, December Fed rate expectations and corporate issuer CDS versus broad investment-grade and high-yield spreads; distinguish isolated earnings stress from wider financing pressure.",
+            "Friday's Bank of Japan decision and yen response; monitor the dollar and global rate differentials.",
+            "Actual Gulf export volumes, tanker traffic and freight insurance, not diplomatic headlines alone; monitor Brent and refined-product costs.",
+            "ECB December policy signaling and French-German sovereign spreads; assess whether tighter rates compound existing sovereign financing pressure."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If hyperscaler earnings show stronger cash conversion, energy shipments normalize and broad credit spreads remain contained, selective technology stabilization becomes more plausible despite today's decline.",
+            "If sticky inflation keeps policy restrictive while AI capital commitments outpace customer cash generation and credit premiums broaden, financing-sensitive assets face a higher probability of sustained pressure. Current evidence does not support a precise numerical forecast.",
+            "Verification pending: this source-attributed automated edition has not received independent editorial sign-off. Market prices are separately timed intraday observations with a 1:12 p.m. ET equity cutoff; broad credit spreads and cash VIX were not independently verified."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The economy can grow 3.4% while real monthly consumption stalls and technology equities fall. The decisive research question is whether AI investment translates into cash returns before inflation and funding costs constrain the customers and counterparties financing the buildout.",
+      "sources": [
+        {
+          "label": "U.S. BEA, October 29, 2026: third-quarter GDP advance estimate",
+          "url": "https://www.bea.gov/index.php/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+        },
+        {
+          "label": "U.S. BEA, October 29, 2026: September personal income, spending and PCE inflation",
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        },
+        {
+          "label": "Reuters, October 29, 2026: global equity, rates, currency and energy markets; 1:12 p.m. ET equity snapshot",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-29/"
+        },
+        {
+          "label": "Reuters, October 29, 2026: ECB policy hold, inflation risk and French sovereign yields",
+          "url": "https://www.reuters.com/business/ecb-keeps-rates-unchanged-points-mounting-inflation-risk-2026-10-29/"
+        },
+        {
+          "label": "Reuters, October 29, 2026: euro, dollar and central-bank policy response",
+          "url": "https://www.reuters.com/world/asia-pacific/dollar-steady-after-fed-hold-leaves-rate-path-murky-2026-10-29/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-29-morning",
       "kind": "morning",
       "status": "archived-unverified",
