@@ -2,6 +2,86 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-29-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 29 Morning: AI cash flow splits the hyperscalers",
+      "summary": "Alphabet's $9.07 billion quarterly free-cash-flow deficit contrasts with Microsoft's $18.6 billion surplus; Nasdaq futures weaken as investors distinguish AI demand from the ability to finance its buildout.",
+      "edition_date": "2026-10-29T08:01:26-04:00",
+      "published_at": "2026-10-29T08:01:26-04:00",
+      "observed_at": "2026-10-29T08:00:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "The decisive change since Wednesday afternoon came after the close: Microsoft reported $18.6 billion in quarterly free cash flow, 48% Azure revenue growth to $33.17 billion and $45.2 billion of capital expenditure. Reuters reported its shares gaining more than 3% in after-hours trading. Microsoft attributed capex below its $50 billion plan to delayed third-party capacity deliveries, not a reduction in its investment program.",
+            "Alphabet reported negative third-quarter free cash flow of $9.07 billion despite Google Cloud revenue more than doubling to $30.71 billion. Its $127.6 billion total revenue missed the $128.2 billion consensus cited by Reuters; slower core advertising growth and AI infrastructure spending weighed on sentiment. Reuters reported Alphabet down roughly 10% in Thursday premarket trading, with Nasdaq futures down about 1%. These are premarket observations, not U.S. cash-session prices.",
+            "In Reuters' Thursday European-market snapshot, the U.S. two-year Treasury yield was about 4.68% after an overnight decline of roughly five basis points, the dollar index near 102.23, the euro near $1.1137 and Brent down about 1.2% to just below $114 per barrel. Diplomatic overtures toward Iran were reported, but an agreement and sustained restoration of physical supply were not established.",
+            "Europe's STOXX 600 rose about 0.5% in the same Reuters snapshot. The French-German 10-year sovereign spread narrowed to approximately 153.5 basis points from nearly 178 basis points last week. ECB President Christine Lagarde confirmed an early February departure; the ECB's Thursday policy decision was still pending. Saxo reported Wednesday's VIX close at 16.91, not a current Thursday cash-market reading. Synchronized U.S. investment-grade and high-yield spreads were not independently established."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The new information is not simply that AI spending is large. Two major cloud operators now present materially different cash-flow outcomes despite strong AI-related demand. Microsoft's cash generation supports its investment capacity; Alphabet's negative free cash flow increases the importance of liquidity, financing costs, customer commitments and the pace at which infrastructure becomes revenue-producing. The quarterly figures are not fully standardized across issuers and should not be treated as a complete credit comparison.",
+            "This distinction reaches beyond the equities: chip and memory suppliers, equipment lessors, lenders, data-center developers and power providers depend on hyperscalers' ability to fund orders and honor long-term commitments. Strong upstream bookings do not by themselves prove attractive downstream returns. The decline in Nasdaq futures is consistent with investors discriminating between cash-generation profiles, but it does not establish broad corporate-credit contagion.",
+            "Lower oil and shorter-dated Treasury yields offer some near-term relief, but both are sensitive to diplomatic news and today's inflation data. France's narrowing spread reduces an immediate sovereign pressure point without resolving fiscal risk."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "8:30 a.m. ET: BEA's advance third-quarter GDP estimate and September personal income, spending and PCE inflation; compare growth composition with core inflation and Treasury repricing. These releases had not occurred at the edition cutoff.",
+            "ECB policy decision and Lagarde succession signals; monitor French-German spreads, euro and European bank funding.",
+            "Amazon and Intel earnings after Thursday's U.S. close; track cloud monetization, chip demand, capital expenditure, cash conversion and counterparties.",
+            "Corporate credit confirmation: Microsoft, Alphabet and Meta issuer CDS versus broad investment-grade and high-yield spreads; distinguish issuer selection from systemwide tightening.",
+            "Gulf export throughput, shipping insurance and refined-product prices versus the diplomatic component of Brent's risk premium."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If incoming GDP and PCE data are consistent with easing price pressure, oil flows remain resilient and more hyperscalers demonstrate cash generation comparable to Microsoft's, selective technology stabilization becomes more plausible.",
+            "If elevated capex continues to outrun operating cash generation across additional issuers while energy or credit premiums rise, the probability of broader financing pressure increases. Neither scenario supports a precise numerical probability or high-conviction index forecast from the currently available cross-asset data.",
+            "Verification pending: this source-attributed automated edition has not received independent editorial sign-off. Figures are separately timed premarket or prior-session observations, not live U.S. cash-market quotes. Broad corporate credit spread readings were not verified."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: AI demand is real, but financing quality is diverging. Microsoft's $18.6 billion free-cash-flow surplus and Alphabet's $9.07 billion deficit make cash conversion, counterparty exposure and capital intensity more useful discriminators than headline cloud growth alone.",
+      "sources": [
+        {
+          "label": "Reuters, October 28-29, 2026: Microsoft cloud growth, capex and free cash flow",
+          "url": "https://www.reuters.com/business/retail-consumer/microsoft-beats-quarterly-cloud-revenue-estimates-2026-10-28/"
+        },
+        {
+          "label": "Reuters, October 28-29, 2026: Alphabet results, search advertising and free cash flow",
+          "url": "https://www.reuters.com/business/alphabets-google-cloud-unit-beats-quarterly-revenue-estimates-steady-ai-demand-2026-10-28/"
+        },
+        {
+          "label": "Reuters, October 29, 2026: global markets, European sovereign spreads, oil and premarket futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-29/"
+        },
+        {
+          "label": "Reuters, October 29, 2026: currency and Fed policy repricing",
+          "url": "https://www.reuters.com/world/asia-pacific/dollar-steady-after-fed-hold-leaves-rate-path-murky-2026-10-29/"
+        },
+        {
+          "label": "Saxo Bank, October 29, 2026: prior U.S. close and volatility readings",
+          "url": "https://www.home.saxo/content/articles/macro/market-quick-take---alphabet-revenue-miss-spooks-markets---29-october-2026-29102026"
+        },
+        {
+          "label": "U.S. Bureau of Economic Analysis: official GDP and personal income release schedule",
+          "url": "https://www.bea.gov/news/schedule/"
+        },
+        {
+          "label": "Reuters, October 28-29, 2026: ECB leadership transition and policy outlook",
+          "url": "https://www.reuters.com/business/finance/ecb-hold-rates-investors-focus-french-bonds-lagardes-future-2026-10-28/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-28-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
