@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-10-29T19:36:33+00:00",
+ "generated_at": "2026-10-29T23:27:19+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -18,12 +18,12 @@
    "date": "October 29, 2026",
    "ts": "2026-10-29T23:58",
    "time": "today",
-   "head": "Top gainer: +86% to $11.12",
+   "head": "Top gainer: +86% to $11.10",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "PCLA \u00b7 +86% to $11.12",
+    "title": "PCLA \u00b7 +86% to $11.10",
     "sub": "top gainer \u00b7 October 29, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "2295dfbd2fff0d48259f"
+   "id": "50f91c156cc274b2dae8"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "KATT",
    "cls": "watch",
-   "pct": "+45%",
+   "pct": "+47%",
    "pdir": "up",
    "category": "equities",
    "date": "October 29, 2026",
    "ts": "2026-10-29T23:58",
    "time": "today",
-   "head": "Top gainer: +45% to $21.80",
+   "head": "Top gainer: +47% to $22.18",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "KATT \u00b7 +45% to $21.80",
+    "title": "KATT \u00b7 +47% to $22.18",
     "sub": "top gainer \u00b7 October 29, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "955aeb90b66cf3c6c0d5"
+   "id": "4d8be0b51b349fc0c0a6"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "KPLT",
    "cls": "watch",
-   "pct": "+34%",
+   "pct": "+38%",
    "pdir": "up",
    "category": "equities",
    "date": "October 29, 2026",
    "ts": "2026-10-29T23:58",
    "time": "today",
-   "head": "Top gainer: +34% to $12.18",
+   "head": "Top gainer: +38% to $12.52",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "KPLT \u00b7 +34% to $12.18",
+    "title": "KPLT \u00b7 +38% to $12.52",
     "sub": "top gainer \u00b7 October 29, 2026",
     "sections": [
      {
@@ -161,25 +161,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "44f1b95f9f967f029348"
+   "id": "99c9004c227c930cf84b"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "NOWX",
    "cls": "watch",
-   "pct": "-54%",
+   "pct": "-52%",
    "pdir": "dn",
    "category": "equities",
    "date": "October 29, 2026",
    "ts": "2026-10-29T23:57",
    "time": "today",
-   "head": "Top decliner: -54% to $18.66",
+   "head": "Top decliner: -52% to $19.13",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NOWX \u00b7 -54% to $18.66",
+    "title": "NOWX \u00b7 -52% to $19.13",
     "sub": "top decliner \u00b7 October 29, 2026",
     "sections": [
      {
@@ -213,7 +213,57 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "b67983882d966dad2a61"
+   "id": "7bf7e6740af178fe14d8"
+  },
+  {
+   "sender": "FED",
+   "chip": "POLICY \u00b7 FED",
+   "tkr": "FED",
+   "category": "policy",
+   "cls": "watch",
+   "date": "October 29, 2026",
+   "ts": "2026-10-29T20:30:00+00:00",
+   "time": "20:30 UTC",
+   "head": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+   "note": "Official Federal Reserve release; open the source for the complete statement.",
+   "evi": "verified official release \u00b7 no inferred market direction",
+   "provenance": {
+    "provider": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
+    "observed_at": "2026-10-29T20:30:00+00:00",
+    "retrieved_at": "2026-10-29T23:28:39+00:00"
+   },
+   "detail": {
+    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
+    "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "sub": "2026-10-29T20:30:00+00:00",
+    "sections": [
+     {
+      "h": "Official source",
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm"
+     }
+    ],
+    "pri": "Development only; market implications require separate sourced analysis."
+   },
+   "fit": {
+    "with": [
+     "bonds"
+    ],
+    "against": [
+     "bands",
+     "bide",
+     "bunker"
+    ],
+    "na": [
+     "apac",
+     "backfill",
+     "backlash",
+     "backsliders",
+     "backwards"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "a4a4e03e1464a6c3b15b"
   },
   {
    "sender": "FED",
@@ -231,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
     "observed_at": "2026-10-28T18:00:00+00:00",
-    "retrieved_at": "2026-10-29T19:37:58+00:00"
+    "retrieved_at": "2026-10-29T23:28:39+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -264,56 +314,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
    "id": "bd002c0ee564ee23217a"
-  },
-  {
-   "sender": "FED",
-   "chip": "POLICY \u00b7 FED",
-   "tkr": "FED",
-   "category": "policy",
-   "cls": "watch",
-   "date": "October 16, 2026",
-   "ts": "2026-10-16T15:00:00+00:00",
-   "time": "15:00 UTC",
-   "head": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-   "note": "Official Federal Reserve release; open the source for the complete statement.",
-   "evi": "verified official release \u00b7 no inferred market direction",
-   "provenance": {
-    "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-    "observed_at": "2026-10-16T15:00:00+00:00",
-    "retrieved_at": "2026-10-29T19:37:58+00:00"
-   },
-   "detail": {
-    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-    "sub": "2026-10-16T15:00:00+00:00",
-    "sections": [
-     {
-      "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
-     }
-    ],
-    "pri": "Development only; market implications require separate sourced analysis."
-   },
-   "fit": {
-    "with": [
-     "bonds"
-    ],
-    "against": [
-     "bands",
-     "bide",
-     "bunker"
-    ],
-    "na": [
-     "apac",
-     "backfill",
-     "backlash",
-     "backsliders",
-     "backwards"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "18015bf8c4e311333b18"
   }
  ]
 }
