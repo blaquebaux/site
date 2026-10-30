@@ -2,6 +2,72 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-30-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse | October 30 Afternoon: AI selloff reaches issuer credit as wage costs cool",
+      "summary": "By 12:09 p.m. ET, the Nasdaq was down 2.61% and the S&P 500 down 1.61%; Intel debt protection widened sharply even as Treasury yields fell. September-quarter compensation growth slowed, while energy supply risk persisted.",
+      "edition_date": "2026-10-30T15:20:07-04:00",
+      "published_at": "2026-10-30T15:20:07-04:00",
+      "observed_at": "2026-10-30T12:09:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "By 12:09 p.m. ET Friday, Reuters reported the Nasdaq Composite down 2.61% to 25,500.67, S&P 500 down 1.61% to 7,595.93, and Dow down 0.73% to 51,957.95. Intel shares were about 28% lower and Amazon 1.9% lower in the same Reuters market report. These are intraday observations, not closing prices.",
+            "Issuer credit provided a more direct financing signal: Reuters cited Markit data showing Intel five-year credit-default swaps widening 17.5 basis points to a record 124.75 basis points. Intel's weak PC outlook, production constraints and cash burn also pressured chip and server suppliers. This is issuer-specific evidence; synchronized broad investment-grade and high-yield spread readings were not established.",
+            "In Reuters' separately timed cross-asset observations, the U.S. 10-year Treasury yield declined 4.36 basis points to 4.945%, the two-year yield fell 5.4 basis points to 4.602%, the dollar index was near 101.85 and USD/JPY near 157.37. Brent was quoted at $117.58 per barrel, up 2.4%, as Strait of Hormuz shipping risks persisted. Exxon and Chevron rose despite the wider equity selloff.",
+            "The Bureau of Labor Statistics reported third-quarter civilian employment costs rising 0.8% quarter over quarter, down from 0.9% in June. Wages and salaries rose 0.7% in the quarter; benefits rose 0.9%. Private-sector compensation was up 3.4% year over year, while inflation-adjusted private wages declined 0.6%. No synchronized cash VIX observation was independently established for this edition."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The material change from the morning pulse is confirmation in cash equities and Intel's issuer credit that the AI repricing extends beyond premarket positioning. The chain of exposure runs from hyperscaler spending and chip production to server makers, equipment lessors and lenders. A single CDS spike does not establish systemic contagion; broad spread breadth is the next test.",
+            "Slower quarterly compensation growth modestly reduces evidence of accelerating labor-cost inflation, but benefits continue to outpace wages and real private-sector pay remains negative. Treasury yields falling while oil rises signals competing growth, inflation and safety pressures rather than unambiguous easing in financing conditions."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Whether Intel's CDS widening is isolated or accompanied by broader investment-grade and high-yield spread deterioration, higher issuer borrowing costs and weaker equity breadth.",
+            "Cash conversion, capital commitments and counterparty exposures across hyperscalers, semiconductor suppliers, server manufacturers, data-center lessors and lenders.",
+            "Verified Strait of Hormuz shipping volumes, freight and insurance costs; compare oil contracts by delivery month rather than treating different maturities as one quote.",
+            "Post-Fed rate expectations and the interaction of slower wage-cost growth with elevated energy prices; monitor Treasury yields, the dollar, yen and cash volatility when synchronized readings are available."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If the equity selloff remains concentrated, corporate credit spreads stay contained and AI customers show improving cash conversion, selective stabilization becomes more plausible. A Treasury rally alone is insufficient confirmation.",
+            "If issuer credit stress spreads to suppliers and financing partners while oil disruption sustains inflation pressure, broader risk reduction becomes more likely. Available observations do not support precise numerical scenario probabilities.",
+            "Verification pending: this automated, source-attributed edition has not received independent editorial sign-off. The latest precisely timed U.S. equity snapshot is 12:09 p.m. ET; other cited prices and the Intel CDS observation were reported at separately timed points. This is not a live quote feed."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The AI selloff has moved from equity valuation into at least one issuer's credit protection. Intel's CDS widening is the actionable distinction; whether that pressure propagates through suppliers, customers and lenders matters more than the index decline alone.",
+      "sources": [
+        {
+          "label": "Reuters, October 30, 2026: global markets, 12:09 p.m. ET U.S. equity snapshot, Treasuries, FX, Brent and sector divergence",
+          "url": "https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/"
+        },
+        {
+          "label": "Reuters, October 30, 2026: Intel cash burn, chip and server supply chain, and five-year CDS widening",
+          "url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/"
+        },
+        {
+          "label": "U.S. Bureau of Labor Statistics, October 30, 2026: September 2026 Employment Cost Index",
+          "url": "https://www.bls.gov/news.release/eci.htm"
+        },
+        {
+          "label": "Reuters, October 30, 2026: intraday U.S. equities and AI infrastructure spending concerns",
+          "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/"
+        }
+      ]
+    },
+    {
       "id": "2026-10-30-morning",
       "kind": "morning",
       "status": "archived-unverified",
