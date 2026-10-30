@@ -1,0 +1,87 @@
+{
+  "id": "2026-10-30-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse | October 30 Morning: AI cash burn reprices risk as oil and Japan policy complicate the outlook",
+  "summary": "Nasdaq 100 futures fell 2.41% at 7:14 a.m. ET after Amazon and Intel results amplified AI capital-spending concerns; oil rose after a Hormuz tanker attack while Japan held rates and signaled further tightening.",
+  "edition_date": "2026-10-30T08:23:17-04:00",
+  "published_at": "2026-10-30T08:23:17-04:00",
+  "observed_at": "2026-10-30T07:14:00-04:00",
+  "reviewed_by": "BLAQUE BAUX automated editorial research; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What changed: observed",
+      "paragraphs": [
+        "At 7:14 a.m. ET Friday, Reuters reported Nasdaq 100 futures down 2.41%, S&P 500 futures down 1.03% and Dow futures up 0.17%. Amazon shares were 6.3% lower and Intel shares more than 25% lower in premarket trading. These are futures and premarket observations, not U.S. cash-session closes.",
+        "Amazon's latest results showed a sharp third-quarter cash outflow and plans to increase capital spending again in 2027. Intel warned of cash burn this year and forecast fourth-quarter revenue of $15 billion to $16 billion versus a $17.07 billion analyst estimate. It cited weak PC demand, manufacturing constraints and a two-week shutdown at its Israeli plant, expected to reduce revenue by about $600 million across two quarters. Other AI cloud and chip shares also weakened in extended trading.",
+        "Japan's Nikkei closed down 2.1% at 63,290.11, with semiconductor-equipment shares among the largest decliners. The Bank of Japan held its short-term policy rate at 1.25% by an 8-1 vote, raised its inflation outlook and signaled scope for additional tightening. The yen strengthened toward 157.2 per dollar, while Reuters reported the dollar index down 0.2% and Treasury yields falling.",
+        "At 10:45 GMT, or 6:45 a.m. ET, December Brent futures were $117.62 per barrel, up 2.4%, while the more-active January contract was $113.58. The contracts have different delivery months and must not be conflated. Reuters reported a tanker hit by explosive devices in the Strait of Hormuz; responsibility and lasting physical supply impact remained uncertain. A synchronized cash VIX and U.S. investment-grade or high-yield spread snapshot was not independently established."
+      ]
+    },
+    {
+      "heading": "What mattered: interpretation",
+      "paragraphs": [
+        "The new development since Thursday afternoon is not simply another weak technology session. Amazon's cash use and Intel's operational constraints expose different points of stress along the AI infrastructure chain: the customer financing buildout and the supplier's ability to deliver profitable capacity. These do not prove that demand has collapsed.",
+        "The cross-asset picture is mixed. Treasury yields and the dollar eased as technology risk was reduced, but oil rose on renewed shipping threats. Lower sovereign yields therefore cannot by themselves establish easier corporate financing conditions. The Bank of Japan's more hawkish inflation assessment adds a separate potential source of currency and funding volatility."
+      ]
+    },
+    {
+      "heading": "What we are watching",
+      "list": [
+        "The U.S. third-quarter Employment Cost Index at 8:30 a.m. ET; this release had not occurred by the observation and editorial cutoff. Assess wage-cost persistence alongside September's 3.6% headline and 3.1% core year-over-year PCE inflation.",
+        "Whether Amazon's spending plans and Intel's manufacturing constraints transmit to data-center lessors, chip suppliers, power providers and lenders; distinguish cash-flow stress from actual credit-spread widening.",
+        "Synchronized Treasury yields, broad investment-grade and high-yield spreads, issuer CDS and cash VIX once the U.S. session opens.",
+        "Actual Hormuz vessel movements, insurance premiums and physical export volumes; compare expiring December and active January Brent contracts separately.",
+        "Yen funding conditions after the BOJ decision and next week's central-bank meetings; avoid inferring a carry-trade unwind from one currency move."
+      ]
+    },
+    {
+      "heading": "Where we see things going",
+      "paragraphs": [
+        "If AI customers demonstrate credible utilization and cash conversion while credit spreads remain orderly, selective technology stabilization becomes more plausible despite the premarket selloff.",
+        "If cash deficits persist, suppliers face delivery bottlenecks, credit premiums broaden and oil disruption sustains inflation, a wider repricing of capital-intensive assets becomes more likely. Current evidence does not support precise numerical scenario probabilities.",
+        "Verification pending: this source-attributed automated edition has not received independent editorial sign-off. The latest cited U.S. futures observation is 7:14 a.m. ET, before the cash open and before the scheduled 8:30 a.m. Employment Cost Index release; prices from other markets are separately timed."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: AI demand and AI financing quality are diverging. Amazon's investment cash outflow, Intel's delivery constraints and a renewed oil risk premium make the transmission through suppliers, customers, lenders and power infrastructure more important than a single index move.",
+  "sources": [
+    {
+      "label": "Reuters, October 30, 2026: U.S. futures and Amazon/Intel premarket moves at 7:14 a.m. ET",
+      "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/"
+    },
+    {
+      "label": "Reuters, October 29, 2026: Amazon, Intel and AI cloud financing spillovers",
+      "url": "https://www.reuters.com/business/weak-quarter-intel-sends-shivers-through-cooling-chip-stocks-2026-10-29/"
+    },
+    {
+      "label": "Reuters, October 29, 2026: Intel revenue guidance and factory disruption",
+      "url": "https://www.reuters.com/business/intel-signals-slower-growth-pc-market-remains-under-pressure-2026-10-29/"
+    },
+    {
+      "label": "Reuters, October 30, 2026: Nikkei close and semiconductor shares",
+      "url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-slumps-3-tech-stocks-tumble-ai-worries-2026-10-30/"
+    },
+    {
+      "label": "Reuters, October 30, 2026: Bank of Japan rate decision",
+      "url": "https://www.reuters.com/world/asia-pacific/boj-keeps-interest-rates-steady-signals-further-rate-hikes-2026-10-30/"
+    },
+    {
+      "label": "Reuters, October 30, 2026: yen, dollar and Treasury market direction",
+      "url": "https://www.reuters.com/world/asia-pacific/yen-steady-before-boj-ai-jitters-drive-treasury-rally-weigh-dollar-2026-10-30/"
+    },
+    {
+      "label": "Reuters, October 30, 2026: Brent contracts and Hormuz tanker attack; 10:45 GMT snapshot",
+      "url": "https://www.reuters.com/business/energy/oil-rises-supply-concerns-houthis-attack-saudi-arabia-2026-10-30/"
+    },
+    {
+      "label": "U.S. Bureau of Labor Statistics: October 30, 2026 Employment Cost Index release calendar",
+      "url": "https://www.bls.gov/schedule/news_release/eci.htm"
+    },
+    {
+      "label": "U.S. BEA, October 29, 2026: September PCE inflation",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+    }
+  ]
+}
