@@ -2,6 +2,105 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-10-31-weekly",
+      "kind": "weekly",
+      "status": "archived-unverified",
+      "title": "Weekly Brief | AI's Financing Chain Meets the Inflation Constraint",
+      "summary": "Week of October 26-30, 2026: the Nasdaq fell 2.0% while small caps gained; U.S. GDP accelerated to 3.4% but September PCE inflation reached 3.6%. Intel's CDS widened as chip and server shares sold off, while a renewed oil supply premium constrained the policy outlook.",
+      "edition_date": "2026-10-31",
+      "published_at": "2026-10-31T08:48:00-04:00",
+      "observed_at": "2026-10-30T17:00:00-04:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent human claim-by-claim editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened | October 26-30, 2026",
+          "paragraphs": [
+            "Equities: Friday's cash close capped a weak week for large-cap technology. The S&P 500 lost 0.6% for the week, the Nasdaq Composite 2.0%, and the Dow 0.9%; the Russell 2000 gained 1.3%. Friday alone brought declines of 1.82% for the S&P 500 and 2.86% for the Nasdaq, which closed at 7,580.07 and 25,437.00 respectively. This is a concentrated leadership problem, not evidence that every equity segment fell together. [Associated Press, October 30; Reuters, October 30]",
+            "AI earnings and credit: Intel fell 28.6% Friday after disappointing guidance; the semiconductor index lost 7.2%, while Dell and HP also sold off. Intel's five-year credit-default swap widened 17.5 basis points to 124.75 basis points, a reported record, providing issuer-level evidence of higher credit risk pricing. Amazon's reported cash outflow and increased planned AI capital expenditure added to investor concerns about returns and financing. The CDS move does not establish a market-wide credit shock. [Reuters U.S. equities, October 30; Reuters Intel, October 30]",
+            "Growth and inflation: BEA's advance estimate put third-quarter real GDP growth at a 3.4% annualized rate, up from 2.2% in Q2; real final sales to private domestic purchasers rose 4.9%. Yet September headline PCE inflation was 3.6% year over year, with core at 3.1%. Monthly real consumer spending was essentially flat and real disposable personal income fell 0.3%. Friday's employment cost index showed compensation rising 0.8% in Q3 and 3.4% year over year. [BEA GDP, October 29; BEA income and outlays, October 29; BLS ECI, October 30]",
+            "Policy, rates and FX: The Federal Reserve held its policy range at 3.75%-4.00% on October 28 in a 10-2 decision; both dissenters favored a 25-basis-point increase. Treasury yields declined with Friday's defensive demand despite strong GDP and elevated inflation. The Bank of Japan held its rate at 1.25% by an 8-1 vote but raised its inflation outlook. The dollar index was near 101.88 in Reuters' Friday FX snapshot; USD/JPY was around 157.51. [Federal Reserve, October 28; Associated Press, October 30; Reuters BOJ, October 30; Reuters FX, October 30]",
+            "Energy: December Brent, expiring Friday, settled at $117.64 per barrel; the more-active January contract closed at $113.43. WTI settled at $104.12. Brent rose 13.6% during October, not necessarily during this single week. An attack on a tanker in the Strait of Hormuz and threats to Saudi infrastructure renewed the risk premium, while diplomatic discussions and reports of higher Saudi export volumes complicated any simple supply-shortage conclusion. [Reuters oil, October 30]"
+          ]
+        },
+        {
+          "heading": "What Mattered | Interpretation",
+          "paragraphs": [
+            "The week's defining tension was faster reported economic growth alongside sticky monthly inflation and deteriorating confidence in the capital efficiency of AI infrastructure. Strong cloud and semiconductor demand can coexist with weak free cash flow at customers or suppliers. A revenue acceleration is not, by itself, proof of attractive returns on invested capital.",
+            "Intel's CDS repricing is the clearest measurable extension from equity disappointment into financing risk. It warrants a network view of exposure: memory manufacturers shifting capacity toward AI, PC makers facing higher component costs, hyperscalers purchasing compute, equipment lessors funding assets, and lenders underwriting utilization or residual values. The direction and magnitude of risk can differ across each link. One issuer's CDS widening is a watch signal, not evidence of system-wide contagion.",
+            "The policy constraint is unusually important. Strong GDP reduces urgency for growth support, while 3.6% PCE inflation and energy supply risk limit room for easing. Falling Treasury yields during a technology selloff may reflect defensive duration buying rather than cheaper financing for all borrowers. The Russell 2000's weekly gain and broad earnings beats argue against treating the entire market as one AI trade."
+          ]
+        },
+        {
+          "heading": "What We're Watching | November 2-6 and beyond",
+          "list": [
+            "Monday, November 2: October ISM manufacturing; test new orders, prices paid and whether demand broadens beyond capital-intensive technology.",
+            "Tuesday, November 3: September JOLTS at 10:00 a.m. ET and U.S. midterm elections; monitor labor-market tightness, fiscal-policy expectations and market liquidity without assuming an electoral outcome.",
+            "Wednesday, November 4 and Friday, November 6: ISM services, then the October employment report at 8:30 a.m. ET; reconcile labor demand with the Fed's inflation concerns.",
+            "AI financing transmission: compare Intel and hyperscaler issuer CDS with broad investment-grade/high-yield spreads, new-issue concessions, capex commitments, lease guarantees, memory pricing, server orders and customer free-cash-flow conversion. No synchronized broad-spread or cash-VIX weekly close was independently established for this review.",
+            "Energy and global rates: monitor verified Hormuz vessel traffic, tanker insurance, Gulf export volumes, OPEC+ decisions, USD/JPY funding sensitivity, and sovereign spreads. Distinguish front-month oil contract rolls from genuine spot-market changes."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "Constructive conditional path: if energy cargo flows remain resilient, labor and inflation releases ease policy pressure, and AI credit repricing stays issuer-specific, selective equity stabilization becomes more likely. Strong earnings outside the weakest AI-linked balance sheets could support broader participation.",
+            "Adverse conditional path: if energy disruptions persist while cash deficits, leasing exposures and higher risk premiums spread across suppliers and customers, a wider repricing of capital-intensive assets becomes more likely. The transmission would be more consequential if broad credit spreads and funding availability confirm it.",
+            "Base assessment: expect cross-asset dispersion and event-driven volatility to remain plausible rather than assigning a precise index target. The evidence is insufficient for defensible numerical scenario probabilities. Verification pending: this is source-attributed automated research without independent human claim-by-claim editorial sign-off; it is not a live quote feed."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The Nasdaq lost 2.0% this week, but the deeper development was Intel's record CDS repricing alongside persistent inflation and renewed oil risk. AI investment must be analyzed as a financing network, not just a group of equities; monitor which counterparties carry cash-flow, utilization and residual-value exposure.",
+      "verification_note": "Verification pending: automated research consulted the linked primary and reputable news sources, but independent human claim-by-claim editorial sign-off has not occurred. Editorial status is archived-unverified. Weekly U.S. cash-market observations are through Friday, October 30, 2026 at 4:00 p.m. ET; the composite observation cutoff is 5:00 p.m. ET to accommodate separately timed Friday settlement and market reports. No live Saturday market quotes are claimed. Energy contract maturities are explicitly distinguished.",
+      "social_teaser": "The Nasdaq lost 2% this week, but the bigger signal came from credit: Intel's five-year CDS jumped as AI cash demands met sticky inflation and oil risk. Who ultimately carries the financing risk across chips, servers, lenders and compute customers? Read the BLAQUE BAUX Weekly Brief: https://www.blaquebaux.com/bumble/#brief/2026-10-31-weekly",
+      "sources": [
+        {
+          "label": "Associated Press, October 30, Friday closes and weekly index returns",
+          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2"
+        },
+        {
+          "label": "Reuters, October 30, Wall Street close, chip selloff and earnings breadth",
+          "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/"
+        },
+        {
+          "label": "Reuters, October 30, Intel guidance, credit default swaps and supply chain",
+          "url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/"
+        },
+        {
+          "label": "Bureau of Economic Analysis, October 29, Q3 GDP advance estimate",
+          "url": "https://www.bea.gov/index.php/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+        },
+        {
+          "label": "Bureau of Economic Analysis, October 29, September personal income, real spending and PCE inflation",
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        },
+        {
+          "label": "Bureau of Labor Statistics, October 30, third-quarter employment cost index",
+          "url": "https://www.bls.gov/eci/"
+        },
+        {
+          "label": "Federal Reserve, October 28, FOMC statement and dissents",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        },
+        {
+          "label": "Reuters, October 30, Bank of Japan decision and inflation outlook",
+          "url": "https://www.reuters.com/world/asia-pacific/boj-keeps-interest-rates-steady-signals-further-rate-hikes-2026-10-30/"
+        },
+        {
+          "label": "Reuters, October 30, yen, dollar and global monetary policy",
+          "url": "https://www.reuters.com/world/asia-pacific/yen-steady-before-boj-ai-jitters-drive-treasury-rally-weigh-dollar-2026-10-30/"
+        },
+        {
+          "label": "Reuters, October 30, Brent contract settlements and Gulf supply risks",
+          "url": "https://www.reuters.com/business/energy/oil-rises-supply-concerns-houthis-attack-saudi-arabia-2026-10-30/"
+        },
+        {
+          "label": "Bureau of Labor Statistics, official 2026 release calendar for JOLTS and employment report",
+          "url": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
+    },
+    {
       "id": "2026-10-30-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
