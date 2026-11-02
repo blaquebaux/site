@@ -1,0 +1,89 @@
+{
+  "id": "2026-11-02-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse | November 2 Morning: Oil relief and AI connectivity deal test the rebound",
+  "summary": "Monday's early U.S. futures rebounded after Friday's technology rout as Brent fell about 4% on Iran mediation hopes. Marvell's $115 billion Lumentum deal and China's new equity-liquidity facility highlight contrasting responses to financing and growth pressure.",
+  "edition_date": "2026-11-02",
+  "published_at": "2026-11-02T07:56:19-05:00",
+  "observed_at": "2026-11-02T07:15:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated editorial research; independent human claim-by-claim verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened | Observed",
+      "paragraphs": [
+        "U.S. cash equities had not opened. Reuters' 5:15 a.m. ET snapshot showed Dow and S&P 500 E-mini futures each up 0.52%, while Nasdaq 100 E-minis rose 0.89%. This is a partial rebound from Friday's technology-led decline, not a confirmed cash-session recovery. Reuters reported Intel edging up 0.2% premarket after Friday's sharp fall; Apple was down 0.4% before its after-close earnings release. [Reuters futures, November 2]",
+        "Brent futures fell $4.79, or 4.2%, to $108.64 a barrel and WTI fell $4.41, or 4.2%, to $99.71 at 10:20 GMT (5:20 a.m. ET). Reuters linked the decline to diplomatic discussions involving Iran and Qatari mediators; a draft proposal was circulating, but an agreement and restored shipping flows were not confirmed. OPEC+ kept December output targets unchanged on November 1, with Gulf production still constrained by war-related disruptions. [Reuters oil, November 2; Reuters OPEC+, November 1]",
+        "Marvell announced an all-stock acquisition of optical-components supplier Lumentum valued at about $115 billion including debt. The announced equity value was $102.54 billion, with Lumentum shareholders slated to own roughly 33% of the combined company. The proposed deal, expected to close in the first half of 2028, is evidence of strategic investment in AI connectivity, not evidence that downstream cash returns are already proven. [Reuters Marvell, November 2]",
+        "China's central bank announced a swap facility operation for Tuesday potentially exceeding 100 billion yuan to support institutional equity purchases after the CSI 300 fell 8.5% in October. China's official October manufacturing PMI fell to 49.3 from 50.1, while the private RatingDog/S&P Global PMI held in expansion at 52.0 versus 52.1 in September. The dollar index eased 0.3% to 101.63 and the euro rose to about $1.1212 in Reuters' separately timed FX report. Broad U.S. corporate credit spreads and a synchronized cash VIX reading were not independently established. [Reuters PBOC, November 2; AP China PMI, October 31; Reuters private PMI, November 2; Reuters FX, November 2]"
+      ]
+    },
+    {
+      "heading": "What Mattered | Interpretation",
+      "paragraphs": [
+        "The material change from Friday's close and Saturday's weekly review is a lower near-term energy risk premium accompanying a tentative technology rebound. Oil's decline may relieve inflation expectations at the margin, but diplomacy has not yet translated into verified sustained Gulf export recovery. Lower government yields alone would not prove that issuer funding spreads are improving.",
+        "Marvell's planned purchase of Lumentum adds a new network-level signal: AI infrastructure demand is encouraging consolidation around optical interconnect capacity even as investors scrutinize capital efficiency. For BLAQUE BAUX, the relevant map links hyperscaler spending to custom silicon, photonics, equipment financing, power requirements and customer free cash flow. The transaction's size also raises integration, valuation and execution questions; it is not a substitute for cash-flow evidence.",
+        "China's policy support and conflicting factory surveys suggest uneven economic conditions rather than a synchronized industrial recovery. Official and private PMIs cover different firm samples; the divergence should not be collapsed into a single manufacturing signal."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "Monday's 10:00 a.m. ET ISM manufacturing report; separate new orders, employment and prices-paid signals. U.S. cash-market breadth and whether the futures rebound survives the open.",
+        "Apple and Palantir results after Monday's close, followed by AMD on Tuesday; monitor margins, memory and optical component costs, AI infrastructure spending and cash conversion.",
+        "Iran mediation, actual Strait of Hormuz vessel movements, Gulf export volumes and tanker insurance; distinguish diplomatic headlines from physically delivered barrels.",
+        "Tuesday's U.S. midterm elections, JOLTS, Wednesday's ISM services and Friday's October employment report; assess policy and labor surprises without predicting election outcomes.",
+        "Issuer CDS, investment-grade and high-yield spreads, Treasury yields, dollar/yen and volatility; no synchronized credit-spread or cash-VIX snapshot was verified for this edition."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "Constructive conditional path: if diplomacy translates into durable Gulf shipments, energy prices remain lower, and issuer credit spreads stay contained while AI customers demonstrate improving cash returns, a selective technology recovery becomes more plausible.",
+        "Adverse conditional path: if oil rebounds on renewed disruption or AI financing concerns spread beyond isolated issuers, today's futures bounce may prove fragile. A large connectivity acquisition does not eliminate utilization, integration or funding risk.",
+        "No precise scenario probabilities or directional index target are justified by the available evidence. Verification pending: this is a source-attributed automated research edition without independent human claim-by-claim editorial sign-off. U.S. futures quotes are from 5:15 a.m. ET and oil from 5:20 a.m. ET; other information was reviewed through 7:15 a.m. ET. It is not a live quote feed."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: Oil's retreat is helping risk appetite, while Marvell's $115 billion connectivity deal shows that the AI infrastructure buildout is still reshaping supply chains. The decisive confirmation is whether lower energy pressure and continued investment translate into better customer cash flow and stable credit, not merely a futures rebound.",
+  "verification_note": "Verification pending: linked source reports were consulted, but independent human claim-by-claim editorial sign-off has not occurred. Status is archived-unverified. Observed_at is the composite information cutoff at 7:15 a.m. ET, not the quote time; futures are Reuters' 5:15 a.m. ET snapshot and Brent/WTI are 5:20 a.m. ET. U.S. cash markets were not open. No synchronized broad credit spreads or cash VIX were established.",
+  "sources": [
+    {
+      "label": "Reuters via KFGO, November 2, U.S. stock-index futures at 5:15 a.m. ET and technology earnings",
+      "url": "https://kfgo.com/2026/11/02/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus/"
+    },
+    {
+      "label": "Reuters, November 2, Brent and WTI at 10:20 GMT and Iran mediation",
+      "url": "https://www.reuters.com/business/energy/oil-slips-more-than-1-talks-continue-ending-iran-war-2026-11-01/"
+    },
+    {
+      "label": "Reuters, November 1, OPEC+ December output targets",
+      "url": "https://www.reuters.com/business/energy/opec-set-keep-oil-output-targets-steady-sources-say-2026-11-01/"
+    },
+    {
+      "label": "Reuters, November 2, Marvell-Lumentum proposed acquisition terms",
+      "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/"
+    },
+    {
+      "label": "Reuters, November 2, PBOC equity-market swap facility and CSI 300",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-central-bank-taps-liquidity-tool-fund-share-purchases-2026-11-02/"
+    },
+    {
+      "label": "Associated Press, October 31, China official manufacturing PMI",
+      "url": "https://apnews.com/article/china-manufacturing-economy-pmi-exports-f1e0e24004da425a1b3c8935b16a245c"
+    },
+    {
+      "label": "Reuters, November 2, private RatingDog China manufacturing PMI",
+      "url": "https://www.reuters.com/world/asia-pacific/china-factory-growth-slows-october-export-orders-ease-private-pmi-shows-2026-11-02/"
+    },
+    {
+      "label": "Reuters, November 2, dollar, euro and FX context",
+      "url": "https://www.reuters.com/world/asia-pacific/dollar-rangebound-ahead-us-midterms-bitcoin-reels-crypto-heist-2026-11-02/"
+    },
+    {
+      "label": "Reuters, November 2, global market futures, currencies and coming events",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-02/"
+    }
+  ]
+}
