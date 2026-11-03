@@ -1,7 +1,7 @@
 {
   "schema_version": "an-211.public.v0.1",
-  "dataset_state": "CURRENT_PUBLIC_SOURCE",
-  "refreshed_at": "2026-11-02T21:54:35+00:00",
+  "dataset_state": "REVIEW_REQUIRED",
+  "refreshed_at": "2026-11-03T19:45:46+00:00",
   "coverage_note": "SEC XBRL supplies issuer-tagged financial facts, not named supply-chain relationships. Relationship maps remain empty until narrative disclosures or counterparty filings are reviewed.",
   "entities": {
     "AAPL": {
@@ -13,11 +13,11 @@
       "source_accession": "0000320193-26-000020",
       "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
       "latest_detected": {
-        "form": "10-Q",
-        "filing_date": "2026-07-31",
-        "accession": "0000320193-26-000020"
+        "form": "10-K",
+        "filing_date": "2026-11-03",
+        "accession": "0000320193-26-000026"
       },
-      "review_state": "current",
+      "review_state": "review_required",
       "observations": [
         {
           "id": "aapl-capital-return-q3-2026",
