@@ -2,6 +2,82 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-03-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Oil Rebounds as Election Risk Meets AI Earnings Dispersion",
+      "summary": "Monday's technology selloff persisted despite lower oil; Tuesday's early trade faces renewed Gulf escalation, election uncertainty and divergent Apple and Palantir reactions.",
+      "edition_date": "2026-11-03",
+      "published_at": "2026-11-03T08:03:57-05:00",
+      "observed_at": "2026-11-03T07:30:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: Observed",
+          "paragraphs": [
+            "Monday's U.S. close reversed the earlier intraday rebound: S&P 500 fell 0.51% to 7,541.40, Nasdaq lost 1.07% to 25,164.32, and Dow rose 0.41% to 51,983.98. Energy shares fell 4% as oil retreated; Oracle's announced $20 billion financing plan weighed on technology sentiment. Source: Reuters November 2.",
+            "Tuesday's premarket is mixed. A 5:06 a.m. ET Reuters snapshot reported Dow futures down 0.42% and Nasdaq 100 futures up 0.46%. Apple and Palantir weakened in early premarket reactions to Monday earnings, while chip stocks were firmer. These are not cash-session prices.",
+            "The oil relief of Monday reversed in part after reports of U.S. strikes on Iran's Qeshm Island and skepticism about an imminent peace agreement. Reuters reported Brent up 1.3% to $106.13 and WTI up 1.5% to $97.91 at 10:43 GMT, compared with Monday's oil selloff exceeding 7%.",
+            "U.S. midterm elections occur today. Political outcomes may affect fiscal spending, regulatory scrutiny of AI and debt-ceiling negotiations; none is established yet. Fresh synchronized U.S. cash VIX, broad corporate credit spreads and Treasury yield observations were not verified for this edition.",
+            "Verification pending: This automated edition is archived-unverified; figures reflect individually timed source snapshots, not a synchronized live feed. No independent claim-by-claim editorial sign-off has occurred."
+          ]
+        },
+        {
+          "heading": "What Mattered: Interpretation",
+          "paragraphs": [
+            "The key change since Monday afternoon is that a broad equity recovery failed to hold into the close, while oil rebounded as Gulf geopolitical risk resurfaced. Lower oil alone did not remove concerns about AI capital efficiency.",
+            "Apple and Palantir's post-earnings weakness alongside comparatively resilient semiconductor futures illustrates differentiation between demand, operating margins and valuations. Oracle's financing plan keeps capital structure and counterparty transmission central to the research agenda. Issuer-level weakness should not be mistaken for verified systemwide credit stress."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "U.S. midterm election results and implications for fiscal policy, AI regulation and Treasury issuance; avoid assuming outcomes before results.",
+            "September JOLTS labor-market release and AMD's Tuesday earnings; monitor employment demand, AI-chip order quality, margins and cash generation.",
+            "Oil tanker movements, Qeshm Island developments and whether mediation translates into verifiable shipping normalization.",
+            "Issuer CDS versus investment-grade and high-yield spreads, Treasury yields, dollar and VIX; look for cross-asset confirmation before inferring contagion.",
+            "Wednesday ISM services and Friday October employment report; assess inflation and Federal Reserve expectations."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If Gulf shipping normalizes and credit conditions remain orderly, selective stabilization becomes more plausible, particularly where operating cash flow supports AI investment.",
+            "If renewed energy disruption raises inflation expectations while financing premiums spread across AI borrowers, a wider repricing becomes more likely. Election outcomes may amplify dispersion but do not justify a directional prediction before results.",
+            "BLAQUE BAUX Signal: Oil relief is fragile, and AI earnings are increasingly being judged on capital efficiency. Track the funding relationships among chip suppliers, hyperscalers, lenders and infrastructure customers rather than relying on a single technology index."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Oil relief is fragile; AI investment requires validation through cash generation and financing-chain risk, not equity momentum alone.",
+      "sources": [
+        {
+          "label": "Reuters: S&P 500 ends down; Apple dips ahead of quarterly report, November 2",
+          "url": "https://www.reuters.com/business/media-telecom/wall-street-futures-rise-ai-stocks-catch-their-breath-midterms-focus-2026-11-02/"
+        },
+        {
+          "label": "Reuters: Morning Bid, midterms and mediation, November 3",
+          "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-03/"
+        },
+        {
+          "label": "Reuters: Oil rises as Iran says war deal remains distant, November 3",
+          "url": "https://www.reuters.com/markets/commodities/oil-rises-after-report-us-strike-irans-qeshm-island-2026-11-03/"
+        },
+        {
+          "label": "Reuters: Midterms and implications for markets, November 2",
+          "url": "https://www.reuters.com/business/finance/investors-gaming-out-congress-control-spending-ai-outlook-2026-11-02/"
+        },
+        {
+          "label": "StockTitan: November 3 premarket, timestamped observations",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-3-2026"
+        },
+        {
+          "label": "StockTitan: Earnings calendar week of November 2",
+          "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-2-2026"
+        }
+      ]
+    },
+    {
       "id": "2026-11-02-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
