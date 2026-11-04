@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-04-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse: AMD's Data-Center Surge Meets a New Congressional Balance",
+  "summary": "AMD reports record data-center revenue as Democrats win both chambers of Congress; energy and funding conditions remain central to the AI investment outlook.",
+  "edition_date": "2026-11-04",
+  "published_at": "2026-11-04T08:04:28-05:00",
+  "observed_at": "2026-11-03T16:00:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research; independent claim-by-claim verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed",
+      "paragraphs": [
+        "AMD reported November 3 third-quarter revenue of $13.377 billion, up 45% year over year, including record data-center revenue of approximately $8.5 billion, up 97%. GAAP gross margin was 54%; non-GAAP diluted EPS was $2.09. AMD guided fourth-quarter revenue to approximately $17 billion, plus or minus 3%. These are company-reported results and guidance, not independently audited forward outcomes.",
+        "Reuters reported that Tuesday's U.S. cash session ended with the S&P 500 up 0.36%, Nasdaq up 0.83% and Dow down 0.38%. Apple fell 1.9% amid concern over rising memory costs. These are November 3 closing observations, not Wednesday live prices.",
+        "Reuters reported early November 4 that Democrats secured both the House and Senate in the U.S. midterms. Congressional control changes the legislative and oversight outlook, but specific regulatory or fiscal measures remain unannounced.",
+        "Oil had fallen sharply on November 2 amid Iran mediation hopes; Reuters on November 3 described renewed uncertainty following reported strikes. Verified synchronized Wednesday morning oil, Treasury, dollar, cash VIX and broad investment-grade/high-yield spread quotes were not established at this editorial cutoff. Verification pending: archived-unverified; source dates and observation windows differ."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "The meaningful change since Tuesday afternoon is AMD's quantified evidence of accelerating data-center sales, alongside a confirmed change in congressional control. AMD's supplier-level growth is tangible; it does not, on its own, prove attractive returns for every hyperscaler, server buyer or infrastructure lender.",
+        "Divided government may raise the probability of oversight and legislative negotiation, including on data-center development, but the direction and magnitude of policy change are uncertain. The market impact should be tested against actual proposals, Treasury repricing and credit spreads rather than inferred from election headlines.",
+        "Memory cost inflation at Apple illustrates a counterparty effect: upstream semiconductor revenue can grow while downstream hardware margins compress. Corporate credit and financing commitments remain the necessary confirmation layer."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "Wednesday ISM services and ADP labor readings, once released: growth, employment and prices; do not treat unreleased data as observed.",
+        "AMD guidance and supplier-to-customer transmission: data-center orders, delivery constraints, hyperscaler cash conversion and equipment financing.",
+        "Congressional transition: concrete proposals affecting AI infrastructure, energy, tariffs, taxes and federal spending rather than speculative immediate policy changes.",
+        "Oil and physical Gulf exports: distinguish mediation headlines from restored tanker flows and refined-product supply.",
+        "Cross-asset confirmation: post-election Treasury yields, dollar, cash VIX, issuer CDS and broad investment-grade/high-yield spreads; Friday employment report."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If AMD's reported demand strength is accompanied by improving customer cash conversion and contained credit spreads, selective AI infrastructure resilience becomes more plausible.",
+        "If component shortages and funding costs compress customer returns, or energy volatility keeps inflation pressure elevated, dispersion and financing-led repricing become more likely. Neither path warrants a precise numerical probability at this cutoff.",
+        "BLAQUE BAUX Signal: AMD's 97% data-center growth strengthens the supplier-demand case, but the investment test remains downstream cash returns and credit quality. Congressional turnover adds policy uncertainty, not an automatic market direction."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: AMD's 97% data-center growth validates supplier demand; customer cash conversion, financing spreads and concrete post-election policy will determine whether the benefits propagate.",
+  "sources": [
+    {
+      "label": "AMD, November 3, 2026: Third-quarter financial results and fourth-quarter guidance",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+    },
+    {
+      "label": "Reuters, November 3, 2026: Nasdaq ends higher as AI heavyweights rebound",
+      "url": "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/"
+    },
+    {
+      "label": "Reuters, November 4, 2026: Democrats seize Congress",
+      "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+    },
+    {
+      "label": "Reuters, November 3, 2026: Morning Bid, midterms and mediation",
+      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-03/"
+    },
+    {
+      "label": "Reuters, November 2, 2026: US shares and oil retreat on peace hopes",
+      "url": "https://www.reuters.com/business/media-telecom/wall-street-futures-rise-ai-stocks-catch-their-breath-midterms-focus-2026-11-02/"
+    }
+  ]
+}
