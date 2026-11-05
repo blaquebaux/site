@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-04T21:06:18+00:00",
+ "generated_at": "2026-11-05T00:53:25+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -12,19 +12,19 @@
    "chip": "TAPE",
    "tkr": "DUOG",
    "cls": "watch",
-   "pct": "+60%",
+   "pct": "+54%",
    "pdir": "up",
    "category": "equities",
-   "date": "November 4, 2026",
-   "ts": "2026-11-04T23:58",
+   "date": "November 5, 2026",
+   "ts": "2026-11-05T23:58",
    "time": "today",
-   "head": "Top gainer: +60% to $63.53",
+   "head": "Top gainer: +54% to $61.33",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "DUOG \u00b7 +60% to $63.53",
-    "sub": "top gainer \u00b7 November 4, 2026",
+    "title": "DUOG \u00b7 +54% to $61.33",
+    "sub": "top gainer \u00b7 November 5, 2026",
     "sections": [
      {
       "h": "Read",
@@ -57,7 +57,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "aefb4bfd6f2ef77f747c"
+   "id": "74ced92266c81306a774"
   },
   {
    "sender": "TAPE",
@@ -67,8 +67,8 @@
    "pct": "+49%",
    "pdir": "up",
    "category": "equities",
-   "date": "November 4, 2026",
-   "ts": "2026-11-04T23:58",
+   "date": "November 5, 2026",
+   "ts": "2026-11-05T23:58",
    "time": "today",
    "head": "Top gainer: +49% to $8.88",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -76,7 +76,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "CRCT \u00b7 +49% to $8.88",
-    "sub": "top gainer \u00b7 November 4, 2026",
+    "sub": "top gainer \u00b7 November 5, 2026",
     "sections": [
      {
       "h": "Read",
@@ -109,7 +109,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "e3e8c6f6e7abdcffc27b"
+   "id": "6c0f32aa8e76fdf80282"
   },
   {
    "sender": "TAPE",
@@ -119,8 +119,8 @@
    "pct": "+43%",
    "pdir": "up",
    "category": "equities",
-   "date": "November 4, 2026",
-   "ts": "2026-11-04T23:58",
+   "date": "November 5, 2026",
+   "ts": "2026-11-05T23:58",
    "time": "today",
    "head": "Top gainer: +43% to $15.43",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -128,7 +128,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "LYEL \u00b7 +43% to $15.43",
-    "sub": "top gainer \u00b7 November 4, 2026",
+    "sub": "top gainer \u00b7 November 5, 2026",
     "sections": [
      {
       "h": "Read",
@@ -161,7 +161,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "aefebed5a4f50e9023c1"
+   "id": "7bf731c1b8076fa80421"
   },
   {
    "sender": "TAPE",
@@ -171,8 +171,8 @@
    "pct": "-38%",
    "pdir": "dn",
    "category": "equities",
-   "date": "November 4, 2026",
-   "ts": "2026-11-04T23:57",
+   "date": "November 5, 2026",
+   "ts": "2026-11-05T23:57",
    "time": "today",
    "head": "Top decliner: -38% to $15.95",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
@@ -180,7 +180,7 @@
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
     "title": "NRIX \u00b7 -38% to $15.95",
-    "sub": "top decliner \u00b7 November 4, 2026",
+    "sub": "top decliner \u00b7 November 5, 2026",
     "sections": [
      {
       "h": "Read",
@@ -213,7 +213,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "9bd012f0e9219f899e2b"
+   "id": "640d264ef6356c925201"
   },
   {
    "sender": "FED",
@@ -231,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
     "observed_at": "2026-10-29T20:30:00+00:00",
-    "retrieved_at": "2026-11-04T21:07:10+00:00"
+    "retrieved_at": "2026-11-05T00:54:57+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
     "observed_at": "2026-10-28T18:00:00+00:00",
-    "retrieved_at": "2026-11-04T21:07:10+00:00"
+    "retrieved_at": "2026-11-05T00:54:57+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
