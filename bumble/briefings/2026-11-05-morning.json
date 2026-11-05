@@ -1,0 +1,66 @@
+{
+  "id": "2026-11-05-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse: Chip Weakness Diverges From Broader Post-Election Relief",
+  "summary": "Verification pending: Thursday futures show a split market as chip and data-center exposure weakens despite broader post-election risk appetite and lower energy prices.",
+  "edition_date": "2026-11-05",
+  "published_at": "2026-11-05T08:03:34-05:00",
+  "observed_at": "2026-11-05T07:04:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed",
+      "paragraphs": [
+        "At 7:04 a.m. ET, Reuters reported Dow futures up 0.62%, S&P 500 futures up 0.20%, and Nasdaq 100 futures down 0.51%. These are premarket observations, not cash-market closes. Source: Reuters, November 5.",
+        "Wednesday's S&P 500 posted its strongest one-day percentage advance in three months after the U.S. midterm election, while data-center shares fell on concerns about potential restrictions on AI infrastructure. The split matters more than the broad index advance alone. Sources: Reuters, November 4 and November 5.",
+        "Qualcomm weakened after its earnings outlook, adding to pressure on chip shares. Brent crude rebounded Thursday after a sharp prior-session decline as investors reassessed the outlook for the Iran conflict; the lower-energy-cost thesis remains contingent on actual supply and shipping conditions. Sources: Reuters, November 5.",
+        "Reuters reported that falling oil prices and post-election repositioning had supported bonds and weakened the dollar. A synchronized Thursday morning 10-year Treasury yield, cash VIX, investment-grade/high-yield spreads and issuer CDS snapshot was not independently established. No unsupported values are inferred."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "The change since Wednesday afternoon is the renewed divergence between a broad post-election relief trade and weakness in semiconductors and data-center assets. This suggests investors are separating near-term benefits from lower energy and political uncertainty from the permitting, electricity, capital expenditure and financing risks of AI infrastructure.",
+        "Potential restrictions on data-center development would not affect every participant equally. Developers and equipment suppliers may face delayed deployments, while existing operators with secured power and capacity could experience different economics. This is a scenario, not an established transmission effect."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "Thursday cash-session breadth: whether weakness remains concentrated in chips and data centers or spreads to broader equities.",
+        "Friday U.S. employment report: payrolls, unemployment, wage growth and the rate-path response.",
+        "Brent, Gulf tanker movements and insurance costs: whether de-escalation expectations are corroborated by physical flows.",
+        "AI-linked bond yields and issuer CDS versus broad investment-grade and high-yield spreads: evidence of financing transmission rather than assumed contagion.",
+        "Congressional proposals on data-center power use, permitting and AI oversight; distinguish announced policy from speculation."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If energy prices remain contained and corporate credit is orderly, a broader equity recovery alongside selective technology weakness is plausible. If data-center policy uncertainty increases financing premiums or delays capacity additions, further dispersion within the AI supply chain becomes more likely.",
+        "Neither path warrants a precise numerical probability or a directional index target at this cutoff. Verification pending: this automated edition has not received independent claim-by-claim editorial sign-off."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: A post-election equity rally can coexist with deterioration in the economics of new AI capacity. Track the chain from policy and power availability to deployment schedules, supplier revenue recognition, borrower financing and ultimate customer cash returns.",
+  "sources": [
+    {
+      "label": "Reuters, November 5: Nasdaq futures slip on chip weakness; S&P 500 holds gains",
+      "url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/"
+    },
+    {
+      "label": "Reuters, November 4: Wall Street ends higher after Democrats win Congress; data center stocks tumble",
+      "url": "https://www.reuters.com/business/us-stock-index-futures-steady-democrats-seize-congress-2026-11-04/"
+    },
+    {
+      "label": "Reuters, November 5: Oil rises as investors weigh uncertainties around Iran war",
+      "url": "https://www.reuters.com/business/energy/oil-falls-fourth-day-expectations-lower-risk-iran-war-escalation-2026-11-05/"
+    },
+    {
+      "label": "Reuters, November 5: AI stocks and oil fall as investors reassess US election outcome",
+      "url": "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/"
+    }
+  ]
+}
