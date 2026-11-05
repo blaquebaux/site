@@ -1,0 +1,69 @@
+{
+  "id": "2026-11-05-afternoon",
+  "kind": "afternoon",
+  "status": "archived-unverified",
+  "title": "Market Pulse: AI Infrastructure Selloff Broadens Into Market-Wide Deleveraging",
+  "summary": "Verification pending: Thursday's semiconductor rout spread across all S&P 500 sectors, reversing post-election relief; Treasury yields declined even as oil rebounded and the Bank of England raised rates.",
+  "edition_date": "2026-11-05",
+  "published_at": "2026-11-05T14:59:00-05:00",
+  "observed_at": "2026-11-05T14:13:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed",
+      "paragraphs": [
+        "Thursday's selloff overturned the morning's relatively narrow futures divergence. Reuters reported at 12:24 p.m. ET that the Dow was down 2.63%, the S&P 500 3.41% and Nasdaq Composite 4.55%; all eleven S&P 500 sectors were negative. These are intraday snapshots, not closing prices. Source: Reuters, November 5.",
+        "By StockTitan's 2:01 p.m. ET snapshot, Nvidia was down 8.62% and AMD 15.40%; its 2:13 p.m. ET update described continued semiconductor-led selling. The Nasdaq was approaching a correction from its prior peak. Source: StockTitan, November 5.",
+        "Reuters reported Brent around $97 per barrel, up 2.58%, and the U.S. 10-year Treasury yield near 4.88% during the global selloff. Oil's rebound complicates Wednesday's energy-disinflation narrative. The Bank of England raised its policy rate to 4%, citing inflation pressures. Source: Reuters global markets, November 5.",
+        "Initial U.S. unemployment claims declined 6,000 to 189,000; continuing claims rose 23,000 to 1.718 million. Third-quarter productivity strengthened and unit labor costs declined, offering a counterpoint to inflation fears. Source: Reuters, November 5.",
+        "A synchronized, verified cash VIX level and investment-grade/high-yield spread snapshot were not established; no figures are inferred."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "The change since the morning pulse is decisive: weakness moved from technology-specific futures into a broad cash-equity drawdown. Falling Treasury yields alongside sharply lower stocks indicate demand for safer duration, not necessarily easier financing for AI-linked borrowers.",
+        "Concerns about permitting and restrictions on new data centers are interacting with existing questions about AI capital expenditure and customer cash returns. A delayed project can affect power suppliers, accelerator orders, server integrators, construction contractors, equipment lessors and lenders at different times; the magnitude of those effects remains unverified.",
+        "Resilient jobless claims and lower unit labor costs complicate a simple recession or inflation narrative. The energy rebound and Bank of England tightening demonstrate that policy risks are not uniformly easing."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "Friday's U.S. October employment report: payrolls, unemployment, wages and Treasury repricing.",
+        "Market breadth and cash volatility into the close; determine whether selling is indiscriminate or concentrated in leveraged AI exposure.",
+        "Corporate credit confirmation: AI issuer CDS, financing terms and broad investment-grade/high-yield spreads; do not assume contagion without spread evidence.",
+        "Data-center policy proposals, permitting timelines, power availability and any concrete changes to signed supplier or customer commitments.",
+        "Brent, Hormuz tanker traffic and insurance pricing; distinguish physical supply recovery from diplomatic headlines."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If credit spreads remain contained and policymakers clarify the scope of data-center restrictions, a partial technical rebound is plausible following the sharp repricing. This would not by itself establish improved cash returns.",
+        "If selling begins to raise funding costs or delay projects while energy prices rebound, broader capital-expenditure retrenchment becomes more likely. No numerical probabilities or index targets are justified by the available intraday evidence.",
+        "Verification pending: this automated edition has not received independent claim-by-claim editorial sign-off; observations are source-timed and not a streaming quote feed."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: The shift from a chip selloff to all-sector losses makes financing transmission the next test. Follow AI infrastructure exposure from data-center permitting and power supply through hardware orders, borrower debt service and customer free cash flow; distinguish market repricing from documented contract impairment.",
+  "sources": [
+    {
+      "label": "Reuters, November 5: Nasdaq set to confirm correction as AI stocks tumble",
+      "url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/"
+    },
+    {
+      "label": "Reuters, November 5: Chip selloff drags global stocks lower",
+      "url": "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/"
+    },
+    {
+      "label": "Reuters, November 5: Weekly jobless claims at 57-year lows and productivity rises",
+      "url": "https://www.reuters.com/business/world-at-work/us-weekly-jobless-claims-57-year-lows-amid-low-layoffs-2026-11-05/"
+    },
+    {
+      "label": "StockTitan, November 5, updated 2:13 p.m. ET: AI chip selloff spreads",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    }
+  ]
+}
