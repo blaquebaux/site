@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-05T09:30:50+00:00",
+ "generated_at": "2026-11-05T16:59:47+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,20 +10,20 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "DUOG",
+   "tkr": "APPC",
    "cls": "watch",
-   "pct": "+54%",
+   "pct": "+60%",
    "pdir": "up",
    "category": "equities",
    "date": "November 5, 2026",
    "ts": "2026-11-05T23:58",
    "time": "today",
-   "head": "Top gainer: +54% to $61.33",
+   "head": "Top gainer: +60% to $11.78",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "DUOG \u00b7 +54% to $61.33",
+    "title": "APPC \u00b7 +60% to $11.78",
     "sub": "top gainer \u00b7 November 5, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "74ced92266c81306a774"
+   "id": "8e8563b6ccbf4eb645e1"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "CRCT",
+   "tkr": "APPX",
    "cls": "watch",
-   "pct": "+49%",
+   "pct": "+60%",
    "pdir": "up",
    "category": "equities",
    "date": "November 5, 2026",
    "ts": "2026-11-05T23:58",
    "time": "today",
-   "head": "Top gainer: +49% to $8.88",
+   "head": "Top gainer: +60% to $14.26",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CRCT \u00b7 +49% to $8.88",
+    "title": "APPX \u00b7 +60% to $14.26",
     "sub": "top gainer \u00b7 November 5, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "6c0f32aa8e76fdf80282"
+   "id": "d31f787f41c784f1eff0"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "LYEL",
+   "tkr": "UVIX",
    "cls": "watch",
-   "pct": "+43%",
+   "pct": "+41%",
    "pdir": "up",
    "category": "equities",
    "date": "November 5, 2026",
    "ts": "2026-11-05T23:58",
    "time": "today",
-   "head": "Top gainer: +43% to $15.43",
+   "head": "Top gainer: +41% to $46.55",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "LYEL \u00b7 +43% to $15.43",
+    "title": "UVIX \u00b7 +41% to $46.55",
     "sub": "top gainer \u00b7 November 5, 2026",
     "sections": [
      {
@@ -161,25 +161,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "7bf731c1b8076fa80421"
+   "id": "e7917d5d47e5d067d35e"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "NRIX",
+   "tkr": "VCYT",
    "cls": "watch",
-   "pct": "-38%",
+   "pct": "-54%",
    "pdir": "dn",
    "category": "equities",
    "date": "November 5, 2026",
    "ts": "2026-11-05T23:57",
    "time": "today",
-   "head": "Top decliner: -38% to $15.95",
+   "head": "Top decliner: -54% to $24.07",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NRIX \u00b7 -38% to $15.95",
+    "title": "VCYT \u00b7 -54% to $24.07",
     "sub": "top decliner \u00b7 November 5, 2026",
     "sections": [
      {
@@ -213,7 +213,57 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "640d264ef6356c925201"
+   "id": "590f9f43ec7e2e450efa"
+  },
+  {
+   "sender": "FED",
+   "chip": "POLICY \u00b7 FED",
+   "tkr": "FED",
+   "category": "policy",
+   "cls": "watch",
+   "date": "November 5, 2026",
+   "ts": "2026-11-05T16:00:00+00:00",
+   "time": "16:00 UTC",
+   "head": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+   "note": "Official Federal Reserve release; open the source for the complete statement.",
+   "evi": "verified official release \u00b7 no inferred market direction",
+   "provenance": {
+    "provider": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+    "observed_at": "2026-11-05T16:00:00+00:00",
+    "retrieved_at": "2026-11-05T17:02:25+00:00"
+   },
+   "detail": {
+    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
+    "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+    "sub": "2026-11-05T16:00:00+00:00",
+    "sections": [
+     {
+      "h": "Official source",
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
+     }
+    ],
+    "pri": "Development only; market implications require separate sourced analysis."
+   },
+   "fit": {
+    "with": [
+     "bonds"
+    ],
+    "against": [
+     "bands",
+     "bide",
+     "bunker"
+    ],
+    "na": [
+     "apac",
+     "backfill",
+     "backlash",
+     "backsliders",
+     "backwards"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "5a71354767e05765fdcc"
   },
   {
    "sender": "FED",
@@ -231,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
     "observed_at": "2026-10-29T20:30:00+00:00",
-    "retrieved_at": "2026-11-05T09:32:35+00:00"
+    "retrieved_at": "2026-11-05T17:02:25+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -264,56 +314,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
    "id": "a4a4e03e1464a6c3b15b"
-  },
-  {
-   "sender": "FED",
-   "chip": "POLICY \u00b7 FED",
-   "tkr": "FED",
-   "category": "policy",
-   "cls": "watch",
-   "date": "October 28, 2026",
-   "ts": "2026-10-28T18:00:00+00:00",
-   "time": "18:00 UTC",
-   "head": "Federal Reserve issues FOMC statement",
-   "note": "Official Federal Reserve release; open the source for the complete statement.",
-   "evi": "verified official release \u00b7 no inferred market direction",
-   "provenance": {
-    "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-    "observed_at": "2026-10-28T18:00:00+00:00",
-    "retrieved_at": "2026-11-05T09:32:35+00:00"
-   },
-   "detail": {
-    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve issues FOMC statement",
-    "sub": "2026-10-28T18:00:00+00:00",
-    "sections": [
-     {
-      "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
-     }
-    ],
-    "pri": "Development only; market implications require separate sourced analysis."
-   },
-   "fit": {
-    "with": [
-     "bonds"
-    ],
-    "against": [
-     "bands",
-     "bide",
-     "bunker"
-    ],
-    "na": [
-     "apac",
-     "backfill",
-     "backlash",
-     "backsliders",
-     "backwards"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "bd002c0ee564ee23217a"
   }
  ]
 }
