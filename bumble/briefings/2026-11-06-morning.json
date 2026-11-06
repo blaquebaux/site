@@ -1,0 +1,61 @@
+{
+  "id": "2026-11-06-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse: Payrolls Test a Fragile AI Rebound",
+  "summary": "Verification pending: After Thursday's broad technology selloff, Friday's mixed futures and sharply weaker Asian equities precede the October employment report; wage inflation and financing transmission are the key tests.",
+  "edition_date": "2026-11-06",
+  "published_at": "2026-11-06T08:11:00-05:00",
+  "observed_at": "2026-11-06T08:05:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed",
+      "paragraphs": [
+        "Thursday's U.S. cash session closed sharply lower: Dow Jones Industrial Average down 3.44%, S&P 500 down 4.36%, Nasdaq Composite down 5.52% and Russell 2000 down 4.45%, according to Benzinga's November 6 market recap. These are previous-session closes, not Friday cash quotes.",
+        "Friday premarket U.S. index futures were mixed, with Nasdaq-linked contracts showing a tentative rebound while Dow futures weakened. Asian technology selling persisted: Benzinga reported South Korea's Kospi more than 6% lower and Japan's Nikkei around 6% lower. No synchronized 8:05 a.m. ET futures quote was established.",
+        "At the source's early New York snapshot, the 10-year U.S. Treasury yielded approximately 4.83%, the 2-year approximately 4.47%; WTI was around $89.78, Brent around $97.66 and the dollar index approximately 102.00. These are separately reported, non-streaming observations.",
+        "The October U.S. employment report is scheduled for 8:30 a.m. ET, after this edition's cutoff. A Reuters survey expects 65,000 nonfarm payroll gains versus 29,000 in September, 4.2% unemployment and 2.9% annual wage growth. These are forecasts, not released outcomes.",
+        "Broad investment-grade and high-yield credit spreads, AI issuer CDS and synchronized cash VIX levels were not independently established at the cutoff."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "The change since Thursday afternoon is an attempted stabilization in U.S. technology futures despite severe realized losses and continuing Asian equity weakness. A premarket bounce cannot establish that funding conditions or the economics of AI infrastructure have improved.",
+        "Payroll and wage data could move Treasury yields and the discount rate applied to capital-intensive projects. Stronger hiring may support demand but could reinforce rate-hike expectations; weaker hiring may ease rate pressure while increasing concerns about customer demand and credit quality.",
+        "The financing chain remains the more discriminating lens: hyperscaler cash generation, power and permitting constraints, equipment supplier order quality, lessor exposure and lender spreads may diverge sharply even when chip shares rebound."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "8:30 a.m. ET October payrolls: job gains, unemployment, wages, revisions and the immediate Treasury and dollar response.",
+        "Cash-session breadth and whether Friday's semiconductor rebound survives the open; compare with Thursday's all-sector drawdown.",
+        "Investment-grade/high-yield spreads and AI issuer CDS to test whether equity repricing is transmitting into actual borrowing costs.",
+        "Brent, Hormuz shipping and the dollar; distinguish changing physical supply from headlines.",
+        "November 10 CPI and the Federal Reserve's December rate path; do not infer a decision from one payroll release."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If payrolls and wages moderate without materially weakening demand, and credit spreads remain contained, a selective relief rebound becomes more plausible. It would still require confirmation from cash flows and financing terms.",
+        "If rates rise on resilient employment or credit spreads widen despite lower yields, the most capital-intensive AI projects may remain under pressure. No numerical probabilities or price targets are justified at this cutoff.",
+        "Verification pending: automated research synthesis, not a live quote feed; independent claim-by-claim editorial sign-off has not occurred."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: Friday's labor release tests more than rate expectations. The essential distinction is whether the AI equity drawdown stays a valuation adjustment or begins raising the financing costs of the infrastructure supply chain.",
+  "sources": [
+    {
+      "label": "Reuters, November 6: US job growth expected to pick up in October, with moderation in wage gains",
+      "url": "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/"
+    },
+    {
+      "label": "Benzinga via TradingView, November 6: US futures mixed ahead of October jobs report; global markets, yields and commodities",
+      "url": "https://www.tradingview.com/news/benzinga:35a561d25094b:0-stock-market-today-dow-jones-s-p-500-futures-trade-mixed-ahead-of-october-s-jobs-report-airbnb-cloudflare-lam-research-in-focus/"
+    }
+  ]
+}
