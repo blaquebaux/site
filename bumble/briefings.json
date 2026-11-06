@@ -2,6 +2,73 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-06-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Strong Payrolls Lift Yields as AI Shares Rebound",
+      "summary": "Verification pending: October payrolls exceeded expectations, strengthening the case for restrictive rates even as semiconductor shares recovered part of Thursday's losses.",
+      "edition_date": "2026-11-06",
+      "published_at": "2026-11-06T15:47:28-05:00",
+      "observed_at": "2026-11-06T15:19:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: Observed",
+          "paragraphs": [
+            "October nonfarm payrolls increased 165,000 against a Reuters consensus of 65,000; unemployment declined from 4.2% to 4.1%. August and September gains were revised upward by a combined 84,000. Average hourly earnings increased 0.4% month over month and 3.1% year over year, according to the U.S. Labor Department.",
+            "At approximately 2:10 p.m. ET, Reuters reported the Nasdaq Composite up 1.5%, the S&P 500 up 0.7%, and the Dow nearly unchanged. The rebound followed Thursday's sharp technology-led selloff; these are intraday quotes, not closing prices.",
+            "Reuters reported that the 2-year Treasury yield was approximately 4.52%, up 6 basis points, and the 10-year approximately 4.87%, up 3 basis points in its post-payroll snapshot. The dollar strengthened initially. Reuters cited a market-implied 78% probability of a December Federal Reserve rate increase, versus 70% earlier.",
+            "AI and semiconductor shares recovered selectively; Reuters reported that six of eleven S&P 500 sectors were positive in its intraday snapshot. Oil prices were slightly lower and remained on course for a substantial weekly decline. No synchronized investment-grade/high-yield spread, AI issuer CDS, or cash VIX reading was independently established."
+          ]
+        },
+        {
+          "heading": "What Mattered: Interpretation",
+          "paragraphs": [
+            "The decisive change since the morning edition is the release of unexpectedly strong employment data. Stronger hiring supports near-term demand but increases the risk that the discount rate and funding costs facing capital-intensive projects remain elevated.",
+            "The technology rebound is consistent with partial reversal of Thursday's forced or defensive selling; it does not by itself establish improving financing terms or a resolution of data-center permitting and power constraints.",
+            "The more informative comparison is between upstream chip demand and downstream customer economics. Higher rates can disproportionately affect projects with delayed utilization, long construction cycles or external financing needs."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Friday's final equity breadth and whether chip leadership persists through the close; avoid treating the intraday rebound as a weekly reversal.",
+            "Next week's U.S. inflation releases, including the scheduled November 10 CPI report; assess whether energy relief offsets persistent services and wage pressure.",
+            "Two-year and ten-year Treasury yields, the dollar, and December Federal Reserve repricing after payrolls.",
+            "Investment-grade and high-yield spreads, issuer CDS, data-center financing commitments and supplier order cancellations; evidence of credit transmission would be more consequential than equity volatility alone."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If inflation data soften while labor demand remains resilient and credit spreads stay contained, selective equity stabilization becomes more plausible.",
+            "If inflation remains sticky and financing premiums rise, the rebound may remain narrow, with the greatest vulnerability among infrastructure borrowers facing delayed cash returns. Neither scenario warrants a precise numerical probability or index target.",
+            "Verification pending: automated synthesis of cited public reports; no independent claim-by-claim editorial sign-off and no streaming market-data entitlement."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Payroll strength and recovering chip prices can coexist with higher funding costs. The decisive test is whether AI infrastructure borrowers and downstream customers can generate cash returns sufficient to service capital commitments.",
+      "sources": [
+        {
+          "label": "U.S. Department of Labor, Employment Situation October 2026",
+          "url": "https://www.dol.gov/newsroom/economicdata/empsit_11062026.pdf"
+        },
+        {
+          "label": "Reuters, November 6: US labor market regains ground as job growth surges",
+          "url": "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06/"
+        },
+        {
+          "label": "Reuters, November 6: Strong October jobs report sends yields higher",
+          "url": "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/"
+        },
+        {
+          "label": "Reuters, November 6: Nasdaq futures rise after steep AI selloff; intraday equities and oil",
+          "url": "https://www.aol.com/articles/nasdaq-futures-rise-steep-ai-094136000.html"
+        }
+      ]
+    },
+    {
       "id": "2026-11-06-morning",
       "kind": "morning",
       "status": "archived-unverified",
