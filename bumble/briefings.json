@@ -2,6 +2,94 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-07-weekly",
+      "kind": "weekly",
+      "status": "archived-unverified",
+      "title": "Weekly Brief | AI Financing Meets Resilient Labor and a Repriced Oil Market",
+      "summary": "Week of November 2-6, 2026: Nasdaq fell 3.4%, S&P 500 2.7%, and Dow 0.9% despite Friday's rebound. October payrolls rose 165,000; manufacturing and services expanded, but input-price indexes remained high. January Brent settled at $98.32 after a steep weekly decline amid continued Gulf risks.",
+      "edition_date": "2026-11-07",
+      "published_at": "2026-11-07T08:13:40-05:00",
+      "observed_at": "2026-11-06T17:00:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent human claim-by-claim editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened | November 2-6, 2026",
+          "paragraphs": [
+            "Equities: The Nasdaq Composite lost 3.4% for the week, the S&P 500 fell 2.7%, and the Dow declined 0.9%. Friday brought a partial recovery: Nasdaq +1.1% to 24,579.43, S&P 500 +0.32% to 7,376.86, and Dow -0.46% to 51,285.73. The Philadelphia semiconductor index rose 4.2% Friday, with AMD up 11% and Nvidia 2.8%, but the Nasdaq still recorded a fourth consecutive weekly decline. [Reuters, November 6]",
+            "Labor and rates: October payrolls rose 165,000 and unemployment was 4.1%. Average hourly earnings grew 0.4% month over month and 3.1% year over year; August and September payrolls were revised upward by a combined 84,000. Reuters reported December Fed rate-hike pricing at approximately 78% versus 70% earlier Friday. This is a market-implied probability, not a Federal Reserve commitment. [BLS, November 6; Reuters, November 6]",
+            "Activity and prices: October ISM manufacturing increased to 55.5 from 54.5, while services eased to 54.5 from 54.9. Manufacturing prices paid remained at 75.2 and services prices at 73.0. Both sectors expanded, but elevated input-price diffusion measures complicate the disinflation narrative. These survey indexes are not consumer inflation rates. [ISM manufacturing, November 2; ISM services, November 4]",
+            "Oil and policy: January Brent settled Friday at $98.32 and WTI at $90.83. Reuters described a roughly 17% weekly decline for the January Brent contract and 13% for WTI, despite continuing tanker attacks and uncertainty about Iran diplomacy. The November 3 U.S. midterms delivered Democratic control of both congressional chambers, shifting legislative and oversight expectations without predetermining policy outcomes. [Reuters oil, November 6; Reuters elections, November 4]",
+            "Market data limitations: A synchronized weekly closing series for corporate investment-grade/high-yield spreads, AI issuer CDS, cash VIX, and major currency pairs was not independently established. Their absence prevents a claim that equity stress has already become a system-wide credit event."
+          ]
+        },
+        {
+          "heading": "What Mattered | Interpretation",
+          "paragraphs": [
+            "The defining divergence was resilient economic activity alongside a sharp repricing of AI-linked equities. Strong payrolls and expansionary ISM readings support demand, yet they can also keep discount rates and financing costs elevated. Friday's chip rebound does not reverse the week's drawdown or demonstrate an improvement in borrowers' funding terms.",
+            "The most useful research unit is the AI financing chain, not the individual stock. Hyperscaler capital budgets create orders for accelerators, memory, networking and power infrastructure; developers and equipment lessors may fund those assets with debt or long-term commitments. Supplier revenue can grow while customer free-cash-flow conversion deteriorates. Policy and permitting delays would propagate differently through contracted suppliers, construction firms, utilities, lenders and end customers.",
+            "Oil's steep weekly decline potentially relieves energy-intensive consumers and inflation expectations, but the market is balancing improving supply expectations against unresolved military and shipping risks. The January Brent contract should not be conflated with the expiring December contract quoted the prior week. Lower crude prices alone cannot establish broad services disinflation.",
+            "The election changes the distribution of possible fiscal and regulatory outcomes, not their certainty. The more consequential confirmation would be observable changes in project permits, contracted capacity, bond issuance, credit spreads and realized infrastructure returns."
+          ]
+        },
+        {
+          "heading": "What We're Watching | November 9-13 and beyond",
+          "list": [
+            "Tuesday, November 10: October CPI and real earnings at 8:30 a.m. ET. Compare core inflation and shelter/services components with payroll resilience and the ISM price surveys.",
+            "Friday, November 13: October producer prices at 8:30 a.m. ET; distinguish changes in producer margins from costs ultimately passed through to customers.",
+            "Credit transmission: track new-issue concessions, IG/HY spreads, issuer CDS and bond performance for AI borrowers and suppliers. A broad spread move would be stronger evidence of contagion than equity weakness alone.",
+            "AI cash-flow map: reconcile hyperscaler capex, supplier backlog, customer concentration, power availability, lease guarantees, utilization and debt maturities. Identify which counterparty funds the project and which captures its operating return.",
+            "Energy and policy: verify actual Strait of Hormuz cargo movements, insurance and freight costs, contract-specific Brent curves, and concrete congressional proposals before treating headlines as implemented policy."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "Constructive conditional path: if October inflation softens, Gulf shipments remain resilient, and credit spreads stay contained, a selective recovery becomes more plausible. The strongest balance sheets and suppliers with demonstrable cash conversion would be better positioned than highly leveraged infrastructure developers.",
+            "Adverse conditional path: if sticky inflation sustains higher yields while data-center projects encounter delays or refinancing premiums rise, further dispersion and reduced capital commitments become more likely. Broad credit repricing would materially strengthen this case.",
+            "Base assessment: elevated dispersion and event-driven volatility remain plausible; a precise index target or numerical scenario probability is not supported by the evidence reviewed. Verification pending: this source-attributed automated edition has not received independent human claim-by-claim editorial sign-off and is not a live quote feed."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The Nasdaq lost 3.4% even as October hiring surprised positively and oil's war premium receded. The decisive variable is not whether AI demand exists; it is who finances capacity, who earns the resulting cash flow, and whether higher rates or delayed projects shift losses across the supply chain.",
+      "verification_note": "Verification pending: sources were consulted for the stated observations, but independent human claim-by-claim editorial verification has not occurred. Status archived-unverified. Weekly U.S. cash close and Friday oil settlements are through November 6, 2026; composite observation cutoff is 5:00 p.m. EST. Contract maturities and separate report times are distinguished. Missing synchronized credit, VIX and FX observations are not fabricated.",
+      "social_teaser": "AI demand is growing, yet the Nasdaq lost 3.4% this week. Strong payrolls can sustain demand while keeping financing expensive; cheaper oil does not resolve every inflation risk. The question is who funds AI infrastructure and who captures the cash returns. Full BLAQUE BAUX Weekly Brief: https://www.blaquebaux.com/bumble/#brief/2026-11-07-weekly",
+      "sources": [
+        {
+          "label": "Reuters, November 6, Wall Street Friday close and weekly index returns",
+          "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/"
+        },
+        {
+          "label": "BLS, November 6, October 2026 Employment Situation",
+          "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+        },
+        {
+          "label": "ISM, November 2, October 2026 Manufacturing PMI",
+          "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/october/"
+        },
+        {
+          "label": "ISM, November 4, October 2026 Services PMI",
+          "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        },
+        {
+          "label": "Reuters, November 6, January Brent and WTI settlements and weekly moves",
+          "url": "https://www.reuters.com/business/energy/oil-set-sharp-weekly-drop-middle-east-supply-concerns-provide-floor-2026-11-06/"
+        },
+        {
+          "label": "Reuters, November 6, oil supply and demand dynamics",
+          "url": "https://www.reuters.com/business/energy/high-oil-prices-curb-demand-fresh-signs-glut-appear-2026-11-06/"
+        },
+        {
+          "label": "Reuters, November 4, congressional election results",
+          "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+        },
+        {
+          "label": "BLS, November 2026, CPI and PPI release dates",
+          "url": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+      ]
+    },
+    {
       "id": "2026-11-06-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
