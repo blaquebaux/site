@@ -2,6 +2,77 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-09-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Broad Rebound Masks Nvidia Divergence",
+      "summary": "Verification pending: oil relief and broad equity gains reverse part of last week's selloff, while Nvidia's governance risk and AI financing questions persist.",
+      "edition_date": "2026-11-09",
+      "published_at": "2026-11-09T14:56:47-05:00",
+      "observed_at": "2026-11-09T12:41:40-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: Observed",
+          "paragraphs": [
+            "Monday's cash session turned the tentative morning stabilization into a broad rally. Reuters reported the Dow up 1.05%, S&P 500 up 0.81% and Nasdaq up 0.82% at the opening bell. A separately timestamped S&P 500 market snapshot at 12:41:40 p.m. EST showed a 2.29% gain. These observations are not closing returns.",
+            "The recovery was uneven within AI. Reuters reported brokerage assessments that last week's data-center regulation fears may have been excessive. Nvidia, however, remained under pressure amid an independent board investigation involving reported foreign-intelligence targeting of its chief executive. The allegations and their implications remain unresolved.",
+            "Oil declined as the perceived probability of renewed U.S. strikes on Iran eased. Reuters reported crude down more than 3% earlier Monday; the change in perceived risk does not establish a durable normalization of Gulf shipping. The 10-year Treasury yield was near 4.84% in morning reporting; no synchronized afternoon yield, dollar, cash VIX or broad credit-spread snapshot was independently established."
+          ]
+        },
+        {
+          "heading": "What Mattered: Interpretation",
+          "paragraphs": [
+            "The material change from the morning pulse is breadth: risk appetite improved across the wider equity market even as Nvidia-specific governance uncertainty persisted. That separation weakens the case for treating all AI companies as one trade.",
+            "Oil relief may ease inflation expectations and operating costs, but it does not settle the coming CPI release or the borrowing-cost question. Broker optimism about delayed rather than canceled data-center projects is a scenario, not proof that financing obligations or customer returns have improved.",
+            "The important transmission test remains whether AI infrastructure borrowers can preserve access to credit while suppliers and customers adjust their capital-spending timelines. No broad credit-contagion conclusion is warranted from isolated issuer stress."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Tuesday's October CPI: core and services components; Treasury, dollar and rate-expectations response.",
+            "Nvidia's board investigation and whether company-specific pressure spills into suppliers, competitors and chip-sector breadth.",
+            "Brent and physical Gulf shipping conditions; distinguish geopolitical risk premium from actual supply restoration.",
+            "CoreWeave and peer credit spreads, financing terms, customer utilization and cash conversion; seek comparable issuer and market-wide observations.",
+            "Whether Monday's equity breadth survives the next session rather than extrapolating a single rebound."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If energy relief persists, CPI is less inflationary than feared and credit conditions remain orderly, the probability of a more durable, selective recovery improves.",
+            "If inflation reprices rates higher or financing stress broadens despite rising equities, renewed dispersion and volatility become more plausible. Neither scenario supports precise numerical odds at this cutoff.",
+            "Verification pending: automated source-linked synthesis without independent claim-by-claim editorial sign-off or streaming market-data entitlement."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: A broad equity rebound alongside Nvidia weakness is evidence of differentiation, not an all-clear. Track whether cheaper energy and stronger risk appetite actually improve the cash-flow and financing chain linking data-center developers, suppliers, utilities and lenders.",
+      "sources": [
+        {
+          "label": "Reuters, November 9: Wall Street opens higher after last week's AI rout",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-higher-after-last-weeks-ai-rout-5012566"
+        },
+        {
+          "label": "MarketScreener S&P 500 market quote, November 9 at 12:41:40 p.m. EST",
+          "url": "https://www.marketscreener.com/news/s-p-500-falls-as-oil-tops-100-per-barrel-ce785bd9d08bf326"
+        },
+        {
+          "label": "Reuters, November 9: Wall Street brokerages reassess AI selloff and regulation risks",
+          "url": "https://www.reuters.com/business/finance/wall-st-brokerages-say-ai-selloff-overdone-downplay-democrat-regulation-risks-2026-11-09/"
+        },
+        {
+          "label": "Reuters, November 9: Global markets, Nvidia uncertainty and oil decline",
+          "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-09/"
+        },
+        {
+          "label": "Reuters, November 9: Stocks find firmer ground while oil falls",
+          "url": "https://uk.marketscreener.com/news/stocks-find-firmer-ground-but-nvidia-woes-pose-fresh-test-oil-falls-ce785fd3dd89f022"
+        }
+      ]
+    },
+    {
       "id": "2026-11-09-morning",
       "kind": "morning",
       "status": "archived-unverified",
