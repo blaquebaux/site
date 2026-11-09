@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-09T06:58:14+00:00",
+ "generated_at": "2026-11-09T17:13:40+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,20 +10,20 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "LASC",
+   "tkr": "CKX",
    "cls": "watch",
-   "pct": "+58%",
+   "pct": "+71%",
    "pdir": "up",
    "category": "equities",
    "date": "November 9, 2026",
    "ts": "2026-11-09T23:58",
    "time": "today",
-   "head": "Top gainer: +58% to $5.37",
+   "head": "Top gainer: +71% to $17.75",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "LASC \u00b7 +58% to $5.37",
+    "title": "CKX \u00b7 +71% to $17.75",
     "sub": "top gainer \u00b7 November 9, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "68c568847e77bfd35f28"
+   "id": "9acc71fd64da218d97b8"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "SKIN",
+   "tkr": "COHX",
    "cls": "watch",
-   "pct": "+52%",
+   "pct": "+38%",
    "pdir": "up",
    "category": "equities",
    "date": "November 9, 2026",
    "ts": "2026-11-09T23:58",
    "time": "today",
-   "head": "Top gainer: +52% to $15.71",
+   "head": "Top gainer: +38% to $11.87",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "SKIN \u00b7 +52% to $15.71",
+    "title": "COHX \u00b7 +38% to $11.87",
     "sub": "top gainer \u00b7 November 9, 2026",
     "sections": [
      {
@@ -109,25 +109,77 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "87ac753cd62de122f297"
+   "id": "abecbb2fa3144630b536"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "BDSX",
+   "tkr": "COHC",
    "cls": "watch",
-   "pct": "-57%",
+   "pct": "+37%",
+   "pdir": "up",
+   "category": "equities",
+   "date": "November 9, 2026",
+   "ts": "2026-11-09T23:58",
+   "time": "today",
+   "head": "Top gainer: +37% to $7.50",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "COHC \u00b7 +37% to $7.50",
+    "sub": "top gainer \u00b7 November 9, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "b770961d40b5cb748614"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "FTH",
+   "cls": "watch",
+   "pct": "-52%",
    "pdir": "dn",
    "category": "equities",
    "date": "November 9, 2026",
    "ts": "2026-11-09T23:57",
    "time": "today",
-   "head": "Top decliner: -57% to $8.53",
+   "head": "Top decliner: -52% to $10.53",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "BDSX \u00b7 -57% to $8.53",
+    "title": "FTH \u00b7 -52% to $10.53",
     "sub": "top decliner \u00b7 November 9, 2026",
     "sections": [
      {
@@ -161,59 +213,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "cccbdeff5d12bfeb127a"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "IONZ",
-   "cls": "watch",
-   "pct": "-46%",
-   "pdir": "dn",
-   "category": "equities",
-   "date": "November 9, 2026",
-   "ts": "2026-11-09T23:57",
-   "time": "today",
-   "head": "Top decliner: -46% to $23.83",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "IONZ \u00b7 -46% to $23.83",
-    "sub": "top decliner \u00b7 November 9, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "8e9c8b5ed1605a16302c"
+   "id": "c0c2b825279eb8a93eb6"
   },
   {
    "sender": "FED",
@@ -231,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
     "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-09T07:00:43+00:00"
+    "retrieved_at": "2026-11-09T17:17:08+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
     "observed_at": "2026-10-29T20:30:00+00:00",
-    "retrieved_at": "2026-11-09T07:00:43+00:00"
+    "retrieved_at": "2026-11-09T17:17:08+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
