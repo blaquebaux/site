@@ -1,0 +1,60 @@
+{
+  "id": "2026-11-09-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse: Oil Relief Meets a New Nvidia Governance Test",
+  "summary": "Verification pending: oil eases and global equities stabilize after last week's rout, but Nvidia-specific governance uncertainty and AI credit stress complicate the recovery.",
+  "edition_date": "2026-11-09",
+  "published_at": "2026-11-09T07:55:34-05:00",
+  "observed_at": "2026-11-09T06:16:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed",
+      "paragraphs": [
+        "Monday premarket reporting showed tentative global equity stabilization following last week's technology-led decline. Reuters reported Asia-Pacific shares outside Japan up 1.25% and the MSCI World index up 0.5% in its Monday global-markets account. These are separately timed observations, not U.S. cash-market returns.",
+        "Nvidia shares were reported down more than 4% in premarket trading amid an internal investigation concerning reported foreign-intelligence targeting of CEO Jensen Huang. This is a company-specific governance uncertainty; the investigation's outcome is not established.",
+        "At 6:16 a.m. ET, Reuters reported Brent crude down 1.8% near $96 per barrel, with lower perceived risk of renewed U.S. strikes on Iran but continuing shipping-security concerns near the Strait of Hormuz. Gold was reported up 0.9%.",
+        "Reuters' Monday global-markets report placed the U.S. 10-year Treasury yield near 4.84%, the dollar index down 0.4% near 101.81, and market pricing for a December quarter-point Fed rate increase around 80%. These figures are not a synchronized 6:16 a.m. snapshot. Reuters also reported that protection costs on CoreWeave debt had recently risen into distressed territory; no comparable broad credit-spread or cash VIX reading was established."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "The principal change from Friday's afternoon pulse is a renewed oil decline alongside tentative global risk stabilization, rather than an extension of Friday's U.S. semiconductor rebound. Nvidia's governance risk may prevent broad AI sentiment from recovering uniformly.",
+        "Lower oil may ease near-term inflation expectations and sovereign borrowing costs, but does not settle the underlying inflation question ahead of Tuesday's CPI. The more consequential AI transmission channel remains financing: a supplier's equity recovery does not prove a leveraged customer's credit access or project cash economics have improved.",
+        "Reported CoreWeave debt-insurance stress warrants closer scrutiny of counterparties, equipment lessors, infrastructure lenders and hyperscaler commitments. It does not, by itself, establish systemwide corporate-credit contagion."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "Tuesday's U.S. October CPI: headline and core components, especially services, and the subsequent Treasury and dollar response.",
+        "CoreWeave, Applied Materials and Cisco earnings: contracted demand, capex funding, customer concentration, utilization and free-cash-flow conversion.",
+        "Nvidia investigation developments and whether company-specific selling spreads into suppliers and broader semiconductor breadth.",
+        "Brent, actual Gulf shipping activity and insurance conditions; distinguish physical supply normalization from changing geopolitical risk premiums.",
+        "Two-year and ten-year yields, CoreWeave and peer CDS, investment-grade and high-yield spreads, and cash VIX once comparable observations become available."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If oil relief persists, CPI moderates and financing spreads remain contained, selective equity stabilization becomes more plausible.",
+        "If inflation remains sticky or AI borrower financing premiums widen while Nvidia uncertainty persists, technology recovery could remain uneven. Neither scenario supports a defensible numerical probability or index target at this observation cutoff.",
+        "Verification pending: source-linked automated synthesis, without independent claim-by-claim editorial sign-off or streaming market-data entitlement."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: Oil relief may improve discount-rate expectations, but the next decisive test is credit transmission. Watch whether AI infrastructure customers can finance commitments and convert utilization into cash, not just whether chip shares bounce.",
+  "sources": [
+    {
+      "label": "Reuters, November 9: Global stocks stabilize as Nvidia worries and oil retreat",
+      "url": "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/"
+    },
+    {
+      "label": "Reuters, November 9: Canadian futures rise as oil falls; 6:16 a.m. ET snapshot",
+      "url": "https://www.reuters.com/business/tsx-futures-climb-softer-oil-eases-inflation-worries-us-inflation-data-awaited-2026-11-09/"
+    }
+  ]
+}
