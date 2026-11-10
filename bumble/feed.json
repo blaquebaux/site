@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-09T18:43:32+00:00",
+ "generated_at": "2026-11-10T00:47:09+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,21 +10,21 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "MF",
+   "tkr": "SMX",
    "cls": "watch",
-   "pct": "+40%",
+   "pct": "+90%",
    "pdir": "up",
    "category": "equities",
-   "date": "November 9, 2026",
-   "ts": "2026-11-09T23:58",
+   "date": "November 10, 2026",
+   "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +40% to $14.85",
+   "head": "Top gainer: +90% to $9.35",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "MF \u00b7 +40% to $14.85",
-    "sub": "top gainer \u00b7 November 9, 2026",
+    "title": "SMX \u00b7 +90% to $9.35",
+    "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
       "h": "Read",
@@ -57,26 +57,26 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "f156dddede53da70a413"
+   "id": "0889929ae623029e3ab5"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "COHC",
+   "tkr": "TANH",
    "cls": "watch",
-   "pct": "+37%",
+   "pct": "+66%",
    "pdir": "up",
    "category": "equities",
-   "date": "November 9, 2026",
-   "ts": "2026-11-09T23:58",
+   "date": "November 10, 2026",
+   "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +37% to $7.48",
+   "head": "Top gainer: +66% to $19.34",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "COHC \u00b7 +37% to $7.48",
-    "sub": "top gainer \u00b7 November 9, 2026",
+    "title": "TANH \u00b7 +66% to $19.34",
+    "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
       "h": "Read",
@@ -109,26 +109,26 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "491c4991a68521d1ab5d"
+   "id": "842f5bce281da28fe9a2"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "COHX",
+   "tkr": "CKX",
    "cls": "watch",
-   "pct": "+36%",
+   "pct": "+58%",
    "pdir": "up",
    "category": "equities",
-   "date": "November 9, 2026",
-   "ts": "2026-11-09T23:58",
+   "date": "November 10, 2026",
+   "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +36% to $11.69",
+   "head": "Top gainer: +58% to $16.40",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "COHX \u00b7 +36% to $11.69",
-    "sub": "top gainer \u00b7 November 9, 2026",
+    "title": "CKX \u00b7 +58% to $16.40",
+    "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
       "h": "Read",
@@ -161,26 +161,26 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "4446cf7d0162fbda1e2e"
+   "id": "5aa16ed3d7da5f4dded4"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "FTH",
    "cls": "watch",
-   "pct": "-44%",
+   "pct": "-42%",
    "pdir": "dn",
    "category": "equities",
-   "date": "November 9, 2026",
-   "ts": "2026-11-09T23:57",
+   "date": "November 10, 2026",
+   "ts": "2026-11-10T23:57",
    "time": "today",
-   "head": "Top decliner: -44% to $12.31",
+   "head": "Top decliner: -42% to $12.68",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "FTH \u00b7 -44% to $12.31",
-    "sub": "top decliner \u00b7 November 9, 2026",
+    "title": "FTH \u00b7 -42% to $12.68",
+    "sub": "top decliner \u00b7 November 10, 2026",
     "sections": [
      {
       "h": "Read",
@@ -213,7 +213,57 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "af52a76f0104d096e007"
+   "id": "970381ed5dde927fc548"
+  },
+  {
+   "sender": "FED",
+   "chip": "POLICY \u00b7 FED",
+   "tkr": "FED",
+   "category": "policy",
+   "cls": "watch",
+   "date": "November 9, 2026",
+   "ts": "2026-11-09T21:00:00+00:00",
+   "time": "21:00 UTC",
+   "head": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+   "note": "Official Federal Reserve release; open the source for the complete statement.",
+   "evi": "verified official release \u00b7 no inferred market direction",
+   "provenance": {
+    "provider": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
+    "observed_at": "2026-11-09T21:00:00+00:00",
+    "retrieved_at": "2026-11-10T00:49:06+00:00"
+   },
+   "detail": {
+    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
+    "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+    "sub": "2026-11-09T21:00:00+00:00",
+    "sections": [
+     {
+      "h": "Official source",
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm"
+     }
+    ],
+    "pri": "Development only; market implications require separate sourced analysis."
+   },
+   "fit": {
+    "with": [
+     "bonds"
+    ],
+    "against": [
+     "bands",
+     "bide",
+     "bunker"
+    ],
+    "na": [
+     "apac",
+     "backfill",
+     "backlash",
+     "backsliders",
+     "backwards"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "66a76f7f4b9077365875"
   },
   {
    "sender": "FED",
@@ -231,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
     "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-09T18:46:15+00:00"
+    "retrieved_at": "2026-11-10T00:49:06+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -264,56 +314,6 @@
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
    "id": "5a71354767e05765fdcc"
-  },
-  {
-   "sender": "FED",
-   "chip": "POLICY \u00b7 FED",
-   "tkr": "FED",
-   "category": "policy",
-   "cls": "watch",
-   "date": "October 29, 2026",
-   "ts": "2026-10-29T20:30:00+00:00",
-   "time": "20:30 UTC",
-   "head": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-   "note": "Official Federal Reserve release; open the source for the complete statement.",
-   "evi": "verified official release \u00b7 no inferred market direction",
-   "provenance": {
-    "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
-    "observed_at": "2026-10-29T20:30:00+00:00",
-    "retrieved_at": "2026-11-09T18:46:15+00:00"
-   },
-   "detail": {
-    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-    "sub": "2026-10-29T20:30:00+00:00",
-    "sections": [
-     {
-      "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm"
-     }
-    ],
-    "pri": "Development only; market implications require separate sourced analysis."
-   },
-   "fit": {
-    "with": [
-     "bonds"
-    ],
-    "against": [
-     "bands",
-     "bide",
-     "bunker"
-    ],
-    "na": [
-     "apac",
-     "backfill",
-     "backlash",
-     "backsliders",
-     "backwards"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "a4a4e03e1464a6c3b15b"
   }
  ]
 }
