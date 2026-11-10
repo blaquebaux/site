@@ -2,6 +2,79 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-10-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "edition_date": "2026-11-10",
+      "title": "Market Pulse: Hot CPI Reverses Monday's Risk Rally",
+      "summary": "October inflation exceeded expectations; Treasury yields rose sharply and technology shares retreated despite falling oil. Verification pending: independently checked source coverage is incomplete; figures are dated intraday observations, not live quotes.",
+      "published_at": "2026-11-10T14:55:00-05:00",
+      "observed_at": "2026-11-10T14:20:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: observed",
+          "paragraphs": [
+            "October U.S. headline CPI rose 0.4% month over month against a 0.3% Reuters consensus; core CPI rose 0.3%, above the 0.2% forecast. Year-over-year October comparisons were unavailable because the October 2025 collection was disrupted by the government shutdown. Sources: Reuters via Economic Times and Straits Times.",
+            "At approximately 2:20 p.m. ET, a contemporaneous market report placed the Dow down 0.50%, S&P 500 down 0.72% and Nasdaq down 1.17%. Earlier Reuters reporting at 12:03 p.m. showed the S&P 500 down 0.85% and Nasdaq down 1.27%; these are different snapshots, not closing returns.",
+            "The two-year Treasury yield rose sharply after CPI; Reuters reported an approximately 21.4 basis-point increase in its midday account. A separate bond-market report placed the 10-year yield near 5.00% and the two-year near 4.74%. Oil fell as the perceived risk of renewed U.S. strikes on Iran diminished; Brent briefly traded below $90 before rebounding. The dollar strengthened and gold weakened after the inflation surprise.",
+            "No synchronized investment-grade or high-yield spreads, issuer CDS, or cash VIX reading was established at the cutoff. Verification pending: figures are sourced to contemporaneous reporting, but not every underlying quote has been independently cross-checked."
+          ]
+        },
+        {
+          "heading": "What Mattered: interpretation",
+          "paragraphs": [
+            "The decisive change since the morning pulse is that actual CPI surprised to the upside. Lower oil has not yet translated into sufficiently broad disinflation to prevent higher expected policy rates. The selloff therefore reflects both higher discount rates and renewed concern about the cost of financing AI infrastructure.",
+            "The distinction matters across the supply chain: chip suppliers can report strong orders while developers, power providers and leveraged operators face a higher weighted average cost of capital. Equity declines alone do not establish credit contagion; issuer-level bond spreads and refinancing terms are needed to test that thesis."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Fed commentary and December rate-hike pricing, particularly whether markets increasingly price a 50-basis-point move.",
+            "Two-year and ten-year Treasury yields, the dollar and whether today's repricing persists after the close.",
+            "Issuer-level financing terms for AI infrastructure, including CoreWeave and peers; distinguish credit-spread widening from Treasury-driven yield increases.",
+            "Friday's producer-price report and whether pipeline inflation confirms or challenges the CPI signal.",
+            "Oil shipping and physical Gulf export conditions; lower geopolitical risk premiums do not prove restored supply."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If subsequent inflation measures soften and credit spreads remain orderly, selective stabilization is plausible even with policy rates higher for longer. If price pressure persists and funding spreads widen, capital-intensive technology and infrastructure borrowers face greater downside risk. Current evidence does not justify precise scenario probabilities or index targets."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: The key transmission channel is now the price of capital. Cheaper oil can lower operating costs, but a hotter CPI increases the discount rate and financing burden for AI infrastructure; monitor borrowers, counterparties and customer cash conversion rather than equity prices alone.",
+      "sources": [
+        {
+          "label": "Reuters, U.S. consumer prices rise above expectations, November 10",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-consumer-prices-rise-above-expectations-in-october/articleshow/135712897.cms"
+        },
+        {
+          "label": "Reuters, Wall Street falls as hot inflation fuels rate-hike jitters, November 10",
+          "url": "https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/"
+        },
+        {
+          "label": "UOL, U.S. equities at approximately 2:20 p.m., November 10",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/11/10/bolsas-dos-eua-caem-apos-dado-de-inflacao-ipo-da-anthropic-fica-no-radar.ghtm"
+        },
+        {
+          "label": "MarketWatch, Treasury yield repricing, November 10",
+          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/treasury-yields-up-sharply-with-2-year-rates-on-track-for-their-biggest-daily-gain-since-april-2025-AlCyFhVki7ADytg0H3wN"
+        },
+        {
+          "label": "Financial Times, oil falls below $90, November 10",
+          "url": "https://www.ft.com/content/07bdb58c-4557-4def-b8cb-db9be304fd72"
+        },
+        {
+          "label": "Reuters via Straits Times, October CPI and missing annual comparison",
+          "url": "https://www.straitstimes.com/business/us-consumer-prices-rise-above-expectations-in-october"
+        }
+      ]
+    },
+    {
       "id": "2026-11-10-morning",
       "kind": "morning",
       "status": "archived-unverified",
