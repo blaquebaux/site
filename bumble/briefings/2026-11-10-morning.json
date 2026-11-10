@@ -1,0 +1,64 @@
+{
+  "id": "2026-11-10-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse: Oil Relief Meets a Firmer Fed Before CPI",
+  "summary": "Verification pending: oil retreats and global equities recover, but Waller's December tightening stance leaves the inflation and financing test unresolved.",
+  "edition_date": "2026-11-10",
+  "published_at": "2026-11-10T08:03:28-05:00",
+  "observed_at": "2026-11-10T07:50:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research desk; independent editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed",
+      "paragraphs": [
+        "Before the 8:30 a.m. EST October CPI release, Reuters reported S&P 500 futures up about 0.1% after Monday's strong cash-session rebound; the Nasdaq had closed Monday 2.7% higher. Earlier Tuesday, South Korea's KOSPI advanced 4.4% and Japan's Nikkei 2.9% in Reuters' global-market report. These are separately timed observations, not synchronized U.S. cash quotes.",
+        "Brent futures declined more than 1.5% and briefly traded below $90 per barrel as investors reassessed the likelihood of further U.S. strikes against Iran. Prospective diplomacy is not confirmed physical supply normalization.",
+        "Fed Governor Christopher Waller said he would support a 25-basis-point December rate increase even if inflation cooled as expected and would consider 50 basis points if core monthly CPI reached 0.3% or higher. Reuters reported Treasury yields rising and the dollar steadying after his remarks. Monday's market-implied December hike probability was about 85%; it is not a synchronized Tuesday quote.",
+        "Reuters' economist survey anticipated October headline CPI of 0.3% month over month and core CPI of 0.2%; these are forecasts, not released readings. BLS will not publish headline or core 12-month comparisons where October 2025 data are missing because of the shutdown. Synchronized cash VIX, corporate credit spreads and issuer CDS were not established for this edition."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "The principal change from Monday afternoon is that the oil-led relief trade now faces an explicit hawkish policy signal before CPI. Cheaper energy can ease operating costs, yet a higher expected policy path can raise discount rates and borrowing costs simultaneously.",
+        "Monday's broad rebound and Tuesday's overseas gains do not resolve the financing economics of AI infrastructure. The transmission worth measuring is whether project developers, power providers, equipment vendors and lenders can sustain commitments at prevailing capital costs.",
+        "The missing October 2025 CPI comparison makes month-on-month composition and the rates response more informative than an invented annual inflation estimate."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "8:30 a.m. EST CPI: headline and core monthly changes, shelter and services components; compare with the 0.3% and 0.2% Reuters forecasts.",
+        "Two-year and ten-year Treasury yields, dollar and Fed futures immediately after CPI; distinguish rate repricing from equity relief.",
+        "Brent and physical Gulf shipping, including tanker insurance and export volumes, for confirmation of lower energy risk.",
+        "CoreWeave results and peer AI infrastructure financing terms, issuer CDS and investment-grade/high-yield spreads; do not infer broad credit contagion from one borrower.",
+        "Whether U.S. semiconductor and broader equity participation persists after the cash open."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If monthly core inflation undershoots expectations while energy prices stay lower and credit spreads remain orderly, a selective recovery becomes more plausible despite the Fed's tightening bias.",
+        "If inflation is sticky and short-term yields rise, financing-sensitive infrastructure valuations may face renewed pressure even if demand remains resilient. The available evidence does not support precise numerical probabilities.",
+        "Verification pending: source-linked automated synthesis without independent claim-by-claim editorial sign-off or a synchronized streaming market-data feed."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: Lower oil can help data-center operating economics, but Waller's tightening stance may increase the cost of funding that same capacity. Watch the spread between supplier revenue growth, customer free cash flow and project borrowing costs, not equities alone.",
+  "sources": [
+    {
+      "label": "Reuters, November 10: World stocks bounce as oil slides ahead of CPI",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-10/"
+    },
+    {
+      "label": "Reuters, November 10: Fed Governor Waller supports December rate increase",
+      "url": "https://www.reuters.com/business/feds-waller-plans-support-least-quarter-point-rate-hike-december-2026-11-10/"
+    },
+    {
+      "label": "Reuters, November 10: October CPI expectations and missing annual comparisons",
+      "url": "https://www.reuters.com/business/us-consumer-prices-expected-have-risen-slower-pace-october-2026-11-10/"
+    }
+  ]
+}
