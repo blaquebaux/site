@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-10T12:34:34+00:00",
+ "generated_at": "2026-11-10T15:59:32+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -12,18 +12,18 @@
    "chip": "TAPE",
    "tkr": "SMX",
    "cls": "watch",
-   "pct": "+90%",
+   "pct": "+89%",
    "pdir": "up",
    "category": "equities",
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +90% to $9.35",
+   "head": "Top gainer: +89% to $17.63",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "SMX \u00b7 +90% to $9.35",
+    "title": "SMX \u00b7 +89% to $17.63",
     "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "0889929ae623029e3ab5"
+   "id": "53a60c1f6fbb3fffdd2c"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "TANH",
+   "tkr": "NCI",
    "cls": "watch",
-   "pct": "+66%",
+   "pct": "+39%",
    "pdir": "up",
    "category": "equities",
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +66% to $19.34",
+   "head": "Top gainer: +39% to $6.45",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "TANH \u00b7 +66% to $19.34",
+    "title": "NCI \u00b7 +39% to $6.45",
     "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "842f5bce281da28fe9a2"
+   "id": "1055a30094711e2b544a"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "CKX",
+   "tkr": "SECZ",
    "cls": "watch",
-   "pct": "+58%",
+   "pct": "+35%",
    "pdir": "up",
    "category": "equities",
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +58% to $16.40",
+   "head": "Top gainer: +35% to $9.38",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CKX \u00b7 +58% to $16.40",
+    "title": "SECZ \u00b7 +35% to $9.38",
     "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
@@ -161,25 +161,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "5aa16ed3d7da5f4dded4"
+   "id": "6beff1b8cf626a62a031"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "FTH",
+   "tkr": "APPS",
    "cls": "watch",
-   "pct": "-42%",
+   "pct": "-35%",
    "pdir": "dn",
    "category": "equities",
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:57",
    "time": "today",
-   "head": "Top decliner: -42% to $12.68",
+   "head": "Top decliner: -35% to $7.33",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "FTH \u00b7 -42% to $12.68",
+    "title": "APPS \u00b7 -35% to $7.33",
     "sub": "top decliner \u00b7 November 10, 2026",
     "sections": [
      {
@@ -213,7 +213,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "970381ed5dde927fc548"
+   "id": "92b8b2a4e6af1120ce82"
   },
   {
    "sender": "FED",
@@ -231,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
     "observed_at": "2026-11-09T21:00:00+00:00",
-    "retrieved_at": "2026-11-10T12:34:49+00:00"
+    "retrieved_at": "2026-11-10T16:01:08+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -281,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
     "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-10T12:34:49+00:00"
+    "retrieved_at": "2026-11-10T16:01:08+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
