@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-10T20:47:46+00:00",
+ "generated_at": "2026-11-10T21:42:45+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -18,12 +18,12 @@
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +58% to $30.50",
+   "head": "Top gainer: +58% to $30.56",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "TANH \u00b7 +58% to $30.50",
+    "title": "TANH \u00b7 +58% to $30.56",
     "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "358395d93c45b9b5d07d"
+   "id": "e1f7e81ea17e46b046dd"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "ZIP",
    "cls": "watch",
-   "pct": "+50%",
+   "pct": "+54%",
    "pdir": "up",
    "category": "equities",
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +50% to $6.44",
+   "head": "Top gainer: +54% to $6.59",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "ZIP \u00b7 +50% to $6.44",
+    "title": "ZIP \u00b7 +54% to $6.59",
     "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "08ec7ba5adfb360d44ae"
+   "id": "2f8357298dd752c5d16a"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "STAK",
+   "tkr": "NCI",
    "cls": "watch",
-   "pct": "+44%",
+   "pct": "+40%",
    "pdir": "up",
    "category": "equities",
    "date": "November 10, 2026",
    "ts": "2026-11-10T23:58",
    "time": "today",
-   "head": "Top gainer: +44% to $5.89",
+   "head": "Top gainer: +40% to $6.48",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "STAK \u00b7 +44% to $5.89",
+    "title": "NCI \u00b7 +40% to $6.48",
     "sub": "top gainer \u00b7 November 10, 2026",
     "sections": [
      {
@@ -161,7 +161,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "7e7016df64f74f1ade7a"
+   "id": "c716d3b5745a7a1e4308"
   },
   {
    "sender": "FED",
@@ -179,7 +179,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
     "observed_at": "2026-11-09T21:00:00+00:00",
-    "retrieved_at": "2026-11-10T20:49:38+00:00"
+    "retrieved_at": "2026-11-10T21:44:29+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -285,7 +285,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
     "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-10T20:49:38+00:00"
+    "retrieved_at": "2026-11-10T21:44:29+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
