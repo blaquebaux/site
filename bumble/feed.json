@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-11T09:19:14+00:00",
+ "generated_at": "2026-11-11T16:48:08+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,20 +10,20 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "TANH",
+   "tkr": "CRWX",
    "cls": "watch",
-   "pct": "+58%",
+   "pct": "+52%",
    "pdir": "up",
    "category": "equities",
    "date": "November 11, 2026",
    "ts": "2026-11-11T23:58",
    "time": "today",
-   "head": "Top gainer: +58% to $30.56",
+   "head": "Top gainer: +52% to $7.89",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "TANH \u00b7 +58% to $30.56",
+    "title": "CRWX \u00b7 +52% to $7.89",
     "sub": "top gainer \u00b7 November 11, 2026",
     "sections": [
      {
@@ -57,25 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "01825e2680f837e24a4c"
+   "id": "b3a6bd88ade96b340d24"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "ZIP",
+   "tkr": "CWVX",
    "cls": "watch",
-   "pct": "+54%",
+   "pct": "+51%",
    "pdir": "up",
    "category": "equities",
    "date": "November 11, 2026",
    "ts": "2026-11-11T23:58",
    "time": "today",
-   "head": "Top gainer: +54% to $6.59",
+   "head": "Top gainer: +51% to $6.08",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "ZIP \u00b7 +54% to $6.59",
+    "title": "CWVX \u00b7 +51% to $6.08",
     "sub": "top gainer \u00b7 November 11, 2026",
     "sections": [
      {
@@ -109,25 +109,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "d410e3290aec775ce925"
+   "id": "dce52ae8c095d2e5590c"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "NCI",
+   "tkr": "CRWG",
    "cls": "watch",
-   "pct": "+40%",
+   "pct": "+51%",
    "pdir": "up",
    "category": "equities",
    "date": "November 11, 2026",
    "ts": "2026-11-11T23:58",
    "time": "today",
-   "head": "Top gainer: +40% to $6.48",
+   "head": "Top gainer: +51% to $7.24",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NCI \u00b7 +40% to $6.48",
+    "title": "CRWG \u00b7 +51% to $7.24",
     "sub": "top gainer \u00b7 November 11, 2026",
     "sections": [
      {
@@ -161,46 +161,48 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "4e1e6796332888f54580"
+   "id": "a3b03d85c5a9b4949047"
   },
   {
-   "sender": "EDGAR",
-   "chip": "EDGAR \u00b7 13D/A",
-   "tkr": "TACT",
-   "cls": "buy",
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "AXTQ",
+   "cls": "watch",
+   "pct": "-46%",
+   "pdir": "dn",
    "category": "equities",
-   "date": "November 10, 2026",
-   "ts": "2026-11-10",
-   "time": "11-10",
-   "head": "Gillman Charles M adds to a stake (accumulation)",
-   "note": "13D signals intent to influence: a board push, capital return, or a sale. Announcement pop, then board-dependent.",
-   "evi": "activist \u00b7 real pop, fades",
+   "date": "November 11, 2026",
+   "ts": "2026-11-11T23:57",
+   "time": "today",
+   "head": "Top decliner: -46% to $26.71",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
-    "kicker": "EDGAR \u00b7 SC 13D \u00b7 ACTIVIST",
-    "title": "TACT \u00b7 Gillman Charles M",
-    "sub": "TRANSACT TECHNOLOGIES INC \u00b7 amendment (accumulation) \u00b7 2026-11-10",
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "AXTQ \u00b7 -46% to $26.71",
+    "sub": "top decliner \u00b7 November 11, 2026",
     "sections": [
      {
       "h": "Read",
-      "p": "A 13D (not a passive 13G) puts an activist on the register with stated intent. Typical playbook: cost cuts, capital return, a strategic review, or a sale."
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
      }
     ],
-    "pri": "Potential outcome: initial pop, then path-dependent on the board's response; the documented activist premium fades without a catalyst."
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
    },
    "fit": {
     "with": [
-     "benchmark",
-     "blackstone",
-     "broad",
-     "bigbrother",
-     "blue"
-    ],
-    "against": [
      "bleed",
      "bear",
      "bombs-away",
      "breach",
      "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
     ],
     "na": [
      "apac",
@@ -209,9 +211,9 @@
      "bargain",
      "barrel"
     ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "d5d3a87c07b2f8872390"
+   "id": "72df66a7b77ad818f82f"
   },
   {
    "sender": "FED",
@@ -229,7 +231,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
     "observed_at": "2026-11-09T21:00:00+00:00",
-    "retrieved_at": "2026-11-11T09:19:40+00:00"
+    "retrieved_at": "2026-11-11T16:50:36+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -279,7 +281,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
     "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-11T09:19:40+00:00"
+    "retrieved_at": "2026-11-11T16:50:36+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
