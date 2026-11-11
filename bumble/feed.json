@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-11T01:37:38+00:00",
+ "generated_at": "2026-11-11T01:54:35+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -179,7 +179,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
     "observed_at": "2026-11-09T21:00:00+00:00",
-    "retrieved_at": "2026-11-11T01:39:49+00:00"
+    "retrieved_at": "2026-11-11T01:57:10+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -285,7 +285,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
     "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-11T01:39:49+00:00"
+    "retrieved_at": "2026-11-11T01:57:10+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
