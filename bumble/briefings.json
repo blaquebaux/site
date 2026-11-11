@@ -2,6 +2,61 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-11-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "AI Relief Rally Broadens, but Financing Confirmation Waits",
+      "summary": "CoreWeave's earnings-driven rebound lifted semiconductors and U.S. equities, while higher oil and a firmer dollar underscored persistent inflation risks. Veterans Day bond-market closure limits confirmation from rates and credit. Verification pending: sourced market snapshots have not received independent human claim-by-claim editorial sign-off.",
+      "published_at": "2026-11-11T15:03:00-05:00",
+      "observed_at": "2026-11-11T15:00:00-05:00",
+      "edition_date": "2026-11-11T15:00:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: observed facts",
+          "paragraphs": [
+            "Reuters' Wednesday intraday report showed the S&P 500 up 1.33%, Nasdaq Composite up 1.80%, and Philadelphia semiconductor index up about 7%. CoreWeave gained more than 20%, Nvidia rose 3.8%, and AI infrastructure peers Nebius and Applied Digital each advanced at least 10%. These are source-reported intraday observations, not closing returns.",
+            "CoreWeave projected adjusted profitability in the first half of 2028, citing demand and customer commitments. The CBOE VIX was reported at 17.63, declining for a fourth session from a recent peak of 28.36.",
+            "Reuters separately reported Brent up 2.68% to $93.94 a barrel, WTI up 2.39% to $88.08, and the dollar index up 0.64% to 102.86. Expectations of tighter Federal Reserve policy followed Tuesday's inflation surprise; U.S. Treasury cash markets were closed for Veterans Day. A contemporaneous investment-grade/high-yield spread or issuer-CDS snapshot was not established."
+          ]
+        },
+        {
+          "heading": "What Mattered: interpretation",
+          "paragraphs": [
+            "The change since the morning pulse is confirmation of the AI rebound in cash equities, accompanied by lower implied equity volatility. The recovery is not yet confirmation of improved financing terms: CoreWeave's prospective adjusted profitability is distinct from current free cash flow, debt service and refinancing capacity.",
+            "Oil and the dollar rising together challenge a simple disinflation-led relief narrative. The bond holiday means a critical price-of-capital signal is unavailable during the rally. Equipment suppliers, infrastructure operators, utilities and lenders can benefit or suffer at different points in the capital cycle."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Thursday's Treasury and credit-market reopening: two- and ten-year yields, investment-grade and high-yield spreads, and AI-linked borrower financing costs.",
+            "CoreWeave's customer prepayments, cash conversion, maturities and capacity commitments versus projected adjusted profitability.",
+            "Whether semiconductor gains broaden into nontechnology sectors; VIX behavior and market breadth after the rebound.",
+            "Brent, physical Gulf shipping and insurance costs; Friday's producer-price release and its implications for monetary-policy expectations."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If customer commitments convert into cash and credit spreads remain orderly when bonds reopen, selective AI infrastructure stabilization becomes more plausible. If refinancing premiums rise while inflation and energy costs stay elevated, renewed dispersion between hardware suppliers and capital-intensive operators becomes more likely. No defensible numeric probabilities or index targets follow from today's evidence."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: A 7% semiconductor rally can coexist with untested borrower financing risk. The next confirmation should come from credit prices, cash conversion and contractual counterparties, not equity momentum alone.",
+      "sources": [
+        {
+          "label": "Reuters, November 11: Stocks climb as CoreWeave results ease AI spending concerns",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/"
+        },
+        {
+          "label": "Reuters, November 11: Stocks gain as CoreWeave eases worries; dollar strengthens",
+          "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
+        }
+      ]
+    },
+    {
       "id": "2026-11-11-morning",
       "kind": "morning",
       "status": "archived-unverified",
