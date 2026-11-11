@@ -2,6 +2,75 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-11-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Market Pulse: AI Cloud Results Lift Futures as Oil Rebounds",
+      "summary": "AI infrastructure shares recover after CoreWeave's results, despite Tuesday's inflation-driven rate repricing. Veterans Day closes the U.S. bond market while equities remain open. Verification pending: automated source review is not independent human editorial sign-off.",
+      "edition_date": "2026-11-11T08:04:00-05:00",
+      "published_at": "2026-11-11T08:04:00-05:00",
+      "observed_at": "2026-11-11T08:04:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; human verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: Observed Facts",
+          "paragraphs": [
+            "Premarket reporting Wednesday showed S&P 500 futures up approximately 0.86% and Nasdaq 100 futures up 1.9%, while Dow futures advanced 0.11%. CoreWeave rose more than 13% premarket after results and a forecast of adjusted profitability in the first half of 2028; Nvidia rebounded approximately 5.2%. These are source-reported snapshots, not synchronized cash-market quotes. Source: Reuters, November 11.",
+            "Tuesday's hotter-than-expected October CPI had pushed U.S. stocks lower: the S&P 500 closed down 0.4% and the Nasdaq down 0.7%. The two-year Treasury yield rose sharply on Tuesday. U.S. cash equities trade Wednesday, but the U.S. bond market is closed for Veterans Day; current Treasury and corporate credit price discovery is therefore constrained. Sources: AP and Barron's, November 11.",
+            "Brent rebounded about 1.4% to $92.75 and WTI rose about 0.7% to $86.61 in Reuters' Wednesday report as Iran negotiation hopes weakened and shipping risks remained elevated. Reported oil quotes may reflect a different observation time from equity futures. Source: Reuters, November 11.",
+            "No independently synchronized Wednesday morning dollar, VIX, investment-grade or high-yield spread, or issuer CDS snapshot was established. Verification pending: the linked reporting was checked for the quoted observations, but no independent human claim-by-claim sign-off has occurred."
+          ]
+        },
+        {
+          "heading": "What Mattered: Interpretation",
+          "paragraphs": [
+            "The change from Tuesday afternoon is a technology-led futures rebound despite the inflation surprise. CoreWeave's customer demand and profitability guidance may ease immediate fears about AI spending, but an adjusted-profitability target in 2028 is not evidence of current free-cash-flow strength or improved refinancing terms.",
+            "Wednesday's bond-market closure limits the ability to confirm whether the equity recovery is accompanied by genuine easing in financing costs. Meanwhile, renewed oil shipping risk complicates the prior session's energy-disinflation narrative."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Thursday's reopening of Treasury and corporate bond markets: two-year and ten-year yields, investment-grade and high-yield spreads, and AI-linked issuer financing.",
+            "CoreWeave's debt maturities, contracted revenue conversion, cash burn and customer concentration; separate lender exposure from equity sentiment.",
+            "Whether Nvidia and broader semiconductor gains persist through the regular equity session rather than only premarket.",
+            "Strait of Hormuz physical shipping, insurance costs and Brent price structure; distinguish geopolitical headlines from actual supply.",
+            "Friday producer-price data and Federal Reserve repricing after October CPI."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If AI demand translates into improving cash conversion and credit spreads remain orderly when bonds reopen, a selective recovery becomes more plausible. If rate expectations tighten further or infrastructure borrowing premiums widen, equity gains may prove fragile. Current evidence does not justify numerical probabilities or an index target."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: AI infrastructure equities can rebound on demand guidance before lenders reprice risk. The next informative observation is whether financing costs and customer cash conversion confirm the recovery after the bond market reopens.",
+      "sources": [
+        {
+          "label": "Reuters, November 11: S&P 500 and Nasdaq futures rise after CoreWeave results",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/"
+        },
+        {
+          "label": "Reuters, November 11: Oil rises amid Iran talks and Hormuz shipping risks",
+          "url": "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/"
+        },
+        {
+          "label": "Associated Press, November 10: Major U.S. stock index closing levels",
+          "url": "https://apnews.com/article/a97eb31c415811065561f2c2ac552cd7"
+        },
+        {
+          "label": "Barron's, November 11: Inflation and bond-market context",
+          "url": "https://www.barrons.com/articles/stocks-today-hot-inflation-pushes-indexes-lower-cf9d41ec"
+        },
+        {
+          "label": "Kiplinger, November 10: Veterans Day market schedules",
+          "url": "https://www.kiplinger.com/investing/stocks/is-the-stock-market-open-on-veterans-day"
+        }
+      ]
+    },
+    {
       "id": "2026-11-10-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
