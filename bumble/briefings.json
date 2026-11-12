@@ -2,6 +2,71 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-12-morning",
+      "kind": "morning",
+      "status": "archived-unverified",
+      "title": "Nvidia Leadership Uncertainty Meets 5% Treasury Yields",
+      "summary": "U.S. equity futures weaken as Nvidia leadership uncertainty reverses part of Wednesday's AI rally; the 10-year Treasury yield returns to roughly 5% and the dollar strengthens. Verification pending: this edition is based on linked contemporaneous reporting, without independent claim-by-claim editorial sign-off.",
+      "published_at": "2026-11-12T08:04:40-05:00",
+      "observed_at": "2026-11-12T08:04:40-05:00",
+      "edition_date": "2026-11-12T08:04:40-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: observed facts",
+          "paragraphs": [
+            "Reuters reported U.S. stock-index futures weaker Thursday morning, with the Nasdaq 100 futures down about 0.64% and S&P 500 futures down 0.31% in one premarket snapshot. Nvidia fell approximately 6% in premarket trading as reports emerged that its board was considering CEO Jensen Huang's future. No final leadership decision was established in the reporting.",
+            "After Wednesday's Veterans Day closure, Treasury trading resumed with the 10-year yield around 5%. The dollar held near a 19-month high as markets priced another Federal Reserve rate increase. Reuters reported Brent crude above $92 per barrel amid persistent Middle East supply risks.",
+            "Wednesday's technology rebound followed CoreWeave earnings and an announced shift toward borrowing facilities supported by customer contracts. A comparable Thursday morning snapshot of investment-grade spreads, high-yield spreads, issuer CDS and cash VIX was not independently established."
+          ]
+        },
+        {
+          "heading": "What Mattered: interpretation",
+          "paragraphs": [
+            "The change since Wednesday afternoon is a reversal in Nvidia-led equity sentiment at the same time that bond markets reopened and Treasury yields approached 5%. The leadership allegations remain unproven; market repricing should not be confused with an established governance outcome.",
+            "CoreWeave's reported move toward contract-backed financing may lower its funding costs, but it does not establish that all AI infrastructure borrowers enjoy comparable terms. Higher benchmark yields and company-specific credit premiums can offset improving demand and utilization. Divergence between European equities and technology-heavy U.S. futures also argues against treating this as uniform global risk aversion."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Any formal Nvidia board disclosure and measurable spillover into chipmakers, hyperscalers and AI infrastructure counterparties.",
+            "Thursday's Treasury reopening: two-year and 10-year yields, dollar strength and investment-grade/high-yield spreads.",
+            "Friday's U.S. producer-price report and its implications for December Fed expectations.",
+            "CoreWeave's contract-backed funding terms, cash conversion and peer refinancing spreads; separate customer commitments from debt-service capacity.",
+            "Brent crude and physical Gulf shipping developments; distinguish supply disruptions from changing geopolitical risk premiums."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If leadership uncertainty is resolved without operating disruption and credit spreads remain orderly, a selective technology recovery becomes more plausible. If benchmark yields remain near 5% and financing premiums widen, capital-intensive AI infrastructure borrowers are more likely to underperform even with resilient customer demand. Available evidence does not support numerical probabilities."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Wednesday's AI equity recovery is being tested by Thursday's governance shock and renewed bond-market price discovery. The more durable distinction is between suppliers booking equipment sales and borrowers able to fund capacity, service debt and generate cash returns.",
+      "sources": [
+        {
+          "label": "Reuters, European stocks hit record high after Nvidia storm rattles Asia, November 12, 2026",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/"
+        },
+        {
+          "label": "Reuters, Nasdaq, S&P 500 futures fall as Nvidia turbulence unsettles AI stocks, November 12, 2026",
+          "url": "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/"
+        },
+        {
+          "label": "Barron's, Dollar Holds Near 19-Month High on Fed Hike Bets and Rising Yields, November 12, 2026",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111226/card/dollar-holds-near-19-month-high-on-fed-hike-bets-and-rising-yields-kNZ47KVcmXEiwJv7cKVg"
+        },
+        {
+          "label": "Barron's, Review & Preview: RenAIssance, November 12, 2026",
+          "url": "https://www.barrons.com/articles/stocks-today-coreweave-rallies-ai-stocks-indexes-close-higher-11db9c8d"
+        }
+      ],
+      "verification_note": "Verification pending: contemporaneous Reuters and Barron's reporting was consulted; independent editorial claim-by-claim verification and synchronized credit-market data remain outstanding."
+    },
+    {
       "id": "2026-11-11-afternoon",
       "kind": "afternoon",
       "status": "archived-unverified",
