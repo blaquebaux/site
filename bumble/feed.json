@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-12T12:17:31+00:00",
+ "generated_at": "2026-11-12T18:15:16+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,20 +10,20 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "RETO",
+   "tkr": "NBIZ",
    "cls": "watch",
-   "pct": "+66%",
+   "pct": "+34%",
    "pdir": "up",
    "category": "equities",
    "date": "November 12, 2026",
    "ts": "2026-11-12T23:58",
    "time": "today",
-   "head": "Top gainer: +66% to $6.19",
+   "head": "Top gainer: +34% to $39.29",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "RETO \u00b7 +66% to $6.19",
+    "title": "NBIZ \u00b7 +34% to $39.29",
     "sub": "top gainer \u00b7 November 12, 2026",
     "sections": [
      {
@@ -57,129 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "afdcec3dd418616f5f6e"
+   "id": "20e997197612fc2b60e7"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "CRWX",
+   "tkr": "CDNL",
    "cls": "watch",
-   "pct": "+50%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "November 12, 2026",
-   "ts": "2026-11-12T23:58",
-   "time": "today",
-   "head": "Top gainer: +50% to $7.78",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CRWX \u00b7 +50% to $7.78",
-    "sub": "top gainer \u00b7 November 12, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "1d9d05cb687422bcc288"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "CWVX",
-   "cls": "watch",
-   "pct": "+50%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "November 12, 2026",
-   "ts": "2026-11-12T23:58",
-   "time": "today",
-   "head": "Top gainer: +50% to $6.01",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CWVX \u00b7 +50% to $6.01",
-    "sub": "top gainer \u00b7 November 12, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "a2bec9543628ae869144"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "SMX",
-   "cls": "watch",
-   "pct": "-42%",
+   "pct": "-61%",
    "pdir": "dn",
    "category": "equities",
    "date": "November 12, 2026",
    "ts": "2026-11-12T23:57",
    "time": "today",
-   "head": "Top decliner: -42% to $11.19",
+   "head": "Top decliner: -61% to $5.79",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "SMX \u00b7 -42% to $11.19",
+    "title": "CDNL \u00b7 -61% to $5.79",
     "sub": "top decliner \u00b7 November 12, 2026",
     "sections": [
      {
@@ -213,7 +109,111 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "e9d3b266890823f868d0"
+   "id": "de4530369f62c504c315"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "SMX",
+   "cls": "watch",
+   "pct": "-52%",
+   "pdir": "dn",
+   "category": "equities",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T23:57",
+   "time": "today",
+   "head": "Top decliner: -52% to $5.39",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "SMX \u00b7 -52% to $5.39",
+    "sub": "top decliner \u00b7 November 12, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "f985d57e101b1aae914a"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "ADIG",
+   "cls": "watch",
+   "pct": "-47%",
+   "pdir": "dn",
+   "category": "equities",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T23:57",
+   "time": "today",
+   "head": "Top decliner: -47% to $10.36",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "ADIG \u00b7 -47% to $10.36",
+    "sub": "top decliner \u00b7 November 12, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "b92b623084de419c4fc6"
   },
   {
    "sender": "FED",
@@ -221,26 +221,26 @@
    "tkr": "FED",
    "category": "policy",
    "cls": "watch",
-   "date": "November 9, 2026",
-   "ts": "2026-11-09T21:00:00+00:00",
-   "time": "21:00 UTC",
-   "head": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T17:45:00+00:00",
+   "time": "17:45 UTC",
+   "head": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
    "note": "Official Federal Reserve release; open the source for the complete statement.",
    "evi": "verified official release \u00b7 no inferred market direction",
    "provenance": {
     "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm",
-    "observed_at": "2026-11-09T21:00:00+00:00",
-    "retrieved_at": "2026-11-12T12:19:29+00:00"
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+    "observed_at": "2026-11-12T17:45:00+00:00",
+    "retrieved_at": "2026-11-12T18:19:35+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
-    "sub": "2026-11-09T21:00:00+00:00",
+    "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+    "sub": "2026-11-12T17:45:00+00:00",
     "sections": [
      {
       "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm"
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
      }
     ],
     "pri": "Development only; market implications require separate sourced analysis."
@@ -263,7 +263,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "66a76f7f4b9077365875"
+   "id": "bffd871a6992c235b078"
   },
   {
    "sender": "FED",
@@ -271,26 +271,26 @@
    "tkr": "FED",
    "category": "policy",
    "cls": "watch",
-   "date": "November 5, 2026",
-   "ts": "2026-11-05T16:00:00+00:00",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T16:00:00+00:00",
    "time": "16:00 UTC",
-   "head": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+   "head": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
    "note": "Official Federal Reserve release; open the source for the complete statement.",
    "evi": "verified official release \u00b7 no inferred market direction",
    "provenance": {
     "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
-    "observed_at": "2026-11-05T16:00:00+00:00",
-    "retrieved_at": "2026-11-12T12:19:29+00:00"
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
+    "observed_at": "2026-11-12T16:00:00+00:00",
+    "retrieved_at": "2026-11-12T18:19:35+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-    "sub": "2026-11-05T16:00:00+00:00",
+    "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+    "sub": "2026-11-12T16:00:00+00:00",
     "sections": [
      {
       "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
      }
     ],
     "pri": "Development only; market implications require separate sourced analysis."
@@ -313,7 +313,7 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "5a71354767e05765fdcc"
+   "id": "6681d017123403cfe833"
   }
  ]
 }
