@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-12T18:15:16+00:00",
+ "generated_at": "2026-11-12T20:13:45+00:00",
  "count": 6,
  "categories": {
   "equities": 4,
@@ -10,72 +10,20 @@
   {
    "sender": "TAPE",
    "chip": "TAPE",
-   "tkr": "NBIZ",
-   "cls": "watch",
-   "pct": "+34%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "November 12, 2026",
-   "ts": "2026-11-12T23:58",
-   "time": "today",
-   "head": "Top gainer: +34% to $39.29",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NBIZ \u00b7 +34% to $39.29",
-    "sub": "top gainer \u00b7 November 12, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "20e997197612fc2b60e7"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
    "tkr": "CDNL",
    "cls": "watch",
-   "pct": "-61%",
+   "pct": "-64%",
    "pdir": "dn",
    "category": "equities",
    "date": "November 12, 2026",
    "ts": "2026-11-12T23:57",
    "time": "today",
-   "head": "Top decliner: -61% to $5.79",
+   "head": "Top decliner: -64% to $5.41",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "CDNL \u00b7 -61% to $5.79",
+    "title": "CDNL \u00b7 -64% to $5.41",
     "sub": "top decliner \u00b7 November 12, 2026",
     "sections": [
      {
@@ -109,77 +57,25 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "de4530369f62c504c315"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "SMX",
-   "cls": "watch",
-   "pct": "-52%",
-   "pdir": "dn",
-   "category": "equities",
-   "date": "November 12, 2026",
-   "ts": "2026-11-12T23:57",
-   "time": "today",
-   "head": "Top decliner: -52% to $5.39",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "SMX \u00b7 -52% to $5.39",
-    "sub": "top decliner \u00b7 November 12, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "against": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "f985d57e101b1aae914a"
+   "id": "d98a95bb42d131d7aad3"
   },
   {
    "sender": "TAPE",
    "chip": "TAPE",
    "tkr": "ADIG",
    "cls": "watch",
-   "pct": "-47%",
+   "pct": "-48%",
    "pdir": "dn",
    "category": "equities",
    "date": "November 12, 2026",
    "ts": "2026-11-12T23:57",
    "time": "today",
-   "head": "Top decliner: -47% to $10.36",
+   "head": "Top decliner: -48% to $10.15",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "ADIG \u00b7 -47% to $10.36",
+    "title": "ADIG \u00b7 -48% to $10.15",
     "sub": "top decliner \u00b7 November 12, 2026",
     "sections": [
      {
@@ -213,7 +109,109 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "b92b623084de419c4fc6"
+   "id": "8d558a767ea3874fd3f4"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "NEBX",
+   "cls": "watch",
+   "pct": "-37%",
+   "pdir": "dn",
+   "category": "equities",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T23:57",
+   "time": "today",
+   "head": "Top decliner: -37% to $6.07",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "NEBX \u00b7 -37% to $6.07",
+    "sub": "top decliner \u00b7 November 12, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "against": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "700729eb370f2c8114f2"
+  },
+  {
+   "sender": "FED",
+   "chip": "POLICY \u00b7 FED",
+   "tkr": "FED",
+   "category": "policy",
+   "cls": "watch",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T18:30:00+00:00",
+   "time": "18:30 UTC",
+   "head": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+   "note": "Official Federal Reserve release; open the source for the complete statement.",
+   "evi": "verified official release \u00b7 no inferred market direction",
+   "provenance": {
+    "provider": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+    "observed_at": "2026-11-12T18:30:00+00:00",
+    "retrieved_at": "2026-11-12T20:18:00+00:00"
+   },
+   "detail": {
+    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
+    "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+    "sub": "2026-11-12T18:30:00+00:00",
+    "sections": [
+     {
+      "h": "Official source",
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+     }
+    ],
+    "pri": "Development only; market implications require separate sourced analysis."
+   },
+   "fit": {
+    "with": [
+     "bonds"
+    ],
+    "against": [
+     "bands",
+     "bide",
+     "bunker"
+    ],
+    "na": [
+     "apac",
+     "backfill",
+     "backlash",
+     "backsliders",
+     "backwards"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "7d65b9fdc27db73a4771"
   },
   {
    "sender": "FED",
@@ -231,7 +229,7 @@
     "provider": "Board of Governors of the Federal Reserve System",
     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
     "observed_at": "2026-11-12T17:45:00+00:00",
-    "retrieved_at": "2026-11-12T18:19:35+00:00"
+    "retrieved_at": "2026-11-12T20:18:00+00:00"
    },
    "detail": {
     "kicker": "FEDERAL RESERVE \u00b7 POLICY",
@@ -266,54 +264,59 @@
    "id": "bffd871a6992c235b078"
   },
   {
-   "sender": "FED",
-   "chip": "POLICY \u00b7 FED",
-   "tkr": "FED",
-   "category": "policy",
-   "cls": "watch",
+   "sender": "EDGAR",
+   "chip": "EDGAR \u00b7 4",
+   "tkr": "SMP",
+   "cls": "sell",
+   "category": "equities",
    "date": "November 12, 2026",
-   "ts": "2026-11-12T16:00:00+00:00",
-   "time": "16:00 UTC",
-   "head": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
-   "note": "Official Federal Reserve release; open the source for the complete statement.",
-   "evi": "verified official release \u00b7 no inferred market direction",
-   "provenance": {
-    "provider": "Board of Governors of the Federal Reserve System",
-    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
-    "observed_at": "2026-11-12T16:00:00+00:00",
-    "retrieved_at": "2026-11-12T18:19:35+00:00"
-   },
+   "ts": "2026-11-12",
+   "time": "11-12",
+   "head": "4 insiders sold $345,631 open-market",
+   "note": "Cluster selling by multiple insiders; context matters, but a tell worth watching.",
+   "evi": "insider cluster \u00b7 modest documented edge",
    "detail": {
-    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
-    "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
-    "sub": "2026-11-12T16:00:00+00:00",
+    "kicker": "EDGAR \u00b7 FORM 4 \u00b7 INSIDER CLUSTER",
+    "title": "SMP \u00b7 4 insiders sell $345,631",
+    "sub": "STANDARD MOTOR PRODUCTS, INC.  (CIK 0000093389) \u00b7 open-market P/S \u00b7 filed 2026-11-12",
     "sections": [
      {
-      "h": "Official source",
-      "p": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
+      "h": "Who",
+      "list": [
+       "Sills Eric (Dir/CEO & President) $125,307",
+       "BURKS DALE (Chief Commercial Officer & EVP) $89,163",
+       "Broccole Carmine Joseph (CLO & Secretary) $75,374",
+       "Nicholas Ray (CIO & VP IT) $55,787"
+      ]
      }
     ],
-    "pri": "Development only; market implications require separate sourced analysis."
+    "pri": "Potential outcome: a distribution tell; confirm against the tape and any 8-K."
    },
    "fit": {
     "with": [
-     "bonds"
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
     ],
     "against": [
-     "bands",
-     "bide",
-     "bunker"
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
     ],
     "na": [
      "apac",
-     "backfill",
-     "backlash",
-     "backsliders",
-     "backwards"
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "6681d017123403cfe833"
+   "id": "ff768a35f6e0aca5dd65"
   }
  ]
 }
