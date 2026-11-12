@@ -2,6 +2,69 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-12-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "edition_date": "2026-11-12",
+      "title": "Market Pulse: Nvidia Succession Shock Meets Rising Energy and Yields",
+      "summary": "Nvidia's leadership transition has divided AI equities while oil and Treasury yields rise; broader benchmarks remain comparatively stable.",
+      "published_at": "2026-11-12T15:04:58-05:00",
+      "observed_at": "2026-11-12T15:04:00-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; independent editorial verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What Happened: Observed",
+          "paragraphs": [
+            "Source-reported Thursday intraday snapshots were not synchronized. Reuters reported the Dow up 0.02%, S&P 500 down 0.13%, and Nasdaq down 0.27% in one afternoon update; these are not closing returns. Nvidia was down about 5%, having recovered from a decline as large as 12%.",
+            "The material change since the morning pulse is that Nvidia announced CEO Jensen Huang's departure and named CFO Colette Kress interim CEO. The leadership transition is reported; allegations underlying the episode are not established findings.",
+            "AI equities diverged: Reuters reported weakness in Nebius and CoreWeave, while AMD and Broadcom gained. Energy shares advanced as oil rose following President Trump's remarks that the United States did not need an Iran agreement.",
+            "A separate Reuters global-markets snapshot put the 10-year Treasury yield at approximately 5.066%, Brent at $93.82 per barrel and U.S. crude at $86.81. The dollar reached a reported 19-month high. Comparable synchronized investment-grade/high-yield spreads and issuer CDS were not independently verified.",
+            "Verification pending: market snapshots and linked reports have been collected, but a complete independent claim-by-claim editorial review has not been completed."
+          ]
+        },
+        {
+          "heading": "What Mattered: Interpretation",
+          "paragraphs": [
+            "The market is differentiating Nvidia-specific succession and execution risk from the broader demand for compute. Gains in competitors do not establish that aggregate AI infrastructure cash returns or financing conditions have improved.",
+            "Oil and Treasury yields moving higher together add a second pressure channel: inflation-sensitive discount rates and debt service costs. Equipment suppliers, data-center developers, utilities and lenders face materially different exposures."
+          ]
+        },
+        {
+          "heading": "What We're Watching",
+          "list": [
+            "Formal Nvidia disclosures on succession, customer continuity, export access and supply commitments.",
+            "Friday's U.S. producer-price release and any change in December Federal Reserve expectations.",
+            "10-year and two-year Treasury yields; investment-grade and high-yield spreads; AI borrower CDS and refinancing terms.",
+            "Brent prices, Gulf shipping volumes and insurance conditions; distinguish policy rhetoric from physical disruption.",
+            "Whether market breadth persists outside Nvidia and whether AI customer commitments convert to cash flow."
+          ]
+        },
+        {
+          "heading": "Where We See Things Going",
+          "paragraphs": [
+            "If succession uncertainty stabilizes and credit spreads remain contained, selective technology resilience becomes more plausible even with higher yields.",
+            "If energy inflation and benchmark rates persist while issuer financing premiums widen, leveraged infrastructure operators face greater risk than cash-generative suppliers. Evidence does not support precise probabilities or index targets."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: Nvidia's leadership change is a company-specific shock, but the more durable transmission test is whether higher oil and yields tighten financing across AI developers, equipment vendors, customers and lenders.",
+      "sources": [
+        {
+          "label": "Reuters, Equities little changed, Nvidia drop offsets lift in energy shares, November 12",
+          "url": "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/"
+        },
+        {
+          "label": "Reuters, Wall Street edges up, Nvidia drops after CEO resigns, November 12",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/"
+        },
+        {
+          "label": "Reuters, US yields climb, stocks fall as inflation data boosts chances for larger Fed rate hike, November 10",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-10/"
+        }
+      ]
+    },
+    {
       "id": "2026-11-12-morning",
       "kind": "morning",
       "status": "archived-unverified",
