@@ -2,6 +2,69 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "2026-11-13-afternoon",
+      "kind": "afternoon",
+      "status": "archived-unverified",
+      "title": "Market Pulse: Softer PPI Fails to Reverse the Technology Selloff",
+      "summary": "October producer inflation undershot the monthly consensus, but broadening input costs, elevated Treasury yields and renewed semiconductor selling kept risk appetite under pressure. Verification pending: independent human editorial review of all linked claims remains outstanding.",
+      "edition_date": "2026-11-13",
+      "published_at": "2026-11-13T15:07:52-05:00",
+      "observed_at": "2026-11-13T15:07:52-05:00",
+      "reviewed_by": "BLAQUE BAUX automated research; human factual verification pending",
+      "dash_replacement": ";",
+      "sections": [
+        {
+          "heading": "What changed: observed",
+          "paragraphs": [
+            "October final-demand PPI rose 0.3% month over month versus a 0.4% consensus, after September's revised 1.4% increase. Annual producer inflation accelerated to 6.5%. Goods prices increased 0.5%, services 0.2%, and goods excluding food and energy 0.5%. Electronic components and accessories prices rose 4.2% in October, according to Reuters' review of the release.",
+            "Compared with the morning's tentative futures stabilization, Friday's cash-session technology selling intensified: Reuters reported the Nasdaq down more than 1%, the Philadelphia semiconductor index down about 4%, and Nvidia down about 3% in its intraday report. These are reported snapshots, not closing returns.",
+            "Reuters reported the two-year Treasury yield near 4.855%, after touching 4.892% earlier, and the dollar at a 19-month high. WTI was reported near $88.44 and Brent near $95.70, both modestly lower on the day. Synchronized cash VIX, investment-grade and high-yield spreads, and issuer CDS were not independently established."
+          ]
+        },
+        {
+          "heading": "What mattered: interpretation",
+          "paragraphs": [
+            "The softer headline monthly PPI did not resolve the inflation problem: core goods and freight-related cost pressures suggest that disinflation is uneven. AI infrastructure is exposed on both sides of the ledger, through higher component procurement prices and the cost of financing long-duration assets.",
+            "The equity response indicates that investors are still reassessing semiconductor concentration and Nvidia leadership execution risk. It does not independently prove an industrywide decline in demand or a broad deterioration in borrower credit quality. Higher Treasury yields and dollar strength are more directly observable constraints on risk assets."
+          ]
+        },
+        {
+          "heading": "What we are watching",
+          "list": [
+            "Late-session and closing breadth: whether semiconductor losses spread beyond technology, and whether volatility confirms the move.",
+            "Next week's retail-sales and Federal Reserve communications; changes in December policy pricing and the two-year Treasury yield.",
+            "AI supply-chain price pass-through, contracted capacity, customer free cash flow and actual issuer borrowing spreads.",
+            "Oil shipping conditions and the distinction between falling spot crude and persistent transportation or input-cost inflation."
+          ]
+        },
+        {
+          "heading": "Where we see things going",
+          "paragraphs": [
+            "If subsequent inflation readings ease and corporate credit remains orderly, selective stabilization is plausible. If producer-cost breadth persists alongside higher financing rates, leveraged infrastructure operators may remain more vulnerable than cash-generative suppliers. Neither case supports a precise probability or index target on current evidence."
+          ]
+        }
+      ],
+      "signal": "BLAQUE BAUX Signal: A below-consensus headline PPI print did not translate into a technology recovery. Rising electronic-component costs and elevated financing rates matter simultaneously; follow the cash-flow and credit transmission through AI suppliers, operators and lenders.",
+      "sources": [
+        {
+          "label": "BLS: October 2026 producer price news release",
+          "url": "https://www.bls.gov/ppi/news-release/home.htm"
+        },
+        {
+          "label": "Reuters: US producer prices rise moderately in October, but inflation broadens out",
+          "url": "https://www.reuters.com/business/us-producer-prices-rise-further-october-2026-11-13/"
+        },
+        {
+          "label": "Reuters: Stocks fall with tech, Nvidia concerns; US dollar climbs",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/"
+        },
+        {
+          "label": "Reuters: Bessent and Goolsbee divided on inflation response",
+          "url": "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/"
+        }
+      ]
+    },
+    {
       "id": "2026-11-13-morning",
       "kind": "morning",
       "status": "archived-unverified",
