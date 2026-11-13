@@ -1,115 +1,12 @@
 {
  "schema_version": 2,
- "generated_at": "2026-11-13T16:16:28+00:00",
- "count": 4,
+ "generated_at": "2026-11-13T16:37:56+00:00",
+ "count": 6,
  "categories": {
-  "equities": 4
+  "equities": 4,
+  "policy": 2
  },
  "events": [
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "FCUV",
-   "cls": "watch",
-   "pct": "+87%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "November 13, 2026",
-   "ts": "2026-11-13T23:58",
-   "time": "today",
-   "head": "Top gainer: +87% to $5.60",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "FCUV \u00b7 +87% to $5.60",
-    "sub": "top gainer \u00b7 November 13, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "a211b8f452051c597943"
-  },
-  {
-   "sender": "TAPE",
-   "chip": "TAPE",
-   "tkr": "NMAX",
-   "cls": "watch",
-   "pct": "+30%",
-   "pdir": "up",
-   "category": "equities",
-   "date": "November 13, 2026",
-   "ts": "2026-11-13T23:58",
-   "time": "today",
-   "head": "Top gainer: +30% to $9.46",
-   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
-   "evi": "unusual activity \u00b7 unconfirmed",
-   "detail": {
-    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NMAX \u00b7 +30% to $9.46",
-    "sub": "top gainer \u00b7 November 13, 2026",
-    "sections": [
-     {
-      "h": "Read",
-      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
-     }
-    ],
-    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
-   },
-   "fit": {
-    "with": [
-     "boom",
-     "broad",
-     "bull",
-     "benchmark",
-     "blackstone"
-    ],
-    "against": [
-     "bleed",
-     "bear",
-     "bombs-away",
-     "breach",
-     "buttress"
-    ],
-    "na": [
-     "apac",
-     "ballast",
-     "bands",
-     "bargain",
-     "barrel"
-    ],
-    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
-   },
-   "id": "d066d44d748845306afc"
-  },
   {
    "sender": "TAPE",
    "chip": "TAPE",
@@ -121,12 +18,12 @@
    "date": "November 13, 2026",
    "ts": "2026-11-13T23:58",
    "time": "today",
-   "head": "Top gainer: +29% to $6.88",
+   "head": "Top gainer: +29% to $6.87",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "SBC \u00b7 +29% to $6.88",
+    "title": "SBC \u00b7 +29% to $6.87",
     "sub": "top gainer \u00b7 November 13, 2026",
     "sections": [
      {
@@ -160,7 +57,111 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
    },
-   "id": "f3dc543905beee27c240"
+   "id": "3624eb0b526b8e4a5ac9"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "NMAX",
+   "cls": "watch",
+   "pct": "+29%",
+   "pdir": "up",
+   "category": "equities",
+   "date": "November 13, 2026",
+   "ts": "2026-11-13T23:58",
+   "time": "today",
+   "head": "Top gainer: +29% to $9.37",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "NMAX \u00b7 +29% to $9.37",
+    "sub": "top gainer \u00b7 November 13, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "f681fb807cbac1f77963"
+  },
+  {
+   "sender": "TAPE",
+   "chip": "TAPE",
+   "tkr": "MOD",
+   "cls": "watch",
+   "pct": "+28%",
+   "pdir": "up",
+   "category": "equities",
+   "date": "November 13, 2026",
+   "ts": "2026-11-13T23:58",
+   "time": "today",
+   "head": "Top gainer: +28% to $135.46",
+   "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
+   "evi": "unusual activity \u00b7 unconfirmed",
+   "detail": {
+    "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
+    "title": "MOD \u00b7 +28% to $135.46",
+    "sub": "top gainer \u00b7 November 13, 2026",
+    "sections": [
+     {
+      "h": "Read",
+      "p": "A large move; Bumble cross-references the EDGAR stream and flags if a Form 4 or 8-K lands to explain it. Mean-reversion risk if it is positioning-driven."
+     }
+    ],
+    "pri": "Potential outcome: only promote to a tilt if a filing or confirmed catalyst follows."
+   },
+   "fit": {
+    "with": [
+     "boom",
+     "broad",
+     "bull",
+     "benchmark",
+     "blackstone"
+    ],
+    "against": [
+     "bleed",
+     "bear",
+     "bombs-away",
+     "breach",
+     "buttress"
+    ],
+    "na": [
+     "apac",
+     "ballast",
+     "bands",
+     "bargain",
+     "barrel"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bullish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "04cc22f9048582362da7"
   },
   {
    "sender": "TAPE",
@@ -173,12 +174,12 @@
    "date": "November 13, 2026",
    "ts": "2026-11-13T23:57",
    "time": "today",
-   "head": "Top decliner: -50% to $6.04",
+   "head": "Top decliner: -50% to $6.01",
    "note": "A large move; cross-check EDGAR for a filing that explains it. A watch, not a confirm.",
    "evi": "unusual activity \u00b7 unconfirmed",
    "detail": {
     "kicker": "TAPE \u00b7 UNUSUAL ACTIVITY",
-    "title": "NPCE \u00b7 -50% to $6.04",
+    "title": "NPCE \u00b7 -50% to $6.01",
     "sub": "top decliner \u00b7 November 13, 2026",
     "sections": [
      {
@@ -212,7 +213,107 @@
     ],
     "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
    },
-   "id": "3c0c60663e362554f1e2"
+   "id": "9358869b019fb0f73fd4"
+  },
+  {
+   "sender": "FED",
+   "chip": "POLICY \u00b7 FED",
+   "tkr": "FED",
+   "category": "policy",
+   "cls": "watch",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T18:30:00+00:00",
+   "time": "18:30 UTC",
+   "head": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+   "note": "Official Federal Reserve release; open the source for the complete statement.",
+   "evi": "verified official release \u00b7 no inferred market direction",
+   "provenance": {
+    "provider": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+    "observed_at": "2026-11-12T18:30:00+00:00",
+    "retrieved_at": "2026-11-13T16:40:20+00:00"
+   },
+   "detail": {
+    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
+    "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+    "sub": "2026-11-12T18:30:00+00:00",
+    "sections": [
+     {
+      "h": "Official source",
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+     }
+    ],
+    "pri": "Development only; market implications require separate sourced analysis."
+   },
+   "fit": {
+    "with": [
+     "bonds"
+    ],
+    "against": [
+     "bands",
+     "bide",
+     "bunker"
+    ],
+    "na": [
+     "apac",
+     "backfill",
+     "backlash",
+     "backsliders",
+     "backwards"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "7d65b9fdc27db73a4771"
+  },
+  {
+   "sender": "FED",
+   "chip": "POLICY \u00b7 FED",
+   "tkr": "FED",
+   "category": "policy",
+   "cls": "watch",
+   "date": "November 12, 2026",
+   "ts": "2026-11-12T17:45:00+00:00",
+   "time": "17:45 UTC",
+   "head": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+   "note": "Official Federal Reserve release; open the source for the complete statement.",
+   "evi": "verified official release \u00b7 no inferred market direction",
+   "provenance": {
+    "provider": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+    "observed_at": "2026-11-12T17:45:00+00:00",
+    "retrieved_at": "2026-11-13T16:40:20+00:00"
+   },
+   "detail": {
+    "kicker": "FEDERAL RESERVE \u00b7 POLICY",
+    "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+    "sub": "2026-11-12T17:45:00+00:00",
+    "sections": [
+     {
+      "h": "Official source",
+      "p": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+     }
+    ],
+    "pri": "Development only; market implications require separate sourced analysis."
+   },
+   "fit": {
+    "with": [
+     "bonds"
+    ],
+    "against": [
+     "bands",
+     "bide",
+     "bunker"
+    ],
+    "na": [
+     "apac",
+     "backfill",
+     "backlash",
+     "backsliders",
+     "backwards"
+    ],
+    "intro": "Bumble does not grade the news; it routes it. To act on a bearish read, here are the vehicles. Your strategy decides."
+   },
+   "id": "bffd871a6992c235b078"
   }
  ]
 }
