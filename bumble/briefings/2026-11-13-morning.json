@@ -1,0 +1,65 @@
+{
+  "id": "2026-11-13-morning",
+  "kind": "morning",
+  "status": "archived-unverified",
+  "title": "Market Pulse: Treasury Pressure Outlasts the AI Selloff",
+  "summary": "Pre-open equities are mixed as Treasury yields and the dollar remain elevated; AI leadership uncertainty persists while producer-price inflation is the next test. Verification pending: source-based automated review, not human claim-by-claim sign-off.",
+  "published_at": "2026-11-13T08:12:00-05:00",
+  "observed_at": "2026-11-13T05:42:00-05:00",
+  "edition_date": "2026-11-13",
+  "reviewed_by": "BLAQUE BAUX automated research; human verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened: Observed Facts",
+      "paragraphs": [
+        "At 5:42 a.m. EST, S&P 500 futures were up 0.12%, Dow futures up 0.21% and Nasdaq 100 futures down 0.13%, according to TipRanks. These are premarket observations, not cash-session returns.",
+        "Reuters reported European equities near recent records and the dollar close to a 19-month high as investors assessed the possibility of a larger December Federal Reserve rate increase. U.S. yields remained under upward pressure.",
+        "Thursday's AI selloff followed Nvidia's CEO transition, with Colette Kress serving as interim chief executive. The company-specific shock has not established a comparable deterioration in all AI end-market demand.",
+        "October producer-price inflation is due at 8:30 a.m. EST; the reported consensus is a 0.4% monthly headline increase. This edition precedes the release. Current synchronized issuer CDS, broad credit spreads and cash VIX readings were not independently established."
+      ]
+    },
+    {
+      "heading": "What Mattered: Interpretation",
+      "paragraphs": [
+        "Since Thursday afternoon, the most important shift is not a new AI demand datapoint but the continued pressure from yields and monetary-policy expectations while equity futures show only modest stabilization.",
+        "Higher benchmark yields can increase refinancing and project hurdle rates even when chip orders remain strong. Suppliers, data-center borrowers, utilities and customers may experience different cash-flow consequences."
+      ]
+    },
+    {
+      "heading": "What We're Watching",
+      "list": [
+        "8:30 a.m. EST producer-price release; compare actual headline and core figures with consensus before drawing conclusions.",
+        "Two-year and 10-year Treasury yields, dollar reaction and December Fed pricing after PPI.",
+        "Nvidia succession disclosures and customer commitments; distinguish governance concerns from operational disruption.",
+        "Corporate credit spreads, AI-linked issuer refinancing costs and actual cash conversion.",
+        "Crude and Gulf shipping conditions; separate physical supply disruption from geopolitical risk premium."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "If producer-price inflation undershoots expectations and credit spreads remain contained, selective stabilization becomes more plausible. If inflation surprises upward and long yields climb further, financing-sensitive AI infrastructure operators could remain vulnerable. Neither path warrants a precise probability or index target from the evidence available."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: Equity stabilization is not equivalent to cheaper capital. The next test is whether inflation and credit pricing permit AI infrastructure cash flows to support the financing behind expansion.",
+  "sources": [
+    {
+      "label": "Reuters, European stocks near record highs, dollar gains on rate hike bets, November 13",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/"
+    },
+    {
+      "label": "TipRanks, US stocks wobble ahead of PPI, November 13, 5:42 a.m. EST snapshot",
+      "url": "https://www.tipranks.com/news/stock-market-today-nov-13-u-s-stocks-wobble-ahead-of-ppi-data"
+    },
+    {
+      "label": "Reuters, AI stocks assess Nvidia CEO exit, November 12",
+      "url": "https://www.reuters.com/business/retail-consumer/global-ai-stocks-sink-nvidia-crisis-deepens-sector-selloff-2026-11-12/"
+    },
+    {
+      "label": "TipRanks, wholesale inflation expectations and release timing, November 13",
+      "url": "https://www.tipranks.com/news/todays-wholesale-price-report-could-tip-the-fed-toward-a-half-point-hike"
+    }
+  ]
+}
