@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-14-weekly",
+  "kind": "weekly",
+  "status": "archived-unverified",
+  "title": "Weekly Brief | AI's Financing Chain Faces an Inflation and Leadership Test",
+  "summary": "November 9-13, 2026: U.S. equities recovered on a weekly basis despite Friday's technology selloff. October CPI rose 0.4% and core CPI 0.3% monthly; PPI rose 0.3% monthly and 6.5% annually. Nvidia's leadership transition intensified scrutiny of AI financing commitments as Treasury yields and the dollar rose.",
+  "edition_date": "2026-11-14",
+  "published_at": "2026-11-14T08:20:21-05:00",
+  "observed_at": "2026-11-13T17:00:00-05:00",
+  "reviewed_by": "BLAQUE BAUX automated research; independent human claim-by-claim editorial verification pending",
+  "dash_replacement": ";",
+  "sections": [
+    {
+      "heading": "What Happened | November 9-13, 2026",
+      "paragraphs": [
+        "Equities: U.S. stocks staged a strong Monday recovery, then experienced renewed AI-related selling. On Friday, the S&P 500 declined 0.40%, the Nasdaq Composite 0.91%, and the Dow gained 0.10%. Despite Friday's retreat, all three major U.S. indexes finished the week higher. Reuters reported the Philadelphia Semiconductor Index fell 3.4% on Friday and Nvidia lost about 2%. Exact weekly index returns are not asserted without a consistent closing series. [Reuters, November 13, global markets; Reuters, November 9]",
+        "Inflation: October consumer prices increased 0.4% month over month and core CPI 0.3%; shelter increased 0.3%, food 0.5%, and energy 0.7%. Most October 2026 annual CPI comparisons could not be published because October 2025 observations were missing. October final-demand PPI increased 0.3% monthly; goods rose 0.5%, services 0.2%, and the 12-month headline measure reached 6.5%. CPI and PPI measure different price stages and cannot be treated as interchangeable. [BLS CPI, November 10; BLS PPI, November 13]",
+        "Rates and foreign exchange: Reuters reported that the two-year Treasury yield recorded its largest weekly rise in more than two years and the dollar reached a 19-month high as markets priced additional Federal Reserve tightening. This is evidence of a higher financing benchmark, not proof that every AI borrower's credit spread widened. [Reuters global markets, November 13]",
+        "AI and credit transmission: Nvidia CEO Jensen Huang stepped down Thursday; CFO Colette Kress became interim CEO. The leadership change raised questions about Nvidia-linked customer financing and guarantees, with semiconductor, neocloud and data-center-linked stocks under pressure Friday. Reported allegations surrounding the departure are not adjudicated findings. No synchronized issuer CDS or broad IG/HY spread series was independently established. [Reuters Nvidia interim CEO, November 13; Reuters AI stocks, November 13]",
+        "Oil and geopolitics: Reuters reported Brent near $95.84 and WTI near $88.56 on Friday; both benchmarks declined for a second consecutive week despite continuing Middle East disruption risk. The IEA described further emergency-stock releases planned through February 2027. These releases may moderate near-term scarcity but do not guarantee uninterrupted shipping or lower refined-product costs. [Reuters global markets, November 13; Reuters IEA, November 13]"
+      ]
+    },
+    {
+      "heading": "What Mattered | Interpretation",
+      "paragraphs": [
+        "The week's defining contradiction was a positive weekly equity result alongside increasingly expensive short-term capital and renewed concentration risk in AI. The Friday reversal cautions against treating Monday's rebound as evidence that infrastructure financing conditions have normalized.",
+        "Inflation's composition matters more than a single surprise versus consensus. Monthly producer inflation undershot expectations, yet annual producer inflation remained elevated. Higher component costs, higher discount rates and long construction timelines can compress data-center project returns even while accelerator suppliers report strong orders.",
+        "Nvidia's transition adds a second transmission channel beyond valuation: counterparties may reassess financing support, guarantees, purchasing commitments and customer concentration. The useful unit of analysis is the full cash-flow chain linking chip suppliers, cloud lessors, developers, power providers, hyperscalers and lenders; equity losses alone do not establish a system-wide credit event.",
+        "Oil's second weekly decline provides some potential relief, but dollar strength, elevated yields and persistent Gulf risk prevent a simple disinflation conclusion. Actual cargo flows, insurance costs and contract terms are more informative than a headline spot price."
+      ]
+    },
+    {
+      "heading": "What We're Watching | November 16-20 and beyond",
+      "list": [
+        "Nvidia quarterly results and formal succession updates: distinguish reported sales and backlog from guarantees, vendor financing, customer credit exposure and cash collections.",
+        "Anthropic's expected market debut: monitor financing terms, valuation and capital raised rather than assuming an IPO validates AI infrastructure economics.",
+        "Tuesday U.S. retail sales and Wednesday Federal Reserve minutes: test consumer resilience and the persistence of monetary-tightening expectations.",
+        "Retail earnings from Walmart, Target, Home Depot and Lowe's: track price sensitivity, margins, inventories and exposure to financing costs.",
+        "Credit and cross-asset confirmation: two-year and 10-year yields, IG/HY option-adjusted spreads, issuer CDS, primary issuance terms, dollar, equity volatility and Gulf shipping; synchronized observations remain a research priority."
+      ]
+    },
+    {
+      "heading": "Where We See Things Going",
+      "paragraphs": [
+        "Constructive path: if consumer activity remains resilient without renewed inflation acceleration, Treasury yields stabilize and AI counterparties maintain funding access, selective equity recovery becomes more plausible. Cash-generative suppliers and well-capitalized customers would be better positioned than highly leveraged developers.",
+        "Adverse path: if Fed tightening expectations strengthen while customer financing commitments are reduced, equipment orders, project schedules, construction contractors, utilities and lenders could experience second-round effects. Evidence of widening credit spreads or weaker contracted cash collections would increase confidence in this scenario.",
+        "Base assessment: continued dispersion and event-driven volatility appear more defensible than a broad directional forecast. No precise probability or index target is justified by the reviewed evidence. Verification pending: this automated, source-attributed weekly edition has not received independent human claim-by-claim editorial approval."
+      ]
+    }
+  ],
+  "signal": "BLAQUE BAUX Signal: The week ended with equity gains but a more difficult cost-of-capital backdrop. The decisive AI question is not merely who sells the chips; it is who guarantees the financing, who carries the debt, and whether downstream customer cash flow can support the buildout.",
+  "verification_note": "Verification pending: BLS releases and contemporary Reuters reports were consulted, but independent human claim-by-claim editorial review remains outstanding. Status archived-unverified. Weekly market observation cutoff is Friday, November 13, 2026 at 5:00 p.m. EST; source snapshots and market settlements may occur at different times. Weekly exact index returns, synchronized corporate credit spreads, issuer CDS and VIX levels were not established and are not invented.",
+  "social_teaser": "AI stocks finished a volatile week with a sharper question than demand: who finances the buildout? Hotter consumer inflation, rising yields and Nvidia's leadership transition put guarantees, counterparties and cash conversion under scrutiny. Read the BLAQUE BAUX Weekly Brief: https://www.blaquebaux.com/bumble/#brief/2026-11-14-weekly",
+  "sources": [
+    {
+      "label": "Reuters, November 13, global markets and Friday close",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/"
+    },
+    {
+      "label": "Reuters, November 9, Wall Street rebound",
+      "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+    },
+    {
+      "label": "BLS, November 10, October CPI",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+    },
+    {
+      "label": "BLS, November 13, October PPI",
+      "url": "https://www.bls.gov/news.release/archives/ppi_11132026.htm"
+    },
+    {
+      "label": "Reuters, November 13, Nvidia interim CEO",
+      "url": "https://www.reuters.com/business/colette-kress-cfo-who-challenged-huangs-bets-is-nvidias-interim-ceo-2026-11-13/"
+    },
+    {
+      "label": "Reuters, November 13, AI and neocloud equities",
+      "url": "https://www.reuters.com/business/neoclouds-ai-stocks-slide-again-nvidia-turmoil-rattles-sector-2026-11-13/"
+    },
+    {
+      "label": "Reuters, November 13, IEA emergency oil releases",
+      "url": "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/"
+    },
+    {
+      "label": "Reuters, November 13, week ahead events",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-nvidia-results-anthropic-ipo-pose-tests-tumultuous-ai-trade-2026-11-13/"
+    }
+  ]
+}
